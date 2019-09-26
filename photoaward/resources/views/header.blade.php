@@ -1,0 +1,1 @@
+<div id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></div>
