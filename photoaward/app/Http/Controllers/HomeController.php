@@ -38,6 +38,18 @@ class HomeController extends Controller
         return view('login');
     }
 
+    public function upload_image()
+    {
+        
+        return view('upload_image');
+    }
+
+    public function new_upload()
+    {
+        
+        return view('image_add');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

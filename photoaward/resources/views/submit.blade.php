@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <p>Content</p>
                                                         </div>
                                                     </div>
-                                             <a href="upload_image.html" class="btn btn-primary" style="background-color: #b7eb34; border-color: #b7eb34">Enter Now</a>
+                                             <a href="{{ route('upload-image') }}" class="btn btn-primary" style="background-color: #b7eb34; border-color: #b7eb34">Enter Now</a>
                                             </div>
                                         </div>
                                     </div>

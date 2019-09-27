@@ -19,12 +19,22 @@ Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('registration', 'HomeController@registration')->name('registration');
 
+Route::post('register-user', 'HomeController@store')->name('register-user');
+
 Route::get('login', 'HomeController@login')->name('login');
-
-Route::get('logout', 'HomeController@logout')->name('logout');
-
-Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
 
-Route::post('register-user', 'HomeController@store')->name('register-user');
+Route::group(['middleware' => ['auth']], function () {
+
+Route::get('logout', 'HomeController@logout')->name('logout');
+
+Route::get('upload', 'HomeController@new_upload')->name('upload');
+
+Route::post('image-submit', 'UploadController@store')->name('image-submit');
+
+Route::get('upload-image', 'HomeController@upload_image')->name('upload-image');
+
+Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
+
+});

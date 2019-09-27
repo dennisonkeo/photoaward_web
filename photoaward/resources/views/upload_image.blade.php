@@ -28,7 +28,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/overlay-bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/app.css" />
 
-        <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/dropzone.css" />
+        {{-- <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/dropzone.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
     <script>if(top.location != self.location){top.location=self.location;}</script> 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -179,12 +180,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="row upload">
-                <form method="POST" action="https://users.worldphoto.org/competition/entry/submission" accept-charset="UTF-8" enctype="multipart/form-data"><input name="_token" type="hidden" value="kDji7xbSeh8jApbDq6U8BW7wO7riesiSpH5xZI94">
+                {{-- <form method="POST" action="https://users.worldphoto.org/competition/entry/submission" accept-charset="UTF-8" enctype="multipart/form-data"><input name="_token" type="hidden" value="kDji7xbSeh8jApbDq6U8BW7wO7riesiSpH5xZI94">
 
                 <input id="entry_id" name="entry_id" type="hidden" value="null">
-                <input name="category_id" type="hidden" value="133">
+                <input name="category_id" type="hidden" value="133"> --}}
 
-                <div class="col-xs-12 col-sm-12 col-md-7">
+                <div class="col-xs-12 col-sm-12 col-md-12" style="margin: 0 auto;">
                     <div class="panel panel-default">
                         <div class="panel-heading"><strong>Upload images</strong></div>
                         <div class="panel-body">
@@ -196,11 +197,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </h4>
                             
                             <div class="form-inline">
-                                <div class="dropzone">
-                                    <div class="form-group">
+                                <div class="drozon">
+                                    <form action="/file-upload"
+                                      class="dropzone"
+                                      id="my-awesome-dropzone">
+                                          
+                                      </form>
+                                    {{-- <div class="form-group">
                                         <div class="fallback">
-                                                                                    </div>
-                                    </div>
+                                          
+                                        </div>
+                                    </div> --}}
                                 </div>
                                 <div class="restrictions">
                                     <small>Image file extensions accepted: jpg jpeg png</small>
@@ -216,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div> <!-- End col -->
 
                                                 <div class="col-xs-12 col-sm-12 col-md-5">
-                    <div class="row">
+                    {{-- <div class="row">
                         
                         <fieldset class="form-group ">
                             <label for="series_name">
@@ -240,12 +247,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </fieldset>
 
                         
-                  </div> <!-- End row -->
-                </div> <!-- End col -->
+                  </div>  --}}
+                  <!-- End row -->
+                </div> 
+                <!-- End col -->
                 
                 <div class="col-xs-12 col-sm-12 col-md-12 buttons">
                     
-                    <button type="submit" class="btn btn-success submit-button" name="continue" value="1">
+                    <button type="submit" class="btn btn-success submit-button" name="" value="">
                         <i class="fa fa-floppy-o fa-lg"></i>
                         Save and continue
                     </button>
@@ -254,14 +263,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <small>or</small>
 
                     <span class="danger">
-                        <a href="submit.html#competitions" class="btn btn-danger" role="button">
+                        <a href="submit-entry#competitions" class="btn btn-danger" role="button">
                             <i class="fa fa-trash-o fa-lg"></i>
                             Cancel
                         </a>
                     </span>
                 </div>
 
-                </form>
+                {{-- </form> --}}
             </div> <!-- End row -->
         </div> <!-- End col -->
     </div> <!-- End row -->
@@ -283,6 +292,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>
     <script>
         /*
          * Fixes: TypeError: a.swap is not a function
@@ -348,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
-    <script src="https://users.worldphoto.org/js/dropzone.js"></script>
+{{--     <script src="https://users.worldphoto.org/js/dropzone.js"></script>
     
     <script>
                 $('#confirmation-modal').modal({
@@ -375,7 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             $(".submit-button").prop("disabled", locked);
         }
         
-        updateButtons(true);
+        updateButtons(false);
         
         
         function displayError(message) {
@@ -440,9 +451,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             dictDefaultMessage: "Drop files here to upload",
             dictFallbackMessage: "Your browser does not support drag&#039;n&#039;drop file uploads.",
             dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
-            dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize =&gt; {{maxFilesize}}MiB.",
+            dictFileTooBig: "File is too big (MiB). Max filesize =&gt; MiB.",
             dictInvalidFileType: "You can&#039;t upload files of this type.",
-            dictResponseError: "Server responded with {{statusCode}} code.",
+            dictResponseError: "Server responded with  code.",
             dictCancelUpload: "Cancel upload",
             dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
             dictRemoveFile: "Remove file",
@@ -455,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 b: "b"
             },
         });
-    </script>
+    </script> --}}
     
             <script>
                         counter = function() {
