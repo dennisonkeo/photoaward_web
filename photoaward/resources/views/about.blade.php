@@ -66,7 +66,7 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
-  background-image: url('{{ asset('images/coconut-drink-on-beach.jpg') }}');
+  background-image: url('{{ asset('images/pic17.jpg') }}');
 
   /* Set a specific height */
   min-height: 690px; 

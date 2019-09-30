@@ -177,7 +177,7 @@ initializeClock('clockdiv', deadline);
 				<ul id="images">
 				
 				
-					<li><img src="{{ asset('images/skyscrapers.jpg') }}" alt="top01" /></li>
+					<li><img src="{{ asset('pic10.jpg') }}" alt="top01" /></li>
 				
 				
 				
@@ -185,19 +185,19 @@ initializeClock('clockdiv', deadline);
 				
 				
 				
-					<li><img src="{{ asset('images/city-sunset-smoke.jpg') }} " alt="top03" /></li>
+					<li><img src="{{ asset('images/pic3.jpg') }} " alt="top03" /></li>
 				
 				
 				
-					<li><img src="http://www.nairobibusinessmonthly.com/wp-content/uploads/2017/09/1185653211adc064092a681acf400e11148895e8.jpg" /></li>
+					<li><img src="{{ asset('images/pic12.jpg') }} " alt="top04" /></li>
 				
 				
 				
-					<li><img src="http://www.travelstart.co.ke/blog/wp-content/uploads/2014/06/Brew-Bistro.jpg" alt="top05" /></li>
+					<li><img src="{{ asset('images/pic19.jpg') }} " alt="top05" /></li>
 				
 				
 				
-					<li><img src="https://cdn.designdevelopmenttoday.com/files/base/indm/ddt/image/2019/07/16x9/960w/iStock_469636651.5d35c75c4597b.jpg" alt="top06" /></li>
+					<li><img src="{{ asset('images/pic16.jpg') }} " alt="top06" /></li>
 				
 				
 				</ul>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,13 +23,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{{asset('css/style.css')}}">
     <!--Google Analytics-->
-	<script src="libs.js" type="text/javascript"></script>
-	<script src="common.js" type="text/javascript"></script>
+	<script src="{{asset('js/libs.js')}}" type="text/javascript"></script>
+	<script src="{{asset('js/common.js')}}" type="text/javascript"></script>
 
-	<link rel="stylesheet" href="gallery.css">
-	<link rel="stylesheet" href="style-expand-effect.css">
+	<link rel="stylesheet" href="{{asset('css/gallery.css')}}">
+	<link rel="stylesheet" href="{{asset('css/style-expand-effect.css')}}">
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -258,7 +260,7 @@ img{
 					</a>
 				</div> -->
 
-				<script type="text/javascript" src="flow_grid_init.js"></script>
+				<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 			<!-- </div> -->
 
 
@@ -290,6 +292,7 @@ img{
 
 
 </div> 
+</div>
 
 <div id="footer">
 	<div class="container">
