@@ -10,27 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WNTJZVQ');</script>
-<!-- End Google Tag Manager -->
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+
+   {{--  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'> --}}
 
-    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-select.css" />
-    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/overlay-bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/app.css" />
+    {{-- <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-select.css" /> --}}
+    {{-- <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-datepicker.css" /> --}}
+    {{-- <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/overlay-bootstrap.min.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/photo.css') }}">
 
         {{-- <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/dropzone.css" /> --}}
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css">
-    <script>if(top.location != self.location){top.location=self.location;}</script> 
+    {{-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.css"> --}}
+    {{-- <script>if(top.location != self.location){top.location=self.location;}</script>  --}}
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -168,7 +170,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- /.vertical-alignment-helper -->
     <!-- /.modal -->
 
--->
         
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -189,9 +190,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="panel panel-default">
                         <div class="panel-heading"><strong>Upload images</strong></div>
                         <div class="panel-body">
+                            
+                            <div class="col-lg-12 col-sm-12 col-11 main-section">
+                {{-- <h2 class="text-center text-success">Upload your images here</h2> --}}
 
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <div class="form-group">
+
+                    <input type="hidden" name="category" value="1">
+                    
+                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
+                </div>
+                
+            </div>
                             <!-- Standar Form -->
-                            <h4>
+                         {{--    <h4>
                                 Please upload some images
                                 <span class="label label-required">Required</span>
                             </h4>
@@ -203,11 +217,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                       id="my-awesome-dropzone">
                                           
                                       </form>
-                                    {{-- <div class="form-group">
+                                    <div class="form-group">
                                         <div class="fallback">
                                           
                                         </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="restrictions">
                                     <small>Image file extensions accepted: jpg jpeg png</small>
@@ -216,9 +230,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <br>
                                     <small>Maximum image file(s) size allowed to be uploaded in one go: 52MB</small>
                                 </div>
-                            </div>
+                            </div> --}}
 
-                                                    </div>
+                        </div>
+
+
                     </div> <!-- End panel -->
                 </div> <!-- End col -->
 
@@ -282,192 +298,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p style="text-align: center;">footer</p>
 </div>
 </footer>        
-        <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+        {{-- <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-select.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-datepicker.min.js"></script>
 
         
     <script src="https://users.worldphoto.org/js/app.js"></script>
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
 
-    <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
+    {{-- <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script> --}}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script>
-    <script>
-        /*
-         * Fixes: TypeError: a.swap is not a function
-         * https://github.com/aFarkas/webshim/issues/560#issuecomment-181543832
-         */
-        /* jscs:disable */
-        if (typeof jQuery.swap !== 'function') {
-            jQuery.swap = function( elem, options, callback, args ) {
-                var ret, name, old = {};
-                // Remember the old values, and insert the new ones
-                for ( name in options ) {
-                    old[ name ] = elem.style[ name ];
-                    elem.style[ name ] = options[ name ];
-                }
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/dropzone.js"></script> --}}
 
-                ret = callback.apply( elem, args || [] );
-
-                // Revert the old values
-                for ( name in options ) {
-                    elem.style[ name ] = old[ name ];
-                }
-                return ret;
-            };
-        }
-        /* jscs:enable */
-
-        webshim.setOptions("forms", {
-            lazyCustomMessages: true,
-            iVal: {
-                sel: 'form',
-                handleBubble: 'hide', // hide error bubble
-
-                //add bootstrap specific classes
-                errorMessageClass: 'help-block',
-                errorWrapperClass: 'has-error',
-
-                //add config to find right wrapper
-                fieldWrapper: '.form-group'
-            }
-        });
-        
-        webshim.validityMessages.en = {"badInput":{"date":"Please enter a date.","datetime-local":"Please enter a datetime.","defaultMessage":"Please enter a valid value.","month":"Please enter a valid value.","number":"Please enter a number.","range":"Invalid input.","time":"Please enter a time."},"patternMismatch":"Invalid input. {%title}","rangeOverflow":{"date":"Value must be at or before {%max}.","datetime-local":"Value must be at or before {%max}.","defaultMessage":"Value must be less than or equal to {%max}.","month":"Value must be at or before {%max}.","time":"Value must be at or before {%max}."},"rangeUnderflow":{"date":"Value must be at or after {%min}.","datetime-local":"Value must be at or after {%min}.","defaultMessage":"Value must be greater than or equal to {%min}.","month":"Value must be at or after {%min}.","time":"Value must be at or after {%min}."},"stepMismatch":"Invalid input.","tooLong":"Please enter at most {%maxlength} character(s). You entered {%valueLen}.","tooShort":"Please enter at least {%minlength} character(s). You entered {%valueLen}.","typeMismatch":{"defaultMessage":"Please enter a valid value.","email":"Please enter an email address.","url":"Please enter a URL."},"valueMissing":{"checkbox":"Please check this box if you want to proceed.","defaultMessage":"Please fill out this field.","radio":"Please select an option.","select":"Please select an option."}};
-        webshim.activeLang('en');
-        
-        webshim.polyfill('forms');
-    </script>
-
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '746055978761303');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=746055978761303&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-{{--     <script src="https://users.worldphoto.org/js/dropzone.js"></script>
-    
-    <script>
-                $('#confirmation-modal').modal({
-            backdrop: 'static',
-            keyboard: false
-        });
-        
-        $('#continue-button', '#confirmation-modal').click(function() {
-            var passed = true;
-            
-            $('.confirmation-element', '#confirmation-modal').each(function() {
-                if(!this.checked) {
-                    $('.alert', '#confirmation-modal').show();
-                    passed = false;
-                }
-            });
-            
-            if(passed) {
-                $('#confirmation-modal').modal('hide');
-            }
-        });
-                
-        function updateButtons(locked) {
-            $(".submit-button").prop("disabled", locked);
-        }
-        
-        updateButtons(false);
-        
-        
-        function displayError(message) {
-            alert(message);
-        }
-        
-        // Disable auto discover for all elements:
-        Dropzone.autoDiscover = false;
-
-                var entryId = "null";
-
-        var myDropzone = new Dropzone(".dropzone", {
-            url: "https://users.worldphoto.org/competition/entry/upload",
-            paramName: "file", // The name that will be used to transfer the file
-            maxFilesize: 52, // MB
-            timeout: 120000, // milliseconds  (2 Mins)
-            parallelUploads: 1,
-            thumbnailWidth: null, // Set to null so auto based on ratio
-            init: function() {
-                this.on("addedfile", function(file) {
-                    //console.log('added file');
-                });
-                this.on("sending", function(file, xhr, formData) {
-                    updateButtons(true);
-
-                    formData.append("_token", "kDji7xbSeh8jApbDq6U8BW7wO7riesiSpH5xZI94");
-                    formData.append("entry_id", entryId);
-                    formData.append("category_id", 133);
-                    //console.log('sending id:' + entryId);
-                });
-                
-                this.on("success", function(file, response) {
-                    if(typeof response != "object") {
-                        displayError("Server connection issues, refresh the page and try again!");
-
-                        myDropzone.removeFile(file);
-
-                        return;
-                    }
-                    
-                    if(response.status == "success") {
-                            // Update entryId, primariy needed for new competitions
-                        entryId = response.entry_id;
-                        $('#entry_id').val(entryId);
-                    }
-                    
-                    if(response.status == "error") {
-                        // Display errors
-                        displayError(response.errors[0]);
-                        // remove file display form Dropzone
-                        myDropzone.removeFile(file);
-                        
-                        return; // Leave Save button disabled if an error happened
-                    }
-                    
-                    updateButtons(false);
-                });
-                this.on("totaluploadprogress", function(progress, total, sent) {
-                    //console.log(['progress', progress, total, sent]);
-                });
-            },
-            dictDefaultMessage: "Drop files here to upload",
-            dictFallbackMessage: "Your browser does not support drag&#039;n&#039;drop file uploads.",
-            dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
-            dictFileTooBig: "File is too big (MiB). Max filesize =&gt; MiB.",
-            dictInvalidFileType: "You can&#039;t upload files of this type.",
-            dictResponseError: "Server responded with  code.",
-            dictCancelUpload: "Cancel upload",
-            dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
-            dictRemoveFile: "Remove file",
-            dictMaxFilesExceeded: "You can not upload any more files..",
-            dictFileSizeUnits: {
-                tb: "TB",
-                gb: "GB",
-                mb: "MB",
-                kb: "KB",
-                b: "b"
-            },
-        });
-    </script> --}}
-    
+{{--     
             <script>
                         counter = function() {
             var max_words = 150;
@@ -502,9 +346,79 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             textarea.focus(counter);
             counter(); // finally trigger on page load
         });
-    </script>
+    </script> --}}
         
-    
+ 
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    $("#file-1").fileinput({
+        theme:'fa',
+        uploadUrl:"image-submit",
+        // deleteUrl: '',
+
+        uploadExtraData: function () {
+
+                return {
+                    _token: $("input[name='_token']").val(),
+                    category: $("input[name='category']").val()
+                };
+        },
+
+        allowedFileExtensions: ['jpg','jpeg','png'],
+
+        overwriteInitial:false,
+
+        maxFileSize: 2000,
+
+        maxFileNum: 8,
+
+        removeFromPreviewOnError: false,
+
+        showRemove: true,
+
+        browseOnZoneClick: true,
+
+        showCancel: null,
+
+        // showClose: false,  
+
+        // showCaption: false,
+
+        previewThumbTags: {},
+
+        initialPreviewShowDelete: false,
+
+        // uploadUrlThumb: null,
+
+        showPreview: true,
+
+        fileActionSettings: {
+                        showRemove: true,
+                        showUpload: false,
+                        showZoom: true,
+                        // showDrag: false,
+                    },
+
+        slugCallBack: function (filename){
+
+            // return filename.replace('(','_').replace(']','_');
+        }
+    }).on('filebatchuploadcomplete', function() {
+        // console.log('File Batch Uploaded', preview, config, tags, extraData);
+         window.location.href =  'upload';
+    });
+
+</script>   
     
 </body>
 </html>

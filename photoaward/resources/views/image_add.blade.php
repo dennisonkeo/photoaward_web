@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">
 
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/5.0.6/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 	<style type="text/css">
 		.main-section{
@@ -17,6 +17,7 @@
 			background: #fff;
 			box-shadow: 0 0 20px #c1c1c1;
 		}
+
 	</style>
 </head>
 <body class="bg-info">
@@ -40,11 +41,11 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/js/fileinput.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.6/themes/fa/theme.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+{{-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script> --}}
 
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
@@ -53,6 +54,7 @@
 	$("#file-1").fileinput({
 		theme:'fa',
 		uploadUrl:"image-submit",
+		// deleteUrl: '',
 
 		uploadExtraData: function () {
 
@@ -61,13 +63,38 @@
 				};
 		},
 
-		allowedFileExtensions: ['jpg','jpeg','ping'],
+		allowedFileExtensions: ['jpg','jpeg','png'],
 
 		overwriteInitial:false,
 
 		maxFileSize: 2000,
 
 		maxFileNum: 8,
+
+		removeFromPreviewOnError: false,
+
+		showRemove: true,
+
+		browseOnZoneClick: true,
+
+		// showClose: false,  
+
+		// showCaption: false,
+
+		previewThumbTags: {},
+
+		initialPreviewShowDelete: false,
+
+		// uploadUrlThumb: null,
+
+		showPreview: true,
+
+		fileActionSettings: {
+                        showRemove: true,
+                        showUpload: false,
+                        showZoom: true,
+                        showDrag: false,
+                    },
 
 		slugCallBack: function (filename){
 

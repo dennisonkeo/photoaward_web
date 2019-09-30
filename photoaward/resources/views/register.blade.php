@@ -146,7 +146,7 @@
 		<div lang="en">
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 
-				<form class="login100-form validate-form" style="margin-top: -100px;" method="POST" action="register-user">
+				<form action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
 					{{ csrf_field() }}
 					<span class="login100-form-title p-b-59" style="height: 40px; background: #000; width: 100%; padding-left: 10px; color: white; border-radius: 5px; font-family: cambria;">
 						Sign Up
@@ -164,7 +164,7 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Username is required" style="margin: 5px;">
+					<div class="wrap-input100 validate-input" data-validate="Phone No is required" style="margin: 5px;">
 						<span class="label-input100">Phone No</span>
 						<input class="input100" type="text" name="phone" placeholder="Phone No...">
 						<span class="focus-input100"></span>

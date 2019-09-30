@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Upload;
+use App\Category;
+use App\ImagePay;
+use Illuminate\Support\Str;
+
 use Illuminate\Http\Request;
+
+use Auth;
 
 class UploadController extends Controller
 {
@@ -14,7 +20,7 @@ class UploadController extends Controller
      */
     public function index()
     {
-        //
+        return view('upload_details');
     }
 
     /**
@@ -35,11 +41,35 @@ class UploadController extends Controller
      */
     public function store(Request $request)
     {
-        $imageName = $request->file->getClientOriginalName();
+        // $imageName = $request->file->getClientOriginalName();
 
-        $request->file->move(public_path('uploads'),$imageName);
+        // $request->file->move(public_path('uploads'),$imageName);
 
-        return response()->json(['uploaded'=>'/uploads/'.$imageName]);
+        $token = Str::random();
+
+        $image = $request->file('file');
+
+        $image_name = time().$image->getClientOriginalName();
+
+        $image->move(public_path('uploads'),$image_name);
+
+        $imagePath = "/uploads/$image_name";
+
+        $upload = new Upload();
+
+          $upload->imageName = $image_name;
+          $upload->imagePath = $imagePath;
+          $upload->token = $request->input("_token");
+          $upload->caption = "";
+          $upload->user_id = Auth::user()->id;
+          $upload->category_id = $request->input("category");
+
+          $upload->save();
+
+        return response()->json(['uploaded'=>'/uploads/'.$image_name]);
+
+          // return redirect('login')->with('success', 'Thank you for registering with us.');
+          // return "Done";
     }
 
     /**
