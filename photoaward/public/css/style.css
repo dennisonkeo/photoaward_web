@@ -3662,7 +3662,7 @@ textarea.focus,
 	#contact.overlay .section-tabled .tabled-td > [lang="en"]{
 		float:none;
 		width:100%;
-		margin-bottom:50px;
+		/*margin-bottom:50px;*/
 	}
 
 }
