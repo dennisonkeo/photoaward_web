@@ -55,11 +55,15 @@ class UploadController extends Controller
 
         $imagePath = "/uploads/$image_name";
 
+        $imagePay = new ImagePay();
+
+        $imagePay = ImagePay::where('email', )->first();
+
         $upload = new Upload();
 
           $upload->imageName = $image_name;
           $upload->imagePath = $imagePath;
-          $upload->token = $request->input("_token");
+          $upload->token = $request->input("random_str");
           $upload->caption = "";
           $upload->user_id = Auth::user()->id;
           $upload->category_id = $request->input("category");

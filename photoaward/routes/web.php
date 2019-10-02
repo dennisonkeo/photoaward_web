@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+// Route::get('view', function () {
+//     return view('upload_view');
+// });
+
+Route::get('slidder', function () {
+    return view('slidder');
+});
+
 Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('registration', 'HomeController@registration')->name('registration');
@@ -28,6 +36,8 @@ Route::post('user-login', 'HomeController@login_user')->name('user-login');
 Route::group(['middleware' => ['auth']], function () {
 
 Route::get('logout', 'HomeController@logout')->name('logout');
+
+Route::get('upload-info', 'HomeController@upload_info')->name('upload-info');
 
 Route::get('upload', 'HomeController@new_upload')->name('upload');
 

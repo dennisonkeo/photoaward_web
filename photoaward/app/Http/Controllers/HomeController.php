@@ -38,6 +38,12 @@ class HomeController extends Controller
         return view('login');
     }
 
+    public function upload_info()
+    {
+        
+        return view('upload_view');
+    }
+
     public function upload_image()
     {
         

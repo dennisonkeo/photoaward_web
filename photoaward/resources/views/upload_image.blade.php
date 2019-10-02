@@ -199,6 +199,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="form-group">
 
                     <input type="hidden" name="category" value="1">
+                    <input type="hidden" name="random_str" value="" id="rand">
                     
                     <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
                 </div>
@@ -361,6 +362,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script type="text/javascript">
+
+    $('#rand').val(Math.random().toString(36).substring(5));
+
     $("#file-1").fileinput({
         theme:'fa',
         uploadUrl:"image-submit",
@@ -370,7 +374,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 return {
                     _token: $("input[name='_token']").val(),
-                    category: $("input[name='category']").val()
+                    category: $("input[name='category']").val(),
+                    random_str: $("input[name='random_str']").val()
+                
                 };
         },
 
@@ -415,7 +421,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }).on('filebatchuploadcomplete', function() {
         // console.log('File Batch Uploaded', preview, config, tags, extraData);
-         window.location.href =  'upload';
+         window.location.href =  'upload-info';
+         // console.log();
     });
 
 </script>   
