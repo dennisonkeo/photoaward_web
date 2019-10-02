@@ -48,6 +48,14 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<style type="text/css">
+    body{
+        backgound: #f2f2f2;
+    }
+    header{
+        background: #f2f2f2;
+    }
+</style>
     
 </head>
 

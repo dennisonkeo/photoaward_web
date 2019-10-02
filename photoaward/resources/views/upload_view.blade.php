@@ -40,13 +40,15 @@
 
 				<div class="form-group" style="margin: 0 auto;">
 					
-					<p style="">Total Images Uploaded: <span style="font-weight: bold;">5</span></p>
-					<p>Total Amount: <span style="font-weight: bold;">Ksh. 1200</span></p><br>
+					<p style="">Total Images Uploaded: <span style="font-weight: bold;">
+						{{ $images->total_images }}
+					</span></p>
+					<p>Total Amount: <span style="font-weight: bold;">Ksh. {{ $totalPay }}</span></p><br>
 				<hr>
 				<div class="form-group">
 					<button class="btn btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-money"></i> Compete</button>
 
-					<button class="btn btn-danger pull-right"><i class="fa fa-close"></i> Cancel</button>
+					<button class="btn btn-danger pull-right" onclick="window.location='{{ url("submit-entry#my-competitions") }}'"><i class="fa fa-close"></i> Cancel</button>
 					 
 				</div>
 				
@@ -78,7 +80,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button>
+        <button type="button" onclick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button>
       </div>
     </div>
   </div>
