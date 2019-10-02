@@ -46,6 +46,11 @@
 <script src="https://www.worldphoto.org/sites/default/files/js/js_m4j4J_Uu_bwewE6jk1mA1P3KbxellEeWN9cTmPjK51E.js"></script>
     <!--Google Analytics-->
 
+<link rel="stylesheet" type="text/css" href="css/main/main.css"/>
+    
+  <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+<script type="text/javascript" src="{{('js/main/jquery.yiiactiveform')}}.js"></script>
+
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 	
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
@@ -92,7 +97,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a href="#" class="hover-line"><span></span></a></div><button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff00ff; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -116,7 +121,127 @@
 <div class="parallax"></div>
 	<div id="contents-wrap">
 		<div id="contents">
-			<div id="profile" class="content" style="background-image: url('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat;">
+
+    <div id="profile2" class="contnt" style="backgound: purple; height: 500px; margin: 3px;">
+
+      <div class="containe" id="slider" style="background: yellow;">
+
+                  <div class="page" >
+                  
+                    <div class="nav-left">
+                        <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
+                    </div>
+                        <div id="mainSlider" style="opaity: 0.5" style="background: green; ">
+                            <div class="group">
+                            
+                                <div class="item" style="background: black;">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_03-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_03-400.jpg">-->
+                                        <img src="images/pic1_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_06-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_06-400.jpg">-->
+                                        <img src="images/pic2_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_07-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_07-400.jpg">-->
+                                        <img src="images/pic7_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_08-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_08-400.jpg">-->
+                                        <img src="images/pic3_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_09-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_09-400.jpg">-->
+                                        <img src="images/pic5_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_10-250.jpg">-->
+                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_10-400.jpg">-->
+                                        <img src="images/pic16_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic19_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic17_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic18_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic11_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_02-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_02-400.jpg">-->
+                                        <img src="images/pic6_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic12_.jpg">
+                                    </picture>
+                                </div>
+                                <div class="item">
+                                    <picture>
+                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                                        <img src="images/pic20_.jpg">
+                                    </picture>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    <div class="nav-right">
+                        <a href="#" style="width: 35px; height: 54px; background: url('images/next_slider.png') center no-repeat; display: block; text-indent: -9999px;">next</a>
+                    </div>
+
+
+              </div>
+      </div>
+
+  </div>
+
+
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen;">
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">
@@ -124,28 +249,11 @@
 							<li><a href="#" lang="ja"><span>JP</span></a></li>
 						</ul>
 					</div> -->
-					<div class="sections">
-<!-- 					  <div class="section section-tabled">
+<div class="sections">
 
-	<div class="tabled-td">
-		<div lang="en">
-			<h2 style="color: red; text-transform: uppercase;">be internationally recognized</h2>
-			<p class="catch" style="text-transform: capitalize; font-style: italic;">
-				In the world of photography 
-			</p>
-			<p class="text_line" >
-				
-
-			The highly acclaimed PHOTO AWARDS is a melting pot of some of the world’s most outstanding and talented souls in the field of photography where recognition, prestige and publicity are instantaneously gained by the winning entry. This is an open invitation. Join us and take part in the competition!
-			</p>
-		</div>
-
-	</div>
-</div> -->
-
-<div class="section section-tabled">
-<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
-  
+  <div class="section section-tabled">
+  <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
+    
   <div class="field-content">
     <div class="entity entity-paragraphs-item paragraphs-item-accordion">
   <div class="content">
@@ -203,7 +311,9 @@ Content
   </div>
 </div>
 
-</div><div class="section section-tabled">
+</div>
+
+<div class="section section-tabled">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -561,7 +671,9 @@ Content
 </div>
  -->
 
-	</div>		
+	</div>
+
+    <script type="text/javascript" src="js/main/slider.js"></script>		
 
       <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script>	
 					

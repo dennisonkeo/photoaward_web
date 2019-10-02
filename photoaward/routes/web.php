@@ -11,11 +11,19 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('index', function () {
     return view('index');
 });
 Route::get('categories', function () {
     return view('categories');
+});
+
+Route::get('slider', function () {
+    return view('slider');
+});
+
+Route::get('/', function () {
+    return view('index2');
 });
 
 Route::get('about', 'HomeController@about')->name('about');

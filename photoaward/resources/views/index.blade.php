@@ -16,18 +16,96 @@
     <meta property="og:description" content="" />
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="{{asset('js/jquery.carouFredSel-6.0.4-packed.js')}}" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#carousel').carouFredSel({
+					responsive: true,
+					scroll: 1,
+					items: {
+						width: 300,
+						height: '66%',
+						visible: {
+							min: 2,
+							max: 5
+						}
+					}
+				});
+			});
+		</script>
+		<style type="text/css">
+
+			#wrapper {
+				background-color: #f6f6f6;
+				box-shadow: 0 0 10px #aaa;
+				width: 80%;
+				height: 90%;
+				margin: 0;
+				position: absolute;
+				left: 10%;
+				top: 5%;
+			}
+			#wrapper h3 {
+				font-size: 20px;
+				text-align: center;
+				color: #999;
+				margin: 0;
+				padding-top: 50px;
+			}
+			#inner {
+				width: 100%;
+				height: 400px;
+				overflow: hidden;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin: -100px 0 0 0;
+			}
+			#carousel img {
+				height: auto;
+				border: none;
+				display: block;
+				float: left;
+				padding: 0 10px;
+			}
+			
+			#donate-spacer {
+				height: 100%;
+			}
+			#donate {
+				width: 750px;
+				padding: 50px 75px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			#donate p, #donate form {
+				margin: 0;
+				float: left;
+			}
+			#donate p {
+				width: 650px;
+			}
+			#donate form {
+				width: 100px;
+			}
+		</style>
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	{{-- <link rel="stylesheet" href="style.css"> --}}
+
+	<link href="{{ asset('css/main/main.css') }}" rel="stylesheet" media="all">
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
     <!--Google Analytics-->
-	{{-- <script src="libs.js" type="text/javascript"></script> --}}
+
+	
+	<script type="text/javascript" src="{{ asset('js/main/main.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>
 	<script type="text/javascript" src="{{ asset('js/common.js') }}"></script>
-	{{-- <script src="common.js" type="text/javascript"></script> --}}
+
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -170,14 +248,115 @@ initializeClock('clockdiv', deadline);
 						    <div class="smalltext">Seconds</div>
 						  </div>
 					</div>
-				
-					</div><br><br>
+
 				</div>
 
-				<ul id="images">
+				<div class="nav-left">
+            <a href="#">prev</a>
+        </div>
+        <div id="mainSlider" style="opaity: 0.5" >
+            <div class="group">
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_03-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_03-400.jpg">-->
+                        <img src="images/ndawards_2019_03.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_06-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_06-400.jpg">-->
+                        <img src="images/ndawards_2019_04.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_07-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_07-400.jpg">-->
+                        <img src="images/ndawards_2019_05.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_08-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_08-400.jpg">-->
+                        <img src="images/ndawards_2019_06.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_09-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_09-400.jpg">-->
+                        <img src="images/ndawards_2019_07.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+<!--                        <source media="(max-width: 600px)" srcset="/img2/slide_10-250.jpg">-->
+<!--                        <source media="(max-width: 900px)" srcset="/img2/slide_10-400.jpg">-->
+                        <img src="images/ndawards_2019_08.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_09.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_10.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_11.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_12.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_02-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_02-400.jpg">-->
+                        <img src="images/ndawards_2019_02.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_13.jpg">
+                    </picture>
+                </div>
+                <div class="item">
+                    <picture>
+                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
+                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
+                        <img src="images/ndawards_2019_14.jpg">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="#"><i class="fa fa-chevron-right"></i> next</a>
+        </div>
+
+				<!-- <ul id="images">
 				
 				
-					<li><img src="{{ asset('pic10.jpg') }}" alt="top01" /></li>
+					<li><img src="{{ asset('images/pic10.jpg') }}" alt="top01" /></li>
 				
 				
 				
@@ -200,7 +379,7 @@ initializeClock('clockdiv', deadline);
 					<li><img src="{{ asset('images/pic16.jpg') }} " alt="top06" /></li>
 				
 				
-				</ul>
+				</ul> -->
 
 
 				<div id="scroll-info">
@@ -209,8 +388,13 @@ initializeClock('clockdiv', deadline);
 				</div>
 			</div>
 
-			{{-- <script src="index.js" type="text/javascript"></script> --}}
 			<script type="text/javascript" src="{{ asset('js/index.js') }}"></script>
+
+			<script type="text/javascript" src="{{ asset('js/main/slider.js') }}"></script>
+			<script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+			<script type="text/javascript" src="{{('js/main/jquery.yiiactiveform')}}.js"></script>
+
+			
 		</div>
 	</div>
 </div>
@@ -228,6 +412,23 @@ initializeClock('clockdiv', deadline);
 
 	</div>
 </div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("top");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script type="text/javascript" src></script>
 <script type="text/javascript">
 	function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
