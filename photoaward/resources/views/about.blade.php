@@ -88,6 +88,82 @@
 	font-family: cambria;
 }
 </style>
+
+ <script type="text/javascript">
+  function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+</script>
+
+    <style type="text/css">
+      #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+    opacity: 0.7;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 5px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+    </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
@@ -118,7 +194,36 @@
 		
 	</div>
 </div>
-<div class="parallax"></div>
+<div class="parallax">
+<p>
+  A GLOBAL COMPETITION FOR PROFESSIONALS AND PHOTOGRAPHY'S EMERGING TALENTS
+</p>
+
+
+        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 345px; background: orange; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button><br><br>
+          <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div class="try">
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+          </div><br><br>
+          
+        </div>
+</div>
+
 	<div id="contents-wrap">
 		<div id="contents">
 
@@ -241,7 +346,7 @@
   </div>
 
 
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen;">
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">
@@ -683,27 +788,7 @@ Content
 	</div><!-- /#contents-wrap -->
 
 </div>
-<div id="menu">
-<nav id="gnavi-links" class="nav-links">
-<ul class="hover-line-links">
-	<li><a href="login.html"><span>SUBMIT</span></a></li>
-<li><a href="about.html" class="current"><span>ABOUT CONTEST</span></a></li>
-<li><a href="/news"><span>GUIDELINES</span></a></li>
-<li><a href="categories.html" ><span>CATEGORIES</span></a></li>
-<li><a href="/press"><span>ENTRY FEES</span></a></li>
-<li><a href="/contact"><span>PRIZES</span></a></li>
-<li><a href="jury.html"><span>THE JURY</span></a></li>
-<li><a href="/contact"><span>CONTACT</span></a></li>
-<li><a href="/contact"><span>FAQ</span></a></li>
-<li><a href="/contact"><span></span></a></li>
-
-
-</ul>
-</nav>
-
-
-
-</div> 
+@include('menu')
 <div id="footer">
 	<div class="container">
 
@@ -714,7 +799,49 @@ Content
 </div>
 
 
-					
+<script type="text/javascript">
+  function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+</script>				
 
 
 </body>

@@ -23,7 +23,7 @@ Route::get('slider', function () {
 });
 
 Route::get('/', function () {
-    return view('index2');
+    return view('about');
 });
 
 // Route::get('view', function () {
