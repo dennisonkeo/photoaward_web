@@ -45,32 +45,77 @@ class UploadController extends Controller
 
         // $request->file->move(public_path('uploads'),$imageName);
 
-        $token = Str::random();
 
-        $image = $request->file('file');
-
-        $image_name = time().$image->getClientOriginalName();
-
-        $image->move(public_path('uploads'),$image_name);
-
-        $imagePath = "/uploads/$image_name";
+        
 
         $imagePay = new ImagePay();
 
-        $imagePay = ImagePay::where('email', )->first();
+        $imageCheck = ImagePay::where('token',"=",$request->input('random_str'))
+                    ->where('user_id',"=",Auth::user()->id)
+                    ->first();
+        if(!$imageCheck)
+        {
+            $image = $request->file('file');
 
-        $upload = new Upload();
+            $image_name = time().$image->getClientOriginalName();
 
-          $upload->imageName = $image_name;
-          $upload->imagePath = $imagePath;
-          $upload->token = $request->input("random_str");
-          $upload->caption = "";
-          $upload->user_id = Auth::user()->id;
-          $upload->category_id = $request->input("category");
+            $image->move(public_path('uploads'),$image_name);
 
-          $upload->save();
+            $imagePath = "/uploads/$image_name";
+
+
+              $upload = new Upload();
+
+              $upload->imageName = $image_name;
+              $upload->imagePath = $imagePath;
+              $upload->token = $request->input("random_str");
+              $upload->caption = "";
+              $upload->user_id = Auth::user()->id;
+              $upload->category_id = $request->input("category");
+
+              $upload->save();
+
+              $saveImage = new ImagePay();
+
+              $saveImage->user_id = Auth::user()->id;
+              $saveImage->total_images = 1;
+              $saveImage->token = $request->input("random_str");
+
+              $saveImage->save();
+
+            return response()->json(['uploaded'=>'/uploads/'.$image_name]);
+        }
+        else
+        {
+        
+            $image = $request->file('file');
+
+            $image_name = time().$image->getClientOriginalName();
+
+            $image->move(public_path('uploads'),$image_name);
+
+            $imagePath = "/uploads/$image_name"; //save image path to folder
+
+
+            $imageP = ImagePay::where("token", "=", $request->input('random_str'))->first();
+
+            ImagePay::where('token',"=", $request->input('random_str'))->update(array('total_images' => ($imageP->total_images + 1)));
+
+             $upload = new Upload();
+
+              $upload->imageName = $image_name;
+              $upload->imagePath = $imagePath;
+              $upload->token = $request->input("random_str");
+              $upload->caption = "";
+              $upload->user_id = Auth::user()->id;
+              $upload->category_id = $request->input("category");
+
+              $upload->save();
 
         return response()->json(['uploaded'=>'/uploads/'.$image_name]);
+        }
+
+        
 
           // return redirect('login')->with('success', 'Thank you for registering with us.');
           // return "Done";

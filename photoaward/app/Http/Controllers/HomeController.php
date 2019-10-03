@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\ImagePay;
 use Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -41,7 +42,11 @@ class HomeController extends Controller
     public function upload_info()
     {
         
-        return view('upload_view');
+        $images = ImagePay::where('user_id', Auth::user()->id)->latest()->get()->first();
+
+        $totalPay = $images->total_images * 100;
+
+        return view('upload_view', compact("images", "totalPay"));
     }
 
     public function upload_image()
@@ -128,7 +133,9 @@ public function logout(Request $request)
 
 public function show_submit()
 {
-    return view('submit');
+    $records = ImagePay::where('user_id', Auth::user()->id)->latest()->get();
+    
+    return view('submit', compact("records"));
 }
 
     /**

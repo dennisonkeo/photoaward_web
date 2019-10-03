@@ -232,26 +232,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <thead class="thead-inverse">
         <tr>
             <th>ID</th>
-            <!-- <th>Competition</th> -->
             <th>Category</th>
-            <th>Closing date</th>
+            <th>Date Submitted</th>
             <th>Images submitted</th>
-            <th>Entry completed</th>
-            <th>View</th>
-            <th>Edit</th>            <th>Delete</th>        </tr>
+            <th>Total Amount</th>
+            <th>Payment Status</th>
+            <th>View</th>       
+        </tr>
     </thead>
     <tbody>
+        @foreach($records as $record)
              <tr>
-
-               </tr>
+                  <td>{{ $record->id }}</td>
+                  <td>Category 1</td>
+                  <td>{{ $record->updated_at }}</td>
+                  <td>{{ $record->total_images }} images</td>
+                  <td>{{ $record->total_images *100 }}</td>
+                  <td style="color: red;">{{ $record->status }}</td>
+                  <td><a href="#"><i class="fa fa-eye"></i> View</a></td>
+            </tr>
+        @endforeach
      </tbody>
 </table>
 
                     
 
-                </div>
+ </div>
                 
-                <div role="tabpanel" class="tab-pane table-responsive" id="past-entries">
+<div role="tabpanel" class="tab-pane table-responsive" id="past-entries">
                     
 
 <table class="table table-hover table-reflow">
@@ -259,17 +267,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <tr style="color: #ff00ff;">
             <th>ID</th>
             <th>Category</th>
-            <th>Closing date</th>
+            <th>Date Submitted</th>
             <th>Images submitted</th>
-            <th>Entry completed</th>
+            <th>Payment Status</th>
             <th>View</th>
-                                </tr>
+        </tr>
     </thead>
+
     <tbody>
-                    <tr>
+            <tr>
                 <td colspan="9">
                     <div class="empty">
-                        <h3>You haven&#039;t entered any competitions yet</h3>
+                        <h3>You haven't entered any competitions yet</h3>
                         <i class="fa fa-frown-o"></i>
                     </div>
                 </td>
