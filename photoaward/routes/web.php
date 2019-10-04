@@ -30,6 +30,8 @@ Route::get('/', function () {
 Route::get('anything', function () {
     return view('anything');
 
+  });
+
 Route::get('jury', function () {
     return view('jury');
 
