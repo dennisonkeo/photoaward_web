@@ -147,7 +147,7 @@ initializeClock('clockdiv', deadline);
 #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
+    background: #120106;
     display: inline-block;
     opacity: 0.7;
 }
@@ -155,8 +155,9 @@ initializeClock('clockdiv', deadline);
 #clockdiv div > span{
     padding: 15px;
     border-radius: 5px;
-    background: #00816A;
+    background: #000;
     display: inline-block;
+    color: #ff0051;
 }
 
 .smalltext{
@@ -169,11 +170,11 @@ initializeClock('clockdiv', deadline);
 <noscript>
 <div id="noscript_message"></div>
 </noscript>
-<div id="wrap">
+<div id="wrap" style="background: black;">
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="#" class="hover-line"><span></span></a></div><button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff00ff; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
+		<div id="logo"><a href="#" class="hover-line"><span></span></a></div><button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -193,15 +194,19 @@ initializeClock('clockdiv', deadline);
 
 		
 	</div>
+  <div class="logo pull-right" style="margin-top: 0px; margin-left: 2px;">
+<img src="images/logo.png" style="width: 236px;">
+  
 </div>
-<div class="parallax">
+</div>
+<div class="parallax" style="opacity: 0.6;">
 <p>
   A GLOBAL COMPETITION FOR PROFESSIONALS AND PHOTOGRAPHY'S EMERGING TALENTS
 </p>
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 345px; background: orange; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button><br><br>
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 345px; background: #ff0051; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button><br><br>
           <div id="clockdiv">
               <div>
                 <span class="days"></span>
@@ -227,9 +232,9 @@ initializeClock('clockdiv', deadline);
 	<div id="contents-wrap">
 		<div id="contents">
 
-    <div id="profile2" class="contnt" style="backgound: purple; height: 500px; margin: 3px;">
+    <div id="profile2" class="contnt" style="background: black; height: 500px; margin: 3px;">
 
-      <div class="containe" id="slider" style="background: yellow;">
+      <div class="containe" id="slider" style="backgrund: yellow;">
 
                   <div class="page" >
                   
@@ -791,6 +796,23 @@ Content
 @include('menu')
 <div id="footer">
 	<div class="container">
+    <div class="column right novecentosanswide-normal menu">
+                <div class="group group1">
+                    <a href="/page/about-competition/">about competition</a><br/>
+                    <a href="/page/about-competition/categories/">categories</a><br/>
+                    <a href="/page/about-competition/entry-fees-deadlines/">fees & deadlines</a>
+                </div>
+                <div class="group group2">
+                    <a href="/page/about-competition/the-judges/">judges</a><br/>
+                    <a href="/page/about-competition/prizes/">prizes</a><br/>
+                    <a href="/page/about-competition/terms-conditions/">terms & conditions</a>
+                </div>
+                <div class="group group3">
+                    <a href="/page/about-competition/faq/">faq</a><br/>
+                    <a href="http://ndmagazine.net/" target="_blank">ndmagazine.net</a><br/>
+                    <a href="/contact/">contact</a>
+                </div>
+            </div>
 
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>
