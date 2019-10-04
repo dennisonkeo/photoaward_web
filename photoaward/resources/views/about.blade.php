@@ -164,7 +164,30 @@ initializeClock('clockdiv', deadline);
     padding-top: 5px;
     font-size: 16px;
 }
-    </style>
+
+
+@media only screen and (max-width: 720px){
+  #log2{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 840px){
+  .log2{
+    display: none;
+  }
+}
+
+
+/* mobile */
+@media only screen and (max-device-width: 480px){
+  .log2{
+    display: none;
+  }
+}
+
+
+</style>
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
@@ -194,7 +217,7 @@ initializeClock('clockdiv', deadline);
 
 		
 	</div>
-  <div class="logo pull-right" style="margin-top: 0px; margin-left: 2px;">
+  <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px;">
 <img src="images/logo.png" style="width: 236px;">
   
 </div>
@@ -361,7 +384,7 @@ initializeClock('clockdiv', deadline);
 					</div> -->
 <div class="sections">
 
-  <div class="section section-tabled">
+  <div class="section section-tabled" id="about">
   <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
     
   <div class="field-content">
@@ -423,7 +446,7 @@ Content
 
 </div>
 
-<div class="section section-tabled">
+<div class="section section-tabled" id="guidelines">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -484,7 +507,9 @@ Content
   </div>
 </div>
 
-</div><div class="section section-tabled">
+</div>
+
+<div class="section section-tabled" id="categories">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -543,7 +568,9 @@ Content
   </div>
 </div>
 
-</div><div class="section section-tabled">
+</div>
+
+<div class="section section-tabled" id="entry">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -602,7 +629,9 @@ Content
   </div>
 </div>
 
-</div><div class="section section-tabled">
+</div>
+
+<div class="section section-tabled" id="prizes">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -662,7 +691,8 @@ Content
 </div>
 
 </div>
-<div class="section section-tabled">
+
+<div class="section section-tabled" id="jury">
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
@@ -707,7 +737,7 @@ Content
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li>
 </ul>  --> 
-Content
+Content <a href="jury">View the jury</a>
 </div>
       </div>
     </div>    
