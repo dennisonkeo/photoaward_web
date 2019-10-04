@@ -26,6 +26,10 @@ Route::get('/', function () {
     return view('about');
 });
 
+Route::get('anything', function () {
+    return view('anything');
+});
+
 // Route::get('view', function () {
 //     return view('upload_view');
 // });
