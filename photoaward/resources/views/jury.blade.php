@@ -21,10 +21,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <!--Google Analytics-->
-	<script src="libs.js" type="text/javascript"></script>
-	<script src="common.js" type="text/javascript"></script>
+	<script src="{{ asset('js/libs.js')}}" type="text/javascript"></script>
+	<script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,7 +76,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="index.html" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></div>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -111,7 +111,7 @@
 <div class="sections" >
 	<div class="section section-tabled" style="border-radius: 10px;">
 	<div class="tabled-th">
-		<img src="jury1.PNG" alt="image" style="height: 241px; border-radius: 5px;">
+		<img src="images/jury1.PNG" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
 		<div lang="en" style="padding-left: 40px;">
@@ -175,7 +175,7 @@
 
 	<div class="section section-tabled" style="border-radius: 10px;">
 	<div class="tabled-th" style="float: right;">
-		<img src="jury2.PNG" alt="image" style="height: 241px; border-radius: 5px;">
+		<img src="images/jury2.PNG" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
 		<div lang="en" style="padding-left: 40px;">
@@ -222,34 +222,14 @@
 
 	</div>
 					
-					<script type="text/javascript" src="page_init.js"></script>
+					<script type="text/javascript" src="{{ asset('page_init.js')}}"></script>
 					
 			</div><!-- /.content -->
 		</div><!-- /#contents -->
 	</div><!-- /#contents-wrap -->
 
 </div>
-<div id="menu">
-<nav id="gnavi-links" class="nav-links">
-<ul class="hover-line-links">
-	<li><a href="register.html"><span>SUBMIT</span></a></li>
-<li><a href="about.html" class="current"><span>ABOUT CONTEST</span></a></li>
-<li><a href="/news"><span>GUIDELINES</span></a></li>
-<li><a href="categories.html" ><span>CATEGORIES</span></a></li>
-<li><a href="/press"><span>ENTRY FEES</span></a></li>
-<li><a href="/contact"><span>PRIZES</span></a></li>
-<li><a href="jury.html"><span>THE JURY</span></a></li>
-<li><a href="/contact"><span>CONTACT</span></a></li>
-<li><a href="/contact"><span>FAQ</span></a></li>
-<li><a href="/contact"><span></span></a></li>
-
-
-</ul>
-</nav>
-
-
-
-</div> 
+@include('menu')
 </div>
 <div id="footer">
 	<div class="container">

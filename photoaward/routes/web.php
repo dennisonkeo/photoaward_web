@@ -26,8 +26,13 @@ Route::get('/', function () {
     return view('about');
 });
 
+
 Route::get('anything', function () {
     return view('anything');
+
+Route::get('jury', function () {
+    return view('jury');
+
 });
 
 // Route::get('view', function () {

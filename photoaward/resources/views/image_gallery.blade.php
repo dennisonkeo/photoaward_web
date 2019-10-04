@@ -42,7 +42,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="logo" alt="" style="height: 3.8rem;">
+                         <img src="#" alt="." style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
