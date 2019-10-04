@@ -41,8 +41,8 @@
         <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="https://mobirise.com">
-                         <img src="assets/images/logo2.png" alt="Mobirise" style="height: 3.8rem;">
+                    <a href="#">
+                         <img src="logo" alt="" style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
@@ -199,8 +199,8 @@
         <div class="media-container-row content text-white">
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
-                    <a href="https://mobirise.com/">
-                        <img src="assets/images/logo2.png" alt="Mobirise">
+                    <a href="#">
+                        <img src="#" alt="logo">
                     </a>
                 </div>
             </div>
