@@ -50,6 +50,8 @@ Route::get('logout', 'HomeController@logout')->name('logout');
 
 Route::get('upload-info', 'HomeController@upload_info')->name('upload-info');
 
+Route::get('my-gallery', 'HomeController@my_gallery')->name('my-gallery');
+
 Route::get('upload', 'HomeController@new_upload')->name('upload');
 
 Route::post('image-submit', 'UploadController@store')->name('image-submit');

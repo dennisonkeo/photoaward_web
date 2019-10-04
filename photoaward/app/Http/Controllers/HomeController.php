@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\ImagePay;
+use App\Upload;
 use Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -37,6 +38,16 @@ class HomeController extends Controller
     {
         
         return view('login');
+    }
+
+    public function my_gallery()
+    {
+        
+        $first = Upload::where('user_id',Auth::user()->id)->first();
+
+        $images = Upload::where('user_id',Auth::user()->id)->get();
+
+        return view('image_gallery', compact('images','first'));
     }
 
     public function upload_info()
