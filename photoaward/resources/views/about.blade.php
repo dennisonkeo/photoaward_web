@@ -217,7 +217,7 @@ initializeClock('clockdiv', deadline);
 
 		
 	</div>
-  <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px;">
+  <div class="logo2 pull-" id="hidelogo" style="margin-top: 0px; margin-left: 2px;">
 <img src="images/logo.png" style="width: 236px;">
   
 </div>
