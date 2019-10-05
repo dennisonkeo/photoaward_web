@@ -64,14 +64,7 @@
 .entry{
 	margin: 10px;
 }
-body{
-	overflow: auto;
-}
 
-img{
-	border: 2px solid black;
-	border-radius: 10px;
-}
 
 </style>
 </head>
@@ -83,7 +76,7 @@ img{
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="index.html" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line"><span>PHOTO CONTEST</span></a></div>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -107,7 +100,7 @@ img{
 <div class="parallax"></div>
 	<div id="contents-wrap">
 		<div id="contents">
-			<article style="margin-left: 150px;">
+			{{-- <article style="margin-left: 150px;">
 							<div class="gallery">
 								<a href="javascript:void(0)"> 
 									<img class="img01" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" style="backgrond: red;" />
@@ -117,9 +110,7 @@ img{
 								</a>
 								<a href="javascript:void(0)"> 
 									<img class="img02" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backgrond: black;"/> 
-									<!-- <p class="text2" >
-										Category Two
-									</p>  -->
+
 								</a>
 								<a href="javascript:void(0)"> 
 									<img class="img03" src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg"/> 
@@ -129,25 +120,19 @@ img{
 								</a>
 								<a href="javascript:void(0)"> 
 									<img class="img04" src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg" style="bakground: green;"/> 
-									<!-- <p class="text4" >
-										Category Four
-									</p>  -->
+
 								</a>
 								<a href="javascript:void(0)"> 
 									<img class="img05" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backround: blue;"/> 
-									<!-- <p class="text5" >
-										Category Five
-									</p> --> 
+
 								</a>
 								<a href="javascript:void(0)"> 
 									<img class="img06" src="https://cdn.stocksnap.io/img-thumbs/960w/2OU8JC9ZWH.jpg" alt="news01.jpg"/>
-									<!-- <p class="text6" >
-										Category Six
-									</p> --> 
+
 								</a>
 								<a href="javascript:void(0)"> <img class="img07" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg"/> </a>
 							</div>
-						</article>
+						</article> --}}
 
 					<div id="news" class="content flow-grid">
 
@@ -157,7 +142,7 @@ img{
 
 					<!-- <div id="news" class="content flow-grid"> -->
 			
-<!-- 			
+			
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
@@ -178,7 +163,7 @@ img{
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg">
+							<img src="images/pic16.jpg" alt="news01.jpg">
 							
 						</div>
 						<div class="meta">
@@ -212,7 +197,7 @@ img{
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg">
+							<img src="images/pic56.jpg">
 							
 						</div>
 						<div class="meta">
@@ -229,7 +214,7 @@ img{
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg">
+							<img src="images/pic38.jpg" alt="news01.jpg">
 							
 						</div>
 						<div class="meta">
@@ -246,7 +231,7 @@ img{
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="https://cdn.stocksnap.io/img-thumbs/960w/2OU8JC9ZWH.jpg" alt="news01.jpg">
+							<img src="images/pic47.jpg">
 							
 						</div>
 						<div class="meta">
@@ -258,7 +243,7 @@ img{
 							<p>Some description</p>
 						</div>
 					</a>
-				</div> -->
+				</div>
 
 				<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 			<!-- </div> -->
@@ -271,27 +256,7 @@ img{
 </div>
 </div>
 
-<div id="menu">
-<nav id="gnavi-links" class="nav-links">
-<ul class="hover-line-links">
-	<li><a href="register.html"><span>SUBMIT</span></a></li>
-<li><a href="about.html" class=""><span>ABOUT CONTEST</span></a></li>
-<li><a href="/news"><span>GUIDELINES</span></a></li>
-<li><a href="categories.html" ><span>CATEGORIES</span></a></li>
-<li><a href="/press"><span>ENTRY FEES</span></a></li>
-<li><a href="/contact"><span>PRIZES</span></a></li>
-<li><a href="jury.html"><span>THE JURY</span></a></li>
-<li><a href="/contact"><span>CONTACT</span></a></li>
-<li><a href="/contact"><span>FAQ</span></a></li>
-<li><a href="/contact"><span></span></a></li>
-
-
-</ul>
-</nav>
-
-
-
-</div> 
+@include('menu') 
 </div>
 
 <div id="footer">

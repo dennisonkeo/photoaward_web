@@ -197,7 +197,8 @@ initializeClock('clockdiv', deadline);
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="#" class="hover-line"><span></span></a></div><button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
+		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
+    <button class="pull-right" style="line-height: 45px; float: right; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -217,12 +218,12 @@ initializeClock('clockdiv', deadline);
 
 		
 	</div>
-  <div class="logo2 pull-" id="hidelogo" style="margin-top: 0px; margin-left: 2px;">
+  <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 <img src="images/logo.png" style="width: 236px;">
   
 </div>
 </div>
-<div class="parallax" style="opacity: 0.6;">
+<div class="parallax" style="opcity: 0.6;">
 <p>
   A GLOBAL COMPETITION FOR PROFESSIONALS AND PHOTOGRAPHY'S EMERGING TALENTS
 </p>
@@ -553,7 +554,7 @@ Content
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-  Content
+  Content <a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
 </ul>  
 </div>
       </div>
@@ -737,7 +738,7 @@ Content
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li>
 </ul>  --> 
-Content <a href="jury">View the jury</a>
+Content <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 </div>
       </div>
     </div>    
@@ -826,23 +827,7 @@ Content <a href="jury">View the jury</a>
 @include('menu')
 <div id="footer">
 	<div class="container">
-    <div class="column right novecentosanswide-normal menu">
-                <div class="group group1">
-                    <a href="/page/about-competition/">about competition</a><br/>
-                    <a href="/page/about-competition/categories/">categories</a><br/>
-                    <a href="/page/about-competition/entry-fees-deadlines/">fees & deadlines</a>
-                </div>
-                <div class="group group2">
-                    <a href="/page/about-competition/the-judges/">judges</a><br/>
-                    <a href="/page/about-competition/prizes/">prizes</a><br/>
-                    <a href="/page/about-competition/terms-conditions/">terms & conditions</a>
-                </div>
-                <div class="group group3">
-                    <a href="/page/about-competition/faq/">faq</a><br/>
-                    <a href="http://ndmagazine.net/" target="_blank">ndmagazine.net</a><br/>
-                    <a href="/contact/">contact</a>
-                </div>
-            </div>
+
 
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>

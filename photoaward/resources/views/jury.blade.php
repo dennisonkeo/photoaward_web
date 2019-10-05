@@ -39,7 +39,7 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
-  background-image: url('http://www.mikiyakobayashi.com/upload/YAMANAMI_4260WW.jpg');
+  background-image: url('images/pic45.jpg');
 
   /* Set a specific height */
   min-height: 690px; 
@@ -76,7 +76,8 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -97,10 +98,10 @@
 		
 	</div>
 </div>
-<div class="parallax"></div>
+{{-- <div class="parallax"></div> --}}
 	<div id="contents-wrap">
-		<div id="contents">
-			<div id="profile" class="content" style="background-image: url('https://burst.shopify.com/photos/cool-iphone-hd-background?c=abstract.jpg'); background-repeat: no-repeat; background-size: cover;">
+		<div id="contents" style="">
+			<div id="profile" class="content" style="background-image: url('images/pic69.jpg'); background-repeat: no-repeat; background-size: cover;">
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">
