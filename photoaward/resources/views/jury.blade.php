@@ -97,7 +97,7 @@
 		
 	</div>
 </div>
-<!-- <div class="parallax"></div> -->
+<div class="parallax"></div>
 	<div id="contents-wrap">
 		<div id="contents">
 			<div id="profile" class="content" style="background-image: url('https://burst.shopify.com/photos/cool-iphone-hd-background?c=abstract.jpg'); background-repeat: no-repeat; background-size: cover;">
@@ -114,7 +114,7 @@
 		<img src="images/jury1.PNG" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
-		<div lang="en" style="padding-left: 40px;">
+		<div lang="en" style="padding-left: 0px;">
 			<h2 class="header2">Aida Muluneh</h2>
 			<p class="catch">
 				Designer / Director
@@ -178,7 +178,7 @@
 		<img src="images/jury2.PNG" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
-		<div lang="en" style="padding-left: 40px;">
+		<div lang="en" style="padding-left: 50px;">
 			<h2 class="header2">Emmanuel Jambo</h2>
 			<p class="catch">
 				Designer / Director
@@ -211,6 +211,40 @@
 				Emmanuel Jambo.
 				
 				<a href="#" class="btn btn-primary" style="color: white; border-radius: 3px;" id="less2" >Less..</a>
+
+			</span>
+			
+			</p>
+		</div>
+	</div>
+	
+
+
+	</div>
+
+		<div class="section section-tabled" style="border-radius: 10px;">
+	<div class="tabled-th" style="float: left;">
+		<img src="images/jury3.jpg" alt="image" style="height: 241px; width: 240px; border-radius: 5px;">
+	</div>
+	<div class="tabled-td">
+		<div lang="en" style="padding-left: 50px;">
+			<h2 class="header2">Linda Murithi</h2>
+			<p class="catch">
+				Retail & Fashion Facilitator/Consultant 
+			</p>
+			<p class="text_line">
+				Nairobi based Retail & Fashion Facilitator/Consultant ,Linda Murithi (Co-Founder of The Hub of Africa Fashion Week, Ethiopia, and Founder, The Core Fashion Kenya, as well as a former radio broadcaster Afro FM  - Programs Director  - Breakfast Show Host & 
+
+				<a href="#" class="btn btn-primary" style="color: white; border-radius: 5px;" id="hide3" onclick="showText()">More..</a>
+
+
+				<span id="more3" style="display: none;">
+
+				Capital FM - Capital Jazz Club Host) is instrumental in creating brand-building workshops & Fashion Installations that are  aimed to strengthen Kenya's fashion market and the business of Fashion.  The workshops & Installations have attracted over 100 attendees,(Workshops) ranging from local fashion students ( Mcensal University and Evelyn College of Design) to young designers, stylists, and photographers, as well as Installations having over 300 key leaders as guests for the shows. She also works as a Retail Marketing consultant for Shopping Malls.
+
+				Linda Murithi.
+				
+				<a href="#" class="btn btn-primary" style="color: white; border-radius: 3px;" id="less3" >Less..</a>
 
 			</span>
 			
@@ -266,6 +300,20 @@ $(document).ready(function(){
   $("#less2").click(function(){
     $("#more2").slideUp("slow");
     document.getElementById('hide2').style.display = "block";
+  });
+});
+
+$(document).ready(function(){
+  $("#hide3").click(function(){
+    $("#more3").slideDown("slow");
+    document.getElementById('hide3').style.display = "none";
+  });
+});
+
+$(document).ready(function(){
+  $("#less3").click(function(){
+    $("#more3").slideUp("slow");
+    document.getElementById('hide3').style.display = "block";
   });
 });
 
