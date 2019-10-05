@@ -197,7 +197,8 @@ initializeClock('clockdiv', deadline);
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="#" class="hover-line"><span></span></a></div><button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
+		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
+    <button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -217,12 +218,12 @@ initializeClock('clockdiv', deadline);
 
 		
 	</div>
-  <div class="logo2 pull-" id="hidelogo" style="margin-top: 0px; margin-left: 2px;">
+  <div class="logo2 pull-" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 <img src="images/logo.png" style="width: 236px;">
   
 </div>
 </div>
-<div class="parallax" style="opacity: 0.6;">
+<div class="parallax" style="opacty: 0.6;">
 <p>
   A GLOBAL COMPETITION FOR PROFESSIONALS AND PHOTOGRAPHY'S EMERGING TALENTS
 </p>
@@ -278,14 +279,14 @@ initializeClock('clockdiv', deadline);
                                     <picture>
                 <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_06-250.jpg">-->
                 <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_06-400.jpg">-->
-                                        <img src="images/pic2_.jpg">
+                                        <img src="images/pic32.jpg">
                                     </picture>
                                 </div>
                                 <div class="item">
                                     <picture>
                 <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_07-250.jpg">-->
                 <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_07-400.jpg">-->
-                                        <img src="images/pic7_.jpg">
+                                        <img src="images/pic50.jpg">
                                     </picture>
                                 </div>
                                 <div class="item">
@@ -299,7 +300,7 @@ initializeClock('clockdiv', deadline);
                                     <picture>
                 <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_09-250.jpg">-->
                 <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_09-400.jpg">-->
-                                        <img src="images/pic5_.jpg">
+                                        <img src="images/pic68.jpg">
                                     </picture>
                                 </div>
                                 <div class="item">
@@ -341,7 +342,7 @@ initializeClock('clockdiv', deadline);
                                     <picture>
                                         <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_02-250.jpg">-->
                                         <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_02-400.jpg">-->
-                                        <img src="images/pic6_.jpg">
+                                        <img src="images/pic23.jpg">
                                     </picture>
                                 </div>
                                 <div class="item">
@@ -355,7 +356,7 @@ initializeClock('clockdiv', deadline);
                                     <picture>
                                         <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
                                         <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic20_.jpg">
+                                        <img src="images/pic48.jpg">
                                     </picture>
                                 </div>
 
@@ -413,7 +414,7 @@ initializeClock('clockdiv', deadline);
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" width="522" height="200" />  </div>
+    <img src="images/pic61.jpg" alt="news01.jpg" width="522" height="200" />  </div>
         </div>
       </div>
       <div class="description">
@@ -476,7 +477,7 @@ Content
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" width="522" height="200" />  </div>
+    <img src="images/pic41.jpg" width="522" height="200" />  </div>
         </div>
       </div>
       <div class="description">
@@ -538,7 +539,7 @@ Content
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg" width="522" height="200" />  </div>
+    <img src="images/pic31.jpg" alt="news01.jpg" width="522" height="200" />  </div>
         </div>
       </div>
       <div class="description">
@@ -660,7 +661,7 @@ Content
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="https://www.worldphoto.org/sites/default/files/styles/field_accordion_cover_image/public/accordion/cover-image/Accordion_%C2%A9%20Billie-Maree%20Ward%2C%20Australia%2C%20Shortlist%2C%20Open%20competition%2C%20Still%20Life%2C%202019%20Sony%20World%20Photography%20Awards%20%281%29.jpg?itok=nMtLoYlS" width="522" height="200" />  </div>
+    <img src="images/pic20.jpg" width="522" height="200" />  </div>
         </div>
       </div>
       <div class="description">
@@ -721,7 +722,7 @@ Content
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" width="522" height="200" />  </div>
+    <img src="images/pic25.jpg" width="522" height="200" />  </div>
         </div>
       </div>
       <div class="description">

@@ -28,7 +28,7 @@ Route::get('/', function () {
 
 
 Route::get('anything', function () {
-    return view('anything');
+    return view('untitled');
 
   });
 

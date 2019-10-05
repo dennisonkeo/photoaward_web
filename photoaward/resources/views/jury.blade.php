@@ -39,7 +39,7 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
-  background-image: url('http://www.mikiyakobayashi.com/upload/YAMANAMI_4260WW.jpg');
+  background-image: url('images/pic69.jpg');
 
   /* Set a specific height */
   min-height: 690px; 
@@ -97,10 +97,10 @@
 		
 	</div>
 </div>
-<div class="parallax"></div>
+<div class="parallax"></div> 
 	<div id="contents-wrap">
 		<div id="contents">
-			<div id="profile" class="content" style="background-image: url('https://burst.shopify.com/photos/cool-iphone-hd-background?c=abstract.jpg'); background-repeat: no-repeat; background-size: cover;">
+			/*<div id="profile" class="content" style="background-image: url('images/pic70.jpg'); background-repeat: no-repeat; background-size: cover;">*/
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">

@@ -129,8 +129,8 @@ mixpanel.init("8376acbf6ca3341735b6813f7b75e61b");</script><!-- end Mixpanel -->
 								<a href="https://www.viewbug.com?ref=logo">
                                                                     <img alt="ViewBug" src="/vb2/public/media/images/layout/logo_big_w_wbsoff.png?ver=5" class="white" />
                                                                     
-                                                                                                                                            <img alt="ViewBug" src="/media/images/layout/logo-square.jpg" class="color circle_logo" />
-                                                                                                                                    </a>
+                                                                     <img alt="ViewBug" src="/media/images/layout/logo-square.jpg" class="color circle_logo" />
+                                                                                            </a>
 							</div>
 						</column>
 						<column class="column_x">
