@@ -6,6 +6,7 @@ use App\Upload;
 use App\Category;
 use App\ImagePay;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File;
 
 use Illuminate\Http\Request;
 
@@ -21,6 +22,20 @@ class UploadController extends Controller
     public function index()
     {
         return view('upload_details');
+    }
+
+    public function view_cart()
+    {
+        $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+
+        return view('view_cart', compact('images'));
+    }
+
+    public function getImage($id)
+    {
+        $image = Upload::where('id',$id)->first();
+
+        return json_encode($image);
     }
 
     /**
@@ -53,8 +68,8 @@ class UploadController extends Controller
         $imageCheck = ImagePay::where('token',"=",$request->input('random_str'))
                     ->where('user_id',"=",Auth::user()->id)
                     ->first();
-        if(!$imageCheck)
-        {
+        // if(!$imageCheck)
+        // {
             $image = $request->file('file');
 
             $image_name = time().$image->getClientOriginalName();
@@ -68,52 +83,52 @@ class UploadController extends Controller
 
               $upload->imageName = $image_name;
               $upload->imagePath = $imagePath;
-              $upload->token = $request->input("random_str");
+              $upload->token = session()->getId();
               $upload->caption = "";
               $upload->user_id = Auth::user()->id;
               $upload->category_id = $request->input("category");
 
               $upload->save();
 
-              $saveImage = new ImagePay();
+              // $saveImage = new ImagePay();
 
-              $saveImage->user_id = Auth::user()->id;
-              $saveImage->total_images = 1;
-              $saveImage->token = $request->input("random_str");
+              // $saveImage->user_id = Auth::user()->id;
+              // $saveImage->total_images = 1;
+              // $saveImage->token = $request->input("random_str");
 
-              $saveImage->save();
+              // $saveImage->save();
 
             return response()->json(['uploaded'=>'/uploads/'.$image_name]);
-        }
-        else
-        {
+        // }
+        // else
+        // {
         
-            $image = $request->file('file');
+        //     $image = $request->file('file');
 
-            $image_name = time().$image->getClientOriginalName();
+        //     $image_name = time().$image->getClientOriginalName();
 
-            $image->move(public_path('uploads'),$image_name);
+        //     $image->move(public_path('uploads'),$image_name);
 
-            $imagePath = "/uploads/$image_name"; //save image path to folder
+        //     $imagePath = "/uploads/$image_name"; //save image path to folder
 
 
-            $imageP = ImagePay::where("token", "=", $request->input('random_str'))->first();
+        //     $imageP = ImagePay::where("token", "=", $request->input('random_str'))->first();
 
-            ImagePay::where('token',"=", $request->input('random_str'))->update(array('total_images' => ($imageP->total_images + 1)));
+        //     ImagePay::where('token',"=", $request->input('random_str'))->update(array('total_images' => ($imageP->total_images + 1)));
 
-             $upload = new Upload();
+        //      $upload = new Upload();
 
-              $upload->imageName = $image_name;
-              $upload->imagePath = $imagePath;
-              $upload->token = $request->input("random_str");
-              $upload->caption = "";
-              $upload->user_id = Auth::user()->id;
-              $upload->category_id = $request->input("category");
+        //       $upload->imageName = $image_name;
+        //       $upload->imagePath = $imagePath;
+        //       $upload->token = $request->input("random_str");
+        //       $upload->caption = "";
+        //       $upload->user_id = Auth::user()->id;
+        //       $upload->category_id = $request->input("category");
 
-              $upload->save();
+        //       $upload->save();
 
-        return response()->json(['uploaded'=>'/uploads/'.$image_name]);
-        }
+        // return response()->json(['uploaded'=>'/uploads/'.$image_name]);
+        // }
 
         
 
@@ -150,9 +165,11 @@ class UploadController extends Controller
      * @param  \App\Upload  $upload
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Upload $upload)
+    public function update(Request $request)
     {
-        //
+        Upload::where('id',"=", $request->input('image_id'))->update(array('caption' => $request->input('image_description')));
+
+        return back()->with('success', 'Caption was edited Successfully');  
     }
 
     /**
@@ -163,6 +180,10 @@ class UploadController extends Controller
      */
     public function destroy(Upload $upload)
     {
-        //
+         // $student = Student::find($id);
+        File::delete([public_path($upload->imagePath)]);
+        $upload->delete();
+
+        return back()->with('success', 'Image Deleted Successfully');
     }
 }

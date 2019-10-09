@@ -24,31 +24,30 @@
 			background-image: url('{{ asset('images/pic2.jpg') }}');
 			background-repeat: no-repeat;
 			background-size: cover;
+			height: 100%;
 		}
 
 	</style>
 </head>
-<body class="bg-success">
+<body class="bg-sucess">
 
 	<div class="container">
 		<div class="row" >
 			<div class="col-lg-8 col-sm-12 col-11 main-section" style="border-radius: 7px;">
-				<h4 class="alert alert-success" style="margin: -20px; margin-bottom: 20px;">Upload Details</h4>
+				<h4 class="alert alert-success" style="margin: -20px; margin-bottom: 20px;"> PICTURE +254</h4>
 
 
 				{{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
 
 				<div class="form-group" style="margin: 0 auto;">
 					
-					<p style="">Total Images Uploaded: <span style="font-weight: bold;">
-						{{ $images->total_images }}
-					</span></p>
-					<p>Total Amount: <span style="font-weight: bold;">Ksh. {{ $totalPay }}</span></p><br>
+					<p style="">Please, click on either of the buttons below to proceed.</p>
+					{{-- <p>Total Amount: <span style="font-weight: bold;">Ksh. {{ $totalPay }}</span></p><br> --}}
 				<hr>
 				<div class="form-group">
-					<button class="btn btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-money"></i> Compete</button>
+					<button class="btn btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-circle"></i> Add More Images</button>
 
-					<button class="btn btn-danger pull-right" onclick="window.location='{{ url("submit-entry#my-competitions") }}'"><i class="fa fa-close"></i> Cancel</button>
+					<button class="btn btn-warning pull-right" onclick="window.location='{{ url("view-album") }}'"><i class="fa fa-eye"></i> View Your Gallery</button>
 					 
 				</div>
 				
@@ -62,25 +61,32 @@
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-top" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Complete Payment</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Add More Images</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-      	<p>An <b>MPESA</b> payment request will be sent to the provided mobile number. You will be required to input the <b>MPESA PIN</b> so as to complete the payment.</p>
-        <form>
-        	<label class="label">Phone No:</label> <small style="font-style: italic;">(optional)</small>
-        	<input type="text" class="form-control" name="phone" placeholder="e.g 07XXXXXXXX">
-        	<small style="color: green; font-style: italic;">* Phone no to complete the payment</small>
-        </form>
-      </div>
+	      {{-- <div class="row">
+			<div class="col-lg-12 col-sm-12 col-11 main-section"> --}}
+				{{-- <h2 class="text-center text-success">Upload your images here</h2> --}}
+
+				<input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+				<div class="form-group">
+					
+					<input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
+				</div>
+				
+			{{-- </div>
+		</div>
+ --}}      </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" onclick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button>
+       {{--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button> --}}
       </div>
     </div>
   </div>
@@ -101,57 +107,74 @@
 
 
 <script type="text/javascript">
-	$("#file-1").fileinput({
-		theme:'fa',
-		uploadUrl:"image-submit",
-		// deleteUrl: '',
 
-		uploadExtraData: function () {
+	$('#exampleModalCenter').modal({
+                    backdrop: 'static'
+                });
 
-				return {
-					_token: $("input[name='_token']").val()
-				};
-		},
+    $('#rand').val(Math.random().toString(36).substring(5));
 
-		allowedFileExtensions: ['jpg','jpeg','png'],
+    $("#file-1").fileinput({
+        theme:'fa',
+        uploadUrl:"image-submit",
+        // deleteUrl: '',
 
-		overwriteInitial:false,
+        uploadExtraData: function () {
 
-		maxFileSize: 2000,
+                return {
+                    _token: $("input[name='_token']").val(),
+                    category: $("input[name='category']").val(),
+                    random_str: $("input[name='random_str']").val()
+                
+                };
+        },
 
-		maxFileNum: 8,
+        allowedFileExtensions: ['jpg','jpeg','png'],
 
-		removeFromPreviewOnError: false,
+        overwriteInitial:false,
 
-		showRemove: true,
+        maxFileSize: 2000,
 
-		browseOnZoneClick: true,
+        maxFileNum: 8,
 
-		// showClose: false,  
+        removeFromPreviewOnError: false,
 
-		// showCaption: false,
+        showRemove: true,
 
-		previewThumbTags: {},
+        browseOnZoneClick: true,
 
-		initialPreviewShowDelete: false,
+        showCancel: null,
 
-		// uploadUrlThumb: null,
+        // showClose: false,  
 
-		showPreview: true,
+        // showCaption: false,
 
-		fileActionSettings: {
+        previewThumbTags: {},
+
+        initialPreviewShowDelete: false,
+
+        // uploadUrlThumb: null,
+
+        showPreview: true,
+
+        fileActionSettings: {
                         showRemove: true,
                         showUpload: false,
                         showZoom: true,
-                        showDrag: false,
+                        // showDrag: false,
                     },
 
-		slugCallBack: function (filename){
+        slugCallBack: function (filename){
 
-			return filename.replace('(','_').replace(']','_');
-		}
-	});
-</script>
+            // return filename.replace('(','_').replace(']','_');
+        }
+    }).on('filebatchuploadcomplete', function() {
+        // console.log('File Batch Uploaded', preview, config, tags, extraData);
+         window.location.href =  'view-album';
+         // console.log();
+    });
+
+</script>   
 
 </body>
 </html>
