@@ -39,7 +39,11 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
+<<<<<<< HEAD
   background-image: url('images/pic69.jpg');
+=======
+  background-image: url('images/pic45.jpg');
+>>>>>>> 18163c9cdd24416732d488a37f0114cf647cb48b
 
   /* Set a specific height */
   min-height: 690px; 
@@ -76,7 +80,8 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -97,10 +102,12 @@
 		
 	</div>
 </div>
+
 <div class="parallax"></div> 
 	<div id="contents-wrap">
 		<div id="contents">
-			/*<div id="profile" class="content" style="background-image: url('images/pic70.jpg'); background-repeat: no-repeat; background-size: cover;">*/
+			<div id="profile" class="content" style="background-image: url('images/pic70.jpg'); background-repeat: no-repeat; background-size: cover;">
+
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">
