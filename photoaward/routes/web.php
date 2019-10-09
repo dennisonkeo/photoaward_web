@@ -37,9 +37,9 @@ Route::get('jury', function () {
 
 });
 
-// Route::get('view', function () {
-//     return view('upload_view');
-// });
+Route::get('vote', function () {
+    return view('vote');
+});
 
 Route::get('slidder', function () {
     return view('slidder');
@@ -59,9 +59,17 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('logout', 'HomeController@logout')->name('logout');
 
+Route::put('update', 'UploadController@update')->name('update');
+
+Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
+
 Route::get('upload-info', 'HomeController@upload_info')->name('upload-info');
 
+Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
+
 Route::get('my-gallery', 'HomeController@my_gallery')->name('my-gallery');
+
+Route::get('view-album', 'UploadController@view_cart')->name('view-album');
 
 Route::get('upload', 'HomeController@new_upload')->name('upload');
 

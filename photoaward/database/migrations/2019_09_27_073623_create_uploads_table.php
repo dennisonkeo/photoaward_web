@@ -20,6 +20,7 @@ class CreateUploadsTable extends Migration
             $table->string('caption');
             $table->string('imageName');
             $table->string('token');
+            $table->string('uploaded')->defaut('no');
             $table->integer('category_id');
             $table->timestamps();
         });

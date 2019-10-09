@@ -47,17 +47,18 @@ class HomeController extends Controller
 
         $images = Upload::where('user_id',Auth::user()->id)->get();
 
+
         return view('image_gallery', compact('images','first'));
     }
 
     public function upload_info()
     {
         
-        $images = ImagePay::where('user_id', Auth::user()->id)->latest()->get()->first();
+        // $images = ImagePay::where('user_id', Auth::user()->id)->latest()->get()->first();
 
-        $totalPay = $images->total_images * 100;
+        // $totalPay = $images->total_images * 100;
 
-        return view('upload_view', compact("images", "totalPay"));
+        return view('upload_view');
     }
 
     public function upload_image()

@@ -55,6 +55,27 @@
     header{
         background: #f2f2f2;
     }
+
+    .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
 </style>
     
 </head>
@@ -94,6 +115,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="#" >
                     Account</a>
             </li>
+
+            <li class="account ">
+                <a href="#" >
+                    <i class="fa" style="font-size:24px">&#xf07a;</i>
+                    <span class='badge badge-success' id='lblCartCount'> 5 </span>
+                    View Cart
+                </a>
+            </li>
         </ul> <!-- End nav -->
     </div>
 </div> <!-- End row header -->
@@ -103,7 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     
     <div class="col-xs-12 col-sm-12 col-md-12">
-        <h1 style="border-color: #b7eb34;">Category 1</h1>
+        <h1 style="border-color: #b7eb34;">Category One</h1>
     </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
             <img class="img-responsive" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" />
@@ -131,16 +160,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <ul class="progress-meter progress-4-items">
                             <li class='first active '>
-                                            <span class='first active '>1. Image Upload</span>
+                                            <span class='first active '> Image Upload</span>
                                     </li>
                             <li class=''>
-                                            <span class=''>2. Image Details</span>
+                                            {{-- <span class=''>2. Image Details</span> --}}
                                     </li>
                             <li class=''>
-                                            <span class=''>3. Review &amp; Confirm</span>
+                                            {{-- <span class=''>3. Review &amp; Confirm</span> --}}
                                     </li>
                             <li class='last '>
-                                            <span class='last '>4. Complete</span>
+                                            {{-- <span class='last '>4. Complete</span> --}}
                                     </li>
                     </ul>
     </div>
@@ -429,7 +458,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }).on('filebatchuploadcomplete', function() {
         // console.log('File Batch Uploaded', preview, config, tags, extraData);
-         window.location.href =  'upload-info';
+         window.location.href =  'view-album';
          // console.log();
     });
 

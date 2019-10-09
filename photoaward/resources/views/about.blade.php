@@ -16,6 +16,9 @@
     <meta property="og:description" content="" />
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 <!-- Google Font Martel -->
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
@@ -69,12 +72,13 @@
     </script> --}}
 
     <style type="text/css">
-    	.parallax {
+    	.parallaxabout {
   /* The image used */
   background-image: url('{{ asset('images/pic17.jpg') }}');
 
   /* Set a specific height */
   min-height: 690px; 
+
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -131,10 +135,23 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
+
+var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv2', deadline2);
 </script>
 
     <style type="text/css">
       #clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}      
+
+#clockdiv2{
     font-family: sans-serif;
     color: #fff;
     display: inline-block;
@@ -151,11 +168,25 @@ initializeClock('clockdiv', deadline);
     display: inline-block;
     opacity: 0.7;
 }
+#clockdiv2 > div{
+    padding: 5px;
+    border-radius: 3px;
+    background: red;
+    display: inline-block;
+    opacity: 0.7;
+}
 
 #clockdiv div > span{
     padding: 15px;
     border-radius: 5px;
     background: #000;
+    display: inline-block;
+    color: #ff0051;
+}
+#clockdiv2 div > span{
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
     display: inline-block;
     color: #ff0051;
 }
@@ -165,24 +196,44 @@ initializeClock('clockdiv', deadline);
     font-size: 16px;
 }
 
+.phone{
+  display: none;
+}
 
-@media only screen and (max-width: 720px){
-  #log2{
+
+@media only screen and (max-width: 600px){
+  .parallaxabout{
     display: none;
+
+  }
+
+  .phone{
+    display: block;
+
   }
 }
 
-@media only screen and (max-width: 840px){
-  .log2{
+@media only screen and (max-width: 500px){
+  .parallaxabout{
     display: none;
+  }
+
+  .phone{
+    display: block;
+
   }
 }
 
 
 /* mobile */
-@media only screen and (max-device-width: 480px){
-  .log2{
+@media only screen and (max-device-width: 400px){
+  .parallaxabout{
     display: none;
+  }
+
+  .phone{
+    display: block;
+
   }
 }
 
@@ -223,9 +274,9 @@ initializeClock('clockdiv', deadline);
   
 </div>
 </div>
-<div class="parallax" style="opcity: 0.6;">
-<p>
-  A GLOBAL COMPETITION FOR PROFESSIONALS AND PHOTOGRAPHY'S EMERGING TALENTS
+<div class="parallaxabout" style="opcity: 0.6; ">
+<p style="vertical-align: center; padding-left: 40px; top: 20; font-size: ">
+  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING TALENTS
 </p>
 
 
@@ -256,9 +307,40 @@ initializeClock('clockdiv', deadline);
 	<div id="contents-wrap">
 		<div id="contents">
 
-    <div id="profile2" class="contnt" style="background: black; height: 500px; margin: 3px;">
+    <div id="profile2" class="contnt" style="background: black; hight: 500px; margin: 3px;">
 
       <div class="containe" id="slider" style="backgrund: yellow;">
+        <div class="phone" style="height: 300px; background-size: cover; background-repeat: no-repeat;">
+          
+          <div style="margin: 0 auto;">
+            <div class="row">
+              <img src="images/logo_.png" style="height: 150px; background-size: cover;">
+            </div>
+          <div class="row" style="margin: 0 auto;">
+            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 90%; background: #ff0051; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button>
+        </div>
+          <div id="clockdiv2" style="margin-top: 2px;">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div class="try">
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div style="dislay: none;">
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+          </div><br><br>
+          
+        </div>
+
+        </div>
 
                   <div class="page" >
                   
@@ -373,7 +455,6 @@ initializeClock('clockdiv', deadline);
       </div>
 
   </div>
-
 
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
 				<div class="container">
@@ -878,6 +959,9 @@ function initializeClock(id, endtime) {
 
 var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);
+
+var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv2', deadline2);
 </script>				
 
 

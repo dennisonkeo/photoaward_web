@@ -20,8 +20,33 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/gallery/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
-  
+  <style type="text/css">
+      #vote {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: red;
+  background: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#vote:hover{
+    color: green;
+}
+
+</style>
   
 </head>
 <body>
@@ -113,8 +138,14 @@
                 <div class="mbr-gallery-layout-default">
                     <div>
                         <div>
-                            
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal"><img src="{{ asset('uploads') }}/{{ $first->imageName }}" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Category One</span></div></div>
+                            @if($first)
+                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal">
+                                <img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
+                                <span class="icon-focus"></span>
+                                <span class="mbr-gallery-title mbr-fonts-style display-7">Category One</span></div></div>
+                            @else
+                            <p>You have no images in your gallery</p>
+                            @endif
 
 
                             <!-- <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="1" data-toggle="modal"><img src="assets/images/background2.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
@@ -144,14 +175,17 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="carousel-inner">
-                            <div class="carousel-item active"><img src="{{ asset('uploads') }}/{{ $first->imageName }}" alt="" title="">
+                            <div class="carousel-item active"><img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
                             </div>
-
+                            
                             @foreach($images as $image)
-                                @if($image->id == $first->id)
-                                @continue
-                                @endif
-                                <div class="carousel-item"><img src="{{ asset('uploads') }}/{{ $image->imageName }}" alt="" title=""></div>
+                                {{-- @if($image->id == $first->id) --}}
+                                {{-- @continue --}}
+                                {{-- @endif --}}
+                                <div class="carousel-item">
+                                    <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
+                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span class="count" style="font-size: 18px;">1</span></i>
+                                </div>
 
                                 
                             @endforeach
@@ -177,7 +211,12 @@
                             <div class="carousel-item"><img src="assets/images/background8.jpg" alt="" title=""> --}}
                             </div>
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-6"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery1-6"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a>
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-6"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery1-6"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                    <a class="close" href="#" role="button" data-dismiss="modal">
+                        <span class="sr-only">Close</span>
+                    </a><a class="close" href="#" role="button" data-dismiss="modal">
+                        <span class="sr-only">Close</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -238,6 +277,13 @@
     </div>
 </section>
 
+<script type="text/javascript">
+    function incrementValue()
+{
+
+    document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML)+1;
+}
+</script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
