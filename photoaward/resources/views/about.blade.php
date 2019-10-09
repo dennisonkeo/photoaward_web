@@ -313,11 +313,6 @@ initializeClock('clockdiv2', deadline2);
 	<div id="contents-wrap">
 		<div id="contents">
 
-<<<<<<< HEAD
-    <div id="profile2" class="contnt" style="background: red; height: 500px; margin: 3px;">
-
-      <div class="containe" id="slider" style="background: yellow; height:500px; ">
-=======
     <div id="profile2" class="contnt" style="background: black; hight: 500px; margin: 3px;">
 
       <div class="containe" id="slider" style="backgrund: yellow;">
@@ -352,9 +347,8 @@ initializeClock('clockdiv2', deadline2);
         </div>
 
         </div>
->>>>>>> 5a187c980b38d7d73439c76aa4fe7e18ef2c1119
 
-                  <div class="page" >
+                  <div class="page" style="height: 500px;">
                   
                     <div class="nav-left">
                         <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
@@ -468,12 +462,8 @@ initializeClock('clockdiv2', deadline2);
 
   </div>
 
-<<<<<<< HEAD
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
 
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
-=======
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
->>>>>>> 5a187c980b38d7d73439c76aa4fe7e18ef2c1119
 				<div class="container">
 					<!-- <div class="lang-nav">
 						<ul class="hover-line-links">
