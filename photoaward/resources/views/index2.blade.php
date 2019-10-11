@@ -222,7 +222,7 @@ ul{
 
 <!-- <div class="parallax"></div> -->
 
-<header style="width: 100%; height: 70px; background: #fafafa; color: green;">
+<header style="width: 100%; height: 70px; background: #fafafa; color: red;">
     <nav>
         <ul class="mennu">
             <li><a href="login"> SUBMIT</a></li>
