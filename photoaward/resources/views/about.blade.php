@@ -172,7 +172,7 @@ initializeClock('clockdiv2', deadline2);
 #clockdiv2 > div{
     padding: 5px;
     border-radius: 3px;
-    background: red;
+    background: #ff0051;
     display: inline-block;
     opacity: 0.7;
 }
@@ -212,6 +212,9 @@ initializeClock('clockdiv2', deadline2);
     display: block;
 
   }
+  .pull-right{
+    margin-right: 150px;
+  }
 }
 
 @media only screen and (max-width: 500px){
@@ -223,6 +226,10 @@ initializeClock('clockdiv2', deadline2);
     display: block;
 
   }
+  .pull-right{
+    margin-right: 150px;
+
+  }
 }
 
 
@@ -230,6 +237,10 @@ initializeClock('clockdiv2', deadline2);
 @media only screen and (max-device-width: 400px){
   .parallaxabout{
     display: none;
+  }
+  .pull-right{
+    margin-right: 150px;
+
   }
 
   .phone{
@@ -251,7 +262,7 @@ initializeClock('clockdiv2', deadline2);
 		
 		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: black; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> PHOTO CONTEST</button>
+    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
@@ -323,7 +334,7 @@ initializeClock('clockdiv2', deadline2);
               <img src="images/logo_.png" style="height: 150px; background-size: cover;">
             </div>
           <div class="row" style="margin: 0 auto;">
-            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 90%; background: #ff0051; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button>
+            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
         </div>
           <div id="clockdiv2" style="margin-top: 2px;">
               <div>
@@ -332,15 +343,15 @@ initializeClock('clockdiv2', deadline2);
               </div>
               <div class="try">
                 <span class="hours"></span>
-                <div class="smalltext">Hours</div>
+                <div class="smalltext">Hrs</div>
               </div>
               <div>
                 <span class="minutes"></span>
-                <div class="smalltext">Minutes</div>
+                <div class="smalltext">Mins</div>
               </div>
               <div style="dislay: none;">
                 <span class="seconds"></span>
-                <div class="smalltext">Seconds</div>
+                <div class="smalltext">Secs</div>
               </div>
           </div><br><br>
           

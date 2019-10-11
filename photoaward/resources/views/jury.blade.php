@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
+	<title>PICTURE +254</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -39,11 +39,8 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
-<<<<<<< HEAD
-  background-image: url('images/pic69.jpg');
-=======
-  background-image: url('images/pic45.jpg');
->>>>>>> 18163c9cdd24416732d488a37f0114cf647cb48b
+
+  background-image: url('images/pic29.jpg');
 
   /* Set a specific height */
   min-height: 690px; 
@@ -80,7 +77,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE +254</span></a></div>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
@@ -135,7 +132,7 @@
 				settled in Canada in 1985. 
 
 
-				<a href="#" class="btn btn-danger" style="color: white; border-radius: 3px;" id="hide">More..</a>
+				<a href="#" class="btn btn-danger" style="color: #b7eb34; border-radius: 3px;" id="hide">More..</a>
 
 
 				<span id="more" style="display: none;">
@@ -167,7 +164,7 @@
 				(DFA) in Addis Ababa, Ethiopia.
 
 
-				<a href="#" class="btn btn-primary" style="color: white; border-radius: 3px;" id="less">Less..</a>
+				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 3px;" id="less">Less..</a>
 
 			</span>
 			
@@ -196,7 +193,7 @@
 				He is the recognizable face offashion, commercial and wedding photography in Kenya and 
 
 
-				<a href="#" class="btn btn-primary" style="color: white; border-radius: 5px;" id="hide2" onclick="showText()">More..</a>
+				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 5px;" id="hide2" onclick="showText()">More..</a>
 
 
 				<span id="more2" style="display: none;">
@@ -217,7 +214,7 @@
 
 				Emmanuel Jambo.
 				
-				<a href="#" class="btn btn-primary" style="color: white; border-radius: 3px;" id="less2" >Less..</a>
+				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 3px;" id="less2" >Less..</a>
 
 			</span>
 			
@@ -242,7 +239,7 @@
 			<p class="text_line">
 				Nairobi based Retail & Fashion Facilitator/Consultant ,Linda Murithi (Co-Founder of The Hub of Africa Fashion Week, Ethiopia, and Founder, The Core Fashion Kenya, as well as a former radio broadcaster Afro FM  - Programs Director  - Breakfast Show Host & 
 
-				<a href="#" class="btn btn-primary" style="color: white; border-radius: 5px;" id="hide3" onclick="showText()">More..</a>
+				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 5px;" id="hide3" onclick="showText()">More..</a>
 
 
 				<span id="more3" style="display: none;">
@@ -251,7 +248,7 @@
 
 				Linda Murithi.
 				
-				<a href="#" class="btn btn-primary" style="color: white; border-radius: 3px;" id="less3" >Less..</a>
+				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 3px;" id="less3" >Less..</a>
 
 			</span>
 			
