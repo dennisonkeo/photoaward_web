@@ -20,6 +20,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WNTJZVQ');</script>
 <!-- End Google Tag Manager -->
 
+
+  {{-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"> --}}
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -70,6 +77,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin-left: -10px; 
 }
 </style>
+
+  <style type="text/css">
+    .main-section{
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 100px;
+      background: #fff;
+      box-shadow: 0 0 20px #c1c1c1;
+      height: auto;
+      width: 50%;
+    }
+
+        select:hover{
+            cursor: pointer;
+        }
+
+        option{
+            cursor: pointer;
+        }
+
+.krajee-default.file-preview-frame {
+    margin: 2px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 6px;
+    float: left;
+    text-align: center;
+}
+
+
+  </style>
     
 </head>
 
@@ -79,9 +117,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header style="background: #b7eb34; height: 70px;">
+<header style="background: #000; color: #ff0051; height: 80px;">
     <div>
-        <p style="text-align: center; color: white;">Our header info</p>
+        {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
+        <img src="images/logo_.png" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
     </div>
 </header>
             
@@ -202,7 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <p class="description-display">{{ $image->caption }}</p>
                                         </td>
                                         <td class="category">
-                                            <p class="category">Experience KE</p>
+                                            <p class="category">{{ $image->category->name }}</p>
                                         </td>
 
                                         <td class="op-column" style="white-space: nowrap;">
@@ -236,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 buttons">
                     <span class="btn-grp primary">
-                        <a href="upload-image" class="btn btn-primary back" role="button">
+                        <a href="upload-image" class="btn btn-primary back" role="button" data-target="#xampleModalCenterr" data-toggle="modal">
                             <i class="fa fa-upload fa-lg"></i>
                             Upload more images
                         </a>
@@ -245,7 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <small>or</small>
 
                     <span class="btn-grp success">
-                        <button type="submit" class="btn btn-success" name="payment" value="1">
+                        <button type="button" id="payment" class="btn btn-success" name="payment" data-target="#exampleModalCenter" data-toggle="modal" data-keyboard="false" data-backdrop="static">
                             <i class="fa fa-money-o"></i>
                             Proceed To Payment
                         </button>
@@ -356,25 +395,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!--Confirm Payment Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-dialog modal-dialog-top" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Complete Payment</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <div class="modal-header" style="background: #000; opacity: 0.8;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold; color: #fff;"><i class="fa fa-moey"></i> Your Upload Summary</h5>
+        <button type="button" style="color: #fff;" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <p>An <b>MPESA</b> payment request will be sent to the provided mobile number. You will be required to input the <b>MPESA PIN</b> so as to complete the payment.</p>
-        <form>
-            <label class="label">Phone No:</label> <small style="font-style: italic;">(optional)</small>
-            <input type="text" class="form-control" name="phone" placeholder="e.g 07XXXXXXXX">
-            <small style="color: green; font-style: italic;">* Phone no to complete the payment</small>
-        </form>
+        <table class="table"> 
+        <?php $count = 1?>         
+                  <thead class="thead-light" style="background: #ececdf;">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Category Name</th>
+                      <th scope="col">No. of images</th>
+                    </tr>
+                  </thead>
+                  <tbody> 
+                  @foreach($imagesgroup->groupby('category_id') as $image)
+                    <tr>
+                      <td scope="row">{{ $count }}.</td>
+                      @foreach($image as $img)
+                      <td>{{ $img->category->name}}</td>
+                      @break
+                      @endforeach
+                      
+                      <td>{{ count($image) }}</td>
+                    </tr>
+                    <?php $count++?>
+                  @endforeach
+                  </tbody>
+        </table>
+        <hr style="">
+        <div>
+            <b><p>Total images: {{ count($imagesgroup)  }}</p>
+            <p>Total amount: Ksh. {{ $total_amount }}</p></b>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" onclick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button>
+        <button type="button" id="checkout" onlick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Pay <i class="fa fa-loading-o"></i> </button>
       </div>
     </div>
   </div>
@@ -382,11 +444,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {{-- end modal --}}
 
-    <footer style="background: #b7eb34;">
-  <div class="container" >
-    <p style="text-align: center;">footer</p>
+
+    <!-- Payment info Modal -->
+    <div class="modal-windows">
+        <!-- Image Edit form -->
+        <div class="modal fade" id="paymentDetailsModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title" id="profileModalLabel"><b>NOTICE:</b></h4>
+                    </div>
+                   <form action="update" method="POST"> 
+                    {{ csrf_field() }}
+                    <input type="hidden" name="_method" value="PUT" />
+                    <div class="modal-body" id="profile-edit-container">
+                        <div class="modal-content-container progress-container">
+                            <h4 class="progress-message">Processing...</h4>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                    <span class="sr-only progress-message">Processing...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-content-container message-container">
+                            <div class="alert" role="alert"></div>
+                        </div>
+                        <div class="modal-content-container form-container">
+                         
+                        <div class="row">
+                                <ul class="list-group">
+                                      <li class="list-group-item ">1. A payment request has been sent to you.
+                                      </li>
+                                      <li class="list-group-item">2. Enter your <b>PIN</b> to complete payment.
+                                      </li>
+                                      <li class="list-group-item">3. After payment click OK.</li>
+                                      {{-- <li class="list-group-item">4. </li> --}}
+                                      <li class="list-group-item">4. You can view your entries in your <a href="#"> gallery.</a></li>
+                                </ul>
+                        </div> <!-- End row --> 
+                                              
+                        </div>
+                    </div> <!-- End modal-body -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                        {{-- <button type="submit" class="btn btn-primary" id="imageDetailSave">Save changes</button> --}}
+                    </div> <!-- End modal-footer -->
+
+                </form>
+                </div>
+            </div>
+        </div> <!-- End Profile Modal -->
+    </div>
+
+    {{-- end modal --}}
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModalCenterr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-top modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Add More Images</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <div class="alert alert-success alert-dismissable" id="alert" style="display: none;">
+                   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <p id="msg">Message</p>
+                </div>
+                {{-- <label class="label">Category</label> --}}
+                <select class="form-control" name="category" id="category">
+                    @foreach($categories as $category)
+                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+
+                    @endforeach
+                </select>
+
+          {{-- <div class="row">
+            <div class="col-lg-12 col-sm-12 col-11 main-section"> --}}
+                {{-- <h2 class="text-center text-success">Upload your images here</h2> --}}
+
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <div class="form-group">
+                    
+                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="1" /> 
+                </div>
+                
+            {{-- </div>
+        </div>
+ --}}      </div>
+      <div class="modal-footer">
+       {{--  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="window.location='{{ url("submit-entry#my-competitions") }}'" class="btn btn-primary">Proceed <i class="fa fa-long-arrow-right"></i> </button> --}}
+      </div>
+    </div>
+  </div>
 </div>
-</footer> 
+
+
+<footer style="background: #000;">
+  <div class="container" >
+    <p style="text-align: center; color: #ff0051;">footer</p>
+</div>
+</footer>  
 
         <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-select.min.js"></script>
@@ -447,6 +613,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
     <script>
+
+// $(document).ready(function () {
+
+//      // Attach Button click event listener 
+//     $("#payment").click(function(){
+
+//          // show Modal
+//          $('#exampleModalCenter').modal('show');
+//     });
+// });
+//         $('.btn-success').click(function(event) {
+//                 event.preventDefault();
+
+//                 // showProcessBar('Loading...');
+
+//                 $('#exampleModalCenter').modal({
+//                     backdrop: 'static'
+//                 });
+
         $(function () {
             var imageDataUrl = "get-image/-id-";
             var imageUpdateUrl = "#";
@@ -523,6 +708,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     showMessage(response.success, 'success');
                 });
+            });
+
+            $('#checkout').click(function(event) {
+                event.preventDefault();
+
+                // var imageId = $(this).data('imageId');
+
+                // console.log(imageId);
+                showProcessBar('Loading...');
+
+                $('#paymentDetailsModal').modal({
+                    backdrop: 'static'
+                });
+
+                
+                setTimeout(function(){
+                   showContainer('form-container'); 
+                  
+               },500);
+                        // $('#imageDetailsSave').show();
             });
             
             $('.image-edit-link').click(function(event) {
@@ -605,6 +810,102 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
     </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+  // $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
+
+    var e = document.getElementById("category");
+    var cat = e.options[e.selectedIndex].value;
+
+    $('#rand').val(Math.random().toString(36).substring(5));
+
+    $("#file-1").fileinput({
+        theme:'fa',
+        uploadUrl:"image-submit",
+        // deleteUrl: '',
+
+        uploadExtraData: function () {
+
+                return {
+                    _token: $("input[name='_token']").val(),
+                    category: cat,
+                    random_str: $("input[name='random_str']").val()
+                
+                };
+        },
+
+        allowedFileExtensions: ['jpg','jpeg','png'],
+
+        overwriteInitial:false,
+
+        maxFileSize: 2000,
+
+        maxFileNum: 8,
+
+        removeFromPreviewOnError: false,
+
+        showRemove: true,
+
+        browseOnZoneClick: true,
+
+        showCancel: null,
+
+        // showClose: false,  
+
+        // showCaption: false,
+
+        previewThumbTags: {},
+
+        initialPreviewShowDelete: false,
+
+        // uploadUrlThumb: null,
+
+        showPreview: true,
+
+        fileActionSettings: {
+                        showRemove: true,
+                        showUpload: false,
+                        showZoom: true,
+                        // showDrag: false,
+                    },
+
+        slugCallBack: function (filename){
+
+            // return filename.replace('(','_').replace(']','_');
+        }
+    }).on('filebatchuploadcomplete', function() {
+        // console.log('File Batch Uploaded', preview, config, tags, extraData);
+
+        var parameter = "The images Were successfuly saved";
+
+        // alert(parameter);
+
+        $('#file-1').fileinput('clear');
+
+        $('#msg').text(parameter);
+
+        $("#alert").css({
+          display: "block",
+        });
+
+        // window.location = "view-album" + parameter;
+         // window.location.href =  'view-album';
+         // console.log();
+    });
+
+</script>   
 
 </body>
 </html>

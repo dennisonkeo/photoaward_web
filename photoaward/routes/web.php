@@ -77,7 +77,7 @@ Route::post('image-submit', 'UploadController@store')->name('image-submit');
 
 Route::get('image-detail', 'UploadController@index')->name('image-detail');
 
-Route::get('upload-image', 'HomeController@upload_image')->name('upload-image');
+Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-image');
 
 Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 

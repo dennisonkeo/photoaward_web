@@ -18,6 +18,7 @@ class CreateImagePaysTable extends Migration
             $table->integer('user_id');
             $table->string('token');
             $table->integer('total_images');
+            $table->integer('amount')->default(0);
             $table->string('status')->default('Unpaid');
             $table->timestamps();
         });

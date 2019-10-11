@@ -348,7 +348,7 @@ initializeClock('clockdiv2', deadline2);
 
         </div>
 
-                  <div class="page" style="height: 500px;">
+                  <div class="page" >
                   
                     <div class="nav-left">
                         <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
@@ -462,7 +462,7 @@ initializeClock('clockdiv2', deadline2);
 
   </div>
 
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
 
 				<div class="container">
 					<!-- <div class="lang-nav">
