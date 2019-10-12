@@ -727,6 +727,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                    showContainer('form-container'); 
                   
                },500);
+
+                // $.ajax({
+                //          url : "",
+                //         type:'POST',
+
+                //         dataType: 'json',
+                //         success: function( json ) {
+                //             console.log('Done'); 
+                //         },
+
+                //         error: function(jqXHR, textStatus, errorThrown) {
+                //             console.log('nop');
+                //     }
+                //       });
+
                         // $('#imageDetailsSave').show();
             });
             
