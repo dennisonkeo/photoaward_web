@@ -73,6 +73,8 @@ Route::get('my-gallery', 'HomeController@my_gallery')->name('my-gallery');
 
 Route::get('upload', 'HomeController@new_upload')->name('upload');
 
+Route::get('uploaded', 'UploadController@save_upload')->name('uploaded');
+
 Route::post('image-submit', 'UploadController@store')->name('image-submit');
 
 Route::get('view-album', 'UploadController@view_cart')->name('view-album');
