@@ -60,9 +60,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTJZVQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header style="background: #b7eb34; height: 70px;">
+<header style="background: #000; color: #ff0051; height: 80px;">
     <div>
-        <p style="text-align: center; color: white;">Our header info</p>
+        {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
+        <img src="images/logo_.png" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
     </div>
 </header>
             
@@ -151,12 +152,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 competitions-area">
                             <div class="row">
-
+                                
+                                @foreach($categories as $category)
                                     <div class="col-xs-12 col-sm-12 col-md-4 competition competition-sony ">
                                         <div class="inner">
 
                                             <div class="title">
-                                                <h2 style="border-color: #b7eb34;">Category 1 </h2>
+                                                <h2 style="border-color: #b7eb34;">{{ $category->name }} </h2>
                                             </div>
 
                                             <div class="content">
@@ -164,54 +166,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" alt="Open competition">
 
                                                         <div class="caption caption-up">
-                                                            <p>Content</p>
+                                                            <p>{{ $category->description }}</p>
                                                         </div>
                                                     </div>
-                                             <a href="{{ route('upload-image') }}" class="btn btn-primary" style="background-color: #b7eb34; border-color: #b7eb34">Enter Now</a>
+                                             <a href="{{ route('upload-image', $category->id) }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-xs-12 col-sm-12 col-md-4 competition competition-sony ">
-                                        <div class="inner">
-
-                                            <div class="title">
-                                                <h2>Category 2</h2>
-                                            </div>
-
-                                            <div class="content">
-                                                <div class="thumbnail">
-                                                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg" alt="Open competition">
-
-                                                        <div class="caption caption-up">
-                                                            <p>Content</p>
-                                                        </div>
-                                                    </div>
-                                             <a href="#" class="btn btn-primary" style="background-color: #b7eb34; border-color: #b7eb34">Enter Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12 col-sm-12 col-md-4 competition competition-sony ">
-                                        <div class="inner">
-
-                                            <div class="title">
-                                                <h2>Category 3</h2>
-                                            </div>
-
-                                            <div class="content">
-                                                <div class="thumbnail">
-
-                                                        <img src="https://cdn.stocksnap.io/img-thumbs/960w/2OU8JC9ZWH.jpg" alt="news01.jpg" alt="Open competition">
-
-                                                        <div class="caption caption-up">
-                                                            <p>Content</p>
-                                                        </div>
-                                                    </div>
-                                             <a href="#" class="btn btn-primary" style="background-color: #b7eb34; border-color: #b7eb34">Enter Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                @endforeach
 
                                      </div>
                         </div>
@@ -232,7 +195,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <thead class="thead-inverse">
         <tr>
             <th>ID</th>
-            <th>Category</th>
             <th>Date Submitted</th>
             <th>Images submitted</th>
             <th>Total Amount</th>
@@ -244,10 +206,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         @foreach($records as $record)
              <tr>
                   <td>{{ $record->id }}</td>
-                  <td>Category 1</td>
                   <td>{{ $record->updated_at }}</td>
                   <td>{{ $record->total_images }} images</td>
-                  <td>{{ $record->total_images *100 }}</td>
+                  <td>{{ $record->total_images }}</td>
                   <td style="color: red;">{{ $record->status }}</td>
                   <td><a href="my-gallery"><i class="fa fa-eye"></i> View</a></td>
             </tr>
@@ -334,9 +295,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <footer style="background: #b7eb34;">
+    <footer style="background: #000;">
   <div class="container" >
-    <p style="text-align: center;">footer</p>
+    <p style="text-align: center; color: #ff0051;">footer</p>
 </div>
 </footer>        
         <script src="https://users.worldphoto.org/js/jquery.min.js"></script>

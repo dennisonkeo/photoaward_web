@@ -57,6 +57,12 @@ Route::post('user-login', 'HomeController@login_user')->name('user-login');
 
 Route::group(['middleware' => ['auth']], function () {
 
+Route::put('update', 'UploadController@update')->name('update');
+
+Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
+
+Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
+
 Route::get('logout', 'HomeController@logout')->name('logout');
 
 Route::get('like-image', 'UploadController@display_like')->name('like-image');
@@ -69,9 +75,11 @@ Route::get('upload', 'HomeController@new_upload')->name('upload');
 
 Route::post('image-submit', 'UploadController@store')->name('image-submit');
 
+Route::get('view-album', 'UploadController@view_cart')->name('view-album');
+
 Route::get('image-detail', 'UploadController@index')->name('image-detail');
 
-Route::get('upload-image', 'HomeController@upload_image')->name('upload-image');
+Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-image');
 
 Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 

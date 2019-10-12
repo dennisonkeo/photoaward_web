@@ -28,7 +28,26 @@ class UploadController extends Controller
     {
         $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
 
-        return view('view_cart', compact('images'));
+        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+
+        $total_amount = 0;
+
+        $total = 0;
+
+        foreach($imagesgroup->groupby('category_id') as $image)
+        {
+            foreach($image as $img)
+            {
+                $total = count($image)*$img->category->amount;
+                break; 
+            }
+
+            $total_amount += $total;
+        }
+
+    $categories = Category::all();
+
+        return view('view_cart', compact('images', 'imagesgroup', 'total_amount', 'categories'));
     }
 
     public function getImage($id)

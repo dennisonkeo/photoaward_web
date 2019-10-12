@@ -76,6 +76,15 @@
     vertical-align: top;
     margin-left: -10px; 
 }
+
+.krajee-default.file-preview-frame {
+    margin: 2px;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    padding: 6px;
+    float: left;
+    text-align: center;
+}
 </style>
     
 </head>
@@ -87,9 +96,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<header style="background: #b7eb34; height: 70px;">
+<header style="background: #000; color: #ff0051; height: 80px;">
     <div>
-        <p style="text-align: center; color: white;">Our header info</p>
+        {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
+        <img src="{{ asset('images/logo_.png') }}" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
     </div>
 </header>
             
@@ -132,7 +142,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     
     <div class="col-xs-12 col-sm-12 col-md-12">
-        <h1 style="border-color: #b7eb34;">Category One</h1>
+        <h1 style="border-color: #b7eb34;">{{ $category->name }}</h1>
     </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
             <img class="img-responsive" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" />
@@ -235,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="form-group">
 
-                    <input type="hidden" name="category" value="1">
+                    <input type="hidden" name="category" value="{{ $category->id }}">
                     <input type="hidden" name="random_str" value="" id="rand">
                     
                     <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
@@ -306,7 +316,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div> 
                 <!-- End col -->
                 
-                <div class="col-xs-12 col-sm-12 col-md-12 buttons">
+               {{--  <div class="col-xs-12 col-sm-12 col-md-12 buttons">
                     
                     <button type="submit" class="btn btn-success submit-button" name="" value="">
                         <i class="fa fa-floppy-o fa-lg"></i>
@@ -322,7 +332,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             Cancel
                         </a>
                     </span>
-                </div>
+                </div> --}}
 
                 {{-- </form> --}}
             </div> <!-- End row -->
@@ -331,9 +341,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <footer style="background: #b7eb34;">
+    <footer style="background: #000;">
   <div class="container" >
-    <p style="text-align: center;">footer</p>
+    <p style="text-align: center;"></p>
 </div>
 </footer>        
         {{-- <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
@@ -404,7 +414,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     $("#file-1").fileinput({
         theme:'fa',
-        uploadUrl:"image-submit",
+        uploadUrl:"{{ route('image-submit') }}",
         // deleteUrl: '',
 
         uploadExtraData: function () {
@@ -458,7 +468,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }).on('filebatchuploadcomplete', function() {
         // console.log('File Batch Uploaded', preview, config, tags, extraData);
-         window.location.href =  'view-album';
+         window.location.href =  '{{ route('upload-info') }}';
          // console.log();
     });
 

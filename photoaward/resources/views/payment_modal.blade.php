@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Photo Contest</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
-	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">
 
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    .main-section{
+      margin: 0 auto;
+      padding: 20px;
+      margin-top: 100px;
+      background: #fff;
+      box-shadow: 0 0 20px #c1c1c1;
+      height: auto;
+      width: 50%;
+    }
 
-	<style type="text/css">
-		.main-section{
-			margin: 0 auto;
-			padding: 20px;
-			margin-top: 100px;
-			background: #fff;
-			box-shadow: 0 0 20px #c1c1c1;
-			height: auto;
-			width: 50%;
-		}
-
-		body{
-			background-image: url('{{ asset('images/pic2.jpg') }}');
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 100%;
-		}
+    body{
+      background-image: url('{{ asset('images/pic2.jpg') }}');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+    }
 
         select:hover{
             cursor: pointer;
@@ -34,10 +29,6 @@
         option{
             cursor: pointer;
         }
-.modal-body {
-    /*max-height: calc(100vh - 210px);*/
-    /*overflow-y: auto;*/
-}
 
 .krajee-default.file-preview-frame {
     margin: 2px;
@@ -49,40 +40,11 @@
 }
 
 
-	</style>
-</head>
-<body class="bg-sucess">
+  </style>
 
-	<div class="container">
-		<div class="row" >
-			<div class="col-lg-8 col-sm-12 col-11 main-section" style="border-radius: 7px;">
-				<h4 class="alert alert-success" style="margin: -20px; background: black; color: #ff0051;border:none; margin-bottom: 20px;"> <span>PICTURE</span> <span style="color: white;">+254</span></h4>
-
-
-				{{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
-
-				<div class="form-group" style="margin: 0 auto;">
-					
-					<p style="">Please, click on either of the buttons below to proceed.</p>
-					{{-- <p>Total Amount: <span style="font-weight: bold;">Ksh. {{ $totalPay }}</span></p><br> --}}
-				<hr>
-				<div class="form-group">
-					<button class="btn btn-primary btn" data-toggle="modal" data-target="#exampleModalCenter" data-backdrop="static" data-keyboard="false"><i class="fa fa-plus-circle"></i> Add More Images</button>
-
-					<button class="btn btn-warning pull-right" onclick="window.location='{{ url("view-album") }}'"><i class="fa fa-eye"></i> View Your Gallery</button>
-					 
-				</div>
-				
-			</div>
-		</div>
-	</div>
-
-	{{-- modal window --}}
-
-	<!-- Button trigger modal -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenterr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-top modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -126,8 +88,6 @@
   </div>
 </div>
 
-	{{-- end modal --}}<!-- Modal -->
-
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -142,7 +102,7 @@
 
 <script type="text/javascript">
 
-	// $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
+  // $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
 
     var e = document.getElementById("category");
     var cat = e.options[e.selectedIndex].value;
@@ -224,6 +184,3 @@
     });
 
 </script>   
-
-</body>
-</html>

@@ -54,7 +54,7 @@
 
     
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <nav style="background: black;" class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
@@ -67,12 +67,12 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="#" alt="." style="height: 3.8rem;">
+                         <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                        PIC+254
+                       <span style="color: #ff0051;"> PIC+254</span>
                     </a>
                 </span>
             </div>
@@ -184,7 +184,7 @@
                                 {{-- @endif --}}
                                 <div class="carousel-item">
                                     <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span class="count" style="font-size: 18px;">1</span></i>
+                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span id="count" style="font-size: 18px;">1</span></i>
                                 </div>
 
                                 
@@ -228,7 +228,7 @@
 
 </section>
 
-<section class="cid-qTkAaeaxX5" id="footer1-2">
+<section class="cid-qTkAaeaxX5" id="footer1-2" style="background: black;">
 
     
 
@@ -239,7 +239,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="#">
-                        <img src="#" alt="logo">
+                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>
             </div>
