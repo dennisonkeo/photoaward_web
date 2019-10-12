@@ -43,9 +43,13 @@ class UploadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function display_like()
     {
-        //
+        $first = Upload::where('user_id',Auth::user()->id)->first();
+
+        $images = Upload::where('user_id',Auth::user()->id)->get();
+
+        return view('like_image', compact('images','first'));
     }
 
     /**

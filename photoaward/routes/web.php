@@ -41,9 +41,9 @@ Route::get('jury', function () {
 //     return view('upload_view');
 // });
 
-Route::get('like_image', function () {
-    return view('like_image');
-});
+// Route::get('like_image', function () {
+//     return view('like_image');
+// });
 
 Route::get('about', 'HomeController@about')->name('about');
 
@@ -58,6 +58,8 @@ Route::post('user-login', 'HomeController@login_user')->name('user-login');
 Route::group(['middleware' => ['auth']], function () {
 
 Route::get('logout', 'HomeController@logout')->name('logout');
+
+Route::get('like-image', 'UploadController@display_like')->name('like-image');
 
 Route::get('upload-info', 'HomeController@upload_info')->name('upload-info');
 
