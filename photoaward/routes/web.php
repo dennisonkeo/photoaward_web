@@ -41,9 +41,9 @@ Route::get('jury', function () {
 //     return view('upload_view');
 // });
 
-Route::get('like_image', function () {
-    return view('like_image');
-});
+// Route::get('like_image', function () {
+//     return view('like_image');
+// });
 
 Route::get('about', 'HomeController@about')->name('about');
 
@@ -65,11 +65,15 @@ Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
 
 Route::get('logout', 'HomeController@logout')->name('logout');
 
+Route::get('like-image', 'UploadController@display_like')->name('like-image');
+
 Route::get('upload-info', 'HomeController@upload_info')->name('upload-info');
 
 Route::get('my-gallery', 'HomeController@my_gallery')->name('my-gallery');
 
 Route::get('upload', 'HomeController@new_upload')->name('upload');
+
+Route::get('uploaded', 'UploadController@save_upload')->name('uploaded');
 
 Route::post('image-submit', 'UploadController@store')->name('image-submit');
 

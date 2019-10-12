@@ -62,9 +62,13 @@ class UploadController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function display_like()
     {
-        //
+        $first = Upload::where('user_id',Auth::user()->id)->first();
+
+        $images = Upload::where('user_id',Auth::user()->id)->get();
+
+        return view('like_image', compact('images','first'));
     }
 
     /**
@@ -104,6 +108,7 @@ class UploadController extends Controller
               $upload->imagePath = $imagePath;
               $upload->token = session()->getId();
               $upload->caption = "";
+              $upload->uploaded = "no";
               $upload->user_id = Auth::user()->id;
               $upload->category_id = $request->input("category");
 
@@ -161,9 +166,52 @@ class UploadController extends Controller
      * @param  \App\Upload  $upload
      * @return \Illuminate\Http\Response
      */
-    public function show(Upload $upload)
+    public function save_upload()
     {
-        //
+        $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+
+        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+
+        $total_amount = 0;
+
+        $total = 0;
+
+        foreach($imagesgroup->groupby('category_id') as $image)
+        {
+            foreach($image as $img)
+            {
+                $total = count($image)*$img->category->amount;
+                break; 
+            }
+
+            $total_amount += $total;
+        }
+
+        $verifytoken = ImagePay::where('token',"=",session()->getId())->first();
+
+
+        if(!$verifytoken)
+
+             {
+                        $upload = new ImagePay();
+             
+                           $upload->amount = $total_amount;
+                           $upload->token = session()->getId();
+                           $upload->total_images = count($imagesgroup);
+                           $upload->user_id = Auth::user()->id;
+             
+                           $upload->save();
+             
+                        Upload::where('token',"=", session()->getId())->update(array('uploaded' => 'yes'));
+
+                        return response()->json('Done');
+                }
+                else
+                {
+                    return response()->json('Not good here');
+                }
+
+
     }
 
     /**

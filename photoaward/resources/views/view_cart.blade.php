@@ -275,7 +275,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 buttons">
                     <span class="btn-grp primary">
-                        <a href="upload-image" class="btn btn-primary back" role="button" data-target="#xampleModalCenterr" data-toggle="modal">
+                        <a href="upload-image" class="btn btn-primary back" role="button" onclick="">
                             <i class="fa fa-upload fa-lg"></i>
                             Upload more images
                         </a>
@@ -728,19 +728,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   
                },500);
 
-                // $.ajax({
-                //          url : "",
-                //         type:'POST',
+                $.ajax({
+                         url : "uploaded",
+                        type:'GET',
 
-                //         dataType: 'json',
-                //         success: function( json ) {
-                //             console.log('Done'); 
-                //         },
 
-                //         error: function(jqXHR, textStatus, errorThrown) {
-                //             console.log('nop');
-                //     }
-                //       });
+                        success: function(response) {
+                            console.log("done"); 
+                        },
+
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(errorThrown);
+                    }
+                      });
 
                         // $('#imageDetailsSave').show();
             });
@@ -826,101 +826,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     </script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/js/fileinput.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/themes/fa/theme.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
-<script type="text/javascript">
-
-  // $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
-
-    var e = document.getElementById("category");
-    var cat = e.options[e.selectedIndex].value;
-
-    $('#rand').val(Math.random().toString(36).substring(5));
-
-    $("#file-1").fileinput({
-        theme:'fa',
-        uploadUrl:"image-submit",
-        // deleteUrl: '',
-
-        uploadExtraData: function () {
-
-                return {
-                    _token: $("input[name='_token']").val(),
-                    category: cat,
-                    random_str: $("input[name='random_str']").val()
-                
-                };
-        },
-
-        allowedFileExtensions: ['jpg','jpeg','png'],
-
-        overwriteInitial:false,
-
-        maxFileSize: 2000,
-
-        maxFileNum: 8,
-
-        removeFromPreviewOnError: false,
-
-        showRemove: true,
-
-        browseOnZoneClick: true,
-
-        showCancel: null,
-
-        // showClose: false,  
-
-        // showCaption: false,
-
-        previewThumbTags: {},
-
-        initialPreviewShowDelete: false,
-
-        // uploadUrlThumb: null,
-
-        showPreview: true,
-
-        fileActionSettings: {
-                        showRemove: true,
-                        showUpload: false,
-                        showZoom: true,
-                        // showDrag: false,
-                    },
-
-        slugCallBack: function (filename){
-
-            // return filename.replace('(','_').replace(']','_');
-        }
-    }).on('filebatchuploadcomplete', function() {
-        // console.log('File Batch Uploaded', preview, config, tags, extraData);
-
-        var parameter = "The images Were successfuly saved";
-
-        // alert(parameter);
-
-        $('#file-1').fileinput('clear');
-
-        $('#msg').text(parameter);
-
-        $("#alert").css({
-          display: "block",
-        });
-
-        // window.location = "view-album" + parameter;
-         // window.location.href =  'view-album';
-         // console.log();
-    });
-
-</script>   
 
 </body>
 </html>

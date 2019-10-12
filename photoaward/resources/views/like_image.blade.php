@@ -96,7 +96,7 @@
     </nav>
 </section>
 
-<section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1" style="backgound: #000; background-image: url('images/pic12.jpg'); opaity: 0.9;">
+<!-- <section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1" style="backgound: #000; background-image: url('images/pic12.jpg'); opaity: 0.9;">
 
     
 
@@ -111,13 +111,13 @@
                 <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2">
                     Browse your gallery with ease.
                 </h3>
-                <!-- <p class="mbr-text pb-3 mbr-fonts-style display-5">
+                <p class="mbr-text pb-3 mbr-fonts-style display-5">
 
-                </p> -->
-                <!-- <div class="mbr-section-btn">
+                </p>
+                <div class="mbr-section-btn">
                     <a class="btn btn-md btn-secondary display-4" href="https://mobirise.com">LEARN MORE</a>
                     <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -126,9 +126,9 @@
             <i class="mbri-down mbr-iconfont"></i>
         </a>
     </div>
-</section>
+</section> -->
 
-<section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6">
+<section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
 
     
 
