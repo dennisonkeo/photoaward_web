@@ -298,7 +298,11 @@ initializeClock('clockdiv2', deadline2);
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
+<<<<<<< HEAD
           <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 345px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+=======
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; width: 345px; background: #ff0051; height: 40px; line-height: 40px;"><i class="fa fa-send-o"></i> SUBMIT</button><br><br>
+>>>>>>> 8aac641601c4ff0be19dff84649aeaf58e19ccf6
           <div id="clockdiv">
               <div>
                 <span class="days"></span>
@@ -359,7 +363,11 @@ initializeClock('clockdiv2', deadline2);
 
         </div>
 
+<<<<<<< HEAD
                   <div class="page" style="height: 500px;">
+=======
+                  <div class="page" >
+>>>>>>> 8aac641601c4ff0be19dff84649aeaf58e19ccf6
                   
                     <div class="nav-left">
                         <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
@@ -473,7 +481,11 @@ initializeClock('clockdiv2', deadline2);
 
   </div>
 
+<<<<<<< HEAD
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
+=======
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
+>>>>>>> 8aac641601c4ff0be19dff84649aeaf58e19ccf6
 
 				<div class="container">
 					<!-- <div class="lang-nav">
