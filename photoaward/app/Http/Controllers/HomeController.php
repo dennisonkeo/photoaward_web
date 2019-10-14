@@ -46,7 +46,7 @@ class HomeController extends Controller
         
         $first = Upload::where('user_id',Auth::user()->id)->where('uploaded','yes')->latest()->first();
 
-        $images = Upload::where('user_id',Auth::user()->id)where('uploaded','yes')->latest()->->get();
+        $images = Upload::where('user_id',Auth::user()->id)->where('uploaded','yes')->latest()->get();
 
 
         return view('image_gallery', compact('images','first'));
