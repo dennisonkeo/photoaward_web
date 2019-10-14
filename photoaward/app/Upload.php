@@ -22,4 +22,9 @@ class Upload extends Model
         return $this->belongsTo(ImagePay::class);
      }
 
+     public function votes()
+     {
+        return $this->hasMany(Vote::class);
+     }
+
 }

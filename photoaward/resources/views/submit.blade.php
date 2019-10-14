@@ -208,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <td>{{ $record->id }}</td>
                   <td>{{ $record->updated_at }}</td>
                   <td>{{ $record->total_images }} images</td>
-                  <td>{{ $record->total_images }}</td>
+                  <td>{{ $record->amount }}</td>
                   <td style="color: red;">{{ $record->status }}</td>
                   <td><a href="my-gallery"><i class="fa fa-eye"></i> View</a></td>
             </tr>

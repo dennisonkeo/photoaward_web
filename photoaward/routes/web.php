@@ -37,6 +37,11 @@ Route::get('jury', function () {
 
 });
 
+Route::get('votingg', function () {
+    return view('voting_test');
+
+});
+
 // Route::get('view', function () {
 //     return view('upload_view');
 // });
@@ -62,6 +67,8 @@ Route::put('update', 'UploadController@update')->name('update');
 Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
 
 Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
+
+Route::post('add-like', 'UploadController@add_like')->name('add-like');
 
 Route::get('logout', 'HomeController@logout')->name('logout');
 
