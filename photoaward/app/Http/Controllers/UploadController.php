@@ -257,7 +257,7 @@ class UploadController extends Controller
      */
     public function update(Request $request)
     {
-        Upload::where('id',"=", $request->input('image_id'))->update(array('caption' => $request->input('image_description')));
+        Upload::where('id',"=", $request->input('image_id'))->update(array('caption' => $request->input('image_description'),'device' => $request->input('device')));
 
         return back()->with('success', 'Caption was edited Successfully');  
     }

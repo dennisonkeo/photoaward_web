@@ -19,6 +19,7 @@ class CreateUploadsTable extends Migration
             $table->string('imagePath');
             $table->string('caption');
             $table->string('imageName');
+            $table->string('device');
             $table->string('token');
             $table->string('uploaded')->defaut('no');
             $table->integer('category_id');

@@ -247,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <td class="op-column" style="white-space: nowrap;">
 
                                                  <a href="#" title="Edit to Complete" data-image-id="{{ $image->id }}" class="image-edit-link">
-                                                        <i class="fa fa-pencil-square" aria-hidden="true"></i> edit caption
+                                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i> Add image details
                                                     </a>
                                                                                                 
                                         <br/><br/>
@@ -255,8 +255,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <form onsubmit="return confirm('Do you really want to delete the Image?');" action="{{ route('delete-image',$image->id) }}" method="POST" >
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_method" value="DELETE" />
-                                            <button style="background: none; color: red;" type="submit" class="btn btn-secondary" title="Delete">
-                                                    <i class="fa fa-trash" aria-hidden="true"></i> delete
+                                            <button style="background: none; color: #ff00ff;" type="submit" class="btn btn-secondary" title="Delete">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i> Delete
                                                 </button> 
                                           </form>
 
@@ -367,11 +367,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="label label-required">Required</span>
             </label>
             <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="image_description" cos="50"></textarea>
-            <small class="text-muted">
-                Please give us a short description of your image. When, where, why, how did you take it?<br>
-               
-                Limited to 150 words. Remaining: <span class="description-word-count"></span>
-            </small>
+
+        </div> 
+
+        <div class="form-group">
+            <label for="image_description">
+                Device Name/Model 
+                <span class="label label-required"></span>
+            </label>
+            <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="device" cos="50"></textarea>
         </div>
 
     </div>
