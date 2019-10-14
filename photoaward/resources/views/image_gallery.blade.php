@@ -81,8 +81,8 @@
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="submit-entry">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Home
+                        <span></span>
+                        My profile
                     </a>
                 </li>
                 <li class="nav-item">
