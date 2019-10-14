@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Upload;
 use App\Category;
 use App\ImagePay;
+use App\Vote;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 
@@ -64,9 +65,9 @@ class UploadController extends Controller
      */
     public function display_like()
     {
-        $first = Upload::where('user_id',Auth::user()->id)->first();
+        $first = Upload::where('user_id',Auth::user()->id)->latest()->first();
 
-        $images = Upload::where('user_id',Auth::user()->id)->get();
+        $images = Upload::where('uploaded',"yes")->latest()->get();
 
         return view('like_image', compact('images','first'));
     }
@@ -220,9 +221,31 @@ class UploadController extends Controller
      * @param  \App\Upload  $upload
      * @return \Illuminate\Http\Response
      */
-    public function edit(Upload $upload)
+    public function add_like()
     {
-        //
+        $upload_id = $_POST['upload_id'];
+
+        $verifyliked = Vote::where('upload_id', $upload_id)->where('user_id',Auth::user()->id)->first();
+
+
+        if(!$verifyliked)
+
+             {
+                        $like = new Vote();
+             
+                           $like->liked = 1;
+                           $like->upload_id = $upload_id;
+                           $like->user_id = Auth::user()->id;
+             
+                           $like->save();
+
+                $get_likes = Vote::where('upload_id', $upload_id)->count();
+
+
+                // echo $get_likes;
+
+                        return response()->json($get_likes);
+            }
     }
 
     /**

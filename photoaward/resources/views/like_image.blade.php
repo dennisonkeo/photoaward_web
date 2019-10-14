@@ -24,7 +24,7 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
   <style type="text/css">
-      #vote {
+      .vote {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -42,7 +42,7 @@
   border-radius: 20px;
 }
 
-#vote:hover{
+.vote:hover{
     color: green;
 }
 
@@ -54,7 +54,7 @@
 
     
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm" style="background: black;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
@@ -63,16 +63,16 @@
                 <span></span>
             </div>
         </button>
-        <div class="menu-logo">
+<div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="#" alt="." style="height: 3.8rem;">
+                         <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                        PIC+254
+                       <span style="color: #ff0051;"> PIC+254</span>
                     </a>
                 </span>
             </div>
@@ -142,7 +142,7 @@
                             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal">
                                 <img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
                                 <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Category One</span></div></div>
+                                <span class="mbr-gallery-title mbr-fonts-style display-7">Explore Cool Photos</span></div></div>
                             @else
                             <p>You have no images in your gallery</p>
                             @endif
@@ -184,7 +184,7 @@
                                 {{-- @endif --}}
                                 <div class="carousel-item">
                                     <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span class="count" style="font-size: 18px;">1</span></i>
+                                    <i id="vote" class="vote fa fa-heart-o" style="font-size: 30px;" onlick="incrementValue()" data-id="{{ $image->id }}"> <span class="count" style="font-size: 18px;">{{ count($image->votes) }}</span></i>
                                 </div>
 
                                 
@@ -228,7 +228,7 @@
 
 </section>
 
-<section class="cid-qTkAaeaxX5" id="footer1-2">
+<section class="cid-qTkAaeaxX5" id="footer1-2"  style="background: black;">
 
     
 
@@ -239,7 +239,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="#">
-                        <img src="#" alt="logo">
+                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>
             </div>
@@ -277,12 +277,46 @@
     </div>
 </section>
 
-<script type="text/javascript">
-    function incrementValue()
-{
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
 
-    document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML)+1;
-}
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    // when the user clicks on like
+    $('.vote').on('click', function(){
+      var image_id = $(this).data('id');
+          $upload = $(this);
+
+          // console.log($upload.parent().find('count'));
+
+      $.ajax({
+        url: 'add-like',
+        type: 'POST',
+        data: {
+          'liked': 1,
+          upload_id: image_id,
+          _token: '{{csrf_token()}}'
+        },
+        success: function(response){
+          if(response !="")
+          {
+          $upload.parent().find('span.count').text(response);
+          // $post.addClass('hide');
+          // $post.siblings().removeClass('hide');
+        }
+
+          // console.log(response);
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+        }
+      });
+    });
+
+  });  
+
+
 </script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
