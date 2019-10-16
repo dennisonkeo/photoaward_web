@@ -21,6 +21,9 @@ Route::get('categories', function () {
 Route::get('slider', function () {
     return view('slider');
 });
+Route::get('imagelike', function () {
+    return view('imagelike');
+});
 
 Route::get('/', function () {
     return view('about');

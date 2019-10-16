@@ -94,6 +94,59 @@
   font-size: 35px;
   cursor: pointer;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
 </style>
   
 </head>
@@ -178,32 +231,101 @@
 
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
 
-    <div style="text-align:center">
-  <h2>Tabbed Image Gallery</h2>
-  <p>Click on the images below:</p>
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Image Grid</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
+  <button class="btn" onclick="four()">4</button>
 </div>
 
-<!-- The four columns -->
-<div class="row">
+<!-- Photo Grid -->
+<div class="row"> 
   <div class="column">
-    <img src="img_nature.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <img class="myig" src="images/pic34.jpg" style="width:100%">
+    <img class="myig" src="images/pic33.jpg" style="width:100%">
+    <img class="myig" src="images/pic29.jpg" style="width:100%">
+    <img class="myig" src="images/pic36.jpg" style="width:100%">
+    <img class="myig" src="images/pic37.jpg" style="width:100%">
+    <img class="myig" src="images/pic39.jpg" style="width:100%">
+    <img class="myig" src="images/pic46.jpg" style="width:100%">
+    <img class="myig" src="images/pic46.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img src="img_snow.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <img src="images/pic12.jpg" style="width:100%">
+    <img src="images/pic23.jpg" style="width:100%">
+    <img src="images/pic49.jpg" style="width:100%">
+    <img src="images/pic26.jpg" style="width:100%">
+    <img src="images/pic43.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/pic48.jpg" style="width:100%">
+    <img src="images/pic13.jpg" style="width:100%">
+    <img src="images/pic61.jpg" style="width:100%">
+    <img src="images/pic6.jpg" style="width:100%">
+    <img src="images/pic7.jpg" style="width:100%">
+    <img src="images/pic9.jpg" style="width:100%">
+    <img src="images/pic42.jpg" style="width:100%">
+    <img src="images/pic42.jpg" style="width:100%">
   </div>
   <div class="column">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="img_lights.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <img src="images/pic41.jpg" style="width:100%">
+    <img src="images/pic45.jpg" style="width:100%">
+    <img src="images/pic4.jpg" style="width:100%">
+    <img src="images/pic50.jpg" style="width:100%">
+    <img src="images/pic57.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
   </div>
 </div>
+
+
+
+
+<!--     <div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div> -->
+
+<!-- The four columns -->
+<!-- <div class="row">
+  <div class="column">
+    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div><div class="column">
+    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+
 
 <div class="container">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <img id="expandedImg" style="width:100%">
   <div id="imgtext"></div>
-</div>
+</div> -->
 
 
     <!-- <div class="container">
@@ -348,6 +470,55 @@
         
     </div>
 </section>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+console.log(elements.length);
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+  console.log(elements.length);
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+    
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 <script>
 function myFunction(imgs) {
