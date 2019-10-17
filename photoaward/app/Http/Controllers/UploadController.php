@@ -69,7 +69,79 @@ class UploadController extends Controller
 
         $images = Upload::where('uploaded',"yes")->latest()->get();
 
-        return view('like_image', compact('images','first'));
+        $count = Upload::where('uploaded',"yes")->count();
+
+        $modulus = $count%4;
+
+        $constant = ($count-$modulus)/4;
+
+        $group_1;
+        $group_2;
+        $group_3;
+        $group_4 = $constant;
+
+        if($modulus < 2)
+        {
+            $group_1 = $constant+$modulus;
+            $group_2 = $constant;
+            $group_3 = $constant;
+        }
+        else if($modulus  == 2)
+        {
+            $group_1 = $constant+1;
+            $group_2 = $constant+1;
+            $group_3 = $constant;
+        }
+        else if($modulus  == 3)
+        {
+            $group_1 = $constant+1;
+            $group_2 = $constant+1;
+            $group_3 = $constant+1;
+        }
+
+        $images_1 = Upload::where('uploaded','yes')->latest()->take($group_1)->get();
+
+        $array_1 = array();
+        
+        foreach($images_1 as $image)
+        {
+            $array_1[] = $image->id;
+                       
+        }
+
+        $last_1 = array_pop($array_1);
+
+        $images_2 = Upload::where('uploaded','yes')->where('id',"<",$last_1)->latest()->take($group_2)->get();
+
+         $array_2 = array();
+        
+        foreach($images_2 as $image)
+        {
+            $array_2[] = $image->id;
+                       
+        }
+
+        $last_2 = array_pop($array_2);
+
+        $images_3 = Upload::where('uploaded','yes')->where('id',"<",$last_2)->latest()->take($group_3)->get();
+
+         $array_3 = array();
+        
+        foreach($images_3 as $image)
+        {
+            $array_3[] = $image->id;
+                       
+        }
+
+        $last_3 = array_pop($array_3);
+
+
+        $images_4 = Upload::where('uploaded','yes')->where('id',"<",$last_3)->latest()->take($group_4)->get();
+
+            // dd($images_4);
+
+
+        return view('like_image', compact('images_1','images_2','images_3','images_4'));
     }
 
     /**

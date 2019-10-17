@@ -245,7 +245,7 @@ span .hoverr:hover{
 
     
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm" style="background: black;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
@@ -254,16 +254,16 @@ span .hoverr:hover{
                 <span></span>
             </div>
         </button>
-        <div class="menu-logo">
+<div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="#" alt="." style="height: 3.8rem;">
+                         <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                        PIC+254
+                       <span style="color: #ff0051;"> PIC+254</span>
                     </a>
                 </span>
             </div>
@@ -327,13 +327,95 @@ span .hoverr:hover{
 
 <!-- Photo Grid -->
 <div class="row"> 
-  <div class="column">
+
+<div class="column">
+  @foreach($images_1 as $image)
   <div style="position: relative;" class="imghover">
-      <a href="images/pic34.jpg"><img class="myigg" src="images/pic34.jpg" style="width:100%" oncick="myFunction(this);"></a>
-      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;"><i class="hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;"></i> 0</span>
+      <a href="{{ asset('uploads') }}/{{ $image->imageName }}"><img class="myigg" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;">
+      
+      @if(count($image->votes) >0)
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px; color: #ff00ff;" data-id="{{ $image->id }}"></i> 
+      @else
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;" data-id="{{ $image->id }}"></i> 
+
+      @endif
+        {{ count($image->votes) }}
+      
+
+
+      </span>
   </div>
+  @endforeach
+</div>
+
+<div class="column">
+  @foreach($images_2 as $image)
+  <div style="position: relative;" class="imghover">
+      <a href="{{ asset('uploads') }}/{{ $image->imageName }}"><img class="myigg" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;">
+      
+      @if(count($image->votes) >0)
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px; color: #ff00ff;" data-id="{{ $image->id }}"></i> 
+      @else
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;" data-id="{{ $image->id }}"></i> 
+
+      @endif
+        {{ count($image->votes) }}
+      
+
+
+      </span>
+  </div>
+  @endforeach
+</div>
+
+<div class="column">
+  @foreach($images_3 as $image)
+  <div style="position: relative;" class="imghover">
+      <a href="{{ asset('uploads') }}/{{ $image->imageName }}"><img class="myigg" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;">
+      
+      @if(count($image->votes) >0)
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px; color: #ff00ff;" data-id="{{ $image->id }}"></i> 
+      @else
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;" data-id="{{ $image->id }}"></i> 
+
+      @endif
+        {{ count($image->votes) }}
+      
+
+
+      </span>
+  </div>
+  @endforeach
+</div>
+
+<div class="column">
+  @foreach($images_4 as $image)
+  <div style="position: relative;" class="imghover">
+      <a href="{{ asset('uploads') }}/{{ $image->imageName }}"><img class="myigg" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;">
+      
+      @if(count($image->votes) >0)
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px; color: #ff00ff;" data-id="{{ $image->id }}"></i> 
+      @else
+        <i class="vote hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;" data-id="{{ $image->id }}"></i> 
+
+      @endif
+        {{ count($image->votes) }}
+      
+
+
+      </span>
+  </div>
+  @endforeach
+</div>
+
+
+</div>
     
-    <img class="myig" src="images/pic33.jpg" style="width:100%">
+    {{-- <img class="myig" src="images/pic33.jpg" style="width:100%">
     <img class="myig" src="images/pic29.jpg" style="width:100%">
     <img class="myig" src="images/pic36.jpg" style="width:100%">
     <img class="myig" src="images/pic37.jpg" style="width:100%">
@@ -370,8 +452,9 @@ span .hoverr:hover{
     <img src="images/pic69.jpg" style="width:100%">
     <img src="images/pic69.jpg" style="width:100%">
     <img src="images/pic69.jpg" style="width:100%">
-  </div>
-</div>
+  </div> --}}
+{{-- </div>
+</div> --}}
 
 <!-- modal -->
 
@@ -395,143 +478,9 @@ span .hoverr:hover{
 <!-- end modal -->
 
 
-
-<!--     <div style="text-align:center">
-  <h2>Tabbed Image Gallery</h2>
-  <p>Click on the images below:</p>
-</div> -->
-
-<!-- The four columns -->
-<!-- <div class="row">
-  <div class="column">
-    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-  </div><div class="column">
-    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-  </div>
-  <div class="column">
-    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-  </div>
-</div>
-
-
-
-<div class="container">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <img id="expandedImg" style="width:100%">
-  <div id="imgtext"></div>
-</div> -->
-
-
-    <!-- <div class="container">
-        <div>
-            <div class="mbr-gallery-row">
-                <div class="mbr-gallery-layout-default">
-                    <div>
-                        <div>
-                            @if($first)
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal">
-                                <img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Category One</span></div></div>
-                            @else
-                            <p>You have no images in your gallery</p>
-                            @endif
-
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="1" data-toggle="modal"><img src="assets/images/background2.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative"><div href="#lb-gallery1-6" data-slide-to="2" data-toggle="modal"><img src="assets/images/background3.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="3" data-toggle="modal"><img src="assets/images/background4.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="4" data-toggle="modal"><img src="assets/images/background5.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="5" data-toggle="modal"><img src="assets/images/background6.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="6" data-toggle="modal"><img src="assets/images/background7.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="7" data-toggle="modal"><img src="assets/images/background8.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-6">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active"><img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
-                            </div>
-                            
-                            @foreach($images as $image)
-                                {{-- @if($image->id == $first->id) --}}
-                                {{-- @continue --}}
-                                {{-- @endif --}}
-                                <div class="carousel-item">
-                                    <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span class="count" style="font-size: 18px;">1</span></i>
-                                </div>
-
-                                
-                            @endforeach
-
-{{--                             <div class="carousel-item"><img src="assets/images/background2.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background3.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background4.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background5.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background6.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background7.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background8.jpg" alt="" title=""> --}}
-                            </div>
-                    </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-6"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery1-6"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                    <a class="close" href="#" role="button" data-dismiss="modal">
-                        <span class="sr-only">Close</span>
-                    </a><a class="close" href="#" role="button" data-dismiss="modal">
-                        <span class="sr-only">Close</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    </div>
-    </div> -->
-
 </section>
 
-<section class="cid-qTkAaeaxX5" id="footer1-2">
+<section class="cid-qTkAaeaxX5" id="footer1-2" style="background: black;">
 
     
 
@@ -542,7 +491,7 @@ span .hoverr:hover{
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="#">
-                        <img src="#" alt="logo">
+                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>
             </div>
@@ -580,7 +529,46 @@ span .hoverr:hover{
     </div>
 </section>
 
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+
 <script>
+
+$(document).ready(function(){
+    // when the user clicks on like
+    $('.vote').on('click', function(){
+      var image_id = $(this).data('id');
+          $upload = $(this);
+
+          // console.log($upload.parent().find('count'));
+
+      $.ajax({
+        url: 'add-like',
+        type: 'POST',
+        data: {
+          'liked': 1,
+          upload_id: image_id,
+          _token: '{{csrf_token()}}'
+        },
+        success: function(response){
+          if(response !="")
+          {
+          $upload.parent().find('span').text(response);
+          // $post.addClass('hide');
+          // $post.siblings().removeClass('hide');
+        }
+
+          // console.log(response);
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+        }
+      });
+    });
+
+  });
+
+
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
