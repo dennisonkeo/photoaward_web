@@ -24,7 +24,7 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
   <style type="text/css">
-      .vote {
+      #vote {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -42,7 +42,7 @@
   border-radius: 20px;
 }
 
-.vote:hover{
+#vote:hover{
     color: green;
 }
 
@@ -81,7 +81,7 @@
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="submit-entry">
-                        <span></span>
+                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
                         My profile
                     </a>
                 </li>
@@ -184,7 +184,7 @@
                                 {{-- @endif --}}
                                 <div class="carousel-item">
                                     <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="vote fa fa-heart-o" style="font-size: 30px;" onlick="incrementValue()" data-id="{{ $image->id }}"> <span class="count" style="font-size: 18px;">{{ count($image->votes) }}</span></i>
+                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span id="count" style="font-size: 18px;">1</span></i>
                                 </div>
 
                                 
@@ -277,44 +277,12 @@
     </div>
 </section>
 
-<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
-
 <script type="text/javascript">
+    function incrementValue()
+{
 
-    $(document).ready(function(){
-    // when the user clicks on like
-    $('.vote').on('click', function(){
-      var image_id = $(this).data('id');
-          $upload = $(this);
-
-          // console.log($upload.parent().find('count'));
-
-      $.ajax({
-        url: 'add-like',
-        type: 'POST',
-        data: {
-          'liked': 1,
-          upload_id: image_id,
-          _token: '{{csrf_token()}}'
-        },
-        success: function(response){
-          if(response !="")
-          {
-          $upload.parent().find('span.count').text(response);
-          // $post.addClass('hide');
-          // $post.siblings().removeClass('hide');
-        }
-
-          // console.log(response);
-
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-        }
-      });
-    });
-
-  });  
+    document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML)+1;
+}
 </script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>

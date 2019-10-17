@@ -24,6 +24,53 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
   <style type="text/css">
+
+  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /*padding-top: 100px;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  /*position: relative;*/
+  background-color: #fefefe;
+/*  margin: auto;
+  padding: 0;
+  width: 100%;*/
+  /*display: table;*/
+  /*max-width: 1200px;*/
+}
+
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+
+/*.mySlides {
+  display: none;
+}*/
+
       #vote {
   position: absolute;
   top: 30%;
@@ -63,6 +110,22 @@
   opacity: 1;
 }
 
+.imghover span{
+  display: none;
+}
+
+.imghover{
+  cursor: pointer;
+}
+
+.imghover:hover span{
+  display: block;
+  opacity: 1;
+}
+.imghover:hover img{
+  opacity: 1;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -71,10 +134,10 @@
 }
 
 /* The expanding image container */
-.container {
+/*.container {
   position: relative;
   display: none;
-}
+}*/
 
 /* Expanding image text */
 #imgtext {
@@ -99,10 +162,10 @@
   box-sizing: border-box;
 }
 
-body {
+/*body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
+}*/
 
 .header {
   text-align: center;
@@ -119,7 +182,7 @@ body {
 
 /* Create two equal columns that sits next to each other */
 .column {
-  -ms-flex: 50%; /* IE 10 */
+  -ms-flex: 50%;  IE 10 
   flex: 50%;
   padding: 0 4px;
 }
@@ -128,6 +191,7 @@ body {
   margin-top: 8px;
   vertical-align: middle;
 }
+
 
 /* Style the buttons */
 .btn {
@@ -147,6 +211,32 @@ body {
   background-color: #666;
   color: white;
 }
+
+ .like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span .hoverr{
+  cursor: pointer;
+}
+span .hoverr:hover{
+  color: #ff00ff;
+  fill: url(#000);
+
+}
+
 </style>
   
 </head>
@@ -197,7 +287,7 @@ body {
     </nav>
 </section>
 
-<section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1" style="backgound: #000; background-image: url('images/pic12.jpg'); opaity: 0.9;">
+<!-- <section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1" style="backgound: #000; background-image: url('images/pic12.jpg'); opaity: 0.9;">
 
     
 
@@ -215,10 +305,7 @@ body {
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">
 
                 </p>
-                <div class="mbr-section-btn">
-                    <a class="btn btn-md btn-secondary display-4" href="https://mobirise.com">LEARN MORE</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -227,23 +314,25 @@ body {
             <i class="mbri-down mbr-iconfont"></i>
         </a>
     </div>
-</section>
+</section> -->
 
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1>Image Grid</h1>
-  <p>Click on the buttons to change the grid view.</p>
-  <button class="btn" onclick="one()">1</button>
-  <button class="btn active" onclick="two()">2</button>
-  <button class="btn" onclick="four()">4</button>
+  <h1 style="color: "><span style="color: #ff00ff;">E</span>njoy <span style="color: #ff00ff;">A</span>nd <span style="color: #ff00ff;">V</span>ote <span style="color: #ff00ff;">F</span>or <span style="color: #ff00ff;">C</span>ool <span style="color: #ff00ff;">P</span>ics</h1>
+
+
 </div>
 
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img class="myig" src="images/pic34.jpg" style="width:100%">
+  <div style="position: relative;" class="imghover">
+      <a href="images/pic34.jpg"><img class="myigg" src="images/pic34.jpg" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;"><i class="hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;"></i> 0</span>
+  </div>
+    
     <img class="myig" src="images/pic33.jpg" style="width:100%">
     <img class="myig" src="images/pic29.jpg" style="width:100%">
     <img class="myig" src="images/pic36.jpg" style="width:100%">
@@ -284,6 +373,26 @@ body {
   </div>
 </div>
 
+<!-- modal -->
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()"><i class="fa fa-cloe"></i> </span>
+  <div class="row modal-content" style="flex: wrap;">
+
+    <div class="column" style="flex: 100%;">
+      <!-- <div class="numbertext">1 / 4</div> -->
+      <img id="expandedImg" style="width: 100%; height: 100%;">
+    </div>
+
+
+<!--     <div class="caption-container">
+      <p id="caption"></p>
+    </div> -->
+
+  </div>
+</div>
+
+<!-- end modal -->
 
 
 
@@ -472,6 +581,10 @@ body {
 </section>
 
 <script>
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
 // Get the elements with class="column"
 var elements = document.getElementsByClassName("column");
 
@@ -522,11 +635,13 @@ for (var i = 0; i < btns.length; i++) {
 
 <script>
 function myFunction(imgs) {
+
   var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
+  // var imgText = document.getElementById("imgtext");
   expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
+  // imgText.innerHTML = imgs.alt;
+  document.getElementById("myModal").style.display = "block";
+  // expandImg.parentElement.style.display = "block";
 }
 </script>
 
