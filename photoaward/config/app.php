@@ -28,6 +28,10 @@ return [
 
     'env' => env('APP_ENV', 'production'),
 
+    'MPESA_CONSUMER_KEY' => env('MPESA_CONSUMER_KEY', null),
+    'MPESA_CONSUMER_SECRET' => env('MPESA_CONSUMER_SECRET', null),
+    'MPESA_ENV' => env('MPESA_ENV', null),
+
     /*
     |--------------------------------------------------------------------------
     | Application Debug Mode
@@ -175,6 +179,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        \Safaricom\Mpesa\MpesaServiceProvider::class,
+
     ],
 
     /*
@@ -225,6 +231,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Mpesa'=> \Safaricom\Mpesa\MpesaServiceProvider::class,
 
     ],
 

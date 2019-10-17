@@ -41,6 +41,20 @@ class HomeController extends Controller
         return view('login');
     }
 
+    public function album()
+    {
+        $uploads=Upload::all();
+        return $uploads;
+    }
+
+    public function response()
+    {
+        
+         
+
+        // $data_string = json_encode($curl_post_data); curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); curl_setopt($curl, CURLOPT_POST, true); curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string); $curl_response = curl_exec($curl); //print_r($curl_response); echo $curl_response; 
+    }
+
     public function my_gallery()
     {
         
@@ -94,7 +108,7 @@ class HomeController extends Controller
     {
          $this->validate($request,[
             'name' => ['required', 'string', 'max:255'],
-            'phone' => ['required', 'string', 'max:13'],
+            'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8']
 

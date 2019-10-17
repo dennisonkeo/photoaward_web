@@ -42,6 +42,7 @@ Route::get('votingg', function () {
 
 });
 
+
 // Route::get('view', function () {
 //     return view('upload_view');
 // });
@@ -49,8 +50,15 @@ Route::get('votingg', function () {
 // Route::get('like_image', function () {
 //     return view('like_image');
 // });
+Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
+
+Route::get('mpesa-response', 'PaymentController@mpesa_response')->name('mpesa-response');
 
 Route::get('about', 'HomeController@about')->name('about');
+
+Route::get('response', 'HomeController@response')->name('response');
+
+Route::get('album', 'HomeController@album')->name('album');
 
 Route::get('registration', 'HomeController@registration')->name('registration');
 

@@ -219,6 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <th class="image-column">Image</th>
                                     {{-- <th class="name-column">Name</th> --}}
                                     <th class="description-column">Caption</th>
+                                    <th class="tag-column">Device Name</th>
                                     <th class="tag-column">Category</th>
                                     <th class="op-column"></th>
                                 </tr>
@@ -239,6 +240,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         </td> --}}
                                         <td class="description-column">
                                             <p class="description-display">{{ $image->caption }}</p>
+                                        </td>
+
+                                        <td class="description-column">
+                                            <p class="description-display">{{ $image->device }}</p>
                                         </td>
                                         <td class="category">
                                             <p class="category">{{ $image->category->name }}</p>
@@ -775,6 +780,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         
                         $("input[name=image_id]", formContainer).val(imageId);
                     $("textarea[name=image_description]", formContainer).val(response.caption);
+                    $("textarea[name=device]", formContainer).val(response.device);
                         console.log($("input[name=image_id]", formContainer).val(imageId));
                         $('img.image-display', formContainer).attr("src", $('.image-display-'+imageId+' .image-column img').attr('src'));
 
