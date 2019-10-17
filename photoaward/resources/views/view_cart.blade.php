@@ -252,7 +252,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <td class="op-column" style="white-space: nowrap;">
 
                                                  <a href="#" title="Edit to Complete" data-image-id="{{ $image->id }}" class="image-edit-link">
-                                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i> Add image details
+                                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i> Add Caption/image details
                                                     </a>
                                                                                                 
                                         <br/><br/>

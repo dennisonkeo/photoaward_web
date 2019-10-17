@@ -24,7 +24,54 @@
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
   <style type="text/css">
-      .vote {
+
+  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /*padding-top: 100px;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  /*position: relative;*/
+  background-color: #fefefe;
+/*  margin: auto;
+  padding: 0;
+  width: 100%;*/
+  /*display: table;*/
+  /*max-width: 1200px;*/
+}
+
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+
+/*.mySlides {
+  display: none;
+}*/
+
+      #vote {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -42,8 +89,152 @@
   border-radius: 20px;
 }
 
-.vote:hover{
+#vote:hover{
     color: green;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.imghover span{
+  display: none;
+}
+
+.imghover{
+  cursor: pointer;
+}
+
+.imghover:hover span{
+  display: block;
+  opacity: 1;
+}
+.imghover:hover img{
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+/*.container {
+  position: relative;
+  display: none;
+}*/
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%;  IE 10 
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+ .like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span .hoverr{
+  cursor: pointer;
+}
+span .hoverr:hover{
+  color: #ff00ff;
+  fill: url(#000);
+
 }
 
 </style>
@@ -54,7 +245,7 @@
 
     
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm" style="background: black;">
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
                 <span></span>
@@ -63,16 +254,16 @@
                 <span></span>
             </div>
         </button>
-<div class="menu-logo">
+        <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#">
-                         <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
+                         <img src="#" alt="." style="height: 3.8rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                       <span style="color: #ff0051;"> PIC+254</span>
+                        PIC+254
                     </a>
                 </span>
             </div>
@@ -114,10 +305,7 @@
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">
 
                 </p>
-                <div class="mbr-section-btn">
-                    <a class="btn btn-md btn-secondary display-4" href="https://mobirise.com">LEARN MORE</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -130,10 +318,127 @@
 
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
 
-    
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1 style="color: "><span style="color: #ff00ff;">E</span>njoy <span style="color: #ff00ff;">A</span>nd <span style="color: #ff00ff;">V</span>ote <span style="color: #ff00ff;">F</span>or <span style="color: #ff00ff;">C</span>ool <span style="color: #ff00ff;">P</span>ics</h1>
 
-    <div class="container">
-        <div><!-- Filter --><!-- Gallery -->
+
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+  <div style="position: relative;" class="imghover">
+      <a href="images/pic34.jpg"><img class="myigg" src="images/pic34.jpg" style="width:100%" oncick="myFunction(this);"></a>
+      <span style="width: 100%; padding: 20px; right: 0; top: 0; position: absolute; font-size: 20px;"><i class="hoverr fa fa-heart-o" style="font-size: 32px; background: #f0f0f5; padding: 6px; border-radius: 8px;"></i> 0</span>
+  </div>
+    
+    <img class="myig" src="images/pic33.jpg" style="width:100%">
+    <img class="myig" src="images/pic29.jpg" style="width:100%">
+    <img class="myig" src="images/pic36.jpg" style="width:100%">
+    <img class="myig" src="images/pic37.jpg" style="width:100%">
+    <img class="myig" src="images/pic39.jpg" style="width:100%">
+    <img class="myig" src="images/pic46.jpg" style="width:100%">
+    <img class="myig" src="images/pic46.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/pic12.jpg" style="width:100%">
+    <img src="images/pic23.jpg" style="width:100%">
+    <img src="images/pic49.jpg" style="width:100%">
+    <img src="images/pic26.jpg" style="width:100%">
+    <img src="images/pic43.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+    <img src="images/pic71.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="images/pic48.jpg" style="width:100%">
+    <img src="images/pic13.jpg" style="width:100%">
+    <img src="images/pic61.jpg" style="width:100%">
+    <img src="images/pic6.jpg" style="width:100%">
+    <img src="images/pic7.jpg" style="width:100%">
+    <img src="images/pic9.jpg" style="width:100%">
+    <img src="images/pic42.jpg" style="width:100%">
+    <img src="images/pic42.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/pic41.jpg" style="width:100%">
+    <img src="images/pic45.jpg" style="width:100%">
+    <img src="images/pic4.jpg" style="width:100%">
+    <img src="images/pic50.jpg" style="width:100%">
+    <img src="images/pic57.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
+    <img src="images/pic69.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- modal -->
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()"><i class="fa fa-cloe"></i> </span>
+  <div class="row modal-content" style="flex: wrap;">
+
+    <div class="column" style="flex: 100%;">
+      <!-- <div class="numbertext">1 / 4</div> -->
+      <img id="expandedImg" style="width: 100%; height: 100%;">
+    </div>
+
+
+<!--     <div class="caption-container">
+      <p id="caption"></p>
+    </div> -->
+
+  </div>
+</div>
+
+<!-- end modal -->
+
+
+
+<!--     <div style="text-align:center">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div> -->
+
+<!-- The four columns -->
+<!-- <div class="row">
+  <div class="column">
+    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div><div class="column">
+    <img src="images/pic34.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic33.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic29.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/pic36.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div> -->
+
+
+    <!-- <div class="container">
+        <div>
             <div class="mbr-gallery-row">
                 <div class="mbr-gallery-layout-default">
                     <div>
@@ -142,13 +447,13 @@
                             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal">
                                 <img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
                                 <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Explore Cool Photos</span></div></div>
+                                <span class="mbr-gallery-title mbr-fonts-style display-7">Category One</span></div></div>
                             @else
                             <p>You have no images in your gallery</p>
                             @endif
 
 
-                            <!-- <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="1" data-toggle="modal"><img src="assets/images/background2.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
+                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="1" data-toggle="modal"><img src="assets/images/background2.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
 
                             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative"><div href="#lb-gallery1-6" data-slide-to="2" data-toggle="modal"><img src="assets/images/background3.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
 
@@ -160,15 +465,13 @@
 
                             <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="6" data-toggle="modal"><img src="assets/images/background7.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
 
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="7" data-toggle="modal"><img src="assets/images/background8.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div> -->
+                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="7" data-toggle="modal"><img src="assets/images/background8.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
 
                         </div>
                     </div>
                     <div class="clearfix"></div>
             </div>
         </div>
-
-        <!-- Lightbox -->
 
         <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-6">
             <div class="modal-dialog">
@@ -184,7 +487,7 @@
                                 {{-- @endif --}}
                                 <div class="carousel-item">
                                     <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="vote fa fa-heart-o" style="font-size: 30px;" onlick="incrementValue()" data-id="{{ $image->id }}"> <span class="count" style="font-size: 18px;">{{ count($image->votes) }}</span></i>
+                                    <i id="vote" class="fa fa-heart-o" style="font-size: 30px;" onclick="incrementValue()"> <span class="count" style="font-size: 18px;">1</span></i>
                                 </div>
 
                                 
@@ -224,11 +527,11 @@
 
     
     </div>
-    </div>
+    </div> -->
 
 </section>
 
-<section class="cid-qTkAaeaxX5" id="footer1-2"  style="background: black;">
+<section class="cid-qTkAaeaxX5" id="footer1-2">
 
     
 
@@ -239,7 +542,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="#">
-                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
+                        <img src="#" alt="logo">
                     </a>
                 </div>
             </div>
@@ -277,46 +580,77 @@
     </div>
 </section>
 
-<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+<script>
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+console.log(elements.length);
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+  console.log(elements.length);
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+    
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<script>
+function myFunction(imgs) {
+
+  var expandImg = document.getElementById("expandedImg");
+  // var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  // imgText.innerHTML = imgs.alt;
+  document.getElementById("myModal").style.display = "block";
+  // expandImg.parentElement.style.display = "block";
+}
+</script>
 
 <script type="text/javascript">
+    function incrementValue()
+{
 
-    $(document).ready(function(){
-    // when the user clicks on like
-    $('.vote').on('click', function(){
-      var image_id = $(this).data('id');
-          $upload = $(this);
-
-          // console.log($upload.parent().find('count'));
-
-      $.ajax({
-        url: 'add-like',
-        type: 'POST',
-        data: {
-          'liked': 1,
-          upload_id: image_id,
-          _token: '{{csrf_token()}}'
-        },
-        success: function(response){
-          if(response !="")
-          {
-          $upload.parent().find('span.count').text(response);
-          // $post.addClass('hide');
-          // $post.siblings().removeClass('hide');
-        }
-
-          // console.log(response);
-
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-        }
-      });
-    });
-
-  });  
-
-
+    document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML)+1;
+}
 </script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
