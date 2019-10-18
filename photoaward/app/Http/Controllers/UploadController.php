@@ -181,6 +181,7 @@ class UploadController extends Controller
               $upload->imagePath = $imagePath;
               $upload->token = session()->getId();
               $upload->caption = "";
+              $upload->device = "";
               $upload->uploaded = "no";
               $upload->user_id = Auth::user()->id;
               $upload->category_id = $request->input("category");
