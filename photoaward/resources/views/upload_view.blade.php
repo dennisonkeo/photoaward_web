@@ -162,6 +162,7 @@
                     random_str: $("input[name='random_str']").val()
                 
                 };
+                console.log(cat);
         },
 
         allowedFileExtensions: ['jpg','jpeg','png'],
