@@ -491,7 +491,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                       </li>
                                       <li class="list-group-item">3. After payment click OK.</li>
                                       {{-- <li class="list-group-item">4. </li> --}}
-                                      <li class="list-group-item">4. You can view your entries in your <a href="#"> gallery.</a></li>
+                                      <li class="list-group-item">4. You can view your entries in your <a href="my-gallery"> gallery.</a></li>
                                 </ul>
                         </div> <!-- End row --> 
                                               
@@ -743,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                         success: function(response) {
-                            console.log("done"); 
+                            console.log(response); 
                         },
 
                         error: function(jqXHR, textStatus, errorThrown) {

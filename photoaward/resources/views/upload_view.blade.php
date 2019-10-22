@@ -144,8 +144,17 @@
 
 	// $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
 
-    var e = document.getElementById("category");
-    var cat = e.options[e.selectedIndex].value;
+    var cat = document.getElementById("category").value;
+    //console.log('test '+cat);
+
+    $('#category') .on('change', function(e){
+     cat = e.target.value;
+        //console.log(cat);
+
+    });
+
+    //var e = document.getElementById("category");
+    
 
     $('#rand').val(Math.random().toString(36).substring(5));
 

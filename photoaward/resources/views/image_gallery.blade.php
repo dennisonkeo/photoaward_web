@@ -88,7 +88,7 @@
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="#">
                         <span class=""><i class="fa fa-key"></i></span>
-                        Logout
+                        Logout/Home
                     </a>
                 </li>
             </ul>

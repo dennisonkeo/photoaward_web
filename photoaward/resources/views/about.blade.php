@@ -292,8 +292,8 @@ initializeClock('clockdiv2', deadline2);
 </div>
 
 <div class="parallaxabout" style="opcity: 0.6; ">
-<p style="vertical-align: center; padding-left: 40px; top: 20; font-size: ">
-  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING TALENTS
+<p style=" vertical-align: center; color: #fff; padding-left: 40px; top: 20; font-size: 60px; font-weight: bold;">
+  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
 </p>
 
 

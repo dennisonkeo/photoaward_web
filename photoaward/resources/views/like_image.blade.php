@@ -279,7 +279,7 @@ span .hoverr:hover{
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="#">
                         <span class=""><i class="fa fa-key"></i></span>
-                        Logout
+                        Logout/Home
                     </a>
                 </li>
             </ul>
@@ -320,14 +320,14 @@ span .hoverr:hover{
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1 style="color: "><span style="color: #ff00ff;">E</span>njoy <span style="color: #ff00ff;">A</span>nd <span style="color: #ff00ff;">V</span>ote <span style="color: #ff00ff;">F</span>or <span style="color: #ff00ff;">C</span>ool <span style="color: #ff00ff;">P</span>ics</h1>
+ <!--  <h1 style="color: "><span style="color: #ff00ff;">E</span>njoy <span style="color: #ff00ff;">A</span>nd <span style="color: #ff00ff;">V</span>ote <span style="color: #ff00ff;">F</span>or <span style="color: #ff00ff;">C</span>ool <span style="color: #ff00ff;">P</span>ics</h1> -->
 
 
 </div>
 
 <!-- Photo Grid -->
+@if(count($images) > 0)
 <div class="row"> 
-
 <div class="column">
   @foreach($images_1 as $image)
   <div style="position: relative;" class="imghover">
@@ -412,8 +412,11 @@ span .hoverr:hover{
   @endforeach
 </div>
 
-
 </div>
+@else
+<h3 class="alert alert-danger" style="width: 50%; margin: 0 auto;">Sorry, the album is empty</h3>
+
+@endif
     
     {{-- <img class="myig" src="images/pic33.jpg" style="width:100%">
     <img class="myig" src="images/pic29.jpg" style="width:100%">
