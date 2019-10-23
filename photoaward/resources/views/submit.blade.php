@@ -76,9 +76,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-12 col-sm-12 col-md-12 profile">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3">
-                                            <div class="avatar default">
+                    @if($avatar =="")
+                        <div class="avatar default">
                             <i class="fa fa-user fa-5" style="color: maroon;" aria-hidden="true"></i>
                         </div>
+                    @else
+                       <div class="profile-image" style="width: 200px; height: 300px;">
+                            <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $avatar->pic }}" data-holder-rendered="true" style="width: 100%; height: auto; object-position:50% 50%; object-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
+                    </div>
+                    @endif
                                         
                     <div class="allowance">
                         <!-- Remaining image allowance: 
@@ -87,7 +93,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="social-media">
                         <ul>
-                                                    </ul>
+                            <li>jjfjd</li>
+                            <li>jjfjd</li>
+                        </ul>
                     </div>
                 </div>
 

@@ -166,11 +166,13 @@ public function logout(Request $request)
 
 public function show_submit()
 {
+    $avatar = User::where('id', Auth::user()->id)->first();
+
     $records = ImagePay::where('user_id', Auth::user()->id)->latest()->get();
 
     $categories = Category::all();
     
-    return view('submit', compact("records", "categories"));
+    return view('submit', compact("records", "categories", "avatar"));
 }
 
     /**
@@ -214,6 +216,14 @@ public function show_submit()
         $twitter = $request->input('tw');
         $insta = $request->input('ig');
 
+        $image = $request->file('file');
+
+            $image_name = time().$image->getClientOriginalName();
+
+            $image->move(public_path('uploads'),$image_name);
+
+            $imagePath = "/uploads/$image_name";
+
         user::where('id', Auth::user()->id)
         ->update(array(
             'name' => $name,
@@ -225,6 +235,7 @@ public function show_submit()
             'fb' => $fb,
             'tw' => $twitter,
             'ig' => $insta,
+            'pic' => $image_name,
         ));
 
         return back()->with('success', 'Details were edited Successfully');  

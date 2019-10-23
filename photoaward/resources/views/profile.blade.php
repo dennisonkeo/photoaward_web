@@ -149,16 +149,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-4">
-            <div class="profile-image">
+            <div class="profile-image" style="width: 200px; height: 300px;">
                 <label>Current Profile Image</label>
-                                    <img class="media-object" alt="200x200" src="http://placehold.it/200x200" data-holder-rendered="true" style="width: 200px; height: 200px;">
-                            </div>
+                    <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $user->pic }}" data-holder-rendered="true" style="width: 100%; height: auto; object-position:50% 50%; object-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
+            </div>
             
             <div class="form-group">
                 <label for="profile_image">
                     Upload a Profile Image
                 </label>
-                <input type="file" name="pic" />
+                <input type="file" name="file"  id="profile-img" />
             </div>
         </div>
     </div>
@@ -236,6 +236,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
     <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
+
+    <script type="text/javascript">
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            
+
+            reader.onload = function (e) {
+
+                $('#profile-img-tag').attr('src', e.target.result);
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+    $("#profile-img").change(function(){
+
+        readURL(this);
+
+    });
+
+</script>
+
     <script>
         /*
          * Fixes: TypeError: a.swap is not a function
