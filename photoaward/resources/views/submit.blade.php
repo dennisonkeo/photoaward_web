@@ -60,42 +60,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTJZVQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header style="background: #000; color: #ff0051; height: 80px;">
-    <div>
-        {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
-        <img src="images/logo_.png" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
-    </div>
-</header>
+@include('headerr')
             
     
     <div class="container content">    
 
-<div class="row header menu">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <ul class="nav nav-pills pull-right">
-            <li class="overview active">
-                <a href="submit.html">Overview</a>
-            </li>
-            <li class="competitions-link">
-                <a href="submit-entry#competitions" style="color: #ff00ff;">Competitions</a>
-            </li>
-                        <li class="profile ">
-                <a href="#" style="color: #ff00ff;">
-                    Profile</a>
-            </li>
-            <li class="account ">
-                <a href="#" style="color: #ff00ff;" >
-                    Account</a>
-            </li>
-
-            <li class="profile ">
-                <a href="{{ route('logout') }}" class="" style="color: #ff00ff;" >
-                   <i class="fa fa-sign-out"></i> LOGOUT</a>
-            </li>
-
-        </ul> <!-- End nav -->
-    </div>
-</div> <!-- End row header -->
+@include('header-menu')
     
     
 
@@ -182,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                                     </div> <!-- End row competitions -->
 
-    <div class="row my-competitions">
+    <div class="row my-competitions" id="my_entries">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <h2 id="my-competitions" class="heading-title" style="background-color: #585858;">My Entries</h2>
                         
@@ -295,11 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <footer style="background: #000;">
-  <div class="container" >
-    <p style="text-align: center; color: #ff0051;">footer</p>
-</div>
-</footer>        
+@include('footer')        
         <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-select.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-datepicker.min.js"></script>

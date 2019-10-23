@@ -70,7 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 #lblCartCount {
     font-size: 12px;
-    background: #ff0000;
+    background: #ff0051;
     color: #fff;
     padding: 0 5px;
     vertical-align: top;
@@ -117,46 +117,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header style="background: #000; color: #ff0051; height: 80px;">
-    <div>
-        {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
-        <img src="images/logo_.png" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
-    </div>
-</header>
-            
+@include('headerr')  
     
     <div class="container content">    
         
         
     
-<div class="row header menu">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <ul class="nav nav-pills pull-right">
-            <li class="overview active">
-                <a href="#">Overview</a>
-            </li>
-            <li class="competitions-link">
-                <a href="submit.html#competitions">Competitions</a>
-            </li>
-                        <li class="profile ">
-                <a href="#" >
-                    Profile</a>
-            </li>
-            <li class="account ">
-                <a href="#" >
-                    Account</a>
-            </li>
-
-            <li class="account ">
-                <a href="view-album" >
-                    <i class="fa" style="font-size:24px">&#xf07a;</i>
-                    <span class='badge badge-success' id='lblCartCount'> {{ count($images) }} </span>
-                    View Album
-                </a>
-            </li>
-        </ul> <!-- End nav -->
-    </div>
-</div> <!-- End row header -->
+@include('header-menu')
 
 
 {{-- <div class="row">
@@ -186,18 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-            @if (session('success'))
-                                  <div class="alert alert-success alert-dismissable">
-                                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                                      {{ session('success') }}
-                                  </div>
-                                 @endif
-                                  @if (session('warning'))
-                                  <div class="alert alert-warning">
-                                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                                      {{ session('warning') }}
-                                  </div>
-                                 @endif
+            @include('flush-msg')
 
             
             @if(count($images) > 0)

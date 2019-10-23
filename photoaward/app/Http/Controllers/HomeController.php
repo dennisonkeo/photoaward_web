@@ -87,6 +87,13 @@ class HomeController extends Controller
         return view('image_add');
     }
 
+    public function profile()
+    {
+        $user = User::where('id',Auth::user()->id)->first();
+
+        return view('profile', compact('user'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -195,10 +202,34 @@ public function show_submit()
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+        public function update(Request $request)
     {
-        //
+        $name = $request->input('name');
+        $dname = $request->input('dname');
+        $dob = $request->input('dob');
+        $county = $request->input('county');
+        $city = $request->input('city');
+        $bio = $request->input('bio');
+        $fb = $request->input('fb');
+        $twitter = $request->input('tw');
+        $insta = $request->input('ig');
+
+        user::where('id', Auth::user()->id)
+        ->update(array(
+            'name' => $name,
+            'dname' => $dname,
+            'dob' => $dob,
+            'county' => $county,
+            'city' => $city,
+            'bio' => $bio,
+            'fb' => $fb,
+            'tw' => $twitter,
+            'ig' => $insta,
+        ));
+
+        return back()->with('success', 'Details were edited Successfully');  
     }
+
 
     /**
      * Remove the specified resource from storage.
