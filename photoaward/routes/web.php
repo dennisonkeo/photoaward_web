@@ -31,7 +31,7 @@ Route::get('like_image', function () {
 
 Route::get('/', function () {
     return view('about');
-});
+})->name('/');
 
 
 Route::get('anything', function () {
@@ -59,8 +59,6 @@ Route::get('votingg', function () {
 // });
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
-Route::get('mpesa-response', 'PaymentController@mpesa_response')->name('mpesa-response');
-
 Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('response', 'HomeController@response')->name('response');
@@ -76,6 +74,10 @@ Route::get('login', 'HomeController@login')->name('login');
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
 
 Route::group(['middleware' => ['auth']], function () {
+
+Route::get('profile', 'HomeController@profile')->name('profile');
+
+Route::put('update-profile', 'HomeController@update')->name('update-profile');
 
 Route::put('update', 'UploadController@update')->name('update');
 

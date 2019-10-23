@@ -24,7 +24,7 @@ class PaymentController extends Controller
 		$PartyA = "254708552578";
 		$PartyB = "174379";
 		$PhoneNumber = "254708552578";
-		$CallBackURL = 'https://eb6e2bd7.ngrok.io/mpesa-response';
+		$CallBackURL = 'https://1bb9bfda.ngrok.io/api/mpesa-response';
 		$AccountReference = "ADB123";
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
@@ -36,12 +36,10 @@ class PaymentController extends Controller
 		return $stkPushSimulation;		
 	}
 
-	public function mpesa_response()
+	public function mpesa_response(Request $request)
 	{
-		// $request->session()->token();
-		// headers:{'X-CSRF-Token': '{{ csrf_token() }}'}
 
-		// header('X-CSRF-Token: csrf_token()');
+		// $request->session()->token();
 
 		$mpesa= new \Safaricom\Mpesa\Mpesa();
 
@@ -49,8 +47,8 @@ class PaymentController extends Controller
 
 		// $callbackJSONData=file_get_contents('php://input');
 
-		// $handle=fopen("uploads/transaction.txt", 'w');
-  //       fwrite($handle, $callbackData);
+		$handle=fopen("uploads/transaction.txt", 'w');
+        fwrite($handle, $callbackData);
 
 		// if($callbackData)
 		// {
@@ -72,8 +70,8 @@ class PaymentController extends Controller
   // echo json_encode($message);  
 
 		 // return json_encode($message);
-		 $mpesa->finishTransaction();
+		 // $mpesa->finishTransaction();
 
-		 // echo json_encode($message);
+		 // return json_decode($callbackJSONData);
 	}
 }

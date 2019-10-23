@@ -25,6 +25,11 @@ class UploadController extends Controller
         return view('upload_details');
     }
 
+    public function test()
+    {
+        dd("it worked!");
+    }
+
     public function view_cart()
     {
         $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
@@ -145,7 +150,7 @@ class UploadController extends Controller
                         // dd($images_4);
 
 
-                    return view('like_image', compact('images_1','images_2','images_3','images_4'));
+                    return view('like_image', compact('images_1','images_2','images_3','images_4', 'images'));
             }
 
             else
@@ -252,6 +257,8 @@ class UploadController extends Controller
      */
     public function save_upload()
     {
+
+        // $this->test();
         $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
 
         $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
@@ -274,9 +281,9 @@ class UploadController extends Controller
         $verifytoken = ImagePay::where('token',"=",session()->getId())->first();
 
 
-        if(!$verifytoken)
+        // if(!$verifytoken)
 
-             {
+        //      {
                         $upload = new ImagePay();
              
                            $upload->amount = $total_amount;
@@ -286,14 +293,16 @@ class UploadController extends Controller
              
                            $upload->save();
              
-                        Upload::where('token',"=", session()->getId())->update(array('uploaded' => 'yes'));
+                        Upload::where('token',"=", session()->getId())
+                                ->where('uploaded','no')
+                                ->update(array('uploaded' => 'yes'));
 
-                        return response()->json('Done');
-                }
-                else
-                {
-                    return response()->json('Not good here');
-                }
+                        return response()->json('0');
+                // }
+                // else
+                // {
+                //     return response()->json('1');
+                // }
 
 
     }
@@ -343,7 +352,8 @@ class UploadController extends Controller
         Upload::where('id',"=", $request->input('image_id'))->update(array('caption' => $request->input('image_description'),'device' => $request->input('device')));
 
         return back()->with('success', 'Caption was edited Successfully');  
-    }
+    } 
+
 
     /**
      * Remove the specified resource from storage.
