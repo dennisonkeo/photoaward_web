@@ -292,7 +292,7 @@ initializeClock('clockdiv2', deadline2);
 </div>
 
 <div class="parallaxabout" style="opcity: 0.6; ">
-<p style=" vertical-align: center; color: #fff; padding-left: 40px; top: 20; font-size: 60px; font-weight: bold;">
+<p style=" vertical-align: center; color: #fff; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
   A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
 </p>
 
@@ -479,7 +479,7 @@ initializeClock('clockdiv2', deadline2);
 <!-- <<<<<<< HEAD
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
 ======= -->
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: geen; background: black;">
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
 
 
 				<div class="container">
