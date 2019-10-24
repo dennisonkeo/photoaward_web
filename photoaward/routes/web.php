@@ -15,6 +15,10 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('pop', function () {
+    return view('popup.index');
+});
+
 Route::get('dash', function () {
     return view('dashboard.index');
 });

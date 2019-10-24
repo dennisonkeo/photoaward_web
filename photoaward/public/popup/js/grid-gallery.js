@@ -8,17 +8,17 @@ $(document).on('click','.gg-element',function(){
   function buttons(){
     if (l > 1) {
       if (p == 0){
-        return '<div class="gg-close gg-bt">&times</div><div class="gg-nxt gg-bt">&rarr;</div>';
+        return '<div><div class="gg-close gg-bt">&times</div><div class="gg-closee gg-btt"><i class="fa fa-heart-o"></i></div> <span class="count">8888</span> </div><div class="gg-nxt gg-bt">&rarr;</div>';
       }
       else if (p == l) {
-        return '<div class="gg-close gg-bt">&times</div><div class="gg-prev gg-bt">&larr;</div>';
+        return '<div><div class="gg-close gg-bt">&times</div><div class="gg-closee gg-btt"><i class="fa fa-heart-o"></i></div> <span class="count">8888</span> </div><div class="gg-prev gg-bt">&larr;</div>';
       }
       else{
-        return '<div class="gg-close gg-bt">&times</div><div class="gg-nxt gg-bt">&rarr;</div><div class="gg-prev gg-bt">&larr;</div>';
+        return '<div><div class="gg-close gg-bt">&times</div><div class="gg-closee gg-btt"><i class="fa fa-heart-o"></i></div> <span class="count">8888</span> </div><div class="gg-nxt gg-bt">&rarr;</div><div class="gg-prev gg-bt">&larr;</div>';
       }
     }
     else{
-      return '<div class="gg-close gg-bt">&times</div>';
+      return '<div><div class="gg-close gg-bt">&times</div><div class="gg-closee gg-btt"><i class="fa fa-heart-o"></i></div> <span class="count">8888</span> </div>';
     }
   }
   buttons();
@@ -48,7 +48,9 @@ $(document).on('click','.gg-element',function(){
   });
   $(document).on('click','.gg-nxt',function(){
     selected=selected.next();
+    console.log(selected);
     next=selected.find('img');
+    console.log(next);
     var nxtimg='<img src="'+ next.attr('src') +'">';
     $(".gg-image").html(nxtimg);
     p=$(".gg-element").index(selected);
