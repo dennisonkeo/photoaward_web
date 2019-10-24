@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 buttons">
                     <span class="btn-grp primary">
-                        <a href="upload-image" class="btn btn-primary back" role="button" onclick="">
+                        <a href="{{route('upload-info')}}" class="btn btn-primary back" role="button" onclick="">
                             <i class="fa fa-upload fa-lg"></i>
                             Upload more images
                         </a>

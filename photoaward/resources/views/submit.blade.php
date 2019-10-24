@@ -82,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     @else
                        <div class="profile-image" style="width: 200px; height: 300px;">
-                            <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $avatar->pic }}" data-holder-rendered="true" style="width: 100%; height: auto; object-position:50% 50%; object-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
+                            <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $avatar->pic }}" data-holder-rendered="true" style="width: 100%; height: 100%; object-position:50% 50%; objet-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
                     </div>
                     @endif
                                         

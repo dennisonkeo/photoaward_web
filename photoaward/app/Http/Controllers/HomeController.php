@@ -218,6 +218,9 @@ public function show_submit()
 
         $image = $request->file('file');
 
+        if($image != "")
+        {
+
             $image_name = time().$image->getClientOriginalName();
 
             $image->move(public_path('uploads'),$image_name);
@@ -237,6 +240,27 @@ public function show_submit()
             'ig' => $insta,
             'pic' => $image_name,
         ));
+
+    }
+
+    else
+        {
+
+        user::where('id', Auth::user()->id)
+        ->update(array(
+            'name' => $name,
+            'dname' => $dname,
+            'dob' => $dob,
+            'county' => $county,
+            'city' => $city,
+            'bio' => $bio,
+            'fb' => $fb,
+            'tw' => $twitter,
+            'ig' => $insta,
+        ));
+
+    }
+
 
         return back()->with('success', 'Details were edited Successfully');  
     }

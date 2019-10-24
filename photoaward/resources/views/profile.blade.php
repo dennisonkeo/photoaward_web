@@ -158,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <label for="profile_image">
                     Upload a Profile Image
                 </label>
-                <input type="file" name="file"  id="profile-img" />
+                <input type="file" name="file"  id="profile-img" value="{{$user->pic}}" />
             </div>
         </div>
     </div>

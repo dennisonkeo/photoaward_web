@@ -14,6 +14,11 @@
 Route::get('index', function () {
     return view('index');
 });
+
+Route::get('dash', function () {
+    return view('dashboard.index');
+});
+
 Route::get('categories', function () {
     return view('categories');
 });

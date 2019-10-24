@@ -77,18 +77,25 @@
                 </span>
             </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="submit-entry">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                    <a class="nav-link link text-white display-4" href="{{ route('submit-entry') }}">
+                        <span class="fa fa-user"></span>
                         My profile
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="#">
+                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
+                        <span class=""><i class="fa fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ route('logout') }}">
                         <span class=""><i class="fa fa-key"></i></span>
-                        Logout/Home
+                        Logout
                     </a>
                 </li>
             </ul>
