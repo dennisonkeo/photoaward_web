@@ -36,144 +36,69 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<!-- OVERVIEW -->
-					<div class="panel panel-headline">
-						<div class="panel-heading">
-							<h3 class="panel-title">Overview</h3>
-							<p class="panel-subtitle">Period: </p>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-upload"></i></span>
-										<p>
-											<span class="number">1,000</span>
-											<span class="title">Uploads</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">3</span>
-											<span class="title">Jury</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">78</span>
-											<span class="title">Contestants</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon" style="color: #fff; font-weight: bold;"><i class="fa fa-dolar"></i>KSH</span>
-										<p>
-											<span class="number">500,000</span>
-											<span class="title">Total Payment</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-9">
-									<div id="headline-chart" class="ct-chart"></div>
-								</div>
-								<div class="col-md-3">
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.20,000</span> 
-										{{-- <span class="percentage">
-											<i class="fa fa-caret-up text-success"></i> 12%</span> --}}
-										<span class="info-label">Today</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.80,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span> --}}
-										<span class="info-label">This Week</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.250,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span> --}}
-										<span class="info-label">This Month</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END OVERVIEW -->
-					<div class="row">
-						<div class="col-md-6">
-							<!-- RECENT PURCHASES -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">Recent Transactions</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
-								</div>
-								<div class="panel-body no-padding">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>Reference No.</th>
-												<th>Name</th>
-												<th>Amount</th>
-												<th>Date &amp; Time</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Denno</td>
-												<td>Ksh.1220</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-success">COMPLETED</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763649</a></td>
-												<td>Fade</td>
-												<td>Ksh.620</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-warning">PENDING</span></td>
-											</tr>
+						
+					{{-- start form --}}
+					<div class="panel" style="width: 60%; margin: 0 auto;">
+						@include('errors')
 
-										</tbody>
-									</table>
-								</div>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
-										<div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All</a></div>
-									</div>
-								</div>
-							</div>
-							<!-- END RECENT PURCHASES -->
-						</div>
-						<div class="col-md-6">
-							<!-- MULTI CHARTS -->
-							<div class="panel">
+							@if (session('success'))
+	                        <div class="alert alert-success alert-dismissable">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('success') }}
+	                        </div>
+	                   		 @endif
+	                  		  @if (session('warning'))
+	                        <div class="alert alert-warning">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('warning') }}
+	                        </div>
+	                   		 @endif								
 								<div class="panel-heading">
-									<h3 class="panel-title">Payments</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
+									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-user-circle-o' style="margin-right: 10px;"></i>Jury Details</h3>
 								</div>
-								<div class="panel-body">
-									<div id="visits-chart" class="ct-chart"></div>
-								</div>
+							<div class="panel-body">
+ 								<form method="POST" action="addStaff">
+ 								{{ csrf_field() }}
+                          			<label>Full Name</label>                       
+									<input type="text" class="form-control input-lg" placeholder="" name="firstName" value=" ">
+									<br>
+
+									<div class="form-group">
+                                    <label class=" form-control-label">Phone No</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control input-lg" style="margin-top: 0;" name="phone" type="tel" pattern='^\+2547\d{0,13}' title="Phone Sould be in this form: +2547XXXXXXXX" maxlength="13">
+                                    </div>
+                                    <small class="form-text text-muted">ex. +2547XXXXXXXX</small>
+                                </div>
+                              
+								<div class="form-group">
+	                                <div class="col-sm-6">
+	                                <label>Email</label>
+	                                <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                                        <input class="form-control input-lg" style="margin-top: 0;" type="text" name="email">
+                                    </div>
+
+	                                </div>
+	                                <div class="col-sm-6">
+	                                <label >Password</label>
+	                                <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-key"></i></div>
+                                        <input id="password" class="form-control input-lg" type="Password" style="margin-top: 0;" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
+                                    </div>
+						                   
+	                                </div>
+	                              </div>
+									
+								
+								<button type="submit" class="btn btn-primary btn-lg" style="margin: 15px;"><i class="fa fa-plus-circle"></i> Add</button>
+
+								</form>
 							</div>
-							<!-- END MULTI CHARTS -->
 						</div>
-					</div>
+
+					{{-- end form --}}
 					
 				</div>
 			</div>

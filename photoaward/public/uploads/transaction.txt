@@ -1,0 +1,14 @@
+{"Body":{"stkCallback":{"MerchantRequestID":"23958-17127854-1","CheckoutRequestID":"ws_CO_DMZ_1954061162_22102019174750249","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"NJM5FIFODF"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20191022174758},{"Name":"PhoneNumber","Value":254708552578}]}}}}
+
+
+
+shanzu-42400,32400
+edit quota
+edit bank
+
+
+where to add daughterchurch
+
+church_bank
+
+transaction

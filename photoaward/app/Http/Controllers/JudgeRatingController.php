@@ -14,7 +14,12 @@ class JudgeRatingController extends Controller
      */
     public function index()
     {
-        //
+        return view('dashboard.add_jury');
+    }
+
+    public function manageJury()
+    {
+        return view('dashboard.manage_jury');
     }
 
     /**

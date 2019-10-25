@@ -129,8 +129,24 @@ class HomeController extends Controller
           $user->password = Hash::make($request->input("password"));
 
           $user->save();
+
+        if (Auth::attempt([
+        'email' => $request->email,
+        'password' => $request->password]) ||
+
+        Auth::attempt([
+        'phone' => $request->phone,
+        'password' => $request->password])
+    )
+    {
+        return redirect('submit-entry')->with('success', 'Thank you for registering with us.');
+    }
+    else
+    {
+        // return redirect('login')->with('warning', 'Thank you for registering with us.');
+    }
  
-        return redirect('login')->with('success', 'Thank you for registering with us.');
+        
     }
 
     

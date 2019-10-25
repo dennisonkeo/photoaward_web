@@ -118,4 +118,14 @@ Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-ima
 
 Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 
+Route::get('admin', 'AdminController@index')->name('admin');
+
+Route::get('jury', 'JudgeRatingController@index')->name('jury');
+
+Route::get('category', 'CategoryController@index')->name('category');
+
+Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
+
+Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
+
 });

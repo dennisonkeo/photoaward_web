@@ -20,6 +20,10 @@
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
+	<style type="text/css">
+
+	</style>
 </head>
 
 <body>
@@ -36,144 +40,68 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<!-- OVERVIEW -->
-					<div class="panel panel-headline">
-						<div class="panel-heading">
-							<h3 class="panel-title">Overview</h3>
-							<p class="panel-subtitle">Period: </p>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-upload"></i></span>
-										<p>
-											<span class="number">1,000</span>
-											<span class="title">Uploads</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">3</span>
-											<span class="title">Jury</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">78</span>
-											<span class="title">Contestants</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon" style="color: #fff; font-weight: bold;"><i class="fa fa-dolar"></i>KSH</span>
-										<p>
-											<span class="number">500,000</span>
-											<span class="title">Total Payment</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-9">
-									<div id="headline-chart" class="ct-chart"></div>
-								</div>
-								<div class="col-md-3">
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.20,000</span> 
-										{{-- <span class="percentage">
-											<i class="fa fa-caret-up text-success"></i> 12%</span> --}}
-										<span class="info-label">Today</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.80,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span> --}}
-										<span class="info-label">This Week</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.250,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span> --}}
-										<span class="info-label">This Month</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END OVERVIEW -->
-					<div class="row">
-						<div class="col-md-6">
-							<!-- RECENT PURCHASES -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">Recent Transactions</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
-								</div>
-								<div class="panel-body no-padding">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>Reference No.</th>
-												<th>Name</th>
-												<th>Amount</th>
-												<th>Date &amp; Time</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Denno</td>
-												<td>Ksh.1220</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-success">COMPLETED</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763649</a></td>
-												<td>Fade</td>
-												<td>Ksh.620</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-warning">PENDING</span></td>
-											</tr>
+						
+					{{-- start form --}}
+					<div class="panel" style="width: 60%; margin: 0 auto;">
+						@include('errors')
 
-										</tbody>
-									</table>
-								</div>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
-										<div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All</a></div>
-									</div>
-								</div>
-							</div>
-							<!-- END RECENT PURCHASES -->
-						</div>
-						<div class="col-md-6">
-							<!-- MULTI CHARTS -->
-							<div class="panel">
+							@if (session('success'))
+	                        <div class="alert alert-success alert-dismissable">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('success') }}
+	                        </div>
+	                   		 @endif
+	                  		  @if (session('warning'))
+	                        <div class="alert alert-warning">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('warning') }}
+	                        </div>
+	                   		 @endif								
 								<div class="panel-heading">
-									<h3 class="panel-title">Payments</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
+									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-list-alt' style="margin-right: 10px;"></i>Category Details</h3>
+								</div>
+							<div class="panel-body">
+ 								<form method="POST" action="addStaff">
+ 								{{ csrf_field() }}
+                          			<label>Category Name</label>                       
+									<input type="text" class="form-control input-lg" placeholder="" name="firstName" value=" ">
+									<br>
+									
+									<label>Description</label>
+									<textarea class="form-control" placeholder="" rows="4"></textarea>
+									
+									<br>
+									<label>Amount</label>
+									<div class="input-group">
+										<span class="input-group-addon">$</span>
+										<input class="form-control input-lg" type="text">
+										{{-- <span class="input-group-addon">.00</span> --}}
 									</div>
-								</div>
-								<div class="panel-body">
-									<div id="visits-chart" class="ct-chart"></div>
-								</div>
+									<br>
+									<label>Cover Image</label><br>
+									<div class="profile-image" style="">
+						                    <img class="img-thumbnail" alt="category cover image" src="" data-holder-rendered="true" style="width: 200px; height: auto;" id="profile-img-tag">
+						            </div>
+									{{-- <img src="images/logo_.png" alt="..." class="img-thumbnail" style="width: 200px; height: auto;"> --}}
+									{{-- <input type="file" name="file" id="profile-img"> --}}
+									<br>
+									<div style="position:relative; cursor: pointer;">
+									        <a class='btn btn-primary' href='javascript:;' style="cursor: pointer;">
+									            <i class="fa fa-file"></i> Choose File...
+									            <input type="file" id="profile-img" style='position:absolute;z-index:2;top:0;left:0;filter: alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;background-color:transparent;color:transparent;' name="file" size="40"  onchange='$("#upload-file-info").html($(this).val());'>
+									        </a>
+									        &nbsp;
+									        <span class='label label-info' id="upload-file-info"></span>
+									</div>
+									
+								
+								<button type="submit" class="btn btn-primary btn-lg pull-right" style="margin: 15px;"><i class="fa fa-plus-circle"></i> Add</button>
+
+								</form>
 							</div>
-							<!-- END MULTI CHARTS -->
 						</div>
-					</div>
+
+					{{-- end form --}}
 					
 				</div>
 			</div>
@@ -192,6 +120,33 @@
 	<script src="{{asset('dashboard/assets/vendor/chartist/js/chartist.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/scripts/klorofil-common.js')}}"></script>
 	<script>
+
+	    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            
+
+            reader.onload = function (e) {
+
+                $('#profile-img-tag').attr('src', e.target.result);
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+    $("#profile-img").change(function(){
+
+        readURL(this);
+
+    });
+
 	$(function() {
 		var data, options;
 

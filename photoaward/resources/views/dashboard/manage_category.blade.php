@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
 	<!-- VENDOR CSS -->
 	<link rel="stylesheet" href="{{asset('dashboard/assets/vendor/bootstrap/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('dashboard/assets/vendor/font-awesome/css/font-awesome.min.css')}}">
@@ -20,6 +21,12 @@
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+
+	<style type="text/css">
+
+	</style>
 </head>
 
 <body>
@@ -36,144 +43,70 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<!-- OVERVIEW -->
-					<div class="panel panel-headline">
-						<div class="panel-heading">
-							<h3 class="panel-title">Overview</h3>
-							<p class="panel-subtitle">Period: </p>
-						</div>
-						<div class="panel-body">
-							<div class="row">
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-upload"></i></span>
-										<p>
-											<span class="number">1,000</span>
-											<span class="title">Uploads</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">3</span>
-											<span class="title">Jury</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="fa fa-user"></i></span>
-										<p>
-											<span class="number">78</span>
-											<span class="title">Contestants</span>
-										</p>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon" style="color: #fff; font-weight: bold;"><i class="fa fa-dolar"></i>KSH</span>
-										<p>
-											<span class="number">500,000</span>
-											<span class="title">Total Payment</span>
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-9">
-									<div id="headline-chart" class="ct-chart"></div>
-								</div>
-								<div class="col-md-3">
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.20,000</span> 
-										{{-- <span class="percentage">
-											<i class="fa fa-caret-up text-success"></i> 12%</span> --}}
-										<span class="info-label">Today</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.80,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span> --}}
-										<span class="info-label">This Week</span>
-									</div>
-									<div class="weekly-summary text-right">
-										<span class="number">Ksh.250,000</span> 
-										{{-- <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span> --}}
-										<span class="info-label">This Month</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END OVERVIEW -->
-					<div class="row">
-						<div class="col-md-6">
-							<!-- RECENT PURCHASES -->
-							<div class="panel">
-								<div class="panel-heading">
-									<h3 class="panel-title">Recent Transactions</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
-								</div>
-								<div class="panel-body no-padding">
-									<table class="table table-striped">
-										<thead>
-											<tr>
-												<th>Reference No.</th>
-												<th>Name</th>
-												<th>Amount</th>
-												<th>Date &amp; Time</th>
-												<th>Status</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Denno</td>
-												<td>Ksh.1220</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-success">COMPLETED</span></td>
-											</tr>
-											<tr>
-												<td><a href="#">763649</a></td>
-												<td>Fade</td>
-												<td>Ksh.620</td>
-												<td>Oct 25, 2019</td>
-												<td><span class="label label-warning">PENDING</span></td>
-											</tr>
+						
+					{{-- start form --}}
+					<div class="panel" style="width: 80%; margin: 0 auto;">
+						@include('errors')
 
-										</tbody>
-									</table>
-								</div>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-6"><span class="panel-note"><i class="fa fa-clock-o"></i> Last 24 hours</span></div>
-										<div class="col-md-6 text-right"><a href="#" class="btn btn-primary">View All</a></div>
-									</div>
-								</div>
-							</div>
-							<!-- END RECENT PURCHASES -->
-						</div>
-						<div class="col-md-6">
-							<!-- MULTI CHARTS -->
-							<div class="panel">
+							@if (session('success'))
+	                        <div class="alert alert-success alert-dismissable">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('success') }}
+	                        </div>
+	                   		 @endif
+	                  		  @if (session('warning'))
+	                        <div class="alert alert-warning">
+	                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	                            {{ session('warning') }}
+	                        </div>
+	                   		 @endif								
 								<div class="panel-heading">
-									<h3 class="panel-title">Payments</h3>
-									<div class="right">
-										<button type="button" class="btn-toggle-collapse"><i class="lnr lnr-chevron-up"></i></button>
-										<button type="button" class="btn-remove"><i class="lnr lnr-cross"></i></button>
-									</div>
+									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-list-alt' style="margin-right: 10px;"></i>Manage Categories</h3>
 								</div>
-								<div class="panel-body">
-									<div id="visits-chart" class="ct-chart"></div>
-								</div>
+							<div class="panel-body">
+ 								<table id="example" class="table table-striped table-bordered" style="width:100%">
+								        <thead>
+								            <tr>
+								                <th>Name</th>
+								                <th>Description</th>
+								                <th>Amount</th>
+								                <th>Action</th>
+								            </tr>
+								        </thead>
+								        <tbody>
+								            <tr>
+								                <td>Cat 1</td>
+								                <td>jfdhfh dhfdh dhhs</td>
+								                <td>100</td>
+								                <td >
+								                	<a href="#" data-toggle="tooltip" data-placement="top" title="Edit Category" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
+
+								                	<a href="#" data-toggle="tooltip" title="Delete Category" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
+
+								                	<a href="#" data-toggle="tooltip" title="View More Details" class="" style="margin-right: 10px; color: blue; font-size: 20px;"><i class="fa fa-info-circle"></i></a>
+
+								                </td>
+
+								            </tr>
+								            <tr>
+								                <td>Cat 2</td>
+								                <td>nfhd dhfdf</td>
+								                <td>150</td>
+								                <td>
+													<a href="#" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
+
+								                	<a href="#" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
+
+								                	<a href="#" class="" style="margin-right: 10px; color: black; font-size: 20px;"><i class="fa fa-eye"></i></a>
+								                </td>
+								            </tr>
+								            
+								        </tfoot>
+								    </table>
 							</div>
-							<!-- END MULTI CHARTS -->
 						</div>
-					</div>
+
+					{{-- end form --}}
 					
 				</div>
 			</div>
@@ -184,6 +117,8 @@
 	@include('dashboard.footer')
 	</div>
 	<!-- END WRAPPER -->
+
+	
 	<!-- Javascript -->
 	<script src="{{asset('dashboard/assets/vendor/jquery/jquery.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
@@ -191,7 +126,41 @@
 	<script src="{{asset('dashboard/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/vendor/chartist/js/chartist.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/scripts/klorofil-common.js')}}"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 	<script>
+		$(document).ready(function() {
+		    $('#example').DataTable();
+		} );
+
+	    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            
+
+            reader.onload = function (e) {
+
+                $('#profile-img-tag').attr('src', e.target.result);
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+    $("#profile-img").change(function(){
+
+        readURL(this);
+
+    });
+
 	$(function() {
 		var data, options;
 
