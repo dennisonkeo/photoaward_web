@@ -264,7 +264,7 @@ span .hoverr:hover{
 <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="#">
+                    <a href="{{route('/')}}">
                          <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>

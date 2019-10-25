@@ -8,7 +8,7 @@
         <div class="media-container-row content text-white">
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
-                    <a href="#">
+                    <a href="{{route('/')}}">
                         <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>

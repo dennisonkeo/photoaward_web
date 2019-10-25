@@ -66,7 +66,7 @@
 <div class="menu-logo">
             <div class="navbar-brand">
                 <span class="navbar-logo">
-                    <a href="#">
+                    <a href="{{route('/')}}">
                          <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>
@@ -245,7 +245,7 @@
         <div class="media-container-row content text-white">
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
-                    <a href="#">
+                    <a href="{{route('/')}}">
                         <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>

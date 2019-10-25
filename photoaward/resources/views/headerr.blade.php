@@ -30,7 +30,7 @@
 <header style="background: #000; color: #ff0051; height: 80px;">
     <div>
         {{-- <p style="text-align: center; color: white;">Our header info</p> --}}
-        <img src="{{ asset('images/logo_.png') }}" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
+       <a style="text-decoration: none; color: #ff0051;" href="{{route('/')}}"> <img src="{{ asset('images/logo_.png') }}" alt="logo" style="height: 6.0rem; line-height: 80px; background-size: cover;"> PICTURE <span>+254</span>
 
         <a href="view-album" style="float: right; padding-right: 10px; text-decoration: none; color: #ff0051;">
                     <i class="fa fa-camera-retro" style="font-size:24px; color: #fff;">{{-- &#xf07a; --}}</i>
