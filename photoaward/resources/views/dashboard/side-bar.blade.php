@@ -19,7 +19,7 @@
 							<a href="#jury" data-toggle="collapse" class="collapsed"><i class="lnr lnr-user"></i> <span>Jury</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="jury" class="collapse ">
 								<ul class="nav">
-									<li><a href="{{ route('jury') }}" class="">Add</a></li>
+									<li><a href="{{ route('jury-dash') }}" class="">Add</a></li>
 									<li><a href="{{ route('manage-jury') }}" class="">Manage</a></li>
 								</ul>
 							</div>

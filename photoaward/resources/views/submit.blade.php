@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+    <script src="{{ asset('js/right_click.js') }}"></script>
     <meta charset="utf-8">
     
     <title>Photo Contest</title>
@@ -30,10 +31,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/overlay-bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/app.css" />
 
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
+
         <script>if(top.location != self.location){top.location=self.location;}</script> 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    
     
     <!-- Hotjar Tracking Code for https://users.worldphoto.org -->
 <script>
@@ -51,6 +56,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .profile{
 
     }
+
+    .fa {
+  /*padding: 20px;*/
+  /*font-size: 30px;*/
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+/*.fa:hover {
+    opacity: 0.7;
+}*/
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #3f729b;
+  color: white;
+}
 </style>
     
 </head>
@@ -81,8 +117,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <i class="fa fa-user fa-5" style="color: maroon;" aria-hidden="true"></i>
                         </div>
                     @else
-                       <div class="profile-image" style="width: 200px; height: 300px;">
-                            <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $avatar->pic }}" data-holder-rendered="true" style="width: 100%; height: 100%; object-position:50% 50%; objet-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
+                       <div class="profile-image" style="width: 300px; height: auto;">
+                            <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ $avatar->pic }}" data-holder-rendered="true" style="width: 250px; height: auto; object-position:50% 50%; objet-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag">
                     </div>
                     @endif
                                         
@@ -93,8 +129,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <div class="social-media">
                         <ul>
-                            <li>jjfjd</li>
-                            <li>jjfjd</li>
+                            @if(Auth::user()->fb != "")
+                            <a href="{{ Auth::user()->fb }}" target="_blank" ><i class="fa fa-facebook"></i></a>
+                            
+                            @endif
+                            @if(Auth::user()->tw != "")
+                            <a href="#" ><i class="fa fa-twitter"></i></a>
+
+                            @endif
+                            @if(Auth::user()->ig != "")
+                            <a href="#" ><i class="fa fa-instagram"></i></a>
+                            @endif
+
                         </ul>
                     </div>
                 </div>
@@ -103,14 +149,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="row profile-details">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <h1>
-                                {{ Auth::user()->name }}
+                                {{ Auth::user()->dname }}
                             </h1>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
-                                                            <div class="empty">
+                            @if(Auth::user()->bio == "")
+                            <div class="empty">
                                     <h3>We would like to know more about you</h3>
+                            </div>
+                            @else
+                                <div class="empty">
+                                    <h3>{{ Auth::user()->bio }}</h3>
                                 </div>
-                                                    </div>
+                            @endif
+                            </div>
 
                         
 
@@ -358,6 +410,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             
                     });
+
+
+        
     </script>
 
 </body>

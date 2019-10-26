@@ -120,7 +120,7 @@ Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 
 Route::get('admin', 'AdminController@index')->name('admin');
 
-Route::get('jury', 'JudgeRatingController@index')->name('jury');
+Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
 
 Route::get('category', 'CategoryController@index')->name('category');
 

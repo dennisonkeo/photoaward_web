@@ -27,7 +27,7 @@
 
             <li class="profile ">
                 <a href="{{ route('logout') }}" class="" style="color: #ff00ff;" >
-                   <i class="fa fa-sign-out"></i> Logout</a>
+                   <i clas="fa fa-sign-out"></i> Logout</a>
             </li>
 
         </ul> <!-- End nav -->
