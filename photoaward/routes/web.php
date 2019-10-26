@@ -128,4 +128,6 @@ Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
 
 Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
 
+Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
+
 });

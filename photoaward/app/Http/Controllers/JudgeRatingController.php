@@ -20,6 +20,11 @@ class JudgeRatingController extends Controller
     public function manageJury()
     {
         return view('dashboard.manage_jury');
+    }   
+
+    public function display_rating()
+    {
+        return view('dashboard.image_rating');
     }
 
     /**

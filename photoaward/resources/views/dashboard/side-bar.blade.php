@@ -29,7 +29,7 @@
 							<a href="#cont" data-toggle="collapse" class="collapsed"><i class="lnr lnr-user"></i> <span>Contestants</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="cont" class="collapse ">
 								<ul class="nav">
-									<li><a href="#" class="">Manage</a></li>
+									<li><a href="{{ route('image-rating') }}" class="">Manage</a></li>
 								</ul>
 							</div>
 						</li>
