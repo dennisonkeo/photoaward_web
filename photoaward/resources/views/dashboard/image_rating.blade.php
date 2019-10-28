@@ -21,6 +21,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
+		<!-- default styles -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+
+<!-- optionally if you need to use a theme, then include the theme CSS file as mentioned below -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+
 	<style type="text/css">
 		.text-center {text-align:center;}
 
@@ -156,6 +163,8 @@ border-radius: 4px;
 									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-user-circle-o' style="margin-right: 10px;"></i>Image Rating Panel</h3>
 								</div> --}}
 							<div class="panel-body">
+								<label for="input-1" class="control-label">Rate This</label>
+							<input id="input-1" name="input-1" value="4.3" class="rating-loading">
 									<!-- Page Content -->
 									<div class="conainer">
 
@@ -430,6 +439,8 @@ border-radius: 4px;
 	@include('dashboard.footer')
 	</div>
 	<!-- END WRAPPER -->
+
+
 	<!-- Javascript -->
 	<script src="{{asset('dashboard/assets/js/rating.js')}}"></script>
 	<script src="{{asset('dashboard/assets/vendor/jquery/jquery.min.js')}}"></script>
@@ -438,7 +449,23 @@ border-radius: 4px;
 	<script src="{{asset('dashboard/assets/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/vendor/chartist/js/chartist.min.js')}}"></script>
 	<script src="{{asset('dashboard/assets/scripts/klorofil-common.js')}}"></script>
+
+
+	<!-- important mandatory libraries -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/js/star-rating.min.js" type="text/javascript"></script>
+
+<!-- optionally if you need to use a theme, then include the theme JS file as mentioned below -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/themes/krajee-svg/theme.js"></script>
+
+<!-- optionally if you need translation for your language then include locale file as mentioned below -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-star-rating/4.0.6/js/locales/<lang>.js"></script>
+
 	<script>
+
+	$(document).ready(function(){
+    $('#input-1').rating({min: 0, max: 8, step: 0.1, stars: 8});
+});
 
 	$(document).ready(function(){
   
