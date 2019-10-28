@@ -18,6 +18,8 @@ Cool Carousels	(c) 2019 Fred Heusschen
 		<link rel="shortcut icon" type="images/ico" href="/favicon.ico" />
 	
 		<title>Responsive slider resizing a fixed number of images</title>
+
+		<script src="{{ asset('js/right_click.js') }}"></script>
 		
 		<link rel="stylesheet" type="text/css" media="all" href="/css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />

@@ -11,6 +11,9 @@
     <!-- Generator: Jssor Slider Maker -->
     <!-- Source: https://www.jssor.com -->
     <script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+    
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
     <script type="text/javascript">
         jssor_1_slider_init = function() {
 

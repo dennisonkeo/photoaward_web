@@ -1,6 +1,6 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<a href="dash"><img src="imaes/logo_.png" alt="Pic +254 Logo" class="img-responsive logo"></a>
+				<a href="dash"><img src="images/logoo-.png" alt="Pic +254 logo" style="heght: 50px; " class="img-responsive logo"></a>
 			</div>
 			<div class="container-fluid">
 				<div class="navbar-btn">

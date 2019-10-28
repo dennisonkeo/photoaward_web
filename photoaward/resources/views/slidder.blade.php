@@ -4,7 +4,8 @@
 	<title></title>
 </head>
 <body>
-
+			<script src="{{ asset('js/right_click.js') }}"></script>
+			
 			<h2>Lazy Loading</h2>
 			<div class="slider lazy">
 				<div>

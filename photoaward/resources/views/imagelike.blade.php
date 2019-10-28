@@ -142,6 +142,9 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>
+
+<script src="{{ asset('js/right_click.js') }}"></script>
+
 <body>
 
 <h2 style="text-align:center">Lightbox</h2>
