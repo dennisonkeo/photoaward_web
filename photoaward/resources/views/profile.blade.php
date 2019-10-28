@@ -36,6 +36,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </style>
     <script>if(top.location != self.location){top.location=self.location;}</script> 
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+    
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->

@@ -39,7 +39,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
-
+ <script src="{{ asset('js/right_click.js') }}"></script>
 
 	<script src="https://www.worldphoto.org/sites/default/files/js/js_HiIz5xPajTGiijO-cnnRC5ocyMAYo02ysgmCJMoRLI4.js"></script>
 <script src="https://www.worldphoto.org/sites/default/files/js/js_gYWhuqN0Wsid8HOSk0yFzqMg-2NTv-xegwc2ACYMGws.js"></script>
@@ -262,7 +262,7 @@ initializeClock('clockdiv2', deadline2);
 		
 		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"><!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
+    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		

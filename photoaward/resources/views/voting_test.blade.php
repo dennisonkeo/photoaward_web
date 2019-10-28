@@ -33,6 +33,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+	<script src="{{ asset('js/right_click.js') }}"></script>
+
 	<meta charset="UTF-8">
 	<title>Like and unlike system</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />

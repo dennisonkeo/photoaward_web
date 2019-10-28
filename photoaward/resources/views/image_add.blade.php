@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Photo Contest</title>
+
+	<script src="{{ asset('js/right_click.js') }}"></script>
 
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 

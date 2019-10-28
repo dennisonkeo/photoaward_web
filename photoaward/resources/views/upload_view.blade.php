@@ -3,6 +3,8 @@
 <head>
 	<title>Photo Contest</title>
 
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.7/css/fileinput.css" media="all" type="text/css">

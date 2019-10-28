@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/plugins/do-not-remove-custom-css.css" type="text/css" />
 
-
+	<script src="{{ asset('js/right_click.js') }}"></script>
     <!--[if lte IE 8]>
 	<script type="text/javascript" src="https://www.contest-gallery.com/wp-content/themes/Avada/js/respond.min.js"></script>
 	<link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/themes/Avada/css/ie8.css" />

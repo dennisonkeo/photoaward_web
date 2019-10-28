@@ -4,6 +4,8 @@
     $images = Upload::where('uploaded', 'yes')->latest()->get();
   ?>  
 
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
     <link rel="stylesheet" href="{{asset('popup/css/grid-gallery.min.css')}}">
     <link rel="stylesheet" href="{{asset('popup/css/grid-gallery.css')}}">
     <style>
