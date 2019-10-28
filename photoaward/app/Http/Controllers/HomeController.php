@@ -191,6 +191,13 @@ public function show_submit()
     return view('submit', compact("records", "categories", "avatar"));
 }
 
+public function show_account()
+{
+    $user = User::where('id', Auth::user()->id)->first();
+    
+    return view('account', compact("user"));
+}
+
     /**
      * Display the specified resource.
      *

@@ -18,7 +18,7 @@
             </li>
             <li class="account ">
                 <a href="#" style="color: #ff00ff;" >
-                    Account</a>
+                    Settings</a>
             </li>
             <li class="account ">
                 <a href="{{ route('/') }}" style="color: #ff00ff;" >

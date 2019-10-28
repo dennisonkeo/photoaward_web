@@ -112,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="col-xs-12 col-sm-12 col-md-12 profile">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-3">
-                    @if($avatar =="")
+                    @if($avatar->pic =="")
                         <div class="avatar default">
                             <i class="fa fa-user fa-5" style="color: maroon;" aria-hidden="true"></i>
                         </div>
