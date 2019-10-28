@@ -51,7 +51,7 @@ Route::get('anything', function () {
 Route::get('jury', function () {
     return view('jury');
 
-});
+})->name('jury');
 
 Route::get('votingg', function () {
     return view('voting_test');

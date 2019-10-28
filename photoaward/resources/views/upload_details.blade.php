@@ -245,7 +245,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             <a href="#" class="btn btn-primary" role="button">
                             Skip image
                         </a> -->
-                        <small>or</small>
                 </span>
 
                 <span class="btn-grp success">
@@ -259,8 +258,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         Save and continue
                     </button>
                 </span>
-
-                <small>or</small>
 
                 <span class="btn-grp danger">
                     <a href="#" class="btn btn-danger" role="button">

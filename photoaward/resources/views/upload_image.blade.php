@@ -293,9 +293,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <i class="fa fa-floppy-o fa-lg"></i>
                         Save and continue
                     </button>
-                    
-                    
-                    <small>or</small>
 
                     <span class="danger">
                         <a href="submit-entry#competitions" class="btn btn-danger" role="button">

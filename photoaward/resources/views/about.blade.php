@@ -39,7 +39,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
- <script src="{{ asset('js/right_click.js') }}"></script>
+ <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 	<script src="https://www.worldphoto.org/sites/default/files/js/js_HiIz5xPajTGiijO-cnnRC5ocyMAYo02ysgmCJMoRLI4.js"></script>
 <script src="https://www.worldphoto.org/sites/default/files/js/js_gYWhuqN0Wsid8HOSk0yFzqMg-2NTv-xegwc2ACYMGws.js"></script>
@@ -75,10 +75,13 @@
     <style type="text/css">
     	.parallaxabout {
   /* The image used */
-  background-image: url('{{ asset('images/pic73.png') }}');
+  background: url('{{ asset('images/pic3_.jpg') }}') no-repeat center center fixed;
+
 
   /* Set a specific height */
   min-height: 690px; 
+  min-width: 1200px;
+  /*height: auto;*/
 
 
   /* Create the parallax scrolling effect */
@@ -292,9 +295,9 @@ initializeClock('clockdiv2', deadline2);
 </div>
 
 <div class="parallaxabout" style="opcity: 0.6; ">
-<p style=" vertical-align: center; color: #fff; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
+<!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
   A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
-</p>
+</p> -->
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
