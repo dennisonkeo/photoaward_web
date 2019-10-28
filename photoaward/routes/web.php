@@ -116,6 +116,8 @@ Route::get('image-detail', 'UploadController@index')->name('image-detail');
 
 Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-image');
 
+Route::get('account-settings', 'HomeController@show_account')->name('account-settings');
+
 Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 
 Route::get('admin', 'AdminController@index')->name('admin');
