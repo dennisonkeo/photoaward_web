@@ -19,6 +19,18 @@ Route::get('pop', function () {
     return view('popup.index');
 });
 
+Route::get('prizes', function () {
+    return view('prizes');
+});
+
+Route::get('guidelines', function () {
+    return view('guidelines');
+});
+
+Route::get('entry-fee', function () {
+    return view('fees');
+});
+
 Route::get('dash', function () {
     return view('dashboard.index');
 });
@@ -36,6 +48,10 @@ Route::get('imagelike', function () {
 
 Route::get('like_image', function () {
     return view('like_image');
+});
+
+Route::get('about-competition', function () {
+    return view('competition');
 });
 
 Route::get('/', function () {

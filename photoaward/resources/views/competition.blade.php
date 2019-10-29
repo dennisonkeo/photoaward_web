@@ -279,7 +279,7 @@ initializeClock('clockdiv2', deadline2);
 						<span class="bar"></span>
 						<span class="bar"></span>
 					</span>
-					<span class="label">ABOUT CONTEST</span>
+					<span class="label">ABOUT COMPETITION</span>
 				</a>
 			</div>
 		</div>
@@ -287,211 +287,18 @@ initializeClock('clockdiv2', deadline2);
 		
 	</div>
 
-  <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
-
-<img src="images/logo.png" style="width: 236px;">
-  
-</div>
 </div>
 
-<div class="parallaxabout" style="opcity: 0.6; ">
-<!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
-  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
-</p> -->
-
-
-        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
-
-          <div id="clockdiv">
-              <div>
-                <span class="days"></span>
-                <div class="smalltext">Days</div>
-              </div>
-              <div class="try">
-                <span class="hours"></span>
-                <div class="smalltext">Hours</div>
-              </div>
-              <div>
-                <span class="minutes"></span>
-                <div class="smalltext">Minutes</div>
-              </div>
-              <div>
-                <span class="seconds"></span>
-                <div class="smalltext">Seconds</div>
-              </div>
-          </div><br><br>
-          
-        </div>
-</div>
 
 	<div id="contents-wrap">
 		<div id="contents">
 
-    <div id="profile2" class="contnt" style="background: black; hight: 500px; margin: 3px;">
 
-      <div class="containe" id="slider" style="backgrund: yellow; height: 500px;">
-        <div class="phone" style="height: 300px; background-size: cover; background-repeat: no-repeat;">
-          
-          <div style="margin: 0 auto;">
-            <div class="row">
-              <img src="images/logo_.png" style="height: 150px; background-size: cover;">
-            </div>
-          <div class="row" style="margin: 0 auto;">
-            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
-        </div>
-          <div id="clockdiv2" style="margin-top: 2px;">
-              <div>
-                <span class="days"></span>
-                <div class="smalltext">Days</div>
-              </div>
-              <div class="try">
-                <span class="hours"></span>
-                <div class="smalltext">Hrs</div>
-              </div>
-              <div>
-                <span class="minutes"></span>
-                <div class="smalltext">Mins</div>
-              </div>
-              <div style="dislay: none;">
-                <span class="seconds"></span>
-                <div class="smalltext">Secs</div>
-              </div>
-          </div><br><br>
-          
-        </div>
-
-        </div>
-
-
-                  <div class="page" style="height: 500px;">
-                  
-                    <div class="nav-left">
-                        <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
-                    </div>
-                        <div id="mainSlider" style="opaity: 0.5" style="background: green; ">
-                            <div class="group">
-                            
-                                <div class="item" style="background: black;">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_03-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_03-400.jpg">-->
-                                        <img src="images/pic1_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_06-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_06-400.jpg">-->
-                                        <img src="images/pic32.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_07-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_07-400.jpg">-->
-                                        <img src="images/pic50.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_08-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_08-400.jpg">-->
-                                        <img src="images/pic3_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_09-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_09-400.jpg">-->
-                                        <img src="images/pic74.png">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_10-250.jpg">-->
-                <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_10-400.jpg">-->
-                                        <img src="images/pic75.png">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic19_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic46.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic18_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic11_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_02-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_02-400.jpg">-->
-                                        <img src="images/pic23.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic12_.jpg">
-                                    </picture>
-                                </div>
-                                <div class="item">
-                                    <picture>
-                                        <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_11-250.jpg">-->
-                                        <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_11-400.jpg">-->
-                                        <img src="images/pic48.jpg">
-                                    </picture>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    <div class="nav-right">
-                        <a href="#" style="width: 35px; height: 54px; background: url('images/next_slider.png') center no-repeat; display: block; text-indent: -9999px;">next</a>
-                    </div>
-
-
-              </div>
-      </div>
-
-  </div>
-
-<!-- <<<<<<< HEAD
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
-======= -->
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
 
 
 				<div class="container">
-					<!-- <div class="lang-nav">
-						<ul class="hover-line-links">
-							<li><a href="#" lang="en" class="current"><span>EN</span></a></li>
-							<li><a href="#" lang="ja"><span>JP</span></a></li>
-						</ul>
-					</div> -->
+
 <div class="sections">
 
   <div class="section section-tabled" id="about">
@@ -944,7 +751,7 @@ Content <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury<
 </div>
 
 
-<script type="text/javascript">
+{{-- <script type="text/javascript">
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -989,7 +796,7 @@ initializeClock('clockdiv', deadline);
 
 var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv2', deadline2);
-</script>				
+</script>	 --}}			
 
 
 </body>

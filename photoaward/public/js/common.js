@@ -218,35 +218,35 @@
 			this.colClass = 'col-'+this.numCols;
 			this.$target.addClass(this.colClass).append.apply(this.$target, this.grid);
 
-			// if(this.$target.hasClass('move-entry')){
-			// 	this.$target.removeClass('move-entry');
-			// 	var th = Math.max.apply(Math, this.gridInfo);
-			// 	var cw = this.$target.find('.flow-grid-col').width();
-			// 	var cpos = [];
-			// 	var ww = $(window).width()
-			// 	for(j = 0; j < this.numCols; j++){
-			// 		cpos[j] = ww*(j/this.numCols)
-			// 	}
-			// 	for(i = 0; i < this.numEintries; i++){
-			// 		$entry = this.$entries.eq(i);
-			// 		var p = this.positions[i]
-			// 		$entry.delay(50*i).animate({
-			// 			'width': cw,
-			// 			'top': p.y,
-			// 			'left': cpos[p.i]
-			// 		},1000,$.easing.def, function(){
-			// 			$(this).css({
-			// 				'position' : '',
-			// 				'width': '',
-			// 				'top' : '',
-			// 				'left' : ''
-			// 			})
-			// 		})
-			// 	}
-			// 	this.$target.animate({'height':th},1000,$.easing.def,function(){
-			// 		$(this).css('height','');
-			// 	})
-			// }
+			if(this.$target.hasClass('move-entry')){
+				this.$target.removeClass('move-entry');
+				var th = Math.max.apply(Math, this.gridInfo);
+				var cw = this.$target.find('.flow-grid-col').width();
+				var cpos = [];
+				var ww = $(window).width()
+				for(j = 0; j < this.numCols; j++){
+					cpos[j] = ww*(j/this.numCols)
+				}
+				for(i = 0; i < this.numEintries; i++){
+					$entry = this.$entries.eq(i);
+					var p = this.positions[i]
+					$entry.delay(50*i).animate({
+						'width': cw,
+						'top': p.y,
+						'left': cpos[p.i]
+					},1000,$.easing.def, function(){
+						$(this).css({
+							'position' : '',
+							'width': '',
+							'top' : '',
+							'left' : ''
+						})
+					})
+				}
+				this.$target.animate({'height':th},1000,$.easing.def,function(){
+					$(this).css('height','');
+				})
+			}
 		},
 
 		add : function($entry){

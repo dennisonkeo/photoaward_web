@@ -24,6 +24,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="{{ asset('css/style.css')}}">
+	<link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
     <!--Google Analytics-->
 	<script src="{{ asset('js/libs.js')}}" type="text/javascript"></script>
 	<script src="{{ asset('js/common.js')}}" type="text/javascript"></script>
@@ -272,8 +273,8 @@
 	</div><!-- /#contents-wrap -->
 
 </div>
-@include('menu')
 </div>
+@include('menu')
 <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
