@@ -15,6 +15,10 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('under-construction', function () {
+    return view('construction');
+});
+
 Route::get('pop', function () {
     return view('popup.index');
 });
