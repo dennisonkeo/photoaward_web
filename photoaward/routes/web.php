@@ -35,6 +35,14 @@ Route::get('entry-fee', function () {
     return view('fees');
 });
 
+Route::get('contact', function () {
+    return view('contact');
+});
+
+Route::get('faq', function () {
+    return view('faq');
+});
+
 Route::get('dash', function () {
     return view('dashboard.index');
 });

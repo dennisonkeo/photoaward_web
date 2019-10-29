@@ -76,7 +76,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </span>
-          <span class="label">PRESS</span>
+          <span class="label">GUIDELINES</span>
         </a>
       </div>
     </div>
@@ -103,15 +103,16 @@
         <div class="tabled-td">
         <p>Sample Guidelines</p>
          Photographs must be resized to 1100 pixels on the longest side.
-They must be saved as JPEG file (JPG).
+They must be saved as JPEG file (JPG).<br><br>
 
-Prepare your files with the following specifications:
-
-- sRGB or Adobe98 colour space, 8-bit;
-- longest dimension 1100 pixels;
-- saved as a JPEG at a setting of 10 (100%) or higher;
-- no watermarks / copyright units / personal logos on images;
-- only bleed photographs without borders*;
+<b>Prepare your files with the following specifications:</b><br>
+<ul>
+<li>- sRGB or Adobe98 colour space, 8-bit;</li>
+<li>- longest dimension 1100 pixels;</li>
+<li>- saved as a JPEG at a setting of 10 (100%) or higher;</li>
+<li>- no watermarks / copyright units / personal logos on images;</li>
+<li>- only bleed photographs without borders*;</li>
+</ul>
 
 *except Polaroids and other traditional process photos where border is inherent part of the image. 
 
