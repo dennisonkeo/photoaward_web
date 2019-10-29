@@ -938,7 +938,7 @@ Content <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury<
 	<div class="container">
 
 
-    <div id="copyright" class="wfont">&copy; Photo Contest.</div>
+    <div id="copyright" class="wfont">&copy; Picture254. All Rights Reserved.</div> 
 
 	</div>
 </div>

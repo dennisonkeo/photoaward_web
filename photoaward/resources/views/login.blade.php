@@ -231,7 +231,7 @@
 	@include('menu') 
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; Picture254. All Rights Reserved.</div> 
 	</div>
 </div>
 </body>
