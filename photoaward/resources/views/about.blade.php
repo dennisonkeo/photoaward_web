@@ -183,14 +183,14 @@ initializeClock('clockdiv2', deadline2);
 #clockdiv div > span{
     padding: 15px;
     border-radius: 5px;
-    background: #fff;
+    background: #000;
     display: inline-block;
     color: #ff0051;
 }
 #clockdiv2 div > span{
     padding: 5px;
     border-radius: 5px;
-    background: #fff;
+    background: #000;
     display: inline-block;
     color: #ff0051;
 }
