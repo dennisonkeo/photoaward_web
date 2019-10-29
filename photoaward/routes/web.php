@@ -110,6 +110,8 @@ Route::get('uploaded', 'UploadController@save_upload')->name('uploaded');
 
 Route::post('image-submit', 'UploadController@store')->name('image-submit');
 
+Route::put('account-reset', 'HomeController@account_reset')->name('account-reset');
+
 Route::get('view-album', 'UploadController@view_cart')->name('view-album');
 
 Route::get('image-detail', 'UploadController@index')->name('image-detail');

@@ -198,6 +198,87 @@ public function show_account()
     return view('account', compact("user"));
 }
 
+public function account_reset(Request $request)
+{
+
+    $user = User::where('id', Auth::user()->id)->first();
+
+    Hash::make($request->input("password"));
+    $email = $request->input('email');
+    $password = $request->input('password');
+    $current = $request->input('current_password');
+
+     
+
+
+    if($password !="" && $email !="")
+    {
+        $this->validate($request,[
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+
+            ]);
+        if( password_verify($current, Auth::user()->password))
+        {
+            user::where('id', Auth::user()->id)
+            ->update(array(
+                'email' => $email,
+                'password' => Hash::make($password),
+            ));
+
+            return back()->with('success', 'Details updated successfully!');  
+        }
+        else
+        {
+            return back()->with('warning', 'Sorry, Your Current Password is Incorrect!');  
+        }
+        
+    } 
+
+    else if($password =="" && $email !="")
+    {
+        $this->validate($request,[
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+
+            ]);
+        if( password_verify($current, Auth::user()->password))
+        {
+            user::where('id', Auth::user()->id)
+            ->update(array(
+                'email' => $email,
+                // 'password' => Hash::make($password),
+            ));
+
+            return back()->with('success', 'Details updated successfully!');  
+        }
+        else
+        {
+            return back()->with('warning', 'Sorry, Your Current Password is Incorrect!');  
+        }
+        
+    } 
+
+    else if($password !="" && $email =="")
+    {
+        if( password_verify($current, Auth::user()->password))
+        {
+            user::where('id', Auth::user()->id)
+            ->update(array(
+                // 'email' => $email,
+                'password' => Hash::make($password),
+            ));
+
+            return back()->with('success', 'Details updated successfully!');  
+        }
+        else
+        {
+            return back()->with('warning', 'Sorry, Your Current Password is Incorrect!');  
+        }
+        
+    } 
+
+    return back();  
+}
+
     /**
      * Display the specified resource.
      *

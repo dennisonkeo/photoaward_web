@@ -5,7 +5,7 @@
                                   </div>
                                  @endif
                                   @if (session('warning'))
-                                  <div class="alert alert-warning">
+                                  <div class="alert alert-danger">
                                   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                                       {{ session('warning') }}
                                   </div>

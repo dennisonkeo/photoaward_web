@@ -64,9 +64,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             
             
 
-<form method="POST" action="#" accept-charset="UTF-8">
+<form method="POST" action="account-reset" onsubmit="return onsubmitt()">
 
+    {{ csrf_field() }}
+    <input type="hidden" name="_method" value="PUT" />
 
+@include('errors')
+@include('flush-msg')
 
 <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6">
@@ -78,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="col-xs-12 col-sm-6 col-md-6">
         <fieldset class="form-group">
             <label for="current_password">Current password</label>
-            <input class="form-control" name="current_password" type="password">
+            <input class="form-control" name="current_password" type="password" required="">
         </fieldset>
     </div>
 </div>
@@ -89,13 +93,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input class="form-control" name="email" type="text" id="email" value="">
+                <input class="form-control" name="email" type="email" id="email" value="">
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="form-group">
                 <label for="email_confirmation">Confirm email address</label>
-                <input class="form-control" name="email_confirmation" type="text" value="" id="confirm_email" onChange="checkEmailMatch();">
+                <input class="form-control" name="email_confirmation" type="email" value="" id="confirm_email" onChange="checkEmailMatch();">
                 <div class="alert alert-danger" id="divCheckEmailMatch" style="display: none;"></div>
             </div>
         </div>
@@ -221,7 +225,7 @@ function checkEmailMatch() {
     
    
 
-    if (email != email_confirmation)
+    if (email != confirm_email)
     {
         document.getElementById('divCheckEmailMatch').style.display = "block";
         $("#divCheckEmailMatch").html("Emails do not match!");
@@ -235,6 +239,51 @@ function checkEmailMatch() {
     else
     {
         $("#divCheckEmailMatch").html("Emails match.");
+    }
+}
+
+function onsubmitt() {
+    var email = $("#email").val();
+    var confirm_email = $("#confirm_email").val();
+    
+   
+
+    if (email != confirm_email)
+    {
+        document.getElementById('divCheckEmailMatch').style.display = "block";
+        $("#divCheckEmailMatch").html("Emails do not match!");
+                       setTimeout(function(){
+                 $('#divCheckEmailMatch').fadeOut('fast');
+            
+        }, 1000);
+        return false;
+    }
+
+    else
+    {
+        $("#divCheckEmailMatch").html("Emails match.");
+    }
+
+
+    var password = $("#password").val();
+    var confirmPassword = $("#confirm").val();
+    
+   
+
+    if (password != confirmPassword)
+    {
+        document.getElementById('divCheckPasswordMatch').style.display = "block";
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+                       setTimeout(function(){
+                 $('#divCheckPasswordMatch').fadeOut('fast');
+            
+        }, 1000);
+        return false;
+    }
+
+    else
+    {
+        $("#divCheckPasswordMatch").html("Passwords match.");
     }
 }
 
