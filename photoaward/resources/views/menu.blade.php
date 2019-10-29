@@ -9,8 +9,8 @@
 <li><a onclick="window.location='{{ url("entry-fee") }}'" href="#"><span>ENTRY FEES</span></a></li>
 <li><a onclick="window.location='{{ url("prizes") }}'" href="#"><span>PRIZES</span></a></li>
 <li><a onclick="window.location='{{ url("jury") }}'"  href="#"><span>THE JURY</span></a></li>
-<li><a href="#"><span>CONTACT</span></a></li>
-<li><a href="#"><span>FAQ</span></a></li>
+<li><a href="contact"><span>CONTACT</span></a></li>
+<li><a href="faq"><span>FAQ</span></a></li>
 <li><a href="#"><span></span></a></li>
 
 

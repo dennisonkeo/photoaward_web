@@ -736,7 +736,18 @@
 		if(next_ctx.path.indexOf('/contact') === 0){
 			return next();
 		}
+
+		if(next_ctx.path.indexOf('/faq') === 0){
+			return next();
+		}
 		if(prev_ctx.path.indexOf('/contact') === 0){
+			if(current && current.path == next_ctx.path){
+				cancel = true;
+				return next();
+			}
+		}
+
+		if(prev_ctx.path.indexOf('/faq') === 0){
 			if(current && current.path == next_ctx.path){
 				cancel = true;
 				return next();
@@ -749,6 +760,25 @@
 		$(window).trigger('exit.page.bq');
 		bq.ui.navigation.closeMenu();
 		next();
+	}	
+
+	function page2Exit(prev_ctx, next, next_ctx){
+		if(next_ctx.path.indexOf('/faq') === 0){
+			return next();
+		}
+		if(prev_ctx.path.indexOf('/faq') === 0){
+			if(current && current.path == next_ctx.path){
+				cancel = true;
+				return next();
+			}
+		}
+
+		prev = prev_ctx;
+		console.log('page2Exit');
+
+		$(window).trigger('exit.page.bq');
+		bq.ui.navigation.closeMenu();
+		next();
 	}
 
 
@@ -756,6 +786,22 @@
 		if(cancel){ cancel = false; return;	}
 
 		console.log('pageEnter');
+		if(ctx.init){
+			current = ctx;
+			$(function(){
+				$(window).trigger('enter.page.bq');
+			});
+			return;
+		}
+
+		_addRequestQueue({from: prev, to: ctx});
+		processQueue.append(pageChange);
+	}	
+
+	function page2Enter(ctx, next){
+		if(cancel){ cancel = false; return;	}
+
+		console.log('page2Enter');
 		if(ctx.init){
 			current = ctx;
 			$(function(){
@@ -871,6 +917,18 @@
 			$('#wrap').append($c);
 		});
 
+		var faqData = {
+			clickEvent : ('ontouchstart' in window)? 'touchstart.page.faq' : 'click.page.faq'
+		},
+		$contactLoading = $.get('/faq').done(function(res){
+			faqData.title = res.match(/<title>(.*)<\/title>/)[1];
+			var $c = _perseHTML(res).find('#contents > .content')
+			$c.removeClass('content').addClass('overlay');
+			$c.find('.lang-nav').remove();
+			faqData.content =  $c;
+			$('#wrap').append($c);
+		});
+
 	function contactEnter(ctx, next){
 		if(ctx.init) return next();
 
@@ -883,6 +941,20 @@
 		if($('body').hasClass('cnav-collapse')){
 			bq.ui.navigation.closeMenu();
 		}
+	}	
+
+	function faqEnter(ctx, next){
+		if(ctx.init) return next();
+
+		if($contactLoading.state() != 'resolved'){
+			$contactLoading.done(_showFaq);
+		}else{
+			_showFaq()
+		}
+		$('#menu a[href="/faq"]').addClass('current');
+		if($('body').hasClass('cnav-collapse')){
+			bq.ui.navigation.closeMenu();
+		}
 	}
 
 	function contactExit(prev_ctx, next, next_ctx){
@@ -892,6 +964,15 @@
 			next();
 		},500);
 		$('#menu a[href="/contact"]').removeClass('current');
+	}
+
+	function faqExit(prev_ctx, next, next_ctx){
+		$(document).off(faqData.clickEvent+'.close');
+		faqData.content.removeClass('show');
+		setTimeout(function(){
+			next();
+		},500);
+		$('#menu a[href="/faq"]').removeClass('current');
 	}
 
 	function _showContact(){
@@ -907,10 +988,26 @@
 		})
 	}
 
+	function _showFaq(){
+		faqData.content.addClass('show');
+		$('title').text(faqData.title);
+
+		$(document).on(faqData.clickEvent+'.close', function(e){
+			if($(e.target).closest(bq.ui.navigation.defaults.cancelClick).length){
+				return;
+			}
+			$(document).off(faqData.clickEvent+'.close');
+			bq.page.back()
+		})
+	}
+
 
 
 	bq.page.exit('/contact', contactExit);
 	bq.page('/contact', contactEnter);
+
+	bq.page.exit('/faq', faqExit);
+	bq.page('/faq', faqEnter);
 
 	bq.page.exit('*', pageExit);
 	bq.page('*', pageEnter);
