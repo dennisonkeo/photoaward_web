@@ -17,7 +17,7 @@
                     Profile</a>
             </li>
             <li class="account ">
-                <a href="#" style="color: #ff00ff;" >
+                <a href="{{ route('account-settings') }}" style="color: #ff00ff;" >
                     Settings</a>
             </li>
             <li class="account ">
