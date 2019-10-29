@@ -4,7 +4,7 @@
 <head>
 	<title>Dashboard | pic +254</title>
 
-	<script src="{{ asset('js/right_click.js') }}"></script>
+	<!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,6 +23,9 @@
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo-.png')}}">
 	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo-.png')}}">
+
+	<script src="{{ asset('js/right_click.js') }}"></script>
+	
 </head>
 
 <body>
