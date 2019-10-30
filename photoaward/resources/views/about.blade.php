@@ -75,7 +75,7 @@
     <style type="text/css">
     	.parallaxabout {
   /* The image used */
-  background: url('{{ asset('images/pic3_.jpg') }}') no-repeat center center fixed;
+  background: url('{{ asset('images/pic2.jpg') }}') no-repeat center center fixed;
 
 
   /* Set a specific height */
@@ -289,7 +289,7 @@ initializeClock('clockdiv2', deadline2);
 
   <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 
-<img src="images/logo.png" style="width: 236px;">
+<img src="images/logo.png" style="width: 236px; opacity: 0.5">
   
 </div>
 </div>
