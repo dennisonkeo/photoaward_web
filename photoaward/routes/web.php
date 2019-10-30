@@ -86,6 +86,8 @@ Route::get('votingg', function () {
 
 });
 
+// Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
+
 
 // Route::get('view', function () {
 //     return view('upload_view');
@@ -94,7 +96,6 @@ Route::get('votingg', function () {
 // Route::get('like_image', function () {
 //     return view('like_image');
 // });
-Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
 Route::get('about', 'HomeController@about')->name('about');
 
@@ -111,6 +112,8 @@ Route::get('login', 'HomeController@login')->name('login');
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
 
 Route::group(['middleware' => ['auth']], function () {
+
+Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
 Route::get('profile', 'HomeController@profile')->name('profile');
 

@@ -697,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                },500);
 
                 $.ajax({
-                         url : "uploaded",
+                         url : "mpesa-pay",
                         type:'GET',
 
 

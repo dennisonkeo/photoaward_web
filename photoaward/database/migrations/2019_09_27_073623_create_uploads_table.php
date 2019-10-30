@@ -22,6 +22,7 @@ class CreateUploadsTable extends Migration
             $table->string('device');
             $table->string('token');
             $table->string('uploaded')->defaut('no');
+            $table->integer('published')->defaut(0);
             $table->integer('category_id');
             $table->timestamps();
         });
