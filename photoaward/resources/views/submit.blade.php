@@ -245,7 +245,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <td>{{ $record->updated_at }}</td>
                   <td>{{ $record->total_images }} images</td>
                   <td>{{ $record->amount }}</td>
-                  <td style="color: red;">{{ $record->status }}</td>
+                  @if($record->status == 'Paid')
+                   <td style="color: green; font-weight: bold;"><i class="fa fa-check"></i> {{ $record->status }}</td>
+                  @else
+                  <td style="color: red; fot-weight: bold;"><i class="fa fa-close"></i>{{ $record->status }}</td>
+                  @endif
                   <td><a href="my-gallery"><i class="fa fa-eye"></i> View</a></td>
             </tr>
         @endforeach

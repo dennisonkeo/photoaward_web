@@ -5,7 +5,7 @@
 <li><a onclick="window.location='{{ url("about-competition") }}'" href="#" class=""><span>ABOUT CONTEST</span></a></li>
 {{-- <li><button onclick="window.location='{{ route("/") }}#prizes'">Button</button></li> --}}
 <li><a onclick="window.location='{{ url("guidelines") }}'" href="#"><span>GUIDELINES</span></a></li>
-<li><a onclick="window.location='{{ url("categories") }}'" href="#" ><span>CATEGORIES</span></a></li>
+<li><a onclick="window.location='{{ url("categories") }}'"  href="#" ><span>CATEGORIES</span></a></li>
 <li><a onclick="window.location='{{ url("entry-fee") }}'" href="#"><span>ENTRY FEES</span></a></li>
 <li><a onclick="window.location='{{ url("prizes") }}'" href="#"><span>PRIZES</span></a></li>
 <li><a onclick="window.location='{{ url("jury") }}'"  href="#"><span>THE JURY</span></a></li>
