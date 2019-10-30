@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
-
+<!--     <script src="{{ asset('js/right_click.js') }}"></script>
+ -->
     <meta charset="utf-8">
     
     <title>Photo Award</title>
@@ -697,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                },500);
 
                 $.ajax({
-                         url : "uploaded",
+                         url : "mpesa-pay",
                         type:'GET',
 
 

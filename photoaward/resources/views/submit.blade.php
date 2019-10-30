@@ -148,9 +148,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-xs-12 col-sm-12 col-md-9">
                     <div class="row profile-details">
                         <div class="col-xs-12 col-sm-12 col-md-12">
+                        @if(Auth::user()->dname == "")
+                            <h1>
+                                {{ Auth::user()->name }}
+                            </h1>
+                        @else
                             <h1>
                                 {{ Auth::user()->dname }}
                             </h1>
+                        @endif
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             @if(Auth::user()->bio == "")
@@ -239,7 +245,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <td>{{ $record->updated_at }}</td>
                   <td>{{ $record->total_images }} images</td>
                   <td>{{ $record->amount }}</td>
-                  <td style="color: red;">{{ $record->status }}</td>
+                  @if($record->status == 'Paid')
+                   <td style="color: green; font-weight: bold;"><i class="fa fa-check"></i> {{ $record->status }}</td>
+                  @else
+                  <td style="color: red; fot-weight: bold;"><i class="fa fa-close"></i>{{ $record->status }}</td>
+                  @endif
                   <td><a href="my-gallery"><i class="fa fa-eye"></i> View</a></td>
             </tr>
         @endforeach

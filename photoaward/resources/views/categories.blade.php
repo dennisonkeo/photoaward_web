@@ -138,7 +138,7 @@
 
 					<div id="news" class="content flow-grid">
 
-					<div id="news" class="content flow-grid" style="background-image: url('bg2.jpg'); background-repeat: no-repeat;">
+					{{-- <div id="news" class="content flow-grid" style="background-image: url('bg2.jpg'); background-repeat: no-repeat;"> --}}
 
 			
 
@@ -259,7 +259,7 @@
 </div>
 
 @include('menu') 
-</div>
+
 
 <div id="footer">
 	<div class="container">
