@@ -45,9 +45,9 @@
     </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
-<noscript>
+<!-- <noscript>
 <div id="noscript_message">javascriptが無効になっているようです。 本サイトを正しく表示するためにはjavascriptを有効にしてください。</div>
-</noscript>
+</noscript> -->
 <div id="wrap">
 <div id="header">
 	<div class="container">
@@ -88,7 +88,7 @@
 			<p>For requests, information or comments, please contact below.</p>
 			<p>
 				<strong>PICTURE +254</strong><br>
-				 Harambee House Annex 152-0003 Kenya<br>
+				  152-0003 Nairobi Kenya<br>
 				Mail. <a href="#">picture254.com</a>
 			</p>
 		</div>
