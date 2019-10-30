@@ -280,10 +280,6 @@ class UploadController extends Controller
 
         $verifytoken = ImagePay::where('token',"=",session()->getId())->first();
 
-
-        // if(!$verifytoken)
-
-        //      {
                         $upload = new ImagePay();
              
                            $upload->amount = $total_amount;
@@ -298,12 +294,6 @@ class UploadController extends Controller
                                 ->update(array('uploaded' => 'yes'));
 
                         return response()->json('0');
-                // }
-                // else
-                // {
-                //     return response()->json('1');
-                // }
-
 
     }
 

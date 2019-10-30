@@ -148,9 +148,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="col-xs-12 col-sm-12 col-md-9">
                     <div class="row profile-details">
                         <div class="col-xs-12 col-sm-12 col-md-12">
+                        @if(Auth::user()->dname == "")
+                            <h1>
+                                {{ Auth::user()->name }}
+                            </h1>
+                        @else
                             <h1>
                                 {{ Auth::user()->dname }}
                             </h1>
+                        @endif
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6">
                             @if(Auth::user()->bio == "")
