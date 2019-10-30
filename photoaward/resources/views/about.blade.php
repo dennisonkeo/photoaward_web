@@ -75,7 +75,7 @@
     <style type="text/css">
     	.parallaxabout {
   /* The image used */
-  background: url('{{ asset('images/pic3_.jpg') }}') no-repeat center center fixed;
+  background: url('{{ asset('images/pic2.jpg') }}') no-repeat center center fixed;
 
 
   /* Set a specific height */
