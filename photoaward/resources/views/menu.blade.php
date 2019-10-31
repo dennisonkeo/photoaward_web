@@ -1,6 +1,12 @@
+<style type="text/css">
+	.menu{
+		overflow: auto;
+	}
+</style>
+
 <div id="menu">
-<nav id="gnavi-links" class="nav-links">
-<ul class="hover-line-links">
+<nav id="gnavi-links" class="nav-links" style="overflow: auto;">
+<ul class="hover-line-links" style="overflow: auto;">
 	<li><a onclick="window.location='{{ url("login") }}'" href="#"><span>SUBMIT</span></a></li>
 <li><a onclick="window.location='{{ url("about-competition") }}'" href="#" class=""><span>ABOUT CONTEST</span></a></li>
 {{-- <li><button onclick="window.location='{{ route("/") }}#prizes'">Button</button></li> --}}
