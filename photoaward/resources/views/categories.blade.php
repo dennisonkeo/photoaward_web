@@ -88,13 +88,14 @@
 	<div id="contents-wrap">
 		<div id="contents">
 
-					<div id="news" class="content flow-grid">
+			<div id="news" class="content flow-grid">
 			
 			
 				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+					<a href="#">　
+						<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic34.jpg" alt="news01.jpg">
+							<img src="images/pic34.jpg">
 							
 						</div>
 						<div class="meta">
@@ -109,11 +110,12 @@
 				</div>
 
 				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+					<a href="#">　
+					<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic16.jpg" alt="news01.jpg">
+							<img src="images/pic16.jpg" alt="cat02.jpg">
 							
-						</div>
+					</div>
 						<div class="meta">
 
 							<h2 class="title">Content</h2>
@@ -126,9 +128,10 @@
 				</div>
 
 				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+					<a href="#">　
+						<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg">
+							<img src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="cat03.jpg">
 							
 						</div>
 						<div class="meta">
@@ -143,11 +146,12 @@
 				</div>				
 
 				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+					<a href="#">　
+					<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic56.jpg">
+							<img src="images/pic56.jpg" alt="cat04.jpg">
 							
-						</div>
+					</div>
 						<div class="meta">
 
 							<h2 class="title">Content</h2>
@@ -162,7 +166,7 @@
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic38.jpg" alt="news01.jpg">
+							<img src="images/pic38.jpg" alt="cat05.jpg">
 							
 						</div>
 						<div class="meta">
@@ -179,7 +183,7 @@
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic47.jpg">
+							<img src="images/pic47.jpg" alt="cat06.jpg">
 							
 						</div>
 						<div class="meta">
@@ -192,18 +196,15 @@
 						</div>
 					</a>
 				</div>
+ 
+				<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 
-				
-			<!-- </div> -->
-
-
-		</div><!-- /#contents -->
+			</div><!-- /#contents -->
 	</div><!-- /#contents-wrap -->
 
 
 </div>
 </div>
-<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 
 @include('menu') 
 
