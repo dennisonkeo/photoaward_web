@@ -44,20 +44,6 @@
     </script>
 
     <style type="text/css">
-    	.parallax {
-  /* The image used */
-  background-image: url('coconut-drink-on-beach.jpg'); background-repeat: no-repeat;">');
-
-  /* Set a specific height */
-  min-height: 690px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
 
 .text_line{
 	line-height: 48px;
@@ -99,7 +85,6 @@
 		
 	</div>
 </div>
-<div class="parallax"></div>
 	<div id="contents-wrap">
 		<div id="contents">
 			{{-- <article style="margin-left: 150px;">
