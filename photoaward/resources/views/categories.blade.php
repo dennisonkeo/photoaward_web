@@ -44,6 +44,20 @@
     </script>
 
     <style type="text/css">
+    	.parallax {
+  /* The image used */
+  background-image: url('coconut-drink-on-beach.jpg'); background-repeat: no-repeat;">');
+
+  /* Set a specific height */
+  min-height: 690px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 
 .text_line{
 	line-height: 48px;
@@ -85,16 +99,56 @@
 		
 	</div>
 </div>
+<div class="parallax"></div>
 	<div id="contents-wrap">
 		<div id="contents">
+			{{-- <article style="margin-left: 150px;">
+							<div class="gallery">
+								<a href="javascript:void(0)"> 
+									<img class="img01" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" style="backgrond: red;" />
+									<p class="text1" >
+										Category One
+									</p> 
+								</a>
+								<a href="javascript:void(0)"> 
+									<img class="img02" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backgrond: black;"/> 
+
+								</a>
+								<a href="javascript:void(0)"> 
+									<img class="img03" src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg"/> 
+									<p class="text3" >
+										Category Three
+									</p> 
+								</a>
+								<a href="javascript:void(0)"> 
+									<img class="img04" src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg" style="bakground: green;"/> 
+
+								</a>
+								<a href="javascript:void(0)"> 
+									<img class="img05" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backround: blue;"/> 
+
+								</a>
+								<a href="javascript:void(0)"> 
+									<img class="img06" src="https://cdn.stocksnap.io/img-thumbs/960w/2OU8JC9ZWH.jpg" alt="news01.jpg"/>
+
+								</a>
+								<a href="javascript:void(0)"> <img class="img07" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg"/> </a>
+							</div>
+						</article> --}}
 
 					<div id="news" class="content flow-grid">
+
+					{{-- <div id="news" class="content flow-grid" style="background-image: url('bg2.jpg'); background-repeat: no-repeat;"> --}}
+
+			
+
+					<!-- <div id="news" class="content flow-grid"> -->
 			
 			
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="images/pic34.jpg" alt="news01.jpg">
+							<img src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg">
 							
 						</div>
 						<div class="meta">
@@ -193,7 +247,7 @@
 					</a>
 				</div>
 
-				
+				<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 			<!-- </div> -->
 
 
@@ -203,7 +257,6 @@
 
 </div>
 </div>
-<script type="text/javascript" src="{{asset('js/flow_grid_init.js')}}"></script>
 
 @include('menu') 
 
