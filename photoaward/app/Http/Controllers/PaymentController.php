@@ -31,6 +31,7 @@ class PaymentController extends Controller
 		$PartyA = Auth::user()->phone;
 		$PartyB = "174379";
 		$PhoneNumber = Auth::user()->phone;
+
 		$CallBackURL = 'picture254.com/api/mpesa-response';
 		$AccountReference = $refNo;
 		$TransactionDesc = "Payment";
