@@ -15,6 +15,10 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('imagepop', function () {
+    return view('imagepop');
+});
+
 Route::get('under-construction', function () {
     return view('construction');
 });
@@ -76,6 +80,11 @@ Route::get('anything', function () {
 
   });
 
+Route::get('buy', function () {
+    return view('buy');
+
+  });
+
 Route::get('jury', function () {
     return view('jury');
 
@@ -128,6 +137,8 @@ Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
 Route::post('add-like', 'UploadController@add_like')->name('add-like');
 
 Route::get('logout', 'HomeController@logout')->name('logout');
+
+Route::get('buy-image', 'UploadController@buy_image')->name('buy-image');
 
 Route::get('like-image', 'UploadController@display_like')->name('like-image');
 

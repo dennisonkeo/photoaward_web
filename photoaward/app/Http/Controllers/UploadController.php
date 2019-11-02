@@ -159,6 +159,11 @@ class UploadController extends Controller
             }
     }
 
+    public function buy_image()
+    {
+      return view('buy_image');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -322,6 +327,15 @@ class UploadController extends Controller
                            $like->save();
 
                 $get_likes = Vote::where('upload_id', $upload_id)->count();
+
+
+                // echo $get_likes;
+
+                        return response()->json($get_likes);
+            }
+            else
+            {
+              $get_likes = Vote::where('upload_id', $upload_id)->count();
 
 
                 // echo $get_likes;

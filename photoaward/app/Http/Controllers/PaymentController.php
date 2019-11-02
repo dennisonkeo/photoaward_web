@@ -31,7 +31,7 @@ class PaymentController extends Controller
 		$PartyA = Auth::user()->phone;
 		$PartyB = "174379";
 		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'http://picture254.com/api/mpesa-response';
+		$CallBackURL = 'https://7b15726a.ngrok.io/api/mpesa-response';
 		$AccountReference = $refNo;
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
