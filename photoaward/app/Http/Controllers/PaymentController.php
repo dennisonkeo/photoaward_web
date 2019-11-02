@@ -31,7 +31,7 @@ class PaymentController extends Controller
 		$PartyA = Auth::user()->phone;
 		$PartyB = "174379";
 		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'http://picture254.com/api/mpesa-response';
+		$CallBackURL = 'picture254.com/api/mpesa-response';
 		$AccountReference = $refNo;
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
@@ -41,6 +41,10 @@ class PaymentController extends Controller
 														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
 														);
 // return $stkPushSimulation;
+		$callbackJSONData=file_get_contents('php://input');
+		$handle=fopen("uploads/transaction.txt", 'w');
+		fwrite($handle, $callbackJSONData);
+		dd($stkPushSimulation,config('app.env'));
 		$check = $stkPushSimulation;		
 
 		if($check !="")
