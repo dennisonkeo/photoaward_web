@@ -15,8 +15,13 @@ Route::get('index', function () {
     return view('index');
 });
 
+
 Route::get('under-construction', function () {
     return view('construction');
+});
+
+Route::get('stocksy', function () {
+    return view('stocksy');
 });
 
 Route::get('pop', function () {

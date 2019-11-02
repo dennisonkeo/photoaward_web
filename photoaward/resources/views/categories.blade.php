@@ -148,7 +148,7 @@
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg">
+							<img src="images/pic25.jpg" alt="news01.jpg">
 							
 						</div>
 						<div class="meta">
@@ -182,7 +182,7 @@
 				<div class="entry">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
-							<img src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg">
+							<img src="images/pic19_.jpg" alt="news01.jpg">
 							
 						</div>
 						<div class="meta">
