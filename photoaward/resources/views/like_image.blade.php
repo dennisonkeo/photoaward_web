@@ -19,11 +19,12 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/gallery/style.css">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   
-  <script src="{{ asset('js/right_click.js') }}"></script>
+  {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
   
   <style type="text/css">
 
@@ -246,6 +247,10 @@ span .hoverr:hover{
   /*background: #ff0051;*/
 }
 
+
+
+
+
 </style>
   
 </head>
@@ -335,56 +340,61 @@ span .hoverr:hover{
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
 
 @include('popup.index')
-
+    
 
 </section>
 
 @include('footer')
 
+
 <style type="text/css">
   .count{
     font-weight: bold;
+    /*color: red;*/
   }
 </style>
+
 
 <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
 
 <script>
 
-$(document).ready(function(){
-    // when the user clicks on like
-    $('.count').on('click', function(){
-      var image_id = $(this).data('id');
-          $upload = $(this);
 
-          // console.log($upload.parent().find('count'));
 
-      $.ajax({
-        url: 'add-like',
-        type: 'POST',
-        data: {
-          'liked': 1,
-          upload_id: image_id,
-          _token: '{{csrf_token()}}'
-        },
-        success: function(response){
-          if(response !="")
-          {
-          $upload.parent().find('span').text(response);
-          // $post.addClass('hide');
-          // $post.siblings().removeClass('hide');
-        }
+// $(document).ready(function(){
+//     // when the user clicks on like
+//     $('.count').on('click', function(){
+//       var image_id = $(this).data('id');
+//           $upload = $(this);
 
-          // console.log(response);
+//           // console.log($upload.parent().find('count'));
 
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-        }
-      });
-    });
+//       $.ajax({
+//         url: 'add-like',
+//         type: 'POST',
+//         data: {
+//           'liked': 1,
+//           upload_id: image_id,
+//           _token: '{{csrf_token()}}'
+//         },
+//         success: function(response){
+//           if(response !="")
+//           {
+//           $upload.parent().find('span').text(response);
+//           // $post.addClass('hide');
+//           // $post.siblings().removeClass('hide');
+//         }
 
-  });
+//           // console.log(response);
+
+//         },
+//         error: function(jqXHR, textStatus, errorThrown){
+//           console.log(errorThrown);
+//         }
+//       });
+//     });
+
+//   });
 
 
 function closeModal() {

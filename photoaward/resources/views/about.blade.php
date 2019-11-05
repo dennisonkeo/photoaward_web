@@ -18,7 +18,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<script src="{{ asset('js/right_click.js') }}"></script>
 <!-- Google Font Martel -->
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
@@ -34,7 +34,7 @@
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
 
-   <script src="{{ asset('js/right_click.js') }}"></script>
+   {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -268,7 +268,6 @@ initializeClock('clockdiv2', deadline2);
     <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
-		
 
 		<div id="gnavi" class="nav">
 			<div class="nav-btn">
@@ -287,10 +286,21 @@ initializeClock('clockdiv2', deadline2);
 		
 	</div>
 
+   <div class="main-box start pull-center" style="background: white; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
+            <div class="close-button didotltpro-italic pull-right"><a onclick="close_modal()" href="#">close</a></div>
+
+            <h2 class="novecentosanswide-medium" style="margin-bottom: 20px;">LIKE WHAT YOU SEE!!!</h2><br/>
+            <span class="description didotltpro-italic">Vote For Picture Of The Week</span><br>
+            <!-- <a href="" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;">" id="submit-entry">Vote Here</a> -->
+        <button onclick="window.location='{{ url("like-images") }}'" class="btn btn-secondary" style="margin-left: 0px; border-radius: 0px; width: 150px; background: #ff00ff; height: 40px; line-height: 40px;">VOTE HERE</button><br>
+        <br>
+
+        </div>
+
   <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 
 <img src="images/logo.png" style="width: 236px; opacity: 0.5">
-  
+
 </div>
 </div>
 
@@ -298,6 +308,11 @@ initializeClock('clockdiv2', deadline2);
 <!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
   A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
 </p> -->
+
+
+
+
+
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
@@ -364,12 +379,13 @@ initializeClock('clockdiv2', deadline2);
 
         </div>
 
-
                   <div class="page" style="height: 500px;">
                   
                     <div class="nav-left">
                         <a href="#" style="width: 35px; height: 54px; background: url('images/prev_slider.png') center no-repeat; display: block; text-indent: -9999px;">prev</a>
                     </div>
+
+       
                         <div id="mainSlider" style="opaity: 0.5" style="background: green; ">
                             <div class="group">
                             
@@ -945,6 +961,8 @@ Content <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury<
 
 
 <script type="text/javascript">
+
+
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -991,6 +1009,14 @@ var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv2', deadline2);
 </script>				
 
+<script type="text/javascript">
+
+function close_modal()
+{
+  $('.start').hide();
+}
+  
+</script>
 
 </body>
 </html>

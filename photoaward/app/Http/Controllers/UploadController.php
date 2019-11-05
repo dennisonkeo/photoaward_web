@@ -70,7 +70,7 @@ class UploadController extends Controller
      */
     public function display_like()
     {
-        $first = Upload::where('user_id',Auth::user()->id)->latest()->first();
+        // $first = Upload::where('user_id',Auth::user()->id)->latest()->first();
 
         $images = Upload::where('uploaded',"yes")->latest()->get();
 
@@ -157,6 +157,11 @@ class UploadController extends Controller
             {
                 return view('like_image', compact('images'));
             }
+    }
+
+    public function buy_image()
+    {
+      return view('buy_image');
     }
 
     /**
@@ -322,6 +327,15 @@ class UploadController extends Controller
                            $like->save();
 
                 $get_likes = Vote::where('upload_id', $upload_id)->count();
+
+
+                // echo $get_likes;
+
+                        return response()->json($get_likes);
+            }
+            else
+            {
+              $get_likes = Vote::where('upload_id', $upload_id)->count();
 
 
                 // echo $get_likes;
