@@ -28,7 +28,8 @@ $(document).on('click','.gg-element',function(){
   
   // $(".gg-image").children("img").attr("alt");
   console.log($(".gg-image").children("img").attr("alt"));
-   $(".count").html($(".gg-image").children("img").attr("alt"));
+   // $(".count").html($(".gg-image").children("img").attr("alt"));
+   $(".count").html(selected.find(".rate").text());
 
    // like image
    $(".gg-closee").click(function(){
@@ -96,7 +97,9 @@ $(document).on('click','.gg-element',function(){
     content=buttons();
     $("#gg-screen").html('<div class="gg-image">'+ previmg + '</div>' + content);
 
-    $(".count").html(prev.attr('alt'));
+    // $(".count").html(prev.attr('alt'));
+
+    $(".count").html(selected.find(".rate").text());
 
     console.log("index: "+$(".count").index());
 
@@ -154,7 +157,8 @@ $(document).on('click','.gg-element',function(){
     content=buttons();
     $("#gg-screen").html('<div class="gg-image">'+ nxtimg + '</div>' + content);
 
-    $(".count").html(next.attr('alt'));
+    // $(".count").html(next.attr('alt'));
+    $(".count").html(selected.find(".rate").text());
 
        // like image
    $(".gg-closee").click(function(){
