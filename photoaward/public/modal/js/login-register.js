@@ -12,7 +12,7 @@ function showRegisterForm(){
         $('.login-footer').fadeOut('fast',function(){
             $('.register-footer').fadeIn('fast');
         });
-        $('.modal-title').html('Register with');
+        $('.modal-title').html('Register here');
     }); 
     $('.error').removeClass('alert alert-danger').html('');
        
@@ -24,7 +24,7 @@ function showLoginForm(){
             $('.login-footer').fadeIn('fast');    
         });
         
-        $('.modal-title').html('Login with');
+        $('.modal-title').html('Login here');
     });       
      $('.error').removeClass('alert alert-danger').html(''); 
 }
@@ -68,4 +68,16 @@ function shakeModal(){
     }, 1000 ); 
 }
 
-   
+function confirm_pass_msg(message){
+    $('#loginModal .modal-dialog').addClass('shake');
+             $('.error').addClass('alert alert-danger').html(message);
+             // $('input[type="password"]').val('');
+             setTimeout( function(){ 
+                $('#loginModal .modal-dialog').removeClass('shake'); 
+    }, 1000 ); 
+}
+
+ function confirm_pass(message)
+ {
+    confirm_pass_msg(message);
+ }  
