@@ -15,6 +15,11 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('newcart', function () {
+    return view('newcart');
+});
+
+
 Route::get('imagepop', function () {
     return view('imagepop');
 });
