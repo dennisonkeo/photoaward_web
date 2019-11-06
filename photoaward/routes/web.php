@@ -37,7 +37,7 @@ Route::get('prizes', function () {
 
 Route::get('modall', function () {
     return view('testModal');
-});
+})->name('modall');
 
 Route::get('guidelines', function () {
     return view('guidelines');
@@ -114,6 +114,10 @@ Route::get('votingg', function () {
 //     return view('like_image');
 // });
 
+Route::get('stock-album', 'UploadController@stock')->name('stock-album');
+
+Route::get('stock-view', 'UploadController@stock_view')->name('stock-view');
+
 Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('response', 'HomeController@response')->name('response');
@@ -124,9 +128,13 @@ Route::get('registration', 'HomeController@registration')->name('registration');
 
 Route::post('register-user', 'HomeController@store')->name('register-user');
 
+Route::post('signup_user', 'HomeController@signup_user')->name('signup_user');
+
 Route::get('login', 'HomeController@login')->name('login');
 
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
+
+Route::post('like-user-login', 'HomeController@login_user_like')->name('like-user-login');
 
 Route::get('like-images', 'UploadController@display_like')->name('like-image');
 

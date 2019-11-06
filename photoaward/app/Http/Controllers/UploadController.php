@@ -25,6 +25,19 @@ class UploadController extends Controller
         return view('upload_details');
     }
 
+    public function stock()
+    {
+
+        $images = Upload::latest()->get();
+
+        return view('stock', compact('images'));
+    }
+
+    public function stock_view()
+    {
+        return view('stock-view');
+    }
+
     public function test()
     {
         dd("it worked!");

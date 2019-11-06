@@ -23,6 +23,8 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
   
   {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
   
@@ -255,6 +257,27 @@ span .hoverr:hover{
   
 </head>
 <body>
+
+     <!--Confirm Payment Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-top" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #000; opacity: 0.8;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold; color: #fff;"><i class="fa fa-moey"></i> Your Upload Summary</h5>
+        <button type="button" style="color: #fff;" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="checkout" class="btn btn-primary">Pay <i class="fa fa-loading-o"></i> </button>
+      </div>
+    </div>
+  </div>
+</div>
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
     
@@ -338,14 +361,13 @@ span .hoverr:hover{
 </section> -->
 
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
-
 @include('popup.index')
     
-
 </section>
 
 @include('footer')
 
+ 
 
 <style type="text/css">
   .count{
@@ -359,7 +381,11 @@ span .hoverr:hover{
 
 <script>
 
-
+  $(function () {
+   // $('#exampleModalCenter').modal({
+   //                  backdrop: 'static'
+   //              });
+});
 
 // $(document).ready(function(){
 //     // when the user clicks on like
