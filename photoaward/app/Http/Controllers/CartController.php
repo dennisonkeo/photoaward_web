@@ -64,9 +64,9 @@ class CartController extends Controller
           $LipaNaMpesaPasskey = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTgwODE0MDg1NjIw";
           $TransactionType = "CustomerPayBillOnline";
           $Amount = $cart_amount;
-          $PartyA = "254722623758";
+          $PartyA = Auth::user()->phone;
           $PartyB = "174379";
-          $PhoneNumber = "254722623758";
+          $PhoneNumber = Auth::user()->phone;
           $CallBackURL = 'https://84738818.ngrok.io/api/mpesa-reply';
           $AccountReference = $refNo;
           $TransactionDesc = "Payment";
