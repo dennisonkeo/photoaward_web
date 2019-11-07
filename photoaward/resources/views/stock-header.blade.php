@@ -12,14 +12,14 @@
 
 								
 																		<li>
-										<a href="/stocky/login" title="Member Login" id="stocky_login">
+										<a href="#" title="Member Login" id="stocky_login">
 											<span>Member Login</span>
 										</a>
 									</li>
 									
 								
 								<li>
-									<a href="http://themes.designcrumbs.com/stocky/checkout/" title="Cart" id="head_cart">
+									<a href="#" title="Cart" id="head_cart">
 										<span>Cart (<span id="header_cart_count" class="edd-cart-quantity">1</span>)</span>
 									</a>
 								</li>
@@ -41,7 +41,7 @@
 					</div>
 
 										<nav id="main_menu" class="clearfix expanded">
-						<div id="stocky_menu_container" class="menu-main-container"><ul id="stocky_menu" class="menu"><li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="http://themes.designcrumbs.com/stocky/" aria-current="page">Home</a></li>
+						<div id="stocky_menu_container" class="menu-main-container"><ul id="stocky_menu" class="menu"><li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="#" aria-current="page">Home</a></li>
 {{-- <li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-296"><a href="http://themes.designcrumbs.com/stocky/blog/">Blog</a></li> --}}
 {{-- <li id="menu-item-198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-198"><a href="#">Stocky Pages</a>
 <ul class="sub-menu">
