@@ -247,16 +247,22 @@ jQuery(document).ready(function($){
 					</tr>
 	</thead>
 	<tbody>
+	@foreach($cart as $ct)	
 		<tr class="edd_cart_item" id="edd_cart_item_0_67" data-download-id="67">
 			<td class="edd_cart_item_name">
-				<div class="edd_cart_item_image"><img width="25" height="25" src="images/pic2.jpg" sizes="(max-width: 25px) 100vw, 25px" /></div><span class="edd_checkout_cart_item_title">Co-Work - 1155px x 1732px</span>					</td>
+				<div class="edd_cart_item_image"><img width="25" height="25" src="{{ asset('uploads') }}/{{ $ct->upload->imageName }}" sizes="(max-width: 25px) 100vw, 25px" />
+				</div>
+					<span class="edd_checkout_cart_item_title">{{ $ct->upload->imageName }}
+				</span>					
+			</td>
 			<td class="edd_cart_item_price">
-						&#36;3.00					
+				100.00					
 			</td>
 			<td class="edd_cart_actions">
-				<a class="edd_cart_remove_item_btn" href="http://themes.designcrumbs.com/stocky/checkout/?cart_item=0&#038;edd_action=remove&#038;edd_remove_from_cart_nonce=449d5e1b01">Remove</a>
+				<a class="edd_cart_remove_item_btn" href="#">Remove</a>
 			</td>
 			</tr>
+	@endforeach
 
 									<!-- Show any cart fees, both positive and negative fees -->
 		
@@ -278,14 +284,14 @@ jQuery(document).ready(function($){
 
 		
 		<tr class="edd_cart_footer_row">
-						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">13.00</span></th>
+						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span></th>
 					</tr>
 	</tfoot>
 </table>
 </div>
 </form>			
 <div id="edd_checkout_form_wrap" class="edd_clearfix">
-								<form id="edd_purchase_form" class="edd_form" action="http://themes.designcrumbs.com/stocky/checkout/?payment-mode=paypal" method="POST">
+								{{-- <form id="edd_purchase_form" class="edd_form" action="" method="POST"> --}}
 {{-- 					<div class="edd-payment-icons"><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.png"/></div>
 			<fieldset id="edd_checkout_user_info">
 		<legend>Personal Info</legend>
@@ -313,17 +319,17 @@ jQuery(document).ready(function($){
 		<fieldset id="edd_purchase_submit">
 		<p id="edd_final_total_wrap">
 	<strong>Purchase Total:</strong>
-	<span class="edd_cart_amount" data-subtotal="13" data-total="13">13.00</span>
+	<span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span>
 </p>
 
-				<input type="hidden" name="edd_action" value="purchase"/>
+{{-- 				<input type="hidden" name="edd_action" value="purchase"/>
 	<input type="hidden" name="edd-gateway" value="paypal" />
-	<input type="hidden" id="edd-process-checkout-nonce" name="edd-process-checkout-nonce" value="d8aec672f4" />
-				<input type="submit" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/>
+	<input type="hidden" id="edd-process-checkout-nonce" name="edd-process-checkout-nonce" value="d8aec672f4" /> --}}
+				<input id="btn_purchase" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/>
 		
 		
 			</fieldset>
-				</form>
+				{{-- </form> --}}
 							</div><!--end #edd_checkout_form_wrap-->
 		</div><!--end #edd_checkout_wrap-->
 
@@ -364,7 +370,37 @@ jQuery(document).ready(function($){
 		</footer>
 
 		
-	</section>	<script type="text/javascript">
+	</section>	
+
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+
+<script type="text/javascript">
+	            $('#btn_purchase').click(function(event) {
+
+                event.preventDefault();
+
+                $.ajax({
+                         url : "{{ route('cart/mpesa/checkout') }}",
+                        type:'GET',
+
+
+                        success: function(response) {
+                            console.log(response); 
+
+                            alert('A payment request has been sent to you.');
+                        },
+
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(errorThrown);
+                            alert(errorThrown);
+                    }
+                      });
+
+                        // $('#imageDetailsSave').show();
+            });
+</script>
+{{-- 
+<script type="text/javascript">
   (function() {
     window._pa = window._pa || {};
     _pa.productId = "dcs_stocky";
@@ -382,17 +418,18 @@ jQuery(document).ready(function($){
 			jQuery("head").append(s);
 		});
     });
-</script><script type='text/javascript'>
+</script> --}}
+{{-- <script type='text/javascript'>
 /* <![CDATA[ */
 var edd_global_vars = {"ajaxurl":"http:\/\/themes.designcrumbs.com\/stocky\/wp-admin\/admin-ajax.php","checkout_nonce":"74e73a4adc","checkout_error_anchor":"#edd_purchase_submit","currency_sign":"$","currency_pos":"before","decimal_separator":".","thousands_separator":",","no_gateway":"Please select a payment method","no_discount":"Please enter a discount code","enter_discount":"Enter discount","discount_applied":"Discount Applied","no_email":"Please enter an email address before applying a discount code","no_username":"Please enter a username before applying a discount code","purchase_loading":"Please Wait...","complete_purchase":"Purchase","taxes_enabled":"0","edd_version":"2.9.18"};
 /* ]]> */
-</script>
+</script> --}}
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/assets/js/edd-checkout-global.min.js?ver=2.9.18'></script>
-<script type='text/javascript'>
+{{-- <script type='text/javascript'>
 /* <![CDATA[ */
 var edd_scripts = {"ajaxurl":"http:\/\/themes.designcrumbs.com\/stocky\/wp-admin\/admin-ajax.php","position_in_cart":"","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"1","default_gateway":"paypal","redirect_to_checkout":"1","checkout_page":"http:\/\/themes.designcrumbs.com\/stocky\/checkout\/","permalinks":"1","quantities_enabled":"","taxes_enabled":"0"};
 /* ]]> */
-</script>
+</script> --}}
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=2.9.18'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/masonry.min.js?ver=3.3.2'></script>

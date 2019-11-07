@@ -1,3 +1,14 @@
+
+<?php
+use App\Cart;
+
+	if(Auth::check())
+	{
+		$count = Cart::where('user_id',Auth::user()->id)
+			->where('token', session()->getId())->get();
+	}
+	
+?>
 <header class="wrapper dark_scheme" id="header" data-stellar-background-ratio="0.5">
 				<div class="container">
 
@@ -28,8 +39,15 @@
 									
 								
 								<li>
-									<a href="view-cart" title="Cart" id="head_cart">
-										<span>Cart (<span id="header_cart_count" class="edd-cart-quantity">1</span>)</span>
+									<a href="{{ route('cart/view-cart') }}" title="Cart" id="head_cart">
+										<span>Cart (<span id="header_cart_count" class="edd-cart-quantity">
+										@if(Auth::check())
+										{{ count($count) }}
+										@else
+											0
+										@endif
+									</span>)</span>
+
 									</a>
 								</li>
 

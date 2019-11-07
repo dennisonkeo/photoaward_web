@@ -18,6 +18,7 @@ class CreatePurchasesTable extends Migration
             $table->integer('user_id');
             $table->integer('images');
             $table->integer('amount');
+            $table->string('accountno');
             $table->integer('purchased')->default(0);
             $table->timestamps();
         });

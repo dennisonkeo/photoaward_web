@@ -27,9 +27,9 @@ Route::get('stocksy', function () {
     return view('stocksy');
 });
 
-Route::get('view-cart', function () {
-    return view('checkout');
-});
+// Route::get('view-cart', function () {
+//     return view('checkout');
+// });
 
 Route::get('pop', function () {
     return view('popup.index');
@@ -154,6 +154,10 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
+Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
+
+Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
+
 Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::put('update-profile', 'HomeController@update')->name('update-profile');
@@ -162,7 +166,11 @@ Route::put('update', 'UploadController@update')->name('update');
 
 Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
 
+Route::delete('cart/remove/{cart}', 'CartController@destroy')->name('cart/remove');
+
 Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
+
+Route::post('add-cart', 'CartController@addToCart')->name('add-cart');
 
 Route::post('add-like', 'UploadController@add_like')->name('add-like');
 

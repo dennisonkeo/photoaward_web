@@ -3,11 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="csrf-token" content="{{ csrf_token() }}">
+
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 
 				
 		<title>Picture254</title>
+
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
@@ -269,40 +274,77 @@ jQuery(document).ready(function($){
 
 					<div id="product_pricing">
 						
-							<form id="" class="edd_download_purchase_form edd_purchase_169" method="#" onsubmit="return false;">
+							{{-- <form id="" class="edd_download_purchase_form edd_purchase_169" method="POST" onsubmit="return false;">  --}}
+				{{ csrf_field() }}
 
 	{{-- 		<div class="edd_price_options edd_single_mode">
 		<ul>
 			<li id="edd_price_option_169_1950pxx2924px" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><label for="edd_price_option_169_0"><input type="radio"  name="edd_options[price_id][]" id="edd_price_option_169_0" class="edd_price_option_169" value="0" data-price="5.00"/>&nbsp;<span class="edd_price_option_name" itemprop="description">1950px x 2924px</span><span class="edd_price_option_sep">&nbsp;&ndash;&nbsp;</span><span class="edd_price_option_price">&#36;5.00</span><meta itemprop="price" content="5.00" /><meta itemprop="priceCurrency" content="USD" /></label><p class="edd-variable-pricing-desc"></p></li><li id="edd_price_option_169_1155pxx1732px" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><label for="edd_price_option_169_1"><input type="radio"  checked='checked' name="edd_options[price_id][]" id="edd_price_option_169_1" class="edd_price_option_169" value="1" data-price="3.00"/>&nbsp;<span class="edd_price_option_name" itemprop="description">1155px x 1732px</span><span class="edd_price_option_sep">&nbsp;&ndash;&nbsp;</span><span class="edd_price_option_price">&#36;3.00</span><meta itemprop="price" content="3.00" /><meta itemprop="priceCurrency" content="USD" /></label><p class="edd-variable-pricing-desc"></p></li><li id="edd_price_option_169_578pxx866px" itemprop="offers" itemscope itemtype="http://schema.org/Offer"><label for="edd_price_option_169_2"><input type="radio"  name="edd_options[price_id][]" id="edd_price_option_169_2" class="edd_price_option_169" value="2" data-price="1.00"/>&nbsp;<span class="edd_price_option_name" itemprop="description">578px x 866px</span><span class="edd_price_option_sep">&nbsp;&ndash;&nbsp;</span><span class="edd_price_option_price">&#36;1.00</span><meta itemprop="price" content="1.00" /><meta itemprop="priceCurrency" content="USD" /></label><p class="edd-variable-pricing-desc"></p></li>		</ul>
 	</div> --}}<!--end .edd_price_options-->
 {{-- <a href="#" class="edd-wl-button  before edd-wl-action edd-wl-open-modal glyph-left " data-action="edd_wl_open_modal" data-download-id="169"  data-variable-price=yes data-price-mode=single ><i class="glyphicon glyphicon-star"></i><span class="label">Add to wish list</span><span class="edd-loading"><i class="edd-icon-spinner edd-icon-spin"></i></span></a> --}}
+
+<?php
+use App\Cart;
+
+	
+if(Auth::check())
+{
+	$check = Cart::where('user_id',Auth::user()->id)
+			->where('token', session()->getId())
+			->where('upload_id',$upload->id)->first();
+}
+else
+{
+	$check = false;
+}
+?>
 		<div class="edd_purchase_submit_wrapper">
+		@if(!$check)
 			<a href="#" class="edd-add-to-cart button white edd-submit" data-nonce="37714dcd78" data-action="#" data-download-id="169"  data-variable-price="yes" data-price-mode=single data-price="0" ><span class="edd-add-to-cart-label">Add To Carot</span>
 				<span class="edd-loading" aria-label="Loading"></span>
 			</a>
+			<span style="display: none;" id="image_id">{{ $upload->id }}</span>
 		@if(Auth::check())
-			<input type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single />
+			{{-- <input type="submit" class="edd-add-to-cart edd-no-js button white edd-submit btn-lg" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single /> --}}
+
+				<a onlick="add_to_cart(); return false;"  href="" class="edd_go_to_checkout button white edd-submit" id="add_to_cart" style="dsplay:none;">
+					<span id="span">Add To Cart</span>
+					<i id="loadingg"  style="font-size: 15px; borer: dotted; display: none;" class="fa fa-circle-o fa-spin"></i>
+				</a>
 		@else
-			<input  onclick="window.location='{{ url("user-auth") }}'" type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single />
+			{{-- <input  onclick="window.location='{{ url("user-auth") }}'" type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single /> --}}
+
+			<a onclick="window.location='{{ url("user-auth") }}'" href="#" class="edd_go_to_checkout button white edd-submit" style="">
+					<span >Add To Cart</span>
+					<i style="font-size: 15px; border: dotted; display: none;" class="fa fa-circle-o fa-spin"></i>
+				</a>
 
 
 		@endif
 
-			<a href="#" class="edd_go_to_checkout button white edd-submit" style="display:none;">Checkout</a>
+			<a href="{{ route('cart/view-cart') }}" id="checkout" class="edd_go_to_checkout button white edd-submit" style="display:none;">Checkout</a>
+
 					<span class="edd-cart-ajax-alert" aria-live="assertive">
-					<span class="edd-cart-added-alert" style="display: none;">
+					<span class="edd-cart-added-alert" id="my_alert" style="display: none;">
 						
 						Added to cart	
 				</span>
 				</span>
-					</div><!--end .edd_purchase_submit_wrapper-->
+
+			@else
+			<a href="{{ route('cart/view-cart') }}" id="checkoutt" class="edd_go_to_checkout button white edd-submit" style="">Checkout</a>
+
+			@endif
+		</div><!--end .edd_purchase_submit_wrapper-->
+
+
 
 		<input type="hidden" name="download_id" value="169">
 			<input type="hidden" name="edd_action" class="edd_action_input" value="add_to_cart">
 		
 		
 		
-	</form><!--end #edd_purchase_169-->
+	{{-- </form>end #edd_purchase_169 --}}
 					</div>
 
 						
@@ -381,4 +423,57 @@ jQuery(document).ready(function($){
 			<span itemprop="reviewCount">4</span> --}}
 		</div>
 
-		
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+    $("#add_to_cart").click(function(){
+
+   		document.getElementById('loadingg').style.display = "block";
+   		document.getElementById('span').style.display = "none";
+
+ // $.ajaxSetup({
+ //      headers: {
+ //            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+ //        }
+ //    });
+ console.log($('#image_id').text());
+      
+        $.ajax({
+        url: '{{ route('add-cart') }}',
+        type: 'POST',
+        data: {
+
+          upload_id: $('#image_id').text(),
+          _token: '{{csrf_token()}}',
+
+        },
+        success: function(response){
+          if(response !="")
+          {
+            
+            $('.edd-cart-quantity').html(response);
+
+            $('#my_alert').css("display","block");
+
+            setTimeout(function(){
+                 $('#my_alert').fadeOut('fast');
+            
+        }, 2000);
+
+	        $('#checkout').css("display","block");
+	        
+	        $('#add_to_cart').css("display","none");
+        }
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          alert(errorThrown);
+        }
+      });
+
+        return false;
+   	});
+
+
+</script>
