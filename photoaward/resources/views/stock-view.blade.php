@@ -245,9 +245,9 @@ jQuery(document).ready(function($){
 				<div id="product_images" style="height: auto;">
 
 					
-						<a id="main_product_image" href="#" class="ligtbox">
+						<a id="main_product_image" href="{{ asset('uploads') }}/{{ $upload->imageName }}" class="lightbox">
 							<span class="preview"></span>
-							<img style="width: 797px; height: auto;" src="images/pic60.jpg" class="attachment-product_page_image size-product_page_image wp-post-image" alt=""  />						</a>
+							<img style="width: 797px; height: auto;" src="{{ asset('uploads') }}/{{ $upload->imageName }}" class="attachment-product_page_image size-product_page_image wp-post-image" alt=""  />						</a>
 						
 						
 					
@@ -277,18 +277,28 @@ jQuery(document).ready(function($){
 	</div> --}}<!--end .edd_price_options-->
 {{-- <a href="#" class="edd-wl-button  before edd-wl-action edd-wl-open-modal glyph-left " data-action="edd_wl_open_modal" data-download-id="169"  data-variable-price=yes data-price-mode=single ><i class="glyphicon glyphicon-star"></i><span class="label">Add to wish list</span><span class="edd-loading"><i class="edd-icon-spinner edd-icon-spin"></i></span></a> --}}
 		<div class="edd_purchase_submit_wrapper">
-			<a href="#" class="edd-add-to-cart button white edd-submit" data-nonce="37714dcd78" data-action="#" data-download-id="169"  data-variable-price="yes" data-price-mode=single data-price="0" ><span class="edd-add-to-cart-label">Add To Cart</span> <span class="edd-loading" aria-label="Loading"></span></a><input type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single /><a href="#" class="edd_go_to_checkout button white edd-submit" style="display:none;">Checkout</a>
-							<span class="edd-cart-ajax-alert" aria-live="assertive">
+			<a href="#" class="edd-add-to-cart button white edd-submit" data-nonce="37714dcd78" data-action="#" data-download-id="169"  data-variable-price="yes" data-price-mode=single data-price="0" ><span class="edd-add-to-cart-label">Add To Carot</span>
+				<span class="edd-loading" aria-label="Loading"></span>
+			</a>
+		@if(Auth::check())
+			<input type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single />
+		@else
+			<input  onclick="window.location='{{ url("user-auth") }}'" type="submit" class="edd-add-to-cart edd-no-js button white edd-submit" name="edd_purchase_download" value="Add To Cart" data-action="edd_add_to_cart" data-download-id="169"  data-variable-price="yes" data-price-mode=single />
+
+
+		@endif
+
+			<a href="#" class="edd_go_to_checkout button white edd-submit" style="display:none;">Checkout</a>
+					<span class="edd-cart-ajax-alert" aria-live="assertive">
 					<span class="edd-cart-added-alert" style="display: none;">
-						<svg class="edd-icon edd-icon-check" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
-							<path d="M26.11 8.844c0 .39-.157.78-.44 1.062L12.234 23.344c-.28.28-.672.438-1.062.438s-.78-.156-1.06-.438l-7.782-7.78c-.28-.282-.438-.673-.438-1.063s.156-.78.438-1.06l2.125-2.126c.28-.28.672-.438 1.062-.438s.78.156 1.062.438l4.594 4.61L21.42 5.656c.282-.28.673-.438 1.063-.438s.78.155 1.062.437l2.125 2.125c.28.28.438.672.438 1.062z"/>
-						</svg>
-						Added to cart					</span>
+						
+						Added to cart	
+				</span>
 				</span>
 					</div><!--end .edd_purchase_submit_wrapper-->
 
 		<input type="hidden" name="download_id" value="169">
-							<input type="hidden" name="edd_action" class="edd_action_input" value="add_to_cart">
+			<input type="hidden" name="edd_action" class="edd_action_input" value="add_to_cart">
 		
 		
 		

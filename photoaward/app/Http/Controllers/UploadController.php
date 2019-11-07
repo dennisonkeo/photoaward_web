@@ -33,9 +33,10 @@ class UploadController extends Controller
         return view('stock', compact('images'));
     }
 
-    public function stock_view()
+    public function stock_view(Upload $upload)
     {
-        return view('stock-view');
+
+        return view('stock-view', compact('upload'));
     }
 
     public function test()

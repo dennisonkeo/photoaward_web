@@ -27,6 +27,10 @@ Route::get('stocksy', function () {
     return view('stocksy');
 });
 
+Route::get('view-cart', function () {
+    return view('checkout');
+});
+
 Route::get('pop', function () {
     return view('popup.index');
 });
@@ -37,6 +41,10 @@ Route::get('prizes', function () {
 
 Route::get('modall', function () {
     return view('testModal');
+})->name('modall');
+
+Route::get('user-auth', function () {
+    return view('cart_modal');
 })->name('modall');
 
 Route::get('guidelines', function () {
@@ -116,7 +124,7 @@ Route::get('votingg', function () {
 
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 
-Route::get('stock-view', 'UploadController@stock_view')->name('stock-view');
+Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
 
 Route::get('about', 'HomeController@about')->name('about');
 
@@ -130,9 +138,13 @@ Route::post('register-user', 'HomeController@store')->name('register-user');
 
 Route::post('signup_user', 'HomeController@signup_user')->name('signup_user');
 
+Route::post('signup_buyer', 'HomeController@add_buyer')->name('signup_buyer');
+
 Route::get('login', 'HomeController@login')->name('login');
 
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
+
+Route::post('buyer-login', 'HomeController@login_buyer')->name('buyer-login');
 
 Route::post('like-user-login', 'HomeController@login_user_like')->name('like-user-login');
 

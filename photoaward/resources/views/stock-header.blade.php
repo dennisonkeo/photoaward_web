@@ -11,15 +11,24 @@
 							<ul>
 
 								
-																		<li>
-										<a href="/stocky/login" title="Member Login" id="stocky_login">
+								@if(Auth::check())
+									<li>
+										<a href="{{ route('logout') }}" title="Logout" id="stocky_login">
+											<span>Logout</span>
+										</a>
+									</li>
+								@else
+								<li>
+										<a href="user-auth" title="Member Login" id="stocky_login">
 											<span>Member Login</span>
 										</a>
 									</li>
+
+								@endif
 									
 								
 								<li>
-									<a href="http://themes.designcrumbs.com/stocky/checkout/" title="Cart" id="head_cart">
+									<a href="view-cart" title="Cart" id="head_cart">
 										<span>Cart (<span id="header_cart_count" class="edd-cart-quantity">1</span>)</span>
 									</a>
 								</li>
