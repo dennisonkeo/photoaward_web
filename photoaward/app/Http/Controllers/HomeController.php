@@ -147,6 +147,49 @@ class HomeController extends Controller
     }
  
         
+    }    
+
+
+    public function add_buyer(Request $request)
+    {
+         $this->validate($request,[
+            'name' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8']
+
+            ]);
+
+           $user = new User();
+
+          $user->name = $request->input("name");
+          $user->email = $request->input("email");
+          $user->phone = $request->input("phone");
+          $user->password = Hash::make($request->input("password"));
+
+          $user->save();
+
+        if (Auth::attempt([
+        'email' => $request->email,
+        'password' => $request->password]) ||
+
+        Auth::attempt([
+        'phone' => $request->phone,
+        'password' => $request->password])
+    )
+    {
+        return redirect('stock-album')->with('success', 'Thank you for registering with us.');
+
+        // return response()->json('Thank you for registering with us.');
+    }
+    else
+    {
+        // return redirect('login')->with('warning', 'Thank you for registering with us.');
+        return response()->json('Sorry, something went wrong..');
+
+    }
+ 
+        
     }
 
     public function signup_user(Request $request)
@@ -205,6 +248,26 @@ public function login_user(Request $request){
         return redirect('submit-entry');
     }
     return redirect('login')->with('warning', 'Invalid Email address/Phone or Password');
+}
+
+public function login_buyer(Request $request){
+    $this->validate($request, [
+        'username' => 'required',
+        'password' => 'required',
+        ]);
+    if (Auth::attempt([
+        'email' => $request->username,
+        'password' => $request->password]) ||
+
+        Auth::attempt([
+        'phone' => $request->username,
+        'password' => $request->password])
+    )
+    {
+        return redirect('stock-album');
+    }
+    return back()->with('warning', 'Invalid Email address/Phone or Password');    // return response()->json('Invalid Email address/Phone or Password.');
+
 }
 
 public function login_user_like(Request $request){
