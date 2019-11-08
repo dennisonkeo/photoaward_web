@@ -26,17 +26,14 @@ $(document).on('click','.gg-element',function(){
   $("#gg-screen").html('<div class="gg-image"></div>' + content);
   $(".gg-image").html('<img alt="'+ $('img', this).attr('alt') + '" src="'+ $('img', this).attr('src') + '">');
   
-  // $(".gg-image").children("img").attr("alt");
-  console.log($(".gg-image").children("img").attr("alt"));
-   $(".count").html($(".gg-image").children("img").attr("alt"));
+
+   $(".count").html(selected.find(".rate").text());
 
    // like image
    $(".gg-closee").click(function(){
 
-    var image_id = selected.find(".pop").text();
+    var image_id = selected.find(".uniquk").data('id');
 
-
-    console.log(image_id);
  $.ajaxSetup({
       headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -49,14 +46,14 @@ $(document).on('click','.gg-element',function(){
         data: {
           'liked': 1,
           upload_id: image_id,
-          // _token: 'csrf_token()'
+
         },
         success: function(response){
           if(response !="")
           {
-          // $upload.parent().find('p').text(response);
-          // $(".gg-element").find("img").attr(response);
-          $('.count').html(response);
+            
+            selected.find('.rate').text(response);
+            $('.count').html(response);
         }
 
         },
@@ -96,7 +93,9 @@ $(document).on('click','.gg-element',function(){
     content=buttons();
     $("#gg-screen").html('<div class="gg-image">'+ previmg + '</div>' + content);
 
-    $(".count").html(prev.attr('alt'));
+    // $(".count").html(prev.attr('alt'));
+
+    $(".count").html(selected.find(".rate").text());
 
     console.log("index: "+$(".count").index());
 
@@ -154,7 +153,8 @@ $(document).on('click','.gg-element',function(){
     content=buttons();
     $("#gg-screen").html('<div class="gg-image">'+ nxtimg + '</div>' + content);
 
-    $(".count").html(next.attr('alt'));
+    // $(".count").html(next.attr('alt'));
+    $(".count").html(selected.find(".rate").text());
 
        // like image
    $(".gg-closee").click(function(){

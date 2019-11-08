@@ -25,6 +25,20 @@ class UploadController extends Controller
         return view('upload_details');
     }
 
+    public function stock()
+    {
+
+        $images = Upload::latest()->get();
+
+        return view('stock', compact('images'));
+    }
+
+    public function stock_view(Upload $upload)
+    {
+
+        return view('stock-view', compact('upload'));
+    }
+
     public function test()
     {
         dd("it worked!");
@@ -70,7 +84,7 @@ class UploadController extends Controller
      */
     public function display_like()
     {
-        $first = Upload::where('user_id',Auth::user()->id)->latest()->first();
+        // $first = Upload::where('user_id',Auth::user()->id)->latest()->first();
 
         $images = Upload::where('uploaded',"yes")->latest()->get();
 

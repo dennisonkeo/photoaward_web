@@ -63,6 +63,11 @@ class User extends Authenticatable
         return $this->hasMany(ImagePay::class);
     }
 
+    public function purchases()
+    {
+        return $this->hasMany(Purchase::class);
+    }
+
 
     public function roles()
     {

@@ -15,6 +15,11 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('newcart', function () {
+    return view('newcart');
+});
+
+
 Route::get('imagepop', function () {
     return view('imagepop');
 });
@@ -23,6 +28,14 @@ Route::get('under-construction', function () {
     return view('construction');
 });
 
+Route::get('stocksy', function () {
+    return view('stocksy');
+});
+
+// Route::get('view-cart', function () {
+//     return view('checkout');
+// });
+
 Route::get('pop', function () {
     return view('popup.index');
 });
@@ -30,6 +43,14 @@ Route::get('pop', function () {
 Route::get('prizes', function () {
     return view('prizes');
 });
+
+Route::get('modall', function () {
+    return view('testModal');
+})->name('modall');
+
+Route::get('user-auth', function () {
+    return view('cart_modal');
+})->name('modall');
 
 Route::get('guidelines', function () {
     return view('guidelines');
@@ -106,6 +127,10 @@ Route::get('votingg', function () {
 //     return view('like_image');
 // });
 
+Route::get('stock-album', 'UploadController@stock')->name('stock-album');
+
+Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
+
 Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('response', 'HomeController@response')->name('response');
@@ -116,13 +141,27 @@ Route::get('registration', 'HomeController@registration')->name('registration');
 
 Route::post('register-user', 'HomeController@store')->name('register-user');
 
+Route::post('signup_user', 'HomeController@signup_user')->name('signup_user');
+
+Route::post('signup_buyer', 'HomeController@add_buyer')->name('signup_buyer');
+
 Route::get('login', 'HomeController@login')->name('login');
 
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
 
+Route::post('buyer-login', 'HomeController@login_buyer')->name('buyer-login');
+
+Route::post('like-user-login', 'HomeController@login_user_like')->name('like-user-login');
+
+Route::get('like-images', 'UploadController@display_like')->name('like-image');
+
 Route::group(['middleware' => ['auth']], function () {
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
+
+Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
+
+Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
 
 Route::get('profile', 'HomeController@profile')->name('profile');
 
@@ -132,7 +171,11 @@ Route::put('update', 'UploadController@update')->name('update');
 
 Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
 
+Route::delete('cart/remove/{cart}', 'CartController@destroy')->name('cart/remove');
+
 Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
+
+Route::post('add-cart', 'CartController@addToCart')->name('add-cart');
 
 Route::post('add-like', 'UploadController@add_like')->name('add-like');
 

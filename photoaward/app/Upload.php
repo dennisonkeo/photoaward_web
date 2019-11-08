@@ -27,4 +27,9 @@ class Upload extends Model
         return $this->hasMany(Vote::class);
      }
 
+     public function carts()
+     {
+        return $this->hasMany(Cart::class);
+     }
+
 }

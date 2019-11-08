@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('mpesa-response', 'PaymentController@mpesa_response')->name('mpesa-response');
 
+Route::post('mpesa-reply', 'CartController@mpesa_reply')->name('mpesa-reply');
+

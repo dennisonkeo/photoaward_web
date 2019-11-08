@@ -33,6 +33,7 @@ text-align: center;
 .gg-element:hover .likee{
   display: block;
 }
+
   </style>
 
 
@@ -44,8 +45,16 @@ text-align: center;
       {{-- <span class="img_click"> --}}
         <img src="{{ asset('uploads') }}/{{ $image->imageName }}" alt="{{ count($image->votes) }}">
       {{-- </span> --}}
-        <div class="likee" style="position: absolute; top: 0;"><i class="inner fa fa-heart-o" style="vertical-align: middle; line-height: 38px;"></i><p class="pop" style="display: none;">{{ $image->id }}</p><p class="rate">{{ count($image->votes) }}</p></div>
+      @if(Auth::check())
+        <div class="likee" style="position: absolute; top: 0;"><i class="inner fa fa-heart-o uniquk" style="vertical-align: middle; line-height: 38px;" data-id="{{ $image->id }}"><p class="rate">{{ count($image->votes) }}</p></i>
+        </div>
+
+        @else
+          <div class="likee logn" style="position: absolute; top: 0;"><i  class="inner fa fa-heart-o lognn" style="vertical-align: middle; line-height: 38px;"></i><p class="ratee">{{ count($image->votes) }}</p>
+        </div>
+        @endif
       </div>
+
     @endforeach
       <!-- <div class="gg-element">
         <img src="https://picsum.photos/1600/1200/?random">
@@ -115,16 +124,23 @@ text-align: center;
     <script type="text/javascript" src="{{asset('popup/js/grid-gallery.js')}}"></script>
 
 <script type="text/javascript">
-  var inner = document.querySelector(".likee");
+  var login = document.querySelector(".logn");
+  var loginn = document.querySelector(".lognn");
 var outer = document.querySelector(".gg-element");
-// inner.addEventListener('click',innerFunction);
+// login.addEventListener('click',login_register);
+// loginn.addEventListener('click',loginn_register);
 // outer.addEventListener('click',outerFunction);
 
-function innerFunction(event){
+function login_register(event){
   event.stopPropagation();
-  console.log("Inner Functiuon");
-  alert('Yes');
-  // event.stopPropagation();
+
+  window.location.href =  '{{ route('modall') }}';
+
+}
+function loginn_register(event){
+  event.stopPropagation();
+
+  window.location.href =  '{{ route('modall') }}';
 
 }
 
@@ -143,14 +159,9 @@ for (var i = 0; i < allButtons.length; i++) {
           
           $upload = $(this);
 
-          var image_id = $upload.parent().find('p').first().text()
+          var image_id = $(this).data('id');
 
-          console.log($upload.parent().find('p'));
-          console.log($upload.parent().find('p').first().text());
-
-          var str = $upload.parent().find('p').first().text();
-          $( ".count" ).html( str );
-          console.log( $( ".count" ).html( str ));
+          console.log("image-id "+image_id);
 
 
       $.ajax({
@@ -164,18 +175,20 @@ for (var i = 0; i < allButtons.length; i++) {
         success: function(response){
           if(response !="")
           {
-          $upload.parent().find('p').text(response);
-          $(".gg-element").find("img").attr(response);
-          $('.gg-image > img[alt=""]').attr('alt', response);
-          // $post.addClass('hide');
-          // $post.siblings().removeClass('hide');
-        }
 
-          // console.log(response);
+            $upload.find('.rate').text(response);
+            // $(".gg-element").find("img").attr(response);
+            // $('.gg-image > img[alt=""]').attr('alt', response);
+
+        }
 
         },
         error: function(jqXHR, textStatus, errorThrown){
           console.log(errorThrown);
+          if(errorThrown == "Unauthorized")
+          {
+            window.location.href =  '{{ route('modall') }}';
+          }
           // alert('An error occured');
         }
       });
