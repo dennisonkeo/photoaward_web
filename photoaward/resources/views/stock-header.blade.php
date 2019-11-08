@@ -1,11 +1,16 @@
 
 <?php
 use App\Cart;
+use App\Purchase;
 
 	if(Auth::check())
 	{
-		$count = Cart::where('user_id',Auth::user()->id)
-			->where('token', session()->getId())->get();
+		// $count = Cart::where('user_id',Auth::user()->id)
+			//->where('token', session()->getId())->get(); 
+
+		$purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $count = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 	}
 	
 ?>

@@ -16,4 +16,9 @@ class Cart extends Model
     	return $this->belongsTo(Upload::class);
     }
 
+    public function purchases()
+    {
+    	return $this->hasMany(Purchase::class);
+    }
+
 }

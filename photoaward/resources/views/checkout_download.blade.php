@@ -8,7 +8,6 @@
 
 				
 		<title>Picture254</title>
-<meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
@@ -234,7 +233,7 @@ jQuery(document).ready(function($){
 		
 		<h2 class="post_title">
 			<span>
-				Checkout			
+				Shopping Cart			
 			</span>
 		</h2>
 
@@ -254,15 +253,13 @@ jQuery(document).ready(function($){
 				<div class="edd_cart_item_image"><img width="25" height="25" src="{{ asset('uploads') }}/{{ $ct->upload->imageName }}" sizes="(max-width: 25px) 100vw, 25px" />
 				</div>
 					<span class="edd_checkout_cart_item_title">{{ $ct->upload->imageName }}
-				</span>	
-
+				</span>					
 			</td>
 			<td class="edd_cart_item_price">
 				100.00					
 			</td>
 			<td class="edd_cart_actions">
-				<a id="deleteProduct" class="rremove edd_cart_remove_item_btn" href="#" data-id="{{ route('cart/remove', $ct->id) }}">Remove</a>
-
+				<a class="edd_cart_remove_item_btn" href="{{ route('download', $ct->upload->imageName) }} " target="_blank">Download</a> <i class="fa fa-download"></i>
 			</td>
 			</tr>
 	@endforeach
@@ -271,7 +268,7 @@ jQuery(document).ready(function($){
 		
 			</tbody>
 	<tfoot>
-<input type="hidden" name="_remove" value="" id="_remove">
+
 {{-- 					<tr class="edd_cart_footer_row">
 				<th colspan="3">
 							<a class="edd-cart-saving-button edd-submit button white" id="edd-restore-cart-button" href="/stocky/checkout/?edd_action=restore_cart&#038;edd_cart_token=899991372962761e69777430a217e84c">Restore Previous Cart</a>
@@ -286,98 +283,16 @@ jQuery(document).ready(function($){
 					</tr>
 
 		
-		<tr class="edd_cart_footer_row">
+		{{-- <tr class="edd_cart_footer_row">
 						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span></th>
-					</tr>
+					</tr> --}}
 	</tfoot>
 </table>
 </div>
 </form>			
 <div id="edd_checkout_form_wrap" class="edd_clearfix">
-<p>Accepted Payment Methods.</p>
-	<div class="edd-payment-icons"><img class="payment-icon" src="{{ asset('images/lipa.jpg') }}"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.png"/>
-	</div>
-	<br>
-
-	<fieldset id="">
-		<legend>Payment Method</legend>
-				<p id="edd-email-wrap">
-			{{-- <label class="edd-label" for="edd-email">
-				Email Address									
-				<span class="edd-required-indicator">*</span>
-							</label>
- --}}
-			<select class="edd-input required" id="method">
-				<option value="">--select method--</option>
-				<option value="mpesa">Lipa Na Mpesa</option>
-				<option value="paypal">PayPal</option>
-				<option value="card">Card</option>
-			</select>
-		</p>
-	</fieldset>
-
-	<fieldset id="paypal_details" style="display: none;">
-		<legend>Paypal Information</legend>
-				<p id="edd-email-wrap">
-			<label class="edd-label" for="edd-email">
-				Email Address									
-				<span class="edd-required-indicator">*</span>
-							</label>
-			<span class="edd-description" id="edd-email-description">Provide your PayPal email address.</span>
-			<input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="" aria-describedby="edd-email-description" required />
-		</p>
-	</fieldset>
-
-	<fieldset id="bank_details" style="display: none;">
-		<legend>Account Information</legend>
-				<p id="edd-email-wrap">
-			<label class="edd-label" for="edd-email">
-				Email Address									<span class="edd-required-indicator">*</span>
-							</label>
-			<span class="edd-description" id="edd-email-description">We will send the purchase receipt to this address.</span>
-			<input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="" aria-describedby="edd-email-description" required />
-		</p>
-				<p id="edd-first-name-wrap">
-			<label class="edd-label" for="edd-first">
-				Full Name								
-				<span class="edd-required-indicator">*</span>
-							</label>
-			<span class="edd-description" id="edd-first-description">
-				
-			</span>
-			<input class="edd-input required" type="text" name="edd_first" placeholder="First Name" id="edd-first" value="" required  aria-describedby="edd-first-description" />
-		</p>
-		<p id="edd-last-name-wrap">
-			<label class="edd-label" for="edd-last">
-				Card Number							</label>
-			<span class="edd-description" id="edd-last-description"></span>
-			<input class="edd-input" type="text" name="edd_last" id="edd-last" placeholder="Last Name" value="" aria-describedby="edd-last-description"/>
-		</p>
-
-		<p id="edd-last-name-wrap">
-			<label class="edd-label" for="edd-last">
-				Expiration Date							
-			</label>
-			<span class="edd-description" id="edd-last-description">
-
-				
-			</span>
-		</p>
-		<div style="display: inline; float: left; widows: 200px;">
-				<select >
-				<option>gfhg</option>
-				<option>gfhg</option>
-			</select>
-			<select>
-				<option>gfhg</option>
-				<option>gfhg</option>
-			</select>
-		</div>
-
-					
-				</fieldset>
 								{{-- <form id="edd_purchase_form" class="edd_form" action="" method="POST"> --}}
-{{-- 	<div class="edd-payment-icons"><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.png"/></div>
+{{-- 					<div class="edd-payment-icons"><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.png"/></div>
 			<fieldset id="edd_checkout_user_info">
 		<legend>Personal Info</legend>
 				<p id="edd-email-wrap">
@@ -403,14 +318,14 @@ jQuery(document).ready(function($){
 					</fieldset> --}}
 		<fieldset id="edd_purchase_submit">
 		<p id="edd_final_total_wrap">
-	<strong>Purchase Total:</strong>
+{{-- 	<strong>Purchase Total:</strong>
 	<span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span>
-</p>
+</p> --}}
 
 {{-- 				<input type="hidden" name="edd_action" value="purchase"/>
 	<input type="hidden" name="edd-gateway" value="paypal" />
 	<input type="hidden" id="edd-process-checkout-nonce" name="edd-process-checkout-nonce" value="d8aec672f4" /> --}}
-				<input id="btn_purchase" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/>
+				{{-- <input id="btn_purchase" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/> --}}
 
 				<input style="display: none;" id="wait" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/> <i id="spinn" style="font-size: 20px; display: none;" class="fa fa-circle-o fa-spin"></i>
 		
@@ -420,7 +335,7 @@ jQuery(document).ready(function($){
 							</div><!--end #edd_checkout_form_wrap-->
 		</div><!--end #edd_checkout_wrap-->
 	@else
-			<h3>Your cart is currently empty. <a href="{{ route('stock-album') }}">Add images to cart.</a></h3>
+			<h3>Your shopping cart is currently empty. <a href="{{ route('stock-album') }}">Add images to cart.</a></h3>
 	@endif
 
 		<div class="clear"></div>
@@ -483,8 +398,6 @@ jQuery(document).ready(function($){
 
                             // $('#spinn').css("display", "none");
                             alert('A payment request has been sent to you.');
-
-                            window.location.href =  '{{ route('cart/checkout/download') }}';
                             
                         },
 
@@ -496,84 +409,6 @@ jQuery(document).ready(function($){
 
                         // $('#imageDetailsSave').show();
             });
-
-
-var allButtons = document.querySelectorAll('a[class^=rremove]');
-console.log("Found", allButtons.length, "div which class starts with “button”.");
-
-for (var i = 0; i < allButtons.length; i++) {
-
-$("a").click(function(e) {
-    e.preventDefault();
-});
-
-  allButtons[i].addEventListener('click', function(event) {
-
-
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-
-var id = $(this).data('id');
-
-console.log(id);
-// return false;
-$.ajax(
-{
-    url: id,
-    type: 'DELETE', // Just delete Latter Capital Is Working Fine
-    dataType: "JSON",
-    data: {
-        "id": id // method and token not needed in data
-    },
-    success: function (response)
-    {
-        console.log(response); // see the reponse sent
-
-
-        location.reload();
-    },
-    error: function(xhr) {
-     console.log(xhr.responseText); // this line will save you tons of hours while debugging
-    // do something here because of error
-   }
-});
-
-
-});
-
-}
-
-// select payment method
-
-  $('#method').on('change', function(e) {
-   
-    var option = e.target.value;
-
-    if(option == "paypal")
-    {
-      document.getElementById('paypal_details').style.display = "block";
-
-    }
-    else
-    {
-      document.getElementById('paypal_details').style.display = "none";
-    }
-
-    if(option == "card")
-    {
-      document.getElementById('bank_details').style.display = "block";
-
-    }
-    else
-    {
-      document.getElementById('bank_details').style.display = "none";
-    }
-
-  });
-
 </script>
 {{-- 
 <script type="text/javascript">
