@@ -238,7 +238,7 @@ jQuery(document).ready(function($){
 	<div class="edd_download_inner">
 
 			<div class="edd_download_image">
-		<a href="#" title="">
+		<a href="{{ route('stock-view',$image->id) }}" title="">
 			<img width="548" height="548" src="{{ asset('uploads') }}/{{ $image->imageName }}" class="attachment-product_main size-product_main wp-post-image" alt="" sizes="(max-width: 548px) 100vw, 548px" />		</a>
 		<div class="stocky_hover_details stocky_wish_list_on">
 
