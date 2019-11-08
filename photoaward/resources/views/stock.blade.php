@@ -46,7 +46,7 @@ img.emoji {
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/fancybox/jquery.fancybox.pack.js?ver=5.2.4'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.stellar.js?ver=5.2.4'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.mobilemenu.js?ver=5.2.4'></script>
-<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.fitvids.js?ver=5.2.4'></script>
+<!-- <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.fitvids.js?ver=5.2.4'></script>
 <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#product=ga'></script>
 <link rel='https://api.w.org/' href='http://themes.designcrumbs.com/stocky/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://themes.designcrumbs.com/stocky/xmlrpc.php?rsd" />
@@ -55,10 +55,8 @@ img.emoji {
 <link rel="canonical" href="http://themes.designcrumbs.com/stocky/" />
 <link rel='shortlink' href='http://themes.designcrumbs.com/stocky/' />
 <link rel="alternate" type="application/json+oembed" href="http://themes.designcrumbs.com/stocky/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fthemes.designcrumbs.com%2Fstocky%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://themes.designcrumbs.com/stocky/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fthemes.designcrumbs.com%2Fstocky%2F&#038;format=xml" />
+<link rel="alternate" type="text/xml+oembed" href="http://themes.designcrumbs.com/stocky/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fthemes.designcrumbs.com%2Fstocky%2F&#038;format=xml" /> -->
 
-<meta name="generator" content="Easy Digital Downloads v2.9.18" />
-<meta name="generator" content="EDD FES v2.5.7" />
 <style type="text/css">
 a {
 	color:#1e73be;
@@ -447,22 +445,15 @@ jQuery(document).ready(function($){
 			jQuery("head").append(s);
 		});
     });
-</script><script type='text/javascript'>
-/* <![CDATA[ */
-var edd_scripts = {"ajaxurl":"http:\/\/themes.designcrumbs.com\/stocky\/wp-admin\/admin-ajax.php","position_in_cart":"","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"0","checkout_page":"http:\/\/themes.designcrumbs.com\/stocky\/checkout\/","permalinks":"1","quantities_enabled":"","taxes_enabled":"0"};
-/* ]]> */
 </script>
-<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=2.9.18'></script>
+
+<!-- <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=2.9.18'></script> -->
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/comment-reply.min.js?ver=5.2.4'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var edd_wl_scripts = {"ajaxurl":"http:\/\/themes.designcrumbs.com\/stocky\/wp-admin\/admin-ajax.php","wish_list_page":"http:\/\/themes.designcrumbs.com\/stocky\/wish-lists\/","wish_list_add":"http:\/\/themes.designcrumbs.com\/stocky\/wish-lists\/view\/95\/","ajax_nonce":"9c5c01e216"};
-/* ]]> */
-</script>
+
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-wish-lists/includes/js/edd-wl.min.js?ver=1.1.7'></script>
 <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-wish-lists/includes/js/modal.min.js?ver=1.1.7'></script>
 	<div class="modal fade" id="edd-wl-modal" tabindex="-1" role="dialog" aria-labelledby="edd-wl-modal-label" aria-hidden="true">
