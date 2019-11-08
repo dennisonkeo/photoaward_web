@@ -11,7 +11,7 @@ use App\Upload;
 use App\Payment;
 use App\Purchase;
 use Config;
-
+use Response;
 
 use Auth;
 
@@ -20,11 +20,31 @@ class CartController extends Controller
     
     	public function index()
     	{
-        $cart = Cart::where('user_id',Auth::user()->id)
-      ->where('token', session()->getId())->get();
+      //   $cart = Cart::where('user_id',Auth::user()->id)
+      // ->where('token', session()->getId())->get();
+
+      $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $cart = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 
     		return view('checkout', compact('cart'));
     	}
+
+      public function show_download()
+      {
+
+      $purchased_items = Purchase::where('token',session()->getId())->where('purchased',1)->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $cart = Cart::whereIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
+
+        return view('checkout_download', compact('cart'));
+      }
+
+      public function download_image($path)
+      {
+
+          return Response::download('uploads/'.$path);
+      }
 
     	public function addToCart()
     	{
@@ -40,9 +60,10 @@ class CartController extends Controller
                            $cart->token = session()->getId();
                            $cart->save();
 
+            $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
 
-                $get_total = Cart::where('user_id',Auth::user()->id)
-                			->where('token',session()->getId())
+
+                $get_total =Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())
                 			->count();
 
                         return response()->json($get_total);
@@ -56,9 +77,29 @@ class CartController extends Controller
 
           $refNo = str_random(6);
 
-          $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
+          // $current_purchases = Purchase::where('user_id', Auth::user()->id)
+          //                               ->where('token', session()->getId())
+          //                               ->get();
 
-          $cart_amount = (count($items)*100);
+
+          // $carts = Cart::whereNotIn('id', $current_purchases)
+          //       // ->where('selected',1)
+          //       ->get();
+
+          //       dd($carts);
+          // $students = \App\Student::whereDoesntHave('academics')
+          //   ->orWhereHas('academics',function($q) use ($academic){
+          //     $q->where('id',$academic->id)->count();
+          //   },'=',0)->get();
+
+          $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $carts = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
+
+          $cart_amount = (count($carts)*100);
+
+          // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
+
 
           $BusinessShortCode = "174379";
           $LipaNaMpesaPasskey = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTgwODE0MDg1NjIw";
@@ -81,16 +122,21 @@ class CartController extends Controller
 
           if($check !="")
           {
-
-                                    $purchase = new Purchase();
+                                foreach($carts as $cart)
+                                {
+                                      
+                                      $purchase = new Purchase();
                          
-                                       $purchase->amount = $cart_amount;
-                                       $purchase->images = count($items);
+                                       $purchase->amount = 100;
                                        $purchase->user_id = Auth::user()->id;
                                        $purchase->accountno = $check;
+                                       $purchase->cart_id = $cart->id;
+                                       $purchase->token = session()->getId();
                          
                                        $purchase->save();
-                         
+
+                                }
+                                    
                                     // Upload::where('token',"=", session()->getId())
                                     //         ->where('uploaded','no')
                                     //         ->update(array('uploaded' => 'yes'));
