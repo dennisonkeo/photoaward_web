@@ -326,6 +326,8 @@ jQuery(document).ready(function($){
 	<input type="hidden" name="edd-gateway" value="paypal" />
 	<input type="hidden" id="edd-process-checkout-nonce" name="edd-process-checkout-nonce" value="d8aec672f4" /> --}}
 				<input id="btn_purchase" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/>
+
+				<input style="display: none;" id="wait" type="button" class="edd-submit white button" id="edd-purchase-button" name="edd-purchase" value="Purchase"/> <i id="spinn" style="font-size: 20px; display: none;" class="fa fa-circle-o fa-spin"></i>
 		
 		
 			</fieldset>
@@ -379,6 +381,10 @@ jQuery(document).ready(function($){
 
                 event.preventDefault();
 
+                $('#btn_purchase').css("display", "none");
+                $('#wait').css("display", "block");
+                // $('#spinn').css("display", "block");
+
                 $.ajax({
                          url : "{{ route('cart/mpesa/checkout') }}",
                         type:'GET',
@@ -387,7 +393,9 @@ jQuery(document).ready(function($){
                         success: function(response) {
                             console.log(response); 
 
+                            // $('#spinn').css("display", "none");
                             alert('A payment request has been sent to you.');
+                            
                         },
 
                         error: function(jqXHR, textStatus, errorThrown) {

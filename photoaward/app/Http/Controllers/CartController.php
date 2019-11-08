@@ -135,8 +135,8 @@ class CartController extends Controller
                        
               $pay->save();
                        
-              ImagePay::where('account_no',"=", $account_no)
-                       ->update(array('status' => 'Paid'));
+              Purchase::where('accountno',"=", $account_no)
+                       ->update(array('purchased' => 1));
 
           return response()->json('Success');
         }

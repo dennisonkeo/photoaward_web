@@ -252,7 +252,7 @@ jQuery(document).ready(function($){
 					
 						<a id="main_product_image" href="{{ asset('uploads') }}/{{ $upload->imageName }}" class="lightbox">
 							<span class="preview"></span>
-							<img style="width: 797px; height: auto;" src="{{ asset('uploads') }}/{{ $upload->imageName }}" class="attachment-product_page_image size-product_page_image wp-post-image" alt=""  />						</a>
+							<img style="max-width: 797px; height: auto;" src="{{ asset('uploads') }}/{{ $upload->imageName }}" class="attachment-product_page_image size-product_page_image wp-post-image" alt=""  />						</a>
 						
 						
 					
