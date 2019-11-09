@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <script src="{{ asset('js/right_click.js') }}"></script>
+    
     <meta charset="utf-8">
     
     <title>Photo Contest</title>

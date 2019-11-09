@@ -15,6 +15,8 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -533,7 +535,8 @@ initializeClock('clockdiv2', deadline2);
           <div class="text">
             
   <div class="field-accordion-summary">
-    Find the right competition for you – all are free to enter  </div>
+    Welcome to Picture+254. 
+ </div>
           </div>
         </div>
         <div class="cover-image">
@@ -547,10 +550,19 @@ initializeClock('clockdiv2', deadline2);
   <div class="field-accordion-description">
     <p><span style="font-size:16px;"></span></p>
 
-<p><span style="font-size:18px;">Description</span></p>
+<!-- <p><span style="font-size:18px;">Description</span></p> -->
 
 <ul>
-Content
+This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+Term:
+Picture+254 Photo Contest runs 20th November, 2019 – 15th January, 2020. 
+Who may enter:
+You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
+Why enter
+How to Enter:
+You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone. 
+
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
@@ -596,7 +608,7 @@ Content
           <div class="text">
             
   <div class="field-accordion-summary">
-    Find the right competition for you – all are free to enter  </div>
+   Every contestant must sign up for the competition.</div>
           </div>
         </div>
         <div class="cover-image">
@@ -613,7 +625,21 @@ Content
 <p><span style="font-size:18px;">Description:</span></p>
 
 <ul>
-Content
+You cannot sign up more than one contestant per phone number or e-mail address. 
+There is no limit to how many photographs you can enter per category. 
+You cannot send entries through the e-mail.
+No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories. 
+In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)
+Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.
+If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
+Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.
+Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.
+In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB. 
+The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph. 
+Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
+High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.
+Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists. 
+
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
@@ -797,7 +823,14 @@ Content
 <p><span style="font-size:18px;">Description:</span></p>
 
 <ul>
-Content
+All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+Top 3 Overall Grand Prizes: [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+Category Winners: The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+Photo of the Week (open only to Non – Professionals): $50, training, mentorships and equipment.
+Winners may receive additional non-cash prizes. 
+Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.  
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
@@ -855,7 +888,7 @@ Content
   <div class="field-accordion-description">
     <p><span style="font-size:16px;"></span></p>
 
-<p><span style="font-size:18px;">Description:</span></p>
+<!-- <p><span style="font-size:18px;"></span></p> -->
 
 <!-- <ul>
 <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
@@ -863,7 +896,12 @@ Content
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
 	<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li>
 </ul>  --> 
-Content <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
+Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+There will be weekly Photo of the Week winners chosen by viewers. 
+Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala. 
+Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
+Contestants are not allowed to contact us about the status of entries or judging.
+ <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 </div>
       </div>
     </div>    

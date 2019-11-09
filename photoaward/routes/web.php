@@ -159,7 +159,11 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
+Route::get('download/{path}', 'CartController@download_image')->name('download');
+
 Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
+
+Route::get('cart/checkout/download', 'CartController@show_download')->name('cart/checkout/download');
 
 Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
 

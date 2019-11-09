@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>    Picture 254</title>
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+    
     <meta name="keywords"
           content="Picture254, Image Briefs, Royalty Free, Stock Photos, Custom Photography, Instagram Photography, Commercial Photos, High Quality Photography, Creative Photos, Crowd Sourced, UGC Photos, Photography, Crowdsourcing, Authentic Stock Photos, Authentic Photos, Custom Branded Content, Instagram Stock Photos, Scalable Custom Photos, Custom Content Platform"/>
     <meta name="author" content="Picture254 Media"/>
@@ -16,8 +19,7 @@
     <meta property="og:author" content="Snapwire Media"/>
     <meta property="og:url" content="https://www.snapwi.re/collection/summer"/>
     <meta property="og:title"
-          content="Snapwire Custom Photos,     Summer Collection
-"/>
+          content="Snapwire Custom Photos,Summer Collection"/>
     <meta property="og:description"
           content="I&#039;m using Snapwire - where talented photographers create custom photos just for you."/>
     <meta property="og:image"

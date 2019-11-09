@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Under Construction Page</title>
+
+  <script src="{{ asset('js/right_click.js') }}"></script>
   
-  
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway:100'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Raleway:100'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="construction/css/style.css">

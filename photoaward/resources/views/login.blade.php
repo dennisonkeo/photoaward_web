@@ -194,6 +194,16 @@
 							Sign up
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>
+
+						<div>
+						<label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" </button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
 					</div>
 				</form>
 			</div>

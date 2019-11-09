@@ -15,6 +15,7 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
+<script src="{{ asset('js/right_click.js') }}"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -103,8 +104,20 @@
         <div class="tabled-td">
           <p>Grand Prizes</p>
           <img src="https://cdn.shopify.com/s/files/1/2938/0444/products/f735780fa1c12fdea1b0c04e630997dd_1400x.png?v=1550613089">
+Prizes:
+
+All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+Top 3 Overall Grand Prizes: [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+Category Winners: The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+Photo of the Week (open only to Non – Professionals): $50, training, mentorships and equipment.
+Winners may receive additional non-cash prizes. 
+Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.  
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+
 
     </div>
+
+
 </div>
           </div>
           

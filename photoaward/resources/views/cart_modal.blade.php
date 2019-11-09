@@ -3,6 +3,8 @@
 <head>
     <title>Login/Register Modal by Creative Tim</title>
 
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
