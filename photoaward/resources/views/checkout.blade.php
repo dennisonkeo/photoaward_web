@@ -332,7 +332,8 @@ jQuery(document).ready(function($){
 		<legend>Account Information</legend>
 				<p id="edd-email-wrap">
 			<label class="edd-label" for="edd-email">
-				Email Address									<span class="edd-required-indicator">*</span>
+				Email Address									
+				<span class="edd-required-indicator">*</span>
 							</label>
 			<span class="edd-description" id="edd-email-description">We will send the purchase receipt to this address.</span>
 			<input class="edd-input required" type="email" name="edd_email" placeholder="Email address" id="edd-email" value="" aria-describedby="edd-email-description" required />
@@ -354,7 +355,7 @@ jQuery(document).ready(function($){
 			<input class="edd-input" type="text" name="edd_last" id="edd-last" placeholder="Last Name" value="" aria-describedby="edd-last-description"/>
 		</p>
 
-		<p id="edd-last-name-wrap">
+{{-- 		<p id="edd-last-name-wrap">
 			<label class="edd-label" for="edd-last">
 				Expiration Date							
 			</label>
@@ -362,20 +363,63 @@ jQuery(document).ready(function($){
 
 				
 			</span>
-		</p>
-		<div style="display: inline; float: left; widows: 200px;">
-				<select >
-				<option>gfhg</option>
-				<option>gfhg</option>
-			</select>
-			<select>
-				<option>gfhg</option>
-				<option>gfhg</option>
-			</select>
+		</p> --}}
+
+		<div class="row">
+			<div class="col">
+			<label class="edd-label" for="edd-last">
+				CVC	
+				<span class="edd-required-indicator">*</span>					
+			</label>
+
+			<input type="text" name="" placeholder="MM" class="input" maxlength="2" minlength="2" required="">	
+			</div>
+
+			<div class="col">
+			<label class="edd-label" for="edd-last">
+				Expiration Date	
+				<span class="edd-required-indicator">*</span>						
+			</label>
+
+			<input type="text" name="" placeholder="MM" class="input" maxlength="2" minlength="2" required="">	
+			</div>
+				
+			<div class="col">
+			<label class="edd-label" for="edd-last" style="opacity: 0;">
+				Expiration Date							
+			</label>
+			<input type="text" name="" placeholder="YY" class="input" maxlength="2" minlength="2" required="">			
+		</div>
 		</div>
 
 					
 				</fieldset>
+
+<style type="text/css">
+	.col
+{
+    float: left;
+    /*width: 20%;*/
+    /*font-size: 24px;*/
+    padding: 10px;
+}
+
+
+.row{
+
+    /*padding: 5px 5px; */
+    height: auto;
+    overflow: auto;
+}
+
+.input
+{ padding: 5px; 
+  /*width: 10px; */
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;}
+</style>
 								{{-- <form id="edd_purchase_form" class="edd_form" action="" method="POST"> --}}
 {{-- 	<div class="edd-payment-icons"><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/mastercard.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/visa.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/americanexpress.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/discover.png"/><img class="payment-icon" src="http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/images/icons/paypal.png"/></div>
 			<fieldset id="edd_checkout_user_info">

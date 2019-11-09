@@ -72,6 +72,10 @@ Route::get('dash', function () {
     return view('dashboard.index');
 });
 
+Route::get('alert', function () {
+    return view('popup_alert');
+});
+
 Route::get('categories', function () {
     return view('categories');
 });
