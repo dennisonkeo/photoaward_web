@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <title> Picture254</title>
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+    
     <meta name="keywords"
           content="    no people, no_people, full frame, backgrounds, auto post production filter, two objects, mug, square image, wood grain, directly above, coaster, cork, brown, white, triangle, coffee, beverage, ceramic, black
 "/>

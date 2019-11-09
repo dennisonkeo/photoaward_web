@@ -201,11 +201,22 @@
 						
 					</div> -->
 
+					<div>
+					<label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      				</div>
+
+      <div class="clearfix">
+
 					<div class="container-login100-form-btn" >
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
 							<button type="submit" class="login100-form-btn">
-								Sign Up
+								Sign up
 							</button>
 						</div>
 
@@ -239,7 +250,19 @@
 	<!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
 <!--===============================================================================================-->
 	<script src="{{ asset('js/main.js') }}"></script>
-					<script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script>
+
+	<!-- <script>
+			// Get the modal
+		var modal = document.getElementById('id01');
+			// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+  		if (event.target == modal) {
+    	modal.style.display = "none";
+  }
+}
+</script>
+ -->
 					
 				</div>
 			</div><!-- /.content -->

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="{{ asset('js/right_click.js') }}"></script>
+
 <style>
 body {
   font-family: Verdana, sans-serif;

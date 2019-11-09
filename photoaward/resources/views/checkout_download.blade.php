@@ -8,6 +8,9 @@
 
 				
 		<title>Picture254</title>
+
+		<script src="{{ asset('js/right_click.js') }}"></script>
+		
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
