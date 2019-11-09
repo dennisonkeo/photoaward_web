@@ -252,7 +252,20 @@ initializeClock('clockdiv2', deadline2);
     display: block;
 
   }
+
+
+
+  
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
+
 
 
 </style>
@@ -288,7 +301,7 @@ initializeClock('clockdiv2', deadline2);
 		
 	</div>
 
-   <div class="main-box start pull-center" style="background: white; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
+   <div class="main-box start pull-center" style="background: white; display: none; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
             <div class="close-button didotltpro-italic pull-right"><a onclick="close_modal()" href="#">close</a></div>
 
             <h2 class="novecentosanswide-medium" style="margin-bottom: 20px;">LIKE WHAT YOU SEE!!!</h2><br/>
@@ -310,10 +323,6 @@ initializeClock('clockdiv2', deadline2);
 <!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
   A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
 </p> -->
-
-
-
-
 
 
 
@@ -997,6 +1006,17 @@ Contestants are not allowed to contact us about the status of entries or judging
 	</div>
 </div>
 
+@include('popup_alert')
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+</script>
 
 <script type="text/javascript">
 
