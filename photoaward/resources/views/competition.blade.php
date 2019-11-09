@@ -14,7 +14,8 @@
     <meta property="og:image" content="" />
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
-
+    
+<script src="{{ asset('js/right_click.js') }}"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

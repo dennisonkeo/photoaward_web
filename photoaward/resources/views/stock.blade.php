@@ -7,6 +7,8 @@
 		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 		
 				{{-- <link rel="shortcut icon" href="http://themes.designcrumbs.com/stocky/files/edd/2014/06/favicon.png" /> --}}
+
+		<script src="{{ asset('js/right_click.js') }}"></script>
 				
 		<title>Picture254</title>
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />

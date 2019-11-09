@@ -8,6 +8,8 @@ Cool Carousels	(c) 2019 Fred Heusschen
 
 -->
 
+<script src="{{ asset('js/right_click.js') }}"></script>
+
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 		<meta name="author" content="Fred Heusschen" />

@@ -8,6 +8,8 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 
+		<script src="{{ asset('js/right_click.js') }}"></script>
+
 				
 		<title>Picture254</title>
 

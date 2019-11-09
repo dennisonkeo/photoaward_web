@@ -8,6 +8,9 @@
 
 				
 		<title>Picture254</title>
+		
+		<script src="{{ asset('js/right_click.js') }}"></script>
+
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
