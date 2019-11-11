@@ -84,6 +84,10 @@
 	font-size: 14px;
 }
 
+p{
+	line-height: 30px;
+}
+
 </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -107,7 +111,7 @@
 						<span class="bar"></span>
 						<span class="bar"></span>
 					</span>
-					<span class="label">SUBMIT</span>
+					<span class="label">TERMS & CONDITIONS</span>
 				</a>
 			</div>
 		</div>
@@ -140,97 +144,41 @@
                                       {{ session('warning') }}
                                   </div>
                                  @endif
-					  <div class="section section-tabled" style="overflow: auto;">
-
+					  <div class="section section-tabled" style="overflow: auto; border-radius: 7px;">
+					  
 
 	<!-- <div class="tabled-th">
 		<img src="/common/img/profile/photo_mikiyakobayashi.jpg" alt="MIKIYA KOBAYASHI / Designer / MIKIYA KOBAYASHI INC. CEO">
 	</div> -->
-	<div class="tabled-td">
-		<div lang="en">
-			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+		<div class="tabled-td">
+			<div lang="en">
 
-				<form action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
-					{{ csrf_field() }}
-					<span class="login100-form-title p-b-59" style="height: 40px; background: #000; width: 100%; padding-left: 10px; color: white; border-radius: 5px; font-family: cambria;">
-						Sign Up
-					</span>
+				<h3 style="text-transform: uppercase;">Terms and Conditions of Entry:</h3><br><hr>
+				<p>
+				Picture+254 will randomly select photos for highlight on its website during and after the competition and display in a publicly accessible Picture+254 Stock Gallery.
+				</p>
+				<p>
+				The Sponsor may collect a photograph’s metadata upon entry.
+				</p>
+				<p>
+				You retain your rights to your photograph; however, by entering the contest, you grant the Picture+254 a royalty-free, world-wide, perpetual, non-exclusive license to publicly display, distribute, reproduce and create derivative works of the entries, in whole or in part, in any media now existing or later developed, for any purpose, including, but not limited to, advertising and promotion of the competition, magazines and its website, exhibition, and commercial products. 
+				</p>
+				<p>
+				Any photograph reproduced will include a photographer credit as feasible. 
+				</p>
+				<p>
+				By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize. The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries. Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
+				</p>
+				<p>
+				The contest is void where prohibited or restricted by law. The Sponsors reserve the right to cancel the contest or modify these rules at its discretion. In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion. The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;">Picture+254 </span> Sponsors are final and binding.
+				</p>
 
-					<div class="wrap-input100 validate-input" data-validate="Name is required" style="margin: 5px;">
-						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
-						<span class="focus-input100"></span>
-					</div>
+				<p><i>Dated: November 2019.</i></p>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin: 5px;">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
-						<span class="focus-input100"></span>
-					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Phone No is required" style="margin: 5px;">
-						<span class="label-input100">Phone No</span>
-						<input class="input100" type="text" name="phone" placeholder="e.g 2547********" minlength="12" maxlength="12">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Password is required" style="margin: 5px;">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="password" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required" style="margin: 5px;">
-						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="password" name="repeat-pass" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
-
-					<!-- <div class="flex-m w-full p-b-33">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								<span class="txt1">
-									I agree to the
-									<a href="#" class="txt2 hov1">
-										Terms of User
-									</a>
-								</span>
-							</label>
-						</div>
-
-						
-					</div> -->
-
-					<div>
-					<label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
-
-      <p><input type="checkbox" checed="" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="terms-&-conditions" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-      				</div>
-
-      <div class="clearfix">
-
-					<div class="container-login100-form-btn" >
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button type="submit" class="login100-form-btn">
-								Sign up
-							</button>
-						</div>
-
-						<a href="{{ route('login') }}" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
-							Sign in
-							<i class="fa fa-long-arrow-right m-l-5"></i>
-						</a>
-					</div>
-				</form>
 			</div>
-		</div>
 
-	</div>
+		</div>
 </div>
 
 

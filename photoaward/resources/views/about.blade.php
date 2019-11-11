@@ -267,7 +267,62 @@ initializeClock('clockdiv2', deadline2);
 }
 
 
-
+</style>
+<style type="text/css">
+   .element {
+  width: 100%;
+  height: auto;
+  /*padding: 50px;*/
+  position: relative;
+  padding: 10px;
+}
+.top-border,
+.bottom-border {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  left: 0;
+}
+.top-border {
+  top: 0;
+}
+.bottom-border {
+  bottom: 0;
+  top: 95%;
+}
+.top-border:after,
+.top-border:before,
+.bottom-border:after,
+.bottom-border:before {
+  content: '';
+  width: 15%;
+  height: 15%;
+}
+.top-border:after,
+.top-border:before {
+  border-top: 7px solid #ff0051;
+}
+.bottom-border:after,
+.bottom-border:before {
+  border-bottom: 7px solid #ff0051;
+}
+.top-border:before,
+.bottom-border:before {
+  border-left: 7px solid #ff0051;
+}
+.top-border:after,
+.bottom-border:after {
+  border-right: 7px solid #ff0051;
+}
+.dot{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ff00ff;
+}
 </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -519,7 +574,7 @@ initializeClock('clockdiv2', deadline2);
 							<li><a href="#" lang="ja"><span>JP</span></a></li>
 						</ul>
 					</div> -->
-<div class="sections">
+<div class="sections" style="text-align: center;">
 
   <div class="section section-tabled" id="about">
   <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
@@ -556,37 +611,43 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: center;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
 
-<ul>
+<!-- <ul style="line-height: 40px;"> -->
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt">
 <p> This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. </p>
 
 <p>To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.</p>
 
-<h4>Term:</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>Picture+254 Photo Contest runs 20th November, 2019 – 15th January, 2020. </p>
+<p>Picture+254 Photo Contest runs <b>20th November, 2019 – 15th January, 2020. </b> </p>
 
-<h4>Who may enter:</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4>Why enter</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
 <p></p>
 
-<h4>How to Enter:</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 
 <p>You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.</p>
+<div class="bottom-border"></div>
+</div>
+</div>
 
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-</ul>  
+<!-- </ul>   -->
 
 </div>
       </div>
@@ -638,17 +699,25 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description">
+  <div class="field-accordion-description" style="line-height: 40px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
 
-<ul>
+<!-- <ul style="line-height: 40px;"> -->
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt">
+<p>Every contestant must sign up for the competition.
+</p>
 <p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
 <p>There is no limit to how many photographs you can enter per category.</p> 
 <p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
-<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
+<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p><a onclick="window.location='{{ url("guidelines") }}'"  href="#">Read more.</a>
+<div class="bottom-border"></div>
+</div>
+</div>
+<!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
 <p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.</p>
 <p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
 <p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.</p>
@@ -657,14 +726,14 @@ initializeClock('clockdiv2', deadline2);
 <p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
 <p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
 High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p> 
+<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p>  -->
 
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
 
-</ul>  
+<!-- </ul>   -->
 </div>
       </div>
     </div>    
@@ -826,7 +895,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <div class="text">
             
   <div class="field-accordion-summary">
-    All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally.</div>
+    All entries will be stored in the Picture+254 Stock Gallery.</div>
           </div>
         </div>
         <div class="cover-image">
@@ -837,25 +906,32 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description">
-    <p><span style="font-size:16px;"></span></p>
+  <div class="field-accordion-description" style="line-height: 40px;">
+    <p><span style=""></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
  -->
-<ul>
+<!-- <ul> -->
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt">
 <p>All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.</p>
-<p>Top 3 Overall Grand Prizes: [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.</p>
-<p>Category Winners: The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.</p>
-<p>Photo of the Week (open only to Non – Professionals): $50, training, mentorships and equipment.</p>
+<p><b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.</p>
+<p><b>Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.</p>
+<p><b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.</p>
 <p>Winners may receive additional non-cash prizes.</p> 
 <p>Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.</p> 
 <p>In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.</p>
+
+<div class="bottom-border"></div>
+</div>
+</div>
 
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-</ul>  
+<!-- </ul>   -->
 </div>
       </div>
     </div>    
@@ -894,7 +970,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <div class="text">
             
   <div class="field-accordion-summary">
-    Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</div>
+    Photo entries will be judged.</div>
           </div>
         </div>
         <div class="cover-image">
@@ -905,7 +981,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description">
+  <div class="field-accordion-description" style="line-height: 40px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
@@ -916,12 +992,18 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li>
 </ul>  --> 
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt">
 <p>Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</p>
 <p>There will be weekly Photo of the Week winners chosen by viewers.</p>
 <p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
 <p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
 Contestants are not allowed to contact us about the status of entries or judging.</p>
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
+<div class="bottom-border"></div>
+</div>
+ </div>
 </div>
       </div>
     </div>    
@@ -1085,6 +1167,10 @@ function close_modal()
   $('.start').hide();
 }
   
+</script>
+<script type="text/javascript">
+
+  $("p").after("<center><span class=\"dot\"></span></center>");
 </script>
 
 </body>
