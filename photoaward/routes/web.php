@@ -32,9 +32,9 @@ Route::get('stocksy', function () {
     return view('stocksy');
 });
 
-// Route::get('view-cart', function () {
-//     return view('checkout');
-// });
+Route::get('view-cart', function () {
+    return view('checkout');
+});
 
 Route::get('pop', function () {
     return view('popup.index');
@@ -42,6 +42,10 @@ Route::get('pop', function () {
 
 Route::get('prizes', function () {
     return view('prizes');
+});
+
+Route::get('terms-&-conditions', function () {
+    return view('terms');
 });
 
 Route::get('modall', function () {
@@ -70,10 +74,6 @@ Route::get('faq', function () {
 
 Route::get('dash', function () {
     return view('dashboard.index');
-});
-
-Route::get('alert', function () {
-    return view('popup_alert');
 });
 
 Route::get('categories', function () {
@@ -165,14 +165,6 @@ Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboar
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
-Route::get('download/{path}', 'CartController@download_image')->name('download');
-
-Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
-
-Route::get('cart/checkout/download', 'CartController@show_download')->name('cart/checkout/download');
-
-Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
-
 Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::put('update-profile', 'HomeController@update')->name('update-profile');
@@ -181,11 +173,7 @@ Route::put('update', 'UploadController@update')->name('update');
 
 Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
 
-Route::delete('cart/remove/{cart}', 'CartController@destroy')->name('cart/remove');
-
 Route::get('get-image/{id}', 'UploadController@getImage')->name('get-image');
-
-Route::post('add-cart', 'CartController@addToCart')->name('add-cart');
 
 Route::post('add-like', 'UploadController@add_like')->name('add-like');
 

@@ -33,7 +33,7 @@
 
 <link rel="stylesheet" type="text/css" href="css/main/main.css"/>
     
-  <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+
 <script type="text/javascript" src="{{('js/main/jquery.yiiactiveform')}}.js"></script>
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
@@ -57,6 +57,68 @@
   body{
     background-color: #f3f3f3;
   }
+
+  p{
+    /*border-bottom: dotted;*/
+    /*padding-bottom: 15px;*/
+    /*padding-top: 0px;*/
+  }
+
+  .element {
+  width: 100%;
+  height: auto;
+  /*padding: 50px;*/
+  position: relative;
+  padding: 10px;
+}
+.top-border,
+.bottom-border {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  left: 0;
+}
+.top-border {
+  top: 0;
+}
+.bottom-border {
+  bottom: 0;
+  top: 95%;
+}
+.top-border:after,
+.top-border:before,
+.bottom-border:after,
+.bottom-border:before {
+  content: '';
+  width: 10%;
+  height: 10%;
+}
+.top-border:after,
+.top-border:before {
+  border-top: 7px solid #ff0051;
+}
+.bottom-border:after,
+.bottom-border:before {
+  border-bottom: 7px solid #ff0051;
+}
+.top-border:before,
+.bottom-border:before {
+  border-left: 7px solid #ff0051;
+}
+.top-border:after,
+.bottom-border:after {
+  border-right: 7px solid #ff0051;
+}
+
+.dot{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #ff00ff;
+}
 </style>
 
 </head>
@@ -102,35 +164,43 @@
   <div class="tabled-th">
     <h2>GUIDELINES</h2>
   </div>
-        <div class="tabled-td">
+        <div class="tabled-td" style="">
+
        <!--  <p>Sample Guidelines</p>
          Photographs must be resized to 1100 pixels on the longest side.
 They must be saved as JPEG file (JPG).<br><br> -->
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt" style="margin: 20px; text-align: center">
+<p>Every contestant must sign up for the competition.
+</p>
+<!-- <center><span class="dot"></span></center> -->
 
-<b><p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
+<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
+<!-- <center><span class="dot"></span></center> -->
 <p>There is no limit to how many photographs you can enter per category.</p> 
 <p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
-<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
-<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.</p>
+<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+</p>
+<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)
+</p>
+<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.
+</p>
 <p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
-<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.</p>
+</p>
+<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.
+</p>
 <p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
 <p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
 <p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
 <p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
 High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
 <p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p> 
-</b><br>
-<!-- <ul>
-<li>- sRGB or Adobe98 colour space, 8-bit;</li>
-<li>- longest dimension 1100 pixels;</li>
-<li>- saved as a JPEG at a setting of 10 (100%) or higher;</li>
-<li>- no watermarks / copyright units / personal logos on images;</li>
-<li>- only bleed photographs without borders*;</li>
-</ul>
 
-*except Polaroids and other traditional process photos where border is inherent part of the image.  -->
+ <div class="bottom-border"></div>
+</div>
+</div>
+
 
     </div>
 </div>
@@ -150,5 +220,11 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>
   </div>
 </div>
+  <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+
+<script type="text/javascript">
+
+  $("p").after("<center><span class=\"dot\"></span></center>");
+</script>
 </body>
 </html>
