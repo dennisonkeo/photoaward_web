@@ -165,6 +165,20 @@ Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboar
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
+Route::get('download/{path}', 'CartController@download_image')->name('download');
+
+Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
+
+Route::get('cart/checkout/download', 'CartController@show_download')->name('cart/checkout/download');
+
+Route::delete('cart/remove/{cart}', 'CartController@destroy')->name('cart/remove');
+
+Route::post('add-cart', 'CartController@addToCart')->name('add-cart');
+
+Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
+
+Route::get('profile', 'HomeController@profile')->name('profile');
+
 Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::put('update-profile', 'HomeController@update')->name('update-profile');
