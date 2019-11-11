@@ -826,7 +826,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <div class="text">
             
   <div class="field-accordion-summary">
-    Find the right competition for you – all are free to enter  </div>
+    All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally.</div>
           </div>
         </div>
         <div class="cover-image">
@@ -894,7 +894,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <div class="text">
             
   <div class="field-accordion-summary">
-    Find the right competition for you – all are free to enter  </div>
+    Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</div>
           </div>
         </div>
         <div class="cover-image">
