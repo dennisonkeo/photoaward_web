@@ -107,21 +107,20 @@
          Photographs must be resized to 1100 pixels on the longest side.
 They must be saved as JPEG file (JPG).<br><br> -->
 
-<b>Every contestant must sign up for the competition.
-You cannot sign up more than one contestant per phone number or e-mail address. 
-There is no limit to how many photographs you can enter per category. 
-You cannot send entries through the e-mail.
-No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories. 
-In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)
-Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.
-If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
-Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.
-Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.
-In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB. 
-The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph. 
-Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
-High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.
-Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists. 
+<b><p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
+<p>There is no limit to how many photographs you can enter per category.</p> 
+<p>You cannot send entries through the e-mail.</p>
+<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
+<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
+<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.</p>
+<p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
+<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.</p>
+<p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
+<p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
+<p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
+<p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
+High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
+<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p> 
 </b><br>
 <!-- <ul>
 <li>- sRGB or Adobe98 colour space, 8-bit;</li>
