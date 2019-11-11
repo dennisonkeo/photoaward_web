@@ -894,7 +894,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <div class="text">
             
   <div class="field-accordion-summary">
-    Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</div>
+    Photo entries will be judged.</div>
           </div>
         </div>
         <div class="cover-image">
