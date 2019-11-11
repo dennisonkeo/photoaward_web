@@ -161,6 +161,8 @@ Route::get('like-images', 'UploadController@display_like')->name('like-image');
 
 Route::group(['middleware' => ['auth']], function () {
 
+Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
+
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
 Route::get('download/{path}', 'CartController@download_image')->name('download');

@@ -202,7 +202,7 @@ border-radius: 4px;
 													  </div>
 									      	  </figcaption>
 									    </figure><figure class="figure col-lg-3 col-md-4 col-6">
-									      <a href="#" class="d-block mb-4 h-100">
+									      <a href="#imagemodal" data-toggle="modal" data-target="#imagemodal" class="d-block mb-4 h-100">
 									            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
 									          </a>
 									          <figcaption class="figure-caption">
@@ -434,13 +434,28 @@ border-radius: 4px;
 			</div>
 			<!-- END MAIN CONTENT -->
 		</div>
+
+		 <div class="modal fade " id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <img class="modal-content" src="" width="100px" height="100px"/>
+                    </div>
+                </div>
+            </div>
 		<!-- END MAIN -->
 		<div class="clearfix"></div>
 	@include('dashboard.footer')
 	</div>
 	<!-- END WRAPPER -->
 
-
+<script type="text/javascript">
+	$(function(){
+  $(".container img").on("click",function(){
+     var src = $(this).attr("src");
+     $(".modal-img").prop("src",src);
+  })
+})
+</script>
 	<!-- Javascript -->
 	<script src="{{asset('dashboard/assets/js/rating.js')}}"></script>
 	<script src="{{asset('dashboard/assets/vendor/jquery/jquery.min.js')}}"></script>
