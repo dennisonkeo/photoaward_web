@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('non-professional', function () {
+    return view('non-pro');
+});
+
+Route::get('professional', function () {
+    return view('professional');
+});
+
 Route::get('index', function () {
     return view('index');
 });
