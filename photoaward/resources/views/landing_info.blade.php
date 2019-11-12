@@ -560,10 +560,10 @@
   <!-- ngRepeat: asset in grid.assets -->
 
 @foreach($images as $image)
-  <div class="grid-assets__asset ng-scope mosaic-asset" data-film-poster="" data-max-height="3496" data-max-width="5000" gi-preview-film="" ng-class="[{ 'film-asset': asset.type == 'film' }, { 'mosaic-asset': asset.type == 'image' }]" ng-repeat="asset in grid.assets" style="width: 421px; height: 295px;">
+  <div class="grid-assets__asset ng-scope mosaic-asset" data-film-poster=""  gi-preview-film=""  style="width: 300px; height: 270px;">
     <a data-mosaic_asset_type="SimilarImages" href="{{ route('stock-preview',$image->id) }}">
     <!-- ngIf: asset.type == 'image' -->
-    <img class="grid-asset__img grid-asset__img--comp ng-scope" src="{{ asset('uploads') }}/{{ $image->imageName }}" alt="image" style="max-width: 100%; max-height: 295px;"><!-- end ngIf: asset.type == 'image' --><!-- ngIf: asset.type == 'film' -->
+    <img class="grid-asset__img grid-asset__img--comp ng-scope" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width: 100%;" alt="image" sizes="(max-width:548px) 100vw, 548px"><!-- end ngIf: asset.type == 'image' --><!-- ngIf: asset.type == 'film' -->
     <!-- ngIf: asset.type == 'film' -->
   </a>
 </div>
