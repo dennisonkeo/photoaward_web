@@ -92,24 +92,24 @@
 .bottom-border:after,
 .bottom-border:before {
   content: '';
-  width: 10%;
-  height: 10%;
+  width: 5%;
+  height: 5%;
 }
 .top-border:after,
 .top-border:before {
-  border-top: 7px solid #ff0051;
+  border-top: 7px solid #ff00ff;
 }
 .bottom-border:after,
 .bottom-border:before {
-  border-bottom: 7px solid #ff0051;
+  border-bottom: 7px solid #ff00ff;
 }
 .top-border:before,
 .bottom-border:before {
-  border-left: 7px solid #ff0051;
+  border-left: 7px solid #ff00ff;
 }
 .top-border:after,
 .bottom-border:after {
-  border-right: 7px solid #ff0051;
+  border-right: 7px solid #ff00ff;
 }
 
 .dot{
