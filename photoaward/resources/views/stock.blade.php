@@ -240,13 +240,13 @@ jQuery(document).ready(function($){
 	<div class="edd_download_inner">
 
 			<div class="edd_download_image">
-		<a href="{{ route('stock-view',$image->id) }}" title="">
+		<a href="{{ route('stock-preview',$image->id) }}" title="">
 			<img width="548" height="548" src="{{ asset('uploads') }}/{{ $image->imageName }}" class="attachment-product_main size-product_main wp-post-image" alt="" sizes="(max-width: 548px) 100vw, 548px" />		</a>
 		<div class="stocky_hover_details stocky_wish_list_on">
 
 			<div class="stocky_hover_lines">
 
-				<a href="{{ route('stock-view',$image->id) }}" title="" class="dcs_view_details">Details</a>
+				<a href="{{ route('stock-preview',$image->id) }}" title="" class="dcs_view_details">Details</a>
 
 				{{-- <a href="#" class="edd-wl-button  edd-wl-open-modal edd-wl-action before glyph-left " data-action="edd_wl_open_modal" data-download-id="169"    data-price-option="0"><i class="glyphicon glyphicon-heart"></i><span class="label">Add to wish list</span><span class="edd-loading"><i class="edd-icon-spinner edd-icon-spin"></i></span></a> --}}
 			</div>
