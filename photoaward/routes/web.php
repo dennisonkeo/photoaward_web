@@ -161,7 +161,23 @@ Route::get('like-images', 'UploadController@display_like')->name('like-image');
 
 Route::group(['middleware' => ['auth']], function () {
 
+Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
+
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
+
+Route::get('download/{path}', 'CartController@download_image')->name('download');
+
+Route::get('cart/mpesa/checkout', 'CartController@checkout')->name('cart/mpesa/checkout');
+
+Route::get('cart/checkout/download', 'CartController@show_download')->name('cart/checkout/download');
+
+Route::delete('cart/remove/{cart}', 'CartController@destroy')->name('cart/remove');
+
+Route::post('add-cart', 'CartController@addToCart')->name('add-cart');
+
+Route::get('cart/view-cart', 'CartController@index')->name('cart/view-cart');
+
+Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::get('profile', 'HomeController@profile')->name('profile');
 
