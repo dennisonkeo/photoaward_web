@@ -116,7 +116,7 @@
 					<!-- <div id="news" class="content flow-grid"> -->
 			
 			
-				<div class="entry">
+				<div class="entry" onclick="window.location='{{ url("professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic25.jpg" alt="news01.jpg">
@@ -133,7 +133,7 @@
 					</a>
 				</div>
 
-				<div class="entry">
+				<div class="entry" onclick="window.location='{{ url("non-professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic41.jpg" alt="news01.jpg">
