@@ -626,7 +626,7 @@ initializeClock('clockdiv2', deadline2);
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>Picture+254 Photo Contest runs <b>20th November, 2019 – 15th January, 2020. </b> </p>
+<p>Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
 

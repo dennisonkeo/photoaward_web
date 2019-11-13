@@ -226,5 +226,6 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 
   $("p").after("<center><span class=\"dot\"></span></center>");
 </script>
+
 </body>
 </html>
