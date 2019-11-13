@@ -4,9 +4,6 @@ use App\Purchase;
 
   if(Auth::check())
   {
-
-    <script src="{{ asset('js/right_click.js') }}"></script>
-    
     // $count = Cart::where('user_id',Auth::user()->id)
       //->where('token', session()->getId())->get(); 
 
@@ -28,6 +25,7 @@ else
   
 ?>
 
+<script src="{{ asset('js/right_click.js') }}"></script>
 <html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
 <head>
