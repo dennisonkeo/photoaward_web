@@ -4,6 +4,9 @@ use App\Purchase;
 
   if(Auth::check())
   {
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+    
     // $count = Cart::where('user_id',Auth::user()->id)
       //->where('token', session()->getId())->get(); 
 
