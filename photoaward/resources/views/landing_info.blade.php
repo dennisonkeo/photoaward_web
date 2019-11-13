@@ -482,16 +482,21 @@
     <section class="asset-details">
     <h2 class="asset-details__heading">DETAILS</h2>
     <div class="asset-details__details">
+    
+      <div class="asset-detail__name asset-detail__cell">Restrictions :</div>
+
+      <div class="asset-detail__value asset-detail__cell">Permitted to download or use image without prior approval.</div>
+
+
       <div class="asset-detail asset-detail--credit"><div class="asset-detail__name asset-detail__cell">Credit:</div>
       <div class="asset-detail__value asset-detail__cell"><a class="asset-detail__link" data-close-and-redirect="true" data-search-type="photographer" gi-track="track.adp.adpContributorClicked" href="#" rel="nofollow">Someone</a></div></div>
 
-      {{-- <div class="asset-detail asset-detail--asset-id"><div class="asset-detail__name asset-detail__cell">Creative #:</div><div class="asset-detail__value asset-detail__cell"><span class="asset-detail__asset-id">682897819</span></div></div> --}}
+      <div class="asset-detail asset-detail--asset-id"><div class="asset-detail__name asset-detail__cell">Creative #:</div><div class="asset-detail__value asset-detail__cell"><span class="asset-detail__asset-id">682897819</span></div></div> 
+ <div class="asset-detail__name asset-detail__cell">License Type:</div>
 
-      <div class="asset-detail asset-detail--license-type"></div>
+      <div class="asset-detail__value asset-detail__cell">Rights Managed</div>
 
-      {{-- <div class="asset-detail__name asset-detail__cell">License type:</div> --}}
-
-      <div class="asset-detail asset-detail--collection"></div>
+      <div class="asset-detail asset-detail--location"></div>
 
       <div class="asset-detail__name asset-detail__cell">Category:</div>
 
@@ -503,8 +508,19 @@
 
       <div class="asset-detail__value asset-detail__cell">Nairobi, Kenya</div>
 
-      {{-- <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Release info:</div><div class="asset-detail__value asset-detail__cell">Model and property released</div></div> --}}
+      <div class="asset-detail asset-detail--location"></div>
+
+      <div class="asset-detail__name asset-detail__cell">Release Info:</div>
+      <div class="asset-detail__value asset-detail__cell"> Not released.more information</div>
+
+      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Object Name:</div><div class="asset-detail__value asset-detail__cell">xxxx.jpg</div></div>
+
+      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Source:</div><div class="asset-detail__value asset-detail__cell">Picture254</div></div>
+
+    <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Max file size:</div><div class="asset-detail__value asset-detail__cell">2,000 px not larger than 10 MB. 
+</div></div>
     </div>
+
   </section>
 </div>
 </div
