@@ -1,3 +1,30 @@
+<?php
+use App\Cart;
+use App\Purchase;
+
+  if(Auth::check())
+  {
+    // $count = Cart::where('user_id',Auth::user()->id)
+      //->where('token', session()->getId())->get(); 
+
+    $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $count = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
+  }
+
+  if(Auth::check())
+{
+  $check = Cart::where('user_id',Auth::user()->id)
+      ->where('token', session()->getId())
+      ->where('upload_id',$upload->id)->first();
+}
+else
+{
+  $check = false;
+}
+  
+?>
+
 <html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
 <head>
@@ -216,8 +243,20 @@
 </svg><!-- ngIf: !isCartEmpty() --></div>
 </header-cart-count>
 
-<div class="header__desktop-item">CART(0)</div></a></div>
-<div class="header__group-item header__desktop-item header__group-item--last"><a class="text-link--highlight-treatment btn btn--hollow text-links--small header__group-btn" data-nav="nav_Account_SignIn" href="#">SIGN IN</a></div>
+<div class="header__desktop-item">CART(<span id="cart_count">
+                  @if(Auth::check())
+                    {{ count($count) }}
+                    @else
+                      0
+                    @endif
+                  </span>
+                    )
+
+@if(Auth::check())                  </div></a></div>
+<div class="header__group-item header__desktop-item header__group-item--last"><a class="text-link--highlight-treatment btn btn--hollow text-links--small header__group-btn" href="{{ route('logout') }}">LOGOUT</a></div>
+@else
+<div class="header__group-item header__desktop-item header__group-item--last"><a class="text-link--highlight-treatment btn btn--hollow text-links--small header__group-btn" href="#">SIGN IN</a></div>
+@endif
 
 <div class="header__group-item header__mobile-item header__group-item--last">
   <a class="action action--quick text-link--highlight-treatment header__link text-links--small" href="#">
@@ -443,16 +482,28 @@
   {{-- <div class="buy-card__currency ng-binding">KSH</div> --}}
 </div>
 
-  <!-- end ngIf: !state.showPreferredPrice --><!-- ngIf: canSaveWithUltraPacks() -->
-  {{-- <a class="btn buy-card-button btn--hollow btn--large ng-scope" ng-click="showUltraPackCard()" ng-if="canSaveWithUltraPacks()"><span class="ultra-button ng-binding" ng-bind-html="ultrapackPrice()">GET THIS IMAGE FOR <span class="buy-card__ultrapack-upsell-price">$450</span></span></a> --}}
-
-  <!-- end ngIf: canSaveWithUltraPacks() -->
 </aside><!-- ngIf: cartHasFinishedLoading -->
-<div class="buy-card__button-container ng-scope" id="sticky-cart__buy-card-button" ng-if="cartHasFinishedLoading"><div class="mini_download_history--container"></div><a class="gix-add-to-cart btn buy-card-button btn--primary btn--large" ng-click="addPricedAssetToCart()" ng-show="!isSizeInCart() &amp;&amp; !isAssetPricedInCart()">ADD TO CART</a>
+<div class="buy-card__button-container ng-scope" id="sticky-cart__buy-card-button">
+  <div class="mini_download_history--container">
+  </div>
+
+@if(!$check)
+  @if(Auth::check())
+  <a id="add_to_cart" class="gix-add-to-cart btn buy-card-button btn--primary btn--large" style="background: #ff00ff; border: none;" data-id="{{ $upload->id }}">ADD TO CART</a>
+
+  <a id="checkout" href="{{ route('cart/view-cart') }}" class="gix-add-to-cart btn buy-card-button btn--primary btn--large" style="background: #ff00ff; border: none; display: none;">CHECKOUT</a>
+
+  @else
+  <a onclick="window.location='{{ url("user-auth") }}'" class="gix-add-to-cart btn buy-card-button btn--primary btn--large" style="background: #ff00ff; border: none;">ADD TO CART</a>
+  @endif
+
+@else
+  <a href="{{ route('cart/view-cart') }}" class="gix-add-to-cart btn buy-card-button btn--primary btn--large" style="background: #ff00ff; border: none; dsplay: none;">CHECKOUT</a>
+@endif
 
 <a class="btn buy-card-button btn--primary btn--large ng-hide" ng-click="addPricedAssetToCartLimitedUse()" ng-show="showUpdateCartAction()">UPDATE CART</a>
 
-<a class="btn buy-card-button btn--primary btn--large ng-hide" data-close-and-redirect="" href="/purchase/cart" ng-show="isSizeInCart() &amp;&amp; !isLimitedUseInCart()">VIEW CART</a>
+<a class="btn buy-card-button btn--primary btn--large ng-hide" href="#">VIEW CART</a>
 
 {{-- <mobile-sticky-cart style="display: none;"  class="sticky-cart-info ng-scope sticky-cart-info--active" ng-class="{'sticky-cart-info--active ': showStickyCart}">
   <div class="sticky-cart-info__price ng-binding" ng-click="scrollToBuyCard()">Large $499<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.4549999px" height="8px" viewBox="0 0 13.4549999 8" style="enable-background:new 0 0 13.4549999 8;;enable-background:new 0 0 13.4549999 8;" xml:space="preserve" class="sticky-cart-info-price__icon" gi-icon="unisporkal/getty/arrow_down">
@@ -1027,5 +1078,53 @@ window.notificationsContext = 'eyJhdXRoIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcGMzT
         console.log($(this).find('.radioss'));
         $('#dis_pay').text($(this).find('.asset-size-item-price__price').text());
   });
+
+
+      $("#add_to_cart").click(function(){
+
+ // $.ajaxSetup({
+ //      headers: {
+ //            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+ //        }
+ //    });
+
+      
+        $.ajax({
+        url: '{{ route('add-cart') }}',
+        type: 'POST',
+        data: {
+
+          upload_id: $(this).data('id'),
+          _token: '{{csrf_token()}}',
+
+        },
+        success: function(response){
+          if(response !="")
+          {
+            
+            $('#cart_count').html(response);
+
+            // $('#my_alert').css("display","block");
+
+        //     setTimeout(function(){
+        //          $('#my_alert').fadeOut('fast');
+            
+        // }, 2000);
+
+          $('#checkout').css("display","block");
+          
+          $('#add_to_cart').css("display","none");
+        }
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          alert(errorThrown);
+        }
+      });
+
+        return false;
+    });
+
 </script>
 </body></html>
