@@ -362,9 +362,9 @@
 <div class="buy-card__sizes-container ng-scope" ng-if="!selectedOption.sizes.isEmpty()">
   <section class="buy-card__asset-sizes">
   <div class="asset-sizes__size-table"><!-- ngRepeat: size in getAssetSizes() -->
-    <div class="asset-size-table__size-item standard-radio-btn__container ng-scope" id="comp" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()">
+    <div  class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope" id="comp" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()">
       <div class="asset-size-item__details">
-        <input class="standard-radio-btn asset-size-item__radio-btn" id="comp" name="size" ng-checked="size.name == selectedSize.name" type="radio">
+        <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="comp" name="size" type="radio">
         <div class="asset-size-item__description">
           <div class="asset-size-item__name ng-binding">Extra small<!-- ngIf: assetType == 'film' -->
             
@@ -379,14 +379,14 @@
       </div>
 
       <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-        <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">Ksh300.00
+        <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$3.00
       </div><!-- end ngIf: !state.showPreferredPrice -->
     </div>
     </div>
     <!-- end ngRepeat: size in getAssetSizes() -->
-    <div class="asset-size-table__size-item standard-radio-btn__container ng-scope" id="low" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()">
+    <div class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope" id="low" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()">
       <div class="asset-size-item__details">
-        <input class="standard-radio-btn asset-size-item__radio-btn" id="low" name="size" ng-checked="size.name == selectedSize.name" type="radio">
+        <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="low" name="size" ng-checked="size.name == selectedSize.name" type="radio">
         <div class="asset-size-item__description">
           <div class="asset-size-item__name ng-binding">Small<!-- ngIf: assetType == 'film' -->
             
@@ -401,29 +401,36 @@
 </div>
 </div>
     <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">Ksh500.00</div><!-- end ngIf: !state.showPreferredPrice -->
+      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$5.00</div><!-- end ngIf: !state.showPreferredPrice -->
   </div>
   </div>
     <!-- end ngRepeat: size in getAssetSizes() -->
 
-    <div class="asset-size-table__size-item standard-radio-btn__container ng-scope" id="medium" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details"><input class="standard-radio-btn asset-size-item__radio-btn" id="medium" name="size" ng-checked="size.name == selectedSize.name" type="radio"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Medium<!-- ngIf: assetType == 'film' --></div>
+    <div class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope" id="medium" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details"><input class="radioss standard-radio-btn asset-size-item__radio-btn" id="medium" name="size" ng-checked="size.name == selectedSize.name" type="radio"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Medium<!-- ngIf: assetType == 'film' --></div>
     <div class="asset-size-item__size-details"><!-- ngIf: assetType == 'image' -->
       <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">2125 x 1416 px (7.08 x 4.72 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>3.0 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' --></div>
   </div>
 </div>
-<div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice --><div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">Ksh1000.00</div><!-- end ngIf: !state.showPreferredPrice --></div>
+<div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
+  <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$10.00</div>
+  <!-- end ngIf: !state.showPreferredPrice -->
+</div>
   </div>
 
     <!-- end ngRepeat: size in getAssetSizes() -->
 
-    <div style="background: #fff;" class="asset-size-table__size-item standard-radio-btn__container ng-scope is-selected" id="super" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details"><input class="standard-radio-btn asset-size-item__radio-btn" id="super" name="size" ng-checked="size.name == selectedSize.name" type="radio" checked="checked"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Large<!-- ngIf: assetType == 'film' -->
+    <div style="background: #f3f3f3;" class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope is-selected" id="super" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details">
+      <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="super" name="size" type="radio" checked="checked"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Large<!-- ngIf: assetType == 'film' -->
       
     </div>
     <div class="asset-size-item__size-details" style="display: none;"><!-- ngIf: assetType == 'image' -->
       <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">5603 x 3735 px (18.68 x 12.45 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>20.9 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' -->
     </div>
-  </div></div>
-    <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice --><div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">Ksh2000.00</div><!-- end ngIf: !state.showPreferredPrice -->
+  </div>
+</div>
+    <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
+      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$20.00</div>
+    <!-- end ngIf: !state.showPreferredPrice -->
   </div>
   </div>
     <!-- end ngRepeat: size in getAssetSizes() -->
@@ -431,9 +438,9 @@
 </section>
 <!-- ngIf: canViewLimitedUseProducts() --><!-- ngIf: isPurchaseable && buyCard.type == 'license' -->
 <div class="buy-card__button-wrapper ng-scope" ng-if="isPurchaseable &amp;&amp; buyCard.type == 'license'"><aside class="buy-card__pricing-info" style="display: non;"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-  <div class="buy-card__pricing ng-scope" style="display: none;">
-    <div  class="buy-card__price ng-binding">Ksh2000.00</div>
-  <div class="buy-card__currency ng-binding">KSH</div>
+  <div  class="buy-card__pricing ng-scope" style="dispay: none;">
+    <div id="dis_pay"  class="buy-card__price ng-binding">$20.00</div>
+  {{-- <div class="buy-card__currency ng-binding">KSH</div> --}}
 </div>
 
   <!-- end ngIf: !state.showPreferredPrice --><!-- ngIf: canSaveWithUltraPacks() -->
@@ -447,7 +454,7 @@
 
 <a class="btn buy-card-button btn--primary btn--large ng-hide" data-close-and-redirect="" href="/purchase/cart" ng-show="isSizeInCart() &amp;&amp; !isLimitedUseInCart()">VIEW CART</a>
 
-<mobile-sticky-cart style="display: none;"  class="sticky-cart-info ng-scope sticky-cart-info--active" ng-class="{'sticky-cart-info--active ': showStickyCart}">
+{{-- <mobile-sticky-cart style="display: none;"  class="sticky-cart-info ng-scope sticky-cart-info--active" ng-class="{'sticky-cart-info--active ': showStickyCart}">
   <div class="sticky-cart-info__price ng-binding" ng-click="scrollToBuyCard()">Large $499<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.4549999px" height="8px" viewBox="0 0 13.4549999 8" style="enable-background:new 0 0 13.4549999 8;;enable-background:new 0 0 13.4549999 8;" xml:space="preserve" class="sticky-cart-info-price__icon" gi-icon="unisporkal/getty/arrow_down">
 <polygon points="13.4545298,1.272583 12.18188,0 6.7272339,5.4538569 1.272583,0 0,1.272583 6.7269292,8 
 	6.7272949,7.9996338 6.7276001,8 ">
@@ -457,7 +464,7 @@
 </div>
 
 <div class="sticky-cart-info__action"><a class="gix-add-to-cart btn buy-card-button btn--primary btn--large" ng-click="addPricedAssetToCart()" ng-show="!isSizeInCart() &amp;&amp; !isAssetPricedInCart()">ADD TO CART</a><a class="btn buy-card-button btn--primary btn--large ng-hide" ng-click="addPricedAssetToCartLimitedUse()" ng-show="showUpdateCartAction()">UPDATE CART</a><a class="btn buy-card-button btn--primary btn--large ng-hide" data-close-and-redirect="" href="/purchase/cart" ng-show="isSizeInCart() &amp;&amp; !isLimitedUseInCart()">VIEW CART</a></div>
-</mobile-sticky-cart>
+</mobile-sticky-cart> --}}
 </div><!-- end ngIf: cartHasFinishedLoading -->
 </div>
 <!-- end ngIf: isPurchaseable && buyCard.type == 'license' -->
@@ -556,11 +563,11 @@
     </g>
 </svg></div></div>
 
-<div class="assets-grid__assets assets gi-bricks" data-row-height="300">
+<div class="assets-grid__assets assets gi-bricks" dta-row-height="300">
   <!-- ngRepeat: asset in grid.assets -->
 
 @foreach($images as $image)
-  <div class="grid-assets__asset ng-scope mosaic-asset" data-film-poster=""  gi-preview-film=""  style="width: 300px; height: 270px;">
+  <div class="grid-assets__asset ng-scope mosaic-asset" data-film-poster=""  gi-preview-film=""  style="width: 300px; height: 280px;">
     <a data-mosaic_asset_type="SimilarImages" href="{{ route('stock-preview',$image->id) }}">
     <!-- ngIf: asset.type == 'image' -->
     <img class="grid-asset__img grid-asset__img--comp ng-scope" src="{{ asset('uploads') }}/{{ $image->imageName }}" style="width: 100%;" alt="image" sizes="(max-width:548px) 100vw, 548px"><!-- end ngIf: asset.type == 'image' --><!-- ngIf: asset.type == 'film' -->
@@ -1003,21 +1010,22 @@ window.currentSite.isThinkStock = false;
 window.notificationsContext = 'eyJhdXRoIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcGMzTWlPaUozZDNjdVoyVjBkSGxwYldGblpYTXVZMjl0SWl3aVpYaHdJam94TlRjek5EZzBNREU1ZlEuQm9PZnlkNWx2YnppRnZQNi1zaFVLQUFOa2g5LUc4YlFvSWFsVXhXYmhQayIsInBheWxvYWQiOnsiY29tcGFueUlkIjpudWxsLCJjb3VudHJ5IjoiS0VOIiwidGxkX2NvdW50cnkiOnsiZGlzcGxheV9uYW1lIjpudWxsLCJsb2NhbGUiOiJlbi11cyJ9LCJjdXN0b21lcklkIjowLCJkb3dubG9hZHNfcmVtYWluaW5nIjpudWxsLCJleHBpcmluZ19iYW5uZXIiOiJub25lIiwic3Vic2NyaXB0aW9uX2RheXNfdG9fZXhwaXJhdGlvbiI6MCwic3Vic2NyaXB0aW9uX2R1cmF0aW9uIjpmYWxzZSwic3Vic2NyaXB0aW9uX3BlbmRpbmciOmZhbHNlLCJzdWJzY3JpcHRpb25fc3RhdHVzIjpmYWxzZSwiaGFzUFAiOm51bGwsImlwIjoiNDEuNzYuMTY4LjEzMyIsImlzX3RlYW1fbWVtYmVyIjpmYWxzZSwiZW1haWxfYWRkcmVzcyI6bnVsbCwibGFuZ3VhZ2UiOiJlbiIsInBhZ2UiOiJhc3NldF9kZXRhaWwiLCJwYSI6ZmFsc2UsImxvY2FsZSI6ImVuLXVzIiwicGFQcmV2aWV3IjpmYWxzZSwic2l0ZSI6ImdldHR5IiwidmlzaXRvcklkIjoiNGJiMWE5YjgtNWQxNS00MmFiLWI5NDMtNWVhODBkZmNjNTVkIiwicHJvbW9fZWxpZ2liaWxpdHkiOiJub25lIiwic2FsZSI6ZmFsc2UsImFkcF9jb2xsZWN0aW9uIjoib3RoZXIiLCJleHBlcmllbmNlcyI6eyJhbm5vdW5jZV9icmF6aWxfc2l0ZSI6ZmFsc2UsImFubm91bmNlX2hvbmdfa29uZ19zaXRlIjpmYWxzZSwiYW5ub3VuY2VfbGF0YW1fc2l0ZSI6ZmFsc2UsImV4cGlyaW5nX3N1YnNjcmlwdGlvbiI6ZmFsc2UsImdlb19wcmljaW5nX2xvd19wcmljZXMiOmZhbHNlLCJnZW9fcHJpY2luZ19sb3dfcHJpY2VzXzFCIjpmYWxzZSwiZ2VvX3ByaWNpbmdfcHJvbW8iOmZhbHNlLCJnZW9fcHJpY2luZ19wcm9tb18xQiI6ZmFsc2UsImlibSI6dHJ1ZSwibmV3bHlfcmVnaXN0ZXJlZCI6ZmFsc2UsInBlcmIiOnRydWUsInBwUHJvbW8iOnRydWUsInJlbmV3X2NvdXBvbiI6ZmFsc2UsInJtX3N1bnNldCI6dHJ1ZSwic3VzcGVuZGVkX3N1YnNjcmlwdGlvbiI6ZmFsc2V9LCJzZWdtZW50YXRpb24iOnt9fX0=';</script>
 
 
-<script type="text/javascript" id="">try{eventBus.on("track.singleDownload",pushToDL("ebSingleDownload")),eventBus.on("track.batchDownload",pushToDL("ebBatchDownload")),eventBus.on("track.individual_download",pushToDL("ebIndividualDownload")),eventBus.on("track.bulk_download",pushToDL("ebBulkDownload")),eventBus.on("track.istock_download_confirmed",pushToDL("ebiStockDownloadConfirmed"))}catch(a){console.log("eventBus not present")}function pushToDL(a){return function(){window.dataLayer.push({event:a})}};</script><script type="text/javascript" id="">(function(){(function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))})(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1033699336722348");fbq("track","PageView")})();</script><script type="text/javascript" id="">(function(){(function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))})(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1593519234292496");fbq("track","PageView")})();</script><script type="text/javascript" id="">(function(){var a=google_tag_manager["GTM-P4WB37"].macro(362);window._elqQ=window._elqQ||[];window._elqQ.push(["elqSetSiteId",a]);a=google_tag_manager["GTM-P4WB37"].macro(367)||void 0;var b=google_tag_manager["GTM-P4WB37"].macro(368);a?window._elqQ.push(["elqTrackPageView",a]):b&&window._elqQ.push(["elqTrackPageView"]);a=("https:"==document.location.protocol?"https":"http")+"://img.en25.com/i/elqCfg.min.js";b=google_tag_manager["GTM-P4WB37"].macro(369);b(a)})();</script><script type="text/javascript" id="">(function(g,e,a,f,b,c,d){b.ire_o=a;b[a]=b[a]||function(){(b[a].a=b[a].a||[]).push(arguments)};c=f.createElement(e);d=f.getElementsByTagName(e)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})("//d.impactradius-event.com/A218913-dc0b-43b5-92cf-b5abffdabaa21.js","script","ire",document,window);ire("identify",{customerId:google_tag_manager["GTM-P4WB37"].macro(370),customerEmail:""});</script><script type="text/javascript" id="">(function(){var a=window.location.host,c=a.indexOf(".")+1,b=window.location.search;a=a.substring(c);-1<b.indexOf("esource\x3dlinkconn")&&(document.cookie="Getty_esource_linkconn\x3dlinkconn;;domain\x3d"+a+";max-age\x3d2592000;path\x3d/");-1<b.indexOf("esource\x3dAFF_GI_Linkconn")&&(document.cookie="Getty_esource_linkconn\x3dlinkconn;;domain\x3d"+a+";max-age\x3d2592000;path\x3d/");-1<b.indexOf("esource\x3dlinkshare")&&(document.cookie="Getty_esource_linkconn\x3dlinkshare;;domain\x3d"+a+";max-age\x3d2592000;path\x3d/");
--1<b.indexOf("esource\x3dwebgains")&&(document.cookie="Getty_esource_linkconn\x3dwebgains;;domain\x3d"+a+";max-age\x3d2592000;path\x3d/");-1<b.indexOf("esource\x3dAFF_GI_PHG")&&(document.cookie="Getty_esource_linkconn\x3dphg;;domain\x3d"+a+";max-age\x3d2592000;path\x3d/")})();</script><script type="text/javascript" id="">(function(){function b(a){dataLayer=window.dataLayer||[];a=a||"";dataLayer.push({event:"adwordsDownloadGI",adwordsDownloadLabel:a});console.log("GI Adwords for Downloads Deployed")}try{var c=function(){console.log("GI Adwords download detected");if(s.products)for(pdts=s.products.split(","),len=pdts.length,i=0;i<len;i++)pdts[i]=pdts[i].toLowerCase(),-1<pdts[i].indexOf("image")?b("UrOKCLfq8QkQ-cv00gM"):(-1<pdts[i].indexOf("film")||-1<pdts[i].indexOf("video"))&&b("ArhVCMfo8QkQ-cv00gM");console.log("END of GI Adwords download")};
-eventBus.on("track.singleDownload",c);eventBus.on("track.batchDownload",c);eventBus.on("track.individual_download",c);eventBus.on("track.bulk_download",c);$(document).on("click",function(a){try{-1<a.target.className.indexOf("download-link")&&-1<a.target.innerHTML.indexOf("clip")?b("ArhVCMfo8QkQ-cv00gM"):-1<a.target.className.indexOf("next")&&-1<a.target.innerHTML.indexOf("Download")&&setTimeout(function(){if(s.products)for(pdts=s.products.split(","),len=pdts.length,i=0;i<len;i++)b("UrOKCLfq8QkQ-cv00gM")},
-1E3)}catch(d){}})}catch(a){console.log("Adwords Download Tag Error: "+a)}})();</script><script type="text/javascript" id="">(function(){try{if(document.referrer){var a=1E12*Math.random(),b=google_tag_manager["GTM-P4WB37"].macro(371);b("//ad.doubleclick.net/adj/N5192.197812NSO.CODESRV/B8309251.112418102;dcadv\x3d4533558;sz\x3d1x2;ord\x3d"+a+"?")}}catch(c){}})();</script>
-<script type="text/javascript" id="">(function(){(function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))})(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","106261433049264");fbq("track","PageView")})();</script><script type="text/javascript" id="">(function(){var e="",a="25",d="ZN_6QBErv3uhXxXrJH",b="gettyimages",f=d.toLowerCase()+"-"+b.toLowerCase(),g=function(a,e,d,b){this.get=function(c){c+="\x3d";for(var a=document.cookie.split(";"),d=0,e=a.length;d<e;d++){for(var b=a[d];" "==b.charAt(0);)b=b.substring(1,b.length);if(0===b.indexOf(c))return b.substring(c.length,b.length)}return null};this.set=function(c,b){var a=new Date;a.setTime(a.getTime()+6048E5);a="; expires\x3d"+a.toGMTString();document.cookie=c+"\x3d"+b+a+"; path\x3d/;"};this.check=
-function(){var c=this.get(d);if(c)c=c.split(":");else if(100!=a)"v"==e&&(a=Math.random()>=a/100?0:100),c=[e,a,0],this.set(d,c.join(":"));else return!0;var b=c[1];if(100==b)return!0;switch(c[0]){case "v":return!1;case "r":return b=c[2]%Math.floor(100/b),c[2]++,this.set(d,c.join(":")),!b}return!0};this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=b+"\x26t\x3d"+(new Date).getTime();document.body&&document.body.appendChild(a)}}};b=e||d;d=e?"Q_SIID\x3d"+
-e:"Q_ZID\x3d"+d;e="QSI_S_"+b;f="//"+f+".siteintercept.qualtrics.com/WRSiteInterceptEngine/?"+d+"\x26Q_LOC\x3d"+encodeURIComponent(window.location.href);(new g(a,"r",e,f)).go();a=document.getElementById(b);null===a&&(a=document.createElement("div"),a.id=b,document.body.appendChild(a))})();</script><div id="ZN_6QBErv3uhXxXrJH"></div><script type="text/javascript" id="">(function(){function c(){var b=window.tracking_data.page_name||"pagename_unavailable",a=google_tag_manager["GTM-P4WB37"].macro(372)("gtm_ppn");a&&b!=a&&(a=google_tag_manager["GTM-P4WB37"].macro(373),a("gtm_ppn",b,30))}window.addEventListener("beforeunload",c)})();</script><script type="text/javascript" id="">(function(){function c(){window._elqQ=window._elqQ||[];fakeUrl="";void 0!==tracking_data.asset_usage&&(fakeUrl="http://www.gettyimages.com/atc-"+tracking_data.asset_usage+"\x26asset_id\x3d"+tracking_data.asset_id,window._elqQ.push(["elqSetSiteId",b]),window._elqQ.push(["elqTrackPageView",fakeUrl]))}function d(){window._elqQ=window._elqQ||[];fakeUrl="";setTimeout(function(){if("scAdd"===s.events&&s.products){var a=s.products;a=a.toLowerCase();-1<a.indexOf("creative")?fakeUrl="http://www.gettyimages.com/atc-creative":
--1<a.indexOf("editorial")&&(fakeUrl="http://www.gettyimages.com/atc-editorial")}window._elqQ.push(["elqSetSiteId",b]);window._elqQ.push(["elqTrackPageView",fakeUrl])},1E3)}try{var e=google_tag_manager["GTM-P4WB37"].macro(374),f=e.toLowerCase(),b=google_tag_manager["GTM-P4WB37"].macro(375);if(-1<f.indexOf("insidedetail"))eventBus.on("addToCartSuccess",c);else eventBus.on("gallery.addToCart",d)}catch(a){}})();</script><script type="text/javascript" id="">(function(){function a(){fakeUrl="http://www.gettyimages.com/board-created";custom_site_id=google_tag_manager["GTM-P4WB37"].macro(376);window._elqQ=window._elqQ||[];window._elqQ.push(["elqSetSiteId",custom_site_id]);window._elqQ.push(["elqTrackPageView",fakeUrl])}try{eventBus.on("favorites.newBoard",a),eventBus.on("collaboration.newBoard",a)}catch(b){}})();</script><script type="text/javascript" id="">_airpr={id:"467160",ga_account_preset:"UA-85194766-1"};(function(c,d,a,b){a=c.createElement(d);a.async=1;a.src="//px.airpr.com/airpr.js";b=c.getElementsByTagName(d)[0];b.parentNode.insertBefore(a,b)})(document,"script");</script>
-<script type="text/javascript" id="">!function(b){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var a=window.pintrk;a.queue=[];a.version="3.0";a=document.createElement("script");a.async=!0;a.src=b;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}("https://s.pinimg.com/ct/core.js");pintrk("load","2613782675190");</script>
+
 <noscript>
 <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2615674120364&amp;noscript=1">
 </noscript>
 
 <script type="text/javascript" id="">(function(){(function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))})(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","106261433049264");fbq("track","PageView")})();</script>
 
-<noscript>
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=106261433049264&amp;ev=PageView&amp;noscript=1">
-</noscript></body></html>
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+<script type="text/javascript">
+
+  $('.price_list').click(function(event) {
+        $('.price_list').css("background", "#fff");
+        $(this).css("background", "#f3f3f3");
+        $(this).find('.radioss').prop('checked', 'checked');
+        console.log($(this).find('.radioss'));
+        $('#dis_pay').text($(this).find('.asset-size-item-price__price').text());
+  });
+</script>
+</body></html>
