@@ -70,6 +70,13 @@
 .entry{
 	width: 100%;
 }
+body{
+	background: #f3f3f3;
+}
+
+.flow-grid.col-1 .flow-grid-col{ width:70%; }
+.flow-grid.col-2 .flow-grid-col{ width:70%; }
+
 
 </style>
 </head>
@@ -103,17 +110,11 @@
 	</div>
 </div>
 <div class="parallax"></div>
-	<div id="contents-wrap">
-		<div id="contents">
+	<div id="contents-wrap" >
+		<div id="contents" >
 
 
-					<div id="news" class="content flow-grid">
-
-
-
-			
-
-					<!-- <div id="news" class="content flow-grid"> -->
+					<div id="news" class="content flow-grid" style="width: 150%; ">
 			
 			
 				<div class="entry" onclick="window.location='{{ url("professional") }}'">

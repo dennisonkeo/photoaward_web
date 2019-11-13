@@ -1013,7 +1013,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
 <p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
 Contestants are not allowed to contact us about the status of entries or judging.</p>
- <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
+ <p><a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a></p>
 <div class="bottom-border"></div>
 </div>
  </div>
