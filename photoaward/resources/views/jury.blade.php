@@ -121,19 +121,17 @@
 <div class="sections" >
 	<div class="section section-tabled" style="border-radius: 10px;">
 	<div class="tabled-th">
-		<img src="images/jury1.PNG" alt="image" style="height: 241px; border-radius: 5px;">
+		<img src="images/jury4.jpg" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
 		<div lang="en" style="padding-left: 0px;">
-			<h2 class="header2">Aida Muluneh</h2>
+			<h2 class="header2">Micheal Stanley Jones</h2>
 			<p class="catch">
-				Exhibiting Artist
+				Co-Secretary to UN Alliance
 			</p>
 			<p class="text_line">
-				Born in Ethiopia in 1974, Aïda let the country at a young age and spent an itinerant childhood
 
-				between Yemen and England. After several years in a boarding school in Cyprus, she finally
-				 
+				Michael is the co-Secretary to UN Alliance for Sustainable Fashion and an advocate for engagement with the textile and fashion sectors on the 2030 Agenda for Sustainable Development. Michael serves  
 
 
 				<a href="#" class="btn btn-danger" style="color: #b7eb34; border-radius: 3px;" id="hide">More..</a>
@@ -141,33 +139,14 @@
 
 				<span id="more" style="display: none;">
 
-				settled in Canada in 1985. In 2000, she graduated with a degree from the Communication
-				Department with a major in Film from Howard University in Washington D.C. A
+				with the global project Poverty-Environment Action for Sustainable Development Goals (2018-2022), the successor to UNDP−UN Environment Poverty-Environment Initiative (2013-2018), based in Nairobi.Before joining the Secretariat of the Basel, Rotterdam and Stockholm Conventions as Public Information Officer in 2009, he served with UN Economic Commission for Europe in the Secretariat of the Convention on Access to Information, Public Participation in Decision-making and Access to Justice in Environmental Matters (Aarhus Convention 1998). I worked to bring the Kiev Protocol on Pollutant Release and Transfer Registers (2003) into force and managed the Aarhus Clearinghouse for Environmental Democracy.
 
-				ter graduation
-				she worked as a photojournalist at the Washington Post, however her work can be found in
-				several international publications.Also as an exhibiting artist, Aida’s work has been shown in
-				South Africa, Mali, Senegal, Egypt, Canada, United States of America, France, Germany,
-				England, China,to name a few countries. 
+				Outside the United Nations, Michael served in academia, business, civil society and the public sector. 
 
-				A collection of her images can be found in the
-				permanent collection atthe Smithsonian’s National Museum of African Art, Hood Museum and
-				the Museum of Biblical Artin the United States. She is the 2007 recipient ofthe European Union
-				Prize in the Rencontres Africaines de la Photographie, in Bamako, Mali,the 2010 winner ofthe
-				CRAF International Award of Photography in Spilimbergo, Italy, and a 2018 CatchLight Fellow
-				in San Francisco, USA. As one ofthe leading experts on photography from Africa, she has been a
-				jury member on several photography competitions most notably the Sony World Photography
-				Awards 2017 and the World Press Photo Contest 2017. She has also been on various panel
-				discussions on photography in events such as African Union cultural summit, Art Basel and
-				Tedx/Johannesburg. Moreover, she currently serves as a Canon Ambassador. Aida is the
-				founder and director ofthe Addis Foto Fest(AFF),the firstinternational photography festival
-				in East Africa hosted since 2010 in the city of Addis Ababa. She continues to educate, curate and
-				develop cultural projects with local and international institutions through her company
-				DESTA (Developing and Educating Society Through Art) For Africa Creative Consulting PLC
+				Michael is a native of Solano County, California and hold a Master of Arts in Politics degree from The Claremont Graduate University. My passions include nature and poetry.
 
-				(DFA) in Addis Ababa, Ethiopia.
 
-				AIDA MULUNEH
+				Micheal Stanley Jones.
 
 
 				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 3px;" id="less">Less..</a>
@@ -268,30 +247,50 @@
 
 		<div class="section section-tabled" style="border-radius: 10px;">
 	<div class="tabled-th" style="float: right;">
-		<img src="images/jury4.jpg" alt="image" style="height: 241px; border-radius: 5px;">
+		<img src="images/jury1.png" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
 		<div lang="en" style="padding-left: 50px;">
-			<h2 class="header2">Micheal Stanley Jones</h2>
+			<h2 class="header2"> Aida Muluneh </h2>
 			<p class="catch">
-				 Co-Secretary to UN Alliance
+				 Exhibiting Artist
 			</p>
 			<p class="text_line">
-				Michael is the co-Secretary to UN Alliance for Sustainable Fashion and an advocate for engagement with the textile and fashion sectors on the 2030 Agenda for Sustainable Development. Michael serves 
-
+				Born in Ethiopia in 1974, Aïda let the country at a young age and spent an itinerant childhood
+				between Yemen and England. After several years in a boarding school in Cyprus, she finally
+				
 				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 5px;" id="hide4" onclick="showText()">More..</a>
 
 
 				<span id="more4" style="display: none;"> 
 
-				with the global project Poverty-Environment Action for Sustainable Development Goals (2018-2022), the successor to UNDP−UN Environment Poverty-Environment Initiative (2013-2018), based in Nairobi.Before joining the Secretariat of the Basel, Rotterdam and Stockholm Conventions as Public Information Officer in 2009, he served with UN Economic Commission for Europe in the Secretariat of the Convention on Access to Information, Public Participation in Decision-making and Access to Justice in Environmental Matters (Aarhus Convention 1998). I worked to bring the Kiev Protocol on Pollutant Release and Transfer Registers (2003) into force and managed the Aarhus Clearinghouse for Environmental Democracy.
+				settled in Canada in 1985. In 2000, she graduated with a degree from the Communication
+				Department with a major in Film from Howard University in Washington D.C. A
 
-				Outside the United Nations, Michael served in academia, business, civil society and the public sector. 
+				ter graduation
+				she worked as a photojournalist at the Washington Post, however her work can be found in
+				several international publications.Also as an exhibiting artist, Aida’s work has been shown in
+				South Africa, Mali, Senegal, Egypt, Canada, United States of America, France, Germany,
+				England, China,to name a few countries. 
 
-				Michael is a native of Solano County, California and hold a Master of Arts in Politics degree from The Claremont Graduate University. My passions include nature and poetry.
+				A collection of her images can be found in the
+				permanent collection atthe Smithsonian’s National Museum of African Art, Hood Museum and
+				the Museum of Biblical Artin the United States. She is the 2007 recipient ofthe European Union
+				Prize in the Rencontres Africaines de la Photographie, in Bamako, Mali,the 2010 winner ofthe
+				CRAF International Award of Photography in Spilimbergo, Italy, and a 2018 CatchLight Fellow
+				in San Francisco, USA. As one ofthe leading experts on photography from Africa, she has been a
+				jury member on several photography competitions most notably the Sony World Photography
+				Awards 2017 and the World Press Photo Contest 2017. She has also been on various panel
+				discussions on photography in events such as African Union cultural summit, Art Basel and
+				Tedx/Johannesburg. Moreover, she currently serves as a Canon Ambassador. Aida is the
+				founder and director ofthe Addis Foto Fest(AFF),the firstinternational photography festival
+				in East Africa hosted since 2010 in the city of Addis Ababa. She continues to educate, curate and
+				develop cultural projects with local and international institutions through her company
+				DESTA (Developing and Educating Society Through Art) For Africa Creative Consulting PLC
 
+				(DFA) in Addis Ababa, Ethiopia.
 
-				Micheal Stanley Jones.
+				AIDA MULUNEH
 				
 				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 3px;" id="less4" >Less..</a>
 
