@@ -11,6 +11,14 @@
 |
 */
 
+Route::get('non-professional', function () {
+    return view('non-pro');
+});
+
+Route::get('professional', function () {
+    return view('professional');
+});
+
 Route::get('index', function () {
     return view('index');
 });
@@ -80,6 +88,14 @@ Route::get('categories', function () {
     return view('categories');
 });
 
+Route::get('landing', function () {
+    return view('landing');
+});
+
+Route::get('landing-info', function () {
+    return view('landing_info');
+});
+
 Route::get('slider', function () {
     return view('slider');
 });
@@ -134,6 +150,8 @@ Route::get('votingg', function () {
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
+
+Route::get('stock-preview/{upload}', 'UploadController@stock_view_image')->name('stock-preview');
 
 Route::get('about', 'HomeController@about')->name('about');
 

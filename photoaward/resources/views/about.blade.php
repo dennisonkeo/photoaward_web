@@ -297,24 +297,24 @@ initializeClock('clockdiv2', deadline2);
 .bottom-border:after,
 .bottom-border:before {
   content: '';
-  width: 15%;
-  height: 15%;
+  width: 5%;
+  height: 10%;
 }
 .top-border:after,
 .top-border:before {
-  border-top: 7px solid #ff0051;
+  border-top: 7px solid #ff00ff;
 }
 .bottom-border:after,
 .bottom-border:before {
-  border-bottom: 7px solid #ff0051;
+  border-bottom: 7px solid #ff00ff;
 }
 .top-border:before,
 .bottom-border:before {
-  border-left: 7px solid #ff0051;
+  border-left: 7px solid #ff00ff;
 }
 .top-border:after,
 .bottom-border:after {
-  border-right: 7px solid #ff0051;
+  border-right: 7px solid #ff00ff;
 }
 .dot{
   height: 10px;
@@ -626,13 +626,13 @@ initializeClock('clockdiv2', deadline2);
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>Picture+254 Photo Contest runs <b>20th November, 2019 – 15th January, 2020. </b> </p>
+<p>Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
+<h4 style="font-weight: bold;">Why enter?</h4>
 
 <p></p>
 
@@ -708,12 +708,25 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p>Every contestant must sign up for the competition.
+<p>
+Every contestant must sign up for the competition.
 </p>
-<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
-<p>There is no limit to how many photographs you can enter per category.</p> 
-<p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p><a onclick="window.location='{{ url("guidelines") }}'"  href="#">Read more.</a>
+<p>
+You cannot sign up more than one contestant per phone number or e-mail address. 
+</p>
+<p>
+There is no limit to how many photographs you can enter per category
+</p> 
+<p>
+You cannot send entries through the e-mail.
+</p>
+<p>
+No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+</p>
+<p>
+<a onclick="window.location='{{ url("guidelines") }}'"  href="#">Read more.</a>
+</p>
+
 <div class="bottom-border"></div>
 </div>
 </div>
@@ -1000,7 +1013,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
 <p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
 Contestants are not allowed to contact us about the status of entries or judging.</p>
- <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
+ <p><a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a></p>
 <div class="bottom-border"></div>
 </div>
  </div>

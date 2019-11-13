@@ -121,9 +121,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="col-xs-12 col-sm-12 col-md-9 category-info">
             <div class="desc">
-                The judges are looking for the ability to capture three-dimensional worlds in two dimensions, whilst retaining the original qualities.  Light, angle and scale are key factors but the subject matter can be wide-ranging.
+                {{$category->description}}
             </div>
-            <div class="requirements">
+<!--             <div class="requirements">
                 <span class="label label-default">Category entry requirements</span>
                 <p>
                     You need to enter a minimum of <strong>5</strong> images into this category<br/>You can enter a maximum of <strong>10</strong> images into this category
@@ -133,7 +133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>
                     All fields marked with <span class="label label-default">Required</span> need to be completed before you can submit your entry.
                 </p>
-            </div>
+            </div> -->
         </div>
     </div> <!-- End row -->
 

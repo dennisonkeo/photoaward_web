@@ -67,6 +67,16 @@
 	margin: 10px;
 }
 
+.entry{
+	width: 100%;
+}
+body{
+	background: #f3f3f3;
+}
+
+.flow-grid.col-1 .flow-grid-col{ width:70%; }
+.flow-grid.col-2 .flow-grid-col{ width:70%; }
+
 
 </style>
 </head>
@@ -100,52 +110,14 @@
 	</div>
 </div>
 <div class="parallax"></div>
-	<div id="contents-wrap">
-		<div id="contents">
-			{{-- <article style="margin-left: 150px;">
-							<div class="gallery">
-								<a href="javascript:void(0)"> 
-									<img class="img01" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" style="backgrond: red;" />
-									<p class="text1" >
-										Category One
-									</p> 
-								</a>
-								<a href="javascript:void(0)"> 
-									<img class="img02" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backgrond: black;"/> 
+	<div id="contents-wrap" >
+		<div id="contents" >
 
-								</a>
-								<a href="javascript:void(0)"> 
-									<img class="img03" src="https://cdn.stocksnap.io/img-thumbs/960w/26QFR9W62U.jpg" alt="news01.jpg"/> 
-									<p class="text3" >
-										Category Three
-									</p> 
-								</a>
-								<a href="javascript:void(0)"> 
-									<img class="img04" src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg" style="bakground: green;"/> 
 
-								</a>
-								<a href="javascript:void(0)"> 
-									<img class="img05" src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" style="backround: blue;"/> 
-
-								</a>
-								<a href="javascript:void(0)"> 
-									<img class="img06" src="https://cdn.stocksnap.io/img-thumbs/960w/2OU8JC9ZWH.jpg" alt="news01.jpg"/>
-
-								</a>
-								<a href="javascript:void(0)"> <img class="img07" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg"/> </a>
-							</div>
-						</article> --}}
-
-					<div id="news" class="content flow-grid">
-
-					{{-- <div id="news" class="content flow-grid" style="background-image: url('bg2.jpg'); background-repeat: no-repeat;"> --}}
-
-			
-
-					<!-- <div id="news" class="content flow-grid"> -->
+					<div id="news" class="content flow-grid" style="width: 150%; ">
 			
 			
-				<div class="entry">
+				<div class="entry" onclick="window.location='{{ url("professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic25.jpg" alt="news01.jpg">
@@ -156,13 +128,13 @@
 							<!-- <h2 class="title"> Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</h2> -->
 						</div>
 						<div class="body">
-							<h2 class="title">PEOPLE</h2>
-							<p>Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</p>
+							<h2 class="title">PROFESSIONALS</h2>
+							<p></p>
 						</div>
 					</a>
 				</div>
 
-				<div class="entry">
+				<div class="entry" onclick="window.location='{{ url("non-professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic41.jpg" alt="news01.jpg">
@@ -173,94 +145,8 @@
 							<!-- <h2 class="title">1.	Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.</h2> -->
 						</div>
 						<div class="body">
-							<h2 class="title">THE GREAT OUTDOOR</h2>
-							<p>Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.
-</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
-							
-							<img src="images/pic45.jpg" alt="news01.jpg">
-							
-						</div>
-						<div class="meta">
-
-							<!-- <h2 class="title">Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work</h2> -->
-						</div>
-						<div class="body">
-							<h2 class="title">ARCHITECTURE</h2>
-							<p>Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work </p>
-						</div>
-					</a>
-				</div>				
-
-				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
-							
-							<img src="images/pic56.jpg">
-							
-						</div>
-						<div class="meta">
-
-							<!-- <h2 class="title">Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. </h2> -->
-						</div>
-						<div class="body">
-							<h2 class="title">FOOD</h2>
-							<p>Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. </p>
-						</div>
-					</a>
-				</div>
-
-				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
-							
-							<img src="images/pic22.jpg" alt="news01.jpg">
-							
-						</div>
-						<div class="meta">
-
-							<!-- <h2 class="title">Judges are looking for the most captivating and original look and fashion sense. They will look for images that best represents the current and emerging fashion trends including creativity and originality in clothes design, hair and accessories, etc. Judges are looking for style.</h2> -->
-						</div>
-						<div class="body">
-							<h2 class="title">FASHION</h2>
-							<p>Judges are looking for the most captivating and original look and fashion sense. They will look for images that best represents the current and emerging fashion trends including creativity and originality in clothes design, hair and accessories, etc. Judges are looking for style.</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
-							
-							<img src="images/pic47.jpg">
-							
-						</div>
-						<div class="meta">
-
-							<!-- <h2 class="title">Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.</h2> -->
-						</div>
-						<div class="body">
-							<h5 class="title">EXPERIENCE.KE</h5>
-							<p>Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.</p>
-						</div>
-					</a>
-				</div>
-
-				<div class="entry">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
-							
-							<img src="images/pic53.jpg" alt="news01.jpg">
-							
-						</div>
-						<div class="meta">
-
-							<!-- <h2 class="title">Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.</h2> -->
-						</div>
-						<div class="body">
-							<h2 class="title">ALTERED IMAGES</h2>
-							<p>Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.</p>
+							<h2 class="title">NON-PROFESSIONALS</h2>
+							<p></p>
 						</div>
 					</a>
 				</div>
