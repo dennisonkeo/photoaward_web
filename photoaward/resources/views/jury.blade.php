@@ -57,7 +57,7 @@
 }
 .text_line{
 	/*line-height: 48px;*/
-	font-family: cambria
+	font-family: cambria;
 
 }
 .hover_line{
