@@ -174,8 +174,7 @@
 						</div>
 						<div class="body">
 							<h2 class="title">THE GREAT OUTDOOR</h2>
-							<p>Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.
-</p>
+							<p>Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.</p>
 						</div>
 					</a>
 				</div>
