@@ -27,15 +27,17 @@ class CategoryController extends Controller
         return view('dashboard.publish', compact('categories'));
     }
 
-    public function show_publish_info()
+    public function show_publish_info($category)
     {
-        $images = Upload::all();
+        $cat_name = Category::where('name', $category)->first();
 
-        return view('dashboard.publish_info', compact('images'));
+        $images = Upload::where('category_id',$cat_name->id)->get();
+
+        return view('dashboard.publish_info', compact('images', 'category'));
     }
 
 
-public function image_resize($path){
+    public function image_resize($path){
     
 
             $image = Image::make('uploads/'.$path);
