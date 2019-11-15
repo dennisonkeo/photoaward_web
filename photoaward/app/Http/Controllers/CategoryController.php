@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Upload;
 use Illuminate\Http\Request;
+
+use Image;
 
 class CategoryController extends Controller
 {
@@ -16,6 +19,33 @@ class CategoryController extends Controller
     {
         return view('dashboard.add_category');
     }
+
+    public function show_publish()
+    {
+        $categories = Category::all();
+
+        return view('dashboard.publish', compact('categories'));
+    }
+
+    public function show_publish_info($category)
+    {
+        $cat_name = Category::where('name', $category)->first();
+
+        $images = Upload::where('category_id',$cat_name->id)->get();
+
+        return view('dashboard.publish_info', compact('images', 'category'));
+    }
+
+
+    public function image_resize($path){
+    
+
+            $image = Image::make('uploads/'.$path);
+
+            $image->resize(900,750);
+
+             return $image->response();
+         }
 
     /**
      * Show the form for creating a new resource.

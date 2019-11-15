@@ -84,6 +84,14 @@ Route::get('dash', function () {
     return view('dashboard.index');
 });
 
+Route::get('publish', function () {
+    return view('dashboard.publish');
+});
+
+Route::get('publish-info', function () {
+    return view('dashboard.publish_info');
+});
+
 Route::get('categories', function () {
     return view('categories');
 });
@@ -178,6 +186,12 @@ Route::post('like-user-login', 'HomeController@login_user_like')->name('like-use
 Route::get('like-images', 'UploadController@display_like')->name('like-image');
 
 Route::group(['middleware' => ['auth']], function () {
+
+Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('image-resize');
+
+Route::get('publish', 'CategoryController@show_publish')->name('publish');
+
+Route::get('publish-info', 'CategoryController@show_publish_info')->name('publish-info');
 
 Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
 

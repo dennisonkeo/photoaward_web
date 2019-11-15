@@ -44,7 +44,7 @@
 							</div>
 						</li>
 
-						<li><a href="#" class=""><i class="lnr lnr-upload"></i> <span>Publish/Unpublish</span></a></li>
+						<li><a href="{{ route('publish') }}" class=""><i class="lnr lnr-upload"></i> <span>Publish/Unpublish</span></a></li>
 
 						<li><a href="#" class=""><i class="fa fa-money"></i> <span>Payments</span></a></li>
 					{{-- 	<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>

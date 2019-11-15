@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 
     <meta charset="utf-8">
     
@@ -707,6 +707,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         error: function(jqXHR, textStatus, errorThrown) {
                             console.log(errorThrown);
+                            alert(errorThrown);
                     }
                       });
 
