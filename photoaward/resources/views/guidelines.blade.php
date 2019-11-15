@@ -171,7 +171,7 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="margin: 20px; text-align: center">
+<div class="contentt" style="margin: 20px; text-align: justify; letter-spacing: 0px;">
 <p>Every contestant must sign up for the competition.
 </p>
 <!-- <center><span class="dot"></span></center> -->

@@ -398,7 +398,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: center;">
+  <div class="field-accordion-description" style="line-height: 0px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -413,7 +413,7 @@ p{
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>Picture+254 Photo Contest runs <b>20th November, 2019 – 15th January, 2020. </b> </p>
+<p>Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
 
@@ -486,7 +486,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -500,8 +500,9 @@ p{
 <p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
 <p>There is no limit to how many photographs you can enter per category.</p> 
 <p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p><a onclick="window.location='{{ url("guidelines") }}'"  href="#">Read more.</a>
-<div class="bottom-border"></div>
+<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
+<a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
 </div>
 <!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
@@ -693,7 +694,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
     <p><span style=""></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -768,7 +769,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
@@ -788,7 +789,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
 Contestants are not allowed to contact us about the status of entries or judging.</p>
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
-<div class="bottom-border"></div>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
  </div>
 </div>

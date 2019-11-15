@@ -206,7 +206,9 @@ else
 </button>
 </div> --}}
 <div class="header__group-item header__desktop-item">
-  <a class="action--quick text-link--highlight-treatment header__link text-links--small" data-nav="nav_Pricing" href="#">PICTURE254</a>
+  <a class="action--quick text-link--highlight-treatment header__link text-links--small" data-nav="nav_Pricing" href="{{route('/')}}">HOME</a>
+</div><div class="header__group-item header__desktop-item">
+  <a class="action--quick text-link--highlight-treatment header__link text-links--small" data-nav="nav_Pricing" href="{{route('stock-album')}}">STOCK ALBUM</a>
 </div>
 
 </div>
