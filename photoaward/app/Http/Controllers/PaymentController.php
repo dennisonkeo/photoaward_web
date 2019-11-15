@@ -32,7 +32,7 @@ class PaymentController extends Controller
 		$PartyB = "174379";
 		$PhoneNumber = Auth::user()->phone;
 
-		$CallBackURL = 'picture254.com/api/mpesa-response';
+		$CallBackURL = 'http://picture254.com/api/mpesa-response';
 		$AccountReference = $refNo;
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
@@ -43,7 +43,7 @@ class PaymentController extends Controller
 														);
 // return $stkPushSimulation;
 		$callbackJSONData=file_get_contents('php://input');
-		$handle=fopen("uploads/transaction.txt", 'w');
+		$handle=fopen("uploads/transactions.txt", 'w');
 		fwrite($handle, $callbackJSONData);
 		dd($stkPushSimulation,config('app.env'));
 		$check = $stkPushSimulation;		
