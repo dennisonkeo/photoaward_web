@@ -139,7 +139,7 @@
                                       {{ session('warning') }}
                                   </div>
                                  @endif
-					  <div class="section section-tabled" style="overflow: auto;">
+					  <div class="section section-tabled">
 	<!-- <div class="tabled-th">
 		<img src="/common/img/profile/photo_mikiyakobayashi.jpg" alt="MIKIYA KOBAYASHI / Designer / MIKIYA KOBAYASHI INC. CEO">
 	</div> -->

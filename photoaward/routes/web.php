@@ -191,7 +191,7 @@ Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('imag
 
 Route::get('publish', 'CategoryController@show_publish')->name('publish');
 
-Route::get('publish-info', 'CategoryController@show_publish_info')->name('publish-info');
+Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
 
 Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
 

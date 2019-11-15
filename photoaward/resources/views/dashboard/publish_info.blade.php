@@ -50,7 +50,7 @@
         <div class="col-md-7">
           <div class="row mb-5">
             <div class="col-12 ">
-              <h2 class="site-section-heading text-center">Category Photos</h2>
+              <h2 class="site-section-heading text-center">{{ $category }}</h2>
             </div>
           </div>
         </div>
