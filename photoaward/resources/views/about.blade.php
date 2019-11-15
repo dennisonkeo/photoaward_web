@@ -274,7 +274,7 @@ initializeClock('clockdiv2', deadline2);
   height: auto;
   /*padding: 50px;*/
   position: relative;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 .top-border,
 .bottom-border {
@@ -611,7 +611,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: center;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -699,7 +699,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 20px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -724,7 +724,7 @@ You cannot send entries through the e-mail.
 No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 </p>
 <p>
-<a onclick="window.location='{{ url("guidelines") }}'"  href="#">Read more.</a>
+<a onclick="window.location='{{ url("guidelines") }}'" style="padding: 10px" href="#">Read more.</a>
 </p>
 
 <div class="bottom-border"></div>

@@ -8,6 +8,7 @@ use App\ImagePay;
 use App\Vote;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
+use Image;
 
 use Illuminate\Http\Request;
 
@@ -207,13 +208,38 @@ class UploadController extends Controller
                     ->first();
         // if(!$imageCheck)
         // {
+
+              $originalImage= $request->file('file');
+              // $thumbnailImage = Image::make($originalImage);
+              // $thumbnailPath = public_path().'/thumbnails/';
+              // // $thumbnailImage->save($originalPath.time().$originalImage->getClientOriginalName());
+              // // $thumbnailImage->resize(150,150);
+              // $img->insert(public_path('images/logo.png'), 'bottom-right', 10, 10);
+              // $thumbnailImage->save($thumbnailPath.time().$originalImage->getClientOriginalName());
+
+
+              
+
+
             $image = $request->file('file');
 
             $image_name = time().$image->getClientOriginalName();
 
-            $image->move(public_path('uploads'),$image_name);
+            $image->move(public_path('uploads_org'),$image_name);
 
-            $imagePath = "/uploads/$image_name";
+            $imagePath = "uploads_org/$image_name";
+
+
+
+            $img = Image::make(public_path('uploads_org/'.$image_name));
+
+            /* insert watermark at the center with 10px offset */
+
+            $img->insert(public_path('images/watermark.png'), 'center', 10, 10);
+
+           
+
+            $img->save(public_path('uploads/'.$image_name)); 
 
 
               $upload = new Upload();
