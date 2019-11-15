@@ -24,14 +24,14 @@ class PaymentController extends Controller
 
 		$refNo = str_random(6);
 
-		$BusinessShortCode = "174379";
+		$BusinessShortCode = "523608";
 		$LipaNaMpesaPasskey = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTgwODE0MDg1NjIw";
 		$TransactionType = "CustomerPayBillOnline";
 		$Amount = "1";
 		$PartyA = Auth::user()->phone;
-		$PartyB = "174379";
+		$PartyB = "523608";
 		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'https://7b15726a.ngrok.io/api/mpesa-response';
+		$CallBackURL = 'https://35f373ab.ngrok.io/api/mpesa-response';
 		$AccountReference = $refNo;
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
@@ -41,7 +41,12 @@ class PaymentController extends Controller
 														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
 														);
 // return $stkPushSimulation;
-		$check = $stkPushSimulation;		
+		$check = $stkPushSimulation;
+
+		$callbackJSONData=file_get_contents('php://input');
+		$handle=fopen("uploads/transaction.txt", 'w');
+        fwrite($handle, $stkPushSimulation);
+		
 
 		if($check !="")
 		{
