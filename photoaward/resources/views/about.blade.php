@@ -567,13 +567,8 @@ initializeClock('clockdiv2', deadline2);
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
 
 
-				<div class="container">
-					<!-- <div class="lang-nav">
-						<ul class="hover-line-links">
-							<li><a href="#" lang="en" class="current"><span>EN</span></a></li>
-							<li><a href="#" lang="ja"><span>JP</span></a></li>
-						</ul>
-					</div> -->
+        <div class="container">
+
 <div class="sections" style="text-align: center;">
 
   <div class="section section-tabled" id="about">
@@ -611,7 +606,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: justify;">
+  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -632,7 +627,7 @@ initializeClock('clockdiv2', deadline2);
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="font-weight: bold;">Why enter?</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter</h4>
 
 <p></p>
 
@@ -699,7 +694,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -708,26 +703,14 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p>
-Every contestant must sign up for the competition.
+<p>Every contestant must sign up for the competition.
 </p>
-<p>
-You cannot sign up more than one contestant per phone number or e-mail address. 
-</p>
-<p>
-There is no limit to how many photographs you can enter per category
-</p> 
-<p>
-You cannot send entries through the e-mail.
-</p>
-<p>
-No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
-</p>
-<p>
-<a onclick="window.location='{{ url("guidelines") }}'" style="padding: 10px" href="#">Read more.</a>
-</p>
-
-<div class="bottom-border"></div>
+<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
+<p>There is no limit to how many photographs you can enter per category.</p> 
+<p>You cannot send entries through the e-mail.</p>
+<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
+<a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
 </div>
 <!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
@@ -919,7 +902,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
     <p><span style=""></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -994,7 +977,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
@@ -1013,8 +996,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
 <p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
 Contestants are not allowed to contact us about the status of entries or judging.</p>
- <p><a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a></p>
-<div class="bottom-border"></div>
+ <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
  </div>
 </div>
@@ -1092,11 +1075,11 @@ Contestants are not allowed to contact us about the status of entries or judging
 
   </div>
 
-    <script type="text/javascript" src="js/main/slider.js"></script>		
+    <script type="text/javascript" src="js/main/slider.js"></script>    
 
-      <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script>	
-					
-				</div>
+      <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
+          
+        </div>
 			</div><!-- /.content -->
 		</div><!-- /#contents -->
 	</div><!-- /#contents-wrap -->
