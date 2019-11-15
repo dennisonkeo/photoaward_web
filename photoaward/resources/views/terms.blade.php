@@ -77,7 +77,7 @@
 
 }
 .text_line{
-	line-height: 48px;
+	line-height: 100px;
 	font-family: cambria;
 }
 .label-input100,.input100{
@@ -170,7 +170,7 @@ p{
 				By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize. The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries. Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
 				</p>
 				<p>
-				The contest is void where prohibited or restricted by law. The Sponsors reserve the right to cancel the contest or modify these rules at its discretion. In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion. The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;">Picture+254 </span> Sponsors are final and binding.
+				The contest is void where prohibited or restricted by law. The Sponsors reserve the right to cancel the contest or modify these rules at its discretion. In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion. The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;"><b>Picture+254</b> </span> Sponsors are final and binding.
 				</p>
 
 				<p><i>Dated: November 2019.</i></p>

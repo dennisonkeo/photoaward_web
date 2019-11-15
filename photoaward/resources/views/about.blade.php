@@ -611,7 +611,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -699,7 +699,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 20px;">
+  <div class="field-accordion-description" style="line-height: 25px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->

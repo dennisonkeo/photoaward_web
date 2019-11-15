@@ -398,7 +398,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 0px; text-align: justify;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -486,7 +486,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -694,7 +694,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
     <p><span style=""></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -769,7 +769,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 0px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
