@@ -419,7 +419,7 @@ p{
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
 <p></p>
 

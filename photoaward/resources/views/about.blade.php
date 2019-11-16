@@ -274,7 +274,8 @@ initializeClock('clockdiv2', deadline2);
   height: auto;
   /*padding: 50px;*/
   position: relative;
-  /*padding: 10px;*/
+  padding: 10px;
+  
 }
 .top-border,
 .bottom-border {
@@ -604,9 +605,9 @@ initializeClock('clockdiv2', deadline2);
     <img src="images/pic61.jpg" alt="news01.jpg" width="522" height="200" />  </div>
         </div>
       </div>
-      <div class="description">
+      <div class="description" style="line-height: 40px; text-align: justify;">
         
-  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
+  <div class="field-accordion-description" >
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -627,7 +628,7 @@ initializeClock('clockdiv2', deadline2);
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
 <p></p>
 
@@ -678,7 +679,7 @@ initializeClock('clockdiv2', deadline2);
             
   <div class="field-accordion-title">
   Guidelines
-      </div>
+  </div>
           </h2>
           <div class="text">
             
@@ -694,7 +695,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -763,7 +764,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Category  </div>
+    Category 
+  </div>
           </h2>
           <div class="text">
             
@@ -825,7 +827,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Entry  </div>
+    Entry  
+  </div>
           </h2>
           <div class="text">
             
@@ -886,7 +889,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Prizes  </div>
+    Prizes  
+  </div>
           </h2>
           <div class="text">
             
@@ -961,7 +965,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Jury  </div>
+    Jury  
+  </div>
           </h2>
           <div class="text">
             
