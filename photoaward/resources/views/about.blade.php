@@ -605,9 +605,9 @@ initializeClock('clockdiv2', deadline2);
     <img src="images/pic61.jpg" alt="news01.jpg" width="522" height="200" />  </div>
         </div>
       </div>
-      <div class="description" style="line-height: 40px; text-align: justify;">
+      <div class="description">
         
-  <div class="field-accordion-description" >
+  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -679,7 +679,7 @@ initializeClock('clockdiv2', deadline2);
             
   <div class="field-accordion-title">
   Guidelines
-  </div>
+      </div>
           </h2>
           <div class="text">
             
@@ -695,7 +695,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -764,8 +764,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Category 
-  </div>
+    Category  </div>
           </h2>
           <div class="text">
             
@@ -827,8 +826,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Entry  
-  </div>
+    Entry  </div>
           </h2>
           <div class="text">
             
@@ -889,8 +887,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Prizes  
-  </div>
+    Prizes  </div>
           </h2>
           <div class="text">
             
@@ -965,8 +962,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Jury  
-  </div>
+    Jury  </div>
           </h2>
           <div class="text">
             
@@ -1082,10 +1078,10 @@ Contestants are not allowed to contact us about the status of entries or judging
 
     <script type="text/javascript" src="js/main/slider.js"></script>    
 
-    <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
-          </div>
-
-          </div><!-- /.content -->
+      <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
+          
+        </div>
+      </div><!-- /.content -->
     </div><!-- /#contents -->
   </div><!-- /#contents-wrap -->
 
