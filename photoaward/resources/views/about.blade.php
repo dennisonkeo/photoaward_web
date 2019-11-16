@@ -1077,12 +1077,12 @@ Contestants are not allowed to contact us about the status of entries or judging
 
     <script type="text/javascript" src="js/main/slider.js"></script>    
 
-      <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
-          
-        </div>
-			</div><!-- /.content -->
-		</div><!-- /#contents -->
-	</div><!-- /#contents-wrap -->
+    <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
+          </div>
+
+          </div><!-- /.content -->
+    </div><!-- /#contents -->
+  </div><!-- /#contents-wrap -->
 
 </div>
 @include('menu')

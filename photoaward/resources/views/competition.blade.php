@@ -398,7 +398,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify;">
+  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
