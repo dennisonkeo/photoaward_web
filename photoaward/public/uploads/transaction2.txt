@@ -1,6 +1,0 @@
-HTTP/1.0 200 OK
-Cache-Control: no-cache, private
-Content-Type:  application/json
-Date:          Wed, 30 Oct 2019 12:18:26 GMT
-
-1

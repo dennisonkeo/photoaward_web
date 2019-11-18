@@ -31,7 +31,9 @@ class UploadController extends Controller
 
         $images = Upload::latest()->get();
 
-        return view('stock', compact('images'));
+        $category = '';
+
+        return view('stock', compact('images', 'category'));
     }
 
     public function stock_view(Upload $upload)
@@ -44,7 +46,13 @@ class UploadController extends Controller
     {
         $images = Upload::latest()->get();
 
-        return view('landing_info', compact('upload', 'images'));
+        $image = Upload::where('id', $upload->id)->first();
+
+        $author = Upload::where('user_id',$image->user_id)->get();
+
+        $category = Upload::where('category_id',$image->category_id)->get();
+
+        return view('landing_info', compact('upload', 'images', 'author', 'category'));
     }
 
     public function test()

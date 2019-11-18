@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Upload;
+use App\Published;
 use Illuminate\Http\Request;
-
+use Auth;
 use Image;
 
 class CategoryController extends Controller
@@ -31,13 +32,23 @@ class CategoryController extends Controller
     {
         $cat_name = Category::where('name', $category)->first();
 
-        $images = Upload::where('category_id',$cat_name->id)->get();
+        $images = Upload::where('category_id',$cat_name->id)->where('published', 0)->get();
 
         return view('dashboard.publish_info', compact('images', 'category'));
     }
 
+    public function filter_by_category($category)
+    {
+        $cat_name = Category::where('name', $category)->first();
 
-    public function image_resize($path){
+        $images = Upload::where('category_id',$cat_name->id)->get();
+
+        return view('stock', compact('images', 'category'));
+    }
+
+
+    public function image_resize($path)
+    {
     
 
             $image = Image::make('uploads/'.$path);
@@ -45,16 +56,18 @@ class CategoryController extends Controller
             $image->resize(900,750);
 
              return $image->response();
-         }
+    }
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function show_unpublish()
     {
-        //
+        $images = Published::where('user_id', Auth::user()->id)->get();
+
+        return view('dashboard.unpublish', compact('images'));
     }
 
     /**
@@ -65,7 +78,46 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $upload_id = $_POST['upload_id'];
+
+        $check = Upload::where('id', $upload_id)->where('published', 1)->first();
+
+        if(!$check)
+        {
+            Upload::where('id', $upload_id)
+                ->update(array('published' => 1));
+
+            $publish = new Published();
+             
+                           $publish->upload_id = $upload_id;
+
+                           $publish->user_id = Auth::user()->id;
+             
+                           $publish->save();
+
+            return response()->json('0');
+
+        }
+    }
+
+    public function unpublished(Request $request)
+    {
+        $upload_id = $_POST['upload_id'];
+
+        $check = Upload::where('id', $upload_id)->where('published', 0)->first();
+
+        if(!$check)
+        {
+            Upload::where('id', $upload_id)
+                ->update(array('published' => 0));
+
+            $publish = Published::where('upload_id', $upload_id)->first();
+             
+            $publish->delete();
+
+            return response()->json('0');
+
+        }
     }
 
     /**

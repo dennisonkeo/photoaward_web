@@ -44,7 +44,17 @@
 							</div>
 						</li>
 
-						<li><a href="{{ route('publish') }}" class=""><i class="lnr lnr-upload"></i> <span>Publish/Unpublish</span></a></li>
+						<li>
+							<a href="#publish" data-toggle="collapse" class="collapsed"><i class="fa fa-list-alt"></i> <span>Publish</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="publish" class="collapse ">
+								<ul class="nav">
+									<li><a href="{{ route('publish') }}" class="">Publish</a></li>
+									<li><a href="{{ route('unpublish') }}" class="">Unpublish</a></li>
+								</ul>
+							</div>
+						</li>
+
+						{{-- <li><a href="{{ route('publish') }}" class=""><i class="lnr lnr-upload"></i> <span>Publish/Unpublish</span></a></li> --}}
 
 						<li><a href="#" class=""><i class="fa fa-money"></i> <span>Payments</span></a></li>
 					{{-- 	<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
