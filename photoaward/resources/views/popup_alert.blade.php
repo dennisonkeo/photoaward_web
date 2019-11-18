@@ -134,7 +134,7 @@
         }
 
     }</style>
-    <body>
+    <body id="pop_id">
      {{--  <header class="header"><h1>jPopup</h1></header>
       <main class="demoContent"><h2>Simple lightweight javascript popup modal plugin</h2><button class="openPopupButton" type="button">Open popup</button></main><footer class="btnWrap"><a class="github-button" href="https://github.com/robiveli/jpopup" data-size="large" aria-label="View on GitHub">View on GitHub</a> <a class="github-button" href="https://github.com/robiveli/jpopup/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" egaaria-label="Download robiveli/jCaptcha on GitHub">Download</a></footer> --}}
 
@@ -149,7 +149,7 @@
 
         var demoContent = '<div style="text-align: left;">\
   <img style="vertical-align:middle; width:450px; height: auto;  border-radius:15px;" src="images/pic47.jpg">\
-  <span style="vertical-align:middle; font-size: 20px; ">Like What You See?</span><button id="btn" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote</button>\
+  <span style="vertical-align:middle; font-size: 20px; ">Like What You See?</span><button id="btn" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote</button> <button id="btn_later" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote Later</button>\
 </div>';
 
         
@@ -170,6 +170,28 @@
     $(document).on('click','#btn',function(){
 
       window.location.href =  '{{ url('like-images') }}';
+
+    });
+
+    $(document).on('click','#btn_later',function(){
+
+        jPopup.prototype.close(true);
+
+        var demoContent = '<div style="text-align: left;">\
+  <img style="vertical-align:middle; width:450px; height: auto;  border-radius:15px;" src="images/pic47.jpg">\
+  <span style="vertical-align:middle; font-size: 20px; ">Like What You See?</span><button id="btn" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote</button> <button id="btn_later" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote Later</button>\
+</div>';
+
+      setTimeout(function(){
+                 
+                 var jPopupDemo = new jPopup({
+
+            content: demoContent,
+            hashtagValue: '#demopopup'
+
+        });
+            
+        }, 15000);
 
     });
 
