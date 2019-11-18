@@ -27,13 +27,6 @@
     <link rel="stylesheet" href="{{ asset('category/css/style.css') }}"> 
 
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style type="text/css">
-      .btn_publish{
-        background: #000;
-        border: #000;
-      }
-    </style>
     
   </head>
   <body>
@@ -59,7 +52,7 @@
         <div class="col-md-7">
           <div class="row mb-5">
             <div class="col-12 ">
-              <h2 class="site-section-heading text-center">{{ $category }}</h2>
+              <h3 class="site-section-heading text-center">Published</h3>
             </div>
           </div>
         </div>
@@ -68,11 +61,11 @@
       <div class="row" id="lightgallery" style="">
 
       @foreach($images as $image)
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->imageName }}" data-sub-html="<h4>Author <button class='btn_publish btn btn-info' style='border-radius: 5px;' data-id='{{ $image->id }}' >Publish</button></h4><p>Image caption</p>" style="" >
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->upload->imageName }}" data-sub-html="<h4>Author <button>Publish</button></h4><p>Image caption</p>" style="" >
           <a href="#">
-            <img src="{{ route('image-resize',$image->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
+            <img src="{{ route('image-resize',$image->upload->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
           </a>
-          <button style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->id }}">Publish
+          <button style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->upload->id }}">Unpublish
           </button>
         </div>
 
@@ -130,11 +123,8 @@
 
         event.stopPropagation();
 
-        alert(';ll');
-        return false;
-
       $.ajax({
-        url: '{{ route('published') }}',
+        url: '{{ route('unpublished') }}',
         type: 'POST',
         data: {
 
@@ -153,7 +143,7 @@
         }
       });
 
-      $(this).text("Published");
+      $(this).text("Unpublished");
 
   });
 

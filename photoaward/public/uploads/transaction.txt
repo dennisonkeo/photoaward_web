@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 {"Body":{"stkCallback":{"MerchantRequestID":"12994-8001502-1","CheckoutRequestID":"ws_CO_DMZ_409867703_31102019121557848","ResultCode":0,"ResultDesc":"The service request is processed successfully.","CallbackMetadata":{"Item":[{"Name":"Amount","Value":1.00},{"Name":"MpesaReceiptNumber","Value":"NJV7METHKF"},{"Name":"Balance"},{"Name":"TransactionDate","Value":20191031121607},{"Name":"PhoneNumber","Value":254708552578}]}}}}
 >>>>>>> 21dc526a6b663804357a932df8f758d024126e43
@@ -10,3 +11,6 @@
 =======
 {"Body":{"stkCallback":{"MerchantRequestID":"16116-431907-1","CheckoutRequestID":"ws_CO_DMZ_411635931_07112019164735167","ResultCode":1037,"ResultDesc":"[STK_CB - ]DS timeout."}}}
 >>>>>>> cf44a850ebe52e194e3720216b01f4c182fe47be
+=======
+3041-6440987-1
+>>>>>>> ed04b8fcac3730fff9137c5c75a6a5d62b73f293

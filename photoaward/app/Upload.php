@@ -30,6 +30,11 @@ class Upload extends Model
      public function carts()
      {
         return $this->hasMany(Cart::class);
+     } 
+
+     public function published()
+     {
+        return $this->hasMany(Published::class);
      }
 
 }
