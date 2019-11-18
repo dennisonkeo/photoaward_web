@@ -398,7 +398,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify;">
+  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -419,7 +419,7 @@ p{
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
 <p></p>
 
