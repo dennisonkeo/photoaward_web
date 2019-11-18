@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -274,7 +274,8 @@ initializeClock('clockdiv2', deadline2);
   height: auto;
   /*padding: 50px;*/
   position: relative;
-  /*padding: 10px;*/
+  padding: 10px;
+
 }
 .top-border,
 .bottom-border {
@@ -627,7 +628,7 @@ initializeClock('clockdiv2', deadline2);
 
 <p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter</h4>
+<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
 <p></p>
 
@@ -977,7 +978,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style=" text-align: justify; letter-spacing: 0px;">
     <p><span style="font-size:16px;"></span></p>
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
@@ -1080,9 +1081,9 @@ Contestants are not allowed to contact us about the status of entries or judging
       <script type="text/javascript" src="{{ asset('js/page_init.js') }}"></script> 
           
         </div>
-			</div><!-- /.content -->
-		</div><!-- /#contents -->
-	</div><!-- /#contents-wrap -->
+      </div><!-- /.content -->
+    </div><!-- /#contents -->
+  </div><!-- /#contents-wrap -->
 
 </div>
 @include('menu')
