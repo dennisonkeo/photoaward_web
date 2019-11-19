@@ -22,34 +22,10 @@ class PaymentController extends Controller
 
 		$mpesa= new \Safaricom\Mpesa\Mpesa();
 
+		// dd(config('app.MPESA_ENV'));
+
 		$refNo = str_random(6);
 
-		$BusinessShortCode = "523608";
-		$LipaNaMpesaPasskey = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTgwODE0MDg1NjIw";
-		$TransactionType = "CustomerPayBillOnline";
-		$Amount = "1";
-		$PartyA = Auth::user()->phone;
-		$PartyB = "523608";
-		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'https://35f373ab.ngrok.io/api/mpesa-response';
-		$AccountReference = $refNo;
-		$TransactionDesc = "Payment";
-		$Remarks = "Yess";
-
-
-		$stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
-														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-														);
-// return $stkPushSimulation;
-		$check = $stkPushSimulation;
-
-		$callbackJSONData=file_get_contents('php://input');
-		$handle=fopen("uploads/transaction.txt", 'w');
-        fwrite($handle, $stkPushSimulation);
-		
-
-		if($check !="")
-		{
 					$images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
 
 			        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
@@ -68,6 +44,34 @@ class PaymentController extends Controller
 
 			            $total_amount += $total;
 			        }
+
+		$BusinessShortCode = "523608";
+		$LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
+		$TransactionType = "CustomerPayBillOnline";
+		$Amount = '1';
+		$PartyA = Auth::user()->phone;
+		$PartyB = "523608";
+		$PhoneNumber = Auth::user()->phone;
+		$CallBackURL = 'http://picture254.com/api/mpesa-response';
+		$AccountReference = Auth::user()->phone;
+		$TransactionDesc = "Payment";
+		$Remarks = "Yess";
+
+
+		$stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
+														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
+														);
+// return $stkPushSimulation;
+
+		$check = $stkPushSimulation;
+
+		$callbackJSONData=file_get_contents('php://input');
+		$handle=fopen("uploads/transaction.txt", 'w');
+        fwrite($handle, $stkPushSimulation);
+
+		if($check !="")
+		{
+
 
 			                        $upload = new ImagePay();
 			             
@@ -92,16 +96,17 @@ class PaymentController extends Controller
 
 		$mpesa= new \Safaricom\Mpesa\Mpesa();
 
-		// $callbackData = $mpesa->getDataFromCallback();
+		// $callbackJSONData = $mpesa->getDataFromCallback();
 
 		$callbackJSONData=file_get_contents('php://input');
+
+		$handle=fopen("uploads/transactions.txt", 'w');
+
+        fwrite($handle, $callbackJSONData);
 
 		$account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
 
 		$ResultCode = json_decode($callbackJSONData)->Body->stkCallback->ResultCode;
-
-		$handle=fopen("uploads/transaction.txt", 'w');
-        fwrite($handle, $callbackJSONData);
 
 		if($ResultCode == "0")
 

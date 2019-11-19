@@ -4,16 +4,15 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Purchase extends Model
+class Published extends Model
 {
     public function user()
     {
     	return $this->belongsTo(User::class);
-
     }
 
-    public function cart()
+    public function upload()
     {
-    	return $this->belongsTo(Cart::class);
+    	return $this->belongsTo(Upload::class);
     }
 }

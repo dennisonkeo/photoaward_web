@@ -47,7 +47,7 @@ else
 
 <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
-<link rel="stylesheet" media="all" href="https://www.gettyimages.com/asset-detail/assets/packs/css/getty-b136ca28.css">
+<link rel="stylesheet" media="all" href="https://www.gettyimages.com/asset-detail/assets/packs/css/getty-33505b14.css">
 
 <link href="//metrics.gettyimages.com" rel="preconnect"><link href="//media.gettyimages.com" rel="preconnect">
 
@@ -188,6 +188,8 @@ else
 
 <body class="asset_detail_container asset-detail-page ng-scope" ng-app="AdpApp" ng-controller="AdpController" data-gr-c-s-loaded="true">
 
+  @include('wishlist_modal')
+
   <div class="content_wrapper">
     <div id="header-wrapper">
       <header id="site-top-header-wrapper">
@@ -312,7 +314,9 @@ else
     <div class="asset-actions__btn-action btn ng-scope" data-assetid="682897819" data-thumb-url="https://media.gettyimages.com/photos/pregnant-businesswoman-looking-away-at-desk-picture-id682897819?s=170x170" ng-click="toggleBoardAsset('682897819')" ng-if="boardReady" style=""><!-- ngIf: !boardHasAsset('682897819') -->
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="11px" viewBox="0 0 11 11" style="enable-background:new 0 0 11 11;;enable-background:new 0 0 11 11;" xml:space="preserve" class="gallery-mosaic-asset__icon" gi-icon="unisporkal/getty/plus" ng-if="!boardHasAsset('682897819')">
 <polygon points="11,4.5 6.5,4.5 6.5,0 4.5,0 4.5,4.5 0,4.5 0,6.5 4.5,6.5 4.5,11 6.5,11 6.5,6.5 11,6.5 "></polygon>
-</svg><!-- end ngIf: !boardHasAsset('682897819') --><!-- ngIf: boardHasAsset('682897819') --><div class="asset-btn__label ng-binding">Add to WishList</div></div>
+</svg><!-- end ngIf: !boardHasAsset('682897819') --><!-- ngIf: boardHasAsset('682897819') -->
+<div class="asset-btn__label ng-binding" onclick="document.getElementById('id01').style.display='block'">Add to WishList</div>
+</div>
 
 <!-- end ngIf: boardReady -->
 <span class="board-tooltip-content tooltip__content text--with-confirmed-link" ng-click="showChooseBoardModal()"><div class="board-tooltip-content__action ng-binding">Save to Wishlist<div class="board-tooltip-content__name ng-binding">New wishlist</div></div><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13.4549999px" height="8px" viewBox="0 0 13.4549999 8" style="enable-background:new 0 0 13.4549999 8;;enable-background:new 0 0 13.4549999 8;" xml:space="preserve" class="tooltip-content__icon" gi-icon="unisporkal/getty/arrow_down">
@@ -604,7 +608,7 @@ else
 </div>
 <div class="same-series__assets assets scroll-x--hidden">
   <!-- ngRepeat: asset in assetList.assets -->
-@foreach($images as $image)
+@foreach($author as $image)
   <div class="same-series__asset ng-scope same-series__asset--image" data-film-poster="" data-film-preview-class="SameSeries" gi-preview-film="" ng-class="[{ 'same-series__asset--film': asset.type == 'film' }, { 'same-series__asset--image': asset.type == 'image' }]" ng-repeat="asset in assetList.assets">
     <a data-mosaic_asset_type="SameSeries" href="{{ route('stock-preview',$image->id) }}"><!-- ngIf: asset.type == 'image' -->
     <img class="same-series__image ng-scope" src="{{ asset('uploads') }}/{{ $image->imageName }}" alt="image"><!-- end ngIf: asset.type == 'image' --><!-- ngIf: asset.type == 'film' --><!-- ngIf: asset.type == 'film' --></a>
@@ -636,7 +640,7 @@ else
 <div class="assets-grid__assets assets gi-bricks" dta-row-height="300">
   <!-- ngRepeat: asset in grid.assets -->
 
-@foreach($images as $image)
+@foreach($category as $image)
   <div class="grid-assets__asset ng-scope mosaic-asset" data-film-poster=""  gi-preview-film=""  style="width: 300px; height: 280px;">
     <a data-mosaic_asset_type="SimilarImages" href="{{ route('stock-preview',$image->id) }}">
     <!-- ngIf: asset.type == 'image' -->

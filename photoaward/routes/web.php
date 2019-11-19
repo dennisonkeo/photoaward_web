@@ -155,6 +155,8 @@ Route::get('votingg', function () {
 //     return view('like_image');
 // });
 
+Route::get('categories/{category}', 'CategoryController@filter_by_category')->name('categories');
+
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
@@ -189,7 +191,13 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('image-resize');
 
+Route::get('unpublish', 'CategoryController@show_unpublish')->name('unpublish');
+
 Route::get('publish', 'CategoryController@show_publish')->name('publish');
+
+Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished');
+
+Route::post('published', 'CategoryController@store')->name('published');
 
 Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
 

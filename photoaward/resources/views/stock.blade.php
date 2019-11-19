@@ -116,7 +116,7 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("images/pic60.jpg");
+	background-image:url("{{ asset('images/pic60.jpg') }}");
 }
 #home_cta {
 	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");

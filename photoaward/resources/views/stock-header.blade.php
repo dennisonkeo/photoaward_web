@@ -93,13 +93,16 @@ use App\Purchase;
 	<li id="menu-item-149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-149"><a href="http://themes.designcrumbs.com/stocky/wish-lists/view/">View</a></li>
 </ul>
 </li> --}}
+ 
 <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-150"><a href="#">Categories</a>
 <ul class="sub-menu">
-	<li id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-151"><a href="#">Nature</a></li>
-	<li id="menu-item-152" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-152"><a href="#">Landscapes</a></li>
-	<li id="menu-item-153" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-153"><a href="#">People</a></li>
-	<li id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-154"><a href="#">Travel</a></li>
-	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="#">Electronics</a></li>
+	<li id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-151"><a href="{{ route('categories','PEOPLE') }}">People</a></li>
+	<li id="menu-item-152" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-152"><a href="{{ route('categories','THE GREAT OUTDOORS') }}">The Great Outdoors</a></li>
+	<li id="menu-item-153" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-153"><a href="{{ route('categories','ARCHITECTURE') }}">Architecture</a></li>
+	<li id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-154"><a href="{{ route('categories','FOOD') }}">Food</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','FASHION') }}">Fashion</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','EXPERIENCE.KE') }}">Experience KE</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','ALTERED IMAGES') }}">Altered Images</a></li>
 </ul>
 </li>
 {{-- <li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="http://themes.designcrumbs.com/stocky/contact/">Contact</a></li> --}}
@@ -111,7 +114,9 @@ use App\Purchase;
 						
 							<h1 class="sitename_logo"><a href="#" title="">Picture254</a></h1>
 
-							<h2 id="slogan"> photography marketplace .</h2>
+							<h2 id="slogan"> photography marketplace .</h2><br>
+
+							<h2 id="slogam"> {{ $category }} </h2>
 
 							{{-- <form method="get" class="searchform" action="http://themes.designcrumbs.com/stocky/">
 	<div>

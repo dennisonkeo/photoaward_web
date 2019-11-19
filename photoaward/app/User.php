@@ -48,6 +48,11 @@ class User extends Authenticatable
         return $this->hasMany(JudgeRating::class);
     }
 
+    public function published()
+    {
+        return $this->hasMany(Published::class);
+    }
+
     public function payments()
     {
         return $this->hasMany(Payment::class);

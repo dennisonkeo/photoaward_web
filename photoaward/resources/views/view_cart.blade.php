@@ -457,7 +457,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div> <!-- End modal-body -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                        <button type="button" class="btn btn-secondary" daa-dismiss="modal" onclick="window.location='{{ route('submit-entry') }}#my_entries'">Ok</button>
                         {{-- <button type="submit" class="btn btn-primary" id="imageDetailSave">Save changes</button> --}}
                     </div> <!-- End modal-footer -->
 
@@ -702,7 +702,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
                         success: function(response) {
+
                             console.log(response); 
+
+
                         },
 
                         error: function(jqXHR, textStatus, errorThrown) {
