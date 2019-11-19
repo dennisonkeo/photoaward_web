@@ -290,7 +290,7 @@ jQuery(document).ready(function($){
 
 		
 		<tr class="edd_cart_footer_row">
-						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span></th>
+						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ count($cart)*100 }}.00</span></th>
 					</tr>
 	</tfoot>
 </table>

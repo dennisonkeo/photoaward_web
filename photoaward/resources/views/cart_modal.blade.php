@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login/Register Modal by Creative Tim</title>
+    <title>Picture254</title>
 
     <script src="{{ asset('js/right_click.js') }}"></script>
 

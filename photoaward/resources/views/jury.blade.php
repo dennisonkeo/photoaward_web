@@ -247,7 +247,7 @@
 
 		<div class="section section-tabled" style="border-radius: 10px;">
 	<div class="tabled-th" style="float: right;">
-		<img src="images/jury1.png" alt="image" style="height: 241px; border-radius: 5px;">
+		<img src="images/jury1.PNG" alt="image" style="height: 241px; border-radius: 5px;">
 	</div>
 	<div class="tabled-td">
 		<div lang="en" style="padding-left: 50px;">
