@@ -46,7 +46,7 @@ class PaymentController extends Controller
 			        }
 
 		$BusinessShortCode = "523608";
-		$LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
+		$LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
 		$TransactionType = "CustomerPayBillOnline";
 		$Amount = '1';
 		$PartyA = Auth::user()->phone;
@@ -67,7 +67,8 @@ class PaymentController extends Controller
 
 		$callbackJSONData=file_get_contents('php://input');
 		$handle=fopen("uploads/transaction.txt", 'w');
-        fwrite($handle, $stkPushSimulation);
+		fwrite($handle, $stkPushSimulation);
+
 
 		if($check !="")
 		{
