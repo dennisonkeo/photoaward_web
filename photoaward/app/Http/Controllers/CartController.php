@@ -112,7 +112,7 @@ class CartController extends Controller
           $PartyA = Auth::user()->phone;
           $PartyB = "523608";
           $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'https://c6a6e514.ngrok.io/api/mpesa-reply';
+          $CallBackURL = 'http://picture254.com/api/mpesa-reply';
           $AccountReference = Auth::user()->phone;
           $TransactionDesc = "Payment";
           $Remarks = "Yess";
