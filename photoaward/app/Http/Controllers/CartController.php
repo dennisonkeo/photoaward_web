@@ -39,13 +39,15 @@ class CartController extends Controller
 
           $cart = Cart::whereIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 
-        return view('checkout_download', compact('cart'));
+         $category = "";
+
+        return view('checkout_download', compact('cart', 'category'));
       }
 
       public function download_image($path)
       {
 
-          return Response::download('uploads/'.$path);
+          return Response::download('uploads_org/'.$path);
       }
 
     	public function addToCart()
@@ -103,15 +105,15 @@ class CartController extends Controller
           // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
 
 
-          $BusinessShortCode = "174379";
-          $LipaNaMpesaPasskey = "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTgwODE0MDg1NjIw";
+          $BusinessShortCode = "523608";
+          $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
           $TransactionType = "CustomerPayBillOnline";
           $Amount = $cart_amount;
           $PartyA = Auth::user()->phone;
-          $PartyB = "174379";
+          $PartyB = "523608";
           $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'https://84738818.ngrok.io/api/mpesa-reply';
-          $AccountReference = $refNo;
+          $CallBackURL = 'https://c6a6e514.ngrok.io/api/mpesa-reply';
+          $AccountReference = Auth::user()->phone;
           $TransactionDesc = "Payment";
           $Remarks = "Yess";
 
