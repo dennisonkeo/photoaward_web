@@ -25,8 +25,8 @@ else
   
 ?>
 
-<script src="{{ asset('js/right_click.js') }}"></script>
-<html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
+<!-- <script src="{{ asset('js/right_click.js') }}"></script>
+ --><html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
 <head>
   <style type="text/css"></style>
@@ -47,7 +47,7 @@ else
 
 <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
-<link rel="stylesheet" media="all" href="https://www.gettyimages.com/asset-detail/assets/packs/css/getty-33505b14.css">
+<link rel="stylesheet" media="all" href="{{asset('css/getty.css')}}">
 
 <link href="//metrics.gettyimages.com" rel="preconnect"><link href="//media.gettyimages.com" rel="preconnect">
 

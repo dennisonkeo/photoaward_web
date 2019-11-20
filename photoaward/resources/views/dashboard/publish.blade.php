@@ -51,7 +51,7 @@
                   <h2 class="mb-3">{{ $category->name }}</h2>
                   <a href="{{ route('publish-info', $category->name) }}" class="btn btn-outline-white py-2 px-4">Explore Photos</a>
                 </div>
-                <img src="{{ asset('category/images/img_7.jpg') }}" alt="Image">
+                <img src="{{ asset('images/logo.jpg') }}" alt="Image">
               </div>
             </div>
       @endforeach
