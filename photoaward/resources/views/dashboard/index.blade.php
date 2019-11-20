@@ -54,7 +54,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-upload"></i></span>
 										<p>
-											<span class="number">1,000</span>
+											<span class="number">{{ count($uploads) }}</span>
 											<span class="title">Uploads</span>
 										</p>
 									</div>
@@ -63,7 +63,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-user"></i></span>
 										<p>
-											<span class="number">3</span>
+											<span class="number">4</span>
 											<span class="title">Jury</span>
 										</p>
 									</div>
@@ -72,7 +72,7 @@
 									<div class="metric">
 										<span class="icon"><i class="fa fa-user"></i></span>
 										<p>
-											<span class="number">78</span>
+											<span class="number">{{ count($contestants) }}</span>
 											<span class="title">Contestants</span>
 										</p>
 									</div>
@@ -81,7 +81,7 @@
 									<div class="metric">
 										<span class="icon" style="color: #fff; font-weight: bold;"><i class="fa fa-dolar"></i>KSH</span>
 										<p>
-											<span class="number">500,000</span>
+											<span class="number">{{ $total }}</span>
 											<span class="title">Total Payment</span>
 										</p>
 									</div>
@@ -93,18 +93,18 @@
 								</div>
 								<div class="col-md-3">
 									<div class="weekly-summary text-right">
-										<span class="number">Ksh.20,000</span> 
+										<span class="number">Ksh.{{ $today }}</span> 
 										{{-- <span class="percentage">
 											<i class="fa fa-caret-up text-success"></i> 12%</span> --}}
 										<span class="info-label">Today</span>
 									</div>
 									<div class="weekly-summary text-right">
-										<span class="number">Ksh.80,000</span> 
+										<span class="number">Ksh.{{ $week }}</span> 
 										{{-- <span class="percentage"><i class="fa fa-caret-up text-success"></i> 23%</span> --}}
 										<span class="info-label">This Week</span>
 									</div>
 									<div class="weekly-summary text-right">
-										<span class="number">Ksh.250,000</span> 
+										<span class="number">Ksh.{{ $month }}</span> 
 										{{-- <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span> --}}
 										<span class="info-label">This Month</span>
 									</div>
@@ -129,27 +129,29 @@
 										<thead>
 											<tr>
 												<th>Reference No.</th>
-												<th>Name</th>
+												<th>Phone</th>
 												<th>Amount</th>
 												<th>Date &amp; Time</th>
 												<th>Status</th>
 											</tr>
 										</thead>
 										<tbody>
+										@foreach($payments as $pay)
 											<tr>
-												<td><a href="#">763648</a></td>
-												<td>Denno</td>
-												<td>Ksh.1220</td>
-												<td>Oct 25, 2019</td>
+												<td><a href="#">{{ $pay->trans_no }}</a></td>
+												<td>{{ $pay->phone }}</td>
+												<td>Ksh.{{ $pay->amount }}</td>
+												<td>{{ $pay->created_at }}</td>
 												<td><span class="label label-success">COMPLETED</span></td>
 											</tr>
-											<tr>
+										@endforeach
+{{-- 											<tr>
 												<td><a href="#">763649</a></td>
 												<td>Fade</td>
 												<td>Ksh.620</td>
 												<td>Oct 25, 2019</td>
 												<td><span class="label label-warning">PENDING</span></td>
-											</tr>
+											</tr> --}}
 
 										</tbody>
 									</table>
