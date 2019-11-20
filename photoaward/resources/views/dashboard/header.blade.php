@@ -12,7 +12,7 @@
               <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
                 <li class="active"><a href="{{ route('admin-dashboard') }}">Home</a></li>
                 <li class="has-children">
-                  <a href="{{ route('publish') }}">Categoies</a>
+                  <a href="{{ route('publish') }}">Categories</a>
                   <ul class="dropdown">
                     <li><a href="{{ route('publish-info','PEOPLE') }}">People</a></li>
                     <li><a href="{{ route('publish-info','THE GREAT OUTDOORS') }}">The Great Outdoors</a></li>
