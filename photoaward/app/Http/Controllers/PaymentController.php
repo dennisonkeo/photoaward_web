@@ -48,7 +48,7 @@ class PaymentController extends Controller
 		$BusinessShortCode = "523608";
 		$LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
 		$TransactionType = "CustomerPayBillOnline";
-		$Amount = '1';
+		$Amount = $total_amount;
 		$PartyA = Auth::user()->phone;
 		$PartyB = "523608";
 		$PhoneNumber = Auth::user()->phone;
