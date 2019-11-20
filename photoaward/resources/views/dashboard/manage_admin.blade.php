@@ -100,7 +100,7 @@
 
 								                	<a href="#" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
 
-								                	<a href="#" class="" style="margin-right: 10px; color: black; font-size: 20px;"><i class="fa fa-eye"></i></a>
+								                	<a href="#" class="" style="margin-right: 10px; color: blue; font-size: 20px;"><i class="fa fa-info-circle"></i></a>
 								                </td>
 								            </tr>
 								            

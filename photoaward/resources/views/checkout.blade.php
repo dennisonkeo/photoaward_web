@@ -451,7 +451,7 @@ jQuery(document).ready(function($){
 		<fieldset id="edd_purchase_submit">
 		<p id="edd_final_total_wrap">
 	<strong>Purchase Total:</strong>
-	<span class="edd_cart_amount" data-subtotal="13" data-total="13">ksh{{ count($cart)*100 }}.00</span>
+	<span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ count($cart)*100 }}.00</span>
 </p>
 
 {{-- 				<input type="hidden" name="edd_action" value="purchase"/>
