@@ -62,12 +62,12 @@ class PaymentController extends Controller
 														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
 														);
 // return $stkPushSimulation;
+
 		$check = $stkPushSimulation;
 
 		$callbackJSONData=file_get_contents('php://input');
 		$handle=fopen("uploads/transaction.txt", 'w');
         fwrite($handle, $stkPushSimulation);
-		
 
 		if($check !="")
 		{
