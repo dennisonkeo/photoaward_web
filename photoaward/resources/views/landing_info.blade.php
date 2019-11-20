@@ -315,7 +315,7 @@ else
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="11px" viewBox="0 0 11 11" style="enable-background:new 0 0 11 11;;enable-background:new 0 0 11 11;" xml:space="preserve" class="gallery-mosaic-asset__icon" gi-icon="unisporkal/getty/plus" ng-if="!boardHasAsset('682897819')">
 <polygon points="11,4.5 6.5,4.5 6.5,0 4.5,0 4.5,4.5 0,4.5 0,6.5 4.5,6.5 4.5,11 6.5,11 6.5,6.5 11,6.5 "></polygon>
 </svg><!-- end ngIf: !boardHasAsset('682897819') --><!-- ngIf: boardHasAsset('682897819') -->
-<div class="asset-btn__label ng-binding" onclick="document.getElementById('id01').style.display='block'">Add to WishList</div>
+<div class="asset-btn__label ng-binding" onlick="document.getElementById('id01').style.display='block'">Add to WishList</div>
 </div>
 
 <!-- end ngIf: boardReady -->

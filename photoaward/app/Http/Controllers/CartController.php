@@ -27,7 +27,9 @@ class CartController extends Controller
 
           $cart = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 
-    		return view('checkout', compact('cart'));
+          $category = "";
+
+    		return view('checkout', compact('cart', 'category'));
     	}
 
       public function show_download()
