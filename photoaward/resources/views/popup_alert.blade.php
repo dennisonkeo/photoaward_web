@@ -179,7 +179,7 @@
 
         var demoContent = '<div style="text-align: left;">\
   <img style="vertical-align:middle; width:450px; height: auto;  border-radius:15px;" src="images/pic47.jpg">\
-  <span style="vertical-align:middle; font-size: 20px; ">Like What You See?</span><button id="btn" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote</button> <button id="btn_later" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote Later</button>\
+  <span style="vertical-align:middle; font-size: 20px; ">Like What You See?</span><button id="btn" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote</button> <br><br>    <button id="btn_later" class="btn btn-secondary btn-block" style="vertical-align:middle; margin-left: 15px; height: 40px; border-radius:5px;">Vote Later</button>\
 </div>';
 
       setTimeout(function(){
