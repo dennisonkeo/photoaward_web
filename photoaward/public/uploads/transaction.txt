@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 15446-1521560-1
 =======
 {"Message":"invalid application status"}
 >>>>>>> c3ad031be9075b2512d9269dcbfcd32b84e1998c
+=======
+{"Body":{"stkCallback":{"MerchantRequestID":"6164-474500-1","CheckoutRequestID":"ws_CO_201120191554328645","ResultCode":1031,"ResultDesc":"Request cancelled by user"}}}
+>>>>>>> 328163facf83167de64affc3614841621241a964
