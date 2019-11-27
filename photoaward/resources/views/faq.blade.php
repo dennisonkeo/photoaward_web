@@ -93,10 +93,12 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<h3>HOW TO...</h3>
-			<p>Join Competition</p>
-			<p>Login</p>
-			<p>Make Payment</p>
+			<h3>How to apply...</h3>
+			<p>(errors, changing registration information)</p>			
+			<p>About regulations for applications and works?</p> 
+			<p>About regulations for applications and works?</p>
+			<p>About receiving awards and exclusive benefits?How</p>
+			<p>About voting and the gallery of entries?</p>
 		</div>
 
 	</div>

@@ -92,24 +92,24 @@
 .bottom-border:after,
 .bottom-border:before {
   content: '';
-  width: 5%;
-  height: 5%;
+  width: 3%;
+  height: 3%;
 }
 .top-border:after,
 .top-border:before {
-  border-top: 7px solid #ff00ff;
+  border-top: 3px solid #ff00ff;
 }
 .bottom-border:after,
 .bottom-border:before {
-  border-bottom: 7px solid #ff00ff;
+  border-bottom: 3px solid #ff00ff;
 }
 .top-border:before,
 .bottom-border:before {
-  border-left: 7px solid #ff00ff;
+  border-left: 3px solid #ff00ff;
 }
 .top-border:after,
 .bottom-border:after {
-  border-right: 7px solid #ff00ff;
+  border-right: 3px solid #ff00ff;
 }
 
 .dot{
@@ -171,7 +171,7 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style=" line-height: 25px; text-align: justify; letter-spacing: 0px;">
+<div class="contentt" style="font-size:14px; line-height: 25px; text-align: justify;" >
 <p>Every contestant must sign up for the competition.
 </p>
 <!-- <center><span class="dot"></span></center> -->
@@ -195,9 +195,9 @@ They must be saved as JPEG file (JPG).<br><br> -->
 <p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
 <p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
 High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p> 
+Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.
 
- <div class="bottom-border"></div>
+ <div class="bottom-border" style="margin-top: 50px;"></div>
 </div>
 </div>
 

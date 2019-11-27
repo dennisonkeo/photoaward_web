@@ -110,7 +110,7 @@
     <h2>PRIZES</h2>
   </div>
         <div class="tabled-td">
-          <p><b>Grand Prizes</b></p>
+          <b>Grand Prizes</b>
           <img src="https://cdn.shopify.com/s/files/1/2938/0444/products/f735780fa1c12fdea1b0c04e630997dd_1400x.png?v=1550613089">
 <b>Prizes:</b>
 
@@ -127,7 +127,7 @@
 
 <p>Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.</p> 
 
-<p>In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.</p>
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
 
 
     </div>
