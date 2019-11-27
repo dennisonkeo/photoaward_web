@@ -85,12 +85,12 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<p>For requests, information or comments, please contact below.</p>
-			<p>
+			<br>For requests, information or comments, please contact below.<br>
+			<br>
 				<strong>PICTURE +254</strong><br>
 				  152-0003 Nairobi Kenya<br>
 				Mail. <a href="#">picture254.com</a>
-			</p>
+			<br>
 		</div>
 
 	</div>

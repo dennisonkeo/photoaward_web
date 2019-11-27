@@ -298,24 +298,24 @@ initializeClock('clockdiv2', deadline2);
 .bottom-border:after,
 .bottom-border:before {
   content: '';
-  width: 5%;
-  height: 10%;
+  width: 4%;
+  height: 8%;
 }
 .top-border:after,
 .top-border:before {
-  border-top: 7px solid #ff00ff;
+  border-top: 4px solid #ff00ff;
 }
 .bottom-border:after,
 .bottom-border:before {
-  border-bottom: 7px solid #ff00ff;
+  border-bottom: 4px solid #ff00ff;
 }
 .top-border:before,
 .bottom-border:before {
-  border-left: 7px solid #ff00ff;
+  border-left: 4px solid #ff00ff;
 }
 .top-border:after,
 .bottom-border:after {
-  border-right: 7px solid #ff00ff;
+  border-right: 4px solid #ff00ff;
 }
 .dot{
   height: 10px;
@@ -589,12 +589,12 @@ initializeClock('clockdiv2', deadline2);
         <div class="summary">
           <h2 class="title">
             
-  <div class="field-accordion-title">
+  <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: jusify; letter-spacing: 0px;">
     About Competition  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
     Welcome to Picture+254. 
  </div>
           </div>
@@ -607,8 +607,8 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
-    <p><span style="font-size:16px;"></span></p>
+  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
 
@@ -616,17 +616,25 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p> This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. </p>
+<p> 
+This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+</p>
 
-<p>To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.</p>
+<p>
+To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+</p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> </p>
+<p>
+Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> 
+</p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
 
-<p>You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.</p>
+<p>
+You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
+</p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
@@ -634,8 +642,11 @@ initializeClock('clockdiv2', deadline2);
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 
-<p>You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.</p>
-<div class="bottom-border"></div>
+You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.
+
+
+<div class="bottom-border" style="margin-top: 10px;"></div>
+
 </div>
 </div>
 
@@ -677,13 +688,13 @@ initializeClock('clockdiv2', deadline2);
         <div class="summary">
           <h2 class="title">
             
-  <div class="field-accordion-title">
+  <div class="field-accordion-title" >
   Guidelines
       </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;letter-spacing: 0px;">
    Every contestant must sign up for the competition.</div>
           </div>
         </div>
@@ -695,8 +706,8 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    <p><span style="font-size:16px;"></span></p>
+  <div class="field-accordion-description" style="line-height: 25px; font-size:14px;text-align: justify; letter-spacing: 0px;">
+   <!--  <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
 
@@ -704,12 +715,22 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p>Every contestant must sign up for the competition.
+
+<p>
+Every contestant must sign up for the competition.
 </p>
-<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
-<p>There is no limit to how many photographs you can enter per category.</p> 
-<p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.</p>
+<p>
+You cannot sign up more than one contestant per phone number or e-mail address. 
+</p>
+<p>
+There is no limit to how many photographs you can enter per category.
+</p> 
+<p>
+You cannot send entries through the e-mail.
+</p>
+
+No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+<br><br>
 <a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
 <div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
@@ -768,7 +789,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
     Picture+254 has seven contest categories:
   </div>
           </div>
@@ -781,8 +802,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description">
-    <p><span style="font-size:16px;"></span></p>
+  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
 
@@ -826,12 +847,12 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Entry  </div>
+    Conditions For Entry  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
-    Find the right competition for you – all are free to enter  </div>
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    By submitting entries for the Competition,  </div>
           </div>
         </div>
         <div class="cover-image">
@@ -841,19 +862,38 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
         </div>
       </div>
       <div class="description">
-        
-  <div class="field-accordion-description">
-    <p><span style="font-size:16px;"></span></p>
+       
+  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
+<div class="top-border"></div> 
 
-<ul>
-<!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-  Content
-</ul>  
+By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
+<p> 
+The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
+</p>
+<p>
+The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
+</p> 
+<p> 
+Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
+</p>
+<p>
+The contest is void where prohibited or restricted by law.
+</p>
+<p> 
+The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
+</p> 
+<p>
+In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
+</p>
+<p>
+The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
+</p> 
+Decisions of the Picture+254 Sponsors are final and binding.
+
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
       </div>
     </div>    
@@ -891,7 +931,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
     All entries will be stored in the Picture+254 Stock Gallery.</div>
           </div>
         </div>
@@ -903,8 +943,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 40px; text-align: justify; letter-spacing: 0px;">
-    <p><span style=""></span></p>
+  <div class="field-accordion-description" style="line-height: 25px; font-size:14px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style=""></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
  -->
@@ -918,9 +958,9 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p><b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.</p>
 <p>Winners may receive additional non-cash prizes.</p> 
 <p>Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.</p> 
-<p>In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.</p>
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
 
-<div class="bottom-border"></div>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
 </div>
 
@@ -962,24 +1002,27 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Jury  </div>
+    Jury  
+  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary">
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;">
     Photo entries will be judged.</div>
           </div>
         </div>
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="images/logo_.png" width="522" height="200" />  </div>
+    <img src="images/logo_.png" width="522" height="200" />  
+  </div>
+
         </div>
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style=" text-align: justify; letter-spacing: 0px;">
-    <p><span style="font-size:16px;"></span></p>
+  <div class="field-accordion-description" style=" line-height: 25px; font-size:14px; text-align: justify;">
+   <!--  <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;"></span></p> -->
 
@@ -995,8 +1038,9 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <p>Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</p>
 <p>There will be weekly Photo of the Week winners chosen by viewers.</p>
 <p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
-<p>Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
-Contestants are not allowed to contact us about the status of entries or judging.</p>
+Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
+Contestants are not allowed to contact us about the status of entries or judging.
+
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 <div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
