@@ -386,7 +386,7 @@ p{
           <div class="text">
             
   <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;letter-spacing: 0px;">
-    Welcome to Picture+254. 
+    Welcome to Picture +254. 
  </div>
           </div>
         </div>

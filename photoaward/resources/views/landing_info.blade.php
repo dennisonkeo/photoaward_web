@@ -86,7 +86,7 @@ else
 
 <script>window.renderStart = new Date().getTime();</script>
 
-<title>Picture254</title>
+<title>Picture +254</title>
 
 <link href="https://www.gettyimages.com/detail/photo/pregnant-businesswoman-looking-away-at-desk-royalty-free-image/682897819" hreflang="x-default" rel="alternate">
 
@@ -206,7 +206,7 @@ else
   {{-- <div class="header__group-item header__group-item--first">
     <button class="action action--quick text-links--small text-link--highlight-treatment header__link" ng-click="openLeftSidePanel()">
 
-<div class="header__desktop-item header__desktop-label">PICTURE254</div>
+<div class="header__desktop-item header__desktop-label">PICTURE +254</div>
 </button>
 </div> --}}
 <div class="header__group-item header__desktop-item">

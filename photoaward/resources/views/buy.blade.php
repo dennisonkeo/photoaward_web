@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>    Picture 254</title>
+    <title>    Picture +254</title>
 
     <script src="{{ asset('js/right_click.js') }}"></script>
     

@@ -11,7 +11,7 @@
 
   <script src="{{ asset('js/right_click.js') }}"></script>
   
-  <title>Pic+254</title>
+  <title>Picture +254</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
