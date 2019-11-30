@@ -14,7 +14,7 @@
     <link href="modal/css/bootstrap.css" rel="stylesheet" />
 
 	<link href="modal/css/login-register.css" rel="stylesheet" />
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
 
 	<script src="modal/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="modal/js/bootstrap.js" type="text/javascript"></script>

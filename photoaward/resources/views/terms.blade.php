@@ -146,10 +146,6 @@ p{
                                  @endif
 					  <div class="section section-tabled" style="overflow: auto; border-radius: 7px;">
 					  
-
-	<!-- <div class="tabled-th">
-		<img src="/common/img/profile/photo_mikiyakobayashi.jpg" alt="MIKIYA KOBAYASHI / Designer / MIKIYA KOBAYASHI INC. CEO">
-	</div> -->
 		<div class="tabled-td">
 			<div lang="en">
 
@@ -173,7 +169,7 @@ p{
 				The contest is void where prohibited or restricted by law. The Sponsors reserve the right to cancel the contest or modify these rules at its discretion. In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion. The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;"><b>Picture+254</b> </span> Sponsors are final and binding.
 				</p>
 
-				<p><i>Dated: November 2019.</i></p>
+				<p><i><b>Dated: November 2019.</i></b></p>
 
 
 			</div>
