@@ -44,7 +44,8 @@ class HomeController extends Controller
     public function album()
     {
         $uploads=Upload::all();
-        return $uploads;
+        // return $uploads;
+        return json_encode($uploads);
     }
 
     public function response()

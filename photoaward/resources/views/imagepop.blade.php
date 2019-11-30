@@ -42,7 +42,7 @@
   <p>
     <img class="zoomable" style='width:40%;' src="images/pic34.jpg" />
   </p>
-<script src="http://static.tumblr.com/xz44nnc/o5lkyivqw/jquery-1.3.2.min.js"></script>
+<script src="js/jquery-1.3.2.min.js"></script>
 <script>
 $('img.zoomable').css({cursor: 'pointer'}).live('click', function () {
   var img = $(this);

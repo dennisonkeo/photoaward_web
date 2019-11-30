@@ -21,3 +21,5 @@ Route::post('mpesa-response', 'PaymentController@mpesa_response')->name('mpesa-r
 
 Route::post('mpesa-reply', 'CartController@mpesa_reply')->name('mpesa-reply');
 
+Route::get('album', 'HomeController@album')->name('album');
+

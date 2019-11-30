@@ -24,11 +24,11 @@
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://www.worldphoto.org/sites/default/files/css/css_rEI_5cK_B9hB4So2yZUtr5weuEV3heuAllCDE6XsIkI.css" />
-<link rel="stylesheet" href="https://www.worldphoto.org/sites/default/files/css/css_w0eOWxH6l7GvsAlO7BkzmipdbQXzzo3PSS061zwCIpI.css" />
-<link rel="stylesheet" href="https://www.worldphoto.org/sites/default/files/css/css_oFYRy0gzA6lnrk37oTrQ4Gn-_EwC_FxigWaIJFXuej8.css" />
+<link rel="stylesheet" href="css/compe_1.css" />
+<link rel="stylesheet" href="css/compe_2.css" />
+<link rel="stylesheet" href="css/compe_3.css" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="https://www.worldphoto.org/sites/default/files/css/css_2b2mx9pD6Soee-Ibf2iBHh2efGhs3cil4hNm2HPEEqY.css" />
+<link rel="stylesheet" href="css/compe_4.css" />
 
 
 
@@ -660,7 +660,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
 <div class="top-border"></div> 
 
-By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
+      By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
 <p> 
 The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
 </p>
@@ -826,11 +826,17 @@ In case any applicable law prohibits the Sponsor from awarding a photographer th
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p>Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.</p>
-<p>There will be weekly Photo of the Week winners chosen by viewers.</p>
-<p>Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.</p>
-Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
-Contestants are not allowed to contact us about the status of entries or judging.
+    <p>
+    Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+    </p>
+    <p>
+    There will be weekly Photo of the Week winners chosen by viewers.
+    </p>
+    <p>
+    Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
+    </p>
+    Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
+    Contestants are not allowed to contact us about the status of entries or judging.
 
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 <div class="bottom-border" style="margin-top: 10px;"></div>

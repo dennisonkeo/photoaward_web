@@ -157,7 +157,10 @@
 						</div>
 						<div class="body">
 							<h2 class="title">PEOPLE</h2>
-							<p>Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</p>
+
+							<p>
+								Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.
+							</p>
 						</div>
 					</a>
 				</div>
@@ -174,8 +177,10 @@
 						</div>
 						<div class="body">
 							<h2 class="title">THE GREAT OUTDOOR</h2>
-							<p>Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.
-</p>
+
+							<p>
+								Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.
+							</p>
 						</div>
 					</a>
 				</div>
@@ -192,7 +197,10 @@
 						</div>
 						<div class="body">
 							<h2 class="title">ARCHITECTURE</h2>
-							<p>Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work </p>
+
+							<p>
+								Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work 
+							</p>
 						</div>
 					</a>
 				</div>				
@@ -209,7 +217,10 @@
 						</div>
 						<div class="body">
 							<h2 class="title">FOOD</h2>
-							<p>Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. </p>
+
+							<p>
+								Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. 
+							</p>
 						</div>
 					</a>
 				</div>
@@ -226,7 +237,10 @@
 						</div>
 						<div class="body">
 							<h2 class="title">FASHION</h2>
-							<p>Judges are looking for the most captivating and original look and fashion sense. They will look for images that best represents the current and emerging fashion trends including creativity and originality in clothes design, hair and accessories, etc. Judges are looking for style.</p>
+
+							<p>
+								Judges are looking for the most captivating and original look and fashion sense. They will look for images that best represents the current and emerging fashion trends including creativity and originality in clothes design, hair and accessories, etc. Judges are looking for style.
+							</p>
 						</div>
 					</a>
 				</div>
@@ -243,7 +257,10 @@
 						</div>
 						<div class="body">
 							<h5 class="title">EXPERIENCE.KE</h5>
-							<p>Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.</p>
+							
+							<p>
+								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+							</p>
 						</div>
 					</a>
 				</div>
@@ -260,7 +277,30 @@
 						</div>
 						<div class="body">
 							<h2 class="title">ALTERED IMAGES</h2>
-							<p>Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.</p>
+							
+							<p>
+								Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="entry">
+					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+							
+							<img src="images/pic10.jpg" alt="news01.jpg">
+							
+						</div>
+						<div class="meta">
+
+							<!-- <h2 class="title">Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.</h2> -->
+						</div>
+						<div class="body">
+							<h2 class="title">DOCUMENTARY</h2>
+							
+							<p>
+								CONTENT.
+							</p>
 						</div>
 					</a>
 				</div>
