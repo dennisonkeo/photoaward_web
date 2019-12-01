@@ -119,6 +119,14 @@
   display: inline-block;
   background-color: #ff00ff;
 }
+@font-face {
+    font-family: "Raleway";
+    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled p{
+  margin-bottom: -6px;
+}
+
 </style>
 
 </head>
@@ -171,31 +179,9 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:14px; line-height: 25px; text-align: justify;" >
-By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
-<p> 
-The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
-</p>
-<p>
-The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
-</p> 
-<p> 
-Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
-</p>
-<p>
-The contest is void where prohibited or restricted by law.
-</p>
-<p> 
-The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
-</p> 
-<p>
-In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
-</p>
-<p>
-The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
-</p> 
-Decisions of the Picture+254 Sponsors are final and binding.
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Raleway', Roboto-slab;" >
 
+<p>fees</p>
 
  <div class="bottom-border" style="margin-top: 30px;"></div>
 </div>

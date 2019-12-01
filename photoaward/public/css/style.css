@@ -5,21 +5,6 @@
  * author		: takaaki koyama
  -----------------------------------------------------------*/
 
-@font-face {
-	font-family: 'Calibre-Bold';
-	src: url('../font/CalibreWeb-Bold.eot');
-	src: url('../font/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'), /*EOTå½¢å¼*/
-	url('../font/CalibreWeb-Bold.woff') format('woff'); /* WOFFå½¢å¼ */
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Calibre-Regular';
-	src: url('../font/CalibreWeb-Regular.eot');
-	src: url('../font/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), /*EOTå½¢å¼*/
-	url('../font/CalibreWeb-Regular.woff') format('woff'); /*WOFFå½¢å¼*/
-}
-
 
 /*
  reset
@@ -3755,4 +3740,13 @@ textarea.focus,
     display: none;
 }
 
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+body { 
+    font-family:'Montserrat', sans-serif;
 }

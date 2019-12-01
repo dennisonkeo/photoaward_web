@@ -139,7 +139,7 @@
       <main class="demoContent"><h2>Simple lightweight javascript popup modal plugin</h2><button class="openPopupButton" type="button">Open popup</button></main><footer class="btnWrap"><a class="github-button" href="https://github.com/robiveli/jpopup" data-size="large" aria-label="View on GitHub">View on GitHub</a> <a class="github-button" href="https://github.com/robiveli/jpopup/archive/master.zip" data-icon="octicon-cloud-download" data-size="large" egaaria-label="Download robiveli/jCaptcha on GitHub">Download</a></footer> --}}
 
 
-       <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+       <script src="js/jquery-2.2.2.min.js"></script>
       <script src="{{ asset('popup_alert/js/jPopup.min.js') }}"></script>
       <script>/*** DEMO js ***/
 

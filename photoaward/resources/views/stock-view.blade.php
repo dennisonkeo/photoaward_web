@@ -11,7 +11,7 @@
 		<script src="{{ asset('js/right_click.js') }}"></script>
 
 				
-		<title>Picture254</title>
+		<title>Picture +254</title>
 
  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -37,7 +37,8 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
-	<link rel='stylesheet' id='wp-block-library-css'  href='http://themes.designcrumbs.com/stocky/wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
+
+<link rel='stylesheet' id='wp-block-library-css'  href='http://themes.designcrumbs.com/stocky/wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
 <link rel='stylesheet' id='edd-styles-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/edd.min.css?ver=2.9.18' type='text/css' media='all' />
 <link rel='stylesheet' id='dashicons-css'  href='http://themes.designcrumbs.com/stocky/wp-includes/css/dashicons.min.css?ver=5.2.4' type='text/css' media='all' />
 <link rel='stylesheet' id='edd-reviews-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-reviews/assets/css/edd-reviews.min.css?ver=2.1.4' type='text/css' media='all' />

@@ -35,10 +35,10 @@
 		 <div class="modal fade login" id="loginModal">
 		      <div class="modal-dialog login animated">
     		      <div class="modal-content">
-    		         <div class="modal-header">
+    		          <div class="modal-header">
                         <button type="button" onclick="window.location='{{ url("like-images") }}'" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <h4 class="modal-title">Login Here</h4>
-                    </div>
+                  </div>
                     <div class="modal-body">
                         <div class="box">
                              <div class="content">
