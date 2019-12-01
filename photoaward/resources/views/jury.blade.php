@@ -72,6 +72,15 @@
 #hide,#hide2,#less,#less2{
 	font-style: italic;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled{
+	font-size: 16px;
+	font-family:'Raleway', Roboto-slab;
+}
+     
 
 </style>
 </head>

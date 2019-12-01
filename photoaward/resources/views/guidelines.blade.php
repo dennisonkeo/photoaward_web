@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+<!--     <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,7 +119,30 @@
   display: inline-block;
   background-color: #ff00ff;
 }
+body{
+  font-family: 'Dancing Script', cursive;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled p{
+  margin-bottom: -6px;
+}
+
 </style>
+
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
+
 
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -171,7 +194,8 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:14px; line-height: 25px; text-align: justify;" >
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
+  
 <p>Every contestant must sign up for the competition.
 </p>
 <!-- <center><span class="dot"></span></center> -->
@@ -226,6 +250,25 @@ Winners must be prepared to submit an original, unedited digital file or an orig
 
   $("p").after("<center><span class=\"dot\"></span></center>");
 </script>
+<!-- 
+<style type="text/css">
+  @font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
 
+#mikiyakobayashi{
+  font-family: 'Montserrat',sans-serif;
+}
+</style> -->
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
 </body>
 </html>

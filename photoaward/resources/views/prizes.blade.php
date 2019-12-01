@@ -64,6 +64,18 @@
   display: inline-block;
   background-color: #ff00ff;
 }
+p{
+  margin-top: -2px;
+  padding: 0;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+
+.section-tabled p{
+  margin-bottom: -6px;
+}
 </style>
 
 </head>
@@ -105,7 +117,7 @@
             </ul>
           </div> --}}
           <div class="sections">
-           <div class="section section-tabled" style="font-size:14px; font-style: itaic; line-height: 25px; text-align: justify;">
+           <div class="section section-tabled" style="font-size:16px; font-style: itaic; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
   <div class="tabled-th">
     <h2><b>PRIZES</b></h2>
   </div>
@@ -117,7 +129,6 @@
 <p>
 All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
 </p>
-
 <p>
 <b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
 </p>

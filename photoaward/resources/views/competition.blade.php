@@ -42,12 +42,12 @@
 	
  <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
-	<script src="https://www.worldphoto.org/sites/default/files/js/js_HiIz5xPajTGiijO-cnnRC5ocyMAYo02ysgmCJMoRLI4.js"></script>
-<script src="https://www.worldphoto.org/sites/default/files/js/js_gYWhuqN0Wsid8HOSk0yFzqMg-2NTv-xegwc2ACYMGws.js"></script>
-<script src="https://www.worldphoto.org/sites/default/files/js/js_e3N4y582_4FH4t0Bm9FRDzHPUgrUWbOqfcYuDMgDhN0.js"></script>
-<script src="https://www.worldphoto.org/sites/default/files/js/js_D5Bdu0sUiQhrSqYMAeYlMQy4jnLFiXA3uqamzyrd8lw.js"></script>
-<script src="https://www.worldphoto.org/sites/default/files/js/js_59wWAREvswT6aoGcOl5VC-9on2upAIVos2F3CR6i6Sg.js"></script>
-<script src="https://www.worldphoto.org/sites/default/files/js/js_m4j4J_Uu_bwewE6jk1mA1P3KbxellEeWN9cTmPjK51E.js"></script>
+<script src="js/abt_1.js"></script>
+<script src="js/abt_2.js"></script>
+<script src="js/abt_3.js"></script>
+<script src="js/abt_4.js"></script>
+<script src="js/abt_5.js"></script>
+<script src="js/abt_6.js"></script>
     <!--Google Analytics-->
 
 <link rel="stylesheet" type="text/css" href="css/main/main.css"/>
@@ -314,6 +314,14 @@ p{
   display: inline-block;
   background-color: #ff00ff;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+
+#profile .field-accordion-description{
+  font-size: 16px;
+}
 </style>
 
 </head>
@@ -361,7 +369,7 @@ p{
 
 				<div class="container">
 
-<div class="sections" style="text-align: center;">
+<div class="sections" style="text-align: center; font-family:'Montserrat', sans-serif;">
 
   <div class="section section-tabled" id="about">
   <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
@@ -380,13 +388,13 @@ p{
         <div class="summary">
           <h2 class="title">
             
-  <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: jusify; letter-spacing: 0px;">
+  <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
     About Competition  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;letter-spacing: 0px;">
-    Welcome to Picture +254. 
+  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    Welcome to Picture+254. 
  </div>
           </div>
         </div>
@@ -398,7 +406,7 @@ p{
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="font-sie:14px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -406,7 +414,7 @@ p{
 <!-- <ul style="line-height: 40px;"> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt">
+<div class="contentt" >
 <p> 
 This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
@@ -485,7 +493,7 @@ You can sign up and submit photographs online through our website www.picture+25
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
    Every contestant must sign up for the competition.</div>
           </div>
         </div>
@@ -497,7 +505,7 @@ You can sign up and submit photographs online through our website www.picture+25
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px;text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
    <!--  <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -580,7 +588,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     Picture+254 has seven contest categories:
   </div>
           </div>
@@ -593,7 +601,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -642,7 +650,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     By submitting entries for the Competition,  </div>
           </div>
         </div>
@@ -654,13 +662,13 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
        
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
 <div class="top-border"></div> 
 
-      By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
+By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
 <p> 
 The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
 </p>
@@ -701,58 +709,79 @@ Decisions of the Picture+254 Sponsors are final and binding.
 </div>
 
 <div class="section section-tabled" id="prizes">
-<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
+  <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
-  <div class="field-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion">
+    <div class="field-content">
+      <div class="entity entity-paragraphs-item paragraphs-item-accordion">
   <div class="content">
     
 <div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
   
-  <div class="field-accordion-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
-  <div class="content">
-    <div class="accordion-item">
-      <div class="wrapper js-accordion-trigger">
-        <div class="summary">
-          <h2 class="title">
+<div class="field-accordion-content">
+  <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
+    
+    <div class="content">
+      <div class="accordion-item">
+        <div class="wrapper js-accordion-trigger">
+          <div class="summary">
+            <h2 class="title">
             
-  <div class="field-accordion-title">
-    Prizes  </div>
+          <div class="field-accordion-title">
+            Prizes 
+          </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    All entries will be stored in the Picture+254 Stock Gallery.</div>
+            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    All entries will be stored in the Picture+254 Stock Gallery.
+            </div>
+
           </div>
+
         </div>
+        
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
-    <img src="images/pic20.jpg" width="522" height="200" />  </div>
+    <img src="images/pic20.jpg" width="522" height="200" />  
+  </div>
         </div>
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="font-size:14px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style=""></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
  -->
 <!-- <ul> -->
-<div class="element">
-<div class="top-border"></div>
-<div class="contentt">
-<p>All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.</p>
-<p><b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.</p>
-<p><b>Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.</p>
-<p><b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.</p>
-<p>Winners may receive additional non-cash prizes.</p> 
-<p>Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.</p> 
-In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+        <div class="element">
 
-<div class="bottom-border" style="margin-top: 20px;"></div>
-</div>
+          <div class="top-border"></div>
+            <div class="contentt">
+                <p>
+                  All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+                </p>
+                <p>
+                  <b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+                </p>
+                <p><b>
+                  Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+                </p>
+                <p>
+                  <b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.
+                </p>
+                <p>
+                  Winners may receive additional non-cash prizes.
+                </p> 
+                <p>
+                  Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
+                </p> 
+                  In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+    
+                  
+                  <div class="bottom-border" style="margin-top: 20px;"></div>
+            </div>
 </div>
 
 <!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
@@ -761,9 +790,11 @@ In case any applicable law prohibits the Sponsor from awarding a photographer th
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
 <!-- </ul>   -->
 </div>
+
       </div>
     </div>    
-  </div>
+  
+    </div>
 </div>
   </div>
 
@@ -779,143 +810,82 @@ In case any applicable law prohibits the Sponsor from awarding a photographer th
 <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
   
   <div class="field-content">
+
     <div class="entity entity-paragraphs-item paragraphs-item-accordion">
-  <div class="content">
+      <div class="content">
     
 <div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
   
-  <div class="field-accordion-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
-  <div class="content">
-    <div class="accordion-item">
-      <div class="wrapper js-accordion-trigger">
-        <div class="summary">
-          <h2 class="title">
-            
-  <div class="field-accordion-title">
-    Jury  
-  </div>
-          </h2>
-          <div class="text">
-             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    Photo entries will be judged.</div>
-          </div>
+<div class="field-accordion-content">
+  <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
+    <div class="content">
+      <div class="accordion-item">
+        <div class="wrapper js-accordion-trigger">
+          <div class="summary">
+
+        <h2 class="title">
+            <div class="field-accordion-title">Jury</div>
+        </h2>
+    
+        
+<div class="text">
+            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
+                Photo entries will be judged.
+            </div>
+</div>
         </div>
+
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
     <img src="images/logo_.png" width="522" height="200" />  
   </div>
-  
+
+        
         </div>
       </div>
-      <div class="description">
-        
-  <div class="field-accordion-description" style=" font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-   <!--  <p><span style="font-size:16px;"></span></p> -->
-
-<!-- <p><span style="font-size:18px;"></span></p> -->
-
-<!-- <ul>
-<li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li>
-</ul>  --> 
-<div class="element">
-<div class="top-border"></div>
-<div class="contentt">
-    <p>
-    Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
-    </p>
-    <p>
-    There will be weekly Photo of the Week winners chosen by viewers.
-    </p>
-    <p>
-    Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
-    </p>
-    Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
-    Contestants are not allowed to contact us about the status of entries or judging.
+                  
+    <div class="description">
+      <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
+        <div class="element">
+          <div class="top-border"></div>
+            <div class="contentt">
+              <p>
+                Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+              </p>
+              <p>
+              There will be weekly Photo of the Week winners chosen by viewers.
+              </p>
+              <p>
+              Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
+              </p>
+              Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
+              Contestants are not allowed to contact us about the status of entries or judging.
 
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
-<div class="bottom-border" style="margin-top: 10px;"></div>
+
+<div class="bottom-border" style="margin-top: 20px;"></div>
+
 </div>
  </div>
 </div>
       </div>
     </div>    
-  </div>
+      
+      </div>
 </div>
   </div>
 
 </div>
   </div>
+      </div>
+  </div>
+
+
 </div>
-  </div>
 </div>
-
+                                
 </div>
-
-
-<!-- <div class="section section-tabled">
-  <div class="tabled-th">
-    <h3>ABOUT</h3>
-  </div>
-  <div class="tabled-td">
-    <div lang="en">
-    <p class="text_line">
-      The highly acclaimed PHOTO AWARDS is a melting pot of some of the world’s most outstanding and talented souls in the field of photography where recognition, prestige and publicity are instantaneously gained by the winning entry. This is an open invitation. Join us and take part in the competition!
-    </p>
-    </div>
-
-  </div>
-</div>
-
-<div class="section section-tabled">
-  <div class="tabled-th">
-    <h3>HISTORY</h3>
-  </div>
-  <div class="tabled-td">
-    <div lang="en">
-    <p class="text_line">
-      The highly acclaimed PHOTO AWARDS is a melting pot of some of the world’s most outstanding and talented souls in the field of photography where recognition, prestige and publicity are instantaneously gained by the winning entry. This is an open invitation. Join us and take part in the competition!
-    </p>
-    </div>
-
-  </div>
-</div>
-
-<div class="section section-tabled">
-  <div class="tabled-th">
-    <h3>MISSION</h3>
-  </div>
-  <div class="tabled-td">
-    <div lang="en">
-    <p class="text_line">
-      The highly acclaimed PHOTO AWARDS is a melting pot of some of the world’s most outstanding and talented souls in the field of photography where recognition, prestige and publicity are instantaneously gained by the winning entry. This is an open invitation. Join us and take part in the competition!
-    </p>
-    </div>
-
-  </div>
-</div>
-
-<div class="section section-tabled">
-  <div class="tabled-th">
-    <h3>VISION</h3>
-  </div>
-  <div class="tabled-td">
-    <div lang="en">
-    <p class="text_line">
-      The highly acclaimed PHOTO AWARDS is a melting pot of some of the world’s most outstanding and talented souls in the field of photography where recognition, prestige and publicity are instantaneously gained by the winning entry. This is an open invitation. Join us and take part in the competition!
-    </p>
-    </div>
-
-  </div>
-</div>
- -->
-
-  </div>
 
     <script type="text/javascript" src="js/main/slider.js"></script>		
 

@@ -15,21 +15,20 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="{{ asset('js/right_click.js') }}"></script>
 <!-- Google Font Martel -->
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/abt_1.css" />
-<link rel="stylesheet" href="css/abt_2.css" />
-<link rel="stylesheet" href="css/abt_3.css" />
+<link rel="stylesheet" href="css/compe_1.css" />
+<link rel="stylesheet" href="css/compe_2.css" />
+<link rel="stylesheet" href="css/compe_3.css" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="css/abt_4.css" />
+<link rel="stylesheet" href="css/compe_4.css" />
 
 
 
@@ -268,7 +267,7 @@ initializeClock('clockdiv2', deadline2);
 
 
 </style>
-<style type="text/css">
+    <style type="text/css">
    .element {
   width: 100%;
   height: auto;
@@ -324,7 +323,19 @@ initializeClock('clockdiv2', deadline2);
   display: inline-block;
   background-color: #ff00ff;
 }
-</style>
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+
+#profile .field-accordion-description{
+  font-size: 16px;
+}
+.section-tabled p{
+  margin-bottom: -6px;
+}
+
+    </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
@@ -570,7 +581,7 @@ initializeClock('clockdiv2', deadline2);
 
         <div class="container">
 
-<div class="sections" style="text-align: center;">
+<div class="sections" style="text-align: center; font-family:'Montserrat', sans-serif;">
 
   <div class="section section-tabled" id="about">
   <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
@@ -607,7 +618,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="font-sie:14px; line-height: 25px; text-align: justify; font-family:'Raleway', Roboto-slab;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -615,7 +626,7 @@ initializeClock('clockdiv2', deadline2);
 <!-- <ul style="line-height: 40px;"> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt">
+<div class="contentt" >
 <p> 
 This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
@@ -627,7 +638,7 @@ To be eligible for any category, there is no age limit to when the photograph wa
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
 <p>
-Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> 
+Picture+254 Photo Contest runs <b>6th/12, 2012 – 24th/01, 2020. </b> 
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
@@ -638,12 +649,38 @@ You must be 18 years old or older. Picture+254 is open to both Professionals and
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
-<p></p>
+<p>
+By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
+</p>
+<p> 
+The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
+</p>
+<p>
+The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
+</p> 
+<p> 
+Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
+</p>
+<p>
+The contest is void where prohibited or restricted by law.
+</p>
+<p> 
+The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
+</p> 
+<p>
+In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
+</p>
+<p>
+The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
+</p> 
+<p>
+Decisions of the Picture+254 Sponsors are final and binding.
+</p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 
 You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.
-
+<br><br>
 
 <div class="bottom-border" style="margin-top: 10px;"></div>
 
@@ -694,7 +731,7 @@ You can sign up and submit photographs online through our website www.picture+25
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
    Every contestant must sign up for the competition.</div>
           </div>
         </div>
@@ -706,7 +743,7 @@ You can sign up and submit photographs online through our website www.picture+25
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px;text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
    <!--  <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -732,7 +769,7 @@ You cannot send entries through the e-mail.
 No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 <br><br>
 <a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
-<div class="bottom-border" style="margin-top: 20px;"></div>
+<div class="bottom-border" style="margin-top: 60px;"></div>
 </div>
 </div>
 <!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
@@ -789,7 +826,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     Picture+254 has seven contest categories:
   </div>
           </div>
@@ -802,7 +839,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -851,7 +888,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     By submitting entries for the Competition,  </div>
           </div>
         </div>
@@ -863,7 +900,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
        
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -933,7 +970,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
           </h2>
           <div class="text">
             
-            <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     All entries will be stored in the Picture+254 Stock Gallery.
             </div>
 
@@ -950,7 +987,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="font-size:14px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style=""></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -1030,7 +1067,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
     
         
 <div class="text">
-            <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;">
+            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
                 Photo entries will be judged.
             </div>
 </div>
@@ -1047,7 +1084,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
       </div>
                   
     <div class="description">
-      <div class="field-accordion-description" style=" line-height: 25px; font-size:14px; text-align: justify;">
+      <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
         <div class="element">
           <div class="top-border"></div>
             <div class="contentt">
