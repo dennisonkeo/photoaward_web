@@ -120,8 +120,8 @@
   background-color: #ff00ff;
 }
 @font-face {
-    font-family: "Raleway";
-    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap rel="stylesheet" type='text/css');
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 .section-tabled p{
   margin-bottom: -6px;
