@@ -618,7 +618,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-sie:14px; line-height: 25px; text-align: justify; font-family:'Raleway', Roboto-slab;">
+  <div class="field-accordion-description" style="font-sie:14px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -638,7 +638,7 @@ To be eligible for any category, there is no age limit to when the photograph wa
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
 <p>
-Picture+254 Photo Contest runs <b>6th/12, 2012 – 24th/01, 2020. </b> 
+Picture+254 Photo Contest runs <b>6th/December, 2012 – 24th/January, 2020. </b> 
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>

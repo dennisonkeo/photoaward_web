@@ -288,24 +288,24 @@ p{
 .bottom-border:after,
 .bottom-border:before {
   content: '';
-  width: 5%;
-  height: 10%;
+  width: 4%;
+  height: 8%;
 }
 .top-border:after,
 .top-border:before {
-  border-top: 7px solid #ff00ff;
+  border-top: 4px solid #ff00ff;
 }
 .bottom-border:after,
 .bottom-border:before {
-  border-bottom: 7px solid #ff00ff;
+  border-bottom: 4px solid #ff00ff;
 }
 .top-border:before,
 .bottom-border:before {
-  border-left: 7px solid #ff00ff;
+  border-left: 4px solid #ff00ff;
 }
 .top-border:after,
 .bottom-border:after {
-  border-right: 7px solid #ff00ff;
+  border-right: 4px solid #ff00ff;
 }
 .dot{
   height: 10px;
@@ -321,6 +321,9 @@ p{
 
 #profile .field-accordion-description{
   font-size: 16px;
+}
+.section-tabled p{
+  margin-bottom: -6px;
 }
 </style>
 
@@ -426,7 +429,7 @@ To be eligible for any category, there is no age limit to when the photograph wa
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
 <p>
-Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> 
+Picture+254 Photo Contest runs <b>06/December, 2019 – 24/Janaury, 2020. </b> 
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
@@ -437,11 +440,38 @@ You must be 18 years old or older. Picture+254 is open to both Professionals and
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
 
-<p></p>
+<p>
+By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
+</p>
+<p> 
+The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
+</p>
+<p>
+The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
+</p> 
+<p> 
+Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
+</p>
+<p>
+The contest is void where prohibited or restricted by law.
+</p>
+<p> 
+The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
+</p> 
+<p>
+In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
+</p>
+<p>
+The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
+</p> 
+<p>
+Decisions of the Picture+254 Sponsors are final and binding.
+</p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 
 You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.
+<br><br>
 
 
 <div class="bottom-border" style="margin-top: 10px;"></div>
