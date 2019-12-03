@@ -68,8 +68,8 @@ Route::get('guidelines', function () {
     return view('guidelines');
 });
 
-Route::get('entry-fee', function () {
-    return view('fees');
+Route::get('sponsors', function () {
+    return view('sponsors');
 });
 
 Route::get('contact', function () {

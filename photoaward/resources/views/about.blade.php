@@ -34,8 +34,6 @@
 
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-
-   {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -327,15 +325,19 @@ initializeClock('clockdiv2', deadline2);
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
-
 #profile .field-accordion-description{
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 .section-tabled p{
   margin-bottom: -6px;
 }
+.field-accordion-summary{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+</style>
 
-    </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
@@ -360,7 +362,7 @@ initializeClock('clockdiv2', deadline2);
 						<span class="bar"></span>
 						<span class="bar"></span>
 					</span>
-					<span class="label">ABOUT CONTEST</span>
+					<span class="label">ABOUT</span>
 				</a>
 			</div>
 		</div>
@@ -601,12 +603,13 @@ initializeClock('clockdiv2', deadline2);
           <h2 class="title">
             
   <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    About Competition  </div>
+    About 
+  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    Welcome to Picture+254. 
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <h4> Hi and welcome to Picture+254. </h4>
  </div>
           </div>
         </div>
@@ -618,7 +621,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-sie:14px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -626,75 +629,31 @@ initializeClock('clockdiv2', deadline2);
 <!-- <ul style="line-height: 40px;"> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" >
-<p> 
-This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
-</p>
+<div class="contentt">
 
+Hi and welcome to Picture+254
 <p>
-To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+</p>
+<p>
+There is no age limit to when the photograph was taken and hence you can make many entries. 
+By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>
-Picture+254 Photo Contest runs <b>6th/December, 2012 – 24th/January, 2020. </b> 
-</p>
-
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
-
-<p>
-You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
-</p>
-
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
-
-<p>
-By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
-</p>
-<p> 
-The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
-</p>
-<p>
-The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
-</p> 
-<p> 
-Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
-</p>
-<p>
-The contest is void where prohibited or restricted by law.
-</p>
-<p> 
-The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
-</p> 
-<p>
-In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
-</p>
-<p>
-The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
-</p> 
-<p>
-Decisions of the Picture+254 Sponsors are final and binding.
-</p>
-
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
-
-You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.
+Picture+254 Photo Contest runs <b>6th December, 2019</b> – <b>24th January, 2020</b>.
 <br><br>
+<a onclick="window.location='{{ url("about-competition") }}'" href="#">Read more.</a>
 
-<div class="bottom-border" style="margin-top: 10px;"></div>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 
 </div>
 </div>
-
-<!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-<!-- </ul>   -->
 
 </div>
       </div>
+
     </div>    
   </div>
 </div>
@@ -732,7 +691,10 @@ You can sign up and submit photographs online through our website www.picture+25
           <div class="text">
             
   <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
-   Every contestant must sign up for the competition.</div>
+   <h4>
+   Every contestant must sign up for the competition. 
+   </h4>
+  </div>
           </div>
         </div>
         <div class="cover-image">
@@ -752,43 +714,27 @@ You can sign up and submit photographs online through our website www.picture+25
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-
 <p>
-Every contestant must sign up for the competition.
+Every contestant must sign up for the competition. This allows winners to be clearly identified.
 </p>
 <p>
-You cannot sign up more than one contestant per phone number or e-mail address. 
+You cannot sign up more than one contestant per phone number or e-mail address.
 </p>
-<p>
-There is no limit to how many photographs you can enter per category.
-</p> 
+<p> 
+You can enter as many photographs as you can in all categories. 
+</p>
 <p>
 You cannot send entries through the e-mail.
 </p>
-
-No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 <br><br>
 <a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
-<div class="bottom-border" style="margin-top: 60px;"></div>
+
+<div class="bottom-border" style="margin-top: 20px;">
 </div>
 </div>
-<!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
-<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.</p>
-<p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
-<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.</p>
-<p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
-<p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
-<p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
-<p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
-High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p>  -->
+</div>
 
-<!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-
-<!-- </ul>   -->
 </div>
       </div>
     </div>    
@@ -822,12 +768,15 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Category  </div>
+    Category  
+  </div>
           </h2>
           <div class="text">
             
   <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <h4>
     Picture+254 has seven contest categories:
+    </h4>
   </div>
           </div>
         </div>
@@ -851,86 +800,6 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
   Content <a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
 </ul>  
-</div>
-      </div>
-    </div>    
-  </div>
-</div>
-  </div>
-
-</div>
-  </div>
-</div>
-  </div>
-</div>
-
-</div>
-
-<div class="section section-tabled" id="entry">
-<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
-  
-  <div class="field-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion">
-  <div class="content">
-    
-<div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
-  
-  <div class="field-accordion-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
-  <div class="content">
-    <div class="accordion-item">
-      <div class="wrapper js-accordion-trigger">
-        <div class="summary">
-          <h2 class="title">
-            
-  <div class="field-accordion-title">
-    Conditions For Entry  </div>
-          </h2>
-          <div class="text">
-            
-  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    By submitting entries for the Competition,  </div>
-          </div>
-        </div>
-        <div class="cover-image">
-          
-  <div class="field-accordion-cover-image">
-    <img src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg" width="522" height="200" />  </div>
-        </div>
-      </div>
-      <div class="description">
-       
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    <!-- <p><span style="font-size:16px;"></span></p> -->
-
-<!-- <p><span style="font-size:18px;">Description:</span></p> -->
-<div class="top-border"></div> 
-
-By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
-<p> 
-The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
-</p>
-<p>
-The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
-</p> 
-<p> 
-Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
-</p>
-<p>
-The contest is void where prohibited or restricted by law.
-</p>
-<p> 
-The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
-</p> 
-<p>
-In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
-</p>
-<p>
-The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
-</p> 
-Decisions of the Picture+254 Sponsors are final and binding.
-
-<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
       </div>
     </div>    
@@ -971,7 +840,9 @@ Decisions of the Picture+254 Sponsors are final and binding.
           <div class="text">
             
             <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    All entries will be stored in the Picture+254 Stock Gallery.
+              <h4>
+              All entries will be stored in the Picture+254 Stock Gallery.
+              </h4>
             </div>
 
           </div>
@@ -987,7 +858,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style=""></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -997,27 +868,44 @@ Decisions of the Picture+254 Sponsors are final and binding.
 
           <div class="top-border"></div>
             <div class="contentt">
-                <p>
-                  All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
-                </p>
-                <p>
-                  <b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
-                </p>
-                <p><b>
-                  Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
-                </p>
-                <p>
-                  <b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.
-                </p>
-                <p>
-                  Winners may receive additional non-cash prizes.
-                </p> 
-                <p>
-                  Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
-                </p> 
-                  In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
-    
-                  
+
+All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+<p></p>
+<p>
+<b>Top 3 Overall Grand Prizes Non – Professional:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+</p>
+
+<b>Top 3 Overall Grand Prizes Professional:</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
+
+<br><br>
+<a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
+
+<!-- <p>
+<b>Category Winners:</b>The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+</p> -->
+
+<!-- <p>
+<b>Photo of the Week (open only to Non – Professionals): </b> $50, training, mentorships and profiling.
+</p>
+
+<p>
+<b>Photo of the Day (open only to Non – Professionals):</b> $20 and profiling.
+</p>
+
+<p>
+Winners may receive additional non-cash prizes.
+</p> 
+
+<p>
+Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
+</p> 
+
+<p>
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+</p>
+<b>Image Profiling:</b>
+Picture+254 will randomly select photos for highlight on its website during and after the competition while displaying entries in a publicly accessible Picture+254 Stock Gallery for viewership and purchase by interested parties.
+ -->
                   <div class="bottom-border" style="margin-top: 20px;"></div>
             </div>
 </div>
@@ -1068,7 +956,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
         
 <div class="text">
             <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
-                Photo entries will be judged.
+               <h4> Photo entries will be judged. </h4>
             </div>
 </div>
         </div>
@@ -1088,18 +976,19 @@ Decisions of the Picture+254 Sponsors are final and binding.
         <div class="element">
           <div class="top-border"></div>
             <div class="contentt">
-              <p>
-                Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
-              </p>
-              <p>
-              There will be weekly Photo of the Week winners chosen by viewers.
-              </p>
-              <p>
-              Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
-              </p>
-              Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
-              Contestants are not allowed to contact us about the status of entries or judging.
-
+<p>
+Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+</p>
+<p>
+There will be weekly Photo of the day and Photo of the Week winners chosen by viewers through voting.
+<p>
+Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
+</p> 
+<p>
+Winners will be notified through the phone numbers and email addresses provided at the time of entry;
+</p>
+Contestants are not allowed to contact us about the status of entries or judging.
+<br><br>
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 
 <div class="bottom-border" style="margin-top: 20px;"></div>
@@ -1121,6 +1010,82 @@ Decisions of the Picture+254 Sponsors are final and binding.
 
 
 </div>
+</div>
+
+<div class="section section-tabled" id="sponsors">
+<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
+  
+  <div class="field-content">
+    <div class="entity entity-paragraphs-item paragraphs-item-accordion">
+  <div class="content">
+    
+<div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
+  
+  <div class="field-accordion-content">
+    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
+  <div class="content">
+    <div class="accordion-item">
+      <div class="wrapper js-accordion-trigger">
+        <div class="summary">
+          <h2 class="title">
+            
+    <div class="field-accordion-title">
+       SPONSORS
+    </div>
+          </h2>
+          <div class="text">
+            
+  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    
+    <h4>
+     Picture+254 2019/2020 <br> Sponsors.
+    </h4>
+  </div>
+          </div>
+        </div>
+        <div class="cover-image">
+          
+  <div class="field-accordion-cover-image">
+    <img src=images/sg_logo.png alt="news01.jpg" width="522" height="200" />  </div>
+        </div>
+      </div>
+      <div class="description">
+       
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style="font-size:16px;"></span></p> -->
+
+<!-- <p><span style="font-size:18px;">Description:</span></p> -->
+<!-- <ul></ul> -->
+<!-- <div class="top-border"></div>  -->
+
+
+<h4>STANDARD GROUP</h4>
+
+<!-- <h4>
+Here are the details about entry fees and deadlines for 2019/2020 Picture+254 photo contest.
+<h4>Final Deadline:<b>24/January, 2020</b></h4>
+</h4>
+<h4>
+Professional - Single image entry fee: Ksh.200.
+</h4>
+<h4>
+Non-Professional - Single image entry fee: Ksh.100.
+</h4> -->
+
+<!-- <div class="bottom-border" style="margin-top: 20px;"></div> -->
+</div>
+      </div>
+    </div>    
+  </div>
+</div>
+  </div>
+
+</div>
+  </div>
+</div>
+  </div>
+</div>
+
 </div>
                                 
 </div>
