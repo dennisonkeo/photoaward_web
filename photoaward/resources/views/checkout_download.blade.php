@@ -7,7 +7,7 @@
 		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 
 				
-		<title>Picture254</title>
+		<title>Picture +254</title>
 
 		<script src="{{ asset('js/right_click.js') }}"></script>
 		

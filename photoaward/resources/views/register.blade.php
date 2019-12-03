@@ -64,8 +64,8 @@
     <style type="text/css">
     	.parallax {
   /* The image used */
-  background-image: url('http://www.mikiyakobayashi.com/upload/YAMANAMI_4260WW.jpg');
-
+  /*background-image: url('http://www.mikiyakobayashi.com/upload/YAMANAMI_4260WW.jpg');
+*/
   /* Set a specific height */
   min-height: 690px; 
 

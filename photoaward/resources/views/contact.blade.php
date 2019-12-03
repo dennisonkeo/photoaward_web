@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture254|Contact</title>
+	<title>Picture +254|Contact</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 	
@@ -85,12 +85,12 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<p>For requests, information or comments, please contact below.</p>
-			<p>
+			<br>For requests, information or comments, please contact below.<br>
+			<br>
 				<strong>PICTURE +254</strong><br>
 				  152-0003 Nairobi Kenya<br>
 				Mail. <a href="#">picture254.com</a>
-			</p>
+			<br>
 		</div>
 
 	</div>

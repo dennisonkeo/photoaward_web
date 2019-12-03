@@ -28,6 +28,8 @@ else
 <!-- <script src="{{ asset('js/right_click.js') }}"></script>
  --><html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
+<script src="{{ asset('js/right_click.js') }}"></script>
+
 <head>
   <style type="text/css"></style>
   <style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}
@@ -84,7 +86,7 @@ else
 
 <script>window.renderStart = new Date().getTime();</script>
 
-<title>Picture254</title>
+<title>Picture +254</title>
 
 <link href="https://www.gettyimages.com/detail/photo/pregnant-businesswoman-looking-away-at-desk-royalty-free-image/682897819" hreflang="x-default" rel="alternate">
 
@@ -204,7 +206,7 @@ else
   {{-- <div class="header__group-item header__group-item--first">
     <button class="action action--quick text-links--small text-link--highlight-treatment header__link" ng-click="openLeftSidePanel()">
 
-<div class="header__desktop-item header__desktop-label">PICTURE254</div>
+<div class="header__desktop-item header__desktop-label">PICTURE +254</div>
 </button>
 </div> --}}
 <div class="header__group-item header__desktop-item">

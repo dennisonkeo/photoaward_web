@@ -4,19 +4,11 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture254|FAQ</title>
+	<title>Picture +254|FAQ</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 	
-	<meta name="keywords" content="小林幹也, デザイン, インテリア, プロダクト, 家具, イス, ブランド, ディレクション, プランニング, みきや, design, interior, product, chair, brand, kobayashi, mikiya, ukihashi, moreTrees, 株式会社小林幹也スタジオ, スタジオ" />
-	<meta name="description" content="株式会社小林幹也スタジオ | MIKIYA KOBAYASHI INC.は小林幹也（デザイナー）が代表を務めるデザイン会社です。家具やプロダクトの商品開発およびディレクション業務、インテリアに関する企画、プランニング及びデザインなど設計業務、各種プランニングおよびディレクション業務また企業のコンサルティング業務などを行っています。" />
-	<meta name="author" content="MIKIYA KOBAYASHI INC." />
-    <meta property="og:title" content="MIKIYA KOBAYASHI" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.mikiyakobayashi.com/" />
-    <meta property="og:image" content="http://www.mikiyakobayashi.com/common/img/ogp.jpg" />
-    <meta property="og:site_name" content="MIKIYA KOBAYASHI" />
-    <meta property="og:description" content="株式会社小林幹也スタジオ | MIKIYA KOBAYASHI INC.は小林幹也（デザイナー）が代表を務めるデザイン会社です。家具やプロダクトの商品開発およびディレクション業務、インテリアに関する企画、プランニング及びデザインなど設計業務、各種プランニングおよびディレクション業務また企業のコンサルティング業務などを行っています。" />
+	
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
 	
@@ -93,10 +85,12 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<h3>HOW TO...</h3>
-			<p>Join Competition</p>
-			<p>Login</p>
-			<p>Make Payment</p>
+			<h3>How to apply...</h3>
+			<p>(errors, changing registration information)</p>			
+			<p>About regulations for applications and works?</p> 
+			<p>About regulations for applications and works?</p>
+			<p>About receiving awards and exclusive benefits?How</p>
+			<p>About voting and the gallery of entries?</p>
 		</div>
 
 	</div>

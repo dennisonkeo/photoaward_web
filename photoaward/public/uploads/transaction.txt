@@ -1,1 +1,1 @@
-{"Body":{"stkCallback":{"MerchantRequestID":"6164-474500-1","CheckoutRequestID":"ws_CO_201120191554328645","ResultCode":1031,"ResultDesc":"Request cancelled by user"}}}
+{"Message":"invalid application status"}
