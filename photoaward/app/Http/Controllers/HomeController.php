@@ -44,8 +44,8 @@ class HomeController extends Controller
     public function album()
     {
         $uploads=Upload::all();
-        // return $uploads;
-        return json_encode($uploads);
+        
+        return $uploads;
     }
 
     public function response()
@@ -124,7 +124,15 @@ class HomeController extends Controller
 
            $user = new User();
 
-          $user->name = $request->input("name");
+           $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+          if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+            $user->name = $request->input("name");
           $user->email = $request->input("email");
           $user->phone = $request->input("phone");
           $user->password = Hash::make($request->input("password"));
@@ -138,16 +146,17 @@ class HomeController extends Controller
         Auth::attempt([
         'phone' => $request->phone,
         'password' => $request->password])
-    )
-    {
-        return redirect('submit-entry')->with('success', 'Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-    }
+        )
+        {
+            return redirect('submit-entry')->with('success', 'Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+        }
  
-        
+         }
+
     }    
 
 
@@ -161,7 +170,15 @@ class HomeController extends Controller
 
             ]);
 
-           $user = new User();
+         $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+         if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+             $user = new User();
 
           $user->name = $request->input("name");
           $user->email = $request->input("email");
@@ -177,20 +194,21 @@ class HomeController extends Controller
         Auth::attempt([
         'phone' => $request->phone,
         'password' => $request->password])
-    )
-    {
-        return redirect('stock-album')->with('success', 'Thank you for registering with us.');
+        )
+        {
+            return redirect('stock-album')->with('success', 'Thank you for registering with us.');
 
-        // return response()->json('Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-        return response()->json('Sorry, something went wrong..');
+            // return response()->json('Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+            return response()->json('Sorry, something went wrong..');
 
-    }
- 
-        
+        }
+         }
+
+             
     }
 
     public function signup_user(Request $request)
@@ -203,6 +221,15 @@ class HomeController extends Controller
 
             ]);
 
+         $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+         if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+
            $user = new User();
 
           $user->name = $request->input("name");
@@ -218,15 +245,17 @@ class HomeController extends Controller
 
         Auth::attempt([
         'phone' => $request->phone,
-        'password' => $request->password])
-    )
-    {
-        return redirect('like-image')->with('success', 'Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-    }
+            'password' => $request->password])
+        )
+        {
+            return redirect('like-image')->with('success', 'Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+        }
+         }
+
  
         
     }

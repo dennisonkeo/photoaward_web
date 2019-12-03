@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Picture+254'),
 
     /*
     |--------------------------------------------------------------------------
@@ -166,6 +166,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         'Intervention\Image\ImageServiceProvider',
+        Laravel\Passport\PassportServiceProvider::class,
 
         /*
          * Package Service Providers...
