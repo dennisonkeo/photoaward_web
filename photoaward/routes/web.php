@@ -272,3 +272,12 @@ Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury
 Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
 
 });
+
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

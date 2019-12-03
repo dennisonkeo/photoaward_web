@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
+	<title>Picture+254</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -150,7 +150,7 @@
 		<div lang="en">
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 
-				<form action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
+				<form onsubmit="return checkPasswordMatch();" action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
 					{{ csrf_field() }}
 					<span class="login100-form-title p-b-59" style="height: 40px; background: #000; width: 100%; padding-left: 10px; color: white; border-radius: 5px; font-family: cambria;">
 						Sign Up
@@ -158,33 +158,34 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required" style="margin: 5px;">
 						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
+						<input class="input100" type="text" name="name" placeholder="Name..." value="{{ old('name') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin: 5px;">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input class="input100" type="text" name="email" placeholder="Email addess..." value="{{ old('email') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Phone No is required" style="margin: 5px;">
 						<span class="label-input100">Phone No</span>
-						<input class="input100" type="text" name="phone" placeholder="e.g 2547********" minlength="12" maxlength="12">
+						<input class="input100" type="text" name="phone" placeholder="e.g 2547********" minlength="12" maxlength="12" value="{{ old('phone') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required" style="margin: 5px;">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="password" placeholder="*************">
+						<input class="input100" type="password" id="password" name="password" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required" style="margin: 5px;">
 						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="password" name="repeat-pass" placeholder="*************">
+						<input class="input100" type="password" name="repeat-pass" id="repeat" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
+					<div class="alert alert-danger" id="divCheckPasswordMatch" style="display: none;"></div>
 
 					<!-- <div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">
@@ -207,7 +208,7 @@
         <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
       </label>
 
-      <p><input type="checkbox" checed="" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="terms-&-conditions" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <p><input type="checkbox" id="terms" checed="" name="terms" style="margin-bottom:15px" required="" {{ old('terms') ? 'checked' : '' }}> By creating an account you agree to our <a href="terms-&-conditions" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
       				</div>
 
@@ -278,4 +279,34 @@
 	</div>
 </div>
 </body>
+
+<script type="text/javascript">
+    function checkPasswordMatch() {
+    var password = $("#password").val();
+    var confirmPassword = $("#repeat").val();
+    
+   
+    if (password != confirmPassword)
+    {
+        document.getElementById('divCheckPasswordMatch').style.display = "block";
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+                       setTimeout(function(){
+                 $('#divCheckPasswordMatch').fadeOut('fast');
+            
+        }, 1000);
+        return false;
+    }
+
+    else
+    {
+        // $("#divCheckPasswordMatch").html("Passwords match.");
+    }
+
+    $(document).ready(function () {
+   $("#repeat").keyup(checkPasswordMatch);
+
+});
+}  
+	
+</script>
 </html>
