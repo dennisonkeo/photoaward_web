@@ -119,9 +119,6 @@
   display: inline-block;
   background-color: #ff00ff;
 }
-body{
-  font-family: 'Dancing Script', cursive;
-}
 
 @font-face {
     font-family: "Montserrat";
@@ -129,6 +126,8 @@ body{
 }
 .section-tabled p{
   margin-bottom: -6px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 </style>
@@ -196,32 +195,58 @@ They must be saved as JPEG file (JPG).<br><br> -->
 <div class="top-border"></div>
 <div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
   
-<p>Every contestant must sign up for the competition.
+<p>
+Every contestant must sign up for the competition. This allows winners to be clearly identified.
 </p>
-<!-- <center><span class="dot"></span></center> -->
+<p>
+You cannot sign up more than one contestant per phone number or e-mail address.
+</p>
+<p> 
+You can enter as many photographs as you can in all categories. 
+</p>
 
-<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
-<!-- <center><span class="dot"></span></center> -->
-<p>There is no limit to how many photographs you can enter per category.</p> 
-<p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+You cannot send entries through the e-mail.
+<p>
+You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 </p>
-<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)
+<p> 
+If in the photo you submit, there is another person or people who can be clearly recognized, if your entry wins, you may be asked to provide a permission from that person/s, and if its a child, permission from their parent or guardian. A release form will be provided to you at the time.
 </p>
-<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.
+<p>
+If in the photo you submit, other people’s work (such as sculptures, statues, paintings, and other copyrightable works) can be clearly seen must also be prepared to provide a permission/release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A release form will be provided to you at the time.
 </p>
-<p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
+<p>
+If the entrant is unable to provide all required permission/releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
 </p>
-<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.
+<p>
+The competition will not allow photos that violate or infringe upon another person's rights, including but not limited to copyright.
+Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.
 </p>
-<p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
-<p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
-<p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
-<p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
-High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.
-
- <div class="bottom-border" style="margin-top: 50px;"></div>
+<p>
+In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.
+</p>
+<p> 
+The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph. 
+</p>
+<p>
+Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
+</p>
+You can submit high-quality scans of non-digital photographs.
+<p>
+Digital photographs should be taken at the highest resolution possible.
+</p>
+<p>
+If you win, be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing and curated spaces. Original negatives, prints or slides will be returned to finalists. 
+</p>
+<p>
+The Sponsor may collect a photograph’s metadata upon entry.
+</p>
+<p>
+You retain your rights to your photograph; however, by entering the contest, you grant the Sponsors of Picture+254 and where applicable its media partners a royalty-free, world-wide, perpetual, non-exclusive license to publicly display, distribute, reproduce and create derivative works of the entries, in whole or in part, in any media now existing or later developed, for any purpose, including, but not limited to, advertising and promotion of the competition, magazines, online platforms, exhibition and commercial products. 
+</p>
+Any photograph reproduced will always include a photographer credits as applicable. 
+<br><br>
+ <div class="bottom-border" style="margin-top: 30px;"></div>
 </div>
 </div>
 
