@@ -120,13 +120,13 @@ class CartController extends Controller
           $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
                                   $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
                                   );
-          dd($cart_amount);
-      // return $stkPushSimulation;
+                // return $stkPushSimulation;
           $check = $stkPushSimulation; 
 
           $callbackJSONData=file_get_contents('php://input');
           $handle=fopen("uploads/transaction.txt", 'w');
           fwrite($handle, $stkPushSimulation);   
+          dd($cart_amount);
 
           if($check !="")
           {
