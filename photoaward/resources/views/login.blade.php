@@ -70,7 +70,7 @@
 	width:100%;
 	margin:auto;
 	max-width:525px;
-	min-height:670px;
+	min-height:780px;
 	position:relative;
 	background:url(images/pic2.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
