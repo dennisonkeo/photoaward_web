@@ -195,8 +195,10 @@ They must be saved as JPEG file (JPG).<br><br> -->
 <div class="top-border"></div>
 <div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
   
+<p>
 Hi and welcome to Picture+254,
-<br>
+</p>
+
 <p>
 This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
