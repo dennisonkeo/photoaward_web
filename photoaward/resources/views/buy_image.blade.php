@@ -257,7 +257,9 @@
             width: 900px;
         }
     }
-</style>            <section class="detail-actions margin-top-big">
+</style>            
+
+<section class="detail-actions margin-top-big">
 
             
                 

@@ -631,7 +631,9 @@ initializeClock('clockdiv2', deadline2);
 <div class="top-border"></div>
 <div class="contentt">
 
+<p>
 Hi and welcome to Picture+254
+</p>
 <p>
 This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
