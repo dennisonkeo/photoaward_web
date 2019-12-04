@@ -104,7 +104,7 @@ class CartController extends Controller
 
           // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
 
-          dd($cart_amount);
+          
           $BusinessShortCode = "523608";
           $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
           $TransactionType = "CustomerPayBillOnline";
@@ -116,7 +116,7 @@ class CartController extends Controller
           $AccountReference = Auth::user()->phone;
           $TransactionDesc = "Payment";
           $Remarks = "Yess";
-
+dd($cart_amount);
 
           $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
                                   $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
