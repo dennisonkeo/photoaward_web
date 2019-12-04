@@ -19,7 +19,7 @@
 
 	{{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
 	
-	<script src="{{ asset('js/right_click.js') }}"></script>
+	<!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
@@ -261,9 +261,19 @@
 	<!-- <div class="tabled-th">
 		<img src="/common/img/profile/photo_mikiyakobayashi.jpg" alt="MIKIYA KOBAYASHI / Designer / MIKIYA KOBAYASHI INC. CEO">
 	</div> -->
+
 	<div class="tabled-td">
-		<div lang="en">
-			<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
+		<div lang="en" style="">
+
+<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
+	<p style="font-weight: bold; font-size: 18px; text-transform: uppercase;">
+		Join us, Upload cool pictures and get a chance to win big!!!
+	</p>
+</div>
+			
+<div class="login-wrap" style="background:url(images/pic2.jpg) no-repeat center; widh: 70%;">
+
+<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
 						@include('errors')
 						@if (session('success'))
                                   <div class="alert alert-success alert-dismissable">
@@ -278,8 +288,6 @@
                                   </div>
                                  @endif
                              </div>
-
-	<div class="login-wrap" style="background:url(images/pic2.jpg) no-repeat center;">
 	<div class="login-html">
 		<input id="tab-1" type="radio" name="tab" class="sign-in" checked onclick="signin_on()"><label for="tab-1" class="tab">Sign In</label>
 		<input id="tab-2" type="radio" name="tab" class="sign-up" onclick="signup_on()"><label for="tab-2" class="tab">Sign Up</label>
@@ -343,11 +351,6 @@
 				<div class="group">
 					<input type="submit" class="button" value="Sign Up" />
 				</div>
-			
-{{-- 				<div class="hr"></div>
-				<div class="foot-lnk">
-					<label for="tab-1">Already Member?</label>
-				</div> --}}
 
 				</form>
 			</div>
