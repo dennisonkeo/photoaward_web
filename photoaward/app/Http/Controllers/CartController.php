@@ -126,7 +126,6 @@ class CartController extends Controller
           $callbackJSONData=file_get_contents('php://input');
           $handle=fopen("uploads/transaction.txt", 'w');
           fwrite($handle, $stkPushSimulation);   
-          dd($cart_amount);
 
           if($check !="")
           {

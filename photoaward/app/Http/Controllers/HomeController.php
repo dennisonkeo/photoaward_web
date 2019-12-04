@@ -9,6 +9,7 @@ use App\Upload;
 use App\Category;
 use Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -114,13 +115,25 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-         $this->validate($request,[
+         // $this->validate($request,[
+         //    'name' => ['required', 'string', 'max:255'],
+         //    'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
+         //    'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+         //    'password' => ['required', 'string', 'min:8']
+
+         //    ]);
+
+         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8']
-
             ]);
+
+         if($validator->fails())
+         {
+            return redirect()->back()->withInput()->withErrors($validator);
+         }
 
            $user = new User();
 
