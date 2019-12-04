@@ -60,12 +60,28 @@
 }
 
 .text_line{
-	line-height: 48px;
+	line-height: px;
 	font-family: cambria;
 }
 .entry{
 	margin: 10px;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+
+.body{
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*.section-tabled p{
+  margin-bottom: -6px;
+}
+.field-accordion-summary{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}*/
 
 
 </style>
@@ -160,6 +176,8 @@
 
 							<p>
 								Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.
+
+
 							</p>
 						</div>
 					</a>
@@ -199,7 +217,7 @@
 							<h2 class="title">ARCHITECTURE</h2>
 
 							<p>
-								Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work 
+								Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work.
 							</p>
 						</div>
 					</a>
@@ -220,6 +238,7 @@
 
 							<p>
 								Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. 
+
 							</p>
 						</div>
 					</a>
@@ -259,7 +278,8 @@
 							<h5 class="title">EXPERIENCE.KE</h5>
 							
 							<p>
-								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+
 							</p>
 						</div>
 					</a>
@@ -279,7 +299,7 @@
 							<h2 class="title">ALTERED IMAGES</h2>
 							
 							<p>
-								Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.
+								Judges are looking for the most creative photographs manipulated for artistic purposes by applying digital and/or traditional special effects.
 							</p>
 						</div>
 					</a>
@@ -299,7 +319,7 @@
 							<h2 class="title">DOCUMENTARY</h2>
 							
 							<p>
-								CONTENT.
+								##############CONTENT.#########
 							</p>
 						</div>
 					</a>

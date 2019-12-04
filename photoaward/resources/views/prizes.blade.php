@@ -122,24 +122,37 @@ p{
     <h2><b>PRIZES</b></h2>
   </div>
         <div class="tabled-td" >
-          <h6>Grand Prizes</h6>
-          <img src="https://cdn.shopify.com/s/files/1/2938/0444/products/f735780fa1c12fdea1b0c04e630997dd_1400x.png?v=1550613089">
-<b>Prizes:</b>
-
+          <!-- <h6>Grand Prizes</h6> -->
+          <!-- <img src="https://cdn.shopify.com/s/files/1/2938/0444/products/f735780fa1c12fdea1b0c04e630997dd_1400x.png?v=1550613089"> -->
+<!-- <b>Prizes:</b>
+ -->
 <p>
 All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
 </p>
+
 <p>
-<b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+<b>Top 3 Overall Grand Prizes Non – Professional:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
 </p>
 
 <p>
-<b>Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+<b>Top 3 Overall Grand Prizes Professional:</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
 </p>
 
-<p><b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.</p>
+<p>
+<b>Category Winners:</b>The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+</p>
 
-<p>Winners may receive additional non-cash prizes.</p> 
+<p>
+<b>Photo of the Week (open only to Non – Professionals): </b> $50, training, mentorships and profiling.
+</p>
+
+<p>
+<b>Photo of the Day (open only to Non – Professionals):</b> $20 and profiling.
+</p>
+
+<p>
+Winners may receive additional non-cash prizes.
+</p> 
 
 <p>
 Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
@@ -148,9 +161,9 @@ Winners must sign a release and license, as well as a declaration of eligibility
 <p>
 In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
 </p>
-<b>Image Profiling:</b>
 
-Picture+254 will randomly select photos for highlight on its website during and after the competition and display in a publicly accessible Picture+254 Stock Gallery.
+<b>Image Profiling:</b>
+Picture+254 will randomly select photos for highlight on its website during and after the competition while displaying entries in a publicly accessible Picture+254 Stock Gallery for viewership and purchase by interested parties.
 
 
     </div>

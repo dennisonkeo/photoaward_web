@@ -58,67 +58,6 @@
     background-color: #f3f3f3;
   }
 
-  p{
-    /*border-bottom: dotted;*/
-    /*padding-bottom: 15px;*/
-    /*padding-top: 0px;*/
-  }
-
-  .element {
-  width: 100%;
-  height: auto;
-  /*padding: 50px;*/
-  position: relative;
-  padding: 10px;
-}
-.top-border,
-.bottom-border {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 30%;
-  left: 0;
-}
-.top-border {
-  top: 0;
-}
-.bottom-border {
-  bottom: 0;
-  top: 95%;
-}
-.top-border:after,
-.top-border:before,
-.bottom-border:after,
-.bottom-border:before {
-  content: '';
-  width: 3%;
-  height: 3%;
-}
-.top-border:after,
-.top-border:before {
-  border-top: 3px solid #ff00ff;
-}
-.bottom-border:after,
-.bottom-border:before {
-  border-bottom: 3px solid #ff00ff;
-}
-.top-border:before,
-.bottom-border:before {
-  border-left: 3px solid #ff00ff;
-}
-.top-border:after,
-.bottom-border:after {
-  border-right: 3px solid #ff00ff;
-}
-
-.dot{
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #ff00ff;
-}
 @font-face {
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
@@ -148,7 +87,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </span>
-          <span class="label">ENTRY CONDITIONS</span>
+          <span class="label">SPONSORS</span>
         </a>
       </div>
     </div>
@@ -170,7 +109,7 @@
           <div class="sections">
            <div class="section section-tabled">
   <div class="tabled-th">
-    <h2>Conditions For Entry</h2>
+    <h2>Picture+254 Sponsors</h2>
   </div>
         <div class="tabled-td" style="">
 
@@ -179,11 +118,10 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Raleway', Roboto-slab;" >
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
 
-<p>fees</p>
+<p></p>
 
- <div class="bottom-border" style="margin-top: 30px;"></div>
 </div>
 </div>
 
@@ -207,11 +145,6 @@ They must be saved as JPEG file (JPG).<br><br> -->
   </div>
 </div>
   <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
-
-<script type="text/javascript">
-
-  $("p").after("<center><span class=\"dot\"></span></center>");
-</script>
 
 </body>
 </html>
