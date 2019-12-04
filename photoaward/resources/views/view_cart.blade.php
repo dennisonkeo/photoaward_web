@@ -522,16 +522,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </footer>  
 
-        <script src="js/jquery.min.js"></script>
+        {{-- <script src="js/jquery.min.js"></script> --}}
+        <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
 
         
-    <script src="js/application.js"></script>
+    {{-- <script src="js/application.js"></script> --}}
+
+        {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
+
+    {{-- <script src="js/polyfiller.js"></script> --}}
+
+        <script src="https://users.worldphoto.org/js/app.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="js/polyfiller.js"></script>
+    <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
     <script>
         /*
          * Fixes: TypeError: a.swap is not a function
