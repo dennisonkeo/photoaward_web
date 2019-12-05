@@ -64,8 +64,25 @@
 }
 .section-tabled p{
   margin-bottom: -6px;
+  font-size: 16px;
 }
-
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+.gallery:hover {
+  border: 1px solid #777;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+}
 </style>
 
 </head>
@@ -113,17 +130,22 @@
   </div>
         <div class="tabled-td" style="">
 
+        <a href="https://www.standardmedia.co.ke/corporate/about">
+            <img src="images/sg_logo.png" alt="Standard Group" width="300" height="200">
+        </a>
+  
+
        <!--  <p>Sample Guidelines</p>
          Photographs must be resized to 1100 pixels on the longest side.
 They must be saved as JPEG file (JPG).<br><br> -->
-<div class="element">
+<!-- <div class="element">
 <div class="top-border"></div>
 <div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
 
 <p></p>
 
 </div>
-</div>
+</div> -->
 
 
     </div>

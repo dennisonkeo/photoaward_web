@@ -199,8 +199,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </div>
 
                                             <div class="content">
-                                                <div class="thumbnail">
-                                                        <img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" alt="Open competition">
+                                                <div class="thumbnail" style="background: #000;">
+                                                        <img src="images/{{$category->cover}}" alt="news01.jpg" alt="Open competition" style="max-height: 200px;">
 
                                                         <div class="caption caption-up">
                                                             <p>{{ $category->description }}</p>

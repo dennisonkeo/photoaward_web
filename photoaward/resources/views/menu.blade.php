@@ -16,8 +16,8 @@
 <li><a onclick="window.location='{{ url("jury") }}'"  href="#"><span>THE JURY</span></a></li>
 <li><a onclick="window.location='{{ url("sponsors") }}'" href="#"><span>SPONSORS</span></a></li>
 <li><a onclick="window.location='{{ url("stock-album") }}'"  href="#"><span>STOCK ALBUM</span></a></li>
-<li><a href="contact"><span>CONTACT</span></a></li>
-<li><a href="faq"><span>FAQ</span></a></li>
+<li><a onclick="window.location='{{ url("contact") }}'" href="#"><span>CONTACT</span></a></li>
+<li><a onclick="window.location='{{ url("faq") }}'" href="#"><span>FAQ</span></a></li>
 <li><a href="#"><span></span></a></li>
 
 

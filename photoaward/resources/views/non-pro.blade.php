@@ -66,7 +66,10 @@
 .entry{
 	margin: 10px;
 }
-
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
 
 </style>
 </head>
@@ -155,7 +158,7 @@
 
 							<!-- <h2 class="title"> Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">PEOPLE</h2>
 							<p>Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</p>
 						</div>

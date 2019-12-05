@@ -193,7 +193,7 @@ junction_font.load().then(function(loaded_face) {
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
+<div class="contentt" style="font-size:16px; line-height: 25px; font-family:'Montserrat', sans-serif;" >
   
 <p>
 Hi and welcome to Picture+254,
@@ -225,7 +225,7 @@ This exciting contest gives everyone a chance to win. You may have taken a photo
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 You can sign up and submit photographs online through our website <b>www.picture+254.com</b> or through the <b>Picture+254 App</b> that you can download onto your phone. 
 <br><br>
- <div class="bottom-border" style="margin-top: 10px;"></div>
+ <div class="bottom-border" style="margin-top: 40px;"></div>
 </div>
 </div>
 
