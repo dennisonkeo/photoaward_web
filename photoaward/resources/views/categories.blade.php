@@ -58,10 +58,17 @@
   background-size: cover;
 
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled p{
+  margin-bottom: -6px;
+  font-size: 16px;
+}
 
 .text_line{
 	line-height: 48px;
-	font-family: cambria;
 }
 .entry{
 	margin: 10px;
