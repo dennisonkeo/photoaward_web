@@ -97,50 +97,50 @@
 </style>
 
  <script type="text/javascript">
-  function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
+//   function getTimeRemaining(endtime) {
+//   var t = Date.parse(endtime) - Date.parse(new Date());
+//   var seconds = Math.floor((t / 1000) % 60);
+//   var minutes = Math.floor((t / 1000 / 60) % 60);
+//   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+//   var days = Math.floor(t / (1000 * 60 * 60 * 24));
+//   return {
+//     'total': t,
+//     'days': days,
+//     'hours': hours,
+//     'minutes': minutes,
+//     'seconds': seconds
+//   };
+// }
 
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+// function initializeClock(id, endtime) {
+//   var clock = document.getElementById(id);
+//   var daysSpan = clock.querySelector('.days');
+//   var hoursSpan = clock.querySelector('.hours');
+//   var minutesSpan = clock.querySelector('.minutes');
+//   var secondsSpan = clock.querySelector('.seconds');
 
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
+//   function updateClock() {
+//     var t = getTimeRemaining(endtime);
 
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+//     daysSpan.innerHTML = t.days;
+//     hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+//     minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+//     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
+//     if (t.total <= 0) {
+//       clearInterval(timeinterval);
+//     }
+//   }
 
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
+//   updateClock();
+//   var timeinterval = setInterval(updateClock, 1000);
+// }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
+// var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+// initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv2', deadline2);
+// var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+// initializeClock('clockdiv2', deadline2);
 </script>
 
     <style type="text/css">
@@ -979,6 +979,8 @@ Picture+254 will randomly select photos for highlight on its website during and 
         <div class="element">
           <div class="top-border"></div>
             <div class="contentt">
+
+
 <p>
 Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
 </p>
@@ -1127,7 +1129,11 @@ function closeNav() {
 </script>
 
 <script type="text/javascript">
-
+// Date;
+function showDate()
+{
+  alert(Date.parse("Jan 28, 2020 12:00:00"));
+}
 
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -1151,6 +1157,8 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
 
+  // var endtime = new Date("Mar 15, 2020 12:00:00").getTime();
+
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
@@ -1164,14 +1172,14 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
+  // updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
 </script>				
 
