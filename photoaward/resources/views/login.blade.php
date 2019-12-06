@@ -19,7 +19,7 @@
 
 	{{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> --}}
 	
-	<script src="{{ asset('js/right_click.js') }}"></script>
+	<!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
@@ -70,7 +70,7 @@
 	width:100%;
 	margin:auto;
 	max-width:525px;
-	min-height:670px;
+	min-height:780px;
 	position:relative;
 	background:url(images/pic2.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
@@ -261,9 +261,19 @@
 	<!-- <div class="tabled-th">
 		<img src="/common/img/profile/photo_mikiyakobayashi.jpg" alt="MIKIYA KOBAYASHI / Designer / MIKIYA KOBAYASHI INC. CEO">
 	</div> -->
+
 	<div class="tabled-td">
-		<div lang="en">
-			<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
+		<div lang="en" style="">
+
+<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
+	<p style="font-weight: bold; font-size: 18px; text-transform: uppercase;">
+		Join us, Upload cool pictures and get a chance to win big!!!
+	</p>
+</div>
+			
+<div class="login-wrap" style="background:url(images/pic2.jpg) no-repeat center; widh: 70%;">
+
+<div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
 						@include('errors')
 						@if (session('success'))
                                   <div class="alert alert-success alert-dismissable">
@@ -278,16 +288,14 @@
                                   </div>
                                  @endif
                              </div>
-
-	<div class="login-wrap" style="background:url(images/pic2.jpg) no-repeat center;">
 	<div class="login-html">
-		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked onclick="signin_on()"><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up" onclick="signup_on()"><label for="tab-2" class="tab">Sign Up</label>
 
 		<div class="login-form">
-		<form action="{{ route('user-login') }}" method="POST" id="login_form">	
-			{{ csrf_field() }}
 			<div class="sign-in-htm">
+			<form action="{{ route('user-login') }}" method="POST" id="login_form">	
+			{{ csrf_field() }}
 				<div class="group">
 					<label for="user" class="label">Email/Phone</label>
 					<input id="user" type="text" name="username" class="input" value="{{ old('username') }}">
@@ -307,11 +315,12 @@
 				<div class="foot-lnk">
 					<a onclick="window.location='{{ route('password.request') }}'" href="#">Forgot Password?</a>
 				</div>
+				</form>
 			</div>
-		</form>
-		<form id="sign_up" onsubmit="return checkPasswordMatch();" action="{{ route('register-user') }}" method="POST">
+		
+			<div class="sign-up-htm" style="display: none;">
+			<form id="sign_up" onsubmit="return checkPasswordMatch();" action="{{ route('register-user') }}" method="POST">
 			{{ csrf_field() }}
-			<div class="sign-up-htm">
 				<div class="group">
 					<label for="user" class="label">Full Name</label>
 					<input id="user" type="text" name="name" class="input" value="{{ old('name') }}">
@@ -342,13 +351,9 @@
 				<div class="group">
 					<input type="submit" class="button" value="Sign Up" />
 				</div>
-			
-{{-- 				<div class="hr"></div>
-				<div class="foot-lnk">
-					<label for="tab-1">Already Member?</label>
-				</div> --}}
+
+				</form>
 			</div>
-		</form>
 		</div>
 	</div>
 </div>
@@ -413,10 +418,22 @@
 
 }  
 	
-//     $(document).ready(function () {
-//    $("#repeat").keyup(checkPasswordMatch);
+    $(document).ready(function () {
+   $("#repeat").keyup(checkPasswordMatch);
 
-// });
+});
+
+    function signup_on()
+    {
+    	$('.sign-up-htm').css('display','block');
+    	$('.sign-in-htm').css('display','none');
+    }
+
+    function signin_on()
+    {
+    	$('.sign-up-htm').css('display','none');
+    	$('.sign-in-htm').css('display','block');
+    }
 
 </script>
 </html>

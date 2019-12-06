@@ -193,7 +193,7 @@ junction_font.load().then(function(loaded_face) {
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:16px; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;" >
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: jutify; font-family:'Montserrat', sans-serif;" >
   
 <p>
 Every contestant must sign up for the competition. This allows winners to be clearly identified.
@@ -245,8 +245,8 @@ The Sponsor may collect a photograph’s metadata upon entry.
 You retain your rights to your photograph; however, by entering the contest, you grant the Sponsors of Picture+254 and where applicable its media partners a royalty-free, world-wide, perpetual, non-exclusive license to publicly display, distribute, reproduce and create derivative works of the entries, in whole or in part, in any media now existing or later developed, for any purpose, including, but not limited to, advertising and promotion of the competition, magazines, online platforms, exhibition and commercial products. 
 </p>
 Any photograph reproduced will always include a photographer credits as applicable. 
-<br><br>
- <div class="bottom-border" style="margin-top: 30px;"></div>
+<br><br><br>
+ <div class="bottom-border" style="margin-top: 100px;"></div>
 </div>
 </div>
 

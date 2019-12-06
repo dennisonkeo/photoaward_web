@@ -116,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 style="border-color: #b7eb34;">{{ $category->name }}</h1>
     </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-            <img class="img-responsive" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" />
+            <img class="img-responsive" src="{{ asset('images') }}/{{ $category->cover }}" alt="news01.jpg" />
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-9 category-info">

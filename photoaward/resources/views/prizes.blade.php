@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PHOTO CONTEST</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
     <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
@@ -15,34 +15,35 @@
     <meta property="og:site_name" content="Photo contest" />
     <meta property="og:description" content="" />
 
-<script src="{{ asset('js/right_click.js') }}"></script>
+<!--     <script src="{{ asset('js/right_click.js') }}"></script> -->
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="shortcut icon" href="/common/img/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-	
-	<!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	
+  <link rel="shortcut icon" href="/common/img/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
  <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
 
 <link rel="stylesheet" type="text/css" href="css/main/main.css"/>
     
-  <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+
 <script type="text/javascript" src="{{('js/main/jquery.yiiactiveform')}}.js"></script>
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
-	
+  
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
   <script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/common.js') }}"></script>
 
-{{-- 	<script>
+{{--  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -57,26 +58,90 @@
     background-color: #f3f3f3;
   }
 
-  .dot{
+  p{
+    /*border-bottom: dotted;*/
+    /*padding-bottom: 15px;*/
+    /*padding-top: 0px;*/
+  }
+
+  .element {
+  width: 100%;
+  height: auto;
+  /*padding: 50px;*/
+  position: relative;
+  padding: 10px;
+}
+.top-border,
+.bottom-border {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  left: 0;
+}
+.top-border {
+  top: 0;
+}
+.bottom-border {
+  bottom: 0;
+  top: 95%;
+}
+.top-border:after,
+.top-border:before,
+.bottom-border:after,
+.bottom-border:before {
+  content: '';
+  width: 3%;
+  height: 3%;
+}
+.top-border:after,
+.top-border:before {
+  border-top: 3px solid #ff00ff;
+}
+.bottom-border:after,
+.bottom-border:before {
+  border-bottom: 3px solid #ff00ff;
+}
+.top-border:before,
+.bottom-border:before {
+  border-left: 3px solid #ff00ff;
+}
+.top-border:after,
+.bottom-border:after {
+  border-right: 3px solid #ff00ff;
+}
+
+.dot{
   height: 10px;
   width: 10px;
   border-radius: 50%;
   display: inline-block;
   background-color: #ff00ff;
 }
-p{
-  margin-top: -2px;
-  padding: 0;
-}
+
 @font-face {
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
-
 .section-tabled p{
   margin-bottom: -6px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
+
 </style>
+
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
+
 
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -117,25 +182,29 @@ p{
             </ul>
           </div> --}}
           <div class="sections">
-           <div class="section section-tabled" style="font-size:16px; font-style: itaic; line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
+           <div class="section section-tabled">
   <div class="tabled-th">
-    <h2><b>PRIZES</b></h2>
+    <h2>PRIZES</h2>
   </div>
-        <div class="tabled-td" >
-          <!-- <h6>Grand Prizes</h6> -->
-          <!-- <img src="https://cdn.shopify.com/s/files/1/2938/0444/products/f735780fa1c12fdea1b0c04e630997dd_1400x.png?v=1550613089"> -->
-<!-- <b>Prizes:</b>
- -->
+        <div class="tabled-td" style="">
+
+       <!--  <p>Sample Guidelines</p>
+         Photographs must be resized to 1100 pixels on the longest side.
+They must be saved as JPEG file (JPG).<br><br> -->
+<div class="element">
+<div class="top-border"></div>
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: jutify; font-family:'Montserrat', sans-serif;" >
+  
 <p>
 All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
 </p>
 
 <p>
-<b>Top 3 Overall Grand Prizes Non – Professional:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+<b>Top 3 Overall Grand Prizes (Non – Professional):</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
 </p>
 
 <p>
-<b>Top 3 Overall Grand Prizes Professional:</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
+<b>Top 3 Overall Grand Prizes (Professional):</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
 </p>
 
 <p>
@@ -164,11 +233,13 @@ In case any applicable law prohibits the Sponsor from awarding a photographer th
 
 <b>Image Profiling:</b>
 Picture+254 will randomly select photos for highlight on its website during and after the competition while displaying entries in a publicly accessible Picture+254 Stock Gallery for viewership and purchase by interested parties.
+<br><br>
+ <div class="bottom-border" style="margin-top: 40px;"></div>
+</div>
+</div>
 
 
     </div>
-
-
 </div>
           </div>
           
@@ -186,12 +257,31 @@ Picture+254 will randomly select photos for highlight on its website during and 
     <div id="copyright" class="wfont">&copy; Photo Contest.</div>
   </div>
 </div>
-<script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
+  <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
 
 <script type="text/javascript">
 
   $("p").after("<center><span class=\"dot\"></span></center>");
 </script>
+<!-- 
+<style type="text/css">
+  @font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
 
+#mikiyakobayashi{
+  font-family: 'Montserrat',sans-serif;
+}
+</style> -->
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
 </body>
 </html>

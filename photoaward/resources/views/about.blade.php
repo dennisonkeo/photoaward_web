@@ -96,7 +96,13 @@
 }
 </style>
 
- <script type="text/javascript">
+<script type="text/javascript">
+// Date;
+function showDate()
+{
+  alert(Date.parse("Jan 28, 2020 12:00:00"));
+}
+
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -119,6 +125,8 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
 
+  // var endtime = new Date("Mar 15, 2020 12:00:00").getTime();
+
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
@@ -132,16 +140,16 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
+  // updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
-</script>
+</script>   
 
     <style type="text/css">
       #clockdiv{
@@ -330,6 +338,7 @@ initializeClock('clockdiv2', deadline2);
   font-family: 'Montserrat', sans-serif;
 }
 .section-tabled p{
+  text-align: justify; 
   margin-bottom: -6px;
 }
 .field-accordion-summary{
@@ -621,7 +630,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; font-family:'Montserrat', sans-serif;">
+  <div class="field-accordion-description" style="line-height: 25px; font-family:'Montserrat', sans-serif;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -631,7 +640,9 @@ initializeClock('clockdiv2', deadline2);
 <div class="top-border"></div>
 <div class="contentt">
 
+<p>
 Hi and welcome to Picture+254
+</p>
 <p>
 This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
@@ -872,13 +883,13 @@ You are not allowed to digitally or otherwise enhance the photos you submit. The
 All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
 <p></p>
 <p>
-<b>Top 3 Overall Grand Prizes Non – Professional:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+<b>Top 3 Overall Grand Prizes (Non – Professional):</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
 </p>
 
-<b>Top 3 Overall Grand Prizes Professional:</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
+<b>Top 3 Overall Grand Prizes (Professional):</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
 
 <br><br>
-<a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
+<a onclick="window.location='{{ url("prizes") }}'" href="#">Read more.</a>
 
 <!-- <p>
 <b>Category Winners:</b>The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
@@ -976,6 +987,8 @@ Picture+254 will randomly select photos for highlight on its website during and 
         <div class="element">
           <div class="top-border"></div>
             <div class="contentt">
+
+
 <p>
 Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
 </p>
@@ -1060,6 +1073,7 @@ Contestants are not allowed to contact us about the status of entries or judging
 
 
 <h4>STANDARD GROUP</h4>
+<a href="https://www.standardmedia.co.ke/corporate/about">Standard Group</a>
 
 <!-- <h4>
 Here are the details about entry fees and deadlines for 2019/2020 Picture+254 photo contest.
@@ -1123,7 +1137,11 @@ function closeNav() {
 </script>
 
 <script type="text/javascript">
-
+// Date;
+function showDate()
+{
+  alert(Date.parse("Jan 28, 2020 12:00:00"));
+}
 
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -1147,6 +1165,8 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
 
+  // var endtime = new Date("Mar 15, 2020 12:00:00").getTime();
+
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
@@ -1160,14 +1180,14 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
+  // updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
 </script>				
 
