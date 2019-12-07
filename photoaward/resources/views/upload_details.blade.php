@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Photo Contest</title>
+    <title>Picture+254</title>
 
     <meta name="description" content="WPO Users">
     <meta name="viewport" content="width=device-width, initial-scale=1">

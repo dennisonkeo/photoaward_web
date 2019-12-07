@@ -211,6 +211,10 @@
 .tab:hover{
 	cursor: pointer;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
 </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -266,8 +270,8 @@
 		<div lang="en" style="">
 
 <div style="width:100%; margin:auto; max-width:525px; position:relative; border-radius: 5px;">
-	<p style="font-weight: bold; font-size: 18px; text-transform: uppercase;">
-		Join us, Upload cool pictures and get a chance to win big!!!
+	<p style="font-weight: bold; font-size: 18px; text-transform: upprcase;  font-family: 'Montserrat', sans-serif ">
+		 Join the community, Submit cool photos, get a chance to win cash prizes, interact, Learn more and sell your photos !!!
 	</p>
 </div>
 			

@@ -6,7 +6,7 @@
     
     <meta charset="utf-8">
     
-    <title>Photo Contest</title>
+    <title>Picture+254</title>
     
     <!-- <link rel="shortcut icon" href="https://users.worldphoto.org/favicon.ico" /> -->
 

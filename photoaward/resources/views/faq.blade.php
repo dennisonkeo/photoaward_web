@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture +254|FAQ</title>
+	<title>Picture+254|FAQ</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 	
@@ -39,7 +39,13 @@
     	}
     	.text_line{
 	/*line-height: 48px;*/
-	font-family: cambria;
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled{
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
 }
 
     </style>

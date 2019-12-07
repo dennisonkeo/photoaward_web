@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture +254|Contact</title>
+	<title>Picture+254|Contact</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 	
@@ -41,7 +41,14 @@
 	/*line-height: 48px;*/
 	font-family: cambria;
 }
-
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
     </style>
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -52,7 +59,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE +254</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE+254</span></a></div>
 		
 
 		<div id="gnavi" class="nav">
@@ -87,7 +94,7 @@
 		<div lang="en">
 			<br>For requests, information or comments, please contact below.<br>
 			<br>
-				<strong>PICTURE +254</strong><br>
+				<strong>PICTURE+254</strong><br>
 				  152-0003 Nairobi Kenya<br>
 				Mail. <a href="#">picture254.com</a>
 			<br>
