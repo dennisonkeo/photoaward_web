@@ -4,7 +4,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
+	<title>Picture+254</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -653,7 +653,7 @@ By submitting an entry, the contestant certifies that he/she is the either the c
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-Picture+254 Photo Contest runs <b>6th December, 2019</b> – <b>24th January, 2020</b>.
+Picture+254 Photo Contest runs <b>12th December, 2019</b> ~ <b>27th January, 2020</b>.
 <br><br>
 <a onclick="window.location='{{ url("about-competition") }}'" href="#">Read more.</a>
 

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Picture254</title>
+  <title>Picture+254</title>
   <meta charset="utf-8">
   <meta name="description" content="Simple lightweight javascript popup modal plugin"><meta name="robots" content="index, follow">
   <meta name="viewport" content="width=device-width,initial-scale=1">

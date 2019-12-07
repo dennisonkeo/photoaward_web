@@ -10,7 +10,7 @@
 
 		<script src="{{ asset('js/right_click.js') }}"></script>
 				
-		<title>Picture254</title>
+		<title>Picture+254</title>
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />

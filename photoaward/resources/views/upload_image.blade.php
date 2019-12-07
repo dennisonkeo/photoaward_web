@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Photo Contest</title>
+    <title>Picture+254</title>
 
     <script src="{{ asset('js/right_click.js') }}"></script>
 
