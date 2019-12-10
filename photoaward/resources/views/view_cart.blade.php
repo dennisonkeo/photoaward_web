@@ -8,11 +8,9 @@
     <meta charset="utf-8">
     
     <title>Picture+254</title>
-    
-    {{-- <link rel="shortcut icon" href="https://users.worldphoto.org/favicon.ico" /> --}}
 
-    <meta name="description" content="WPO Users">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="stock-album">
+    <meta name="picture+254" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
 <!-- Google Tag Manager -->
@@ -128,25 +126,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 @include('header-menu')
 
-
-{{-- <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <ul class="progress-meter progress-4-items">
-                            <li class='first active-trail '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171?competition_id=25' class='first active-trail '>1. Image Upload</a>
-                                    </li>
-                            <li class='active-trail '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171/details/25' class='active-trail '>2. Image Details</a>
-                                    </li>
-                            <li class='active '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171/review?competition_id=25' class='active '>3. Review &amp; Confirm</a>
-                                    </li>
-                            <li class='last '>
-                                            <span class='last '>4. Complete</span>
-                                    </li>
-                    </ul>
-    </div>
-</div> --}} <!-- End row -->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
 
