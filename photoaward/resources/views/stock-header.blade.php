@@ -71,7 +71,7 @@ use App\Purchase;
 
 					</div>
 
-										<nav id="main_menu" class="clearfix expanded">
+						<nav id="main_menu" class="clearfix expanded">
 						<div id="stocky_menu_container" class="menu-main-container"><ul id="stocky_menu" class="menu">
 
 						<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="{{ route('/') }}" aria-current="page">Home</a></li>
@@ -112,7 +112,7 @@ use App\Purchase;
 					<div id="header_inner" class="light_text">
 
 						
-							<h1 class="sitename_logo"><a href="#" title="">Picture254</a></h1>
+							<h1 class="sitename_logo"><a href="#" title="">Picture+254</a></h1>
 
 							<h2 id="slogan"> photography marketplace .</h2><br>
 
