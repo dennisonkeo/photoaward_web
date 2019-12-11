@@ -1,13 +1,13 @@
 $(window).ready(function () {
     $('#mobile-menu').click(function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         $('#menu').fadeToggle();
     });
     $('.show-dropdown-menu').mouseenter(function (event) {
         if (window.innerWidth <= 1000) {
             return;
         }
-        event.preventDefault();
+        // event.preventDefault();
         if (!$('#' + $(this).data('target')).hasClass('active')) {
             $('.dropdown-menu').fadeOut();
         }
