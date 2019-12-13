@@ -575,7 +575,7 @@ else
 
       <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Object Name:</div><div class="asset-detail__value asset-detail__cell">xxxx.jpg</div></div>
 
-      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Source:</div><div class="asset-detail__value asset-detail__cell">Picture254</div></div>
+      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Source:</div><div class="asset-detail__value asset-detail__cell">Picture+254</div></div>
 
     <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Max file size:</div><div class="asset-detail__value asset-detail__cell">2,000 px not larger than 10 MB. 
 </div></div>

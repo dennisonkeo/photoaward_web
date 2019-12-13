@@ -114,7 +114,7 @@ use App\Purchase;
 						
 							<h1 class="sitename_logo"><a href="#" style="color: #ff00ff" title="">Picture+254</a></h1>
 
-							<h2 id="slogan" style="color: #000" > Photography Marketplace.</h2><br>
+							<h2 id="slogan" style="color: #fff" > Photography Marketplace.</h2><br>
 
 							<h2 id="slogam" style="color: #07bab7" > {{ $category }} </h2>
 

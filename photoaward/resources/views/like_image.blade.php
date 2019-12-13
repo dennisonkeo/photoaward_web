@@ -26,7 +26,7 @@
 
 
   
-  {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
+  <script src="{{ asset('js/right_click.js') }}"></script>
   
   <style type="text/css">
 
@@ -298,7 +298,7 @@ span .hoverr:hover{
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                       <span style="color: #ff0051;"> PIC+254</span>
+                       <span style="color: #ff0051;"> PICTURE+254</span>
                     </a>
                 </span>
             </div>
