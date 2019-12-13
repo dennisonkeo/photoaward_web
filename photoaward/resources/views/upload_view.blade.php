@@ -99,6 +99,11 @@
                         <p id="msg">Message</p>
                 </div>
                 {{-- <label class="label">Category</label> --}}
+                <select class="form-control" name="track" id="track">
+                        <option>Professionals</option>
+                        <option>Non-Professionals</option>
+                </select>
+
                 <select class="form-control" name="category" id="category">
                     @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -147,10 +152,18 @@
 	// $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
 
     var cat = document.getElementById("category").value;
+
+    var track = document.getElementById("track").value;
     //console.log('test '+cat);
 
     $('#category') .on('change', function(e){
      cat = e.target.value;
+        //console.log(cat);
+
+    });
+
+    $('#track') .on('change', function(e){
+     track = e.target.value;
         //console.log(cat);
 
     });
@@ -170,6 +183,7 @@
                 return {
                     _token: $("input[name='_token']").val(),
                     category: cat,
+                    track: track,
                     random_str: $("input[name='random_str']").val()
                 
                 };

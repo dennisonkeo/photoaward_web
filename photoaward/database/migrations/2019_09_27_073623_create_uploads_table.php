@@ -20,6 +20,7 @@ class CreateUploadsTable extends Migration
             $table->string('caption');
             $table->string('imageName');
             $table->string('device');
+            $table->string('track');
             $table->string('token');
             $table->string('uploaded')->defaut('no');
             $table->integer('published')->defaut(0);

@@ -26,6 +26,14 @@ class UploadController extends Controller
         return view('upload_details');
     }
 
+    public function entries($track)
+    {
+
+      $categories = Category::all();
+
+      return view('entries', compact('categories', 'track'));
+    }
+
     public function stock()
     {
 
@@ -62,23 +70,24 @@ class UploadController extends Controller
 
     public function view_cart()
     {
-        $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+        $images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+        $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
         $total_amount = 0;
 
         $total = 0;
 
-        foreach($imagesgroup->groupby('category_id') as $image)
+        foreach($imagesgroup as $image)
         {
-            foreach($image as $img)
-            {
-                $total = count($image)*$img->category->amount;
-                break; 
-            }
-
-            $total_amount += $total;
+              if($image->track == "Professionals")
+              {
+                $total_amount += 200;
+              }
+              else
+              {
+                $total_amount += 100;
+              }
         }
 
     $categories = Category::all();
@@ -260,6 +269,7 @@ class UploadController extends Controller
               $upload->uploaded = "no";
               $upload->user_id = Auth::user()->id;
               $upload->category_id = $request->input("category");
+              $upload->track = $request->input("track");
 
               $upload->save();
 
@@ -319,9 +329,9 @@ class UploadController extends Controller
     {
 
         // $this->test();
-        $images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+        $images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+        $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
         $total_amount = 0;
 
@@ -331,14 +341,24 @@ class UploadController extends Controller
         {
             foreach($image as $img)
             {
-                $total = count($image)*$img->category->amount;
+              if($img->track == "Professionals")
+              {
+                $total = count($image)*200;
                 break; 
+              }
+              else
+              {
+                  $total = count($image)*100;
+                  break; 
+              }
+                
             }
 
-            $total_amount += $total;
+              $total_amount += $total;
         }
+        
 
-        $verifytoken = ImagePay::where('token',"=",session()->getId())->first();
+        $verifytoken = ImagePay::where('user_id', Auth::user()->id)->first();
 
                         $upload = new ImagePay();
              

@@ -109,7 +109,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12" id="competitions">
-            <h2 style="text-align: left;" class="heading-title">Photo Contest Entry</h2>
+            <h2 style="text-align: left;" class="heading-title" id="heading_title">{{ $track }}</h2>
         </div>
     
     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -390,6 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 return {
                     _token: $("input[name='_token']").val(),
                     category: $("input[name='category']").val(),
+                    track: $("#heading_title").text(),
                     random_str: $("input[name='random_str']").val()
                 
                 };

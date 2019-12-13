@@ -15,15 +15,20 @@
 <li><a onclick="window.location='{{ url("prizes") }}'" href="#"><span>PRIZES</span></a></li>
 <li><a onclick="window.location='{{ url("jury") }}'"  href="#"><span>THE JURY</span></a></li>
 <li><a onclick="window.location='{{ url("sponsors") }}'" href="#"><span>SPONSORS</span></a></li>
+<li><a onclick="window.location='{{ url("like-images") }}'"  href="#"><span>LIKE IMAGES</span></a></li>
 <li><a onclick="window.location='{{ url("stock-album") }}'"  href="#"><span>STOCK ALBUM</span></a></li>
 <li><a onclick="window.location='{{ url("contact") }}'" href="#"><span>CONTACT</span></a></li>
 <li><a onclick="window.location='{{ url("faq") }}'" href="#"><span>FAQ</span></a></li>
+@if(Auth::check())
+<li><a onclick="window.location='{{ route("logout") }}'" href="#"><span>LOGOUT</span></a></li>
+@else
+<li><a onclick="window.location='{{ route("login") }}'" href="#"><span>LOGIN/SIGNUP</span></a></li>
+@endif
 <li><a href="#"><span></span></a></li>
 
 
 </ul>
 </nav>
-
 
 
 </div>

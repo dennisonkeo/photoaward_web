@@ -76,11 +76,11 @@ class HomeController extends Controller
         return view('upload_view', compact('categories'));
     }
 
-    public function upload_image($id)
+    public function upload_image($id,$track)
     {
         $category = Category::where('id',$id)->first();
 
-        return view('upload_image', compact('category'));
+        return view('upload_image', compact('category', 'track'));
     }
 
     public function new_upload()
