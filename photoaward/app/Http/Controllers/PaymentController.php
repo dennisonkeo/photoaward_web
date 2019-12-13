@@ -19,16 +19,13 @@ class PaymentController extends Controller
 
 	public function store()
 	{
-
 		$mpesa= new \Safaricom\Mpesa\Mpesa();
-
-		// dd(config('app.MPESA_ENV'));
 
 		$refNo = str_random(6);
 
-					$images = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+					$images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-			        $imagesgroup = Upload::where('token',session()->getId())->where('uploaded','no')->get();
+			        $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
 			        $total_amount = 0;
 
@@ -84,7 +81,7 @@ class PaymentController extends Controller
 			             
 			                           $upload->save();
 			             
-			                        Upload::where('token',"=", session()->getId())
+			                        Upload::where('user_id', Auth::user()->id)
 			                                ->where('uploaded','no')
 			                                ->update(array('uploaded' => 'yes'));
 
