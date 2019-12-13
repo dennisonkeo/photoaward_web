@@ -364,7 +364,7 @@ initializeClock('clockdiv2', deadline2);
 
 		<div id="gnavi" class="nav">
 			<div class="nav-btn">
-				<a onclick="#gnavi-links" href="#">
+				<a href="#gnavi-links">
 					<span class="bars">
 						<span class="bar"></span>
 						<span class="bar"></span>
@@ -1203,6 +1203,11 @@ initializeClock('clockdiv2', deadline2);
 function close_modal()
 {
   $('.start').hide();
+}
+
+function preventDefault(event)
+{
+  event.preventDefault();
 }
   
 </script>
