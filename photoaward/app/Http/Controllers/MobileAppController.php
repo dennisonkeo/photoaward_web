@@ -169,6 +169,7 @@ public function getImages()
               $upload->uploaded = "no";
               $upload->user_id = Auth::user()->id;
               $upload->category_id = $request->input("category");
+              $upload->track = $request->input("track");
 
               $upload->save();
 
