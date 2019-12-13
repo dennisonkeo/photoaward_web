@@ -35,8 +35,17 @@ class PaymentController extends Controller
 			        {
 			            foreach($image as $img)
 			            {
-			                $total = count($image)*$img->category->amount;
-			                break; 
+			            	if($img->track == "Professionals")
+			            	{
+				            	$total = count($image)*200;
+				                break;
+			            	}
+			            	else
+			            	{
+			            		$total = count($image)*100;
+			                	break;
+			            	}
+			                 
 			            }
 
 			            $total_amount += $total;

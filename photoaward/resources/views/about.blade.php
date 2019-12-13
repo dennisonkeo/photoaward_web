@@ -405,8 +405,11 @@ initializeClock('clockdiv2', deadline2);
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-
+          @if(Auth::check())
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          @else
           <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          @endif
 
           <div id="clockdiv">
               <div>
@@ -443,7 +446,11 @@ initializeClock('clockdiv2', deadline2);
               <img src="images/logo_.png" style="height: 150px; background-size: cover;">
             </div>
           <div class="row" style="margin: 0 auto;">
+            @if(Auth::check())
+            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
+            @else
             <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
+            @endif
         </div>
           <div id="clockdiv2" style="margin-top: 2px;">
               <div>
@@ -1196,6 +1203,11 @@ initializeClock('clockdiv2', deadline2);
 function close_modal()
 {
   $('.start').hide();
+}
+
+function preventDefault(event)
+{
+  event.preventDefault();
 }
   
 </script>

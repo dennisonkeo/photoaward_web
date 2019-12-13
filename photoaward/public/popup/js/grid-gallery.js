@@ -58,8 +58,12 @@ $(document).on('click','.gg-element',function(){
 
         },
         error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-          alert(errorThrown);
+          // console.log(errorThrown);
+
+          if(errorThrown == "Unauthorized")
+          {
+            window.location.href =  '/modall';
+          }
         }
       });
 
@@ -133,7 +137,10 @@ $(document).on('click','.gg-element',function(){
         },
         error: function(jqXHR, textStatus, errorThrown){
           console.log(errorThrown);
-          alert(errorThrown);
+          if(errorThrown == "Unauthorized")
+          {
+            window.location.href =  '/modall';
+          }
         }
       });
 
@@ -187,8 +194,11 @@ $(document).on('click','.gg-element',function(){
 
         },
         error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-          alert(errorThrown);
+          // console.log(errorThrown);
+          if(errorThrown == "Unauthorized")
+          {
+            window.location.href =  '/modall';
+          }
         }
       });
 
