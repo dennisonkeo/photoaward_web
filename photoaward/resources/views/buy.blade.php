@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>    Picture+254</title>
+    <title>Picture+254</title>
 
     <script src="{{ asset('js/right_click.js') }}"></script>
     
@@ -152,7 +152,7 @@
 
         
         <div class="navbar-header">
-            <a href="/" class="navbar-brand">Picture254</a>
+            <a href="/" class="navbar-brand">Picture+254</a>
         </div>
 
 
@@ -568,10 +568,9 @@
                data-action="photo-detail"
                data-photo-id="53510990a39e296563439ffc">
 
-               
-                                                           <img src="https://images.snapwi.re/15db/53510990a39e296563439ffc.w314.jpg"  class="img-responsive"  width="314" />
+               <img src="https://images.snapwi.re/15db/53510990a39e296563439ffc.w314.jpg"  class="img-responsive"  width="314" />
                              
-                                                </a>
+                  </a>
             </div>
 
     
