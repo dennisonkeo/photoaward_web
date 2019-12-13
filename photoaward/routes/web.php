@@ -62,7 +62,7 @@ Route::get('modall', function () {
 
 Route::get('user-auth', function () {
     return view('cart_modal');
-})->name('modall');
+})->name('user-auth');
 
 Route::get('guidelines', function () {
     return view('guidelines');
@@ -253,7 +253,7 @@ Route::get('view-album', 'UploadController@view_cart')->name('view-album');
 
 Route::get('image-detail', 'UploadController@index')->name('image-detail');
 
-Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-image');
+Route::get('upload-image/{id}/{track}', 'HomeController@upload_image')->name('upload-image');
 
 Route::get('account-settings', 'HomeController@show_account')->name('account-settings');
 
@@ -270,6 +270,8 @@ Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
 Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
 
 Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
+
+Route::get('competition-enteries/{track}', 'UploadController@entries')->name('competition-enteries');
 
 });
 

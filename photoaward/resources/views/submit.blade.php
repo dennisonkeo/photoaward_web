@@ -183,35 +183,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="row competitions" id="competitions">
         <div class="col-xs-12 col-sm-12 col-md-12" >
-            <h2 class="heading-title" style="background-color: #585858;">Enter One Of The Categories Below</h2>
+            <h2 class="heading-title" style="background-color: #585858;">Picture+254 Photo Award</h2>
         </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 competitions-area">
                             <div class="row">
                                 
-                                @foreach($categories as $category)
-                                    <div class="col-xs-12 col-sm-12 col-md-4 competition competition-sony ">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 competition competition-sony ">
                                         <div class="inner">
 
                                             <div class="title">
-                                                <h2 style="border-color: #b7eb34;">{{ $category->name }} </h2>
+                                                <h2 style="border-color: #b7eb34;">
+                                                    Professionals
+                                                </h2>
                                             </div>
 
                                             <div class="content">
                                                 <div class="thumbnail" style="background: #000;">
-                                                        <img src="images/{{$category->cover}}" alt="news01.jpg" alt="Open competition" style="max-height: 200px;">
+                                                        <img src="images/pic12.jpg" alt="news01.jpg" alt="Open competition" style="max-height: 300px;">
 
                                                         <div class="caption caption-up">
-                                                            <p>{{ $category->description }}</p>
+                                                            <p>Description</p>
                                                         </div>
                                                     </div>
-                                             <a href="{{ route('upload-image', $category->id) }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
+                                             <a href="{{ route('competition-enteries', 'Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                @endforeach
+                                    <div class="col-xs-12 col-sm-12 col-md-6 competition competition-sony ">
+                                        <div class="inner">
+
+                                            <div class="title">
+                                                <h2 style="border-color: #b7eb34;">
+                                                    Non-Professionals
+                                                </h2>
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="thumbnail" style="background: #000;">
+                                                        <img src="images/pic18.jpg" alt="news01.jpg" alt="Open competition" style="max-height: 300px;">
+
+                                                        <div class="caption caption-up">
+                                                            <p>Description</p>
+                                                        </div>
+                                                    </div>
+                                             <a href="{{ route('competition-enteries', 'Non-Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                      </div>
                         </div>
