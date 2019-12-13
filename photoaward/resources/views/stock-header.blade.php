@@ -112,11 +112,11 @@ use App\Purchase;
 					<div id="header_inner" class="light_text">
 
 						
-							<h1 class="sitename_logo"><a href="#" title="">Picture+254</a></h1>
+							<h1 class="sitename_logo"><a href="#" style="color: #ff00ff" title="">Picture+254</a></h1>
 
-							<h2 id="slogan"> photography marketplace .</h2><br>
+							<h2 id="slogan" style="color: #000" > Photography Marketplace.</h2><br>
 
-							<h2 id="slogam"> {{ $category }} </h2>
+							<h2 id="slogam" style="color: #07bab7" > {{ $category }} </h2>
 
 							{{-- <form method="get" class="searchform" action="http://themes.designcrumbs.com/stocky/">
 	<div>

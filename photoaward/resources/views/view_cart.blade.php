@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                     </span>
 
-                    <small>or</small>
+                    <small></small>
 
                     <span class="btn-grp success">
                         <button type="button" id="payment" class="btn btn-success" name="payment" data-target="#exampleModalCenter" data-toggle="modal" data-keyboard="false" data-backdrop="static">
@@ -237,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </button> --}}
                     </span>
 
-                    <small>or</small>
+                    <small></small>
 
                     <span class="btn-grp danger">
                         <a href="submit-entry#competitions" class="btn btn-danger" role="button">

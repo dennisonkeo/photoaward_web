@@ -358,7 +358,7 @@ initializeClock('clockdiv2', deadline2);
 		
 		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
+    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE+254</button>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
@@ -1050,7 +1050,7 @@ Contestants are not allowed to contact us about the status of entries or judging
           <h2 class="title">
             
     <div class="field-accordion-title">
-       SPONSORS
+       OUR PARTNERS
     </div>
           </h2>
           <div class="text">
@@ -1058,7 +1058,7 @@ Contestants are not allowed to contact us about the status of entries or judging
   <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     
     <h4>
-     Picture+254 2019/2020 <br> Sponsors.
+     Picture+254 2019/2020 <br> Our Partners.
     </h4>
   </div>
           </div>

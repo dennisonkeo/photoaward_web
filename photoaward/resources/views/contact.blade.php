@@ -94,9 +94,9 @@
 		<div lang="en">
 			<br>For requests, information or comments, please contact below.<br>
 			<br>
-				<strong>PICTURE+254</strong><br>
-				  152-0003 Nairobi Kenya<br>
-				Mail. <a href="#">picture254.com</a>
+				<strong>PICTURE +254</strong><br>
+				  ###~### Nairobi Kenya<br>
+				Mail: <a href="#">254pic@gmail.com</a>
 			<br>
 		</div>
 
@@ -113,7 +113,7 @@
 @include('menu')
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; Picture +254.</div>
 	</div>
 </div>
 </body>
