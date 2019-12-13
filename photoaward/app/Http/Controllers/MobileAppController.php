@@ -198,7 +198,15 @@ public function getImages()
 
         foreach($uploads as $upload)
         {
-            $cost += $upload->category->amount;
+            if($upload->track == "Professionals")
+            {
+                $cost += 200;
+            }
+            else
+            {
+                $cost += 100;
+            }
+            
         }
 
         
