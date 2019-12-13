@@ -364,7 +364,7 @@ initializeClock('clockdiv2', deadline2);
 
 		<div id="gnavi" class="nav">
 			<div class="nav-btn">
-				<a onclick="window.location='#gnavi-links'" href="#gnavi-links">
+				<a onclick="#gnavi-links" href="#">
 					<span class="bars">
 						<span class="bar"></span>
 						<span class="bar"></span>
