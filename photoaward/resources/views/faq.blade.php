@@ -91,12 +91,54 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<h3>How to apply...</h3>
-			<p>(errors, changing registration information)</p>			
-			<p>About regulations for applications and works?</p> 
-			<p>About regulations for applications and works?</p>
-			<p>About receiving awards and exclusive benefits?How</p>
-			<p>About voting and the gallery of entries?</p>
+		<h2>Q. Am I eligible to enter?</h2>
+
+<p>If you’re an amateur, enthusiast or professional photographer, you are eligible to enter regardless of your location.</p>
+
+<h2>Q. What about my copyright? Will you sell my images?</h2>
+
+<p>Each entrant retains the copyright to their images. We may occasionally display your images in our advertising and social media when in association with this competition.</p>
+
+<h2>Q. What are the image specifications?</h2>
+
+<p>
+In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB. 
+</p>
+
+<h2>Q. Do I need a model release for each person in a crowd or street image?</h2>
+
+<p>
+Model Releases are required by law in most countries when photographing people. Obtaining a model release from each person in a crowd is nearly impossible. It is standard practice to display a ‘Crowd Release’ sign at the time of photographing. While we do not need to see proof of this at the time of your entry, we may request it at any stage.
+</p>
+
+<h2>Q. When does the competition close?</h2>
+
+<p>
+This years competition closes at midnight <b>dd/mm/yyyy</b>.
+</p>
+
+<h2>Q. I need help sizing my images for the competition.</h2>
+
+<p>
+We’ve made a quick video tutorial on how to correctly save your images using Photoshop CS6. If you don’t have Photoshop you can use free Software Programs such as gimp. If you use the Save for Web feature adjust the “Quality” slider until your image under 2MB
+</p>
+
+<h2>Q. Can my images contain my Name or Watermark?</h2>
+
+<p>
+No. In order for our judging to be ‘blind’ your submissions must not contain any visible watermarks
+</p>
+
+<h2>Q. When will the winners be announced?</h2>
+
+<p>
+Winners will be published on the website and contacted via email <b>dd/mm/yyyy</b>.
+</p>
+<p>
+Do you still have questions? Get in touch with us.
+<a onclick="window.location='{{ url("contact") }}'" href="#">Contact Us.</a>
+</p>
+	
 		</div>
 
 	</div>
@@ -112,7 +154,7 @@
 @include('menu')
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; Picture +254.</div>
 	</div>
 </div>
 </body>
