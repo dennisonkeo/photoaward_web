@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
+	<title>Picture+254</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -94,7 +94,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PICTURE +254</span></a></div>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -171,7 +171,7 @@
 
 							<!-- <h2 class="title"> Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">PEOPLE</h2>
 
 							<p>
@@ -193,7 +193,7 @@
 
 							<!-- <h2 class="title">1.	Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">THE GREAT OUTDOOR</h2>
 
 							<p>
@@ -213,7 +213,7 @@
 
 							<!-- <h2 class="title">Judges are looking at how contestants bring out the various dimensions of Bridges, Buildings, Cityscapes, Interiors, Dams, Roads and other transport infrastructure while retaining the original design elements of the work</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">ARCHITECTURE</h2>
 
 							<p>
@@ -233,7 +233,7 @@
 
 							<!-- <h2 class="title">Judges are looking for presentation and creativity. Judges will also be looking for the best cooking moments and images that best express how food brings people together. </h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">FOOD</h2>
 
 							<p>
@@ -254,7 +254,7 @@
 
 							<!-- <h2 class="title">Judges are looking for the most captivating and original look and fashion sense. They will look for images that best represents the current and emerging fashion trends including creativity and originality in clothes design, hair and accessories, etc. Judges are looking for style.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">FASHION</h2>
 
 							<p>
@@ -274,7 +274,7 @@
 
 							<!-- <h2 class="title">Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h5 class="title">EXPERIENCE.KE</h5>
 							
 							<p>
@@ -295,7 +295,7 @@
 
 							<!-- <h2 class="title">Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.</h2> -->
 						</div>
-						<div class="body">
+						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">ALTERED IMAGES</h2>
 							
 							<p>

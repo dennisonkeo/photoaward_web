@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>PHOTO CONTEST</title>
+  <title>Picture+254</title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -209,7 +209,7 @@ By submitting an entry, the contestant certifies that he/she is the either the c
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 <p>
-Picture+254 Photo Contest runs <b>6th December, 2019</b> – <b>24th January, 2020</b>.
+Picture+254 Photo Contest runs <b>12th December, 2019</b> ~ <b>27th January, 2020</b>.
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who May Enter:</h4>
 <p>
@@ -223,7 +223,7 @@ You must be 18 years old or older.
 This exciting contest gives everyone a chance to win. You may have taken a photo for fun, or perhaps you are a developing or professional photographer. This is your chance to express themselves to a global audience through the medium of photography. Remember that every entry enters automatically into a Gallery Stock that will be marketed worldwide. You earn money every time someone downloads and uses your photo.
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
-You can sign up and submit photographs online through our website <b>www.picture+254.com</b> or through the <b>Picture+254 App</b> that you can download onto your phone. 
+You can sign up and submit photographs online through the <b> Picture+254 App</b> that you can download from either (App Store or Playstore) onto your phone or through our website <b>www.picture+254.com</b> 
 <br><br>
  <div class="bottom-border" style="margin-top: 40px;"></div>
 </div>

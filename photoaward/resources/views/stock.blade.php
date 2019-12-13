@@ -10,7 +10,7 @@
 
 		<script src="{{ asset('js/right_click.js') }}"></script>
 				
-		<title>Picture254</title>
+		<title>Picture+254</title>
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
@@ -116,7 +116,7 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("{{ asset('images/pic60.jpg') }}");
+	background-image:url("{{ asset('images/pic10.jpg') }}");
 }
 #home_cta {
 	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");
@@ -418,7 +418,7 @@ jQuery(document).ready(function($){
 					</div>
 					
 					<div id="footer_copy">
-						&copy; 2019 picture254
+						&copy; 2019 picture+254
 						
 							 
 						</div>

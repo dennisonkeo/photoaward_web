@@ -6,7 +6,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
+	<title>Picture+254</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
@@ -62,7 +62,7 @@
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
-.section-tabled p{
+.contents{
   margin-bottom: -6px;
   font-size: 16px;
 }
@@ -101,7 +101,7 @@ body{
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PHOTO CONTEST</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PICTURE+254</span></a></div>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -180,7 +180,7 @@ body{
 
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE +254.</div>
 	</div>
 </div>
 </body>

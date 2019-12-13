@@ -11,7 +11,7 @@
 		<script src="{{ asset('js/right_click.js') }}"></script>
 
 				
-		<title>Picture +254</title>
+		<title>Picture+254</title>
 
  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -132,7 +132,7 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/06/header.jpg");
+	background-image:url("{{ asset('images/pic10.jpg') }}");
 }
 #home_cta {
 	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");

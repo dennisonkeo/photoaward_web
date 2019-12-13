@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Picture +254</title>
+    <title>Picture+254</title>
 
     <script src="{{ asset('js/right_click.js') }}"></script>
 
@@ -77,7 +77,7 @@
                                     <form accept-charset="UTF-8" method="POST" action="buyer-login">
                                     {{ csrf_field() }}
                                        
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="username">
+                                    <input id="email" class="form-control" type="text" placeholder="Email/Phone no" name="username">
                                     <input id="password" class="form-control" type="password" placeholder="Password" name="password">
                                     <input class="btn btn-default btn-login" type="submit" value="Login" oncick="loginAjax()">
                                     </form>

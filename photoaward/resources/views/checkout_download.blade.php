@@ -7,7 +7,7 @@
 		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 
 				
-		<title>Picture +254</title>
+		<title>Picture+254</title>
 
 		<script src="{{ asset('js/right_click.js') }}"></script>
 		
@@ -120,7 +120,7 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/06/header.jpg");
+	background-image:url("{{ asset('images/pic10.jpg') }}");
 }
 #home_cta {
 	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");
@@ -367,7 +367,7 @@ jQuery(document).ready(function($){
 					</div>
 					
 					<div id="footer_copy">
-						&copy; 2019 picture254
+						&copy; 2019 picture+254
 						
 							 
 						</div>
