@@ -123,9 +123,9 @@ class CartController extends Controller
                 // return $stkPushSimulation;
           $check = $stkPushSimulation; 
 
-          $callbackJSONData=file_get_contents('php://input');
-          $handle=fopen("uploads/transaction.txt", 'w');
-          fwrite($handle, $stkPushSimulation);   
+          // $callbackJSONData=file_get_contents('php://input');
+          // $handle=fopen("uploads/transaction.txt", 'w');
+          // fwrite($handle, $stkPushSimulation);   
 
           if($check !="")
           {
@@ -166,8 +166,8 @@ class CartController extends Controller
 
       $ResultCode = json_decode($callbackJSONData)->Body->stkCallback->ResultCode;
 
-      $handle=fopen("uploads/transaction.txt", 'w');
-          fwrite($handle, $callbackJSONData);
+      // $handle=fopen("uploads/transaction.txt", 'w');
+      //     fwrite($handle, $callbackJSONData);
 
       if($ResultCode == "0")
 
