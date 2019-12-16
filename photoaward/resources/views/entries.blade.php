@@ -2,9 +2,23 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    
-    <title>Picture+254</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
         
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -40,6 +54,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+
+        <style>
+            @font-face {
+            font-family: "Montserrat";
+            src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+        }
+        body{
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify;
+        }
+        .btn .btn-primary .enter{
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        </style>
     
 </head>
 
@@ -65,10 +96,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </h1>
 
 <p>
-    content
+    CONTENT<br>
+    ........................................
 </p>
                         
-            <p>Hover over an image to see the description. Click to enter the category of your choice.</p>
+            <p>Hover over an image to see the description of that specific category. Click Submit on a category of your choice to share your great work to the world.</p>
         </div>
     </div> <!-- End row -->
 
@@ -78,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h3 class="category-name">{{ $category->name }} </h3>
                     <div class="thumbnail">
                         <img src="{{ asset('images') }}/{{$category->cover}}" style="height: 300px; width: 100%;" alt="category placeholder">
-                        <a style="background: #ff00ff; border: #ff00ff;" href="{{ route('upload-image', [$category->id,$track]) }}" class="btn btn-primary enter" role="button">Submit</a>
+                        <a style="background: #ff00ff; border: #ff00ff;" href="{{ route('upload-image', [$category->id,$track]) }}" class="btn btn-primary enter" role="button">SUBMIT</a>
                         <div class="caption caption-up">
                             <p>
                                 {{ $category->description }}
@@ -105,12 +137,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
     
-{{--     <div class="row submit">
+        <div class="row submit">
         <a href="#" class="btn btn-danger" role="button">
             Back to competition</a>
         <a href="#" class="btn btn-info" role="button">
-            View other competitions</a>
-    </div> --}}
+            Details About Professionals</a>
+    </div> 
 
     </div>
 

@@ -3,15 +3,23 @@
 <html lang="en">
 <head>
 
-    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    
-    <title>Picture+254</title>
-
-    <meta name="description" content="stock-album">
-    <meta name="picture+254" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="{{ asset('js/right_click.js') }}"></script>
     
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -220,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="btn-grp primary">
                         <a href="{{route('upload-info')}}" class="btn btn-primary back" role="button" onclick="">
                             <i class="fa fa-upload fa-lg"></i>
-                            Upload more images
+                            Upload More Images
                         </a>
                     </span>
 

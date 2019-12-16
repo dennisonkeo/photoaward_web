@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture+254</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
+	
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <script src="{{ asset('js/right_click.js') }}"></script> -->
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <script src="{{ asset('js/right_click.js') }}"></script>
 <!-- Google Font Martel -->
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
@@ -816,7 +814,7 @@ You are not allowed to digitally or otherwise enhance the photos you submit. The
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-  Content <a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
+  Content <br><a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
 </ul>  
 </div>
       </div>
@@ -1126,7 +1124,7 @@ Non-Professional - Single image entry fee: Ksh.100.
 	<div class="container">
 
 
-    <div id="copyright" class="wfont">&copy; Picture+254. All Rights Reserved.</div> 
+    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div> 
 
 	</div>
 </div>
