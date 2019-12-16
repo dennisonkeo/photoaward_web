@@ -49,6 +49,8 @@ Route::get('upload-payment', 'PaymentController@store')->name('upload-payment');
 
 Route::get('history', 'MobileAppController@history')->name('history');
 
+Route::get('my-gallery', 'MobileAppController@getUserImages')->name('my-gallery');
+
 Route::put('update', 'MobileAppController@update')->name('update');
 
 Route::delete('delete-photo/{upload}', 'MobileAppController@destroy')->name('delete-photo');

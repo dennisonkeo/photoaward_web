@@ -133,6 +133,14 @@ public function getImages()
     return response()->json(["data"=>$uploads]);
 }
 
+public function getUserImages()
+{
+    // $uploads = Upload::latest()->get();
+    $uploads = Upload::where('user_id', Auth::user()->id)->latest()->get();
+
+    return response()->json(["data"=>$uploads]);
+}
+
     public function store(Request $request)
     {
 
