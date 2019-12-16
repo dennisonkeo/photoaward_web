@@ -74,8 +74,8 @@ use App\Purchase;
 						<nav id="main_menu" class="clearfix expanded">
 						<div id="stocky_menu_container" class="menu-main-container"><ul id="stocky_menu" class="menu">
 
-						<li onclick="window.location='{{ route("/") }}'" id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="{{ route('/') }}" aria-current="page">Home</a></li>
-						<li onclick="window.location='{{ route("stock-album") }}'" id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="{{ route('stock-album') }}" aria-current="page">Stock Album</a></li>
+						<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="{{ route('/') }}" aria-current="page">Home</a></li>
+						<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-144"><a href="{{ route('stock-album') }}" aria-current="page">Stock Album</a></li>
 {{-- <li id="menu-item-296" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-296"><a href="http://themes.designcrumbs.com/stocky/blog/">Blog</a></li> --}}
 {{-- <li id="menu-item-198" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-198"><a href="#">Stocky Pages</a>
 <ul class="sub-menu">
@@ -96,13 +96,13 @@ use App\Purchase;
  
 <li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-150"><a href="#">Categories</a>
 <ul class="sub-menu">
-	<li onclick="window.location='{{ route('categories','PEOPLE') }}'" id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-151"><a href="{{ route('categories','PEOPLE') }}">People</a></li>
-	<li onclick="window.location='{{ route('categories','THE GREAT OUTDOORS') }}'" id="menu-item-152" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-152"><a href="{{ route('categories','THE GREAT OUTDOORS') }}">The Great Outdoors</a></li>
-	<li onclick="window.location='{{ route('categories','ARCHITECTURE') }}'" id="menu-item-153" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-153"><a href="{{ route('categories','ARCHITECTURE') }}">Architecture</a></li>
-	<li onclick="window.location='{{ route('categories','FOOD') }}'" id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-154"><a href="{{ route('categories','FOOD') }}">Food</a></li>
-	<li onclick="window.location='{{ route('categories','FASHION') }}'" id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','FASHION') }}">Fashion</a></li>
-	<li onclick="window.location='{{ route('categories','EXPERIENCE.KE') }}'" id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','EXPERIENCE.KE') }}">Experience KE</a></li>
-	<li onclick="window.location='{{ route('categories','ALTERED IMAGES') }}'" id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','ALTERED IMAGES') }}">Altered Images</a></li>
+	<li id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-151"><a href="{{ route('categories','PEOPLE') }}">People</a></li>
+	<li id="menu-item-152" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-152"><a href="{{ route('categories','THE GREAT OUTDOORS') }}">The Great Outdoors</a></li>
+	<li id="menu-item-153" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-153"><a href="{{ route('categories','ARCHITECTURE') }}">Architecture</a></li>
+	<li id="menu-item-154" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-154"><a href="{{ route('categories','FOOD') }}">Food</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','FASHION') }}">Fashion</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','EXPERIENCE.KE') }}">Experience KE</a></li>
+	<li id="menu-item-155" class="menu-item menu-item-type-taxonomy menu-item-object-download_category menu-item-155"><a href="{{ route('categories','ALTERED IMAGES') }}">Altered Images</a></li>
 </ul>
 </li>
 {{-- <li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="http://themes.designcrumbs.com/stocky/contact/">Contact</a></li> --}}
@@ -112,7 +112,7 @@ use App\Purchase;
 					<div id="header_inner" class="light_text">
 
 						
-							<h1 class="sitename_logo"><a href="#" style="color: #ff00ff" title="">Picture+254</a></h1>
+							<h1 class="sitename_logo"><a href="#" style="color: #ff00ff" title="">PICTURE+254</a></h1>
 
 							<h2 id="slogan" style="color: #fff" > Photography Marketplace.</h2><br>
 

@@ -1,12 +1,22 @@
 <!doctype html>
-<html lang="ja-JP">
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture+254|Contact</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="{{ asset('js/right_click.js') }}"></script>
+    <script src="{{ asset('js/right_click.js') }}"></script>
 	
 	
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
@@ -113,7 +123,7 @@
 @include('menu')
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Picture +254.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
 </div>
 </body>

@@ -3,23 +3,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture+254</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
-	<link rel="shortcut icon" href="/common/img/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-	
-	<script src="{{ asset('js/right_click.js') }}"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -263,7 +262,7 @@
 
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
 </div>
 </body>

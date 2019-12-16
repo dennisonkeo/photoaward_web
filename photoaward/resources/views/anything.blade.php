@@ -2,9 +2,22 @@
 <!DOCTYPE html>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="{{ asset('js/right_click.js') }}"></script>
 	
 	<title>Contest Gallery - Multiple galleries on same page</title>
 	
@@ -25,7 +38,6 @@
 
     <link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/plugins/do-not-remove-custom-css.css" type="text/css" />
 
-	<script src="{{ asset('js/right_click.js') }}"></script>
     <!--[if lte IE 8]>
 	<script type="text/javascript" src="https://www.contest-gallery.com/wp-content/themes/Avada/js/respond.min.js"></script>
 	<link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/themes/Avada/css/ie8.css" />

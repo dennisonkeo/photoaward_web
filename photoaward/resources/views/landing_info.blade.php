@@ -25,8 +25,9 @@ else
   
 ?>
 
-<!-- <script src="{{ asset('js/right_click.js') }}"></script>
- --><html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
+<script src="{{ asset('js/right_click.js') }}"></script>
+
+<html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
 <script src="{{ asset('js/right_click.js') }}"></script>
 
@@ -86,7 +87,7 @@ else
 
 <script>window.renderStart = new Date().getTime();</script>
 
-<title>Picture +254</title>
+<title>PICTURE+254</title>
 
 <link href="https://www.gettyimages.com/detail/photo/pregnant-businesswoman-looking-away-at-desk-royalty-free-image/682897819" hreflang="x-default" rel="alternate">
 
@@ -1020,7 +1021,7 @@ else
   <footer-links >
     <div class="main-footer main-footer--full" style="background: #000;">
 <div class="footer__secondary footer__secondary--full">
-  <div class="footer__copyright">© 2019 Picture254 Images.</div>
+  <div class="footer__copyright">© 2019 PICTURE+254 Images.</div>
 
 {{-- <div class="footer__secondary-group"><a class="footer-secondary-group__item" data-nav="foot_general_website_terms" data-ui-location="footer" href="/company/terms" rel="nofollow" target="website_terms">Website terms</a><a class="footer-secondary-group__item" data-nav="foot_general_editorial_policy" data-ui-location="footer" href="/company/editorial-policy" rel="nofollow" target="editorial_policy">Editorial policy</a><a class="footer-secondary-group__item" data-nav="foot_general_privacy_policy" data-ui-location="footer" href="/company/privacy-policy" rel="nofollow" target="private_policy">Privacy policy</a><a class="footer-secondary-group__item" data-nav="foot_general_license_information" data-ui-location="footer" href="/license-info" rel="nofollow" target="license_info">License information</a><a class="footer-secondary-group__item--last" data-nav="foot_general_site_map" data-ui-location="footer" href="/company/sitemap" target="aboutus_sitemap">Site map</a></div> --}}
 </div>
