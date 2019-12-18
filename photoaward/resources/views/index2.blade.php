@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html >
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="language" content="en"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
@@ -10,14 +25,12 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,600i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main/main.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
 
-            <script src="{{ asset('js/right_click.js') }}"></script>
             
+<script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
 <script type="text/javascript" src="{{('js/main/jquery.yiiactiveform')}}.js"></script>
 <script type="text/javascript" src="{{ asset('js/common.js') }}"></script>
-<title>Photo Contest - photography Awards - Home</title>
+<title>PICTURE+254 - photography Awards</title>
             
         <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

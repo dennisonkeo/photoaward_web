@@ -4,15 +4,24 @@
     <!-- Start js_head_top  -->
     <script src='//cdn.freshmarketer.com/396115/1035459.js' type="1245390074bd65c07e76972c-text/javascript"></script>
     <!-- End js_head_top -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="fragment" content="!">
-    <meta property="fb:admins" content="100004061566968"/>
-    <meta charset="utf-8"/>
-    <meta property="og:site_name" content="Stocksy United"/>
-    <meta property="og:type" content="website"/>
-    <meta property="twitter:account_id" content="1578194636"/>
-    <meta name="flashmessages" content="W10=">
-    <meta name="jwt" content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LnN0b2Nrc3kuY29tIiwic3ViIjoiXC8xNTExMjQwXC9jdXBzLWN1cHMtY3Vwcz92cz0xIiwiYXVkIjoiZTJkYjU1YjgzM2UxM2U2OGM0Yjk4ZDNjNWRmNzcxZWYiLCJleHAiOjE2MDQzMTYyMzEsIm5iZiI6MTU3MjY5MzgzMSwiaWF0IjoxNTcyNjkzODMxfQ.9iWa67RbSXx9C77Zxf_RtTo1sa5uCNvftvN8vwsDrR0">
+    
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
 
     <link rel="preload" href="/dist/css/site.min.102a4041.css" as="style">
     <link rel="preload" href="/dist/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>

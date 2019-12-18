@@ -2,17 +2,24 @@
 
 <html lang="en">
 <head>
-    <script src="{{ asset('js/right_click.js') }}"></script>
-    
-    <meta charset="utf-8">
-    
-    <title>Picture+254</title>
-    
-    <!-- <link rel="shortcut icon" href="https://users.worldphoto.org/favicon.ico" /> -->
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
     
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -87,6 +94,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .fa-instagram {
   background: #3f729b;
   color: white;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 </style>
     
@@ -207,7 +218,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <p>Description</p>
                                                         </div>
                                                     </div>
-                                             <a href="{{ route('competition-enteries', 'Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
+                                             <a href="{{ route('competition-enteries', 'Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Compete Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -229,7 +240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             <p>Description</p>
                                                         </div>
                                                     </div>
-                                             <a href="{{ route('competition-enteries', 'Non-Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
+                                             <a href="{{ route('competition-enteries', 'Non-Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Compete Now</a>
                                             </div>
                                         </div>
                                     </div>

@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>Picture+254</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script> 
+       
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-
-<script src="{{ asset('js/right_click.js') }}"></script>
 
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
 		<script src="{{asset('js/jquery.carouFredSel-6.0.4-packed.js')}}" type="text/javascript"></script>
@@ -234,7 +237,7 @@ initializeClock('clockdiv', deadline);
 <div id="header">
 	<div class="container">
 		
-		<h1 id="logo"><a href="/" class="hover-line"><span>PHOTO CONTEST</span></a></h1>
+		<h1 id="logo"><a href="/" class="hover-line"><span>PICTURE+254</span></a></h1>
 		
 
 		<div id="gnavi" class="nav">
