@@ -22,12 +22,12 @@
 	 * ---------------------------------------------------------------------- */
 	bq.ui.plugin('navigation',function(options){
 		options = $.extend({}, this.defaults, options);
-		var clickEvent = ('onmousedown' in window)? 'touchstart.navigation' : 'click.navigation';
+		var clickEvent = ('ontouchstart' in window)? 'touchstart.navigation' : 'click.navigation';
 		var $b = $('body');
 
 		function clickHandler(e){
-			// e.preventDefault();
-			// e.stopPropagation();
+			e.preventDefault();
+			e.stopPropagation();
 
 			var $target = $(options.target)
 
@@ -80,42 +80,42 @@
 	bq.ui.autoload('navigation',true);
 
 
-	bq.ui.plugin('langnavi',function(options){
-		options = $.extend({}, this.defaults, options);
+	// bq.ui.plugin('langnavi',function(options){
+	// 	options = $.extend({}, this.defaults, options);
 
-		this.reset = function(){
-			var $nav = $(options.target_items);
-			if($nav.length == 0) return;
-			var $target = $(options.target).find('[lang]'),
-				lang = $.cookie('lang');
+	// 	this.reset = function(){
+	// 		var $nav = $(options.target_items);
+	// 		if($nav.length == 0) return;
+	// 		var $target = $(options.target).find('[lang]'),
+	// 			lang = $.cookie('lang');
 
-			lang = (lang == undefined || lang == 'undefined')? $nav.filter('.'+options.currentClass).attr('lang') : lang;
-			$.cookie('lang', lang, {expires: 14, path: '/'});
-			$target.not('[lang="'+lang+'"]').fadeOut(0);
-			$target.filter('[lang="'+lang+'"]').fadeIn(500);
-			$nav.removeClass(options.currentClass);
-			$nav.filter('[lang="'+lang+'"]').addClass(options.currentClass);
+	// 		lang = (lang == undefined || lang == 'undefined')? $nav.filter('.'+options.currentClass).attr('lang') : lang;
+	// 		$.cookie('lang', lang, {expires: 14, path: '/'});
+	// 		$target.not('[lang="'+lang+'"]').fadeOut(0);
+	// 		$target.filter('[lang="'+lang+'"]').fadeIn(500);
+	// 		$nav.removeClass(options.currentClass);
+	// 		$nav.filter('[lang="'+lang+'"]').addClass(options.currentClass);
 
-			$nav.off('click.langnavi').on('click.langnavi', function(){
-				if($(this).hasClass(options.currentClass)) return false;
-				$nav.removeClass(options.currentClass);
-				lang = $(this).addClass(options.currentClass).attr('lang');
-				$.cookie('lang', lang, {expires: 14, path: '/'});
-				$target.not('[lang="'+lang+'"]').fadeOut(500).promise().done(function(){
-					$target.filter('[lang="'+lang+'"]').fadeIn(500);
-				});
+	// 		$nav.off('click.langnavi').on('click.langnavi', function(){
+	// 			if($(this).hasClass(options.currentClass)) return false;
+	// 			$nav.removeClass(options.currentClass);
+	// 			lang = $(this).addClass(options.currentClass).attr('lang');
+	// 			$.cookie('lang', lang, {expires: 14, path: '/'});
+	// 			$target.not('[lang="'+lang+'"]').fadeOut(500).promise().done(function(){
+	// 				$target.filter('[lang="'+lang+'"]').fadeIn(500);
+	// 			});
 
-				return false;
-			});
-		};
+	// 			return false;
+	// 		});
+	// 	};
 
-		this.reset();
+	// 	this.reset();
 
-	},{
-		target : '.content .section',
-		target_items : '.lang-nav a',
-		currentClass : 'current'
-	});
+	// },{
+	// 	target : '.content .section',
+	// 	target_items : '.lang-nav a',
+	// 	currentClass : 'current'
+	// });
 	bq.ui.autoload('langnavi',true);
 
 
