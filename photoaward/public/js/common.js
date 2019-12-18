@@ -22,12 +22,12 @@
 	 * ---------------------------------------------------------------------- */
 	bq.ui.plugin('navigation',function(options){
 		options = $.extend({}, this.defaults, options);
-		var clickEvent = ('click' in window)? 'click.navigation' : 'click.navigation';
+		var clickEvent = ('onmousedown' in window)? 'touchstart.navigation' : 'click.navigation';
 		var $b = $('body');
 
 		function clickHandler(e){
-			e.preventDefault();
-			e.stopPropagation();
+			// e.preventDefault();
+			// e.stopPropagation();
 
 			var $target = $(options.target)
 
