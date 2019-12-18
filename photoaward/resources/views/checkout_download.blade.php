@@ -363,24 +363,24 @@ jQuery(document).ready(function($){
 			</div>		</section>
 		
 		<footer id="footer" class="wrapper">
+			
 			<div class="container clearfix">
 				
 				<div id="post_footer">
 
-										<div id="socnets_wrap">
+					<div id="socnets_wrap">
 						<div id="socnets">
-														<a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-														<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+							<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
 
-													</div>
+						</div>
 						<div class="clear"></div>
 					</div>
 					
-					<div id="footer_copy">
-						&copy; 2019 PICTURE+254
-						
-							 
-						</div>
+							<div id="footer_copy">
+						&copy; PICTURE+254
+							
+							</div>
 
 				</div>
 

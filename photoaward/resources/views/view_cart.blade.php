@@ -504,8 +504,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <footer style="background: #000;">
+@include('footer')
   <div class="container" >
-    <p style="text-align: center; color: #ff0051;">footer</p>
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
 </div>
 </footer>  
 

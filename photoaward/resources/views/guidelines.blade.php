@@ -202,8 +202,6 @@ You cannot sign up more than one contestant per phone number or e-mail address.
 <p> 
 You can enter as many photographs as you can in all categories. 
 </p>
-
-You cannot send entries through the e-mail.
 <p>
 You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 </p>

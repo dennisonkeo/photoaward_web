@@ -100,7 +100,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     ........................................
 </p>
                         
-            <p>Hover over an image to see the description of that specific category. Click Submit on a category of your choice to share your great work to the world.</p>
+            <p>
+            Hover over an image to see the description of that specific category. Click Submit on a category of your choice to share your great work to the world.
+            </p>
         </div>
     </div> <!-- End row -->
 
@@ -141,12 +143,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#" class="btn btn-danger" role="button">
             Back to competition</a>
         <a href="#" class="btn btn-info" role="button">
-            Details About Professionals</a>
+            Professionals Details </a>
     </div> 
 
     </div>
 
-    @include('footer') 
+    <footer style="background: #000;">
+@include('footer')
+  <div class="container" >
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
+</div>
+</footer>  
+
          
     <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="https://users.worldphoto.org/js/bootstrap-select.min.js"></script>

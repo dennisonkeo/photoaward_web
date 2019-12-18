@@ -49,12 +49,13 @@
     	}
     	.text_line{
 	/*line-height: 48px;*/
+}
 @font-face {
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 .section-tabled{
-  font-size: 28px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -124,7 +125,7 @@ Model Releases are required by law in most countries when photographing people. 
 <h2>Q. When does the competition close?</h2>
 
 <p>
-This years competition closes at midnight <b>dd/mm/yyyy</b>.
+This years competition closes at midnight <b>27th January, 2020</b>.
 </p>
 
 <h2>Q. I need help sizing my images for the competition.</h2>
@@ -142,7 +143,7 @@ No. In order for our judging to be ‘blind’ your submissions must not contain
 <h2>Q. When will the winners be announced?</h2>
 
 <p>
-Winners will be published on the website and contacted via email <b>dd/mm/yyyy</b>.
+Winners will be published on the website and contacted via email <b>January, 2020</b>.
 </p>
 <p>
 Do you still have questions? Get in touch with us.
@@ -164,7 +165,7 @@ Do you still have questions? Get in touch with us.
 @include('menu')
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Picture+254.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
 </div>
 </body>
