@@ -562,38 +562,38 @@ li.current .sub-nav-links{
 	background-color: #1a1a1a;
 
 
-/*	-webkit-transition: 375ms;
+	-webkit-transition: 375ms;
 	   -moz-transition: 375ms;
 	     -o-transition: 375ms;
 	        transition: 375ms;
 	-webkit-transition-property: top, opacity;
 	   -moz-transition-property: top, opacity;
 	     -o-transition-property: top, opacity;
-	        transition-property: top, opacity;*/
+	        transition-property: top, opacity;
 
 }
 
 #gnavi .nav-btn a .bars .bar:nth-child(1){
 	top: 6px;
 	opacity: 1;
-	-webkit-transition-delay: 125ms;
+	/*-webkit-transition-delay: 125ms;
 	   -moz-transition-delay: 125ms;
 	     -o-transition-delay: 125ms;
-	        transition-delay: 125ms;
+	        transition-delay: 125ms;*/
 }
 #gnavi .nav-btn a .bars .bar:nth-child(2){
 	top: 12px;
-	-webkit-transition-delay: 80ms;
+	/*-webkit-transition-delay: 80ms;
 	   -moz-transition-delay: 80ms;
 	     -o-transition-delay: 80ms;
-	        transition-delay: 80ms;
+	        transition-delay: 80ms;*/
 }
 #gnavi .nav-btn a .bars .bar:nth-child(3){
 	top: 18px;
-	-webkit-transition-delay: 40ms;
+	/*-webkit-transition-delay: 40ms;
 	   -moz-transition-delay: 40ms;
 	     -o-transition-delay: 40ms;
-	        transition-delay: 40ms;
+	        transition-delay: 40ms;*/
 }
 #gnavi .nav-btn a .bars .bar:nth-child(4){
 	top: 24px;
