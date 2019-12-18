@@ -56,7 +56,7 @@
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 .section-tabled{
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
     </style>
@@ -102,13 +102,33 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-			<br>For requests, information or comments, please contact below.<br>
-			<br>
+			<br>For requests, information or comments, please contact below;<br>
+			<!-- <br>
 				<strong>PICTURE +254</strong><br>
 				  ###~### Nairobi Kenya<br>
-				Mail: <a href="#">254pic@gmail.com</a>
-			<br>
+				Mail: <a href="mailto:254pic@gmail.com">254pic@gmail.com</a>.
+			<br> -->
 		</div>
+
+		    <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    1234 Street Name
+                    <br>Nairobi Kenya, AA 99999
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text">
+                    Email: <a href="mailto:254pic@gmail.com">254pic@gmail.com</a>.
+                    <br>Phone: (0) 000 0000 001
+                    <br>Fax:   (0) 000 0000 002
+                </p>
+            </div>
 
 	</div>
 </div>

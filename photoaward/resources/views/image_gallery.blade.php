@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
-    
+
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -82,7 +82,7 @@
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                       <span style="color: #ff0051;"> PIC+254</span>
+                       <span style="color: #ff0051;"> PICTURE+254</span>
                     </a>
                 </span>
             </div>
