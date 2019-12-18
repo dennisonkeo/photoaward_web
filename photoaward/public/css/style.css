@@ -945,7 +945,7 @@ li.current .sub-nav-links{
 
 
 @media only screen and (max-width: 1000px){
-	.nav-btn a .label .label-separator,#gnavi,
+	.nav-btn a .label .label-separator,#gavi,
 	.nav-btn a .label .sub-label{
 		display:none;
 	}
