@@ -32,6 +32,7 @@
 
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -360,7 +361,7 @@ initializeClock('clockdiv2', deadline2);
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
-		<div id="gnavi" class="nav">
+		<div id="gnavi" class="nav" >
 			<div class="nav-btn">
 				<a href="#gnavi-links">
 					<span class="bars">
@@ -373,6 +374,19 @@ initializeClock('clockdiv2', deadline2);
 				</a>
 			</div>
 		</div>
+
+    <div id="gnavii" class="nav">
+      <div class="nav-btn" onclick="myAlert()">
+        <a  href="#">
+          <span class="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+        </a>
+      </div>
+    </div>
 
 		
 	</div>
@@ -1207,6 +1221,12 @@ function preventDefault(event)
 {
   event.preventDefault();
 }
+
+function myAlert()
+{
+  alert('dsdhshfsd');
+}
+
   
 </script>
 <script type="text/javascript">
