@@ -358,7 +358,7 @@ initializeClock('clockdiv2', deadline2);
 		
 		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE+254</button>
+    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
@@ -394,7 +394,7 @@ initializeClock('clockdiv2', deadline2);
 
   <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 
-<img src="images/logo.png" style="width: 236px; opacity: 0.5">
+<img src="images/log_o.png" style="width: 236px; opacity: 0.7">
 
 </div>
 </div>
@@ -406,22 +406,12 @@ initializeClock('clockdiv2', deadline2);
 
 
 
-        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-{{--           <h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div> --}}
+        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
           @if(Auth::check())
-          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @else
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @endif
 
           <div id="clockdiv">
@@ -460,9 +450,9 @@ initializeClock('clockdiv2', deadline2);
             </div>
           <div class="row" style="margin: 0 auto;">
             @if(Auth::check())
-            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
+            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> ENTER NOW</button>
             @else
-            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
+            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> ENTER NOW</button>
             @endif
         </div>
           <div id="clockdiv2" style="margin-top: 2px;">
