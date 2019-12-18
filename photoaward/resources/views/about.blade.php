@@ -375,7 +375,7 @@ initializeClock('clockdiv2', deadline2);
 			</div>
 		</div>
 
-    <div id="gnavii" class="nav">
+{{--     <div id="gnavii" class="nav">
       <div class="nav-btn" onclick="myAlert()">
         <a  href="#">
           <span class="bars">
@@ -386,7 +386,7 @@ initializeClock('clockdiv2', deadline2);
           </span>
         </a>
       </div>
-    </div>
+    </div> --}}
 
 		
 	</div>
