@@ -281,7 +281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div> <!-- End col -->
 
     </div>
-
+@include('footer')
 <footer style="background: #b7eb34;">
   <div class="container" >
     <p style="text-align: center;">footer</p>

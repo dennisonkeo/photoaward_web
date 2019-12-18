@@ -73,7 +73,7 @@
 	<div class="container">
 		<div class="row" >
 			<div class="col-lg-8 col-sm-12 col-11 main-section" style="border-radius: 7px;">
-				<h4 class="alert alert-success" style="margin: -20px; background: black; color: #ff0051;border:none; margin-bottom: 20px;"> <span>PICTURE</span> <span style="color: white;">+254</span></h4>
+				<h4 class="alert alert-success" style="margin: -20px; background: black; color: #ff0051;border:none; margin-bottom: 20px;"> <span>PICTURE+254</span> <span style="color: white;">+254</span></h4>
 
 
 				{{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
@@ -103,7 +103,9 @@
   <div class="modal-dialog modal-dialog-top modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Add More Images</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i>
+         Add More Images
+        </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

@@ -192,7 +192,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </div>
 
+<footer style="background: #000;">
 @include('footer')
+  <div class="container" >
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
+</div>
+</footer>  
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>

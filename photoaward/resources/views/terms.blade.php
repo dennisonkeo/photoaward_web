@@ -195,7 +195,7 @@ They must be saved as JPEG file (JPG).<br><br> -->
 @include('menu')
 <div id="footer">
   <div class="container">
-    <div id="copyright" class="wfont">&copy; Photo Contest.</div>
+    <div id="copyright" class="wfont">&copy; PICTURE+254.</div>
   </div>
 </div>
   <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>

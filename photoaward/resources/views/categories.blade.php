@@ -180,7 +180,7 @@ body{
 
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; PICTURE +254.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
 </div>
 </body>

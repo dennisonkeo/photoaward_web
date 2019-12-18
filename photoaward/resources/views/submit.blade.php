@@ -369,7 +369,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-@include('footer')        
+<footer style="background: #000;">
+@include('footer')
+  <div class="container" >
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
+</div>
+</footer>  
+       
         <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
