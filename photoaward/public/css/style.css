@@ -488,14 +488,14 @@ a:active{
 	left: 0;
 	top: 60px;
 	z-index: 50;
-	-webkit-transition: 500ms;
+/*	-webkit-transition: 500ms;
 	   -moz-transition: 500ms;
 	     -o-transition: 500ms;
 	        transition: 500ms;
 	-webkit-transition-property: visibility;
 	   -moz-transition-property: visibility;
 	     -o-transition-property: visibility;
-	        transition-property: visibility;
+	        transition-property: visibility;*/
 }
 
 .nav-links > ul{
@@ -576,24 +576,24 @@ li.current .sub-nav-links{
 #gnavi .nav-btn a .bars .bar:nth-child(1){
 	top: 6px;
 	opacity: 1;
-	/*-webkit-transition-delay: 125ms;
+	-webkit-transition-delay: 125ms;
 	   -moz-transition-delay: 125ms;
 	     -o-transition-delay: 125ms;
-	        transition-delay: 125ms;*/
+	        transition-delay: 125ms;
 }
 #gnavi .nav-btn a .bars .bar:nth-child(2){
 	top: 12px;
-	/*-webkit-transition-delay: 80ms;
+	-webkit-transition-delay: 80ms;
 	   -moz-transition-delay: 80ms;
 	     -o-transition-delay: 80ms;
-	        transition-delay: 80ms;*/
+	        transition-delay: 80ms;
 }
 #gnavi .nav-btn a .bars .bar:nth-child(3){
 	top: 18px;
-	/*-webkit-transition-delay: 40ms;
+	-webkit-transition-delay: 40ms;
 	   -moz-transition-delay: 40ms;
 	     -o-transition-delay: 40ms;
-	        transition-delay: 40ms;*/
+	        transition-delay: 40ms;
 }
 #gnavi .nav-btn a .bars .bar:nth-child(4){
 	top: 24px;
@@ -870,7 +870,7 @@ li.current .sub-nav-links{
 	background-color: #fff;
 }
 
-#cnavi-links.has-sub-nav-links > ul{
+/*#cnavi-links.has-sub-nav-links > ul{
 	-webkit-transform: translate(560px, 0);
 	-moz-transform: translate(560px, 0);
 	-o-transform: translate(560px, 0);
@@ -882,7 +882,7 @@ li.current .sub-nav-links{
 	-moz-transform: translate(0, 0);
 	-o-transform: translate(0, 0);
 	transform: translate(0, 0);
-}
+}*/
 
 #cnavi-links > ul > li{
 	display: block;
