@@ -32,7 +32,7 @@
 
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-  
+
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -346,6 +346,7 @@ initializeClock('clockdiv2', deadline2);
 }
 </style>
 
+
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
@@ -375,21 +376,10 @@ initializeClock('clockdiv2', deadline2);
 			</div>
 		</div>
 
-{{--     <div id="gnavii" class="nav">
-      <div class="nav-btn" onclick="myAlert()">
-        <a  href="#">
-          <span class="bars">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </span>
-        </a>
-      </div>
-    </div> --}}
+@include('nav')
 
-		
 	</div>
+  @include('menu2')
 
    <div class="main-box start pull-center" style="background: white; display: none; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
             <div class="close-button didotltpro-italic pull-right"><a onclick="close_modal()" href="#">close</a></div>
@@ -417,6 +407,17 @@ initializeClock('clockdiv2', deadline2);
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
+{{--           <h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div> --}}
           @if(Auth::check())
           <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
           @else
