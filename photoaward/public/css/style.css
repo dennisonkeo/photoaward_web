@@ -488,14 +488,14 @@ a:active{
 	left: 0;
 	top: 60px;
 	z-index: 50;
-/*	-webkit-transition: 500ms;
+	-webkit-transition: 500ms;
 	   -moz-transition: 500ms;
 	     -o-transition: 500ms;
 	        transition: 500ms;
 	-webkit-transition-property: visibility;
 	   -moz-transition-property: visibility;
 	     -o-transition-property: visibility;
-	        transition-property: visibility;*/
+	        transition-property: visibility;
 }
 
 .nav-links > ul{
@@ -870,7 +870,7 @@ li.current .sub-nav-links{
 	background-color: #fff;
 }
 
-/*#cnavi-links.has-sub-nav-links > ul{
+#cnavi-links.has-sub-nav-links > ul{
 	-webkit-transform: translate(560px, 0);
 	-moz-transform: translate(560px, 0);
 	-o-transform: translate(560px, 0);
@@ -882,7 +882,7 @@ li.current .sub-nav-links{
 	-moz-transform: translate(0, 0);
 	-o-transform: translate(0, 0);
 	transform: translate(0, 0);
-}*/
+}
 
 #cnavi-links > ul > li{
 	display: block;

@@ -364,10 +364,10 @@ initializeClock('clockdiv2', deadline2);
 			<div class="nav-btn">
 				<a href="#gnavi-links">
 					<span class="bars">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
+						<span class="bajr"></span>
+						<span class="bajr"></span>
+						<span class="bajr"></span>
+						<span class="bajr"></span>
 					</span>
 					<span class="label">ABOUT</span>
 				</a>
