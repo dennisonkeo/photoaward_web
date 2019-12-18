@@ -277,7 +277,7 @@
 							<h5 class="title">EXPERIENCE.KE</h5>
 							
 							<p>
-								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, concerts and events, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
 
 							</p>
 						</div>
@@ -335,13 +335,13 @@
 </div>
 </div>
 
-@include('menu') 
+<!-- @include('menu') 
 
 
 <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
-</div>
+</div> -->
 </body>
 </html>
