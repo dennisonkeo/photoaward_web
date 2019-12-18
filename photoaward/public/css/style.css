@@ -562,14 +562,14 @@ li.current .sub-nav-links{
 	background-color: #1a1a1a;
 
 
-	-webkit-transition: 375ms;
+/*	-webkit-transition: 375ms;
 	   -moz-transition: 375ms;
 	     -o-transition: 375ms;
 	        transition: 375ms;
 	-webkit-transition-property: top, opacity;
 	   -moz-transition-property: top, opacity;
 	     -o-transition-property: top, opacity;
-	        transition-property: top, opacity;
+	        transition-property: top, opacity;*/
 
 }
 
