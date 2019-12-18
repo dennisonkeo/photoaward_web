@@ -73,7 +73,7 @@
     <style type="text/css">
     	.parallaxabout {
   /* The image used */
-  background: url('{{ asset('images/Pictur.jpg') }}') no-repeat center center fixed;
+  background: url('{{ asset('images/pic2.jpg') }}') no-repeat center center fixed;
 
 
   /* Set a specific height */
@@ -406,22 +406,8 @@ initializeClock('clockdiv2', deadline2);
 
 
 
-<<<<<<< HEAD
-        <div id="site-namn" style="position: fixed; top: 50%; margin-left: 60%; vertical-align: center;">
-=======
-        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-{{--           <h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div> --}}
->>>>>>> 1f407c4bbd38c107bf9dd4ab0c976f1c319849b1
+        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
           @if(Auth::check())
           <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @else
