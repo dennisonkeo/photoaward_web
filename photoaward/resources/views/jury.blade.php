@@ -113,8 +113,13 @@
 			</div>
 		</div>
 
+		@include('nav')
+
 		
 	</div>
+
+	@include('menu2')
+
 </div>
 
 <div class="parallax"></div> 
