@@ -352,7 +352,7 @@ initializeClock('clockdiv2', deadline2);
 <noscript>
 <div id="noscript_message"></div>
 </noscript>
-<div id="wrap" style="background: black;">
+<div id="wrap" style="background: white;">
 <div id="header">
 	<div class="container">
 		
@@ -394,26 +394,14 @@ initializeClock('clockdiv2', deadline2);
 
   <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 
-<img src="images/log_o.png" style="width: 236px; opacity: 0.7">
+<img src="images/logo-.png" style="width: 236px; opaity: 0.7">
 
 </div>
 </div>
 
 <div class="parallaxabout" style="opcity: 0.6; ">
-<!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
-  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
-</p> -->
 
-
-
-
-        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-          @if(Auth::check())
-          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
-          @else
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
-          @endif
-
+        <div id="site-namn" style="position: fixed; top: 25%; margin-left: 10%; vertical-align: center;">
           <div id="clockdiv">
               <div>
                 <span class="days"></span>
@@ -430,8 +418,17 @@ initializeClock('clockdiv2', deadline2);
               <div>
                 <span class="seconds"></span>
                 <div class="smalltext">Seconds</div>
-              </div>
-          </div><br><br>
+              </div><br>
+              <h4 style=" vertical-align: center; color: #fff; padding-left: 40px; margin-top: 10px; font-size: 35px; ">
+  PICTURE +254 </h4>
+  <h4 style=" vertical-align: center; color: #fff; padding-left: 40px; top: 10; font-size: 48px; font-weight: bold;">PHOTO CONTEST</h4>
+
+  @if(Auth::check())
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margn-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+          @else
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="marin-left: 50px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+          @endif
+          </div>
           
         </div>
 </div>
@@ -488,7 +485,7 @@ initializeClock('clockdiv2', deadline2);
                         <div id="mainSlider" style="opaity: 0.5" style="background: green; ">
                             <div class="group">
                             
-                                <div class="item" style="background: black;">
+                                <div class="item" style="background: #fff;">
                                     <picture>
                 <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_03-250.jpg">-->
                 <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_03-400.jpg">-->
@@ -597,7 +594,7 @@ initializeClock('clockdiv2', deadline2);
 <!-- <<<<<<< HEAD
 			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
 ======= -->
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
+			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: ;">
 
 
         <div class="container">
@@ -1053,7 +1050,7 @@ Contestants are not allowed to contact us about the status of entries or judging
           <h2 class="title">
             
     <div class="field-accordion-title">
-       OUR PARTNERS
+       Our Partners
     </div>
           </h2>
           <div class="text">

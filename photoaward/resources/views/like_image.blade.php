@@ -312,18 +312,20 @@ span .hoverr:hover{
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+             <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
+                        <span class=""><i class="fa fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+              @if(Auth::check())
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('submit-entry') }}">
                         <span class="fa fa-user"></span>
                         My profile
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
-                        <span class=""><i class="fa fa-home"></i></span>
-                        Home
-                    </a>
-                </li>
+               
 
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('logout') }}">
@@ -331,6 +333,8 @@ span .hoverr:hover{
                         Logout
                     </a>
                 </li>
+              @endif
+
             </ul>
         </div>
     </nav>
