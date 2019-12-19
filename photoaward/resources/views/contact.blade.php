@@ -85,9 +85,13 @@
 				</a>
 			</div>
 		</div>
+				@include('nav')
 
 		
 	</div>
+
+	@include('menu2')
+
 </div>
 
 	<div id="contents-wrap">

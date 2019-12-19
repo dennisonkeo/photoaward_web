@@ -356,9 +356,14 @@ initializeClock('clockdiv2', deadline2);
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
+		<!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
+    <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
+     <span class="navbar-logo pull-right">
+                    <a href="{{route('/')}}">
+                         <img src="images/l_ogo.png" alt="logo" style="height: 6rem; vertical-align: middle;">
+                    </a>
+                </span>
 
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
@@ -401,7 +406,7 @@ initializeClock('clockdiv2', deadline2);
 
 <div class="parallaxabout" style="opcity: 0.6; ">
 
-        <div id="site-namn" style="position: fixed; top: 25%; margin-left: 10%; vertical-align: center;">
+        <div id="site-namn" style="position: fixed; top: 25%; margin-left: 10%; vertical-align: center; font-family:'Montserrat', sans-serif;">
           <div id="clockdiv">
               <div>
                 <span class="days"></span>
@@ -419,14 +424,16 @@ initializeClock('clockdiv2', deadline2);
                 <span class="seconds"></span>
                 <div class="smalltext">Seconds</div>
               </div><br>
-              <h4 style=" vertical-align: center; color: #fff; padding-left: 40px; margin-top: 10px; font-size: 35px; ">
-  PICTURE +254 </h4>
-  <h4 style=" vertical-align: center; color: #fff; padding-left: 40px; top: 10; font-size: 48px; font-weight: bold;">PHOTO CONTEST</h4>
+            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30px; font-family:'Montserrat', sans-serif;">
+                PICTURE +254 
+            </h4>
+            <h4 style=" vertical-align: center; color: #fff; padding-left: 50px; top: 10; font-size: 48px; font-weight: bold;font-family:'Montserrat', sans-serif;">PHOTO CONTEST
+            </h4>
 
-  @if(Auth::check())
-          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margn-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+            @if(Auth::check())
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @else
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="marin-left: 50px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="marin-left: 50px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @endif
           </div>
           
@@ -447,9 +454,9 @@ initializeClock('clockdiv2', deadline2);
             </div>
           <div class="row" style="margin: 0 auto;">
             @if(Auth::check())
-            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> ENTER NOW</button>
+            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px; font-family:'Montserrat', sans-serif;"> ENTER NOW</button>
             @else
-            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> ENTER NOW</button>
+            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px; font-family:'Montserrat', sans-serif;"> ENTER NOW</button>
             @endif
         </div>
           <div id="clockdiv2" style="margin-top: 2px;">
@@ -618,15 +625,15 @@ initializeClock('clockdiv2', deadline2);
         <div class="summary">
           <h2 class="title">
             
-  <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-title">
     About 
   </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <h4> Hi and welcome to Picture+254. </h4>
- </div>
+ </div> -->
           </div>
         </div>
         <div class="cover-image">
@@ -708,11 +715,11 @@ Picture+254 Photo Contest runs <b>12th December, 2019</b> ~ <b>27th January, 202
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
+ <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
    <h4>
    Every contestant must sign up for the competition. 
    </h4>
-  </div>
+  </div> -->
           </div>
         </div>
         <div class="cover-image">
@@ -791,11 +798,11 @@ You are not allowed to digitally or otherwise enhance the photos you submit. The
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <h4>
     Picture+254 has seven contest categories:
     </h4>
-  </div>
+  </div> -->
           </div>
         </div>
         <div class="cover-image">
@@ -857,11 +864,11 @@ You are not allowed to digitally or otherwise enhance the photos you submit. The
           </h2>
           <div class="text">
             
-            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+            <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
               <h4>
               All entries will be stored in the Picture+254 Stock Gallery.
               </h4>
-            </div>
+            </div> -->
 
           </div>
 
@@ -973,9 +980,9 @@ Picture+254 will randomly select photos for highlight on its website during and 
     
         
 <div class="text">
-            <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
+           <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
                <h4> Photo entries will be judged. </h4>
-            </div>
+            </div> -->
 </div>
         </div>
 
@@ -1055,12 +1062,12 @@ Contestants are not allowed to contact us about the status of entries or judging
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+ <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     
     <h4>
      Picture+254 2019/2020 <br> Our Partners.
     </h4>
-  </div>
+  </div> -->
           </div>
         </div>
         <div class="cover-image">

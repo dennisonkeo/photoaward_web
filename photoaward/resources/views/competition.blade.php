@@ -23,7 +23,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <link rel="shortcut icon" href="/common/img/favicon.ico" />
+  <!-- <link rel="shortcut icon" href="/common/img/favicon.ico" /> -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
   
   <!--[if lt IE 9]>
@@ -168,9 +168,13 @@ junction_font.load().then(function(loaded_face) {
         </a>
       </div>
     </div>
+        @include('nav')
 
     
   </div>
+
+  @include('menu2')
+
 </div>
 
   <div id="contents-wrap">
