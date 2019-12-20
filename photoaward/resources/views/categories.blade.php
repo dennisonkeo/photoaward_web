@@ -118,16 +118,21 @@ body{
 				</a>
 			</div>
 		</div>
+				@include('nav')
 
 		
 	</div>
+
+	@include('menu2')
+
+
 </div>
-<div class="parallax"></div>
-	<div id="contents-wrap" >
+<!-- <div class="parallax"></div>
+ -->	<div id="contents-wrap" >
 		<div id="contents" >
 
 
-					<div id="news" class="content flow-grid" style="width: 150%; ">
+					<div id="news" class="content flow-grid" style="width: 100%; ">
 			
 			
 				<div class="entry" onclick="window.location='{{ url("professional") }}'">

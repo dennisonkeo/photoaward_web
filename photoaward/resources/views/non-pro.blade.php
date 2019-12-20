@@ -96,12 +96,17 @@
 				</a>
 			</div>
 		</div>
+				@include('nav')
 
 		
 	</div>
+
+	@include('menu2')
+
+
 </div>
-<div class="parallax"></div>
-	<div id="contents-wrap">
+<!-- <div class="parallax"></div>
+ -->	<div id="contents-wrap">
 		<div id="contents">
 			{{-- <article style="margin-left: 150px;">
 							<div class="gallery">
