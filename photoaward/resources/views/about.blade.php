@@ -406,6 +406,12 @@ initializeClock('clockdiv2', deadline2);
 
 <div class="parallaxabout" style="opcity: 0.6; ">
 
+          @if(Auth::check())
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          @else
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
+          @endif
+
         <div id="site-namn" style="position: fixed; top: 25%; margin-left: 10%; vertical-align: center; font-family:'Montserrat', sans-serif;">
           <div id="clockdiv">
               <div>
@@ -1138,7 +1144,7 @@ Non-Professional - Single image entry fee: Ksh.100.
 	</div>
 </div>
 
-@include('popup_alert')
+@include('advert')
 
 <script>
 function openNav() {
