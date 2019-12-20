@@ -359,9 +359,9 @@ initializeClock('clockdiv2', deadline2);
     <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
     <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
-     <span class="navbar-logo pull-right">
+     <span class="navbar-logo " style="float: right;">
                     <a href="{{route('/')}}">
-                         <img src="images/l_ogo.png" alt="logo" style="height: 6rem; vertical-align: middle;">
+                         <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem;">
                     </a>
                 </span>
 
@@ -1137,7 +1137,6 @@ Non-Professional - Single image entry fee: Ksh.100.
 
   </div>
 </div>
-
 @include('advert')
 
 <script>
