@@ -407,17 +407,7 @@ initializeClock('clockdiv2', deadline2);
 
 
         <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-{{--           <h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
 
-<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div> --}}
           @if(Auth::check())
           <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
           @else
@@ -1144,7 +1134,7 @@ Non-Professional - Single image entry fee: Ksh.100.
 	</div>
 </div>
 
-@include('popup_alert')
+@include('advert')
 
 <script>
 function openNav() {

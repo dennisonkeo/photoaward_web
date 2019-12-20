@@ -41,7 +41,8 @@
 </style>
 
 <div class="dropdown" style="top: -12px;">
-  <div id="myDropdown" class="dropdown-content">
+  <div id="myDropdown" class="dropdown-content" style="overflow: auto;">
+<ul style="overflow: auto;">
 @if(Auth::check())
     <a onclick="window.location='{{ route("submit-entry") }}'" href="#"><span>SUBMIT</span></a>
 @else
@@ -62,6 +63,7 @@
 @else
 <a onclick="window.location='{{ route("login") }}'" href="#"><span>LOGIN/SIGNUP</span></a>
 @endif
+</ul>
 {{-- <li><a href="#"><span></span></a></li> --}}
   </div>
 </div>

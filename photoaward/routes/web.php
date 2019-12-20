@@ -19,6 +19,10 @@ Route::get('professional', function () {
     return view('professional');
 });
 
+Route::get('advert', function () {
+    return view('advert');
+});
+
 Route::get('index', function () {
     return view('index');
 });
