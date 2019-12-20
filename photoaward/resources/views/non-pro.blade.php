@@ -96,12 +96,17 @@
 				</a>
 			</div>
 		</div>
+				@include('nav')
 
 		
 	</div>
+
+	@include('menu2')
+
+
 </div>
-<div class="parallax"></div>
-	<div id="contents-wrap">
+<!-- <div class="parallax"></div>
+ -->	<div id="contents-wrap">
 		<div id="contents">
 			{{-- <article style="margin-left: 150px;">
 							<div class="gallery">
@@ -250,7 +255,7 @@
 						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h5 class="title">EXPERIENCE.KE</h5>
 							<p>
-							Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+							Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, concerts and events, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
 							</p>
 						</div>
 					</a>
@@ -269,7 +274,7 @@
 						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">ALTERED IMAGES</h2>
 							<p>
-							Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.
+							Judges are looking for the most creative photographs manipulated for artistic purposes by applying digital and/or traditional special effects.
 							</p>
 						</div>
 					</a>
@@ -286,13 +291,13 @@
 </div>
 </div>
 
-@include('menu') 
+<!-- @include('menu') 
 
 
 <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; Picture+254.</div>
 	</div>
-</div>
+</div> -->
 </body>
 </html>

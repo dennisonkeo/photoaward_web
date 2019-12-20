@@ -164,9 +164,13 @@ junction_font.load().then(function(loaded_face) {
         </a>
       </div>
     </div>
+        @include('nav')
 
     
   </div>
+
+  @include('menu2')
+
 </div>
 
   <div id="contents-wrap">

@@ -93,7 +93,7 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PICTURE +254</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PICTURE+254</span></a></div>
 		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 		
 
@@ -110,12 +110,17 @@
 				</a>
 			</div>
 		</div>
+				@include('nav')
 
 		
 	</div>
+
+	@include('menu2')
+
+
 </div>
-<div class="parallax"></div>
-	<div id="contents-wrap">
+<!-- <div class="parallax"></div>
+ -->	<div id="contents-wrap">
 		<div id="contents">
 			{{-- <article style="margin-left: 150px;">
 							<div class="gallery">
@@ -277,7 +282,7 @@
 							<h5 class="title">EXPERIENCE.KE</h5>
 							
 							<p>
-								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
+								Judges are looking for the most expressive and emotion capturing photos that capture the rich diversity of the Kenyan experience and lifestyle. Judges will look at the best depiction of culture, history, heritage, street culture, art, music, concerts and events, travel, my ride, my house, at the beach and the club scene; essentially photographs that tell us what it means to be a Kenyan and provide a sense of what it is like to live in this beautiful country.
 
 							</p>
 						</div>
@@ -335,13 +340,13 @@
 </div>
 </div>
 
-@include('menu') 
+<!-- @include('menu') 
 
 
 <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
-</div>
+</div> -->
 </body>
 </html>

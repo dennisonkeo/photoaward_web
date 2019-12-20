@@ -125,10 +125,9 @@ body{
 
 	@include('menu2')
 
-
 </div>
-<!-- <div class="parallax"></div>
- -->	<div id="contents-wrap" >
+<div class="parallax"></div>
+	<div id="contents-wrap" >
 		<div id="contents" >
 
 
