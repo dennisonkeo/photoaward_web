@@ -228,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <input type="hidden" name="category" value="{{ $category->id }}">
                     <input type="hidden" name="random_str" value="" id="rand">
                     
-                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
+                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="1" /> 
                 </div>
                 
             </div>
@@ -409,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         overwriteInitial:false,
 
-        maxFileSize: 2000,
+        maxFileSize: 10000,
 
         maxFileNum: 8,
 
