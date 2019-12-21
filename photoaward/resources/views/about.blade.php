@@ -360,7 +360,8 @@ initializeClock('clockdiv2', deadline2);
 
     <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
      <span class="navbar-logo pull-right">
-                    <a href="{{route('/')}}">
+                    <a onclick="window.location='{{ url("/") }}'" href="#"> 
+
                          <img src="images/l_ogo.png" alt="logo" style="height: 6rem; vertical-align: middle;">
                     </a>
                 </span>
@@ -424,7 +425,7 @@ initializeClock('clockdiv2', deadline2);
                 <span class="seconds"></span>
                 <div class="smalltext">Seconds</div>
               </div><br>
-            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30px; font-family:'Montserrat', sans-serif;">
+            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30p                                                                                                                                                                                                              px; font-family:'Montserrat', sans-serif;">
                 PICTURE +254 
             </h4>
             <h4 style=" vertical-align: center; color: #fff; padding-left: 50px; top: 10; font-size: 48px; font-weight: bold;font-family:'Montserrat', sans-serif;">PHOTO CONTEST
