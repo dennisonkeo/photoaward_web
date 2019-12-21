@@ -17,8 +17,8 @@
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--   <script src="{{ asset('js/right_click.js') }}"></script>
- --><!-- Google Font Martel -->
+  <script src="{{ asset('js/right_click.js') }}"></script>
+ --><!-- Google Font Martel
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -363,7 +363,7 @@ initializeClock('clockdiv2', deadline2);
     <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
     <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
-     <span class="navbar-logo pull-right">
+     <span class="navbar-logo" style="float: right;">
                     <a onclick="window.location='{{ url("/") }}'" href="#"> 
 
                          <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem; vertical-align: middle;">
