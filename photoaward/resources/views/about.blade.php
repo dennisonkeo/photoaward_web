@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
+  
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -30,14 +30,14 @@
 
 
 
-	<link rel="shortcut icon" href="/common/img/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/common/img/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
 
-	
-	<!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 <script src="js/abt_1.js"></script>
 <script src="js/abt_2.js"></script>
@@ -54,12 +54,12 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
-	
+  
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
   <script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/common.js') }}"></script>
 
-{{-- 	<script>
+{{--  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -71,7 +71,7 @@
     </script> --}}
 
     <style type="text/css">
-    	.parallaxabout {
+      .parallaxabout {
   /* The image used */
   background: url('{{ asset('images/pic2.jpg') }}') no-repeat center center fixed;
 
@@ -90,8 +90,8 @@
 
 }
 .text_line{
-	line-height: 48px;
-	font-family: cambria;
+  line-height: 48px;
+  font-family: cambria;
 }
 </style>
 
@@ -354,37 +354,37 @@ initializeClock('clockdiv2', deadline2);
 </noscript>
 <div id="wrap" style="background: white;">
 <div id="header">
-	<div class="container">
-		
-		<!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
+  <div class="container">
+    
+    <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
     <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
      <span class="navbar-logo pull-right">
                     <a onclick="window.location='{{ url("/") }}'" href="#"> 
 
-                         <img src="images/l_ogo.png" alt="logo" style="height: 6rem; vertical-align: middle;">
+                         <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem; vertical-align: middle;">
                     </a>
                 </span>
 
-		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
+    <!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
-		<div id="gnavi" class="nav" >
-			<div class="nav-btn">
-				<a href="#gnavi-links">
-					<span class="bars">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</span>
-					<span class="label">ABOUT</span>
-				</a>
-			</div>
-		</div>
+    <div id="gnavi" class="nav" >
+      <div class="nav-btn">
+        <a href="#gnavi-links">
+          <span class="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+          <span class="label">ABOUT</span>
+        </a>
+      </div>
+    </div>
 
 @include('nav')
 
-	</div>
+  </div>
   @include('menu2')
 
    <div class="main-box start pull-center" style="background: white; display: none; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
@@ -441,8 +441,8 @@ initializeClock('clockdiv2', deadline2);
         </div>
 </div>
 
-	<div id="contents-wrap">
-		<div id="contents">
+  <div id="contents-wrap">
+    <div id="contents">
 
     <div id="profile2" class="contnt" style="background: black; hight: 500px; margin: 3px;">
 
@@ -600,9 +600,9 @@ initializeClock('clockdiv2', deadline2);
   </div>
 
 <!-- <<<<<<< HEAD
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
+      <div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
 ======= -->
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: ;">
+      <div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: ;">
 
 
         <div class="container">
@@ -1131,15 +1131,14 @@ Non-Professional - Single image entry fee: Ksh.100.
 </div>
 @include('menu')
 <div id="footer">
-	<div class="container">
+  <div class="container">
 
 
     <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div> 
 
-	</div>
+  </div>
 </div>
-
-@include('popup_alert')
+@include('advert')
 
 <script>
 function openNav() {
@@ -1204,7 +1203,7 @@ initializeClock('clockdiv', deadline);
 
 var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
-</script>				
+</script>       
 
 <script type="text/javascript">
 
