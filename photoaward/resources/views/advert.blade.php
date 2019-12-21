@@ -13,7 +13,7 @@
   left: 0;
   background-color: rgb(0,0,0);
   /*background-color: rgba(0,0,0, 0.9);*/
-  overflow-y: hidden;
+  overflow-y: auto;
   transition: 0.5s;
 }
 
@@ -124,9 +124,9 @@ div.desc {
     </a>
     <div class="desc" style="color: white; font-size: 12px;">Like What You See?</div>
     <div class="desc">
-    <button onclick="voteNow()" style="width: 32%; height: 40px; background: #fff; color: #000;">Vote</button>
-    <button onclick="voteLater()" style="width: 32%; height: 40px;">Vote Later</button>
-    <button onclick="closeNav()" style="width: 32%; height: 40px; background: #ff00ff;">Close</button>
+    <button onclick="voteNow()" style="width: 32%; height: 40px; background: #ff00ff; color: #fff;">Vote</button>
+    <button onclick="voteLater()" style="width: 32%; background: #ff00ff; height: 40px;">Vote Later</button>
+    <!-- <button onclick="closeNav()" style="width: 32%; height: 40px; background: #ff00ff;">Close</button> -->
   </div>
 </div>
 </div>
