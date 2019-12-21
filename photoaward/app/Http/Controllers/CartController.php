@@ -50,7 +50,7 @@ class CartController extends Controller
           return Response::download('uploads_org/'.$path);
       }
 
-    	public function addToCart()
+    	public function addToCart(Request $request)
     	{
     		 
     		 $upload_id = $_POST['upload_id'];
@@ -61,6 +61,7 @@ class CartController extends Controller
              
                            $cart->user_id = Auth::user()->id;
                            $cart->upload_id = $upload_id;
+                           $cart->size = $request->input('size');
                            $cart->token = session()->getId();
                            $cart->save();
 
@@ -100,7 +101,16 @@ class CartController extends Controller
 
           $carts = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 
-          $cart_amount = (count($carts)*100);
+          $cart_amount = (($carts->sum('size'))*100);
+
+          if($cart_amount > 70000)
+          {
+            return response()->json('1');
+
+            return false;
+          }
+
+          // dd($cart_amount);
 
           // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
 

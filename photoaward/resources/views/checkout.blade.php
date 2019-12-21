@@ -17,7 +17,7 @@
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
@@ -269,7 +269,7 @@ jQuery(document).ready(function($){
 
 			</td>
 			<td class="edd_cart_item_price">
-				100.00					
+				<span>{{ $ct->size }}</span>.00					
 			</td>
 			<td class="edd_cart_actions">
 				<a id="deleteProduct" class="rremove edd_cart_remove_item_btn" href="#" data-id="{{ route('cart/remove', $ct->id) }}">Remove</a>
@@ -298,7 +298,7 @@ jQuery(document).ready(function($){
 
 		
 		<tr class="edd_cart_footer_row">
-						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ count($cart)*100 }}.00</span></th>
+						<th colspan="3" class="edd_cart_total">Total: <span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ $cart->sum('size') }}.00</span></th>
 					</tr>
 	</tfoot>
 </table>
@@ -459,7 +459,7 @@ jQuery(document).ready(function($){
 		<fieldset id="edd_purchase_submit">
 		<p id="edd_final_total_wrap">
 	<strong>Purchase Total:</strong>
-	<span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ count($cart)*100 }}.00</span>
+	<span class="edd_cart_amount" data-subtotal="13" data-total="13">${{ $cart->sum('size') }}.00</span>
 </p>
 
 {{-- 				<input type="hidden" name="edd_action" value="purchase"/>
@@ -537,9 +537,16 @@ jQuery(document).ready(function($){
                             console.log(response); 
 
                             // $('#spinn').css("display", "none");
-                            alert('A payment request has been sent to you.');
+                            if(response == "1")
+                            {
+                            	alert('Amount should be less than $700.');
+                            }
+                            else
+                            {
+                            	alert('A payment request has been sent to you.');
 
-                            window.location.href =  '{{ route('cart/checkout/download') }}';
+                            	window.location.href =  '{{ route('cart/checkout/download') }}';
+                            }
                             
                         },
 

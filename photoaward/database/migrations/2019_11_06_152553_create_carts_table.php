@@ -18,6 +18,7 @@ class CreateCartsTable extends Migration
             $table->integer('user_id');
             $table->integer('upload_id');
             $table->string('token');
+            $table->int('size');
             $table->timestamps();
         });
     }
