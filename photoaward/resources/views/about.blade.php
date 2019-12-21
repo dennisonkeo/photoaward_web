@@ -17,8 +17,8 @@
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="{{ asset('js/right_click.js') }}"></script>
-<!-- Google Font Martel -->
+<!--   <script src="{{ asset('js/right_click.js') }}"></script>
+ --><!-- Google Font Martel -->
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -344,6 +344,10 @@ initializeClock('clockdiv2', deadline2);
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.wrapper .js-accordion-trigger .is-expanded{
+  background: red;
+}
 </style>
 
 
@@ -359,9 +363,10 @@ initializeClock('clockdiv2', deadline2);
     <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
     <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
-     <span class="navbar-logo " style="float: right;">
-                    <a href="{{route('/')}}">
-                         <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem;">
+     <span class="navbar-logo pull-right">
+                    <a onclick="window.location='{{ url("/") }}'" href="#"> 
+
+                         <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem; vertical-align: middle;">
                     </a>
                 </span>
 
@@ -424,7 +429,7 @@ initializeClock('clockdiv2', deadline2);
                 <span class="seconds"></span>
                 <div class="smalltext">Seconds</div>
               </div><br>
-            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30px; font-family:'Montserrat', sans-serif;">
+            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30p                                                                                                                                                                                                              px; font-family:'Montserrat', sans-serif;">
                 PICTURE +254 
             </h4>
             <h4 style=" vertical-align: center; color: #fff; padding-left: 50px; top: 10; font-size: 48px; font-weight: bold;font-family:'Montserrat', sans-serif;">PHOTO CONTEST

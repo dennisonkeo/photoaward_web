@@ -230,7 +230,7 @@ This exciting contest gives everyone a chance to win. You may have taken a photo
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 <p>
-You can sign up and submit photographs online through the <b>Picture+254 App</b> that you can download from either (App Store or Playstore) onto your phone or through our website <b>www.picture254.com</b> 
+You can sign up and submit photographs online through the <b>Picture+254 App</b> that you can download from either (App Store or Playstore) onto your phone or through our website <a href="http://www.picture254.com">Picture+254</a><b>(www.picture254.com)</b> 
 </p>
 You cannot send entries through the e-mail.
 <br><br>
