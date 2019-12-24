@@ -198,6 +198,7 @@ class CartController extends Controller
       // $handle=fopen("uploads/transaction.txt", 'w');
       //     fwrite($handle, $callbackJSONData);
 
+
       if($ResultCode == "0")
 
       {
@@ -221,6 +222,15 @@ class CartController extends Controller
                        ->update(array('purchased' => 1));
 
           return response()->json('Success');
+
+            $purchases = Purchase::where('accountno', $account_no)->get();
+
+            foreach($purchases as $purchase)
+            {
+                $user = User::where('id', $purchase->cart->upload->user->id)->first();
+          
+                $user->notify(new HelloUser());
+            }
         }
         else
         {
@@ -229,12 +239,12 @@ class CartController extends Controller
 
         $purchases = Purchase::where('accountno', $account_no)->get();
 
-        foreach($purchases as $purchase)
-        {
-            $user = User::where('id', $purchase->cart->upload->user->id)->first();
-      
-            $user->notify(new HelloUser());
-        }
+            foreach($purchases as $purchase)
+            {
+                $user = User::where('id', $purchase->cart->upload->user->id)->first();
+          
+                $user->notify(new HelloUser());
+            }
     }
 
       public function destroy(Cart $cart)
