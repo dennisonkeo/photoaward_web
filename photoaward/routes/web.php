@@ -161,6 +161,7 @@ Route::get('votingg', function () {
 
 Route::get('categories/{category}', 'CategoryController@filter_by_category')->name('categories');
 
+Route::get('send-mail', 'CartController@sendMail')->name('send-mail');
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');

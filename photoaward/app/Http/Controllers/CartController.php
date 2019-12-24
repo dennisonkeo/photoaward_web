@@ -9,6 +9,7 @@ use App\Cart;
 use App\user;
 use App\Upload;
 use App\Payment;
+use App\Notifications\HelloUser;
 use App\Purchase;
 use Config;
 use Response;
@@ -18,6 +19,24 @@ use Auth;
 class CartController extends Controller
 {
     
+    public function sendMail()
+    {
+      $user = Auth::user();
+
+      $user->notify(new HelloUser());
+
+       $purchases = Purchase::where('accountno', '30468-201429-1')->get();
+
+       // dd($purchases);
+
+        foreach($purchases as $purchase)
+        {
+            $user = User::where('id', $purchase->cart->upload->user->id)->first();
+      
+            $user->notify(new HelloUser());
+
+        }
+    }
     	public function index()
     	{
       //   $cart = Cart::where('user_id',Auth::user()->id)
@@ -208,6 +227,14 @@ class CartController extends Controller
           return response()->json('Something Went Wrong!');
         }
 
+        $purchases = Purchase::where('accountno', $account_no)->get();
+
+        foreach($purchases as $purchase)
+        {
+            $user = User::where('id', $purchase->cart->upload->user->id)->first();
+      
+            $user->notify(new HelloUser());
+        }
     }
 
       public function destroy(Cart $cart)
