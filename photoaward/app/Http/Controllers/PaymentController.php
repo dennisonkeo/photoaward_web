@@ -72,8 +72,8 @@ class PaymentController extends Controller
 		$check = $stkPushSimulation;
 
 		$callbackJSONData=file_get_contents('php://input');
-		$handle=fopen("uploads/transaction.txt", 'w');
-        fwrite($handle, $stkPushSimulation);
+		// $handle=fopen("uploads/transaction.txt", 'w');
+  //       fwrite($handle, $stkPushSimulation);
 
 		if($check !="")
 		{
@@ -106,9 +106,9 @@ class PaymentController extends Controller
 
 		$callbackJSONData=file_get_contents('php://input');
 
-		$handle=fopen("uploads/transactions.txt", 'w');
+		// $handle=fopen("uploads/transactions.txt", 'w');
 
-        fwrite($handle, $callbackJSONData);
+        // fwrite($handle, $callbackJSONData);
 
 		$account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
 
