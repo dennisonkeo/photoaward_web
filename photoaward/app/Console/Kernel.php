@@ -34,7 +34,7 @@ class Kernel extends ConsoleKernel
 
         // $schedule->command('delete:uploads')->dailyAt('13:19')->timezone('Africa/Nairobi');
 
-        $schedule->command('delete:cron')->dailyAt('16:36')->timezone('Africa/Nairobi');
+        $schedule->command('delete:cron')->hourly();
 
     }
 
