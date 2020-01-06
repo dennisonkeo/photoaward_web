@@ -21,6 +21,8 @@ class CartController extends Controller
     
     public function sendMail()
     {
+
+     
       $user = Auth::user();
 
       $user->notify(new HelloUser());
