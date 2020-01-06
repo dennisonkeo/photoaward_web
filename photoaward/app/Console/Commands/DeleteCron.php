@@ -60,7 +60,7 @@ class DeleteCron extends Command
 
         $this->info('Demo:Cron Cummand Run successfully!');
 
-        $upload =Upload::where('id',4)->first();
+        $upload =Upload::where('id',5)->first();
 
       $upload->delete();
       File::delete([public_path($upload->imagePath)]);
