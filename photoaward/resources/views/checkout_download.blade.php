@@ -255,7 +255,7 @@ jQuery(document).ready(function($){
 	<thead>
 		<tr class="edd_cart_header_row">
 						<th class="edd_cart_item_name">Item Name</th>
-			<th class="edd_cart_item_price">Item Price</th>
+			<th class="edd_cart_item_price">Item Price ($)</th>
 			<th class="edd_cart_actions">Actions</th>
 					</tr>
 	</thead>
@@ -269,7 +269,7 @@ jQuery(document).ready(function($){
 				</span>					
 			</td>
 			<td class="edd_cart_item_price">
-				100.00					
+				<span>{{ $ct->size }}</span>.00					
 			</td>
 			<td class="edd_cart_actions">
 				<a class="edd_cart_remove_item_btn" href="{{ route('download', $ct->upload->imageName) }} " target="_blank">Download</a> <i class="fa fa-download"></i>

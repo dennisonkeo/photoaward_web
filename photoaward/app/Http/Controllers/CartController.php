@@ -221,7 +221,6 @@ class CartController extends Controller
               Purchase::where('accountno',"=", $account_no)
                        ->update(array('purchased' => 1));
 
-          return response()->json('Success');
 
             $purchases = Purchase::where('accountno', $account_no)->get();
 
@@ -231,20 +230,15 @@ class CartController extends Controller
           
                 $user->notify(new HelloUser());
             }
+
+          return response()->json('Success');
         }
         else
         {
+
           return response()->json('Something Went Wrong!');
         }
-
-        $purchases = Purchase::where('accountno', $account_no)->get();
-
-            foreach($purchases as $purchase)
-            {
-                $user = User::where('id', $purchase->cart->upload->user->id)->first();
-          
-                $user->notify(new HelloUser());
-            }
+   
     }
 
       public function destroy(Cart $cart)
