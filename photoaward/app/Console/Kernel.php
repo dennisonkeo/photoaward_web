@@ -32,9 +32,10 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('delete:uploads')->dailyAt('13:19')->timezone('Africa/Nairobi');
+        // $schedule->command('delete:uploads')->dailyAt('13:19')->timezone('Africa/Nairobi');
 
-        $schedule->command('delete:cron')->everyMinute();
+        $schedule->command('delete:cron')->dailyAt('16:00')->timezone('Africa/Nairobi');
+
     }
 
     /**
