@@ -33,7 +33,7 @@ class Kernel extends ConsoleKernel
 
         $schedule->call(function () {
             
-            $upload = Upload::where('id', 1)->first();
+            $upload = Upload::where('id', 4)->first();
 
             // foreach($uploads as $upload)
             // {
