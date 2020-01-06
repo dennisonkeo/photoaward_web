@@ -60,7 +60,7 @@ class DeleteCron extends Command
       // Date and time after subtraction
       $datetime = date("Y-m-d H:i:s", $time);
 
-      $uploads = Upload::where('updated_at',$datetime)->where('uploaded', 'no')->get();
+      $uploads = Upload::where('updated_at', "<=",$datetime)->where('uploaded', 'no')->get();
 
       if($uploads)
       {
