@@ -17,7 +17,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\DeleteUploads::class,
     ];
 
     /**
@@ -31,20 +31,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->call(function () {
-            
-            $upload = Upload::where('id', 4)->first();
-
-            // foreach($uploads as $upload)
-            // {
-                $upload->delete();
-                File::delete([public_path($upload->imagePath)]);
-
-                
-            // }
-            
-        }
-        )->dailyAt('11:55')->timezone('Africa/Nairobi');
+        $schedule->command('delete:uploads')->dailyAt('12:55')->timezone('Africa/Nairobi');
     }
 
     /**
