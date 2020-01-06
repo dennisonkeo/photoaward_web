@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\DeleteUploads::class,
+        Commands\DeleteCron::class,
     ];
 
     /**
@@ -31,7 +32,9 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('delete:uploads')->dailyAt('12:55')->timezone('Africa/Nairobi');
+        $schedule->command('delete:uploads')->dailyAt('13:19')->timezone('Africa/Nairobi');
+
+        $schedule->command('delete:cron')->everyMinute();
     }
 
     /**
