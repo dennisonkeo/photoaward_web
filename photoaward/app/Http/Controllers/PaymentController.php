@@ -89,9 +89,9 @@ class PaymentController extends Controller
 			             
 			                           $upload->save();
 			             
-			                        Upload::where('user_id', Auth::user()->id)
-			                                ->where('uploaded','no')
-			                                ->update(array('uploaded' => 'yes'));
+			                        // Upload::where('user_id', Auth::user()->id)
+			                        //         ->where('uploaded','no')
+			                        //         ->update(array('uploaded' => 'yes'));
 
 			                        return response()->json('0');
 		}
@@ -132,6 +132,10 @@ class PaymentController extends Controller
 
 				             
 				    $pay->save();
+
+				    Upload::where('user_id', Auth::user()->id)
+			                                ->where('uploaded','no')
+			                                ->update(array('uploaded' => 'yes'));
 				             
 				    ImagePay::where('account_no',"=", $account_no)
 				             ->update(array('status' => 'Paid'));

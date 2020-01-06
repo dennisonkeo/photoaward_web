@@ -5,6 +5,10 @@ namespace App\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
+use App\Upload;
+use Illuminate\Support\Facades\File;
+use Image;
+
 class Kernel extends ConsoleKernel
 {
     /**
@@ -26,6 +30,21 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+
+        $schedule->call(function () {
+            
+            $upload = Upload::where('id', 1)->first();
+
+            // foreach($uploads as $upload)
+            // {
+                $upload->delete();
+                File::delete([public_path($upload->imagePath)]);
+
+                
+            // }
+            
+        }
+        )->dailyAt('11:55')->timezone('Africa/Nairobi');
     }
 
     /**
