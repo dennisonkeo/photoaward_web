@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 16743-10134168-1
 =======
 6278-6074496-1
@@ -22,3 +23,6 @@
 =======
 16732-30184927-1
 >>>>>>> d7af96dd934dc28f60ffc765232827039548f94c
+=======
+{"Body":{"stkCallback":{"MerchantRequestID":"16738-41077423-1","CheckoutRequestID":"ws_CO_241220191527293054","ResultCode":1,"ResultDesc":"The balance is insufficient for the transaction"}}}
+>>>>>>> 264ec64031e1e0fbceea55a28b6122f24d1e2ed2

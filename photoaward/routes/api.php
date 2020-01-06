@@ -31,11 +31,11 @@ Route::get('logout', 'MobileAppController@logout');
 
 Route::get('likes/{id}', 'MobileAppController@get_rate_count');
 
-Route::group(['middleware' => 'auth:api'], function(){
-
 Route::post('mpesa-response', 'PaymentController@mpesa_response')->name('mpesa-response');
 
 Route::post('mpesa-reply', 'CartController@mpesa_reply')->name('mpesa-reply');
+
+Route::group(['middleware' => 'auth:api'], function(){
 
 Route::get('like-image/{upload_id}', 'MobileAppController@like_image')->name('like-image');
 
