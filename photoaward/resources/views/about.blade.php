@@ -254,9 +254,6 @@ initializeClock('clockdiv2', deadline2);
   }
 
 
-
-  
-
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -616,7 +613,8 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<p> 
+<p>
+Hi {$userquery->username} Welcome to Picture +254.
 This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
 
@@ -698,10 +696,12 @@ You can sign up and submit photographs online through our website www.picture+25
    Every contestant must sign up for the competition.</div>
           </div>
         </div>
+
         <div class="cover-image">
           
   <div class="field-accordion-cover-image">
     <img src="images/pic41.jpg" width="522" height="200" />  </div>
+
         </div>
       </div>
       <div class="description">
@@ -1103,7 +1103,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
 	<div class="container">
 
 
-    <div id="copyright" class="wfont">&copy; Picture254. All Rights Reserved.</div> 
+    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. </div> 
 
 	</div>
 </div>
