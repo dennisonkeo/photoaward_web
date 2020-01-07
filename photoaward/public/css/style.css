@@ -5,21 +5,6 @@
  * author		: takaaki koyama
  -----------------------------------------------------------*/
 
-@font-face {
-	font-family: 'Calibre-Bold';
-	src: url('../font/CalibreWeb-Bold.eot');
-	src: url('../font/CalibreWeb-Bold.eot?#iefix') format('embedded-opentype'), /*EOTå½¢å¼*/
-	url('../font/CalibreWeb-Bold.woff') format('woff'); /* WOFFå½¢å¼ */
-	font-weight: bold;
-}
-
-@font-face {
-	font-family: 'Calibre-Regular';
-	src: url('../font/CalibreWeb-Regular.eot');
-	src: url('../font/CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'), /*EOTå½¢å¼*/
-	url('../font/CalibreWeb-Regular.woff') format('woff'); /*WOFFå½¢å¼*/
-}
-
 
 /*
  reset
@@ -553,13 +538,13 @@ li.current .sub-nav-links{
 /*
  #gnavi
 -----------------------------------------*/
-#gnavi{
+#gnavi, #gnavii{
 	float: left;
 }
 
 #gnavi .nav-btn a{}
 
-#gnavi .nav-btn a .bars{
+#gnavi .nav-btn a .bars,#gnavii .nav-btn a .bars{
 	display: inline-block;
 	padding:0 20px;
 	width: 58px;
@@ -569,7 +554,7 @@ li.current .sub-nav-links{
 	vertical-align: middle;
 }
 
-#gnavi .nav-btn a .bars .bar{
+#gnavi .nav-btn a .bars .bar,#gnavii .nav-btn a .bars .bar{
 	display: block;
 	position: absolute;
 	width: 18px;
@@ -588,7 +573,7 @@ li.current .sub-nav-links{
 
 }
 
-#gnavi .nav-btn a .bars .bar:nth-child(1){
+#gnavi .nav-btn a .bars .bar:nth-child(1),#gnavii .nav-btn a .bars .bar:nth-child(1){
 	top: 6px;
 	opacity: 1;
 	-webkit-transition-delay: 125ms;
@@ -596,21 +581,21 @@ li.current .sub-nav-links{
 	     -o-transition-delay: 125ms;
 	        transition-delay: 125ms;
 }
-#gnavi .nav-btn a .bars .bar:nth-child(2){
+#gnavi .nav-btn a .bars .bar:nth-child(2),#gnavii .nav-btn a .bars .bar:nth-child(2){
 	top: 12px;
 	-webkit-transition-delay: 80ms;
 	   -moz-transition-delay: 80ms;
 	     -o-transition-delay: 80ms;
 	        transition-delay: 80ms;
 }
-#gnavi .nav-btn a .bars .bar:nth-child(3){
+#gnavi .nav-btn a .bars .bar:nth-child(3),#gnavii .nav-btn a .bars .bar:nth-child(3){
 	top: 18px;
 	-webkit-transition-delay: 40ms;
 	   -moz-transition-delay: 40ms;
 	     -o-transition-delay: 40ms;
 	        transition-delay: 40ms;
 }
-#gnavi .nav-btn a .bars .bar:nth-child(4){
+#gnavi .nav-btn a .bars .bar:nth-child(4),#gnavii .nav-btn a .bars .bar:nth-child(4){
 	top: 24px;
 	opacity: 0;
 	-webkit-transition-delay: 0ms;
@@ -620,7 +605,7 @@ li.current .sub-nav-links{
 }
 
 
-#gnavi .nav-btn a:hover .bars .bar:nth-child(1){
+#gnavi .nav-btn a:hover .bars .bar:nth-child(1),#gnavii .nav-btn a:hover .bars .bar:nth-child(1){
 	top: 0px;
 	opacity: 0;
 	-webkit-transition-delay: 0ms;
@@ -629,21 +614,21 @@ li.current .sub-nav-links{
 	        transition-delay: 0ms;
 
 }
-#gnavi .nav-btn a:hover .bars .bar:nth-child(2){
+#gnavi .nav-btn a:hover .bars .bar:nth-child(2),#gnavii .nav-btn a:hover .bars .bar:nth-child(2){
 	top: 6px;
 	-webkit-transition-delay: 40ms;
 	   -moz-transition-delay: 40ms;
 	     -o-transition-delay: 40ms;
 	        transition-delay: 40ms;
 }
-#gnavi .nav-btn a:hover .bars .bar:nth-child(3){
+#gnavi .nav-btn a:hover .bars .bar:nth-child(3),#gnavii .nav-btn a:hover .bars .bar:nth-child(3){
 	top: 12px;
 	-webkit-transition-delay: 80ms;
 	   -moz-transition-delay: 80ms;
 	     -o-transition-delay: 80ms;
 	        transition-delay: 80ms;
 }
-#gnavi .nav-btn a:hover .bars .bar:nth-child(4){
+#gnavi .nav-btn a:hover .bars .bar:nth-child(4),#gnavii .nav-btn a:hover .bars .bar:nth-child(4){
 	top: 18px;
 	opacity: 1;
 	-webkit-transition-delay: 125ms;
@@ -953,14 +938,19 @@ li.current .sub-nav-links{
 	*/
 }
 
-
+#gnavii{
+	display: none;
+}
 
 
 
 @media only screen and (max-width: 1000px){
-	.nav-btn a .label .label-separator,
+	.nav-btn a .label .label-separator,#gnavi,
 	.nav-btn a .label .sub-label{
 		display:none;
+	}
+	#gnavii{
+		display: block;
 	}
 }
 @media only screen and (max-width: 700px){
@@ -3755,4 +3745,13 @@ textarea.focus,
     display: none;
 }
 
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+body { 
+    font-family:'Montserrat', sans-serif;
 }

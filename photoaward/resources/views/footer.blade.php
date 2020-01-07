@@ -9,7 +9,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap">
                     <a href="{{route('/')}}">
-                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
+                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 3.8rem;">
                     </a>
                 </div>
             </div>
@@ -43,6 +43,5 @@
                 </p> -->
             </div>
         </div>
-        
-    </div>
+        </div>
 </section>

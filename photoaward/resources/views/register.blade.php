@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
-	<link rel="shortcut icon" href="/common/img/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-	
-	<script src="{{ asset('js/right_click.js') }}"></script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -150,7 +151,7 @@
 		<div lang="en">
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 
-				<form action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
+				<form onsubmit="return checkPasswordMatch();" action="{{ route('register-user') }}" class="login100-form validate-form" style="margin-top: -100px;" method="POST" >
 					{{ csrf_field() }}
 					<span class="login100-form-title p-b-59" style="height: 40px; background: #000; width: 100%; padding-left: 10px; color: white; border-radius: 5px; font-family: cambria;">
 						Sign Up
@@ -158,33 +159,34 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required" style="margin: 5px;">
 						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
+						<input class="input100" type="text" name="name" placeholder="Name..." value="{{ old('name') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz" style="margin: 5px;">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
+						<input class="input100" type="text" name="email" placeholder="Email addess..." value="{{ old('email') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Phone No is required" style="margin: 5px;">
 						<span class="label-input100">Phone No</span>
-						<input class="input100" type="text" name="phone" placeholder="e.g 2547********" minlength="12" maxlength="12">
+						<input class="input100" type="text" name="phone" placeholder="e.g 2547********" minlength="12" maxlength="12" value="{{ old('phone') }}">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required" style="margin: 5px;">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="password" placeholder="*************">
+						<input class="input100" type="password" id="password" name="password" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required" style="margin: 5px;">
 						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="password" name="repeat-pass" placeholder="*************">
+						<input class="input100" type="password" name="repeat-pass" id="repeat" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
+					<div class="alert alert-danger" id="divCheckPasswordMatch" style="display: none;"></div>
 
 					<!-- <div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">
@@ -204,10 +206,12 @@
 
 					<div>
 					<label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+        				<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      				</label>
 
-      <p><input type="checkbox" checed="" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="terms-&-conditions" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      					<p>
+     					 <input type="checkbox" id="terms" checed="" name="terms" style="margin-bottom:15px" required="" {{ old('terms') ? 'checked' : '' }}> By creating an account you agree to our <a href="terms-&-conditions" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.
+     					</p>
 
       				</div>
 
@@ -216,7 +220,7 @@
 					<div class="container-login100-form-btn" >
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button type="submit" class="login100-form-btn">
+							<button class="login100-form-btn" type="submit" >
 								Sign up
 							</button>
 						</div>
@@ -274,8 +278,38 @@
 @include('menu') 
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; Photo Contest.</div>
+		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
 </div>
 </body>
+
+<script type="text/javascript">
+    function checkPasswordMatch() {
+    var password = $("#password").val();
+    var confirmPassword = $("#repeat").val();
+    
+   
+    if (password != confirmPassword)
+    {
+        document.getElementById('divCheckPasswordMatch').style.display = "block";
+        $("#divCheckPasswordMatch").html("Passwords do not match!");
+                       setTimeout(function(){
+                 $('#divCheckPasswordMatch').fadeOut('fast');
+            
+        }, 1000);
+        return false;
+    }
+
+    else
+    {
+        // $("#divCheckPasswordMatch").html("Passwords match.");
+    }
+
+    $(document).ready(function () {
+   $("#repeat").keyup(checkPasswordMatch);
+
+});
+}  
+	
+</script>
 </html>

@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Photo Contest</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
 
@@ -58,7 +73,7 @@
 	<div class="container">
 		<div class="row" >
 			<div class="col-lg-8 col-sm-12 col-11 main-section" style="border-radius: 7px;">
-				<h4 class="alert alert-success" style="margin: -20px; background: black; color: #ff0051;border:none; margin-bottom: 20px;"> <span>PICTURE</span> <span style="color: white;">+254</span></h4>
+				<h4 class="alert alert-success" style="margin: -20px; background: black; color: #ff0051;border:none; margin-bottom: 20px;"> <span>PICTURE+254</span> <span style="color: white;">+254</span></h4>
 
 
 				{{-- <input type="hidden" name="_token" value="{{ csrf_token() }}"> --}}
@@ -88,7 +103,9 @@
   <div class="modal-dialog modal-dialog-top modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i> Add More Images</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold;"><i class="fa fa-money"></i>
+         Add More Images
+        </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -99,6 +116,11 @@
                         <p id="msg">Message</p>
                 </div>
                 {{-- <label class="label">Category</label> --}}
+                <select class="form-control" name="track" id="track">
+                        <option>Professionals</option>
+                        <option>Non-Professionals</option>
+                </select>
+
                 <select class="form-control" name="category" id="category">
                     @foreach($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -147,10 +169,18 @@
 	// $('#exampleModalCenter').modal({backdrop: 'static', keyboard: false});
 
     var cat = document.getElementById("category").value;
+
+    var track = document.getElementById("track").value;
     //console.log('test '+cat);
 
     $('#category') .on('change', function(e){
      cat = e.target.value;
+        //console.log(cat);
+
+    });
+
+    $('#track') .on('change', function(e){
+     track = e.target.value;
         //console.log(cat);
 
     });
@@ -170,6 +200,7 @@
                 return {
                     _token: $("input[name='_token']").val(),
                     category: cat,
+                    track: track,
                     random_str: $("input[name='random_str']").val()
                 
                 };

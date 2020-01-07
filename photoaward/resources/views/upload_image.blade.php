@@ -2,15 +2,24 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    
-    <title>Photo Contest</title>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
-
-    <meta name="description" content="WPO Users">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -109,14 +118,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12" id="competitions">
-            <h2 style="text-align: left;" class="heading-title">Photo Contest Entry</h2>
+            <h2 style="text-align: left;" class="heading-title" id="heading_title">{{ $track }}</h2>
         </div>
     
     <div class="col-xs-12 col-sm-12 col-md-12">
         <h1 style="border-color: #b7eb34;">{{ $category->name }}</h1>
     </div>
             <div class="col-xs-12 col-sm-12 col-md-3">
-            <img class="img-responsive" src="https://cdn.stocksnap.io/img-thumbs/960w/8VZXWIK0K3.jpg" alt="news01.jpg" />
+            <img class="img-responsive" src="{{ asset('images') }}/{{ $category->cover }}" alt="news01.jpg" />
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-9 category-info">
@@ -219,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <input type="hidden" name="category" value="{{ $category->id }}">
                     <input type="hidden" name="random_str" value="" id="rand">
                     
-                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
+                    <input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="1" /> 
                 </div>
                 
             </div>
@@ -390,6 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 return {
                     _token: $("input[name='_token']").val(),
                     category: $("input[name='category']").val(),
+                    track: $("#heading_title").text(),
                     random_str: $("input[name='random_str']").val()
                 
                 };
@@ -399,7 +409,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         overwriteInitial:false,
 
-        maxFileSize: 2000,
+        maxFileSize: 10000,
 
         maxFileNum: 8,
 

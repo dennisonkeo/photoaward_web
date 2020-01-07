@@ -9,6 +9,7 @@ use App\Upload;
 use App\Category;
 use Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -44,8 +45,8 @@ class HomeController extends Controller
     public function album()
     {
         $uploads=Upload::all();
-        // return $uploads;
-        return json_encode($uploads);
+        
+        return $uploads;
     }
 
     public function response()
@@ -75,11 +76,11 @@ class HomeController extends Controller
         return view('upload_view', compact('categories'));
     }
 
-    public function upload_image($id)
+    public function upload_image($id,$track)
     {
         $category = Category::where('id',$id)->first();
 
-        return view('upload_image', compact('category'));
+        return view('upload_image', compact('category', 'track'));
     }
 
     public function new_upload()
@@ -114,17 +115,37 @@ class HomeController extends Controller
 
     public function store(Request $request)
     {
-         $this->validate($request,[
+         // $this->validate($request,[
+         //    'name' => ['required', 'string', 'max:255'],
+         //    'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
+         //    'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+         //    'password' => ['required', 'string', 'min:8']
+
+         //    ]);
+
+         $validator = Validator::make($request->all(), [
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8']
-
             ]);
+
+         if($validator->fails())
+         {
+            return redirect()->back()->withInput()->withErrors($validator);
+         }
 
            $user = new User();
 
-          $user->name = $request->input("name");
+           $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+          if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+            $user->name = $request->input("name");
           $user->email = $request->input("email");
           $user->phone = $request->input("phone");
           $user->password = Hash::make($request->input("password"));
@@ -138,16 +159,17 @@ class HomeController extends Controller
         Auth::attempt([
         'phone' => $request->phone,
         'password' => $request->password])
-    )
-    {
-        return redirect('submit-entry')->with('success', 'Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-    }
+        )
+        {
+            return redirect('submit-entry')->with('success', 'Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+        }
  
-        
+         }
+
     }    
 
 
@@ -161,7 +183,15 @@ class HomeController extends Controller
 
             ]);
 
-           $user = new User();
+         $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+         if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+             $user = new User();
 
           $user->name = $request->input("name");
           $user->email = $request->input("email");
@@ -177,20 +207,21 @@ class HomeController extends Controller
         Auth::attempt([
         'phone' => $request->phone,
         'password' => $request->password])
-    )
-    {
-        return redirect('stock-album')->with('success', 'Thank you for registering with us.');
+        )
+        {
+            return redirect('stock-album')->with('success', 'Thank you for registering with us.');
 
-        // return response()->json('Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-        return response()->json('Sorry, something went wrong..');
+            // return response()->json('Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+            return response()->json('Sorry, something went wrong..');
 
-    }
- 
-        
+        }
+         }
+
+             
     }
 
     public function signup_user(Request $request)
@@ -203,6 +234,15 @@ class HomeController extends Controller
 
             ]);
 
+         $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+         if($verify_phone)
+         {
+            return back()->with('warning', 'The phone number has already been taken.');
+         }
+         else
+         {
+
            $user = new User();
 
           $user->name = $request->input("name");
@@ -218,15 +258,17 @@ class HomeController extends Controller
 
         Auth::attempt([
         'phone' => $request->phone,
-        'password' => $request->password])
-    )
-    {
-        return redirect('like-image')->with('success', 'Thank you for registering with us.');
-    }
-    else
-    {
-        // return redirect('login')->with('warning', 'Thank you for registering with us.');
-    }
+            'password' => $request->password])
+        )
+        {
+            return redirect('like-image')->with('success', 'Thank you for registering with us.');
+        }
+        else
+        {
+            // return redirect('login')->with('warning', 'Thank you for registering with us.');
+        }
+         }
+
  
         
     }

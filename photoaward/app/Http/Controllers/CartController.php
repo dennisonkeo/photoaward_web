@@ -9,6 +9,7 @@ use App\Cart;
 use App\user;
 use App\Upload;
 use App\Payment;
+use App\Notifications\HelloUser;
 use App\Purchase;
 use Config;
 use Response;
@@ -18,6 +19,26 @@ use Auth;
 class CartController extends Controller
 {
     
+    public function sendMail()
+    {
+
+     
+      $user = Auth::user();
+
+      $user->notify(new HelloUser());
+
+       $purchases = Purchase::where('accountno', '30468-201429-1')->get();
+
+       // dd($purchases);
+
+        foreach($purchases as $purchase)
+        {
+            $user = User::where('id', $purchase->cart->upload->user->id)->first();
+      
+            $user->notify(new HelloUser());
+
+        }
+    }
     	public function index()
     	{
       //   $cart = Cart::where('user_id',Auth::user()->id)
@@ -50,7 +71,7 @@ class CartController extends Controller
           return Response::download('uploads_org/'.$path);
       }
 
-    	public function addToCart()
+    	public function addToCart(Request $request)
     	{
     		 
     		 $upload_id = $_POST['upload_id'];
@@ -61,6 +82,7 @@ class CartController extends Controller
              
                            $cart->user_id = Auth::user()->id;
                            $cart->upload_id = $upload_id;
+                           $cart->size = $request->input('size');
                            $cart->token = session()->getId();
                            $cart->save();
 
@@ -100,7 +122,16 @@ class CartController extends Controller
 
           $carts = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
 
-          $cart_amount = (count($carts)*100);
+          $cart_amount = (($carts->sum('size'))*100);
+
+          if($cart_amount > 70000)
+          {
+            return response()->json('1');
+
+            return false;
+          }
+
+          // dd($cart_amount);
 
           // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
 
@@ -117,12 +148,15 @@ class CartController extends Controller
           $TransactionDesc = "Payment";
           $Remarks = "Yess";
 
-
           $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
                                   $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
                                   );
-      // return $stkPushSimulation;
-          $check = $stkPushSimulation;    
+                // return $stkPushSimulation;
+          $check = $stkPushSimulation; 
+
+          // $callbackJSONData=file_get_contents('php://input');
+          // $handle=fopen("uploads/transaction.txt", 'w');
+          // fwrite($handle, $stkPushSimulation);   
 
           if($check !="")
           {
@@ -163,8 +197,9 @@ class CartController extends Controller
 
       $ResultCode = json_decode($callbackJSONData)->Body->stkCallback->ResultCode;
 
-      $handle=fopen("uploads/transaction.txt", 'w');
-          fwrite($handle, $callbackJSONData);
+      // $handle=fopen("uploads/transaction.txt", 'w');
+      //     fwrite($handle, $callbackJSONData);
+
 
       if($ResultCode == "0")
 
@@ -188,13 +223,24 @@ class CartController extends Controller
               Purchase::where('accountno',"=", $account_no)
                        ->update(array('purchased' => 1));
 
+
+            $purchases = Purchase::where('accountno', $account_no)->get();
+
+            foreach($purchases as $purchase)
+            {
+                $user = User::where('id', $purchase->cart->upload->user->id)->first();
+          
+                $user->notify(new HelloUser());
+            }
+
           return response()->json('Success');
         }
         else
         {
+
           return response()->json('Something Went Wrong!');
         }
-
+   
     }
 
       public function destroy(Cart $cart)

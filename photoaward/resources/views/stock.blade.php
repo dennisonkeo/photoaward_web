@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
-		
-				{{-- <link rel="shortcut icon" href="http://themes.designcrumbs.com/stocky/files/edd/2014/06/favicon.png" /> --}}
+<head>
 
-		<script src="{{ asset('js/right_click.js') }}"></script>
-				
-		<title>Picture254</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+    
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
 <link rel='dns-prefetch' href='//platform-api.sharethis.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
@@ -116,7 +127,7 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("{{ asset('images/pic60.jpg') }}");
+	background-image:url("{{ asset('images/pic10.jpg') }}");
 }
 #home_cta {
 	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");
@@ -418,7 +429,7 @@ jQuery(document).ready(function($){
 					</div>
 					
 					<div id="footer_copy">
-						&copy; 2019 picture254
+						&copy; 2019 picture+254
 						
 							 
 						</div>

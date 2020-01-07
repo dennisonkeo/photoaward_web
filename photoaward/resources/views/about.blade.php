@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
+  
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<script src="{{ asset('js/right_click.js') }}"></script>
-<!-- Google Font Martel -->
+  <script src="{{ asset('js/right_click.js') }}"></script>
+ --><!-- Google Font Martel
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/abt_1.css" />
-<link rel="stylesheet" href="css/abt_2.css" />
-<link rel="stylesheet" href="css/abt_3.css" />
+<link rel="stylesheet" href="css/compe_1.css" />
+<link rel="stylesheet" href="css/compe_2.css" />
+<link rel="stylesheet" href="css/compe_3.css" />
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="css/abt_4.css" />
+<link rel="stylesheet" href="css/compe_4.css" />
 
 
 
-	<link rel="shortcut icon" href="/common/img/favicon.ico" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/common/img/favicon.ico" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
 
-   {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
-	
-	<!--[if lt IE 9]>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
 <script src="js/abt_1.js"></script>
 <script src="js/abt_2.js"></script>
@@ -58,12 +54,12 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
-	
+  
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
   <script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/common.js') }}"></script>
 
-{{-- 	<script>
+{{--  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -75,7 +71,7 @@
     </script> --}}
 
     <style type="text/css">
-    	.parallaxabout {
+      .parallaxabout {
   /* The image used */
   background: url('{{ asset('images/pic2.jpg') }}') no-repeat center center fixed;
 
@@ -94,12 +90,18 @@
 
 }
 .text_line{
-	line-height: 48px;
-	font-family: cambria;
+  line-height: 48px;
+  font-family: cambria;
 }
 </style>
 
- <script type="text/javascript">
+<script type="text/javascript">
+// Date;
+function showDate()
+{
+  alert(Date.parse("Jan 28, 2020 12:00:00"));
+}
+
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -122,6 +124,8 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
 
+  // var endtime = new Date("Mar 15, 2020 12:00:00").getTime();
+
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
@@ -135,16 +139,16 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
+  // updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
-</script>
+</script>   
 
     <style type="text/css">
       #clockdiv{
@@ -265,7 +269,7 @@ initializeClock('clockdiv2', deadline2);
 
 
 </style>
-<style type="text/css">
+    <style type="text/css">
    .element {
   width: 100%;
   height: auto;
@@ -321,38 +325,68 @@ initializeClock('clockdiv2', deadline2);
   display: inline-block;
   background-color: #ff00ff;
 }
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+#profile .field-accordion-description{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+.section-tabled p{
+  text-align: justify; 
+  margin-bottom: -6px;
+}
+.field-accordion-summary{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper .js-accordion-trigger .is-expanded{
+  background: red;
+}
 </style>
+
+
 </head>
 <body id="mikiyakobayashi" class="sub">
 <noscript>
 <div id="noscript_message"></div>
 </noscript>
-<div id="wrap" style="background: black;">
+<div id="wrap" style="background: white;">
 <div id="header">
-	<div class="container">
-		
-		<div id="logo"><a href="#" class="hover-line"><span></span></a></div>
+  <div class="container">
+    
+    <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
 
-    <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> <!-- <i style="color: #ff0051; font-size: 20px;" class="fa fa-trophy fa-spin"></i> --> PICTURE +254</button>
+    <!-- <button class="pull-right" style="line-height: 45px; background: white; color: #ff00ff; font-size: 16px; height: 20px;" onclick="window.location='{{ url("/") }}'"> PICTURE +254</button> -->
+     <span class="navbar-logo" style="float: right;">
+                    <a onclick="window.location='{{ url("/") }}'" href="#"> 
 
-		<!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
+                         <img src="images/l_ogo.png" alt="logo" style="height: 3.7rem; vertical-align: middle;">
+                    </a>
+                </span>
 
-		<div id="gnavi" class="nav">
-			<div class="nav-btn">
-				<a href="#gnavi-links">
-					<span class="bars">
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-						<span class="bar"></span>
-					</span>
-					<span class="label">ABOUT CONTEST</span>
-				</a>
-			</div>
-		</div>
+    <!-- <div id="" style="float: right; line-height: 50px;"><a href="about.html" class="label"><span>SUBMIT</span></a></div> -->
 
-		
-	</div>
+    <div id="gnavi" class="nav" >
+      <div class="nav-btn">
+        <a href="#gnavi-links">
+          <span class="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+          <span class="label">ABOUT</span>
+        </a>
+      </div>
+    </div>
+
+@include('nav')
+
+  </div>
+  @include('menu2')
 
    <div class="main-box start pull-center" style="background: white; display: none; width: 50%; margin: 10% auto 0 auto; position: absolute; text-align: center; font-size: 14px; padding: 10px; border-radius: 20px; position: fixed;">
             <div class="close-button didotltpro-italic pull-right"><a onclick="close_modal()" href="#">close</a></div>
@@ -367,22 +401,14 @@ initializeClock('clockdiv2', deadline2);
 
   <div class="logo2 pull-right" id="hidelogo" style="margin-top: 0px; margin-left: 2px; float: right;">
 
-<img src="images/logo.png" style="width: 236px; opacity: 0.5">
+<img src="images/logo-.png" style="width: 236px; opaity: 0.7">
 
 </div>
 </div>
 
 <div class="parallaxabout" style="opcity: 0.6; ">
-<!-- <p style=" vertical-align: center; color: #000; padding-left: 40px; top: 20; font-size: 55px; font-weight: bold;">
-  A GLOBAL COMPETITION <br> FOR PROFESSIONALS AND <br> PHOTOGRAPHY'S EMERGING <br> TALENTS.
-</p> -->
 
-
-
-        <div id="site-namn" style="position: fixed; top: 65%; margin-left: 15%; vertical-align: center;">
-
-          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px;"><!-- <i class="fa fa-send-o"></i> --> SUBMIT</button><br><br>
-
+        <div id="site-namn" style="position: fixed; top: 25%; margin-left: 10%; vertical-align: center; font-family:'Montserrat', sans-serif;">
           <div id="clockdiv">
               <div>
                 <span class="days"></span>
@@ -399,14 +425,25 @@ initializeClock('clockdiv2', deadline2);
               <div>
                 <span class="seconds"></span>
                 <div class="smalltext">Seconds</div>
-              </div>
-          </div><br><br>
+              </div><br>
+            <h4 style=" text-align: justify; vertical-align: center; color: #fff; padding-left: 50px; margin-top: 10px; font-size: 30p                                                                                                                                                                                                              px; font-family:'Montserrat', sans-serif;">
+                PICTURE +254 
+            </h4>
+            <h4 style=" vertical-align: center; color: #fff; padding-left: 50px; top: 10; font-size: 48px; font-weight: bold;font-family:'Montserrat', sans-serif;">PHOTO CONTEST
+            </h4>
+
+            @if(Auth::check())
+          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+          @else
+          <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="marin-left: 50px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+          @endif
+          </div>
           
         </div>
 </div>
 
-	<div id="contents-wrap">
-		<div id="contents">
+  <div id="contents-wrap">
+    <div id="contents">
 
     <div id="profile2" class="contnt" style="background: black; hight: 500px; margin: 3px;">
 
@@ -418,7 +455,11 @@ initializeClock('clockdiv2', deadline2);
               <img src="images/logo_.png" style="height: 150px; background-size: cover;">
             </div>
           <div class="row" style="margin: 0 auto;">
-            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px;"> SUBMIT</button>
+            @if(Auth::check())
+            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px; font-family:'Montserrat', sans-serif;"> ENTER NOW</button>
+            @else
+            <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="border-radius: 5px; background: #ff0051; height: 40px; line-height: 40px; width: 120px; margin-right: 0.9px; font-family:'Montserrat', sans-serif;"> ENTER NOW</button>
+            @endif
         </div>
           <div id="clockdiv2" style="margin-top: 2px;">
               <div>
@@ -453,7 +494,7 @@ initializeClock('clockdiv2', deadline2);
                         <div id="mainSlider" style="opaity: 0.5" style="background: green; ">
                             <div class="group">
                             
-                                <div class="item" style="background: black;">
+                                <div class="item" style="background: #fff;">
                                     <picture>
                 <!--                        <source media="(max-width: 600px)" srcset="/img2/slide_03-250.jpg">-->
                 <!--                        <source media="(max-width: 900px)" srcset="/img2/slide_03-400.jpg">-->
@@ -560,14 +601,14 @@ initializeClock('clockdiv2', deadline2);
   </div>
 
 <!-- <<<<<<< HEAD
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
+      <div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: black;">
 ======= -->
-			<div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: green; background: black;">
+      <div id="profile" class="content" style="background-image: ur('{{ asset('images/coconut-drink-on-beach.jpg') }}'); background-repeat: no-repeat; background: ;">
 
 
         <div class="container">
 
-<div class="sections" style="text-align: center;">
+<div class="sections" style="text-align: center; font-family:'Montserrat', sans-serif;">
 
   <div class="section section-tabled" id="about">
   <div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
@@ -586,14 +627,15 @@ initializeClock('clockdiv2', deadline2);
         <div class="summary">
           <h2 class="title">
             
-  <div class="field-accordion-title" style="font-size:28px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    About Competition  </div>
+  <div class="field-accordion-title">
+    About 
+  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    Welcome to Picture+254. 
- </div>
+  <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <h4> Hi and welcome to Picture+254. </h4>
+ </div> -->
           </div>
         </div>
         <div class="cover-image">
@@ -604,7 +646,7 @@ initializeClock('clockdiv2', deadline2);
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; font-family:'Montserrat', sans-serif;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description</span></p> -->
@@ -613,49 +655,39 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
+<<<<<<< HEAD
 <p>
 Hi {$userquery->username} Welcome to Picture +254.
 This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
+=======
+>>>>>>> 306a3c02ced118def04b4441a676734afec115e7
 
 <p>
-To be eligible for any category, there is no age limit to when the photograph was taken. This applies to all images in a composite. By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+Hi and welcome to Picture+254
+</p>
+<p>
+This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+</p>
+<p>
+There is no age limit to when the photograph was taken and hence you can make many entries. 
+By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-<p>
-Picture+254 Photo Contest runs <b>dd/mm, yyyy – dd/mm, yyyy. </b> 
-</p>
+Picture+254 Photo Contest runs <b>12th December, 2019</b> ~ <b>27th January, 2020</b>.
+<br><br>
+<a onclick="window.location='{{ url("about-competition") }}'" href="#">Read more.</a>
 
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who may enter:</h4>
-
-<p>
-You must be 18 years old or older. Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
-</p>
-
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why enter?</h4>
-
-<p></p>
-
-<h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
-
-You can sign up and submit photographs online through our website www.picture+254.com or through the Picture+254 App that you can download onto your phone.
-
-
-<div class="bottom-border" style="margin-top: 10px;"></div>
+<div class="bottom-border" style="margin-top: 20px;"></div>
 
 </div>
 </div>
-
-<!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-<!-- </ul>   -->
 
 </div>
       </div>
+
     </div>    
   </div>
 </div>
@@ -692,8 +724,11 @@ You can sign up and submit photographs online through our website www.picture+25
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;letter-spacing: 0px;">
-   Every contestant must sign up for the competition.</div>
+ <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;letter-spacing: 0px;">
+   <h4>
+   Every contestant must sign up for the competition. 
+   </h4>
+  </div> -->
           </div>
         </div>
 
@@ -706,7 +741,7 @@ You can sign up and submit photographs online through our website www.picture+25
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px;text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
    <!--  <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -715,43 +750,27 @@ You can sign up and submit photographs online through our website www.picture+25
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-
 <p>
-Every contestant must sign up for the competition.
+Every contestant must sign up for the competition. This allows winners to be clearly identified.
 </p>
 <p>
-You cannot sign up more than one contestant per phone number or e-mail address. 
+You cannot sign up more than one contestant per phone number or e-mail address.
 </p>
-<p>
-There is no limit to how many photographs you can enter per category.
-</p> 
+<p> 
+You can enter as many photographs as you can in all categories. 
+</p>
 <p>
 You cannot send entries through the e-mail.
 </p>
-
-No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 <br><br>
 <a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
-<div class="bottom-border" style="margin-top: 20px;"></div>
+
+<div class="bottom-border" style="margin-top: 20px;">
 </div>
 </div>
-<!-- <p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)</p>
-<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.</p>
-<p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
-<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.</p>
-<p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
-<p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
-<p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
-<p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
-High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-<p>Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.</p>  -->
+</div>
 
-<!-- <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/professional/">Professional</a> - Recognizing outstanding bodies of work</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
-  <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-
-<!-- </ul>   -->
 </div>
       </div>
     </div>    
@@ -785,13 +804,16 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
           <h2 class="title">
             
   <div class="field-accordion-title">
-    Category  </div>
+    Category  
+  </div>
           </h2>
           <div class="text">
             
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <h4>
     Picture+254 has seven contest categories:
-  </div>
+    </h4>
+  </div> -->
           </div>
         </div>
         <div class="cover-image">
@@ -802,7 +824,7 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style="font-size:16px;"></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p> -->
@@ -812,88 +834,8 @@ High-quality scans of non-digital photographs are acceptable. Digital photograph
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-  Content <a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
+  Content <br><a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
 </ul>  
-</div>
-      </div>
-    </div>    
-  </div>
-</div>
-  </div>
-
-</div>
-  </div>
-</div>
-  </div>
-</div>
-
-</div>
-
-<div class="section section-tabled" id="entry">
-<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
-  
-  <div class="field-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion">
-  <div class="content">
-    
-<div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
-  
-  <div class="field-accordion-content">
-    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
-  <div class="content">
-    <div class="accordion-item">
-      <div class="wrapper js-accordion-trigger">
-        <div class="summary">
-          <h2 class="title">
-            
-  <div class="field-accordion-title">
-    Conditions For Entry  </div>
-          </h2>
-          <div class="text">
-            
-  <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    By submitting entries for the Competition,  </div>
-          </div>
-        </div>
-        <div class="cover-image">
-          
-  <div class="field-accordion-cover-image">
-    <img src="https://cdn.stocksnap.io/img-thumbs/280h/LQAOB9JBAR.jpg" alt="news01.jpg" width="522" height="200" />  </div>
-        </div>
-      </div>
-      <div class="description">
-       
-  <div class="field-accordion-description" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    <!-- <p><span style="font-size:16px;"></span></p> -->
-
-<!-- <p><span style="font-size:18px;">Description:</span></p> -->
-<div class="top-border"></div> 
-
-By submitting entries for the Competition, entrants hold the Sponsors and their respective regents, directors, officers, employees, emeriti, fellows, interns, research associates, and volunteers (the “Indemnified Parties”) harmless from and against all claims of any nature arising in connection with entrant’s participation in the contest and acceptance or use of a prize.
-<p> 
-The Indemnified Parties are not liable for any costs, damages, injuries, or other claims incurred as a result of entrants’ participation in the contest or winner’s acceptance and usage of a prize. 
-</p>
-<p>
-The Indemnified Parties are not responsible for incomplete or misdirected entries, technical or network malfunctions or failures, or causes beyond their control. Entrants are solely responsible for their entries.
-</p> 
-<p> 
-Entrants may not submit materials that introduce any software viruses, worms or other programs designed to damage software, hardware or telecommunications equipment or are off-topic, partisan-political, contain advertising, nudity, personal attacks or expletives, or is otherwise abusive, threatening, unlawful, harassing, discriminatory, libelous, obscene, false, sexually explicit, or that infringes on the rights of any third party.
-</p>
-<p>
-The contest is void where prohibited or restricted by law.
-</p>
-<p> 
-The Sponsors reserve the right to cancel the contest or modify these rules at its discretion.
-</p> 
-<p>
-In the event of a dispute regarding the winners, the sponsor reserves the right to award or not award the prizes in its sole discretion.
-</p>
-<p>
-The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner.
-</p> 
-Decisions of the Picture+254 Sponsors are final and binding.
-
-<div class="bottom-border" style="margin-top: 20px;"></div>
 </div>
       </div>
     </div>    
@@ -933,9 +875,11 @@ Decisions of the Picture+254 Sponsors are final and binding.
           </h2>
           <div class="text">
             
-            <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify; letter-spacing: 0px;">
-    All entries will be stored in the Picture+254 Stock Gallery.
-            </div>
+            <!-- <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+              <h4>
+              All entries will be stored in the Picture+254 Stock Gallery.
+              </h4>
+            </div> -->
 
           </div>
 
@@ -950,7 +894,7 @@ Decisions of the Picture+254 Sponsors are final and binding.
       </div>
       <div class="description">
         
-  <div class="field-accordion-description" style="line-height: 25px; font-size:14px; text-align: justify; letter-spacing: 0px;">
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
     <!-- <p><span style=""></span></p> -->
 
 <!-- <p><span style="font-size:18px;">Description:</span></p>
@@ -960,27 +904,44 @@ Decisions of the Picture+254 Sponsors are final and binding.
 
           <div class="top-border"></div>
             <div class="contentt">
-                <p>
-                  All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
-                </p>
-                <p>
-                  <b>Top 3 Overall Grand Prizes:</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
-                </p>
-                <p><b>
-                  Category Winners:</b> The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
-                </p>
-                <p>
-                  <b>Photo of the Week (open only to Non – Professionals):</b> $50, training, mentorships and equipment.
-                </p>
-                <p>
-                  Winners may receive additional non-cash prizes.
-                </p> 
-                <p>
-                  Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
-                </p> 
-                  In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
-    
-                  
+
+All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+<p></p>
+<p>
+<b>Top 3 Overall Grand Prizes (Non – Professional):</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
+</p>
+
+<b>Top 3 Overall Grand Prizes (Professional):</b>[$7,000, $5000 and $3000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibitions at the cost of the Sponsors.
+
+<br><br>
+<a onclick="window.location='{{ url("prizes") }}'" href="#">Read more.</a>
+
+<!-- <p>
+<b>Category Winners:</b>The winners of each of the seven categories will receive $500 plus entry and profiling in exhibitions and media platforms.
+</p> -->
+
+<!-- <p>
+<b>Photo of the Week (open only to Non – Professionals): </b> $50, training, mentorships and profiling.
+</p>
+
+<p>
+<b>Photo of the Day (open only to Non – Professionals):</b> $20 and profiling.
+</p>
+
+<p>
+Winners may receive additional non-cash prizes.
+</p> 
+
+<p>
+Winners must sign a release and license, as well as a declaration of eligibility, and will be responsible for paying any fees or taxes associated with the prize. All prizes are awarded “as is” and non-transferable.
+</p> 
+
+<p>
+In case any applicable law prohibits the Sponsor from awarding a photographer the cash prize and/or any non-cash prize, the winner will be awarded the prize in name only.
+</p>
+<b>Image Profiling:</b>
+Picture+254 will randomly select photos for highlight on its website during and after the competition while displaying entries in a publicly accessible Picture+254 Stock Gallery for viewership and purchase by interested parties.
+ -->
                   <div class="bottom-border" style="margin-top: 20px;"></div>
             </div>
 </div>
@@ -1030,9 +991,9 @@ Decisions of the Picture+254 Sponsors are final and binding.
     
         
 <div class="text">
-            <div class="field-accordion-summary" style="font-size:14px; line-height: 25px; text-align: justify;">
-                Photo entries will be judged.
-            </div>
+           <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify;">
+               <h4> Photo entries will be judged. </h4>
+            </div> -->
 </div>
         </div>
 
@@ -1047,22 +1008,25 @@ Decisions of the Picture+254 Sponsors are final and binding.
       </div>
                   
     <div class="description">
-      <div class="field-accordion-description" style=" line-height: 25px; font-size:14px; text-align: justify;">
+      <div class="field-accordion-description" style=" line-height: 25px; text-align: justify;">
         <div class="element">
           <div class="top-border"></div>
             <div class="contentt">
-              <p>
-                Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
-              </p>
-              <p>
-              There will be weekly Photo of the Week winners chosen by viewers.
-              </p>
-              <p>
-              Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
-              </p>
-              Winners will be notified through the phone numbers and email addresses provided at the time of entry; 
-              Contestants are not allowed to contact us about the status of entries or judging.
 
+
+<p>
+Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+</p>
+<p>
+There will be weekly Photo of the day and Photo of the Week winners chosen by viewers through voting.
+<p>
+Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
+</p> 
+<p>
+Winners will be notified through the phone numbers and email addresses provided at the time of entry;
+</p>
+Contestants are not allowed to contact us about the status of entries or judging.
+<br><br>
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 
 <div class="bottom-border" style="margin-top: 20px;"></div>
@@ -1085,6 +1049,83 @@ Decisions of the Picture+254 Sponsors are final and binding.
 
 </div>
 </div>
+
+<div class="section section-tabled" id="sponsors">
+<div class="paragraphs-items paragraphs-items-field-content paragraphs-items-field-content-full paragraphs-items-full">
+  
+  <div class="field-content">
+    <div class="entity entity-paragraphs-item paragraphs-item-accordion">
+  <div class="content">
+    
+<div class="paragraphs-items paragraphs-items-field-accordion-content paragraphs-items-field-accordion-content-full paragraphs-items-full">
+  
+  <div class="field-accordion-content">
+    <div class="entity entity-paragraphs-item paragraphs-item-accordion-content ">
+  <div class="content">
+    <div class="accordion-item">
+      <div class="wrapper js-accordion-trigger">
+        <div class="summary">
+          <h2 class="title">
+            
+    <div class="field-accordion-title">
+       Our Partners
+    </div>
+          </h2>
+          <div class="text">
+            
+ <!--  <div class="field-accordion-summary" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    
+    <h4>
+     Picture+254 2019/2020 <br> Our Partners.
+    </h4>
+  </div> -->
+          </div>
+        </div>
+        <div class="cover-image">
+          
+  <div class="field-accordion-cover-image">
+    <img src=images/sg_logo.png alt="news01.jpg" width="522" height="200" />  </div>
+        </div>
+      </div>
+      <div class="description">
+       
+  <div class="field-accordion-description" style="line-height: 25px; text-align: justify; letter-spacing: 0px;">
+    <!-- <p><span style="font-size:16px;"></span></p> -->
+
+<!-- <p><span style="font-size:18px;">Description:</span></p> -->
+<!-- <ul></ul> -->
+<!-- <div class="top-border"></div>  -->
+
+
+<h4>STANDARD GROUP</h4>
+<a href="https://www.standardmedia.co.ke/corporate/about">Standard Group</a>
+
+<!-- <h4>
+Here are the details about entry fees and deadlines for 2019/2020 Picture+254 photo contest.
+<h4>Final Deadline:<b>24/January, 2020</b></h4>
+</h4>
+<h4>
+Professional - Single image entry fee: Ksh.200.
+</h4>
+<h4>
+Non-Professional - Single image entry fee: Ksh.100.
+</h4> -->
+
+<!-- <div class="bottom-border" style="margin-top: 20px;"></div> -->
+</div>
+      </div>
+    </div>    
+  </div>
+</div>
+  </div>
+
+</div>
+  </div>
+</div>
+  </div>
+</div>
+
+</div>
                                 
 </div>
 
@@ -1100,15 +1141,18 @@ Decisions of the Picture+254 Sponsors are final and binding.
 </div>
 @include('menu')
 <div id="footer">
-	<div class="container">
+  <div class="container">
 
 
+<<<<<<< HEAD
     <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. </div> 
+=======
+    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div> 
+>>>>>>> 306a3c02ced118def04b4441a676734afec115e7
 
-	</div>
+  </div>
 </div>
-
-@include('popup_alert')
+@include('advert')
 
 <script>
 function openNav() {
@@ -1121,7 +1165,11 @@ function closeNav() {
 </script>
 
 <script type="text/javascript">
-
+// Date;
+function showDate()
+{
+  alert(Date.parse("Jan 28, 2020 12:00:00"));
+}
 
   function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
@@ -1145,6 +1193,8 @@ function initializeClock(id, endtime) {
   var minutesSpan = clock.querySelector('.minutes');
   var secondsSpan = clock.querySelector('.seconds');
 
+  // var endtime = new Date("Mar 15, 2020 12:00:00").getTime();
+
   function updateClock() {
     var t = getTimeRemaining(endtime);
 
@@ -1158,16 +1208,16 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock();
+  // updateClock();
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
-</script>				
+</script>       
 
 <script type="text/javascript">
 
@@ -1175,6 +1225,17 @@ function close_modal()
 {
   $('.start').hide();
 }
+
+function preventDefault(event)
+{
+  event.preventDefault();
+}
+
+function myAlert()
+{
+  alert('dsdhshfsd');
+}
+
   
 </script>
 <script type="text/javascript">

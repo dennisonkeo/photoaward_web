@@ -25,8 +25,9 @@ else
   
 ?>
 
-<!-- <script src="{{ asset('js/right_click.js') }}"></script>
- --><html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
+<script src="{{ asset('js/right_click.js') }}"></script>
+
+<html class="en-us js flexbox flexboxlegacy canvas canvastext no-touch rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients csstransitions fontface generatedcontent video localstorage sessionstorage no-display-runin boxsizing lastchild targetselector gr__gettyimages_com" lang="en-us" prefix="og: http://ogp.me/ns#">
 
 <script src="{{ asset('js/right_click.js') }}"></script>
 
@@ -86,7 +87,7 @@ else
 
 <script>window.renderStart = new Date().getTime();</script>
 
-<title>Picture +254</title>
+<title>PICTURE+254</title>
 
 <link href="https://www.gettyimages.com/detail/photo/pregnant-businesswoman-looking-away-at-desk-royalty-free-image/682897819" hreflang="x-default" rel="alternate">
 
@@ -414,20 +415,18 @@ else
       <div class="asset-size-item__details">
         <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="comp" name="size" type="radio">
         <div class="asset-size-item__description">
-          <div class="asset-size-item__name ng-binding">Extra small<!-- ngIf: assetType == 'film' -->
+          <div class="asset-size-item__name ng-binding size_text">Extra small<!-- ngIf: assetType == 'film' -->
             
           </div>
 
-          <div class="asset-size-item__size-details"><!-- ngIf: assetType == 'image' -->
-            <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">509 x 339 px (7.07 x 4.71 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">72 dpi<div class="asset-size-item-size-details__separator">|</div>0.2 MP</div></span>
-
-            <!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' -->
-          </div>
+          <div class="asset-size-item__size-details image_details" styl="display: none;"><!-- ngIf: assetType == 'image' -->
+      <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">509 x 339 px (7.07 x 4.71 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">72 dpi<div class="asset-size-item-size-details__separator">|</div>0.2 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' -->
+    </div>
         </div>
       </div>
 
       <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-        <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$3.00
+        <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$<span>40</span>.00
       </div><!-- end ngIf: !state.showPreferredPrice -->
     </div>
     </div>
@@ -436,10 +435,10 @@ else
       <div class="asset-size-item__details">
         <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="low" name="size" ng-checked="size.name == selectedSize.name" type="radio">
         <div class="asset-size-item__description">
-          <div class="asset-size-item__name ng-binding">Small<!-- ngIf: assetType == 'film' -->
+          <div class="asset-size-item__name ng-binding size_text">Small<!-- ngIf: assetType == 'film' -->
             
           </div>
-          <div class="asset-size-item__size-details"><!-- ngIf: assetType == 'image' -->
+          <div class="asset-size-item__size-details image_details"><!-- ngIf: assetType == 'image' -->
             <span ng-if="assetType == 'image'" class="ng-scope">
             <div class="asset-size-item-size-details__info ng-binding">727 x 484 px (10.10 x 6.72 in)</div>
             <div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">72 dpi
@@ -449,18 +448,22 @@ else
 </div>
 </div>
     <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$5.00</div><!-- end ngIf: !state.showPreferredPrice -->
+      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$<span>120</span>.00</div><!-- end ngIf: !state.showPreferredPrice -->
   </div>
   </div>
     <!-- end ngRepeat: size in getAssetSizes() -->
 
-    <div class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope" id="medium" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details"><input class="radioss standard-radio-btn asset-size-item__radio-btn" id="medium" name="size" ng-checked="size.name == selectedSize.name" type="radio"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Medium<!-- ngIf: assetType == 'film' --></div>
-    <div class="asset-size-item__size-details"><!-- ngIf: assetType == 'image' -->
-      <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">2125 x 1416 px (7.08 x 4.72 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>3.0 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' --></div>
+    <div class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope" id="medium" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details"><input class="radioss standard-radio-btn asset-size-item__radio-btn" id="medium" name="size" ng-checked="size.name == selectedSize.name" type="radio">
+      <div class="asset-size-item__description">
+        <div class="asset-size-item__name ng-binding size_text">Medium<!-- ngIf: assetType == 'film' --></div>
+    <div class="asset-size-item__size-details image_details">
+      <span ng-if="assetType == 'image'" class="ng-scope">
+        <div class="asset-size-item-size-details__info ng-binding">2125 x 1416 px (7.08 x 4.72 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>3.0 MP</div></span>
+      </div>
   </div>
 </div>
 <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-  <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$10.00</div>
+  <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$<span>350</span>.00</div>
   <!-- end ngIf: !state.showPreferredPrice -->
 </div>
   </div>
@@ -468,16 +471,17 @@ else
     <!-- end ngRepeat: size in getAssetSizes() -->
 
     <div style="background: #f3f3f3;" class="price_list asset-size-table__size-item standard-radio-btn__container ng-scope is-selected" id="super" ng-class="{ 'is-selected': size.name == selectedSize.name}" ng-click="setSelectedSize(size)" ng-repeat="size in getAssetSizes()"><div class="asset-size-item__details">
-      <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="super" name="size" type="radio" checked="checked"><div class="asset-size-item__description"><div class="asset-size-item__name ng-binding">Large<!-- ngIf: assetType == 'film' -->
+      <input class="radioss standard-radio-btn asset-size-item__radio-btn" id="super" name="size" type="radio" checked="checked"><div class="asset-size-item__description">
+        <div class="asset-size-item__name ng-binding size_text">Large<!-- ngIf: assetType == 'film' -->
       
     </div>
-    <div class="asset-size-item__size-details" style="display: none;"><!-- ngIf: assetType == 'image' -->
-      <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">5603 x 3735 px (18.68 x 12.45 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>20.9 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' -->
+    <div class="asset-size-item__size-details image_details" styl="display: none;"><!-- ngIf: assetType == 'image' -->
+      <span ng-if="assetType == 'image'" class="ng-scope"><div class="asset-size-item-size-details__info ng-binding">6720 x 4480 px (22.40 x 14.93 in)</div><div class="asset-size-item-size-details__info asset-size-item-size-details__sub-info ng-binding">300 dpi<div class="asset-size-item-size-details__separator">|</div>30.1 MP</div></span><!-- end ngIf: assetType == 'image' --><!-- ngIf: assetType == 'film' -->
     </div>
   </div>
 </div>
     <div class="asset-size-item__price"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
-      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$20.00</div>
+      <div class="asset-size-item-price__price ng-binding ng-scope" ng-if="!state.showPreferredPrice">$<span>450</span>.00</div>
     <!-- end ngIf: !state.showPreferredPrice -->
   </div>
   </div>
@@ -487,7 +491,7 @@ else
 <!-- ngIf: canViewLimitedUseProducts() --><!-- ngIf: isPurchaseable && buyCard.type == 'license' -->
 <div class="buy-card__button-wrapper ng-scope" ng-if="isPurchaseable &amp;&amp; buyCard.type == 'license'"><aside class="buy-card__pricing-info" style="display: non;"><!-- ngIf: state.showPreferredPrice --><!-- ngIf: !state.showPreferredPrice -->
   <div  class="buy-card__pricing ng-scope" style="dispay: none;">
-    <div id="dis_pay"  class="buy-card__price ng-binding">$20.00</div>
+    <div id="dis_pay"  class="buy-card__price ng-binding">$<span>450</span>.00</div>
   {{-- <div class="buy-card__currency ng-binding">KSH</div> --}}
 </div>
 
@@ -575,7 +579,7 @@ else
 
       <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Object Name:</div><div class="asset-detail__value asset-detail__cell">xxxx.jpg</div></div>
 
-      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Source:</div><div class="asset-detail__value asset-detail__cell">Picture254</div></div>
+      <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Source:</div><div class="asset-detail__value asset-detail__cell">Picture+254</div></div>
 
     <div class="asset-detail asset-detail--release"><div class="asset-detail__name asset-detail__cell">Max file size:</div><div class="asset-detail__value asset-detail__cell">2,000 px not larger than 10 MB. 
 </div></div>
@@ -1020,7 +1024,7 @@ else
   <footer-links >
     <div class="main-footer main-footer--full" style="background: #000;">
 <div class="footer__secondary footer__secondary--full">
-  <div class="footer__copyright">© 2019 Picture254 Images.</div>
+  <div class="footer__copyright">© 2019 PICTURE+254 Images.</div>
 
 {{-- <div class="footer__secondary-group"><a class="footer-secondary-group__item" data-nav="foot_general_website_terms" data-ui-location="footer" href="/company/terms" rel="nofollow" target="website_terms">Website terms</a><a class="footer-secondary-group__item" data-nav="foot_general_editorial_policy" data-ui-location="footer" href="/company/editorial-policy" rel="nofollow" target="editorial_policy">Editorial policy</a><a class="footer-secondary-group__item" data-nav="foot_general_privacy_policy" data-ui-location="footer" href="/company/privacy-policy" rel="nofollow" target="private_policy">Privacy policy</a><a class="footer-secondary-group__item" data-nav="foot_general_license_information" data-ui-location="footer" href="/license-info" rel="nofollow" target="license_info">License information</a><a class="footer-secondary-group__item--last" data-nav="foot_general_site_map" data-ui-location="footer" href="/company/sitemap" target="aboutus_sitemap">Site map</a></div> --}}
 </div>
@@ -1096,8 +1100,13 @@ window.notificationsContext = 'eyJhdXRoIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcGMzT
 <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
 <script type="text/javascript">
 
+var image_size = '450';
+
   $('.price_list').click(function(event) {
         $('.price_list').css("background", "#fff");
+        $('.image_details').css("display", "none");
+        image_size = $(this).find('.asset-size-item-price__price').find('span').text();
+        $(this).find('.image_details').css('display', 'block');
         $(this).css("background", "#f3f3f3");
         $(this).find('.radioss').prop('checked', 'checked');
         console.log($(this).find('.radioss'));
@@ -1121,6 +1130,7 @@ window.notificationsContext = 'eyJhdXRoIjoiZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKcGMzT
 
           upload_id: $(this).data('id'),
           _token: '{{csrf_token()}}',
+          size: image_size,
 
         },
         success: function(response){

@@ -2,14 +2,25 @@
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.10.15, https://mobirise.com -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <!-- <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon"> -->
-  <meta name="description" content="">
-  
-  <title>Picture +254</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -24,10 +35,6 @@
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-
-  
-  {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
-  
   <style type="text/css">
 
   /* The Modal (background) */
@@ -298,25 +305,27 @@ span .hoverr:hover{
                 </span>
                 <span class="navbar-caption-wrap">
                     <a class="navbar-caption text-white display-4" href="submit-entry">
-                       <span style="color: #ff0051;"> PIC+254</span>
+                       <span style="color: #ff0051;"> PICTURE+254</span>
                     </a>
                 </span>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+             <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
+                        <span class=""><i class="fa fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+              @if(Auth::check())
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('submit-entry') }}">
                         <span class="fa fa-user"></span>
                         My profile
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
-                        <span class=""><i class="fa fa-home"></i></span>
-                        Home
-                    </a>
-                </li>
+               
 
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('logout') }}">
@@ -324,6 +333,8 @@ span .hoverr:hover{
                         Logout
                     </a>
                 </li>
+              @endif
+
             </ul>
         </div>
     </nav>

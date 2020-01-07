@@ -5,6 +5,10 @@ namespace App\Console;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
+use App\Upload;
+use Illuminate\Support\Facades\File;
+use Image;
+
 class Kernel extends ConsoleKernel
 {
     /**
@@ -13,7 +17,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        Commands\DeleteUploads::class,
+        Commands\DeleteCron::class,
     ];
 
     /**
@@ -26,6 +31,11 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
+
+        // $schedule->command('delete:uploads')->dailyAt('13:19')->timezone('Africa/Nairobi');
+
+        $schedule->command('delete:cron')->hourly();
+
     }
 
     /**

@@ -2,17 +2,24 @@
 
 <html lang="en">
 <head>
-    <script src="{{ asset('js/right_click.js') }}"></script>
-    
-    <meta charset="utf-8">
-    
-    <title>Photo Contest</title>
-    
-    <!-- <link rel="shortcut icon" href="https://users.worldphoto.org/favicon.ico" /> -->
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
     
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -87,6 +94,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .fa-instagram {
   background: #3f729b;
   color: white;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 </style>
     
@@ -183,35 +194,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="row competitions" id="competitions">
         <div class="col-xs-12 col-sm-12 col-md-12" >
-            <h2 class="heading-title" style="background-color: #585858;">Enter One Of The Categories Below</h2>
+            <h2 class="heading-title" style="background-color: #585858;">Picture+254 Photo Award</h2>
         </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 competitions-area">
                             <div class="row">
                                 
-                                @foreach($categories as $category)
-                                    <div class="col-xs-12 col-sm-12 col-md-4 competition competition-sony ">
+                                    <div class="col-xs-12 col-sm-12 col-md-6 competition competition-sony ">
                                         <div class="inner">
 
                                             <div class="title">
-                                                <h2 style="border-color: #b7eb34;">{{ $category->name }} </h2>
+                                                <h2 style="border-color: #b7eb34;">
+                                                    Professionals
+                                                </h2>
                                             </div>
 
                                             <div class="content">
-                                                <div class="thumbnail">
-                                                        <img src="http://www.mikiyakobayashi.com/news/news/assets_c/2019/05/news01-thumb-400xauto-913.jpg" alt="news01.jpg" alt="Open competition">
+                                                <div class="thumbnail" style="background: #000;">
+                                                        <img src="images/pic12.jpg" alt="news01.jpg" alt="Open competition" style="max-height: 300px;">
 
                                                         <div class="caption caption-up">
-                                                            <p>{{ $category->description }}</p>
+                                                            <p>Description</p>
                                                         </div>
                                                     </div>
-                                             <a href="{{ route('upload-image', $category->id) }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Enter Now</a>
+                                             <a href="{{ route('competition-enteries', 'Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Compete Now</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                @endforeach
+                                    <div class="col-xs-12 col-sm-12 col-md-6 competition competition-sony ">
+                                        <div class="inner">
+
+                                            <div class="title">
+                                                <h2 style="border-color: #b7eb34;">
+                                                    Non-Professionals
+                                                </h2>
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="thumbnail" style="background: #000;">
+                                                        <img src="images/pic18.jpg" alt="news01.jpg" alt="Open competition" style="max-height: 300px;">
+
+                                                        <div class="caption caption-up">
+                                                            <p>Description</p>
+                                                        </div>
+                                                    </div>
+                                             <a href="{{ route('competition-enteries', 'Non-Professionals') }}" class="btn btn-primary" style="background-color: #ff00ff; border-color: #ff00ff">Compete Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                      </div>
                         </div>
@@ -336,7 +369,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-@include('footer')        
+<footer style="background: #000;">
+@include('footer')
+  <div class="container" >
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
+</div>
+</footer>  
+       
         <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>

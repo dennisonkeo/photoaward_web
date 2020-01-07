@@ -19,6 +19,10 @@ Route::get('professional', function () {
     return view('professional');
 });
 
+Route::get('advert', function () {
+    return view('advert');
+});
+
 Route::get('index', function () {
     return view('index');
 });
@@ -62,14 +66,14 @@ Route::get('modall', function () {
 
 Route::get('user-auth', function () {
     return view('cart_modal');
-})->name('modall');
+})->name('user-auth');
 
 Route::get('guidelines', function () {
     return view('guidelines');
 });
 
-Route::get('entry-fee', function () {
-    return view('fees');
+Route::get('sponsors', function () {
+    return view('sponsors');
 });
 
 Route::get('contact', function () {
@@ -157,6 +161,7 @@ Route::get('votingg', function () {
 
 Route::get('categories/{category}', 'CategoryController@filter_by_category')->name('categories');
 
+Route::get('send-mail', 'CartController@sendMail')->name('send-mail');
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
@@ -253,7 +258,7 @@ Route::get('view-album', 'UploadController@view_cart')->name('view-album');
 
 Route::get('image-detail', 'UploadController@index')->name('image-detail');
 
-Route::get('upload-image/{id}', 'HomeController@upload_image')->name('upload-image');
+Route::get('upload-image/{id}/{track}', 'HomeController@upload_image')->name('upload-image');
 
 Route::get('account-settings', 'HomeController@show_account')->name('account-settings');
 
@@ -271,4 +276,15 @@ Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury
 
 Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
 
+Route::get('competition-enteries/{track}', 'UploadController@entries')->name('competition-enteries');
+
 });
+
+Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('password.update');
+
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

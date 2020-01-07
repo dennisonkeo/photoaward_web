@@ -1,13 +1,5 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<!-- Start of gaiam Zendesk Widget script -->
-
-<script src="{{ asset('js/right_click.js') }}"></script>
+<html lang="en"> 
 
 <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="gaiam.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
 /*]]>*/</script>
@@ -21,65 +13,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-57ZG4XB');</script>
     <script type="text/javascript" src="https://ebce58fd453deba0a922-f5ba9a021f2b273b684842b14d5c572e.ssl.cf1.rackcdn.com/js/experiments.min.js"></script><script type="text/javascript">Experimentor.launch(null);</script>
- <meta name="google-site-verification" content="IM-NobzEMoPxfTsHazN70IfVi7FX7E04d3gPVtF5k9U" />
-    <meta charset="utf-8">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="robots" content="index,follow">
+  
+  <meta name="google-site-verification" content="IM-NobzEMoPxfTsHazN70IfVi7FX7E04d3gPVtF5k9U" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
-    <title>Premium Metallic Medallion Yoga Mat (6mm) - Gaiam</title>
+    <script src="{{ asset('js/right_click.js') }}"></script>
 
-    
-      <meta name="description" content="  A unique and stylish metallic design will help this mat stand out from the crowd at the studio. With 6mm of extra-thick cushioning, it’s textured for a comfortable grip, and the latex-free PVC is non-toxic and free of six phthalates deemed the most harmful to people and to the earth. Your purchase includes a lifetime" />
     
 
     <!-- Custom Fonts -->
     
       <link href="//fonts.googleapis.com/css?family=.|Montserrat:light,normal,bold|Montserrat:light,normal,bold|Montserrat:light,normal,bold|Montserrat:light,normal,bold|Montserrat:light,normal,bold" rel="stylesheet" type="text/css" />
-    
-
-    
-
-<meta name="author" content="Gaiam">
-<meta property="og:url" content="https://www.gaiam.com/products/premium-metallic-bronze-medallion-yoga-mat-6mm">
-<meta property="og:site_name" content="Gaiam">
-
-
-  <meta property="og:type" content="product">
-  <meta property="og:title" content="Premium Metallic Medallion Yoga Mat (6mm)">
-  
-    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_A_600x.jpg?v=1554822497">
-    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_A_600x.jpg?v=1554822497">
-    
-  
-    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_B_600x.jpg?v=1554822507">
-    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_B_600x.jpg?v=1554822507">
-    
-  
-    <meta property="og:image" content="http://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_C_600x.jpg?v=1554822534">
-    <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_C_600x.jpg?v=1554822534">
-    
-  
-  <meta property="og:price:amount" content="29.98">
-  <meta property="og:price:currency" content="USD">
-
-
-  <meta property="og:description" content="  A unique and stylish metallic design will help this mat stand out from the crowd at the studio. With 6mm of extra-thick cushioning, it’s textured for a comfortable grip, and the latex-free PVC is non-toxic and free of six phthalates deemed the most harmful to people and to the earth. Your purchase includes a lifetime">
-
-
-
-
-<meta name="twitter:card" content="summary">
-
-  <meta name="twitter:title" content="Premium Metallic Medallion Yoga Mat (6mm)">
-  <meta name="twitter:description" content="  A unique and stylish metallic design will help this mat stand out from the crowd at the studio. With 6mm of extra-thick cushioning, it’s textured for a comfortable grip, and the latex-free PVC is non-toxic and free of six phthalates deemed the most harmful to people and to the earth. Your purchase includes a lifetime">
-  <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/1728/2157/products/05-63418_6MM-METALLIC-YOGA-MAT-BRONZE-MEDALLION_A_medium.jpg?v=1554822497">
-  <meta name="twitter:image:width" content="240">
-  <meta name="twitter:image:height" content="240">
-
-
-    
-    
 
     <!-- Mobile Specific Metas -->
     <meta name="HandheldFriendly" content="True">
@@ -2115,7 +2072,7 @@ for (var attr in meta) {
       
 
       <p class="credits">
-        &copy; 2019 <a href="/" title="">Gaiam</a>.
+        &copy; 2019 <a href="/" title="">PICTURE+254</a>.
             <br />
             </p>
     </div>

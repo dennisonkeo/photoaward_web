@@ -3,17 +3,23 @@
 <html lang="en">
 <head>
 
-    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="utf-8">
-    
-    <title>Photo Award</title>
-    
-    {{-- <link rel="shortcut icon" href="https://users.worldphoto.org/favicon.ico" /> --}}
-
-    <meta name="description" content="WPO Users">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="{{ asset('js/right_click.js') }}"></script>
     
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -128,25 +134,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
 @include('header-menu')
 
-
-{{-- <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <ul class="progress-meter progress-4-items">
-                            <li class='first active-trail '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171?competition_id=25' class='first active-trail '>1. Image Upload</a>
-                                    </li>
-                            <li class='active-trail '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171/details/25' class='active-trail '>2. Image Details</a>
-                                    </li>
-                            <li class='active '>
-                                            <a href='https://users.worldphoto.org/competition/entry/1650171/review?competition_id=25' class='active '>3. Review &amp; Confirm</a>
-                                    </li>
-                            <li class='last '>
-                                            <span class='last '>4. Complete</span>
-                                    </li>
-                    </ul>
-    </div>
-</div> --}} <!-- End row -->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
 
@@ -241,11 +228,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="btn-grp primary">
                         <a href="{{route('upload-info')}}" class="btn btn-primary back" role="button" onclick="">
                             <i class="fa fa-upload fa-lg"></i>
-                            Upload more images
+                            Upload More Images
                         </a>
                     </span>
 
-                    <small>or</small>
+                    <small></small>
 
                     <span class="btn-grp success">
                         <button type="button" id="payment" class="btn btn-success" name="payment" data-target="#exampleModalCenter" data-toggle="modal" data-keyboard="false" data-backdrop="static">
@@ -258,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </button> --}}
                     </span>
 
-                    <small>or</small>
+                    <small></small>
 
                     <span class="btn-grp danger">
                         <a href="submit-entry#competitions" class="btn btn-danger" role="button">
@@ -517,21 +504,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <footer style="background: #000;">
+@include('footer')
   <div class="container" >
-    <p style="text-align: center; color: #ff0051;">footer</p>
+    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
 </div>
 </footer>  
 
-        <script src="js/jquery.min.js"></script>
+        {{-- <script src="js/jquery.min.js"></script> --}}
+        <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/bootstrap-datepicker.min.js"></script>
 
         
-    <script src="js/application.js"></script>
+    {{-- <script src="js/application.js"></script> --}}
+
+        {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
+
+    {{-- <script src="js/polyfiller.js"></script> --}}
+
+        <script src="https://users.worldphoto.org/js/app.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="js/polyfiller.js"></script>
+    <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
     <script>
         /*
          * Fixes: TypeError: a.swap is not a function

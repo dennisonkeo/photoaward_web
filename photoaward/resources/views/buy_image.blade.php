@@ -1,46 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title> Picture +254</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
-    
-    <meta name="keywords"
-          content="    no people, no_people, full frame, backgrounds, auto post production filter, two objects, mug, square image, wood grain, directly above, coaster, cork, brown, white, triangle, coffee, beverage, ceramic, black
-"/>
-    <meta name="author" content="Snapwire Media"/>
-    <meta name="description"
-          content="Download photo with no people, no_people, full frame, backgrounds, auto post production filter, two objects, mug, square image, wood grain, directly above, coaster, cork, brown, white, triangle, coffee, beverage, ceramic, black from Snapwire custom content stock. Find more authentic, Royalty-Free photos by sterling montes. Get images you need with Snapwire
-"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
-    <meta property="fb:admins" content="15911886"/>
-    <meta property="fb:app_id" content="177625015738365"/>
-    <meta property="og:site_name" content="Snapwire Custom Photos"/>
-    <meta property="og:author" content="Snapwire Media"/>
-    <meta property="og:url" content="https://www.snapwi.re/photo/detail/52d244f9416227604fb83ee7"/>
-    <meta property="og:title"
-          content="Snapwire Custom Photos,     white and black ceramic mug by sterling montes"/>
-    <meta property="og:description"
-          content="Download photo with no people, no_people, full frame, backgrounds, auto post production filter, two objects, mug, square image, wood grain, directly above, coaster, cork, brown, white, triangle, coffee, beverage, ceramic, black from Snapwire custom content stock. Find more authentic, Royalty-Free photos by sterling montes. Get images you need with Snapwire
-"/>
-    <meta property="og:image"
-          content="            https://images.snapwi.re/504d/52d244f9416227604fb83ee7.w800.jpg
-    "/>
-
-    <meta name="apple-itunes-app" content="app-id=725106358"/>
-    <meta property="twitter:account_id" content="1640069921"/>
-    <meta name="google-site-verification" content="bkOKWz0VGMYpqvWP5nLd9aFRA3z0GxgLOvj43dFGSNg"/>
-    <meta name="msvalidate.01" content="42815F647B5316FC04C9C71F876A709B"/>
-    <meta name="p:domain_verify" content="ef6d4521c36b5667f4092aede26f6062"/>
-
-    <meta name="_token" content="N13jDdqX9XgpiEguZrHnhpUECTQ3TbZqjJckId9R"/>
-    <meta name="csrf-token" content="N13jDdqX9XgpiEguZrHnhpUECTQ3TbZqjJckId9R"/>
-        
-    
-
-    
                 
     <style>
     #change-description-text-field{
@@ -257,7 +233,9 @@
             width: 900px;
         }
     }
-</style>            <section class="detail-actions margin-top-big">
+</style>            
+
+<section class="detail-actions margin-top-big">
 
             
                 

@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<title>PHOTO CONTEST</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta name="author" content="" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="Photo contest" />
-    <meta property="og:description" content="" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
@@ -119,7 +117,29 @@
   display: inline-block;
   background-color: #ff00ff;
 }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
+.section-tabled p{
+  margin-bottom: -6px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 </style>
+
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
+
 
 </head>
 <body id="mikiyakobayashi" class="sub">
@@ -128,7 +148,7 @@
 <div id="header">
   <div class="container">
     
-    <div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE +254</span></a></div>
+    <div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE+254</span></a></div>
     
 
     <div id="gnavi" class="nav">
@@ -144,9 +164,13 @@
         </a>
       </div>
     </div>
+        @include('nav')
 
     
   </div>
+
+  @include('menu2')
+
 </div>
 
   <div id="contents-wrap">
@@ -171,33 +195,58 @@
 They must be saved as JPEG file (JPG).<br><br> -->
 <div class="element">
 <div class="top-border"></div>
-<div class="contentt" style="font-size:14px; line-height: 25px; text-align: justify;" >
-<p>Every contestant must sign up for the competition.
+<div class="contentt" style="font-size:16px; line-height: 25px; text-align: jutify; font-family:'Montserrat', sans-serif;" >
+  
+<p>
+Every contestant must sign up for the competition. This allows winners to be clearly identified.
 </p>
-<!-- <center><span class="dot"></span></center> -->
-
-<p>You cannot sign up more than one contestant per phone number or e-mail address. </p>
-<!-- <center><span class="dot"></span></center> -->
-<p>There is no limit to how many photographs you can enter per category.</p> 
-<p>You cannot send entries through the e-mail.</p>
-<p>No entries can be digitally or otherwise enhanced other than those entered in the Altered Images category. Allowable adjustments include, toning, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+<p>
+You cannot sign up more than one contestant per phone number or e-mail address.
 </p>
-<p>In the event a photo in which a person other than the contestant is clearly recognizable wins, the contestant may be required to provide a release from the subject or, in the case of a minor, the subject’s parent or guardian, to Picture+254 upon request. A sample model release is available here. (Smithsonian)
+<p> 
+You can enter as many photographs as you can in all categories. 
 </p>
-<p>Contestants whose photos depict other people’s work (such as sculptures, statues, paintings, and other copyrightable works) must be prepared to provide a release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A sample art release is available here.
+<p>
+You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 </p>
-<p>If the entrant is unable to provide all required releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
+<p> 
+If in the photo you submit, there is another person or people who can be clearly recognized, if your entry wins, you may be asked to provide a permission from that person/s, and if its a child, permission from their parent or guardian. A release form will be provided to you at the time.
 </p>
-<p>Photos that violate or infringe upon another person's rights, including but not limited to copyright, are not eligible.
+<p>
+If in the photo you submit, other people’s work (such as sculptures, statues, paintings, and other copyrightable works) can be clearly seen must also be prepared to provide a permission/release from the rights holder to the Sponsor upon request. Where a photograph captures the work of others, it must be purely as an object in its environment and not a full-frame close-up of the other person's creation. A release form will be provided to you at the time.
 </p>
-<p>Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.</p>
-<p>In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.</p>
-<p>The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph.</p>
-<p>Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
-High-quality scans of non-digital photographs are acceptable. Digital photographs should be taken at the highest resolution possible.</p>
-Winners must be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing. Original negatives, prints or slides will be returned to finalists.
-
- <div class="bottom-border" style="margin-top: 50px;"></div>
+<p>
+If the entrant is unable to provide all required permission/releases, the Sponsor in its sole discretion reserves the right to disqualify the submission, seek to secure the required releases, or permit the submission to remain in the contest.
+</p>
+<p>
+The competition will not allow photos that violate or infringe upon another person's rights, including but not limited to copyright.
+Photos that contain sexually explicit, nude, obscene, violent or other objectionable or inappropriate content, as determined by the Sponsor in its sole discretion, are ineligible for all categories of this contest.
+</p>
+<p>
+In order to be displayed in our online gallery (Picture+254 Stock Gallery) without being stretched or distorted, photographs must be submitted in .jpeg, .jpg or .gif format, edited for web in sRGB color space, at least 2,000 pixels wide and no larger than 10 MB.
+</p>
+<p> 
+The Sponsor reserves the right to disqualify incomplete entries and/or contestants who are unable to submit the required resolution or format of photograph. 
+</p>
+<p>
+Mobile photographs are exempt from these requirements, but must be submitted at their highest resolution possible.
+</p>
+You can submit high-quality scans of non-digital photographs.
+<p>
+Digital photographs should be taken at the highest resolution possible.
+</p>
+<p>
+If you win, be prepared to submit an original, unedited digital file or an original negative, print or slide for preparation for exhibitions or other processing and curated spaces. Original negatives, prints or slides will be returned to finalists. 
+</p>
+<p>
+The Sponsor may collect a photograph’s metadata upon entry.
+</p>
+<p>
+You retain your rights to your photograph; however, by entering the contest, you grant the Sponsors of Picture+254 and where applicable its media partners a royalty-free, world-wide, perpetual, non-exclusive license to publicly display, distribute, reproduce and create derivative works of the entries, in whole or in part, in any media now existing or later developed, for any purpose, including, but not limited to, advertising and promotion of the competition, magazines, online platforms, exhibition and commercial products. 
+</p>
+Any photograph reproduced will always include a photographer credits as applicable. 
+<br><br><br>
+ <div class="bottom-border" style="margin-top: 100px;"></div>
 </div>
 </div>
 
@@ -217,7 +266,7 @@ Winners must be prepared to submit an original, unedited digital file or an orig
 @include('menu')
 <div id="footer">
   <div class="container">
-    <div id="copyright" class="wfont">&copy; Photo Contest.</div>
+    <div id="copyright" class="wfont">&copy; PICTURE+254.</div>
   </div>
 </div>
   <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>
@@ -226,6 +275,25 @@ Winners must be prepared to submit an original, unedited digital file or an orig
 
   $("p").after("<center><span class=\"dot\"></span></center>");
 </script>
+<!-- 
+<style type="text/css">
+  @font-face {
+    font-family: "Montserrat";
+    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
+}
 
+#mikiyakobayashi{
+  font-family: 'Montserrat',sans-serif;
+}
+</style> -->
+<script type="text/javascript">
+  var junction_font = new FontFace('Junction Regular', 'url(junction/junctionregular.woff)');
+junction_font.load().then(function(loaded_face) {
+  document.fonts.add(loaded_face);
+    document.body.style.fontFamily = '"Junction Regular", Arial';
+}).catch(function(error) {
+  // error occurred
+});
+</script>
 </body>
 </html>

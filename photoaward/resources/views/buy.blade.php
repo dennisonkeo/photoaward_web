@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>    Picture +254</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="{{ asset('js/right_click.js') }}"></script>
-    
-    <meta name="keywords"
-          content="Picture254, Image Briefs, Royalty Free, Stock Photos, Custom Photography, Instagram Photography, Commercial Photos, High Quality Photography, Creative Photos, Crowd Sourced, UGC Photos, Photography, Crowdsourcing, Authentic Stock Photos, Authentic Photos, Custom Branded Content, Instagram Stock Photos, Scalable Custom Photos, Custom Content Platform"/>
-    <meta name="author" content="Picture254 Media"/>
-    <meta name="description"
-          content="Picture254 connects photographers with businesses and brands that need custom creative content. Authentic, custom photos created just for you."/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-
-    <meta property="fb:admins" content="15911886"/>
-    <meta property="fb:app_id" content="177625015738365"/>
-    <meta property="og:site_name" content="Snapwire Custom Photos"/>
-    <meta property="og:author" content="Snapwire Media"/>
-    <meta property="og:url" content="https://www.snapwi.re/collection/summer"/>
-    <meta property="og:title"
-          content="Snapwire Custom Photos,Summer Collection"/>
-    <meta property="og:description"
-          content="I&#039;m using Snapwire - where talented photographers create custom photos just for you."/>
-    <meta property="og:image"
-          content="https://www.snapwi.re/assets/img/sw-brandstack_dark_265x265.png"/>
-
-    <meta name="apple-itunes-app" content="app-id=725106358"/>
-    <meta property="twitter:account_id" content="1640069921"/>
-    <meta name="google-site-verification" content="bkOKWz0VGMYpqvWP5nLd9aFRA3z0GxgLOvj43dFGSNg"/>
-    <meta name="msvalidate.01" content="42815F647B5316FC04C9C71F876A709B"/>
-    <meta name="p:domain_verify" content="ef6d4521c36b5667f4092aede26f6062"/>
-
-    <meta name="_token" content="Zl440iUoAbuibWRXskj79uXcrBRbLTzyeObyKiGl"/>
-    <meta name="csrf-token" content="Zl440iUoAbuibWRXskj79uXcrBRbLTzyeObyKiGl"/>
-        
-    
 
     
-                    <link rel="stylesheet" type="text/css" href="https://www.snapwi.re/assets/css/bundled.css?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
+    <link rel="stylesheet" type="text/css" href="https://www.snapwi.re/assets/css/bundled.css?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
       href="https://www.snapwi.re/assets/ico/apple-touch-icon-144-precomposed.png?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
-<link rel="apple-touch-icon-precomposed" sizes="114x114"
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
       href="https://www.snapwi.re/assets/ico/apple-touch-icon-114-precomposed.png?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
-<link rel="apple-touch-icon-precomposed" sizes="72x72"
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
       href="https://www.snapwi.re/assets/ico/apple-touch-icon-72-precomposed.png?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
-<link rel="apple-touch-icon-precomposed"
+    <link rel="apple-touch-icon-precomposed"
       href="https://www.snapwi.re/assets/ico/apple-touch-icon-57-precomposed.png?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
-<link rel="shortcut icon" href="https://www.snapwi.re/assets/ico/favicon.ico?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
+    <link rel="shortcut icon" href="https://www.snapwi.re/assets/ico/favicon.ico?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
     
 
 
@@ -152,7 +134,7 @@
 
         
         <div class="navbar-header">
-            <a href="/" class="navbar-brand">Picture254</a>
+            <a href="/" class="navbar-brand">Picture+254</a>
         </div>
 
 
@@ -568,10 +550,9 @@
                data-action="photo-detail"
                data-photo-id="53510990a39e296563439ffc">
 
-               
-                                                           <img src="https://images.snapwi.re/15db/53510990a39e296563439ffc.w314.jpg"  class="img-responsive"  width="314" />
+               <img src="https://images.snapwi.re/15db/53510990a39e296563439ffc.w314.jpg"  class="img-responsive"  width="314" />
                              
-                                                </a>
+                  </a>
             </div>
 
     
