@@ -35,7 +35,7 @@ use App\Purchase;
 									</li>
 								@else
 								<li>
-										<a href="user-auth" title="Member Login" id="stocky_login">
+										<a href="{{ route('user-auth') }}" title="Member Login" id="stocky_login">
 											<span>Member Login</span>
 										</a>
 									</li>
