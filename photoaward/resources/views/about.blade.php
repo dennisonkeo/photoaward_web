@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="{{ asset('js/right_click.js') }}"></script>
- --><!-- Google Font Martel
+ <!-- Google Font Martel
 <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 <!-- Google Font Open Sans -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
@@ -655,14 +655,10 @@ initializeClock('clockdiv2', deadline2);
 <div class="element">
 <div class="top-border"></div>
 <div class="contentt">
-<<<<<<< HEAD
 <p>
-Hi {$userquery->username} Welcome to Picture +254.
+Hi and Welcome to Picture +254.
 This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
-=======
->>>>>>> 306a3c02ced118def04b4441a676734afec115e7
-
 <p>
 Hi and welcome to Picture+254
 </p>
@@ -1144,11 +1140,8 @@ Non-Professional - Single image entry fee: Ksh.100.
   <div class="container">
 
 
-<<<<<<< HEAD
-    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. </div> 
-=======
-    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div> 
->>>>>>> 306a3c02ced118def04b4441a676734afec115e7
+    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. 
+    <!-- <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>  -->
 
   </div>
 </div>
