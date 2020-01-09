@@ -72,8 +72,8 @@ class PaymentController extends Controller
 		$check = $stkPushSimulation;
 
 		$callbackJSONData=file_get_contents('php://input');
-		$handle=fopen("uploads/transaction.txt", 'w');
-        fwrite($handle, $stkPushSimulation);
+		// $handle=fopen("uploads/transaction.txt", 'w');
+  //       fwrite($handle, $stkPushSimulation);
 
 		if($check !="")
 		{
@@ -89,9 +89,9 @@ class PaymentController extends Controller
 			             
 			                           $upload->save();
 			             
-			                        Upload::where('user_id', Auth::user()->id)
-			                                ->where('uploaded','no')
-			                                ->update(array('uploaded' => 'yes'));
+			                        // Upload::where('user_id', Auth::user()->id)
+			                        //         ->where('uploaded','no')
+			                        //         ->update(array('uploaded' => 'yes'));
 
 			                        return response()->json('0');
 		}
@@ -106,9 +106,9 @@ class PaymentController extends Controller
 
 		$callbackJSONData=file_get_contents('php://input');
 
-		$handle=fopen("uploads/transactions.txt", 'w');
+		// $handle=fopen("uploads/transactions.txt", 'w');
 
-        fwrite($handle, $callbackJSONData);
+        // fwrite($handle, $callbackJSONData);
 
 		$account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
 
@@ -132,6 +132,10 @@ class PaymentController extends Controller
 
 				             
 				    $pay->save();
+
+				    Upload::where('user_id', Auth::user()->id)
+			                                ->where('uploaded','no')
+			                                ->update(array('uploaded' => 'yes'));
 				             
 				    ImagePay::where('account_no',"=", $account_no)
 				             ->update(array('status' => 'Paid'));
