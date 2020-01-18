@@ -38,7 +38,7 @@ text-align: center;
 
 
     <div id="gg-screen"></div>
-    <h1 style="margin-bottom: 20px;">Vote For Cool Photos</h1>
+    <h1 style="margin-bottom: 20px;" id="title_text">Vote For Cool Photos</h1>
     <div class="gg-box">
     @foreach($images as $image)
       <div class="gg-element" style="position: relative;">
@@ -124,6 +124,12 @@ text-align: center;
     <script type="text/javascript" src="{{asset('popup/js/grid-gallery.js')}}"></script>
 
 <script type="text/javascript">
+    $(function () {
+
+    // $('#title_text').text("My Gallery");
+
+});
+
   var login = document.querySelector(".logn");
   var loginn = document.querySelector(".lognn");
 var outer = document.querySelector(".gg-element");
