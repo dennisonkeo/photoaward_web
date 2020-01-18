@@ -2,6 +2,7 @@
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.10.15, https://mobirise.com -->
+
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
@@ -18,7 +19,7 @@
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -29,12 +30,68 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/gallery/style.css">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-  <link href="css/font-awesome_1.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script type="text/javascript">
+      $(function () {
+
+    $('#title_text').text("My Gallery");
+
+});
+  </script>
+
   <style type="text/css">
-      .vote {
+
+  /* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  /*padding-top: 100px;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  /*position: relative;*/
+  background-color: #fefefe;
+/*  margin: auto;
+  padding: 0;
+  width: 100%;*/
+  /*display: table;*/
+  /*max-width: 1200px;*/
+}
+
+/* The Close Button */
+/*.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+
+/*.mySlides {
+  display: none;
+}*/
+
+      #vote {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -52,14 +109,188 @@
   border-radius: 20px;
 }
 
-.vote:hover{
+#vote:hover{
     color: green;
 }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.imghover span{
+  display: none;
+}
+
+.imghover{
+  cursor: pointer;
+}
+
+.imghover:hover span{
+  display: block;
+  opacity: 1;
+}
+.imghover:hover img{
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+/*.container {
+  position: relative;
+  display: none;
+}*/
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%;  IE 10 
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+ .like {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+span .hoverr{
+  cursor: pointer;
+}
+span .hoverr:hover{
+  color: #ff00ff;
+  fill: url(#000);
+
+}
+
+.fa{
+  font-size: 20px;
+}
+#navbarSupportedContent ul li:hover a{
+  /*background: #ff0051;*/
+}
+
+
 
 </style>
   
 </head>
 <body>
+
+     <!--Confirm Payment Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-top" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #000; opacity: 0.8;">
+        <h5 class="modal-title" id="exampleModalLongTitle" style="font-weight: bold; color: #fff;"><i class="fa fa-moey"></i> Your Upload Summary</h5>
+        <button type="button" style="color: #fff;" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="checkout" class="btn btn-primary">Pay <i class="fa fa-loading-o"></i> </button>
+      </div>
+    </div>
+  </div>
+</div>
   <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
     
@@ -87,20 +318,22 @@
                 </span>
             </div>
         </div>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+             <li class="nav-item">
+                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
+                        <span class=""><i class="fa fa-home"></i></span>
+                        Home
+                    </a>
+                </li>
+              @if(Auth::check())
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('submit-entry') }}">
                         <span class="fa fa-user"></span>
                         My profile
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="{{ route('/') }}">
-                        <span class=""><i class="fa fa-home"></i></span>
-                        Home
-                    </a>
-                </li>
+               
 
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="{{ route('logout') }}">
@@ -108,6 +341,8 @@
                         Logout
                     </a>
                 </li>
+              @endif
+
             </ul>
         </div>
     </nav>
@@ -131,10 +366,7 @@
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">
 
                 </p>
-                <div class="mbr-section-btn">
-                    <a class="btn btn-md btn-secondary display-4" href="https://mobirise.com">LEARN MORE</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.com">LIVE DEMO</a>
-                </div>
+
             </div>
         </div>
     </div>
@@ -146,194 +378,105 @@
 </section> -->
 
 <section class="mbr-gallery mbr-slider-carousel cid-rDQ9UudR4c" id="gallery1-6" style="min-height: 680px;">
-
+@include('popup.index')
     
-
-    <div class="container">
-        <div><!-- Filter --><!-- Gallery -->
-            <div class="mbr-gallery-row">
-                <div class="mbr-gallery-layout-default">
-                    <div>
-                        <div>
-                            @if($first)
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="0" data-toggle="modal">
-                                <img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
-                                <span class="icon-focus"></span>
-                                <span class="mbr-gallery-title mbr-fonts-style display-7">Explore Cool Photos</span></div></div>
-                            @else
-                            <p>You have no images in your gallery</p>
-                            @endif
-
-
-                            <!-- <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="1" data-toggle="modal"><img src="assets/images/background2.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Creative"><div href="#lb-gallery1-6" data-slide-to="2" data-toggle="modal"><img src="assets/images/background3.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="3" data-toggle="modal"><img src="assets/images/background4.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="4" data-toggle="modal"><img src="assets/images/background5.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Awesome"><div href="#lb-gallery1-6" data-slide-to="5" data-toggle="modal"><img src="assets/images/background6.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Responsive"><div href="#lb-gallery1-6" data-slide-to="6" data-toggle="modal"><img src="assets/images/background7.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div>
-
-                            <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Animated"><div href="#lb-gallery1-6" data-slide-to="7" data-toggle="modal"><img src="assets/images/background8.jpg" alt="" title=""><span class="icon-focus"></span><span class="mbr-gallery-title mbr-fonts-style display-7">Type caption here</span></div></div> -->
-
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-            </div>
-        </div>
-
-        <!-- Lightbox -->
-
-        <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery1-6">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active"><img src="{{ asset('uploads') }}/{{ $first['imageName'] }}" alt="" title="">
-                            </div>
-                            
-                            @foreach($images as $image)
-                                {{-- @if($image->id == $first->id) --}}
-                                {{-- @continue --}}
-                                {{-- @endif --}}
-                                <div class="carousel-item">
-                                    <img src="{{ asset('uploads') }}/{{ $image['imageName'] }}" alt="" title="">
-                                    <i id="vote" class="vote fa fa-heart-o" style="font-size: 30px;" onlick="incrementValue()" data-id="{{ $image->id }}"> <span class="count" style="font-size: 18px;">{{ count($image->votes) }}</span></i>
-                                </div>
-
-                                
-                            @endforeach
-
-{{--                             <div class="carousel-item"><img src="assets/images/background2.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background3.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background4.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background5.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background6.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background7.jpg" alt="" title="">
-                            </div>
-
-                            <div class="carousel-item"><img src="assets/images/background8.jpg" alt="" title=""> --}}
-                            </div>
-                    </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery1-6"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery1-6"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                    <a class="close" href="#" role="button" data-dismiss="modal">
-                        <span class="sr-only">Close</span>
-                    </a><a class="close" href="#" role="button" data-dismiss="modal">
-                        <span class="sr-only">Close</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-    </div>
-    </div>
-
 </section>
 
-<section class="cid-qTkAaeaxX5" id="footer1-2"  style="background: black;">
+@include('footer')
 
+ 
+
+<style type="text/css">
+  .count{
+    font-weight: bold;
+    /*color: red;*/
+  }
+</style>
+
+
+<script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+
+<script>
+
+  $(function () {
+
+    $('#title_text').text("My Gallery");
+
+});
+
+
+
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+console.log(elements.length);
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+  console.log(elements.length);
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  console.log(elements.length);
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
     
+  }
+}
 
-    
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
-    <div class="container">
-        <div class="media-container-row content text-white">
-            <div class="col-12 col-md-3">
-                <div class="media-wrap">
-                    <a href="{{route('/')}}">
-                        <img src="images/logo_.png" alt="logo"  style="height: 3.8rem;">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <!-- <h5 class="pb-3">
-                    Address
-                </h5>
-                <p class="mbr-text">
-                    1234 Street Name
-                    <br>City, AA 99999
-                </p> -->
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <!-- <h5 class="pb-3">
-                    Contacts
-                </h5>
-                <p class="mbr-text">
-                    Email: support@mobirise.com
-                    <br>Phone: +1 (0) 000 0000 001
-                    <br>Fax: +1 (0) 000 0000 002
-                </p> -->
-            </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <!-- <h5 class="pb-3">
-                    Links
-                </h5>
-                <p class="mbr-text">
-                    <a class="text-primary" href="https://mobirise.com/">Website builder</a>
-                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-win.zip">Download for Windows</a>
-                    <br><a class="text-primary" href="https://mobirise.com/mobirise-free-mac.zip">Download for Mac</a>
-                </p> -->
-            </div>
-        </div>
-        
-    </div>
-</section>
+<script>
+function myFunction(imgs) {
 
-<script src="js/jquery.min.js"></script>
+  var expandImg = document.getElementById("expandedImg");
+  // var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  // imgText.innerHTML = imgs.alt;
+  document.getElementById("myModal").style.display = "block";
+  // expandImg.parentElement.style.display = "block";
+}
+</script>
 
 <script type="text/javascript">
+    function incrementValue()
+{
 
-    $(document).ready(function(){
-    // when the user clicks on like
-    $('.vote').on('click', function(){
-      var image_id = $(this).data('id');
-          $upload = $(this);
-
-          // console.log($upload.parent().find('count'));
-
-      $.ajax({
-        url: 'add-like',
-        type: 'POST',
-        data: {
-          'liked': 1,
-          upload_id: image_id,
-          _token: '{{csrf_token()}}'
-        },
-        success: function(response){
-          if(response !="")
-          {
-          $upload.parent().find('span.count').text(response);
-          // $post.addClass('hide');
-          // $post.siblings().removeClass('hide');
-        }
-
-          // console.log(response);
-
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-        }
-      });
-    });
-
-  });  
-
-
+    document.getElementById("count").innerHTML = parseInt(document.getElementById("count").innerHTML)+1;
+}
 </script>
 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>

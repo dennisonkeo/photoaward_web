@@ -1,1 +1,28 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+16743-10134168-1
+=======
+6278-6074496-1
+>>>>>>> 0c0f7b5e56f0ec6c943b7adccc5d54c46843d8db
+=======
+16746-17186027-1
+=======
+6278-6074496-1
+>>>>>>> 03b420c09ea4baf43d14c2f915e6f4b9836370d1
+>>>>>>> 4b81206679fa29a22561f257dcfd018418d8f0d6
+=======
+16735-13813759-1
+>>>>>>> 841870ad8afc107d7889a27aed377f8decd6b061
+=======
+16740-20378430-1
+>>>>>>> bc9429e6ee5bdf62a6375c3ec7d8f68145a92fe2
+=======
+16732-30184927-1
+>>>>>>> d7af96dd934dc28f60ffc765232827039548f94c
+=======
 {"Body":{"stkCallback":{"MerchantRequestID":"16738-41077423-1","CheckoutRequestID":"ws_CO_241220191527293054","ResultCode":1,"ResultDesc":"The balance is insufficient for the transaction"}}}
+>>>>>>> 264ec64031e1e0fbceea55a28b6122f24d1e2ed2
