@@ -40,7 +40,7 @@
 .show {display: block;}
 </style>
 
-<div class="dropdown" style="top: -12px; overflow: auto;">
+<div class="dropdown" style="top: -12px;">
   <div id="myDropdown" class="dropdown-content" style="overflow: auto;">
 <ul style="overflow: auto;">
 @if(Auth::check())
