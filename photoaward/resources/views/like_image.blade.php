@@ -391,7 +391,7 @@ input[type=submit] {
             </ul>
              <form autocomplete="off" action="/action_page.php">
                 <div class="autocomplete" style="width:200px;">
-                  <input id="myInput" type="text" name="myCountry" placeholder="Country" style="height: 25px; ">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Search" style="height: 25px; ">
                 </div>
                 <input type="submit" value="Search" style="visibility: hidden;">
               </form>
