@@ -99,7 +99,7 @@
 // Date;
 function showDate()
 {
-  alert(Date.parse("Jan 28, 2020 12:00:00"));
+  alert(Date.parse("Mar 16, 2020 12:00:00"));
 }
 
   function getTimeRemaining(endtime) {
@@ -143,10 +143,10 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
+var deadline = new Date(Date.parse("Mar 15, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
+var deadline2 = new Date(Date.parse("Mar 15, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
 </script>   
 
@@ -672,7 +672,7 @@ By submitting an entry, the contestant certifies that he/she is the either the c
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-Picture+254 Photo Contest runs <b>12th December, 2019</b> ~ <b>27th January, 2020</b>.
+Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
 <br><br>
 <a onclick="window.location='{{ url("about-competition") }}'" href="#">Read more.</a>
 
@@ -1161,7 +1161,7 @@ function closeNav() {
 // Date;
 function showDate()
 {
-  alert(Date.parse("Jan 28, 2020 12:00:00"));
+  alert(Date.parse("Mar 16, 2020 12:00:00"));
 }
 
   function getTimeRemaining(endtime) {
@@ -1205,10 +1205,10 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = new Date(Date.parse("Jan 27, 2020 23:59:59") );
+var deadline = new Date(Date.parse("Mar 15, 2020 23:59:59") );
 initializeClock('clockdiv', deadline);
 
-var deadline2 = new Date(Date.parse("Jan 27, 2020 23:59:59") );
+var deadline2 = new Date(Date.parse("Mar 15, 2020 23:59:59") );
 initializeClock('clockdiv2', deadline2);
 </script>       
 
