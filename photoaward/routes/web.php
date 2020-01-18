@@ -192,6 +192,8 @@ Route::post('like-user-login', 'HomeController@login_user_like')->name('like-use
 
 Route::get('like-images', 'UploadController@display_like')->name('like-image');
 
+Route::get('author-images/{author}', 'UploadController@photo_by_author')->name('author-images');
+
 Route::group(['middleware' => ['auth']], function () {
 
 Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('image-resize');

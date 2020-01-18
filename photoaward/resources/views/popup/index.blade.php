@@ -1,7 +1,7 @@
 
   <?php
     use App\Upload;
-    $images = Upload::where('uploaded', 'yes')->latest()->get();
+    //$images = Upload::where('uploaded', 'yes')->latest()->get();
   ?>  
 
     {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
@@ -40,6 +40,9 @@ text-align: center;
     <div id="gg-screen"></div>
     <h1 style="margin-bottom: 20px;" id="title_text">Vote For Cool Photos</h1>
     <div class="gg-box">
+      @if(count($images) < 1)
+      <h3 class="alert alert-warning" style="width: 50%; margin: 0 auto; heght: 50px;">No photos were found!</h3>
+      @endif
     @foreach($images as $image)
       <div class="gg-element" style="position: relative;">
       {{-- <span class="img_click"> --}}
