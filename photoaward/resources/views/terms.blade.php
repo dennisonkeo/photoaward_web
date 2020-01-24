@@ -174,7 +174,7 @@ They must be saved as JPEG file (JPG).<br><br> -->
          The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;"><b>Picture+254</b> </span> Sponsors are final and binding.
         <br><br>
 
-        <i><b>Dated: December 2019.</i></b>
+        <i><b>Dated: January 2020.</i></b>
  <div class="bottom-border" style="margin-top: 50px;"></div>
 </div>
 </div>

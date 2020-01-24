@@ -29,9 +29,9 @@
 <link rel="stylesheet" href="css/compe_4.css" />
 
 
-
-  <link rel="shortcut icon" href="/common/img/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <link rel="icon" href="/photoaward/public/images/log_o.png">
+  <!-- <link rel="shortcut icon" href="/common/img/favicon.ico" /> -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/photoaward/public/images/log_o.png">
 
   
   <!--[if lt IE 9]>
