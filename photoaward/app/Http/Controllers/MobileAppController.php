@@ -12,6 +12,7 @@ use App\ImagePay;
 use Illuminate\Support\Facades\File;
 use Image;
 use Auth;
+use Illuminate\Support\Facades\Hash;
 
 
 class MobileAppController extends Controller
@@ -250,6 +251,55 @@ public function getUserImages()
         $history = ImagePay::where('user_id', Auth::user()->id)->latest()->get();
 
         return response()->json(['hist'=>$history]);  
+    }
+
+    
+    public function registration(Request $request)
+    {
+         $this->validate($request,[
+            'name' => ['required', 'string', 'max:255'],
+            'phone' => ['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8']
+
+            ]);
+// dd($request->input("name"));
+         $verify_phone = User::where('phone',$request->input("phone"))->first();
+
+         if($verify_phone)
+         {
+            return response()->json(['msg'=>'The phone number has already been taken.']); 
+         }
+         else
+         {
+          $user = new User();
+
+          $user->name = $request->input("name");
+          $user->email = $request->input("email");
+          $user->phone = $request->input("phone");
+          $user->password = Hash::make($request->input("password"));
+
+          $user->save();
+
+        if(Auth::attempt(['email' => request('email'), 'password' => request('password')])
+            ||
+            Auth::attempt(['phone' => request('phone'), 'password' => request('password')])
+        )
+        {
+            $user = Auth()->user();
+
+            $success['token'] =  $user->createToken('MyApp')->accessToken;
+
+             return response()->json(['success' => $success,'data' => $user], $this->successStatus);
+        }
+        else
+        {
+            return response()->json('Sorry, something went wrong..');
+
+        }
+         }
+
+             
     }
 
 }
