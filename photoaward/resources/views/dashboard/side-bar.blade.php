@@ -26,6 +26,17 @@
 						</li>
 
 						<li>
+							<a href="#rate" data-toggle="collapse" class="collapsed"><i class="fa fa-gavel"></i> <span>Image Rating</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="rate" class="collapse ">
+								<ul class="nav">
+									<li><a href="{{ route('manage-scale') }}" class="">Rating Scales</a></li>
+									<li><a href="{{ route('rating-panel') }}" class="">Rate</a></li>
+									<li><a href="{{ route('manage-jury') }}" class="">Rated Images</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li>
 							<a href="#cont" data-toggle="collapse" class="collapsed"><i class="lnr lnr-user"></i> <span>Contestants</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
 							<div id="cont" class="collapse ">
 								<ul class="nav">

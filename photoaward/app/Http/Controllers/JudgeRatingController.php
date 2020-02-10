@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\JudgeRating;
+use App\RatingScale;
+use App\Category;
+use App\Upload;
 use Illuminate\Http\Request;
 
 class JudgeRatingController extends Controller
@@ -21,6 +24,43 @@ class JudgeRatingController extends Controller
     {
         return view('dashboard.manage_jury');
     }   
+
+    public function manageRating()
+    {
+        $scales = RatingScale::all();
+
+        return view('dashboard.manage_rating', compact('scales'));
+    }
+
+    public function addScale(Request $request)
+    {
+
+            $scale = new RatingScale();
+
+              $scale->name = $request->input("name");
+
+              $scale->save();
+
+             return back()->with('success', 'Scale added successfully.'); 
+    } 
+
+    public function show_rating()
+    {
+        $categories = Category::all();
+
+        return view('dashboard.rating', compact('categories'));
+    }
+
+    public function show_rating_info($category)
+    {
+        $cat_name = Category::where('name', $category)->first();
+
+        $scales = RatingScale::all();
+
+        $images = Upload::where('category_id',$cat_name->id)->where('published', 1)->get();
+
+        return view('dashboard.rating_info', compact('images', 'category', 'scales'));
+    }
 
     public function display_rating()
     {

@@ -207,6 +207,7 @@ Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished'
 Route::post('published', 'CategoryController@store')->name('published');
 
 Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
+Route::get('rating-info/{category}', 'JudgeRatingController@show_rating_info')->name('rating-info');
 
 Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
 
@@ -270,11 +271,17 @@ Route::get('admin', 'AdminController@index')->name('admin');
 
 Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
 
+Route::get('manage-scale', 'JudgeRatingController@manageRating')->name('manage-scale');
+
 Route::get('category', 'CategoryController@index')->name('category');
 
 Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
 
 Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
+
+Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
+
+Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
 
 Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
 

@@ -26,7 +26,53 @@
 
     <link rel="stylesheet" href="{{ asset('category/css/style.css') }}"> 
 
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style type="text/css">
+      .btn_publish{
+        background: #000;
+        border: #000;
+      }
+
+      .jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 80%;
+  height: 80% ;
+}
+
+.jq-star:hover .fs-star-svg path {
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+.jq-shadow {
+  -webkit-filter: drop-shadow( -2px -2px 2px #888 );
+  filter: drop-shadow( -2px -2px 2px #888 );
+}
+
+    </style>
     
   </head>
   <body>
@@ -42,7 +88,7 @@
       <div class="site-mobile-menu-body"></div>
     </div>
     
-  @include('dashboard.header')
+  @include('dashboard.rating_header')
 
   <div class="site-section"  data-aos="fade">
     <div class="container-fluid">
@@ -52,26 +98,25 @@
         <div class="col-md-7">
           <div class="row mb-5">
             <div class="col-12 ">
-              <h3 class="site-section-heading text-center">Published</h3>
+              <h2 class="site-section-heading text-center">{{ $category }}</h2>
             </div>
           </div>
         </div>
     
       </div>
       <div class="row" id="lightgallery" style="">
-      
-      @if(count($images) > 0)
+
       @foreach($images as $image)
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->upload->imageName }}" data-sub-html="<h4>Author <button>Publish</button></h4><p>Image caption</p>" style="" >
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->imageName }}" data-sub-html="<h4>Author <button class='btn_publish btn btn-info' style='border-radius: 5px;' data-id='{{ $image->id }}' >Rate</button></h4><p>Image caption</p>" style="" >
           <a href="#">
-            <img src="{{ route('image-resize',$image->upload->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
+            <img src="{{ route('image-resize',$image->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
           </a>
-          <button style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->upload->id }}">Unpublish
+          <button data-toggle="modal" data-target="#exampleModal" style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->id }}">Rate
           </button>
         </div>
 
       @endforeach        
-      @endif
+
         {{-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('category/images/big-images/nature_big_2.jpg') }}" data-sub-html="<h4>Author</h4><p>Image caption</p>">
           <a href="#"><img src="{{ asset('category/images/nature_small_2.jpg') }}" alt="IMage" class="img-fluid"></a>
         </div> --}}
@@ -90,12 +135,37 @@
   </div>
 
     
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Rate This Image</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          
+          @foreach($scales as $scale)
+          {{ $scale->name }}
+          <span class="my-rating-9"></span>
+          <span class="live-rating"></span>
+          <br><br>
+          @endforeach
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
 
+    </div>
+  </div>
     
     
   </div>
 
-   <script src="{{ asset('category/js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('category/js/jquery-3.3.1.min.js') }}"></script>
   <script src="{{ asset('category/js/jquery-migrate-3.0.1.min.js') }}"></script>
   <script src="{{ asset('category/js/jquery-ui.js') }}"></script>
   <script src="{{ asset('category/js/popper.min.js') }}"></script>
@@ -113,38 +183,58 @@
   <script src="{{ asset('category/js/jquery.mousewheel.min.js') }}"></script>
 
   <script src="{{ asset('category/js/main.js') }}"></script>
-  
+  <script src="{{ asset('category/js/star-rating.js') }}"></script>
+
+
   <script>
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
     });
 
+    $(".my-rating-9").starRating({
+    initialRating: 3.5,
+    disableAfterRate: false,
+    onHover: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentIndex);
+      console.log($('.live-rating'));
+    },
+    onLeave: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentRating);
+    }
+  });
 
       $('.btn_publish').click(function(event) {
 
         event.stopPropagation();
 
-      $.ajax({
-        url: '{{ route('unpublished') }}',
-        type: 'POST',
-        data: {
+        $('#exampleModal').modal({
+                    backdrop: 'static'
+                });
 
-          upload_id: $(this).data('id'),
-          _token: '{{csrf_token()}}',
+        // alert(';ll');
+        // return false;
 
-        },
-        success: function(response){
+      // $.ajax({
+      //   url: '{{ route('published') }}',
+      //   type: 'POST',
+      //   data: {
+
+      //     upload_id: $(this).data('id'),
+      //     _token: '{{csrf_token()}}',
+
+      //   },
+      //   success: function(response){
             
-            // $(this).text("Published");
+      //       // $(this).text("Published");
 
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-          alert(errorThrown);
-        }
-      });
+      //   },
+      //   error: function(jqXHR, textStatus, errorThrown){
+      //     console.log(errorThrown);
+      //     alert(errorThrown);
+      //   }
+      // });
 
-      $(this).text("Unpublished");
+      // $(this).text("Published");
 
   });
 

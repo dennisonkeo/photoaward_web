@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('category/fonts/icomoon/style.css') }}">
 
     <link rel="stylesheet" href="{{ asset('category/css/bootstrap.min.css') }}">
@@ -24,10 +24,7 @@
 
     <link rel="stylesheet" href="{{ asset('category/css/aos.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('category/css/style.css') }}"> 
-
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="{{ asset('category/css/style.css') }}">    
   </head>
   <body>
   
@@ -41,50 +38,40 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-    
-  @include('dashboard.header')
+  
+  @include('dashboard.rating_header')
 
-  <div class="site-section"  data-aos="fade">
-    <div class="container-fluid">
-      
-      <div class="row justify-content-center">
-        
-        <div class="col-md-7">
-          <div class="row mb-5">
-            <div class="col-12 ">
-              <h3 class="site-section-heading text-center">Published</h3>
+  <div class="container-fluid" data-aos="fade" data-aos-delay="500">
+    <div class="swiper-container images-carousel">
+        <div class="swiper-wrapper">
+      @foreach($categories as $category)
+            <div class="swiper-slide">
+              <div class="image-wrap">
+                <div class="image-info">
+                  <h2 class="mb-3">{{ $category->name }}</h2>
+                  <a href="{{ route('rating-info', $category->name) }}" class="btn btn-outline-white py-2 px-4">Explore Photos</a>
+                </div>
+                <img src="{{ asset('images/logo.jpg') }}" alt="Image">
+              </div>
             </div>
-          </div>
-        </div>
-    
-      </div>
-      <div class="row" id="lightgallery" style="">
-      
-      @if(count($images) > 0)
-      @foreach($images as $image)
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->upload->imageName }}" data-sub-html="<h4>Author <button>Publish</button></h4><p>Image caption</p>" style="" >
-          <a href="#">
-            <img src="{{ route('image-resize',$image->upload->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
-          </a>
-          <button style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->upload->id }}">Unpublish
-          </button>
+      @endforeach
         </div>
 
-      @endforeach        
-      @endif
-        {{-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('category/images/big-images/nature_big_2.jpg') }}" data-sub-html="<h4>Author</h4><p>Image caption</p>">
-          <a href="#"><img src="{{ asset('category/images/nature_small_2.jpg') }}" alt="IMage" class="img-fluid"></a>
-        </div> --}}
-
-      </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
     </div>
   </div>
 
-  <div class="footer py-4">
-    <div class="container-fluid text-center">
-      <p>
 
-        Copyright &copy; All rights reserved | Picture254
+  <div class="footer py-4">
+    <div class="container-fluid">
+      <p>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;
+ 		All rights reserved | Picture254
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
     </div>
   </div>
@@ -95,7 +82,7 @@
     
   </div>
 
-   <script src="{{ asset('category/js/jquery-3.3.1.min.js') }}"></script>
+  <script src="{{ asset('category/js/jquery-3.3.1.min.js') }}"></script>
   <script src="{{ asset('category/js/jquery-migrate-3.0.1.min.js') }}"></script>
   <script src="{{ asset('category/js/jquery-ui.js') }}"></script>
   <script src="{{ asset('category/js/popper.min.js') }}"></script>
@@ -118,36 +105,6 @@
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
     });
-
-
-      $('.btn_publish').click(function(event) {
-
-        event.stopPropagation();
-
-      $.ajax({
-        url: '{{ route('unpublished') }}',
-        type: 'POST',
-        data: {
-
-          upload_id: $(this).data('id'),
-          _token: '{{csrf_token()}}',
-
-        },
-        success: function(response){
-            
-            // $(this).text("Published");
-
-        },
-        error: function(jqXHR, textStatus, errorThrown){
-          console.log(errorThrown);
-          alert(errorThrown);
-        }
-      });
-
-      $(this).text("Unpublished");
-
-  });
-
   </script>
     
   </body>
