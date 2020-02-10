@@ -59,7 +59,8 @@
     
       </div>
       <div class="row" id="lightgallery" style="">
-
+      
+      @if(count($images) > 0)
       @foreach($images as $image)
         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->upload->imageName }}" data-sub-html="<h4>Author <button>Publish</button></h4><p>Image caption</p>" style="" >
           <a href="#">
@@ -70,7 +71,7 @@
         </div>
 
       @endforeach        
-
+      @endif
         {{-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('category/images/big-images/nature_big_2.jpg') }}" data-sub-html="<h4>Author</h4><p>Image caption</p>">
           <a href="#"><img src="{{ asset('category/images/nature_small_2.jpg') }}" alt="IMage" class="img-fluid"></a>
         </div> --}}

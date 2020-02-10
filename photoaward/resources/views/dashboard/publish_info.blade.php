@@ -130,8 +130,8 @@
 
         event.stopPropagation();
 
-        alert(';ll');
-        return false;
+        // alert(';ll');
+        // return false;
 
       $.ajax({
         url: '{{ route('published') }}',
