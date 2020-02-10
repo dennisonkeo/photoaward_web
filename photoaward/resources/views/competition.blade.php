@@ -254,7 +254,7 @@ You cannot send entries through the e-mail.
 @include('menu')
 <div id="footer">
   <div class="container">
-    <div id="copyright" class="wfont">&copy; PICTURE+254.</div>
+    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>
   </div>
 </div>
   <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>

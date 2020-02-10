@@ -1140,7 +1140,7 @@ Non-Professional - Single image entry fee: Ksh.100.
   <div class="container">
 
 
-    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. 
+    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture+254. All Rights Reserved. 
     <!-- <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>  -->
 
   </div>
