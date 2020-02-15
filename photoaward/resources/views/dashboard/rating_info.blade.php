@@ -147,12 +147,21 @@
       </div>
       <div class="modal-body">
           
-          @foreach($scales as $scale)
-          {{ $scale->name }}
+          Creativity
           <span class="my-rating-9"></span>
-          <span class="live-rating"></span>
+          <span class="Creativity"></span>
           <br><br>
-          @endforeach
+
+          Uniqueness
+          <span class="my-rating-10"></span>
+          <span class="Uniqueness"></span>
+          <br><br>
+
+          Originality
+          <span class="my-rating-11"></span>
+          <span class="Originality"></span>
+          <br><br>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -189,21 +198,48 @@
   <script>
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
-    });
 
-    $(".my-rating-9").starRating({
-    initialRating: 3.5,
-    disableAfterRate: false,
-    onHover: function(currentIndex, currentRating, $el){
-      $('.live-rating').text(currentIndex);
-      console.log($('.live-rating'));
-    },
-    onLeave: function(currentIndex, currentRating, $el){
-      $('.live-rating').text(currentRating);
-    }
-  });
+          $(".my-rating-9").starRating({
+          initialRating: 0,
+          disableAfterRate: false,
+          onHover: function(currentIndex, currentRating, $el){
+            $('.Creativity').text(currentIndex);
+            console.log($('.Creativity'));
+          },
+          onLeave: function(currentIndex, currentRating, $el){
+            $('.Creativity').text(currentRating);
+          }
+        });
 
-      $('.btn_publish').click(function(event) {
+          $(".my-rating-10").starRating({
+          initialRating: 0,
+          disableAfterRate: false,
+          onHover: function(currentIndex, currentRating, $el){
+            $('.Uniqueness').text(currentIndex);
+            console.log($('.Uniqueness'));
+          },
+          onLeave: function(currentIndex, currentRating, $el){
+            $('.Uniqueness').text(currentRating);
+          }
+        });
+
+          $(".my-rating-11").starRating({
+          initialRating: 0,
+          disableAfterRate: false,
+          onHover: function(currentIndex, currentRating, $el){
+            $('.Originality').text(currentIndex);
+            console.log($('.Originality'));
+          },
+          onLeave: function(currentIndex, currentRating, $el){
+            $('.Originality').text(currentRating);
+          }
+        });
+
+
+      });
+
+
+      $('.btn_rate').click(function(event) {
 
         event.stopPropagation();
 
@@ -214,27 +250,29 @@
         // alert(';ll');
         // return false;
 
-      // $.ajax({
-      //   url: '{{ route('published') }}',
-      //   type: 'POST',
-      //   data: {
+      $.ajax({
+        url: '{{ route('published') }}',
+        type: 'POST',
+        data: {
 
-      //     upload_id: $(this).data('id'),
-      //     _token: '{{csrf_token()}}',
+          Creativity: $(".Creativity").text(),
+          Uniqueness: $(".Uniqueness").text(),
+          Originality: $(".Originality").text(),
+          _token: '{{csrf_token()}}',
 
-      //   },
-      //   success: function(response){
+        },
+        success: function(response){
             
-      //       // $(this).text("Published");
+            // $(this).text("Published");
 
-      //   },
-      //   error: function(jqXHR, textStatus, errorThrown){
-      //     console.log(errorThrown);
-      //     alert(errorThrown);
-      //   }
-      // });
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          alert(errorThrown);
+        }
+      });
 
-      // $(this).text("Published");
+      $(this).text("Published");
 
   });
 

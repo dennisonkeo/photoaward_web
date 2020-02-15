@@ -62,6 +62,30 @@ class JudgeRatingController extends Controller
         return view('dashboard.rating_info', compact('images', 'category', 'scales'));
     }
 
+    public function rate_image(Request $request)
+    {
+        $creativity = $_POST['Creativity'];
+        $uniqueness = $_POST['Uniqueness'];
+        $original = $_POST['Orininality'];
+
+        $check = Upload::where('id', $upload_id)->where('published', 1)->where('published', 1)->first();
+
+        if(!$check)
+        {
+
+            $publish = new Published();
+             
+                           $publish->upload_id = $upload_id;
+
+                           $publish->user_id = Auth::user()->id;
+             
+                           $publish->save();
+
+            return response()->json('0');
+
+        }
+    }
+
     public function display_rating()
     {
         return view('dashboard.image_rating');
