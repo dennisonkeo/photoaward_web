@@ -656,23 +656,23 @@ initializeClock('clockdiv2', deadline2);
 <div class="top-border"></div>
 <div class="contentt">
 <p>
-Hi and Welcome to Picture +254.
-This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+  Hi and Welcome to Picture +254.
+  This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
 <p>
-Hi and welcome to Picture+254
+  Hi and welcome to Picture+254
 </p>
 <p>
-This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+  This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
 <p>
-There is no age limit to when the photograph was taken and hence you can make many entries. 
-By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+  There is no age limit to when the photograph was taken and hence you can make many entries. 
+  By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 
-Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
+  Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
 <br><br>
 <a onclick="window.location='{{ url("about-competition") }}'" href="#">Read more.</a>
 
@@ -747,18 +747,18 @@ Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</
 <div class="top-border"></div>
 <div class="contentt">
 <p>
-Every contestant must sign up for the competition. This allows winners to be clearly identified.
+  Every contestant must sign up for the competition. This allows winners to be clearly identified.
 </p>
 <p>
-You cannot sign up more than one contestant per phone number or e-mail address.
+  You cannot sign up more than one contestant per phone number or e-mail address.
 </p>
 <p> 
-You can enter as many photographs as you can in all categories. 
+  You can enter as many photographs as you can in all categories. 
 </p>
 <p>
-You cannot send entries through the e-mail.
+  You cannot send entries through the e-mail.
 </p>
-You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
+  You are not allowed to digitally or otherwise enhance the photos you submit. The only photos you can enhance or alter are those entered in the Altered Images category. You are however allowed to make small adjustments such as tone, contrast, slight color adjustment, conversion to grayscale, dodging and burning for all categories.
 <br><br>
 <a onclick="window.location='{{ url("guidelines") }}'" href="#">Read more.</a>
 
@@ -901,7 +901,7 @@ You are not allowed to digitally or otherwise enhance the photos you submit. The
           <div class="top-border"></div>
             <div class="contentt">
 
-All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
+  All entries will be stored in the Picture+254 Stock Gallery which will be marketed Globally. Where an Image/s is purchased by a third party, the owner of the image will be notified directly on their phone and email. The Sponsors will remit royalties to the registered owner of the image less administrative costs in a timely manner.
 <p></p>
 <p>
 <b>Top 3 Overall Grand Prizes (Non – Professional):</b> [$5,000, $3000 and $2000] plus entry into other global photo competitions and exhibition in targeted National and International Photo and Art Exhibition at the cost of the Sponsors.
@@ -1011,17 +1011,17 @@ Picture+254 will randomly select photos for highlight on its website during and 
 
 
 <p>
-Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
+  Photo entries will be judged based on creativity, quality, originality, responsiveness to the general elements described in the Website.
 </p>
 <p>
-There will be weekly Photo of the day and Photo of the Week winners chosen by viewers through voting.
+  There will be weekly Photo of the day and Photo of the Week winners chosen by viewers through voting.
 <p>
-Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
+  Judges will select 10 finalists per category, an overall winner for each category, and the top overall three Photographs. The 70 finalists will be notified of their finalist status, appear on our website and will be invited for the winners Gala.
 </p> 
 <p>
-Winners will be notified through the phone numbers and email addresses provided at the time of entry;
+  Winners will be notified through the phone numbers and email addresses provided at the time of entry;
 </p>
-Contestants are not allowed to contact us about the status of entries or judging.
+  Contestants are not allowed to contact us about the status of entries or judging.
 <br><br>
  <a onclick="window.location='{{ url("jury") }}'" href="#">View the jury</a>
 

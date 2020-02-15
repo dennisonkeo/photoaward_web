@@ -202,37 +202,37 @@ They must be saved as JPEG file (JPG).<br><br> -->
 <div class="contentt" style="font-size:16px; line-height: 25px; font-family:'Montserrat', sans-serif;" >
   
 <p>
-Hi and welcome to Picture+254,
+  Hi and welcome to Picture+254,
 </p>
 
 <p>
-This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
+  This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
 <p>
-There is no age limit to when the photograph was taken and hence you can make many entries. 
-By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
+  There is no age limit to when the photograph was taken and hence you can make many entries. 
+  By submitting an entry, the contestant certifies that he/she is the either the creator or copyright owner of the submitted photograph.
 </p>
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 <p>
-Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
+  Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who May Enter:</h4>
 <p>
-You must be 18 years old or older.
+  You must be 18 years old or older.
 </p>
- <p>
- Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
-  </p>
+<p>
+  Picture+254 is open to both Professionals and Non- Professionals who will compete under their respective categories.
+</p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Why Enter:</h4>
 <p>
-This exciting contest gives everyone a chance to win. You may have taken a photo for fun, or perhaps you are a developing or professional photographer. This is your chance to express themselves to a global audience through the medium of photography. Remember that every entry enters automatically into a Gallery Stock that will be marketed worldwide. You earn money every time someone downloads and uses your photo.
+  This exciting contest gives everyone a chance to win. You may have taken a photo for fun, or perhaps you are a developing or professional photographer. This is your chance to express themselves to a global audience through the medium of photography. Remember that every entry enters automatically into a Gallery Stock that will be marketed worldwide. You earn money every time someone downloads and uses your photo.
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">How to Enter:</h4>
 <p>
-You can sign up and submit photographs online through the <b>Picture+254 App</b> that you can download from either (App Store or Playstore) onto your phone or through our website <a href="http://www.picture254.com">Picture+254</a><b>(www.picture254.com)</b> 
+  You can sign up and submit photographs online through the <b>Picture+254 App</b> that you can download from either (App Store or Playstore) onto your phone or through our website <a href="http://www.picture254.com">Picture+254</a><b>(www.picture254.com)</b> 
 </p>
-You cannot send entries through the e-mail.
+  You cannot send entries through the e-mail.
 <br><br>
  <div class="bottom-border" style="margin-top: 40px;"></div>
 </div>
