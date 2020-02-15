@@ -190,6 +190,7 @@ Route::get('author-images/{author}', 'UploadController@photo_by_author')->name('
 // admin middleware
 
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('image-resize');
 
 // Route::group(['middleware' => ['App\Http\Middleware\ModeratorMiddleware','App\Http\Middleware\AdminMiddleware','App\Http\Middleware\JudgeMiddleware']], 
 //     function(){
@@ -203,36 +204,19 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     
     Route::get('admin', 'AdminController@index')->name('admin');
 
-    // Route::get('unpublish', 'CategoryController@show_unpublish')->name('unpublish');
-
-    // Route::get('publish', 'CategoryController@show_publish')->name('publish');
-
-    // Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished');
-
-    // Route::post('published', 'CategoryController@store')->name('published');
-
-    // Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
-    // Route::get('rating-info/{category}', 'JudgeRatingController@show_rating_info')->name('rating-info');
-
-    // Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
-
     Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
 
-Route::get('manage-scale', 'JudgeRatingController@manageRating')->name('manage-scale');
+    Route::get('manage-scale', 'JudgeRatingController@manageRating')->name('manage-scale');
 
-Route::get('category', 'CategoryController@index')->name('category');
+    Route::get('category', 'CategoryController@index')->name('category');
 
-Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
+    Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
 
-Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
+    Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
 
-Route::post('add-jury', 'AdminController@addJury')->name('add-jury');
+    Route::post('add-jury', 'AdminController@addJury')->name('add-jury');
 
-// Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
-
-// Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
-
-// Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
+    Route::post('add-moderator', 'AdminController@addModerator')->name('add-moderator');
 
 
 });
@@ -240,6 +224,11 @@ Route::post('add-jury', 'AdminController@addJury')->name('add-jury');
 // judge middleware
 
 Route::group(['middleware' => 'App\Http\Middleware\JudgeMiddleware'], function(){
+
+
+    Route::get('rating-info/{category}', 'JudgeRatingController@show_rating_info')->name('rating-info');
+
+
 
     Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
 

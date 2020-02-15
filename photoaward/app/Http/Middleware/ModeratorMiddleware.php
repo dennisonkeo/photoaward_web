@@ -17,7 +17,7 @@ class ModeratorMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (!Auth::user()->hasRole('admin'))
+        if (!Auth::user()->hasRole('moderator'))
             {
                 return new Response(view('unathourized'));
             }

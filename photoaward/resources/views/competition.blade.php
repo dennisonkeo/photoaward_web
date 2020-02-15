@@ -204,7 +204,8 @@ They must be saved as JPEG file (JPG).<br><br> -->
 <div class="contentt" style="font-size:16px; line-height: 25px; font-family:'Montserrat', sans-serif;" >
   
 <p>
-  Hi and welcome to Picture+254,
+  Hi @if(Auth::check()){{Auth::user()->name}}@endif, Welcome to Picture +254.
+  This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
 
 <p>

@@ -6,6 +6,7 @@ use App\JudgeRating;
 use App\RatingScale;
 use App\Category;
 use App\Upload;
+use App\User;
 use Illuminate\Http\Request;
 
 class JudgeRatingController extends Controller
@@ -22,7 +23,9 @@ class JudgeRatingController extends Controller
 
     public function manageJury()
     {
-        return view('dashboard.manage_jury');
+        $judges = User::all();
+        
+        return view('dashboard.manage_jury', compact('judges'));
     }   
 
     public function manageRating()

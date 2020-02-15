@@ -436,7 +436,13 @@ initializeClock('clockdiv2', deadline2);
             </h4>
 
             @if(Auth::check())
-          <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
+              @if(Auth::user()->hasRole('admin') || Auth::user()->hasRole('judge') || Auth::user()->hasRole('moderator'))
+            <button onclick="window.location='{{ url("admin-dashboard") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa 
+          fa-send-o"></i> --> ENTER NOW</button><br><br>
+            @else
+            <button onclick="window.location='{{ url("submit-entry") }}'" class="btn btn-secondary" style="margin-left: 110px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa 
+          fa-send-o"></i> --> ENTER NOW</button><br><br>
+            @endif
           @else
           <button onclick="window.location='{{ url("login") }}'" class="btn btn-secondary" style="marin-left: 50px; border-radius: 5px; width: 150px; background: #ff0051; height: 40px; line-height: 40px; font-family:'Montserrat', sans-serif;"><!-- <i class="fa fa-send-o"></i> --> ENTER NOW</button><br><br>
           @endif
@@ -659,12 +665,12 @@ initializeClock('clockdiv2', deadline2);
 <div class="top-border"></div>
 <div class="contentt">
 <p>
-  Hi and Welcome to Picture +254.
+  Hi @if(Auth::check()){{Auth::user()->name}}@endif, Welcome to Picture +254.
   This exciting contest will give everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
-<p>
+<!-- <p>
   Hi and welcome to Picture+254
-</p>
+</p> -->
 <p>
   This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography. 
 </p>
