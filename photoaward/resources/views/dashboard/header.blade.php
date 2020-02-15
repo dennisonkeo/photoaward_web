@@ -4,7 +4,7 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-0"><a href="{{ route('admin-dashboard') }}" class="text-black h2 mb-0" ><span style="color: #ff00ff;"> Picture254</span></a></h1>
+            <h1 class="mb-0"><a href="{{ route('admin-dashboard') }}" class="text-black h2 mb-0" ><span style="color: #ff00ff;"> Picture +254</span></a></h1>
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
@@ -32,7 +32,7 @@
                   </ul>
                 </li>
                 {{-- <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>s
                 <li><a href="contact.html">Contact</a></li> --}}
               </ul>
             </nav>

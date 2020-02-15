@@ -38,6 +38,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
     <link rel="stylesheet" type="text/css" href="css/overlay-bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/application.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
         <script>if(top.location != self.location){top.location=self.location;}</script> 
     <!--[if lt IE 9]>

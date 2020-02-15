@@ -15,6 +15,10 @@ class CreateJudgeRatingsTable extends Migration
     {
         Schema::create('judge_ratings', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('rating_scale_id');
+            $table->integer('user_id');
+            $table->integer('upload_id');
+            $table->integer('rate');
             $table->timestamps();
         });
     }

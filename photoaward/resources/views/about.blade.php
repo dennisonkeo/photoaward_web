@@ -28,10 +28,13 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/compe_4.css" />
 
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
 
-  <link rel="shortcut icon" href="/common/img/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <!-- <link rel="icon" href="/photoaward/public/images/log_o.png"> -->
+  <!-- <link rel="shortcut icon" href="/common/img/favicon.ico" /> -->
+  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/photoaward/public/images/log_o.png"> -->
 
   
   <!--[if lt IE 9]>
@@ -830,7 +833,7 @@ initializeClock('clockdiv2', deadline2);
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/open">Open</a> - Rewarding exceptional standalone images</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/sony-world-photography-awards/2017/youth">Youth</a> - Celebrating the best single images by emerging photographers aged between 12-19 years-old</span></li>
   <li><span style="font-size:18px;"><a href="https://www.worldphoto.org/student-focus">Student</a> - Providing a platform for photography students worldwide</span></li> -->
-  Content <br><a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
+<br><a onclick="window.location='{{ url("categories") }}'" href="#">View all categories</a>
 </ul>  
 </div>
       </div>
@@ -1140,7 +1143,7 @@ Non-Professional - Single image entry fee: Ksh.100.
   <div class="container">
 
 
-    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture254. All Rights Reserved. 
+    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture+254. All Rights Reserved. 
     <!-- <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>  -->
 
   </div>

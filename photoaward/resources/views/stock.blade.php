@@ -29,6 +29,8 @@
 <link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Feed" href="http://themes.designcrumbs.com/stocky/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Comments Feed" href="http://themes.designcrumbs.com/stocky/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Home Comments Feed" href="http://themes.designcrumbs.com/stocky/home/feed/" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
 		<style type="text/css">
 img.wp-smiley,

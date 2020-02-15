@@ -6,6 +6,7 @@ use App\Upload;
 use App\Category;
 use App\ImagePay;
 use App\Vote;
+use App\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Image;
@@ -113,6 +114,8 @@ class UploadController extends Controller
 
         $images = Upload::where('uploaded',"yes")->latest()->get();
 
+        $authors = User::all();
+
         $count = Upload::where('uploaded',"yes")->count();
 
         if($count >0)
@@ -189,13 +192,23 @@ class UploadController extends Controller
                         // dd($images_4);
 
 
-                    return view('like_image', compact('images_1','images_2','images_3','images_4', 'images'));
+                    return view('like_image', compact('images_1','images_2','images_3','images_4', 'images', 'authors'));
             }
 
             else
             {
-                return view('like_image', compact('images'));
+                return view('like_image', compact('images', 'authors'));
             }
+    }
+
+    public function photo_by_author($author)
+    {
+        $authors = User::all();
+        $user_id = User::where('name',$author)->first();
+
+        $images = Upload::where('user_id',$user_id->id)->get();
+        // dd($images);
+        return view('like_image', compact('images', 'authors'));
     }
 
     public function buy_image()

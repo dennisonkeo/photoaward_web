@@ -38,6 +38,9 @@ Cool Carousels	(c) 2019 Fred Heusschen
 		<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/layout.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="/css/prettify-sunburst-customized.css" />
+		<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
 		<script type="text/javascript" src="/js/jquery.js"></script>
 		<script type="text/javascript" src="/js/jquery.carouFredSel.js"></script>
 		<script type="text/javascript" src="/js/site.js"></script>

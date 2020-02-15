@@ -21,7 +21,9 @@
        
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
-
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+	
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
 		<script src="{{asset('js/jquery.carouFredSel-6.0.4-packed.js')}}" type="text/javascript"></script>
 		<script type="text/javascript">

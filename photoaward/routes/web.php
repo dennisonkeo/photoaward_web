@@ -88,13 +88,6 @@ Route::get('dash', function () {
     return view('dashboard.index');
 });
 
-Route::get('publish', function () {
-    return view('dashboard.publish');
-});
-
-Route::get('publish-info', function () {
-    return view('dashboard.publish_info');
-});
 
 Route::get('categories', function () {
     return view('categories');
@@ -192,21 +185,87 @@ Route::post('like-user-login', 'HomeController@login_user_like')->name('like-use
 
 Route::get('like-images', 'UploadController@display_like')->name('like-image');
 
+Route::get('author-images/{author}', 'UploadController@photo_by_author')->name('author-images');
+
+// admin middleware
+
 Route::group(['middleware' => ['auth']], function () {
 
+// Route::group(['middleware' => ['App\Http\Middleware\ModeratorMiddleware','App\Http\Middleware\AdminMiddleware','App\Http\Middleware\JudgeMiddleware']], 
+//     function(){
+
+        Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
+
+// });
+
+
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function(){
+    
+    Route::get('admin', 'AdminController@index')->name('admin');
+
+    // Route::get('unpublish', 'CategoryController@show_unpublish')->name('unpublish');
+
+    // Route::get('publish', 'CategoryController@show_publish')->name('publish');
+
+    // Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished');
+
+    // Route::post('published', 'CategoryController@store')->name('published');
+
+    // Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
+    // Route::get('rating-info/{category}', 'JudgeRatingController@show_rating_info')->name('rating-info');
+
+    // Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
+
+    Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
+
+Route::get('manage-scale', 'JudgeRatingController@manageRating')->name('manage-scale');
+
+Route::get('category', 'CategoryController@index')->name('category');
+
+Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
+
+Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
+
+Route::post('add-jury', 'AdminController@addJury')->name('add-jury');
+
+// Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
+
+// Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
+
+// Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
+
+
+});
+
+// judge middleware
+
+Route::group(['middleware' => 'App\Http\Middleware\JudgeMiddleware'], function(){
+
+    Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
+
+    Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
+
+    Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
+    // Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
+});
+
+// moderator middleware
+
+Route::group(['middleware' => 'App\Http\Middleware\ModeratorMiddleware'], function(){
+
+    Route::get('unpublish', 'CategoryController@show_unpublish')->name('unpublish');
+
+    Route::get('publish', 'CategoryController@show_publish')->name('publish');
+
+    Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished');
+
+    Route::post('published', 'CategoryController@store')->name('published');
+
+    Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
+});
+
+
 Route::get('image-resize/{path}', 'CategoryController@image_resize')->name('image-resize');
-
-Route::get('unpublish', 'CategoryController@show_unpublish')->name('unpublish');
-
-Route::get('publish', 'CategoryController@show_publish')->name('publish');
-
-Route::post('unpublished', 'CategoryController@unpublished')->name('unpublished');
-
-Route::post('published', 'CategoryController@store')->name('published');
-
-Route::get('publish-info/{category}', 'CategoryController@show_publish_info')->name('publish-info');
-
-Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');
 
 Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
@@ -264,17 +323,6 @@ Route::get('account-settings', 'HomeController@show_account')->name('account-set
 
 Route::get('submit-entry', 'HomeController@show_submit')->name('submit-entry');
 
-Route::get('admin', 'AdminController@index')->name('admin');
-
-Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
-
-Route::get('category', 'CategoryController@index')->name('category');
-
-Route::get('manage-admin', 'AdminController@manageAdmin')->name('manage-admin');
-
-Route::get('manage-jury', 'JudgeRatingController@manageJury')->name('manage-jury');
-
-Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
 
 Route::get('competition-enteries/{track}', 'UploadController@entries')->name('competition-enteries');
 

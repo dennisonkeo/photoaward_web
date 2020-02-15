@@ -23,6 +23,8 @@
 
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -174,7 +176,7 @@ They must be saved as JPEG file (JPG).<br><br> -->
          The Sponsor reserves the right to disqualify any entrant whose entry or conduct appears in any way to: inhibit the enjoyment of others; tamper with the competition; violate these rules or other applicable law or regulation; infringe on the rights of third parties; or act in an unsportsmanlike or disruptive manner. Decisions of the <span style="font-weight: bolder;"><b>Picture+254</b> </span> Sponsors are final and binding.
         <br><br>
 
-        <i><b>Dated: December 2019.</i></b>
+        <i><b>Dated: January 2020.</i></b>
  <div class="bottom-border" style="margin-top: 50px;"></div>
 </div>
 </div>

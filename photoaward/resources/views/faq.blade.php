@@ -21,6 +21,8 @@
 	
 	<link rel="shortcut icon" href="/common/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 	
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -106,7 +108,7 @@
 	</div>
 	<div class="tabled-td wfont">
 		<div lang="en">
-		<h2>Q. Am I eligible to enter?</h2>
+<h2>Q. Am I eligible to enter?</h2>
 
 <p>If you’re an amateur, enthusiast or professional photographer, you are eligible to enter regardless of your location.</p>
 
@@ -129,7 +131,7 @@ Model Releases are required by law in most countries when photographing people. 
 <h2>Q. When does the competition close?</h2>
 
 <p>
-This years competition closes at midnight <b>27th January, 2020</b>.
+This years competition closes at midnight <b>15th March, 2020</b>.
 </p>
 
 <h2>Q. I need help sizing my images for the competition.</h2>
@@ -147,7 +149,7 @@ No. In order for our judging to be ‘blind’ your submissions must not contain
 <h2>Q. When will the winners be announced?</h2>
 
 <p>
-Winners will be published on the website and contacted via email <b>January, 2020</b>.
+Winners will be published on the website and contacted via email <b>April, 2020</b>.
 </p>
 <p>
 Do you still have questions? Get in touch with us.

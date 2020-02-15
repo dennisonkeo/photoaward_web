@@ -209,6 +209,7 @@ class HomeController extends Controller
         'password' => $request->password])
         )
         {
+          
             return redirect('stock-album')->with('success', 'Thank you for registering with us.');
 
             // return response()->json('Thank you for registering with us.');
@@ -288,7 +289,14 @@ public function login_user(Request $request){
         'password' => $request->password])
     )
     {
-        return redirect('submit-entry');
+      if(Auth::user()->hasRole('admin') || Auth::user()->hasRole('judge') || Auth::user()->hasRole('moderator')) 
+      {
+          return redirect('admin-dashboard');
+      }
+      else
+      {
+          return redirect('submit-entry');
+      }
     }
     return redirect('login')->with('warning', 'Invalid Email address/Phone or Password');
 }

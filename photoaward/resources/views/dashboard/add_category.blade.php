@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Dashboard | pic +254</title>
+	<title>Dashboard | Picture +254</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 	

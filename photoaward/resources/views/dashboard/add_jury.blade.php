@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Dashboard | pic +254</title>
+	<title>Dashboard | Picture +254</title>
 
 	<script src="{{ asset('js/right_click.js') }}"></script>
 
@@ -60,19 +60,19 @@
 									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-user-circle-o' style="margin-right: 10px;"></i>Jury Details</h3>
 								</div>
 							<div class="panel-body">
- 								<form method="POST" action="addStaff">
+ 								<form method="POST" action="add-jury">
  								{{ csrf_field() }}
                           			<label>Full Name</label>                       
-									<input type="text" class="form-control input-lg" placeholder="" name="firstName" value=" ">
+									<input type="text" class="form-control input-lg" placeholder="" name="name" value="" required="">
 									<br>
 
 									<div class="form-group">
                                     <label class=" form-control-label">Phone No</label>
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-phone"></i></div>
-                                        <input class="form-control input-lg" style="margin-top: 0;" name="phone" type="tel" pattern='^\+2547\d{0,13}' title="Phone Sould be in this form: +2547XXXXXXXX" maxlength="13">
+                                        <input class="form-control input-lg" style="margin-top: 0;" name="phone" type="tel" pattern='^\2547\d{0,13}' title="Phone Sould be in this form: 2547XXXXXXXX" maxlength="13" required="">
                                     </div>
-                                    <small class="form-text text-muted">ex. +2547XXXXXXXX</small>
+                                    <small class="form-text text-muted">eg. 2547XXXXXXXX</small>
                                 </div>
                               
 								<div class="form-group">
@@ -80,18 +80,18 @@
 	                                <label>Email</label>
 	                                <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                                        <input class="form-control input-lg" style="margin-top: 0;" type="text" name="email">
+                                        <input class="form-control input-lg" style="margin-top: 0;" type="text" name="email" required="">
                                     </div>
 
 	                                </div>
-	                                <div class="col-sm-6">
+	                                {{-- <div class="col-sm-6">
 	                                <label >Password</label>
 	                                <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-key"></i></div>
                                         <input id="password" class="form-control input-lg" type="Password" style="margin-top: 0;" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" >
                                     </div>
 						                   
-	                                </div>
+	                                </div> --}}
 	                              </div>
 									
 								

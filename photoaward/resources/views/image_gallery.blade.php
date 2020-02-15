@@ -35,6 +35,9 @@
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
   <script type="text/javascript">
       $(function () {
 

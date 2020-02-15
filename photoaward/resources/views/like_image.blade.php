@@ -1,3 +1,11 @@
+<?php
+  $authornames = array();
+  foreach($authors as $author)
+  {
+    $authornames[] = $author->name;
+  }
+
+?>
 <!DOCTYPE html>
 <html  >
 <head>
@@ -21,17 +29,20 @@
 
     {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
 
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/gallery/style.css">
+  <link rel="stylesheet" href="{{ asset('assets/web/assets/mobirise-icons/mobirise-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/socicon/css/styles.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/tether/tether.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/gallery/style.css') }}">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="preload" as="style" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/mobirise/css/mbr-additional.css') }}" type="text/css">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -248,41 +259,28 @@ span .hoverr:hover{
   fill: url(#000);
 
 }
-
-.fa{
-  font-size: 20px;
-}
-
-input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.search-container button:hover {
-  background: #ccc;
-}
-
-
-
-
-
-
+/*the container must be positioned relative:*/
 .autocomplete {
   position: relative;
   display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
 }
 
 .autocomplete-items {
@@ -295,7 +293,6 @@ input[type=text] {
   top: 100%;
   left: 0;
   right: 0;
-
 }
 
 .autocomplete-items div {
@@ -307,7 +304,7 @@ input[type=text] {
 
 /*when hovering an item:*/
 .autocomplete-items div:hover {
-  background-color: #e9e9e9;
+  background-color: #e9e9e9; 
 }
 
 /*when navigating through the items using the arrow keys:*/
@@ -358,7 +355,7 @@ input[type=text] {
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="{{route('/')}}">
-                         <img src="images/logo_.png" alt="logo" style="height: 3.5rem;">
+                         <img src="{{ asset('images/logo_.png') }}" alt="logo" style="height: 3.5rem;">
                     </a>
                 </span>
                 <span class="navbar-caption-wrap">
@@ -394,12 +391,12 @@ input[type=text] {
               @endif
 
             </ul>
-             <div class="search-container">
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Search.." name="myCountry" id="myInput">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
+             <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width:200px;">
+                  <input id="myInput" type="text" name="myCountry" placeholder="Search" style="height: 25px; ">
+                </div>
+                <input type="submit" value="Search" style="visibility: hidden;">
+              </form>
         </div>
     </nav>
 </section>
@@ -568,23 +565,23 @@ function myFunction(imgs) {
 }
 </script>
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/masonry/masonry.pkgd.min.js"></script>
-  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/gallery/player.min.js"></script>
-  <script src="assets/gallery/script.js"></script>
-  <script src="assets/slidervideo/script.js"></script>
+  <script src="{{ asset('assets/web/assets/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('assets/popper/popper.min.js') }}"></script>
+  <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('assets/smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ asset('assets/dropdown/js/nav-dropdown.js') }}"></script>
+  <script src="{{ asset('assets/dropdown/js/navbar-dropdown.js') }}"></script>
+  <script src="{{ asset('assets/touchswipe/jquery.touch-swipe.min.js') }}"></script>
+  <script src="{{ asset('assets/tether/tether.min.js') }}"></script>
+  <script src="{{ asset('assets/masonry/masonry.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+  <script src="{{ asset('assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js') }}"></script>
+  <script src="{{ asset('assets/vimeoplayer/jquery.mb.vimeo_player.js') }}"></script>
+  <script src="{{ asset('assets/parallax/jarallax.min.js') }}"></script>
+  <script src="{{ asset('assets/theme/js/script.js') }}"></script>
+  <script src="{{ asset('assets/gallery/player.min.js') }}"></script>
+  <script src="{{ asset('assets/gallery/script.js') }}"></script>
+  <script src="{{ asset('assets/slidervideo/script.js') }}"></script>
   
   <script>
 function autocomplete(inp, arr) {
@@ -599,11 +596,13 @@ function autocomplete(inp, arr) {
       if (!val) { return false;}
       currentFocus = -1;
       /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
+      a = document.createElement("a");
       a.setAttribute("id", this.id + "autocomplete-list");
       a.setAttribute("class", "autocomplete-items");
+
       /*append the DIV element as a child of the autocomplete container:*/
       this.parentNode.appendChild(a);
+
       /*for each item in the array...*/
       for (i = 0; i < arr.length; i++) {
         /*check if the item starts with the same letters as the text field value:*/
@@ -615,10 +614,16 @@ function autocomplete(inp, arr) {
           b.innerHTML += arr[i].substr(val.length);
           /*insert a input field that will hold the current array item's value:*/
           b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          var namem = arr[i];
+          
+
+
           /*execute a function when someone clicks on the item value (DIV element):*/
           b.addEventListener("click", function(e) {
+            var author_name = this.getElementsByTagName("input")[0].value;
               /*insert the value for the autocomplete text field:*/
               inp.value = this.getElementsByTagName("input")[0].value;
+              a.setAttribute("href", "{{ url('author-images') }}/"+author_name);
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
@@ -681,14 +686,15 @@ function autocomplete(inp, arr) {
   /*execute a function when someone clicks in the document:*/
   document.addEventListener("click", function (e) {
       closeAllLists(e.target);
+
   });
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
+var names = <?php echo json_encode($authornames); ?>;
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), countries);
+autocomplete(document.getElementById("myInput"), names);
 </script>
   
 </body>

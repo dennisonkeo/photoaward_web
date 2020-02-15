@@ -28,6 +28,9 @@
 	<link href="modal/css/login-register.css" rel="stylesheet" />
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
 	<script src="modal/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="modal/js/bootstrap.js" type="text/javascript"></script>
 	<script src="{{ asset('modal/js/login-register.js') }}" type="text/javascript"></script>

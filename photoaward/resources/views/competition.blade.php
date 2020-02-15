@@ -40,6 +40,8 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
   
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
   <script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>
@@ -254,7 +256,7 @@ They must be saved as JPEG file (JPG).<br><br> -->
 @include('menu')
 <div id="footer">
   <div class="container">
-    <div id="copyright" class="wfont">&copy; PICTURE+254.</div>
+    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>
   </div>
 </div>
   <script type="text/javascript" src="{{('js/main/jquery.js')}}"></script>

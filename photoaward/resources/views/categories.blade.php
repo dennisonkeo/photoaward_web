@@ -32,6 +32,8 @@
 
 	<link rel="stylesheet" href="{{asset('css/gallery.css')}}">
 	<link rel="stylesheet" href="{{asset('css/style-expand-effect.css')}}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

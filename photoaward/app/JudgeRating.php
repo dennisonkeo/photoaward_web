@@ -15,4 +15,9 @@ class JudgeRating extends Model
      {
         return $this->belongsTo(Upload::class);
      }
+
+     public function rating_scale()
+     {
+        return $this->belongsTo(RatingScale::class);
+     }
 }

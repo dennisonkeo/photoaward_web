@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Picture254</title>
+    <title>Picture +254</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -130,8 +130,8 @@
 
         event.stopPropagation();
 
-        alert(';ll');
-        return false;
+        // alert(';ll');
+        // return false;
 
       $.ajax({
         url: '{{ route('published') }}',

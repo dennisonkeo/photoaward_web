@@ -48,7 +48,8 @@
       href="https://www.snapwi.re/assets/ico/apple-touch-icon-57-precomposed.png?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
 <link rel="shortcut icon" href="https://www.snapwi.re/assets/ico/favicon.ico?v=5ef01a1d3ea555acf3dc221bf2ad88a9">
     
-
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
     
     <script type="text/javascript">

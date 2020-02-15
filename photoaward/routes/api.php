@@ -19,6 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('get-images', 'MobileAppController@getImages')->name('get-images');
 
+Route::post('registration', 'MobileAppController@registration')->name('registration');
+
 Route::get('album', 'HomeController@album')->name('album');
 
 Route::get('categories', 'MobileAppController@categories')->name('categories');
