@@ -20,8 +20,11 @@
 
   <script src="{{ asset('js/right_click.js') }}"></script>
 
+
         <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="stylesheet" type="text/css" href="css/vote.css">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!-- Include the above in your HEAD tag -->

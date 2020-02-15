@@ -129,7 +129,7 @@
     <div class="container-fluid text-center">
       <p>
 
-        Copyright &copy; All rights reserved | Picture254
+        Copyright &copy; All rights reserved | Picture+254
       </p>
     </div>
   </div>

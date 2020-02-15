@@ -4,6 +4,8 @@
 	<style type="text/css"></style>
 	<style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
 	<link as="style" crossorigin="" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="preload">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" media="all" href="css/landing.css">
 	<script async="" src="https://s.pinimg.com/ct/lib/main.532239b0.js"></script>

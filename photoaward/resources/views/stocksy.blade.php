@@ -44,6 +44,8 @@
     <link rel="dns-prefetch" href="//sync.teads.tv">
     <link rel="dns-prefetch" href="//www.google.com">
     <link rel="dns-prefetch" href="//www.googleadservices.com">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
     <link rel="publisher" href="https://plus.google.com/u/0/112726119863401043713/"/>
     <link rel="Shortcut Icon" href="/favicon.png" type="image/png" />

@@ -22,6 +22,8 @@
 
   <link rel="shortcut icon" href="/common/img/favicon.ico" />
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/common/img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
   
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>

@@ -26,6 +26,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="{{asset('css/style.css')}}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
     <!--Google Analytics-->
 	<script src="{{asset('js/libs.js')}}" type="text/javascript"></script>
 	<script src="{{asset('js/common.js')}}" type="text/javascript"></script>

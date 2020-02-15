@@ -22,6 +22,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
         <!-- Styles -->
         <style>

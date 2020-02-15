@@ -40,6 +40,8 @@
 
 <link href="{{ asset('css/style.css') }}" rel="stylesheet" media="all">
 <link href="{{ asset('css/customfont.css') }}" rel="stylesheet" media="all">
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
   
   {{-- <script src="libs.js" type="text/javascript"></script> --}}
   <script type="text/javascript" src="{{ asset('js/libs.js') }}"></script>

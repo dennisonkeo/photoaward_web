@@ -54,6 +54,8 @@
 	<title>Like and unlike system</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="styles.css">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 </head>
 <body>
 	<!-- display posts gotten from the database  -->
