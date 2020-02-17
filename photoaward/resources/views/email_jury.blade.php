@@ -29,7 +29,7 @@
 <body>
 <div class="container">
 
-<h2 class="btn btn-success">Welcome to Picture+254 {{$user->name}}</h2>
+<h3 class="btn btn-success">Welcome to Picture+254 {{$user->name}}</h3>
 <br/>
 <p>Your email is {{$user['email']}} and Password is {{$passs}}, Please click on the below link to login.</p>
 <br/>
