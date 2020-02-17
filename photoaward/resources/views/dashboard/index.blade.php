@@ -77,6 +77,7 @@
 										</p>
 									</div>
 								</div>
+								@if(Auth::user()->hasRole('admin'))
 								<div class="col-md-3">
 									<div class="metric">
 										<span class="icon" style="color: #fff; font-weight: bold;"><i class="fa fa-dolar"></i>KSH</span>
@@ -86,11 +87,17 @@
 										</p>
 									</div>
 								</div>
+								@endif
 							</div>
+						
 							<div class="row">
+							
 								<div class="col-md-9">
 									<div id="headline-chart" class="ct-chart"></div>
 								</div>
+
+								@if(Auth::user()->hasRole('admin'))
+
 								<div class="col-md-3">
 									<div class="weekly-summary text-right">
 										<span class="number">Ksh.{{ $today }}</span> 
@@ -108,11 +115,15 @@
 										{{-- <span class="percentage"><i class="fa fa-caret-down text-danger"></i> 8%</span> --}}
 										<span class="info-label">This Month</span>
 									</div>
+									@endif
 								</div>
+								
 							</div>
+						
 						</div>
 					</div>
 					<!-- END OVERVIEW -->
+				@if(Auth::user()->hasRole('admin'))
 					<div class="row">
 						<div class="col-md-6">
 							<!-- RECENT PURCHASES -->
@@ -182,6 +193,8 @@
 							<!-- END MULTI CHARTS -->
 						</div>
 					</div>
+
+					@endif
 					
 				</div>
 			</div>

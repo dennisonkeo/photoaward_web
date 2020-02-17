@@ -2,7 +2,7 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="#" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+						<li><a href="{{route('admin-dashboard')}}" class="active"><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
 
 					@if(Auth::user()->hasRole('admin'))
 						<li>

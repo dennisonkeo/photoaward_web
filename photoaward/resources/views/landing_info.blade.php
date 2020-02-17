@@ -56,6 +56,9 @@ else
 
 <link href="https://spectrum.gettyimages.com:443/v3" rel="preconnect">
 
+<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
 <script async="" src="https://s.pinimg.com/ct/lib/main.532239b0.js">
   
 </script>

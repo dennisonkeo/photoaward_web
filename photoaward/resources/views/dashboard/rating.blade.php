@@ -70,7 +70,7 @@
       <p>
       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       Copyright &copy;
- 		All rights reserved | Picture254
+ 		All rights reserved | Picture+254
       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </p>
     </div>

@@ -32,6 +32,8 @@
 
 	<link rel="stylesheet" href="{{asset('css/gallery.css')}}">
 	<link rel="stylesheet" href="{{asset('css/style-expand-effect.css')}}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 	<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -132,11 +134,12 @@ body{
 		<div id="contents" >
 
 
-					<div id="news" class="content flow-grid" style="width: 100%; ">
+		<div id="news" class="content flow-grid" style="width: 150%; float: left; margin: 0 auto;">
 			
 			
-				<div class="entry" onclick="window.location='{{ url("professional") }}'">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+			<div style="width: 100%;" class="entry" onclick="window.location='{{ url("professional") }}'">
+				<a href="#">　
+					<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic25.jpg" alt="news01.jpg">
 							
@@ -149,10 +152,11 @@ body{
 							<h2 class="title">PROFESSIONALS</h2>
 							<p></p>
 						</div>
-					</a>
-				</div>
+				</a>
 
-				<div class="entry" onclick="window.location='{{ url("non-professional") }}'">
+			</div>
+
+				<div  style="width: 100%;" class="entry" onclick="window.location='{{ url("non-professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic41.jpg" alt="news01.jpg">

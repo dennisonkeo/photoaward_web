@@ -22,6 +22,9 @@
 
     
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"><script async defer="defer" src="https://buttons.github.io/buttons.js"></script><link href="{{ asset('popup_alert/css/jPopup.css') }}" rel="stylesheet" type="text/css">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
 </head>
   <style>/*** DEMO style ***/
 

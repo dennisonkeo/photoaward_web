@@ -38,6 +38,9 @@
 
     <link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/plugins/do-not-remove-custom-css.css" type="text/css" />
 
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+
     <!--[if lte IE 8]>
 	<script type="text/javascript" src="https://www.contest-gallery.com/wp-content/themes/Avada/js/respond.min.js"></script>
 	<link rel="stylesheet" href="https://www.contest-gallery.com/wp-content/themes/Avada/css/ie8.css" />

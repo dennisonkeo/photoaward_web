@@ -23,6 +23,8 @@
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
 
       <link rel="stylesheet" href="construction/css/style.css">
+      <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+      <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
   
 </head>

@@ -77,32 +77,25 @@
 								            </tr>
 								        </thead>
 								        <tbody>
+								            @foreach($judges as $mode)
+								         @if($mode->hasRole('judge'))
 								            <tr>
-								                <td>Denno</td>
-								                <td>09843848</td>
-								                <td>abs@hdhfh.fdfd</td>
+								                <td>{{$mode->name}}</td>
+								                <td>{{$mode->phone}}</td>
+								                <td>{{$mode->email}}</td>
 								                <td >
-								                	<a href="#" data-toggle="tooltip" data-placement="top" title="Edit Jury" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
+								                	<a href="#" data-toggle="tooltip" data-placement="top" title="Edit Admin" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
 
-								                	<a href="#" data-toggle="tooltip" title="Deactivate Jury" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
+								                	<a href="#" data-toggle="tooltip" title="Deactivate Admin" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
 
 								                	<a href="#" data-toggle="tooltip" title="View More Details" class="" style="margin-right: 10px; color: blue; font-size: 20px;"><i class="fa fa-info-circle"></i></a>
 
 								                </td>
 
 								            </tr>
-								            <tr>
-								                <td>Fade</td>
-								                <td>01774755</td>
-								                <td>fsdfs@dfdfg.fgh</td>
-								                <td>
-													<a href="#" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
+								            @endif
+								           @endforeach
 
-								                	<a href="#" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
-
-								                	<a href="#" class="" style="margin-right: 10px; color: black; font-size: 20px;"><i class="fa fa-eye"></i></a>
-								                </td>
-								            </tr>
 								            
 								        </tfoot>
 								    </table>

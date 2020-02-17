@@ -107,11 +107,11 @@
       <div class="row" id="lightgallery" style="">
 
       @foreach($images as $image)
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->imageName }}" data-sub-html="<h4>Author <button class='btn_publish btn btn-info' style='border-radius: 5px;' data-id='{{ $image->id }}' >Rate</button></h4><p>Image caption</p>" style="" >
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('uploads') }}/{{ $image->imageName }}" data-sub-html="<h4>Author <button class='btn_rate btn btn-info' style='border-radius: 5px;' data-id='{{ $image->id }}' >Rate</button></h4><p>Image caption</p>" style="" >
           <a href="#">
             <img src="{{ route('image-resize',$image->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
           </a>
-          <button data-toggle="modal" data-target="#exampleModal" style="margin-top: 3px;" class="btn_publish btn btn-primary btn-block" data-id="{{ $image->id }}">Rate
+          <button data-toggle="modal" data-target="#exampl=eModal" style="margin-top: 3px;" class="btn_rate btn btn-primary btn-block" data-id="{{ $image->id }}">Rate
           </button>
         </div>
 
@@ -129,7 +129,7 @@
     <div class="container-fluid text-center">
       <p>
 
-        Copyright &copy; All rights reserved | Picture254
+        Copyright &copy; All rights reserved | Picture+254
       </p>
     </div>
   </div>
@@ -248,7 +248,7 @@
                 });
 
         // alert(';ll');
-        // return false;
+        return false;
 
       $.ajax({
         url: '{{ route('published') }}',

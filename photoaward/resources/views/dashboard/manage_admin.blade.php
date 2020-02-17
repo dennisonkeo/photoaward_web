@@ -77,10 +77,12 @@
 								            </tr>
 								        </thead>
 								        <tbody>
+								        @foreach($moderators as $mode)
+								         @if($mode->hasRole('moderator'))
 								            <tr>
-								                <td>Denno</td>
-								                <td>09843848</td>
-								                <td>abs@hdhfh.fdfd</td>
+								                <td>{{$mode->name}}</td>
+								                <td>{{$mode->phone}}</td>
+								                <td>{{$mode->email}}</td>
 								                <td >
 								                	<a href="#" data-toggle="tooltip" data-placement="top" title="Edit Admin" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
 
@@ -91,18 +93,8 @@
 								                </td>
 
 								            </tr>
-								            <tr>
-								                <td>Fade</td>
-								                <td>01774755</td>
-								                <td>fsdfs@dfdfg.fgh</td>
-								                <td>
-													<a href="#" class="" style="margin-right: 10px; color: green; font-size: 20px;"><i class="fa fa-pencil"></i></a>
-
-								                	<a href="#" class="" style="margin-right: 10px; color: red; font-size: 20px;"><i class="fa fa-times-circle"></i></a>
-
-								                	<a href="#" class="" style="margin-right: 10px; color: blue; font-size: 20px;"><i class="fa fa-info-circle"></i></a>
-								                </td>
-								            </tr>
+								            @endif
+								           @endforeach
 								            
 								        </tfoot>
 								    </table>
