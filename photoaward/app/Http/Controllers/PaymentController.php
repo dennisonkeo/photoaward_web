@@ -124,7 +124,12 @@ class PaymentController extends Controller
 	        $trans_no = json_decode($callbackJSONData)->Body->stkCallback->CallbackMetadata->Item[1]->Value;
 	        $trans_date = json_decode($callbackJSONData)->Body->stkCallback->CallbackMetadata->Item[3]->Value;
 
-	        $pay = new Payment();
+	        $transExists = Payment::where('trans_no', $trans_no)->first();
+
+	        if(count($transExists) <= 0)
+	        {
+
+	        	   $pay = new Payment();
 				             
 				   $pay->phone = $phone;
 				   $pay->trans_no = $trans_no;
@@ -139,10 +144,12 @@ class PaymentController extends Controller
 			                                ->where('uploaded','no')
 			                                ->update(array('uploaded' => 'yes'));
 				             
-				    ImagePay::where('account_no',"=", $account_no)
+				    ImagePay::where('account_no', $account_no)
 				             ->update(array('status' => 'Paid'));
 
 				return response()->json('Success');
+	        }
+
 			}
 			else
 			{
