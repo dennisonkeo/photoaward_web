@@ -1143,10 +1143,14 @@ Non-Professional - Single image entry fee: Ksh.100.
   <div class="container">
 
 
-    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture+254. All Rights Reserved. 
-    <!-- <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div>  -->
+<div class="wfont" style="font-size:14px; text-align: center;" >
+Copyright &copy;PICTURE+254.<script>document.write(new Date().getFullYear());</script> All rights reserved.
+                            </div>
 
-  </div>
+ {{--    <div id="copyright" style="font-size:14px; text-align: center;" class="wfont">&copy; Picture+254. All Rights Reserved. 
+    <div id="copyright" class="wfont">&copy; PICTURE+254. All Rights Reserved.</div> 
+
+  </div> --}}
 </div>
 @include('advert')
 

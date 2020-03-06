@@ -149,7 +149,10 @@
 @include('menu')
 <div id="footer">
 	<div class="container">
-		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
+		<div 
+			class="wfont" style="font-size:14px; text-align: center;" >Copyright &copy;PICTURE+254.<script>document.write(new Date().getFullYear());</script> All rights reserved.
+        </div>
+		{{-- <div id="copyright" class="wfont">&copy; PICTURE+254.</div> --}}
 	</div>
 </div>
 </body>
