@@ -78,7 +78,7 @@
 <div id="noscript_message"></div>
 </noscript>
 <div id="wrap">
-<div id="header">
+	<div id="header">
 	<div class="container">
 		
 		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;"><span>PICTURE+254</span></a></div>
@@ -293,13 +293,13 @@
 </div>
 </div>
 
-<!-- @include('menu') 
+@include('menu') 
 
 
 <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; Picture+254.</div>
 	</div>
-</div> -->
+</div>
 </body>
 </html>

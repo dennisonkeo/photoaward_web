@@ -134,11 +134,12 @@ body{
 		<div id="contents" >
 
 
-					<div id="news" class="content flow-grid" style="width: 100%; ">
+		<div id="news" class="content flow-grid" style="width: 150%; float: left; margin: 0 auto;">
 			
 			
-				<div class="entry" onclick="window.location='{{ url("professional") }}'">
-					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
+			<div style="width: 100%;" class="entry" onclick="window.location='{{ url("professional") }}'">
+				<a href="#">　
+					<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic25.jpg" alt="news01.jpg">
 							
@@ -151,10 +152,11 @@ body{
 							<h2 class="title">PROFESSIONALS</h2>
 							<p></p>
 						</div>
-					</a>
-				</div>
+				</a>
 
-				<div class="entry" onclick="window.location='{{ url("non-professional") }}'">
+			</div>
+
+				<div  style="width: 100%;" class="entry" onclick="window.location='{{ url("non-professional") }}'">
 					<a href="#">　<div class="thumb" data-original-width="400" data-original-height="246">
 							
 							<img src="images/pic41.jpg" alt="news01.jpg">

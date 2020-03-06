@@ -54,7 +54,7 @@ class PaymentController extends Controller
 		$BusinessShortCode = "523608";
 		$LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
 		$TransactionType = "CustomerPayBillOnline";
-		$Amount = $total_amount;
+		$Amount = "1";
 		$PartyA = Auth::user()->phone;
 		$PartyB = "523608";
 		$PhoneNumber = Auth::user()->phone;
@@ -124,25 +124,33 @@ class PaymentController extends Controller
 	        $trans_no = json_decode($callbackJSONData)->Body->stkCallback->CallbackMetadata->Item[1]->Value;
 	        $trans_date = json_decode($callbackJSONData)->Body->stkCallback->CallbackMetadata->Item[3]->Value;
 
-	        $pay = new Payment();
+	        $transExists = Payment::where('trans_no', $trans_no)->get();
+
+	        if(count($transExists) > 0)
+	        {
+
+	        }
+	        else
+	        {
+
+	        	   $pay = new Payment();
 				             
 				   $pay->phone = $phone;
 				   $pay->trans_no = $trans_no;
 				   $pay->account_no = $account_no;
 				   $pay->trans_date = $trans_date;
 				   $pay->amount = $amount;
-
 				             
 				    $pay->save();
 
-				    Upload::where('user_id', Auth::user()->id)
-			                                ->where('uploaded','no')
-			                                ->update(array('uploaded' => 'yes'));
+				    Upload::where('user_id', Auth::user()->id)->update(array('uploaded' => 'yes'));
 				             
-				    ImagePay::where('account_no',"=", $account_no)
+				    ImagePay::where('account_no', $account_no)
 				             ->update(array('status' => 'Paid'));
 
 				return response()->json('Success');
+	        }
+
 			}
 			else
 			{

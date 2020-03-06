@@ -36,7 +36,9 @@ class AdminController extends Controller
 
     public function manageAdmin()
     {
-    	return view('dashboard.manage_admin');
+      $moderators = User::all();
+
+    	return view('dashboard.manage_admin', compact('moderators'));
     }
 
     public function addJury(Request $request)
@@ -55,6 +57,28 @@ class AdminController extends Controller
           $user->password = Hash::make($passs);       
           $user->save();
           $user->roles()->attach(Role::where('name', 'judge')->first());
+
+        Mail::to($user->email)->send(new JuryMail($user,$passs));
+
+           return back()->with('success', 'User added successfully.');   
+    }
+
+    public function addModerator(Request $request)
+    {
+        $this->validate($request,[
+            'name'=>'required',
+            'phone'=>['required', 'string', 'max:13','regex:/(2547)[0-9]{8}/'],
+            'email'=>'required|string|email|max:255|unique:users',
+
+            ]);
+        $passs = str_random(6);
+          $user = new User();
+          $user->name = $request->input("name");
+          $user->email = $request->input("email");
+          $user->phone = $request->input("phone");
+          $user->password = Hash::make($passs);       
+          $user->save();
+          $user->roles()->attach(Role::where('name', 'moderator')->first());
 
         Mail::to($user->email)->send(new JuryMail($user,$passs));
 

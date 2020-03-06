@@ -193,7 +193,7 @@
 			<p class="text_line">
 				I was born in Sudan nurtured in Egypt and the US and refined in Kenya. Graduated from Harold
 				Washington College in Chicago. Emmanuel is an urbane, creative and undefined by boundaries.
-				He is the recognizable face offashion, commercial and wedding photography in Kenya and 
+				He is the recognizable face offashion, commercial and wedding photography in Kenya and beyond.
 
 
 				<a href="#" class="btn btn-primary" style="color: #b7eb34; border-radius: 5px;" id="hide2" onclick="showText()">More..</a>
@@ -201,7 +201,7 @@
 
 				<span id="more2" style="display: none;">
 
-				beyond.Emmanuel’s expertise ranges across the boards of photography and cinematography.
+				Emmanuel’s expertise ranges across the boards of photography and cinematography.
 				His work has captured the runways of London Fashion Week. He has also established himself as
 				the go-to journalistic and fine art photographer covering eclectic weddings ranging from India
 				to Ivory Coast, Uganda, Ethiopia, Kenya, Sudan, and Ethiopia to the United States. He is a visual
