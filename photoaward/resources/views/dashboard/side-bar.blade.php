@@ -74,7 +74,7 @@
 								<ul class="nav">
 									<li><a href="{{ route('manage-scale') }}" class="">Rating Scales</a></li>
 									<li><a href="{{ route('rating-panel') }}" class="">Rate</a></li>
-									<li><a href="{{ route('manage-jury') }}" class="">Rated Images</a></li>
+									<li><a href="{{ route('rated-images') }}" class="">Rated Images</a></li>
 								</ul>
 							</div>
 						</li>

@@ -58,7 +58,7 @@ class PaymentController extends Controller
 		$PartyA = Auth::user()->phone;
 		$PartyB = "523608";
 		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'http://picture254.com/api/mpesa-response';
+		$CallBackURL = 'https://034fa128.ngrok.io/api/mpesa-response';
 		$AccountReference = Auth::user()->phone;
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess";
@@ -108,11 +108,11 @@ class PaymentController extends Controller
 
 		$callbackJSONData=file_get_contents('php://input');
 
-		// $handle=fopen("uploads/transactions.txt", 'w');
+		$handle=fopen("uploads/transactions.txt", 'w');
 
-        // fwrite($handle, $callbackJSONData);
+  //       fwrite($handle, $callbackJSONData);
 
-		$account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
+		// $account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
 
 		$ResultCode = json_decode($callbackJSONData)->Body->stkCallback->ResultCode;
 
@@ -125,13 +125,6 @@ class PaymentController extends Controller
 	        $trans_date = json_decode($callbackJSONData)->Body->stkCallback->CallbackMetadata->Item[3]->Value;
 
 	        $transExists = Payment::where('trans_no', $trans_no)->get();
-
-	        if(count($transExists) > 0)
-	        {
-
-	        }
-	        else
-	        {
 
 	        	   $pay = new Payment();
 				             
@@ -149,7 +142,6 @@ class PaymentController extends Controller
 				             ->update(array('status' => 'Paid'));
 
 				return response()->json('Success');
-	        }
 
 			}
 			else

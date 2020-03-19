@@ -18,7 +18,7 @@
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
     
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -33,12 +33,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
-    <link rel="stylesheet" type="text/css" href="css/overlay-bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/application.css" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
+    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-select.css" />
+    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/overlay-bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://users.worldphoto.org/css/app.css" />
 
         <style>
         .lang-menu .dd-option img, .lang-menu .dd-selected img {
@@ -47,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </style>
     <script>if(top.location != self.location){top.location=self.location;}</script> 
 
-    <script src="{{ asset('js/right_click.js') }}"></script>
+    {{-- <script src="{{ asset('js/right_click.js') }}"></script> --}}
     
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -127,6 +125,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <input id="dob" class="form-control" required name="dob" type="text" value="{{ $user->dob }}">
                 </div>
             </div>
+            
+
         </div>
         
         <div class="col-xs-12 col-sm-12 col-md-4">
@@ -285,18 +285,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>  
 
     
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap-select.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="https://users.worldphoto.org/js/jquery.min.js"></script>
+    <script src="https://users.worldphoto.org/js/bootstrap-select.min.js"></script>
+    <script src="https://users.worldphoto.org/js/bootstrap-datepicker.min.js"></script>
 
         
-    <script src="js/application.js"></script>
+    <script src="https://users.worldphoto.org/js/app.js"></script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script src="js/polyfiller.js"></script>
+    <script src="https://users.worldphoto.org/webshim-minified/polyfiller.js"></script>
 
     <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#dob').datepicker({
+                format: "yyyy-mm-dd",
+                endDate: "2001-10-01",
+                // startDate: "18years"
+            });
+        });
 
     function readURL(input) {
 
@@ -386,9 +394,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   fbq('init', '746055978761303');
   fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=746055978761303&ev=PageView&noscript=1"
-/></noscript>
+
 <!-- End Facebook Pixel Code -->
 
     <script>
@@ -431,7 +437,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
     </script>
     
-    <script>
+{{--     <script>
         $(document).ready(function() {
             $('#dob').datepicker({
                 format: "yyyy-mm-dd",
@@ -439,7 +445,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 // startDate: "18years"
             });
         });
-    </script>
+    </script> --}}
 
 </body>
 </html>
