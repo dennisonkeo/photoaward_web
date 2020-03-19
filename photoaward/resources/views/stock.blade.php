@@ -431,7 +431,7 @@ jQuery(document).ready(function($){
 					</div>
 					
 					<div id="footer_copy">
-						&copy; 2019 picture+254
+						&copy; 2020 picture+254
 						
 							 
 						</div>
