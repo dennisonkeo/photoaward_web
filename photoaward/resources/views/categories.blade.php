@@ -135,8 +135,6 @@ body{
 
 
 		<div id="news" class="content flow-grid" style="width: 150%; float: left; margin: 0 auto;">
-			
-			
 			<div style="width: 100%;" class="entry" onclick="window.location='{{ url("professional") }}'">
 				<a href="#">　
 					<div class="thumb" data-original-width="400" data-original-height="246">
@@ -146,14 +144,13 @@ body{
 						</div>
 						<div class="meta">
 
-							<!-- <h2 class="title"> Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</h2> -->
+							<h2 class="title">##########...CONTENT...##########</h2>
 						</div>
 						<div class="body">
 							<h2 class="title">PROFESSIONALS</h2>
 							<p></p>
 						</div>
 				</a>
-
 			</div>
 
 				<div  style="width: 100%;" class="entry" onclick="window.location='{{ url("non-professional") }}'">
@@ -164,7 +161,7 @@ body{
 						</div>
 						<div class="meta">
 
-							<!-- <h2 class="title">1.	Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.</h2> -->
+							<h2 class="title">##########...CONTENT...##########</h2>
 						</div>
 						<div class="body">
 							<h2 class="title">NON-PROFESSIONALS</h2>
