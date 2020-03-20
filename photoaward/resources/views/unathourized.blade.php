@@ -69,7 +69,7 @@ svg {
             </g>
           </svg>
 <h1>You are not allowed to enter here</h1>
-<h2>Go <a target="_blank" href="https://www.youtube.com/watch?v=JccW-mLdNe0">Home!</a></h2>
+<h2>Go <a taget="_blank" href="{{route('admin-dashboard')}}">Home!</a></h2>
 <script type="text/javascript">
     var root = document.documentElement;
 var eyef = document.getElementById('eyef');
