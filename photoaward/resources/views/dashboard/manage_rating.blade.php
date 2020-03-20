@@ -70,7 +70,7 @@
 								<div class="panel-heading">
 									<h3 class="panel-title" style="font-weight: bold;"><i class='fa fa-list-alt' style="margin-right: 10px;"></i>Manage Rating Scales</h3>
 									
-									<a style="margin-bottom: 5px;" href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#exampleModal">Add Scale</a>
+									<a style="margin-bottom: 5px;" href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#exampleModal" onclilck="addScale()">Add Scale</a>
 								</div>
 							<div class="panel-body">
  								<table id="example" class="table table-striped table-bordered" style="width:100%">
@@ -123,7 +123,7 @@
  			<form method="POST" action="add-scale">
  			{{ csrf_field() }}
             <label>Scale Name</label>                       
-			<input type="text" class="form-control input-lg" placeholder="" name="name" required="">
+			<input type="text" class="form-control input-lg" id="input" placeholder="" name="name" required="" autofocus>
 			<br>
 			
 		</div>
@@ -220,6 +220,19 @@
 
 	</script>
 <script type="text/javascript">
+
+$('body').on('shown.bs.modal', '#exampleModal', function () {
+    $('input:visible:enabled:first', this).focus();
+})
+
+  function addScale()
+  {
+    $('#exampleModal').modal({
+            backdrop: 'static'
+    });
+
+    // $('input:visible:enabled:first', this).focus();
+  }
 	function edit_income(id)
     {
       save_method = 'update';
