@@ -204,9 +204,17 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     
     Route::get('admin', 'AdminController@index')->name('admin');
 
+    Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
+
     Route::get('jury-dash', 'JudgeRatingController@index')->name('jury-dash');
 
     Route::get('manage-scale', 'JudgeRatingController@manageRating')->name('manage-scale');
+
+    Route::get('get-scale', 'JudgeRatingController@getScale')->name('get-scale');
+
+    Route::delete('delete-scale/{scale}', 'JudgeRatingController@deleteScale')->name('delete-scale');
+
+    Route::post('update-scale', 'JudgeRatingController@updateScale')->name('update-scale');
 
     Route::get('category', 'CategoryController@index')->name('category');
 
@@ -228,11 +236,15 @@ Route::group(['middleware' => 'App\Http\Middleware\JudgeMiddleware'], function()
 
     Route::get('rating-info/{category}', 'JudgeRatingController@show_rating_info')->name('rating-info');
 
+    Route::get('rated-info/{category}', 'JudgeRatingController@rated_images_info')->name('rated-info');
 
+    Route::get('rated-images', 'JudgeRatingController@rated_images')->name('rated-images');
 
     Route::get('rating-panel', 'JudgeRatingController@show_rating')->name('rating-panel');
 
-    Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
+    // Route::post('add-scale', 'JudgeRatingController@addScale')->name('add-scale');
+
+    Route::post('add-Rating', 'JudgeRatingController@addRating')->name('add-Rating');
 
     Route::get('image-rating', 'JudgeRatingController@display_rating')->name('image-rating');
     // Route::get('admin-dashboard', 'AdminController@dashboard')->name('admin-dashboard');

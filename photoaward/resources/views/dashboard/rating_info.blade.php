@@ -26,6 +26,8 @@
 
     <link rel="stylesheet" href="{{ asset('category/css/style.css') }}"> 
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 
     <style type="text/css">
       .btn_publish{
@@ -111,13 +113,13 @@
           <a href="#">
             <img src="{{ route('image-resize',$image->imageName) }}" alt="Image" class="img-fluid" style="heiht: 100px;">
           </a>
-          <button data-toggle="modal" data-target="#exampl=eModal" style="margin-top: 3px;" class="btn_rate btn btn-primary btn-block" data-id="{{ $image->id }}">Rate
+          <button data-toggle="modal" data-target="#exampl=eModal" style="margin-top: 3px;" class="btn_rate btn btn-primary btn-block getId" data-id="{{ $image->id }}">Rate
           </button>
         </div>
 
       @endforeach        
 
-        {{-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('category/images/big-images/nature_big_2.jpg') }}" data-sub-html="<h4>Author</h4><p>Image caption</p>">
+        {{-- <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 item" data-aos="fade" data-src="{{ asset('category/images/big-images/nature_big_2.jpg')  data-sub-html="<h4>Author</h4><p>Image caption</p>">
           <a href="#"><img src="{{ asset('category/images/nature_small_2.jpg') }}" alt="IMage" class="img-fluid"></a>
         </div> --}}
 
@@ -146,13 +148,16 @@
         </button>
       </div>
       <div class="modal-body">
-          
-          Creativity
-          <span class="my-rating-9"></span>
-          <span class="Creativity"></span>
+        @foreach($scales as $scale)
+            
+          <span class="varName">{{ $scale->name }}</span>
+          <span class="my-rating-{{ $count ++}} "></span>
+          <span class="{{ $scale->name }} score"></span>
           <br><br>
+          
+        @endforeach
 
-          Uniqueness
+          {{-- Uniqueness
           <span class="my-rating-10"></span>
           <span class="Uniqueness"></span>
           <br><br>
@@ -160,12 +165,12 @@
           Originality
           <span class="my-rating-11"></span>
           <span class="Originality"></span>
-          <br><br>
+          <br><br> --}}
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
+        <button type="submit" onclick="testClick()" class="btn btn-primary">Save changes</button>
       </div>
 
     </div>
@@ -199,41 +204,46 @@
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
 
-          $(".my-rating-9").starRating({
+          <?php $count=1;?>
+          @foreach($scales as $scale)
+          // console.log('<?php echo $count;?>');
+          $(".my-rating-<?php echo $count;?>").starRating({
           initialRating: 0,
           disableAfterRate: false,
           onHover: function(currentIndex, currentRating, $el){
-            $('.Creativity').text(currentIndex);
-            console.log($('.Creativity'));
+            $('.<?php echo $scale->name;?>').text(currentIndex);
+            // console.log($('.Creativity'));
           },
           onLeave: function(currentIndex, currentRating, $el){
-            $('.Creativity').text(currentRating);
+            $('.<?php echo $scale->name;?>').text(currentRating);
           }
         });
+        <?php echo $count++;?>
+        @endforeach
 
-          $(".my-rating-10").starRating({
-          initialRating: 0,
-          disableAfterRate: false,
-          onHover: function(currentIndex, currentRating, $el){
-            $('.Uniqueness').text(currentIndex);
-            console.log($('.Uniqueness'));
-          },
-          onLeave: function(currentIndex, currentRating, $el){
-            $('.Uniqueness').text(currentRating);
-          }
-        });
+        //   $(".my-rating-10").starRating({
+        //   initialRating: 0,
+        //   disableAfterRate: false,
+        //   onHover: function(currentIndex, currentRating, $el){
+        //     $('.Uniqueness').text(currentIndex);
+        //     console.log($('.Uniqueness'));
+        //   },
+        //   onLeave: function(currentIndex, currentRating, $el){
+        //     $('.Uniqueness').text(currentRating);
+        //   }
+        // });
 
-          $(".my-rating-11").starRating({
-          initialRating: 0,
-          disableAfterRate: false,
-          onHover: function(currentIndex, currentRating, $el){
-            $('.Originality').text(currentIndex);
-            console.log($('.Originality'));
-          },
-          onLeave: function(currentIndex, currentRating, $el){
-            $('.Originality').text(currentRating);
-          }
-        });
+        //   $(".my-rating-11").starRating({
+        //   initialRating: 0,
+        //   disableAfterRate: false,
+        //   onHover: function(currentIndex, currentRating, $el){
+        //     $('.Originality').text(currentIndex);
+        //     console.log($('.Originality'));
+        //   },
+        //   onLeave: function(currentIndex, currentRating, $el){
+        //     $('.Originality').text(currentRating);
+        //   }
+        // });
 
 
       });
@@ -244,7 +254,7 @@
         event.stopPropagation();
 
         $('#exampleModal').modal({
-                    backdrop: 'static'
+                    // backdrop: 'static'
                 });
 
         // alert(';ll');
@@ -275,6 +285,100 @@
       $(this).text("Published");
 
   });
+var imageId;
+
+var getImageId = document.getElementsByClassName('getId');
+for (var i = 0; i < getImageId.length; i++) {
+  getImageId[i].addEventListener('click', function(event) {
+
+          imageId = $(this).data('id');
+          console.log($(this).data('id'));
+
+  });
+}
+
+  function testClick()
+  {
+    var dataVar =[];
+    var dataScore =[];
+
+      var allButtons = document.getElementsByClassName('varName');
+      console.log("Found", allButtons.length, "div which class starts with “button”.");
+
+      for (var i = 0; i < allButtons.length; i++) {            
+          console.log($(allButtons[i]).text());
+          dataVar.push($(allButtons[i]).text()); 
+
+        }
+
+    var allButtonss = document.getElementsByClassName('score');
+      console.log("Found", allButtons.length, "div which class starts with “button”.");
+
+      
+      for (var i = 0; i < allButtonss.length; i++) {
+        
+          // console.log($(allButtonss[i]).text());
+
+          dataScore.push($(allButtonss[i]).text());   
+      }
+
+      // var varScore = [];
+
+      // for (var i = 0; i < dataVar.length; i++) 
+      // {
+      //   var scale = dataVar[i];
+      //   var rate = dataScore[i];
+      //     var myRate = {scale:rate};
+
+      //     varScore.push(myRate);
+      //     // console.log(scale+": "+rate);
+      // }
+
+
+      // return false;
+
+      $.ajax({
+        url: '{{ route('add-Rating') }}',
+        type: 'POST',
+        dataType:'json',
+        data: {
+
+          'scores': dataScore,
+          'variable': dataVar,
+          'image_id': imageId,
+          _token: '{{csrf_token()}}',
+
+        },
+        success: function(response){
+            
+            Swal.fire({
+                      title: 'Rated!',
+                      text: "Image has been rated successfully!",
+                      icon: 'success',
+                      }
+                      ).then((result)=>{
+                      location.reload()
+                      }
+               );
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          Swal.fire({
+                      title: 'Oops!',
+                      text: "Something went wrong!",
+                      icon: 'error',
+                      }
+                      ).then((result)=>{
+                      location.reload()
+                      }
+               );
+        }
+      });
+      console.log("scores: "+dataScore);
+      console.log("Variable: "+dataVar);
+      console.log("ImageID:  "+imageId);
+  }
 
   </script>
     
