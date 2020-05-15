@@ -15,6 +15,18 @@ Route::get('non-professional', function () {
     return view('non-pro');
 });
 
+Route::get('stock-test', function () {
+    return view('stocktest');
+});
+
+Route::get('stock-cat', function () {
+    return view('stockcat');
+});
+
+Route::get('stock-tests', function () {
+    return view('stocktest2');
+});
+
 Route::get('professional', function () {
     return view('professional');
 });
