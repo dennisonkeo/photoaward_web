@@ -3,16 +3,27 @@
     
 
     
-
+<div id="footer">
     <div class="container">
         <div class="media-container-row content text-white">
             <div class="col-12 col-md-3">
-                <div class="media-wrap">
+                <div class="media-wrap" >
                     <a href="{{route('/')}}">
-                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 3.8rem;">
+                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 8.9rem;">
                     </a>
-                </div>
+                </div>  
             </div>
+<div class="col-md-3 mb-md-0 mb-3" style="text-align: center;">
+    <div class="footer-copyright text-center py-3">
+   
+  </div>
+  <div class="footer-copyright text-center py-3">
+   
+  </div>
+<div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        </div>
+    </div>
+
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <!-- <h5 class="pb-3">
                     Address
@@ -44,4 +55,5 @@
             </div>
         </div>
         </div>
+    </div>
 </section>

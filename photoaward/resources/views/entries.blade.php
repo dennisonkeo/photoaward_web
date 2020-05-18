@@ -150,11 +150,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </div>
 
-    <footer style="background: #000;">
-@include('footer')
-  <div class="container" >
-    <p style="text-align: center; color: #ff0051;">© PICTURE+254</p>
-</div>
+    
+<footer style="background: #000;">
+
+ @include('footer')
+  
+    <div class="container" style="text-align: center;">
+        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        </div>
+    </div>
+
 </footer>  
 
          
