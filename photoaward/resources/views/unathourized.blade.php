@@ -4,95 +4,99 @@
 	<title>Unauthorized</title>
 
 	<style type="text/css">
-		html,body{
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:salmon;
-    font-family:"Quicksand", sans-serif;
+	@import url("https://fonts.googleapis.com/css?family=Bungee");
 
+body {
+  background: #1b1b1b;
+  color: white;
+  font-family: "Bungee", cursive;
+  margin-top: 50px;
+  text-align: center;
+}
+a {
+  color: #2aa7cc;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+svg {
+  width: 50vw;
+}
+.lightblue {
+  fill: #444;
+}
+.eye {
+  cx: calc(115px + 30px * var(--mouse-x));
+  cy: calc(50px + 30px * var(--mouse-y));
+}
+#eye-wrap {
+  overflow: hidden;
+}
+.error-text {
+  font-size: 120px;
+}
+.alarm {
+  animation: alarmOn 0.5s infinite;
 }
 
-#container_anim{
-    position:relative;
-    width:100%;
-    height:70%;
-}
-
-#key{
-    position:absolute;
-    top:77%;
-    left:-33%;
-}
-
-#text{
-  font-size:4rem;
-  position:absolute;
-  top:55%;
-  width:100%;
-  text-align:center;
-}
-
-#credit{
-    position:absolute;
-    bottom:0;
-    width:100%;
-    text-align:center;
-    bottom:
-}
-
-a{
-    color: rgb(115,102,102);
+@keyframes alarmOn {
+  to {
+    fill: darkred;
+  }
 }
 	</style>
 </head>
 <body>
-		    <div id="container_anim">
-        <div id="lock" class="key-container">
-            <?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="317.286 -217 248 354" width="248" height="354"><g><path d="M 354.586 -43 L 549.986 -43 C 558.43 -43 565.286 -36.144 565.286 -27.7 L 565.286 121.7 C 565.286 130.144 558.43 137 549.986 137 L 354.586 137 C 346.141 137 339.286 130.144 339.286 121.7 L 339.286 -27.7 C 339.286 -36.144 346.141 -43 354.586 -43 Z" style="stroke:none;fill:#2D5391;stroke-miterlimit:10;"/><g transform="matrix(-1,0,0,-1,543.786,70)"><text transform="matrix(1,0,0,1,0,234)" style="font-family:'Quicksand';font-weight:700;font-size:234px;font-style:normal;fill:#4a4444;stroke:none;">U</text></g><g transform="matrix(-1,0,0,-1,530.786,65)"><text transform="matrix(1,0,0,1,0,234)" style="font-family:'Quicksand';font-weight:700;font-size:234px;font-style:normal;fill:#8e8383;stroke:none;">U</text></g><path d="M 343.586 -52 L 538.986 -52 C 547.43 -52 554.286 -45.144 554.286 -36.7 L 554.286 112.7 C 554.286 121.144 547.43 128 538.986 128 L 343.586 128 C 335.141 128 328.286 121.144 328.286 112.7 L 328.286 -36.7 C 328.286 -45.144 335.141 -52 343.586 -52 Z" style="stroke:none;fill:#4A86E8;stroke-miterlimit:10;"/><g><circle vector-effect="non-scaling-stroke" cx="441.28571428571433" cy="63.46153846153848" r="10.461538461538453" fill="rgb(0,0,0)"/><rect x="436.055" y="66.538" width="10.462" height="34.462" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)"/></g></g></svg>
-        </div>
-    
-        <div id="key">
-            <?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="232.612 288.821 169.348 109.179" width="169.348" height="109.179"><g><path d=" M 382.96 349.821 L 368.96 349.821 L 368.96 314.821 L 382.96 307.821 L 382.96 349.821 Z " fill="rgb(55,49,49)"/><path d=" M 292.134 354.827 L 379.96 315.39 L 379.96 305.547 L 292.134 343.094 L 292.134 354.827 Z " fill="rgb(55,49,49)"/><path d=" M 280.96 340.109 L 401.96 288.821 L 401.96 340.109 L 382.96 349.972 L 382.96 308.547 L 265.96 360.821 L 259.96 349.972 L 280.96 340.109 Z " fill="rgb(115,102,102)"/><path d=" M 401.96 288.821 L 382.96 288.821 L 280.96 332.821 L 292.134 340.109 L 401.96 288.821 Z " fill="rgb(115,102,102)"/><g><path d=" M 232.755 354.125 C 230.958 328.501 246.297 306.519 266.988 305.068 C 287.679 303.617 305.937 323.243 307.734 348.867 C 309.531 374.492 294.191 396.473 273.5 397.924 C 252.809 399.375 234.552 379.75 232.755 354.125 Z " fill="rgb(55,49,49)"/><path d=" M 239.241 352.316 C 237.564 328.406 252.144 307.876 271.779 306.499 C 291.414 305.122 308.716 323.416 310.393 347.326 C 312.07 371.236 297.49 391.766 277.855 393.143 C 258.22 394.52 240.917 376.226 239.241 352.316 Z " fill="rgb(115,102,102)"/><path d=" M 260.038 353.084 C 259.196 348.171 261.788 343.621 265.822 342.929 C 269.856 342.238 273.816 345.665 274.658 350.578 C 275.5 355.49 272.909 360.041 268.874 360.732 C 264.84 361.424 260.88 357.997 260.038 353.084 Z " fill="salmon"/></g></g></svg>
-        </div>
-    </div>
-
-    <p id="text">403 FORBIDDEN</p>
-    {{-- <p id="credit"><a href="{{ route('admin-dashboard') }}">Go Back</a></p> --}}
-
-<script type="text/javascript" src="https://github.com/michaelvillar/dynamics.js/releases/download/1.1.5/dynamics.min.js"></script>
-
+<svg xmlns="http://www.w3.org/2000/svg" id="robot-error" viewBox="0 0 260 118.9">
+            <defs>
+                <clipPath id="white-clip"><circle id="white-eye" fill="#cacaca" cx="130" cy="65" r="20" /> </clipPath>
+             <text id="text-s" class="error-text" y="106"> 403 </text>
+            </defs>
+              <path class="alarm" fill="#e62326" d="M120.9 19.6V9.1c0-5 4.1-9.1 9.1-9.1h0c5 0 9.1 4.1 9.1 9.1v10.6" />
+             <use xlink:href="#text-s" x="-0.5px" y="-1px" fill="black"></use>
+             <use xlink:href="#text-s" fill="#2b2b2b"></use>
+            <g id="robot">
+              <g id="eye-wrap">
+                <use xlink:href="#white-eye"></use>
+                <circle id="eyef" class="eye" clip-path="url(#white-clip)" fill="#000" stroke="#2aa7cc" stroke-width="2" stroke-miterlimit="10" cx="130" cy="65" r="11" />
+<ellipse id="white-eye" fill="#2b2b2b" cx="130" cy="40" rx="18" ry="12" />
+              </g>
+              <circle class="lightblue" cx="105" cy="32" r="2.5" id="tornillo" />
+              <use xlink:href="#tornillo" x="50"></use>
+              <use xlink:href="#tornillo" x="50" y="60"></use>
+              <use xlink:href="#tornillo" y="60"></use>
+            </g>
+          </svg>
+<h1>You are not allowed to enter here</h1>
+<h2>Go <a taget="_blank" href="{{route('admin-dashboard')}}">Home!</a></h2>
 <script type="text/javascript">
-	var lock = document.querySelector('#lock');
-var key = document.querySelector('#key');
+    var root = document.documentElement;
+var eyef = document.getElementById('eyef');
+var cx = document.getElementById("eyef").getAttribute("cx");
+var cy = document.getElementById("eyef").getAttribute("cy");
 
+document.addEventListener("mousemove", evt => {
+  let x = evt.clientX / innerWidth;
+  let y = evt.clientY / innerHeight;
 
-function keyAnimate(){
-    dynamics.animate(key, {
-        translateX: 33
-    }, {
-        type:dynamics.easeInOut,
-        duration:500,
-        complete:lockAnimate
-    })
-}
+  root.style.setProperty("--mouse-x", x);
+  root.style.setProperty("--mouse-y", y);
+  
+  cx = 115 + 30 * x;
+  cy = 50 + 30 * y;
+  eyef.setAttribute("cx", cx);
+  eyef.setAttribute("cy", cy);
+  
+});
 
+document.addEventListener("touchmove", touchHandler => {
+  let x = touchHandler.touches[0].clientX / innerWidth;
+  let y = touchHandler.touches[0].clientY / innerHeight;
 
-function lockAnimate(){
-    dynamics.animate(lock, {
-        rotateZ:-5,
-        scale:0.9
-        }, {
-            type:dynamics.bounce,
-            duration:3000,
-            complete:keyAnimate
-        })
-}
-
-
-setInterval(keyAnimate, 3000);
+  root.style.setProperty("--mouse-x", x);
+  root.style.setProperty("--mouse-y", y);
+});
 </script>
 </body>
 </html>

@@ -105,6 +105,8 @@
     $(document).ready(function(){
       $('#lightgallery').lightGallery();
     });
+
+    $("#input").focus();
   </script>
     
   </body>

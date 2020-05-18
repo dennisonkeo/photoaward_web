@@ -212,10 +212,13 @@
           disableAfterRate: false,
           onHover: function(currentIndex, currentRating, $el){
             $('.<?php echo $scale->name;?>').text(currentIndex);
-            // console.log($('.Creativity'));
+            console.log(currentIndex);
+            console.log('{{$scale->name}}');
           },
           onLeave: function(currentIndex, currentRating, $el){
-            $('.<?php echo $scale->name;?>').text(currentRating);
+            //$('.'+'{{$scale->name}}').text(currentRating);
+            console.log(currentIndex);
+            console.log('{{$scale->name}}');
           }
         });
         <?php echo $count++;?>
