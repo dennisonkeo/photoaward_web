@@ -1,0 +1,1 @@
+{"Result":{"ResultType":0,"ResultCode":2032,"ResultDesc":"The transaction receipt number does not exist.","OriginatorConversationID":"15788-16056577-1","ConversationID":"AG_20200501_00007ad5dc3ab7324685","TransactionID":"OE10000000","ReferenceData":{"ReferenceItem":{"Key":"Occasion"}}}}

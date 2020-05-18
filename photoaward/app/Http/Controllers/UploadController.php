@@ -40,9 +40,11 @@ class UploadController extends Controller
 
         $images = Upload::latest()->get();
 
+        $categories = Category::all();
+
         $category = '';
 
-        return view('stock', compact('images', 'category'));
+        return view('stocktest', compact('images', 'category', 'categories'));
     }
 
     public function stock_view(Upload $upload)
