@@ -92,17 +92,18 @@
 	<div style="margin-right:20px;" class="navbar-header"><button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span>
 	<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 
-	<a style="" href="/" id="ember1256" class="navbar-brand logo link-to-component ember-view"><img src="" class="logo-color" width="120"><img src="" class="logo-white" width="120">Picture+254</a></div>
+	<a style="" href="/" id="ember1256" class="navbar-brand logo link-to-component ember-view"><img src="images/logo-.png" class="logo-color" width="64">
+	</a></div>
 
-	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span><ul class="nav navbar-nav navbar-left"><li><a style="" href="/home?t20p=explore.signature&amp;t20s=top-bar" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li><li><a style="" href="/discover?t20p=explore.signature&amp;t20s=top-bar" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
-	<span style="display: none;" class="text-container">Discover</span></a></li></ul>
+	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span><ul class="nav navbar-nav navbar-left"><li><a style="" href="/" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li><li><a style="" href="/" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
+	<span class="text-container">Discover</span></a></li></ul>
 	<ul class="nav navbar-nav navbar-right"><!----><!---->
-	<li class="active dropdown" style="display: none;">
+	<li class="active dropdown">
   <a href="#" data-toggle="dropdown">
     <div id="ember1273" class="inline-block hexagon-avatar-container hexagon-avatar-component ember-view"><svg width="0" height="0"><clipPath id="hexagonClip" clipPathUnits="objectBoundingBox"><polygon points=".5 .0, .95 .25, .95 .76, .50 1.0, .05 .75, .05 .25"></polygon></clipPath></svg><img src="https://res.cloudinary.com/twenty20/image/upload/t_avatar_240x240/avatars/innoso-1589456966.jpg" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-small"><!----></div>
 
     <span class="text-container margin10l">
-      innoso
+      Picture+254
     </span>
 
     <i class="icon-carrot-white"></i>
@@ -116,18 +117,18 @@
 </a>    </li>
 
       <li>
-<a style="" href="/innoso/collections?t20p=explore.signature&amp;t20s=top-bar" id="ember1279" class="link-to-component ember-view">          My Collections
+<a style="" href="/innoso/collections?t20p=explore.signature&amp;t20s=top-bar" id="ember1279" class="link-to-component ember-view">          Wishlist
 </a>      </li>
 
 <!---->
       <li>
-<a style="" href="/innoso/loves?t20p=explore.signature&amp;t20s=top-bar" id="ember1284" class="link-to-component ember-view">          Loves
+<a style="" href="/innoso/loves?t20p=explore.signature&amp;t20s=top-bar" id="ember1284" class="link-to-component ember-view">          Likes
 </a>      </li>
 
 <!---->
-    <li>
+    {{-- <li>
 <a style="" href="/license-history?t20p=explore.signature&amp;t20s=top-bar" id="ember1289" class="menuitem link-to-component ember-view">        License History
-</a>    </li>
+</a>    </li> --}}
 
     <hr class="xlight slim">
 
@@ -213,8 +214,8 @@
 		<div class="row">
 		@foreach($categories as $category)
 			<div class="col-xs-12 col-sm-3">
-				<div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view"><a style="" href="#" id="ember1731" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">{{ $category->name }}</h5><p style="color: white;" class="pannel-head">3673 photos</p></div></div><span class="dark-overlay-block"></span></div></a>
-			</div><p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view">Because you follow the <span style="color: #0089d0;">{{ $category->name }}</span> collection</a></p>
+				<div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view"><a style="" href="#" id="ember1731" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">{{ $category->name }}</h5><p style="color: #ff0051;" class="pannel-head">(x) photos</p></div></div><span class="dark-overlay-block"></span></div></a>
+			</div><p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view"><span style="color: #0089d0;">{{ $category->name }}</span></a></p>
 		</div>
 		@endforeach
 
