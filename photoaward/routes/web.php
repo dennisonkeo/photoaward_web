@@ -23,6 +23,10 @@ Route::get('stock-cat', function () {
     return view('stockcat');
 });
 
+Route::get('stock-info', function () {
+    return view('stockinfo');
+});
+
 Route::get('stock-tests', function () {
     return view('stocktest2');
 });
