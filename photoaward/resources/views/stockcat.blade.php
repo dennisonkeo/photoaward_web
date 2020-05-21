@@ -2,7 +2,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Americana Stock Photo Collection ~ Twenty20</title>
+      <title>Picture+254</title>
       <script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=7645&amp;ref=https://www.twenty20.com/home/signature&amp;be=2164&amp;fe=6268&amp;dc=3583&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589961479324,%22n%22:0,%22f%22:7,%22dn%22:40,%22dne%22:322,%22c%22:322,%22s%22:389,%22ce%22:1494,%22rq%22:1495,%22rp%22:1909,%22rpe%22:1909,%22dl%22:1989,%22di%22:3570,%22ds%22:3579,%22de%22:3607,%22dc%22:6266,%22l%22:6266,%22le%22:6289%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589961600000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="fragment" content="!">
@@ -74,7 +74,7 @@
                
                @include('stockNav')
             </div>
-            <header style="background-image: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588713355/photosp/808da39f-e82b-4f31-9b16-1f22b6b3b85f/808da39f-e82b-4f31-9b16-1f22b6b3b85f.jpg);" id="ember10819" class="background-image-component ember-view">
+            <header style="background-image: url({{ asset('images') }}/{{ $cat->cover }});" id="ember10819" class="background-image-component ember-view">
                <div class="container-fluid collection-head navbar-background" style="padding-top: 82px;">
                   <div class="row">
                      <div class="container-fluid">
@@ -82,18 +82,18 @@
                            <div class="col-xs-12 clearfix">
                               <div style="display: inline-block; margin-bottom: 20px; padding: 30px;" class="row">
                                  <h1 style="padding-bottom: 10px;" class="caps">
-                                    <!---->Americana
+                                    <!---->{{ $cat->name }}
                                  </h1>
                                  <!---->
-                                 <p>The essence of what it means to be the rustic, authentic, hand-made frontier of American culture. Bison, wheat fields, smokey mountains, tanned leather, Ford motors and chopping wood are some of the things which create the spirit of Americana. </p>
+                                 <p>{{ $cat->description }}</p>
                                  <div style="" id="ember10820" class="follow-collection-button-component ember-view">
                                     <span id="ember10825" class="loading-button-component ember-view">
-                                       <button style="" class="btn btn-loading   btn-outline btn-sm" data-ember-action="" data-ember-action-10826="10826">
+                                       {{-- <button style="" class="btn btn-loading   btn-outline btn-sm" data-ember-action="" data-ember-action-10826="10826">
                                           <div id="ember10827" class="loading-spinner loading-spinner-component ember-view"></div>
                                           <div class="btn-loading-text">
-                                             <!---->Follow
+                                             Follow
                                           </div>
-                                       </button>
+                                       </button> --}}
                                     </span>
                                  </div>
                               </div>
@@ -101,7 +101,7 @@
                                  <!---->
                               </div>
                               <div class="row">
-                                 <div style="text-align: right; padding-right: 0;" class="col-md-12"><span class="pannel-head">Curated collection by @twenty20 and team</span></div>
+                                 <div style="text-align: right; padding-right: 0;" class="col-md-12"><span class="pannel-head"></span></div>
                               </div>
                            </div>
                         </div>
@@ -119,17 +119,18 @@
                      <div class="grid-real clearfix">
                         <div id="ember11140" class="js-scroll-preserver scroll-preserver-component ember-view"></div>
 
+					@foreach($cat->uploads as $image)
                         <div id="ember11142" class="tracking-section-component ember-view">
-                           <a style="" href="/photos/808da39f-e82b-4f31-9b16-1f22b6b3b85f?t20p=collection&amp;t20r=1&amp;t20s=photo-results" id="ember11143" class="link-to-component ember-view">
+                           <a style="" href="{{ route('image-details',$image->id) }}" id="ember11143" class="link-to-component ember-view">
                               <div data-ember-action="" data-ember-action-11144="11144">
                                  <div style="height: 273px; width: 364px;" id="ember11145" class="photo photo-grid-item-component  ember-view">
                                     <div class="grid-photo-block  ">
-                                       <!----><!----><!----><!----><span id="ember11146" class="image-loader image-loader-component ember-view"><img src="https://res.cloudinary.com/twenty20/private_images/t_low-fit/photosp/808da39f-e82b-4f31-9b16-1f22b6b3b85f/808da39f-e82b-4f31-9b16-1f22b6b3b85f.jpg" alt="stock photo"></span><!----><!----><!----><!---->
+                                       <!----><!----><!----><!----><span id="ember11146" class="image-loader image-loader-component ember-view"><img src="{{ asset('uploads') }}/{{ $image->imageName }}" alt="stock photo"></span><!----><!----><!----><!---->
                                        <div class="collect-zone">
                                           <div id="ember11147" class="gated-action-component ember-view">
                            <a class="btn btn-default btn-sm" data-ember-action="" data-ember-action-11148="11148"><i class="t20icon t20icon-collect"></i></a></div></div></div></div></div></a>
                         </div>
-
+					@endforeach
                      </div>
                      <div class="grid-footer">
                         <hr style="margin-left: 4px; margin-right: 4px;" class="light">

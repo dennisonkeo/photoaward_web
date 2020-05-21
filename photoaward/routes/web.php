@@ -177,6 +177,10 @@ Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-vi
 
 Route::get('stock-preview/{upload}', 'UploadController@stock_view_image')->name('stock-preview');
 
+Route::get('explore/{category}', 'UploadController@getCatImage')->name('explore');
+
+Route::get('image-details/{imageId}', 'UploadController@stockImageInfo')->name('image-details');
+
 Route::get('about', 'HomeController@about')->name('about');
 
 Route::get('response', 'HomeController@response')->name('response');
