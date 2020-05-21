@@ -2,7 +2,7 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Picture254</title>
+      <title>Picture+254</title>
       <script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=78163&amp;ref=https://www.twenty20.com/home/signature&amp;be=6321&amp;fe=78070&amp;dc=12353&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589458035974,%22n%22:0,%22u%22:6035,%22ue%22:6046,%22f%22:17,%22dn%22:77,%22dne%22:1183,%22c%22:1183,%22s%22:1936,%22ce%22:3143,%22rq%22:3143,%22rp%22:3641,%22rpe%22:3641,%22dl%22:6035,%22di%22:12333,%22ds%22:12349,%22de%22:12415,%22dc%22:78066,%22l%22:78066,%22le%22:78129%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589458200000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script><
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="fragment" content="!">
@@ -59,9 +59,9 @@
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-de55146a908b80d7fc58e13c95c3c8d5.js"></script>
       <noscript>
          <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
+            <img src="images/log_o.png">
             <h3>Your JavaScript is Disabled!</h3>
-            <p>Twenty20 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
+            <p>Picture+254 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
          </div>
       </noscript>
       <div id="ember-bootstrap-wormhole"></div>
@@ -79,7 +79,7 @@
       <!----><!---->
       <div class="row">
          <div class="col-md-12">
-            <h3 class="normal">Explore Collections You'll Like</h3>
+            <h3 class="normal">Picture+254 Photography MarketPlace</h3>
             <hr style="margin-top: 5px;" class="light">
          </div>
          <!---->

@@ -61,7 +61,7 @@
          <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
             <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
             <h3>Your JavaScript is Disabled!</h3>
-            <p>Twenty20 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
+            <p>Picture+254 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
          </div>
       </noscript>
       <div id="ember-bootstrap-wormhole"></div>
@@ -132,18 +132,20 @@
                         </div>
 					@endforeach
                      </div>
-                     <div class="grid-footer">
+
+                    {{--  <div class="grid-footer">
                         <hr style="margin-left: 4px; margin-right: 4px;" class="light">
                         <div class="icon-background"></div>
                         <i style="position: absolute; left: 50%; top: 0; margin-left: -21px; margin-top: -24px;" class="t20-icon-grey-sm"></i>
                      </div>
-                  </div>
-                  <div class="search-collections-container">
+ --}}               </div>
+                 {{--  <div class="search-collections-container">
                      <div id="ember12730" class="collection-grid-component ember-view">
                         <!---->
                      </div>
-                  </div>
-                  <div>
+                  </div> --}}
+
+                {{--   <div>
                      <div id="ember12731" class="page-footer-component ember-view">
                         <div id="footer">
                            <div style="padding: 10px 0;" class="container-fluid">
@@ -204,7 +206,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> --}}
                </div>
             </div>
 

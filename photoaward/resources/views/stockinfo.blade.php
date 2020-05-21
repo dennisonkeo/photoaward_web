@@ -268,11 +268,12 @@
                                           <!---->
                                        </div>
                                        <!---->
-                                       <div class="meta-group">
+                                    <!--    <div class="meta-group">
                                           <div class="keyword-list">
-                                             <a style="" href="/search/engineer?t20p=photo.index" id="ember29645" class="text-link dark small link-to-component ember-view">engineer</a><span class="comma">, </span><a style="" href="/search/design?t20p=photo.index" id="ember29647" class="text-link dark small link-to-component ember-view">design</a><span class="comma">, </span><a style="" href="/search/web?t20p=photo.index" id="ember29649" class="text-link dark small link-to-component ember-view">web</a><span class="comma">, </span><a style="" href="/search/website?t20p=photo.index" id="ember29651" class="text-link dark small link-to-component ember-view">website</a><span class="comma">, </span><a style="" href="/search/code?t20p=photo.index" id="ember29652" class="text-link dark small link-to-component ember-view">code</a><span class="comma">, </span><a style="" href="/search/develop?t20p=photo.index" id="ember29654" class="text-link dark small link-to-component ember-view">develop</a><span class="comma">, </span><a style="" href="/search/program?t20p=photo.index" id="ember29656" class="text-link dark small link-to-component ember-view">program</a><span class="comma">, </span><a style="" href="/search/software?t20p=photo.index" id="ember29657" class="text-link dark small link-to-component ember-view">software</a><span class="comma">, </span><a style="" href="/search/developer?t20p=photo.index" id="ember29659" class="text-link dark small link-to-component ember-view">developer</a><span class="comma">, </span><a style="" href="/search/programmer?t20p=photo.index" id="ember29661" class="text-link dark small link-to-component ember-view">programmer</a><span class="comma">, </span><!---->
-                                          </div>
-                                       </div>
+                                             <a style="" href="/search/engineer?t20p=photo.index" id="ember29645" class="text-link dark small link-to-component ember-view"></a><span class="comma">, </span><a style="" href="/search/design?t20p=photo.index" id="ember29647" class="text-link dark small link-to-component ember-view"></a><span class="comma">, </span><a style="" href="/search/web?t20p=photo.index" id="ember29649" class="text-link dark small link-to-component ember-view"></a><span class="comma">, </span><a style="" href="/search/website?t20p=photo.index" id="ember29651" class="text-link dark small link-to-component ember-view">website</a><span class="comma">, </span><a style="" href="/search/code?t20p=photo.index" id="ember29652" class="text-link dark small link-to-component ember-view">code</a><span class="comma">, </span><a style="" href="/search/develop?t20p=photo.index" id="ember29654" class="text-link dark small link-to-component ember-view">develop</a><span class="comma">, </span><a style="" href="/search/program?t20p=photo.index" id="ember29656" class="text-link dark small link-to-component ember-view">program</a><span class="comma">, </span><a style="" href="/search/software?t20p=photo.index" id="ember29657" class="text-link dark small link-to-component ember-view">software</a><span class="comma">, </span><a style="" href="/search/developer?t20p=photo.index" id="ember29659" class="text-link dark small link-to-component ember-view">developer</a><span class="comma">, </span><a style="" href="/search/programmer?t20p=photo.index" id="ember29661" class="text-link dark small link-to-component ember-view">programmer</a><span class="comma">, </span><!---->
+                                         <!--  </div>
+                                       </div> --> -->
+                                       
                                     </div>
                                  </div>
                               </div>
@@ -286,7 +287,7 @@
                                  </h6>
                                  <hr class="dark slim">
                                  <ul class="photo-details">
-                                    <li>
+                                    <!-- <li>
                                        <i class="t20icon t20icon-clock text-medium"></i>
                                        <span>
                                        Commercial Use:
@@ -324,19 +325,21 @@
                                     <li>
                                        <i class="t20icon t20icon-license text-light"></i>
                                        <span>
-                                       License:
+                                       Source:
                                        </span>
-                                       <a style="" href="/royalty-free-images?t20p=photo.index" id="ember29702" class="link-to-component ember-view">      Royalty-free images
+                                       <a style="" href="/royalty-free-images?t20p=photo.index" id="ember29702" class="link-to-component ember-view">      Picture+254
                                        </a>
-                                       <span class="margin10l">
+                                       <!-- span class="margin10l">
                                        <a href="#" class="t20icon t20icon-info-circle" data-ember-action="" data-ember-action-29707="29707">
                                        </a>
-                                       </span>
-                                    </li>
+                                       </span> -->
+                                    </li> -->
                                     <li>
                                        <i class="t20icon t20icon-photo text-light"></i>
                                        <span>
-                                       Size: 6000 x 4000px
+
+                                       File Size: 2000px not larger than 10 MB
+    </span>
                                        </span>
                                     </li>
                                     <li>
@@ -357,38 +360,23 @@
                                     <div class="size-con">
                                        <label class="ember-radio-button  radio-btn-white radio-button-component">
                                           <input aria-checked="false" type="radio" value="small" id="ember29715" class="radio-button-input-component ember-view">
-                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold">
-                                             <span>small</span>
-                                             <span class="pull-right">
-                                                <!---->
-                                             </span>
-                                          </div>
-                                          <div class="desc-size small text-medium">1047 x 698 px<span class="inline-divider">Web-ready</span></div>
-                                       </label>
-                                    </div>
-                                    <div class="size-con">
-                                       <label class="ember-radio-button  radio-btn-white radio-button-component">
-                                          <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
-                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold">
-                                             <span>medium</span>
-                                             <span class="pull-right">
-                                                <!---->
-                                             </span>
-                                          </div>
-                                          <div class="desc-size small text-medium">2095 x 1396 px<span class="inline-divider">6.9" x 4.6" @ 300 dpi</span></div>
-                                       </label>
-                                    </div>
-                                    <div class="size-con">
-                                       <label class="ember-radio-button checked radio-btn-white radio-button-component">
-                                          <input aria-checked="true" type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
-                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold">
-                                             <span>large</span>
-                                             <span class="pull-right">
-                                                <!---->
-                                             </span>
-                                          </div>
-                                          <div class="desc-size small text-medium">6000 x 4000 px<span class="inline-divider">20" x 13.3" @ 300 dpi</span></div>
-                                       </label>
+                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>Extra small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">509 x 339 px(7.07x4.71in) 72dpi<span class="inline-divider">0.2 MP</span></div>
+  </label>
+</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
+    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
+
+    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">727 x 484 px<span class="inline-divider">(10.10 x 6.72 in)72dpi</span><span class="inline-divider">0.4 MP</span></div>
+  </label>
+</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
+    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
+
+    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>medium</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">2125 x 1416 px<span class="inline-divider">(7.08 x 4.72in)300 dpi</span><span class="inline-divider">3.0 MP</span></div>
+  </label>
+</div><div class="size-con">  <label class="ember-radio-button checked radio-btn-white radio-button-component">
+    <input aria-checked="true" type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
+
+    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>large</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">6720 x 4480 px<span class="inline-divider">(22.40 x 14.93 in) 300 dpi </span><span class="inline-divider">30.1 MP</span></div>
+  </label>
                                     </div>
                                  </div>
                                  <div class="purchase-con">
@@ -477,7 +465,7 @@
                               </div>
                               <div class="row">
 
-                              	@foreach($authorImages as $image)
+                                    @foreach($authorImages as $image)
                                  <div class="col-xs-12 col-sm-3">
                                     <div style="" id="ember30056" class="photo-card linked-collection-component ember-view">
                                        <a style="" href="/collections/d1b72956-c497-4832-87cb-751f6f9d52a5?t20p=photo.index&amp;t20s=photo-details" id="ember30057" class="link-to-component ember-view">
@@ -566,7 +554,7 @@
                   </div>
                </div>
             </div>
-            <div id="ember29839" class="page-footer-component ember-view">
+           <!--  <div id="ember29839" class="page-footer-component ember-view">
                <div id="footer">
                   <div style="padding: 10px 0;" class="container-fluid">
                      <div class="col-sm-2 col-sm-offset-1 col-xs-6">
@@ -626,7 +614,7 @@
                      </div>
                   </div>
                </div>
-            </div>
+            </div> -->
             <div id="get-permission-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
                <div class="modal-dialog modal-sml">
                   <div class="modal-content">
@@ -646,7 +634,7 @@
                   <div class="modal-content">
                      <div class="modal-header">
                         <button type="button" data-dismiss="modal" class="close">×</button>
-                        <h4 class="modal-title">Loved This Photo</h4>
+                        <h4 class="modal-title">Liked This Photo</h4>
                      </div>
                      <div style="max-height: 800px;" class="modal-body collection-group-stack">
                         <div id="ember29959" class="infinite-scroll-component ember-view">
