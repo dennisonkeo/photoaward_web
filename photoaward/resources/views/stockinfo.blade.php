@@ -63,7 +63,7 @@
          <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
             <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
             <h3>Your JavaScript is Disabled!</h3>
-            <p>Twenty20 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
+            <p>Picture+254 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
          </div>
       </noscript>
       <div id="ember-bootstrap-wormhole"></div>
@@ -329,11 +329,24 @@
                                        </span>
                                        <a style="" href="/royalty-free-images?t20p=photo.index" id="ember29702" class="link-to-component ember-view">      Picture+254
                                        </a>
-                                       <!-- span class="margin10l">
+                                      <!--  <span class="margin10l">
                                        <a href="#" class="t20icon t20icon-info-circle" data-ember-action="" data-ember-action-29707="29707">
                                        </a>
-                                       </span> -->
-                                    </li> -->
+                                       </span>  -->
+                                    </li> 
+                                      <li>
+                                          <i class="t20icon t20icon-license text-light"></i>
+                                          <span>
+                                          License type:
+                                          </span>
+
+                                          <a style="" href="/royalty-free-images?t20p=photo.index" id="ember6967" class="link-to-component ember-view">      Rights managed
+                                          </a>
+                                          <span class="margin10l">
+                                          <a href="#" class="t20icon t20icon-info-circle" data-ember-action="" data-ember-action-6972="6972">
+                                          </a>
+                                          </span>
+                                    </li>
                                     <li>
                                        <i class="t20icon t20icon-photo text-light"></i>
                                        <span>
@@ -437,7 +450,7 @@
                                  </div>
                               </div>
                               <div class="photo-actions">
-                                 <div class="inline-btn-group"><span id="ember29777" class="gated-action-component ember-view"><button id="ember29778" class="btn btn-secondary only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29779" class="gated-action-component ember-view"><button style="white-space: normal;" class="btn btn-secondary btn-stretch" data-ember-action="" data-ember-action-29780="29780"><i class="t20icon t20icon-collect align-sub"></i>Add to Collection</button></span></div>
+                                 <div class="inline-btn-group"><span id="ember29777" class="gated-action-component ember-view"><button id="ember29778" class="btn btn-secondary only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29779" class="gated-action-component ember-view"><button style="white-space: normal;" class="btn btn-secondary btn-stretch" data-ember-action="" data-ember-action-29780="29780"><i class="t20icon t20icon-collect align-sub"></i>Add to Wishlist</button></span></div>
                                  <div id="ember29785" class="gated-action-component ember-view">
                                     <div id="ember29790" class="loading-button-component ember-view">
                                        <button style="white-space: normal;" class="btn btn-loading   btn-link btn-block text-light" data-ember-action="" data-ember-action-29791="29791">
@@ -554,6 +567,10 @@
                   </div>
                </div>
             </div>
+            <div class="container" style="text-align: right;">
+        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        </div>
+ </div>
            <!--  <div id="ember29839" class="page-footer-component ember-view">
                <div id="footer">
                   <div style="padding: 10px 0;" class="container-fluid">
@@ -1043,6 +1060,7 @@
                            <p class="text-center">Please take a moment and update your information.</p>
                         </div>
                         <div class="modal-footer">
+                              
                            <div class="row">
                               <div class="col-sm-6">
                                  <p style="line-height: 18px; font-size: 14px;" class="text-dark text-left">Note: After updating your credit card, invoices will be updated within 1 hour.</p>
@@ -1314,6 +1332,7 @@
             <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
          </div>
          <div class="autocomplete-results hidden"></div>
+
       </div>
    </body>
 </html>

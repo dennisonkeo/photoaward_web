@@ -1145,7 +1145,8 @@ Non-Professional - Single image entry fee: Ksh.100.
 
 </div>
 @include('menu')
-<div id="footer">
+
+    <div id="footer">
 
   <div class="container" style="text-align: right;">
         <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
