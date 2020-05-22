@@ -47,7 +47,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="/images/icon/apple-touch-icon-precomposed.png">
 <link href="/dist/css/site.min.b46ee8e1.css" media="all" rel="stylesheet" type="text/css" >
-<link href="https://www.stocksy.com/3084659/homeowner-thanks-the-delivery-service-for-his-groceries" id="canonical" rel="canonical" ><title>Homeowner Thanks the Delivery Service for His Groceries by suzanne clements  - Delivery, Grocery - Stocksy United</title><meta property="environment" content="production" >
+<link href="https://www.stocksy.com/3084659/homeowner-thanks-the-delivery-service-for-his-groceries" id="canonical" rel="canonical" ><title>PICTURE+254</title><meta property="environment" content="production" >
 <meta property="anonymousId" content="cbb6cc8607f949298cdda7cd3083b2e0" >
 <meta property="user" content="" >
 <meta property="userId" content="" >

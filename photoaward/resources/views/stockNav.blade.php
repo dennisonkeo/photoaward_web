@@ -74,7 +74,7 @@
   <ul role="menu" class="dropdown-menu">
 <li id="ember1331" class="ga-linker-component ember-view">      <a href="https://elements.envato.com/" target="_blank" class="external-link">
         <i class="t20icon t20icon-envato"></i>
-        Go To Envato Elements
+        Go To Picture+254
       </a>
 </li>
     <hr class="xlight slim">

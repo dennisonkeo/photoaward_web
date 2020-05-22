@@ -121,18 +121,20 @@
                         </div>
 					@endforeach
                      </div>
-                     <div class="grid-footer">
+
+                    {{--  <div class="grid-footer">
                         <hr style="margin-left: 4px; margin-right: 4px;" class="light">
                         <div class="icon-background"></div>
                         <i style="position: absolute; left: 50%; top: 0; margin-left: -21px; margin-top: -24px;" class="t20-icon-grey-sm"></i>
                      </div>
-                  </div>
-                  <div class="search-collections-container">
+ --}}               </div>
+                 {{--  <div class="search-collections-container">
                      <div id="ember12730" class="collection-grid-component ember-view">
-                        <!---->
+
                      </div>
-                  </div>
-                  <div>
+                  </div> --}}
+
+                {{--   <div>
                      <div id="ember12731" class="page-footer-component ember-view">
                         <div id="footer">
                            <div style="padding: 10px 0;" class="container-fluid">
@@ -193,7 +195,7 @@
                            </div>
                         </div>
                      </div>
-                  </div>
+                  </div> --}}
                </div>
             </div>
 
