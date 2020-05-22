@@ -6,7 +6,7 @@
       <script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=7645&amp;ref=https://www.twenty20.com/home/signature&amp;be=2164&amp;fe=6268&amp;dc=3583&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589961479324,%22n%22:0,%22f%22:7,%22dn%22:40,%22dne%22:322,%22c%22:322,%22s%22:389,%22ce%22:1494,%22rq%22:1495,%22rp%22:1909,%22rpe%22:1909,%22dl%22:1989,%22di%22:3570,%22ds%22:3579,%22de%22:3607,%22dc%22:6266,%22l%22:6266,%22le%22:6289%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589961600000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="fragment" content="!">
-      <meta name="twenty20-digital/config/environment" content="%7B%22modulePrefix%22%3A%22twenty20-digital%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22ENABLE_DS_FILTER%22%3Atrue%2C%22EXTEND_PROTOTYPES%22%3Atrue%2C%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22twenty20-digital%22%2C%22version%22%3A%220.0.2%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en%22%2C%22defaultFallback%22%3Atrue%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22'none'%22%2C%22script-src%22%3A%22'self'%20'unsafe-eval'%20'unsafe-inline'%20js.stripe.com%20checkout.stripe.com%20use.typekit.net%20dp3ogl28gtjh0.cloudfront.net%20cdn.segment.io%20www.google-analytics.com%20maps.googleapis.com%20%22%2C%22frame-src%22%3A%22js.stripe.com%20checkout.stripe.com%20dialog.filepicker.io%20www.filepicker.io%22%2C%22font-src%22%3A%22'self'%20fonts.gstatic.com%20www.twenty20.com%20data%3A%22%2C%22connect-src%22%3A%22'self'%20api-v2.twenty20.com%20staging-api-v2.twenty20.com%20checkout.stripe.com%20ajax.cdnjs.com%20api.segment.io%20d24ilbxry44jok.cloudfront.net%20widget.cloudinary.com%20app.getsentry.com%22%2C%22img-src%22%3A%22'self'%20*%20data%3A%20app.getsentry.com%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%20fonts.googleapis.com%20use.typekit.net%22%2C%22media-src%22%3A%22'self'%20dp3ogl28gtjh0.cloudfront.net%22%2C%22object-src%22%3A%22cdnjs.cloudflare.com%22%7D%2C%22SEARCH_ENDPOINT%22%3A%22search%22%2C%22SOLR_SEARCH%22%3A%22false%22%2C%22API_HOST%22%3A%22https%3A%2F%2Fapi-v2.twenty20.com%22%2C%22API_V3_HOST%22%3A%22https%3A%2F%2Fapi-v3.twenty20.com%22%2C%22PIXELS_HOST%22%3A%22https%3A%2F%2Fdc4fj9o1wzm3u.cloudfront.net%22%2C%22UPLOAD_HOST%22%3A%22https%3A%2F%2Fd24ilbxry44jok.cloudfront.net%22%2C%22COMP_HOST%22%3A%22https%3A%2F%2Fdigital-comp.twenty20.com%22%2C%22ENVATO_SSO_SERVER%22%3A%22https%3A%2F%2Faccount.envato.com%22%2C%22ELEMENTS_ACCOUNT_URL%22%3A%22https%3A%2F%2Faccount.elements.envato.com%22%2C%22ELEMENTS_PRICING_URL%22%3A%22https%3A%2F%2Felements.envato.com%2Ftwenty20%2Fconnect%22%2C%22OAUTH_FACEBOOK_CLIENT_ID%22%3A%22421986587813170%22%2C%22OAUTH_INSTAGRAM_CLIENT_ID%22%3A%220582843ecca8460b8034c9e50388dea9%22%2C%22FILEPICKER_API_KEY%22%3A%22AuvE5RQc0SF26ucbFUaDDz%22%2C%22STRIPE_PUBLISHABLE_KEY%22%3A%22pk_live_xpg13zMyJgibTEeq71wxoH1t00paLwqW7l%22%2C%22SEGMENTIO_API_KEY%22%3A%22l4o2od3lg2%22%2C%22SENTRY_DSN_KEY%22%3A%22https%3A%2F%2Fda8301b8318d4ca8aa3e9969aa86b1ab%40sentry.io%2F1339230%22%2C%22GRID_ROW_HEIGHT%22%3A250%2C%22robots%22%3A%22index%2Call%2Cfollow%22%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%7D">
+
       <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
       <link rel="mask-icon" href="/twenty20-icon.svg" color="#1488C9">
       <link rel="apple-touch-icon-precomposed" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
@@ -46,28 +46,17 @@
    </head>
    <body class="ember-application collection" style="padding-top: 0px; margin-top: 0px;">
       <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
-      <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-      <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
       <!-- segment -->
       <script type="text/javascript">
          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";}}();
       </script>
       <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5683134"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-      <noscript><img src="//bat.bing.com/action/0?ti=5683134&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-88c00f99a64532dd87dee9ed54a90886.js"></script>
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-de55146a908b80d7fc58e13c95c3c8d5.js"></script>
-      <noscript>
-         <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
-            <h3>Your JavaScript is Disabled!</h3>
-            <p>Picture+254 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
-         </div>
-      </noscript>
+
       <div id="ember-bootstrap-wormhole"></div>
-      <iframe name="stripeXDM_default417516_provider" id="stripeXDM_default417516_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=https%3A%2F%2Fwww.twenty20.com&amp;stripe_xdm_c=default417516&amp;stripe_xdm_p=1#__stripe_transport__" __idm_frm__="25769803827" frameborder="0"></iframe>
-      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.27700544825579365"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.6050964660387931" alt="" src="https://bat.bing.com/action/0?ti=5683134&amp;Ver=2&amp;mid=81acfb89-b7f6-375f-dc18-64a958dce4ce&amp;sid=8ccae694-02f8-998d-000b-5b59f46ad1c0&amp;pi=1001431019&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;p=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;r=&amp;lt=3607&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=296711" width="0" height="0"></div>
-      <iframe src="https://js.stripe.com/v2/m/outer.html#referrer=&amp;title=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;muid=61796979-de6b-4f76-b6e4-c45d7d8195f0&amp;sid=569079c9-0a7f-4538-a2b5-6ea1cd46e93e&amp;preview=false&amp;" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" frameborder="0"></iframe>
+
       <div id="ember651" class="ember-view">
          <div class="ember-view-wrap">
             <div id="ember10697" class="navbar-zone top-bar-component ember-view">
@@ -141,7 +130,7 @@
  --}}               </div>
                  {{--  <div class="search-collections-container">
                      <div id="ember12730" class="collection-grid-component ember-view">
-                        <!---->
+
                      </div>
                   </div> --}}
 

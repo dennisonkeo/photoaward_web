@@ -9,6 +9,8 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span><ul class="nav navbar-nav navbar-left"><li><a style="" href="/" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li><li><a style="" href="/" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
 	<span class="text-container">Discover</span></a></li></ul>
 	<ul class="nav navbar-nav navbar-right"><!----><!---->
+
+@if(Auth::check())
 	<li class="active dropdown">
   <a href="#" data-toggle="dropdown">
     <div id="ember1273" class="inline-block hexagon-avatar-container hexagon-avatar-component ember-view"><svg width="0" height="0"><clipPath id="hexagonClip" clipPathUnits="objectBoundingBox"><polygon points=".5 .0, .95 .25, .95 .76, .50 1.0, .05 .75, .05 .25"></polygon></clipPath></svg><img src="https://res.cloudinary.com/twenty20/image/upload/t_avatar_240x240/avatars/innoso-1589456966.jpg" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-small"><!----></div>
@@ -50,12 +52,15 @@
 
 <!---->
     <li>
-      <a tabindex="-1" class="menuitem" data-ember-action="" data-ember-action-1299="1299">
+      <a href="{{ route('logout') }}" tabindex="-1" class="menuitem" data-ember-action="" data-ember-action-1299="1299">
         Logout
       </a>
     </li>
   </ul>
 </li>
+
+@endif
+
 <!----><li style="display: none;"><a style="" href="/notifications?t20p=explore.signature&amp;t20s=top-bar" id="ember1304" class="link-to-component ember-view"><i class="t20icon t20icon-alert"></i><span class="text-container visible-xs-inline">Activity</span><!----></a></li><li style="display: none;" id="ember1309" class="dropdown locale-setter-component ember-view"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="t20icon t20icon-globe"></i><!----><span class="caret"></span></a><ul role="menu" style="" class="dropdown-menu"><li class="feedback-link margin10tb text-center"><span class="beta-flag">BETA </span>We're still working on translations.<a href="https://twenty20product.typeform.com/to/gV7oxG" target="_blank">Give us feedback here</a></li><hr class="xlight slim"><li class=""><a href="#" data-ember-action="" data-ember-action-1318="1318">Deutsch</a></li><li class="active"><a href="#" data-ember-action="" data-ember-action-1319="1319">English</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1320="1320">Español (ES)</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1321="1321">Español (LA)</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1322="1322">Français</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1323="1323">Italiano</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1324="1324">日本語</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1325="1325">한국어</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1326="1326">Português</a></li></ul></li>
 <li class="dropdown">
   <a href="#" data-toggle="dropdown" style="display: none;">
