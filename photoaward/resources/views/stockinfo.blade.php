@@ -95,7 +95,7 @@
                               </div>
                               <div style="padding-left: 75px;">
                                  <p style="margin: 5px 0 0px;" class="text-dark small">Photo by</p>
-                                 <p style="margin-top: 0px; line-height: 10px;" class="light-text"><a style="" href="/" id="ember29634" class="link-to-component ember-view">@picture+254</a></p>
+                                 <p style="margin-top: 0px; line-height: 10px;" class="light-text"><a style="" href="/" id="ember29634" class="link-to-component ember-view">@picture+254(Fetch the id of the person who uploaded the image with their image)</a></p>
                               </div>
                            </div>
                            <div class="img-preview">
@@ -105,7 +105,7 @@
                                  </div>
                               </div>
                               <div class="engage">
-                                 <span id="ember29636" class="gated-action-component ember-view"><button id="ember29637" class="btn btn-link text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639">1 love</button></span><!---->
+                                 <span id="ember29636" class="gated-action-component ember-view"><button id="ember29637" class="btn btn-link text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639">1 fetch how many likes the photo has and one can also like it here </button></span><!---->
                               </div>
                               <div class="row">
                                  <div class="col-md-12 extended-photo-details clearfix">
@@ -189,10 +189,10 @@
 
                                           <a style="" href="/royalty-free-images?t20p=photo.index" id="ember6967" class="link-to-component ember-view">      Rights managed
                                           </a>
-                                          <span class="margin10l">
+                                         {{--  <span class="margin10l">
                                           <a href="#" class="t20icon t20icon-info-circle" data-ember-action="" data-ember-action-6972="6972">
                                           </a>
-                                          </span>
+                                          </span> --}}
                                     </li>
                                     <li>
                                        <i class="t20icon t20icon-photo text-light"></i>
@@ -352,7 +352,7 @@
                   </div>
                </div>
             </div>
-            <div class="container" style="text-align: right;">
+            <div class="container" style="text-align: center;">
         <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
         </div>
  </div>
@@ -443,10 +443,10 @@
                            <h4 class="normal margin20b">
                               <!---->
                               <!---->        
-                           </h4>
+                    {{--        </h4> --}}
                            <!---->
                            <!---->
-                           <div class="form-group margin30b">
+                          {{--  <div class="form-group margin30b">
                               <div class="checkbox">
                                  <label class="checked">
                                  <input type="checkbox" id="ember27123" class="ember-checkbox -checkbox-component ember-view">
@@ -583,7 +583,7 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> --}}
          <div id="wh-modals"></div>
       </div>
       <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">

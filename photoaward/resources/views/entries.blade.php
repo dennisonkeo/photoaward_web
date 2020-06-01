@@ -155,10 +155,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
  @include('footer')
   
-    <div class="container" style="text-align: center;">
+   {{--  <div class="container" style="text-align: center;">
         <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
         </div>
-    </div>
+    </div> --}}
 
 </footer>  
 

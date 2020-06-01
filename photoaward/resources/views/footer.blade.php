@@ -9,7 +9,7 @@
             <div class="col-12 col-md-3">
                 <div class="media-wrap" >
                     <a href="{{route('/')}}">
-                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 8.9rem;">
+                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 6.9rem;">
                     </a>
                 </div>  
             </div>
