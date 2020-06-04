@@ -1,3 +1,5 @@
+
+
 <html itemscope="" itemtype="http://schema.org/Product" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-i7-active wf-museosans-n9-active wf-active" lang="en">
    <head>
       <meta charset="utf-8">
@@ -6,7 +8,6 @@
       <script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=5081&amp;ref=https://www.twenty20.com/photos/2d7f6c06-92b3-4c35-a980-9fed28126c0c&amp;be=1907&amp;fe=4363&amp;dc=3135&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589525121650,%22n%22:0,%22f%22:17,%22dn%22:50,%22dne%22:745,%22c%22:745,%22s%22:986,%22ce%22:1251,%22rq%22:1251,%22rp%22:1520,%22rpe%22:1828,%22dl%22:1573,%22di%22:3135,%22ds%22:3135,%22de%22:3147,%22dc%22:4363,%22l%22:4363,%22le%22:4371%7D,%22navigation%22:%7B%7D%7D&amp;fp=2127&amp;jsonp=NREUM.setToken"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589525400000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="fragment" content="!">
-      <meta name="twenty20-digital/config/environment" content="%7B%22modulePrefix%22%3A%22twenty20-digital%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22ENABLE_DS_FILTER%22%3Atrue%2C%22EXTEND_PROTOTYPES%22%3Atrue%2C%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22twenty20-digital%22%2C%22version%22%3A%220.0.2%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en%22%2C%22defaultFallback%22%3Atrue%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22'none'%22%2C%22script-src%22%3A%22'self'%20'unsafe-eval'%20'unsafe-inline'%20js.stripe.com%20checkout.stripe.com%20use.typekit.net%20dp3ogl28gtjh0.cloudfront.net%20cdn.segment.io%20www.google-analytics.com%20maps.googleapis.com%20%22%2C%22frame-src%22%3A%22js.stripe.com%20checkout.stripe.com%20dialog.filepicker.io%20www.filepicker.io%22%2C%22font-src%22%3A%22'self'%20fonts.gstatic.com%20www.twenty20.com%20data%3A%22%2C%22connect-src%22%3A%22'self'%20api-v2.twenty20.com%20staging-api-v2.twenty20.com%20checkout.stripe.com%20ajax.cdnjs.com%20api.segment.io%20d24ilbxry44jok.cloudfront.net%20widget.cloudinary.com%20app.getsentry.com%22%2C%22img-src%22%3A%22'self'%20*%20data%3A%20app.getsentry.com%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%20fonts.googleapis.com%20use.typekit.net%22%2C%22media-src%22%3A%22'self'%20dp3ogl28gtjh0.cloudfront.net%22%2C%22object-src%22%3A%22cdnjs.cloudflare.com%22%7D%2C%22SEARCH_ENDPOINT%22%3A%22search%22%2C%22SOLR_SEARCH%22%3A%22false%22%2C%22API_HOST%22%3A%22https%3A%2F%2Fapi-v2.twenty20.com%22%2C%22API_V3_HOST%22%3A%22https%3A%2F%2Fapi-v3.twenty20.com%22%2C%22PIXELS_HOST%22%3A%22https%3A%2F%2Fdc4fj9o1wzm3u.cloudfront.net%22%2C%22UPLOAD_HOST%22%3A%22https%3A%2F%2Fd24ilbxry44jok.cloudfront.net%22%2C%22COMP_HOST%22%3A%22https%3A%2F%2Fdigital-comp.twenty20.com%22%2C%22ENVATO_SSO_SERVER%22%3A%22https%3A%2F%2Faccount.envato.com%22%2C%22ELEMENTS_ACCOUNT_URL%22%3A%22https%3A%2F%2Faccount.elements.envato.com%22%2C%22ELEMENTS_PRICING_URL%22%3A%22https%3A%2F%2Felements.envato.com%2Ftwenty20%2Fconnect%22%2C%22OAUTH_FACEBOOK_CLIENT_ID%22%3A%22421986587813170%22%2C%22OAUTH_INSTAGRAM_CLIENT_ID%22%3A%220582843ecca8460b8034c9e50388dea9%22%2C%22FILEPICKER_API_KEY%22%3A%22AuvE5RQc0SF26ucbFUaDDz%22%2C%22STRIPE_PUBLISHABLE_KEY%22%3A%22pk_live_xpg13zMyJgibTEeq71wxoH1t00paLwqW7l%22%2C%22SEGMENTIO_API_KEY%22%3A%22l4o2od3lg2%22%2C%22SENTRY_DSN_KEY%22%3A%22https%3A%2F%2Fda8301b8318d4ca8aa3e9969aa86b1ab%40sentry.io%2F1339230%22%2C%22GRID_ROW_HEIGHT%22%3A250%2C%22robots%22%3A%22index%2Call%2Cfollow%22%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%7D">
       <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
       <link rel="mask-icon" href="/twenty20-icon.svg" color="#1488C9">
       <link rel="apple-touch-icon-precomposed" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
@@ -71,440 +72,827 @@
       <div id="ember652" class="ember-view">
          <div class="ember-view-wrap">
             <div id="ember29503" class="navbar-zone top-bar-component ember-view">
-               <nav role="navigation" class="navbar ">
-                  <div style="margin-right:20px;" class="navbar-header"><button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a style="" href="/?t20p=photo.index&amp;t20s=top-bar" id="ember29504" class="navbar-brand logo link-to-component ember-view"><img src="{{ asset('images/logo-.png') }}" width="64" class="logo-color"><img src="logo-.png" width="120" class="logo-white"></a></div>
-                  <div class="collapse navbar-collapse navbar-ex1-collapse">
-                     <span id="mobile-search-form" class="visible-xs-inline">
-                        <form class="navbar-form js-search-form" data-ember-action="" data-ember-action-29505="29505">
-                           <div class="form-group">
-                              <div class="input-group"><input type="text" placeholder="Search..." id="ember29510" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div>
-                           </div>
-                        </form>
-                     </span>
-                     <ul class="nav navbar-nav navbar-left">
-                        <li><a style="" href="/home?t20p=photo.index&amp;t20s=top-bar" id="ember29511" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li>
-                        <li><a style="" href="/discover?t20p=photo.index&amp;t20s=top-bar" id="ember29516" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i><span class="text-container">Discover</span></a></li>
-                     </ul>
-                     <ul class="nav navbar-nav navbar-right">
-                    
-                        <li class="active dropdown">
-                           <a href="#" data-toggle="dropdown">
-                              <div id="ember29521" class="inline-block hexagon-avatar-container hexagon-avatar-component ember-view">
-                                 <svg width="0" height="0">
-                                    <clipPath id="hexagonClip" clipPathUnits="objectBoundingBox">
-                                       <polygon points=".5 .0, .95 .25, .95 .76, .50 1.0, .05 .75, .05 .25"></polygon>
-                                    </clipPath>
-                                 </svg>
-                                 <img src="https://res.cloudinary.com/twenty20/image/upload/t_avatar_240x240/avatars/sade3-1589781771.jpg" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-small">
+               @include('stockNav')
+            </div>
+            <div class="container-fluid">
+               <div class="row zone-featured-collections">
+                  <div class="col-md-6 col-no-padding mozaic-left-zone">
+                     <a style="" href="/collections/b9a6de98-0751-46fb-9e21-2ad763fff4e6?t20p=curated-collections.index" id="ember35745" class="link-to-component ember-view">
+                        <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember35746" class="photo-background-component photo-background-component ember-view">
+                           <div class="overlay-container col-padding">
+                              <div class="overlay-centered">
+                                 <h4 class="title-over-image">COVID / Coronavirus</h4>
+                                 <p class="pannel-head small">Curated Collection</p>
                               </div>
-                              <span class="text-container margin10l">
-                              Picture+254
-                              </span>
-                              <i class="icon-carrot-white"></i>
-                              <i class="icon-carrot"></i>
-                              
-                           </a>
-                           <ul role="menu" class="dropdown-menu">
-                              <li>
-                                 <a style="" href="/sade3/photos?t20p=photo.index&amp;t20s=top-bar" id="ember29522" class="link-to-component ember-view">        Profile
-                                 </a>    
-                              </li>
-                              <li>
-                                 <a style="" href="/sade3/collections?t20p=photo.index&amp;t20s=top-bar" id="ember29527" class="link-to-component ember-view">          My Collections
-                                 </a>      
-                              </li>
-                              <!---->
-                              <li>
-                                 <a style="" href="/sade3/loves?t20p=photo.index&amp;t20s=top-bar" id="ember29532" class="link-to-component ember-view">          Likes
-                                 </a>      
-                              </li>
-                            
-	                             <!--  <li>
-	                                 <a style="" href="/license-history?t20p=photo.index&amp;t20s=top-bar" id="ember29537" class="menuitem link-to-component ember-view">        
-	                                 </a>    
-	                              </li> -->
-                              <hr class="xlight slim">
-                              <li style="position: relative;">
-                                 <a style="" href="/settings?t20p=photo.index&amp;t20s=top-bar" id="ember29542" class="menuitem link-to-component ember-view">
-                                    Settings
-                                    <!---->
-                                 </a>
-                              </li>
-                              <!---->
-                              <li>
-                                 <a tabindex="-1" class="menuitem" data-ember-action="" data-ember-action-29547="29547">
-                                 Logout
-                                 </a>
-                              </li>
-                           </ul>
-                        </li>
-                       
-                     <!--    <li>
-                           <a style="display: none;" href="/notifications?t20p=photo.index&amp;t20s=top-bar" id="ember29552" class="link-to-component ember-view">
-                              <i class="t20icon t20icon-alert"></i><span class="text-container visible-xs-inline">Activity</span>
-                           </a>
-                        </li> -->
-                        <!-- <li style="display: none;"id="ember29557" class="dropdown locale-setter-component ember-view">
-                           <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                              <i class="t20icon t20icon-globe"></i><span class="caret"></span>
-                           </a>
-                           <ul role="menu" style="" class="dropdown-menu">
-                              <li class="feedback-link margin10tb text-center"><span class="beta-flag">BETA </span>We're still working on translations.<a href="https://twenty20product.typeform.com/to/gV7oxG" target="_blank">Give us feedback here</a></li>
-                              <hr class="xlight slim">
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29566="29566">Deutsch</a></li>
-                              <li class="active"><a href="#" data-ember-action="" data-ember-action-29567="29567">English</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29568="29568">Español (ES)</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29569="29569">Español (LA)</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29570="29570">Français</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29571="29571">Italiano</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29572="29572">日本語</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29573="29573">한국어</a></li>
-                              <li class=""><a href="#" data-ember-action="" data-ember-action-29574="29574">Português</a></li>
-                           </ul>
-                        </li> -->
-                        <li class="dropdown">
-                           <a href="#" data-toggle="dropdown"style="display: none;">
-                           <i style="top: 10px;" class="t20icon t20icon-more">
-                           </i>
-                           <span class="text-container visible-xs-inline">
-                           More
-                           </span>
-                           </a>
-                           <ul role="menu" class="dropdown-menu">
-                              <li id="ember29579" class="ga-linker-component ember-view">      <a href="https://elements.envato.com/" target="_blank" class="external-link">
-                                 <i class="t20icon t20icon-envato"></i>
-                                 Go To Envato Elements
-                                 </a>
-                              </li>
-                              <hr class="xlight slim">
-                              <li>
-                                 <a style="display: none;" href="/challenges?t20p=photo.index&amp;t20s=top-bar" id="ember29584" class="link-to-component ember-view">        Challenges
-                                 </a>    
-                              </li>
-                              <li>
-                                 <a style="" href="/social-media-marketing?t20p=photo.index&amp;t20s=top-bar" id="ember29589" class="link-to-component ember-view">        Social Media Marketing Calendar
-                                 </a>    
-                              </li>
-                              <hr class="xlight slim">
-                              <li>
-                                 <a style="" href="/jobs?t20p=photo.index&amp;t20s=top-bar" id="ember29594" class="link-to-component ember-view">        Join the team
-                                 </a>    
-                              </li>
-                              <li>
-                                 <a style="" href="/customers?t20p=photo.index&amp;t20s=top-bar" id="ember29599" class="link-to-component ember-view">        Customers
-                                 </a>    
-                              </li>
-                              
-                              <hr class="xlight slim">
-                              <li>
-                                 <a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fphotos%2F63fbadf6-ca76-471e-be1d-c3b9dd68c271" id="ember29604" class="support-link-component ember-view">        Help center
-                                 </a>    
-                              </li>
-                              <hr class="xlight slim">
-                              <li>
-                                 <div class="help-zone">
-                                    <p>
-                                       Have a question?
-                                    </p>
-                                    <a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fphotos%2F63fbadf6-ca76-471e-be1d-c3b9dd68c271" id="ember29613" class="support-link-component ember-view">          Contact Us
-                                    </a>      
+                           </div>
+                           <span class="dark-overlay-block"></span>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-md-6 col-no-padding mozaic-zone">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-md-6 col-no-padding">
+                              <a style="" href="/collections/2a0c23dc-4a68-4aad-bb4a-fd1871c2908a?t20p=curated-collections.index" id="ember36100" class="link-to-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36101" class="photo-background-component photo-background-component ember-view">
+                                    <div class="overlay-container col-padding">
+                                       <div class="overlay-centered">
+                                          <h5 class="title-over-image">Mail, Delivery, and Packages</h5>
+                                          <p class="pannel-head small">Curated Collection</p>
+                                       </div>
+                                    </div>
+                                    <span class="dark-overlay-block"></span>
                                  </div>
-    </li>
-  </ul> 
-</li>
-</ul><span id="search-form" class="hidden-xs"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-35738="35738"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember35743" class="form-control input-sm ember-text-field -text-field-component ember-view" autocomplete="off"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span></div><div id="ember35744" class="upgrade-prompt-component ember-view"><!----></div></nav></div><div class="container-fluid"><div class="row zone-featured-collections"><div class="col-md-6 col-no-padding mozaic-left-zone"><a style="" href="/collections/b9a6de98-0751-46fb-9e21-2ad763fff4e6?t20p=curated-collections.index" id="ember35745" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember35746" class="photo-background-component photo-background-component ember-view"><div class="overlay-container col-padding"><div class="overlay-centered"><h4 class="title-over-image">COVID / Coronavirus</h4><p class="pannel-head small">Curated Collection</p></div></div><span class="dark-overlay-block"></span></div></a></div><div class="col-md-6 col-no-padding mozaic-zone"><div class="container-fluid"><div class="row"><div class="col-md-6 col-no-padding"><a style="" href="/collections/2a0c23dc-4a68-4aad-bb4a-fd1871c2908a?t20p=curated-collections.index" id="ember36100" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36101" class="photo-background-component photo-background-component ember-view"><div class="overlay-container col-padding"><div class="overlay-centered"><h5 class="title-over-image">Mail, Delivery, and Packages</h5><p class="pannel-head small">Curated Collection</p></div></div><span class="dark-overlay-block"></span></div></a></div><div class="col-md-6 col-no-padding"><a style="" href="/collections/3aa628b4-0272-4193-bd9a-d3429190d39c?t20p=curated-collections.index" id="ember36106" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36107" class="photo-background-component photo-background-component ember-view"><div class="overlay-container col-padding"><div class="overlay-centered"><h5 class="title-over-image">Video Chat</h5><p class="pannel-head small">Curated Collection</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="row"><div class="col-md-6 col-no-padding"><a style="" href="/collections/240ac969-539f-4315-8723-1b7137aee0fa?t20p=curated-collections.index" id="ember36113" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36114" class="photo-background-component photo-background-component ember-view"><div class="overlay-container col-padding"><div class="overlay-centered"><h5 class="title-over-image">Food Delivery &amp; Takeout</h5><p class="pannel-head small">Curated Collection</p></div></div><span class="dark-overlay-block"></span></div></a></div><div class="col-md-6 col-no-padding"><a style="" href="/collections/4d11f7c2-ee73-4eef-b02c-ee0608543543?t20p=curated-collections.index" id="ember36119" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36120" class="photo-background-component photo-background-component ember-view"><div class="overlay-container col-padding"><div class="overlay-centered"><h5 class="title-over-image">Working From Home</h5><p class="pannel-head small">Curated Collection</p></div></div><span class="dark-overlay-block"></span></div></a></div></div></div></div></div></div><div style="padding-top: 40px; max-width: 1230px;" class="container-fluid"><div class="row"><div class="col-xs-12"><h3 id="curated-top" class="normal">Curated Collections</h3><hr class="light"></div></div><div class="row"><div class="col-xs-12 col-md-2"><div class="visible-sm visible-xs margin20b"><div id="ember35783" class="select-input-component ember-view"><!-- http://emberjs.com/deprecations/v1.x/#toc_ember-select -->
-
-<select data-ember-action="" data-ember-action-35784="35784">
-    <option disabled="" selected="" value="">
-      Select Category
-    </option>
-
-    <option value="Show All">
-      Show All
-    </option>
-    <option value="People ">
-      People 
-    </option>
-    <option value="The Great Outdoors">
-      The Great Outdoors
-    </option>
-    <option value="Architecture">
-      Architecture
-    </option>
-    <option value=" Food">
-      Food
-    </option>
-    <option value="Experience KE">
-      Experience KE
-    </option>
-    <option value="Altered Images">
-      Altered Images
-    </option>
-</select>
-</div></div><div class="hidden-xs hidden-sm"><ul class="nav nav-pills nav-stacked"><li><a style="" href="/discover?t20p=curated-collections.index" id="ember35785" class="link-to-component ember-view">Show All</a></li><li><a style="" href="/discover/animals-and-nature?t20p=curated-collections.index" id="ember35786" class="link-to-component ember-view">Animals &amp; Nature</a></li><li><a style="" href="/discover/art-music-and-culture?t20p=curated-collections.index" id="ember35787" class="link-to-component ember-view">Art, Music &amp; Culture</a></li><li><a style="" href="/discover/beauty-care?t20p=curated-collections.index" id="ember35788" class="link-to-component ember-view">Beauty Care</a></li><li><a style="" href="/discover/celebrations?t20p=curated-collections.index" id="ember35789" class="link-to-component ember-view">Celebrations</a></li><li><a style="" href="/discover/daily-life?t20p=curated-collections.index" id="ember35790" class="link-to-component ember-view">Daily Life</a></li><li><a style="" href="/discover/education?t20p=curated-collections.index" id="ember35791" class="link-to-component ember-view">Education</a></li><li><a style="" href="/discover/family?t20p=curated-collections.index" id="ember35792" class="link-to-component ember-view">Family</a></li><li><a style="" href="/discover/fashion?t20p=curated-collections.index" id="ember35793" class="link-to-component ember-view">Fashion</a></li><li><a style="" href="/discover/food-and-drink?t20p=curated-collections.index" id="ember35794" class="link-to-component ember-view">Food &amp; Drink</a></li><li><a style="" href="/discover/fun-activities?t20p=curated-collections.index" id="ember35795" class="link-to-component ember-view">Fun Activities</a></li><li><a style="" href="/discover/health?t20p=curated-collections.index" id="ember35796" class="link-to-component ember-view">Health</a></li><li><a style="" href="/discover/holidays?t20p=curated-collections.index" id="ember35797" class="link-to-component ember-view">Holidays</a></li><li><a style="" href="/discover/home?t20p=curated-collections.index" id="ember35798" class="link-to-component ember-view">Home</a></li><li><a style="" href="/discover/inspiration?t20p=curated-collections.index" id="ember35799" class="link-to-component ember-view">Inspiration</a></li><li><a style="" href="/discover/leisure-and-relaxation?t20p=curated-collections.index" id="ember35800" class="link-to-component ember-view">Leisure &amp; Relaxation</a></li><li><a style="" href="/discover/love?t20p=curated-collections.index" id="ember35801" class="link-to-component ember-view">Love</a></li><li><a style="" href="/discover/people?t20p=curated-collections.index" id="ember35802" class="link-to-component ember-view">People</a></li><li><a style="" href="/discover/seasonal?t20p=curated-collections.index" id="ember35803" class="link-to-component ember-view">Seasonal</a></li><li><a style="" href="/discover/sports?t20p=curated-collections.index" id="ember35804" class="link-to-component ember-view">Sports</a></li><li><a style="" href="/discover/sustainability?t20p=curated-collections.index" id="ember35805" class="link-to-component ember-view">Sustainability</a></li><li><a style="" href="/discover/technology?t20p=curated-collections.index" id="ember35806" class="link-to-component ember-view">Technology</a></li><li><a style="" href="/discover/travel?t20p=curated-collections.index" id="ember35807" class="link-to-component ember-view">Travel</a></li><li><a style="" href="/discover/urban?t20p=curated-collections.index" id="ember35808" class="link-to-component ember-view">Urban</a></li><li><a style="" href="/discover/work?t20p=curated-collections.index" id="ember35809" class="link-to-component ember-view">Work</a></li></ul></div></div><div class="col-xs-12 col-md-10"><div class="clearfix"><div id="ember35811" class="infinite-scroll-component ember-view"><div id="ember35812" class="js-scroll-preserver scroll-preserver-component ember-view"></div><div class="clearfix"><div class="row"><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36127" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/ad03b460-3f6c-49a9-a03a-01b096dbb82b?t20p=curated-collections.index" id="ember36128" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1533702101/photosp/06e53117-f03d-4c4f-a09e-94d7b7336ade/06e53117-f03d-4c4f-a09e-94d7b7336ade.jpg) no-repeat center center;" id="ember36129" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Activism</h5><p style="color: white;" class="pannel-head">881 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36134" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/f329b89b-4a54-4cb9-8f0c-e81ed5733f80?t20p=curated-collections.index" id="ember36135" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1555169835/photosp/231da5df-7e06-4d8a-bdac-99ed6ebbed9c/231da5df-7e06-4d8a-bdac-99ed6ebbed9c.jpg) no-repeat center center;" id="ember36136" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Adults</h5><p style="color: white;" class="pannel-head">963 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36141" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/e3f6cc0b-d504-4368-a74a-d360cc5927f2?t20p=curated-collections.index" id="ember36142" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1482155781/photosp/3abb9401-28c4-4ba1-ae77-e32942795e6d/3abb9401-28c4-4ba1-ae77-e32942795e6d.jpg) no-repeat center center;" id="ember36143" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Adventure Selfies</h5><p style="color: white;" class="pannel-head">541 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36148" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/5b1f53cd-5029-4cd6-b7c6-c98e2f7522cc?t20p=curated-collections.index" id="ember36149" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1530118957/photosp/3ef92420-cbf3-4c6d-8ec8-7a6560b873c3/3ef92420-cbf3-4c6d-8ec8-7a6560b873c3.jpg) no-repeat center center;" id="ember36150" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Airports and Traveling</h5><p style="color: white;" class="pannel-head">1284 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36155" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/62720e1e-31c2-422c-88a9-99350b755dc9?t20p=curated-collections.index" id="ember36156" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1572074814/photosp/263c3037-07f3-43c5-92ec-dbf13ae20e47/263c3037-07f3-43c5-92ec-dbf13ae20e47.jpg) no-repeat center center;" id="ember36157" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Amazing Animals</h5><p style="color: white;" class="pannel-head">2861 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36162" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/732be9a5-71f2-452c-b801-4cac827b2395?t20p=curated-collections.index" id="ember36163" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1506970143/photosp/f728a554-c192-46df-88f3-9f32e6a71c51/f728a554-c192-46df-88f3-9f32e6a71c51.jpg) no-repeat center center;" id="ember36164" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Amazing Men</h5><p style="color: white;" class="pannel-head">1936 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36169" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/02a4efda-8306-4960-b5ef-22bfa246ae39?t20p=curated-collections.index" id="ember36170" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1549504956/photosp/b3d9ddc1-1dfa-44ec-975d-602b2c4dd4c0/b3d9ddc1-1dfa-44ec-975d-602b2c4dd4c0.jpg) no-repeat center center;" id="ember36171" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">American Football</h5><p style="color: white;" class="pannel-head">766 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36176" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/078bbdb3-3b1c-4347-bbc4-4e0166de45b7?t20p=curated-collections.index" id="ember36177" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588713355/photosp/808da39f-e82b-4f31-9b16-1f22b6b3b85f/808da39f-e82b-4f31-9b16-1f22b6b3b85f.jpg) no-repeat center center;" id="ember36178" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Americana</h5><p style="color: white;" class="pannel-head">198 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36183" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/646467be-105d-422c-bbef-bed10b94505e?t20p=curated-collections.index" id="ember36184" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1535323657/photosp/5dc017fc-26fa-4573-999b-672a52de60b0/5dc017fc-26fa-4573-999b-672a52de60b0.jpg) no-repeat center center;" id="ember36185" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Art, Artists, and Museums</h5><p style="color: white;" class="pannel-head">581 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36190" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/cb49d6be-a416-4207-a63a-b45535c0d645?t20p=curated-collections.index" id="ember36191" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1561374943/photosp/df05fb53-c142-48c2-a05e-b23dd351b9e6/df05fb53-c142-48c2-a05e-b23dd351b9e6.jpg) no-repeat center center;" id="ember36192" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">At the Cafe</h5><p style="color: white;" class="pannel-head">1974 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36197" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/ae794d18-41a5-4e29-866d-7a6f743121c5?t20p=curated-collections.index" id="ember36198" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588669369/photosp/3d1dffd4-3cd6-4709-a08f-7f59ff9e966d/3d1dffd4-3cd6-4709-a08f-7f59ff9e966d.jpg) no-repeat center center;" id="ember36199" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">At the Lake</h5><p style="color: white;" class="pannel-head">2067 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36204" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/b867e826-5d46-4256-88ce-067f8d4010f3?t20p=curated-collections.index" id="ember36205" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1522393592/photosp/e2613067-eea8-4c62-a47d-c1a591d1caa3/e2613067-eea8-4c62-a47d-c1a591d1caa3.jpg) no-repeat center center;" id="ember36206" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Augmented and Virtual Reality</h5><p style="color: white;" class="pannel-head">155 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36211" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/e2cc92c8-33c1-4e79-907f-5841bf2d23fc?t20p=curated-collections.index" id="ember36212" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1490026391/photosp/947943cb-3c78-4028-9487-a08492ea7c55/947943cb-3c78-4028-9487-a08492ea7c55.jpg) no-repeat center center;" id="ember36213" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Autumn Light</h5><p style="color: white;" class="pannel-head">540 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36218" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/2de9da24-1fd1-4c0e-ad1f-21bdb4339ef9?t20p=curated-collections.index" id="ember36219" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1549909181/photosp/ae3f0897-0ee4-4540-9036-8fb3b4a56910/ae3f0897-0ee4-4540-9036-8fb3b4a56910.jpg) no-repeat center center;" id="ember36220" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Awesome Adventures</h5><p style="color: white;" class="pannel-head">3921 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36225" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/3274e307-a931-4034-8980-dd1dc48298a8?t20p=curated-collections.index" id="ember36226" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1531637549/photosp/a7b62df2-1013-4367-bcb5-d975c9d7e192/a7b62df2-1013-4367-bcb5-d975c9d7e192.jpg) no-repeat center center;" id="ember36227" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Baby Boomers</h5><p style="color: white;" class="pannel-head">1238 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36232" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/ae148f3f-6add-471c-9c0a-e354c7488bea?t20p=curated-collections.index" id="ember36233" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1511286901/photosp/c82d2f6e-2ee6-477d-bb5c-7c13c054430f/c82d2f6e-2ee6-477d-bb5c-7c13c054430f.jpg) no-repeat center center;" id="ember36234" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Baby Fever</h5><p style="color: white;" class="pannel-head">2398 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36239" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/6da18c03-95c6-4cda-baed-96834fc2a6f1?t20p=curated-collections.index" id="ember36240" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1475700674/photosp/3becb318-9447-4688-9358-a487e1d364d0/3becb318-9447-4688-9358-a487e1d364d0.jpg) no-repeat center center;" id="ember36241" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Backgrounds</h5><p style="color: white;" class="pannel-head">6698 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36246" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/82a7abe5-a439-48be-a101-95c83d6e03d2?t20p=curated-collections.index" id="ember36247" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588714709/photosp/48077c20-96fc-43f6-86bf-c3680cff2dff/48077c20-96fc-43f6-86bf-c3680cff2dff.jpg) no-repeat center center;" id="ember36248" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Backyard BBQ</h5><p style="color: white;" class="pannel-head">730 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36253" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/d815978a-ef91-4f74-8e80-5b5901b362b1?t20p=curated-collections.index" id="ember36254" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1532954538/photosp/4268e0c8-21c4-4695-9434-61c704f758c3/4268e0c8-21c4-4695-9434-61c704f758c3.jpg) no-repeat center center;" id="ember36255" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Baking</h5><p style="color: white;" class="pannel-head">830 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36260" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/36afeae5-1003-49cf-bea4-da23e61e9320?t20p=curated-collections.index" id="ember36261" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1529034981/photosp/a79bdc4b-2faa-4ba0-b9d9-2d896f5d42a4/a79bdc4b-2faa-4ba0-b9d9-2d896f5d42a4.jpg) no-repeat center center;" id="ember36262" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Basketball</h5><p style="color: white;" class="pannel-head">356 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36267" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/86d7f0a6-d8be-4223-a09e-46e9a9c795d7?t20p=curated-collections.index" id="ember36268" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588713284/photosp/104a9be3-ce69-4d18-8154-7ae0cb52f726/104a9be3-ce69-4d18-8154-7ae0cb52f726.jpg) no-repeat center center;" id="ember36269" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Beach Day </h5><p style="color: white;" class="pannel-head">5362 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36274" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/0c0902aa-0b96-4a08-8663-bc209b1f8fbf?t20p=curated-collections.index" id="ember36275" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1583018912/photosp/72c11f67-ab53-42f0-ad8d-8fb46509d9fc/72c11f67-ab53-42f0-ad8d-8fb46509d9fc.jpg) no-repeat center center;" id="ember36276" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Beach Landscapes</h5><p style="color: white;" class="pannel-head">4376 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36281" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/3cc1d965-73f3-4463-aaf9-c35ec7d49d5a?t20p=curated-collections.index" id="ember36282" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1539722727/photosp/10b3b9f3-8ad7-4d32-bc48-f248387e828d/10b3b9f3-8ad7-4d32-bc48-f248387e828d.jpg) no-repeat center center;" id="ember36283" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Beautiful and Black</h5><p style="color: white;" class="pannel-head">3164 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36288" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/489cddf4-0197-45ef-947a-bfa997d347e7?t20p=curated-collections.index" id="ember36289" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1529172036/photosp/99e53182-3e5e-4dc5-b973-f895b031e46a/99e53182-3e5e-4dc5-b973-f895b031e46a.jpg) no-repeat center center;" id="ember36290" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Beauty Care</h5><p style="color: white;" class="pannel-head">1723 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36295" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/4aa67dd2-838c-4f2b-b8d4-9a500c6915b9?t20p=curated-collections.index" id="ember36296" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1587165704/photosp/b2965ec5-2b29-4d9a-b8d3-916277a88852/b2965ec5-2b29-4d9a-b8d3-916277a88852.jpg) no-repeat center center;" id="ember36297" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Bed Vibes</h5><p style="color: white;" class="pannel-head">613 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36302" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/94de99ea-577d-4a1b-96f6-d84c7a6033bf?t20p=curated-collections.index" id="ember36303" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1588716235/photosp/572b963e-f718-4fd8-a74c-3e236279b888/572b963e-f718-4fd8-a74c-3e236279b888.jpg) no-repeat center center;" id="ember36304" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Beer</h5><p style="color: white;" class="pannel-head">1184 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36309" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/2371b132-141f-44d9-8ac0-b42ae5fcb4a1?t20p=curated-collections.index" id="ember36310" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1572186066/photosp/006d0ee6-5c75-4734-9a3c-418d73111368/006d0ee6-5c75-4734-9a3c-418d73111368.jpg) no-repeat center center;" id="ember36311" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Bicycling</h5><p style="color: white;" class="pannel-head">2113 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36316" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/6783ed79-e474-4587-ad1d-11bd3c8dc7ef?t20p=curated-collections.index" id="ember36317" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1530779705/photosp/dc3dedf5-231a-4976-bd33-87b0628976e0/dc3dedf5-231a-4976-bd33-87b0628976e0.jpg) no-repeat center center;" id="ember36318" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Boho Dreams</h5><p style="color: white;" class="pannel-head">331 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36323" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/eb40d11f-eef1-457b-ad6f-8743d8f35476?t20p=curated-collections.index" id="ember36324" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1458396750/photosp/79778e0e-0d94-41ed-9087-855785557fc3/79778e0e-0d94-41ed-9087-855785557fc3.jpg) no-repeat center center;" id="ember36325" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Brainstorming and Collaboration</h5><p style="color: white;" class="pannel-head">561 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div><div class="col-xs-12 col-sm-6 col-md-4"><div style="" id="ember36330" class="photo-card linked-collection-component ember-view"><a style="" href="/collections/2c19f424-6e16-4fef-8bc3-bf7cc67695d2?t20p=curated-collections.index" id="ember36331" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(https://res.cloudinary.com/twenty20/private_images/t_standard-fit/v1552437403/photosp/a9fd2e0c-f6e7-4d76-b392-49e191dca7fd/a9fd2e0c-f6e7-4d76-b392-49e191dca7fd.jpg) no-repeat center center;" id="ember36332" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">Breakfast and Brunch</h5><p style="color: white;" class="pannel-head">1515 photos</p></div></div><span class="dark-overlay-block"></span></div></a></div></div></div></div><div style="height: 150px; position: relative;"><!----><!----></div></div></div></div></div></div><div id="ember35813" class="page-footer-component ember-view"><div id="footer"><div style="padding: 10px 0;" class="container-fluid"><div class="col-sm-2 col-sm-offset-1 col-xs-6"><p class="pannel-head text-medium">Explore</p><ul class="small"><li><a style="" href="/home/signature?t20p=curated-collections.index&amp;t20s=footer" id="ember35818" class="text-link dark link-to-component ember-view">Signature Collection</a></li><li><a style="" href="/home/following?t20p=curated-collections.index&amp;t20s=footer" id="ember35823" class="text-link dark link-to-component ember-view">Following Feed</a></li><li><a style="" href="/discover?t20p=curated-collections.index&amp;t20s=footer" id="ember35828" class="text-link dark link-to-component ember-view">Collections</a></li><li><a style="" href="/challenges?t20p=curated-collections.index&amp;t20s=footer" id="ember35833" class="text-link dark link-to-component ember-view">Challenges</a></li><li><a style="" href="/social-media-marketing?t20p=curated-collections.index&amp;t20s=footer" id="ember35838" class="text-link dark link-to-component ember-view">Social Media Marketing Calendar</a></li></ul></div><div class="col-sm-2 col-xs-6"><p class="pannel-head text-medium">About</p><ul class="small"><li><a style="" href="/customers?t20p=curated-collections.index&amp;t20s=footer" id="ember35847" class="text-link dark link-to-component ember-view">Customers</a></li><li><a style="" href="/pricing?t20p=curated-collections.index&amp;t20s=footer" id="ember35852" class="text-link dark link-to-component ember-view">Pricing</a></li><li><a style="" href="/legal?t20p=curated-collections.index&amp;t20s=footer" id="ember35857" class="text-link dark link-to-component ember-view">Our License</a></li><li><a style="" href="/jobs?t20p=curated-collections.index&amp;t20s=footer" id="ember35862" class="text-link dark link-to-component ember-view">Jobs</a></li><li><a style="" href="/royalty-free-images?t20p=curated-collections.index&amp;t20s=footer" id="ember35867" class="text-link dark link-to-component ember-view">Royalty-free images</a></li></ul></div><div class="clearfix visible-xs-block"></div><div class="col-sm-2 col-xs-6"><p class="pannel-head text-medium">Support</p><ul class="small"><li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35876" class="text-link dark support-link-component ember-view">FAQ</a></li><li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35881" class="text-link dark support-link-component ember-view">Contact Us</a></li><li><a style="" href="/legal/user-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35886" class="text-link dark link-to-component ember-view">User Terms</a></li><li><a style="" href="/legal/contributor-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35891" class="text-link dark link-to-component ember-view">Contributor Terms</a></li><li><a style="" href="/legal/privacy?t20p=curated-collections.index&amp;t20s=footer" id="ember35896" class="text-link dark link-to-component ember-view">Privacy Policy</a></li></ul></div><div class="col-sm-2 col-xs-6"><p class="pannel-head text-medium">Connect</p><ul class="social-connect small"><li><a href="http://blog.twenty20.com" class="text-link dark">Blog</a></li><li><a href="http://instagram.com/twenty20" target="_blank"><i class="icon-ig-foot"></i>Instagram</a></li><li><a href="http://facebook.com/twenty20" target="_blank"><i class="icon-fb-foot"></i>Facebook</a></li><li><a href="http://twitter.com/twenty20app" target="_blank"><i class="icon-tw-foot"></i>Twitter</a></li></ul></div><div class="col-sm-3 col-xs-12"><a style="color: white; border: 2px solid white; width: 170px; height: 50px; line-height: 28px;" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35909" class="btn btn-default support-link-component ember-view">Contact Us</a><a style="margin-top: 6%;" href="https://itunes.apple.com/us/app/twenty20/id577323200?mt=8" target="_blank" class="appstore-badge"></a><p class="small text-dark margin20t margin0b">Now available through</p><div id="ember35918" class="ga-linker-component ember-view"><a href="https://elements.envato.com/" target="_blank" class="external-link"><img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato_elements_white_green.png" style="width: 75%;"></a></div></div></div><div class="footer-base"><div class="container-fluid"><div class="row"><div class="col-sm-10 col-sm-offset-1 col-xs-12"><div class="t20-icon"></div><p class="small">Created in sunny southern California. Appreciated by people around the world. Committed to making you smile.<br>Copyright © 2020 Twenty20, Inc. All rights reserved. All photos © their respective owners.</p></div></div></div></div></div></div><!----><div id="ember35927" class="auth-modal-component ember-view"><div id="auth-modal" aria-hidden="true" role="dialog" tabindex="-1" class="auth-component modal fade"><div class="modal-dialog modal-sml"><div class="modal-content"><!----><!----><!----><!----><!----><!----><!----><!----><!----></div></div></div></div><div id="ember35928" class="auto-auth-indicator-component ember-view"><div id="auto-auth-indicator" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content rounded-corners">
-      <div class="modal-body padding40">
-        <div class="container-fluid padding0lr">
-          <div class="flex-column padding20t padding40b align-items-center justify-content-center">
-            <div class="margin20b">
-              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato-t20.png" alt="Joint Logos" style="height: 75px;">
-            </div>
-
-            <h3 class="normal text-center">
-              Loading
-            </h3>
-
-            <h3 class="margin0b normal text-center">
-              <span id="ember35933" class="inline -default-014544282960154021589525124459-component ember-view"><div class="spinner1"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></span>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div><div id="ember35934" class="envato-consent-component ember-view"><div id="envato-consent-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
-  <div class="modal-dialog modal-lg">
-
-    <div class="modal-content border-none">
-      <div class="modal-body padding0tb padding0lr">
-
-        <div class="mobile-blue-bar bg-primary"></div>
-
-        <div class="container-fluid">
-          <div class="row full-row">
-
-            <div class="col-xs-12 col-md-9 col-lg-8 padding0lr">
-              <div class="container-fluid main-content">
-                <div class="row centered-row">
-                  <div class="col-sm-8 col-md-10 col-lg-9 text-center">
-                    <div class="row title-row margin40t margin20b">
-                      <div class="col-sm-5 text-center">
-                        <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20">
-                      </div>
-
-                      <div class="col-sm-2 col-lg-1 text-center">
-                        <h2 class="text-medium">+</h2>
-                      </div>
-
-                      <div class="col-sm-5 text-center">
-                        <img src="https://dp3ogl28gtjh0.cloudfront.net/
-digital/envato/126959-52a3d6af-6b58-47d4-b008-fdecfa4c7047-logo_transparent-original-1396827260.png" alt="Envato">
-                      </div>
-                    </div>
-
-                    <hr class="xlight slim">
-
-                    <h5>
-                        The Twenty20 you know and love is joining forces with Envato, and its world-leading Elements creative subscription.
-                    </h5>
-
-                    <div class="small-photo-popout margin20t">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/fun-party-confetti-colourful-friends-happy-celebrate-hipster-laughing-girl-friends_t20_eow3ob.jpg" alt="Twenty20 + Envato together at last. Hooray!">
-
-                          <p class="margin10t text-medium small">
-                            Photo by @criene
-                          </p>
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-no-padding">
+                              <a style="" href="/collections/3aa628b4-0272-4193-bd9a-d3429190d39c?t20p=curated-collections.index" id="ember36106" class="link-to-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36107" class="photo-background-component photo-background-component ember-view">
+                                    <div class="overlay-container col-padding">
+                                       <div class="overlay-centered">
+                                          <h5 class="title-over-image">Video Chat</h5>
+                                          <p class="pannel-head small">Curated Collection</p>
+                                       </div>
+                                    </div>
+                                    <span class="dark-overlay-block"></span>
+                                 </div>
+                              </a>
+                           </div>
                         </div>
-                      </div>
-                    </div>
-
-                      <h5 class="normal">
-                      We're starting work behind the scenes to connect the two subscriptions, so you'll get even more value from your account without paying a cent more.
-                      </h5>
-                  </div>
-                </div>
-
-                <div class="row centered-row">
-                  <div class="col-xs-12 col-sm-8 col-md-10 col-lg-8 text-center">
-                    <div class="cta-block text-center">
-                      <button class="empty-button btn-block" data-ember-action="" data-ember-action-35947="35947">
-                        <span class="bouquet">
-                          🎉
-                        </span>
-
-                          <div id="ember35952" class="loading-button-component ember-view"><button style="" type="submit" class="btn btn-loading   btn-primary btn-lg btn-block"><div id="ember35953" class="loading-spinner loading-spinner-component ember-view"></div><div class="btn-loading-text"><!---->Now take me to the photos!</div></button></div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row centered-row margin20b">
-                  <div class="col-sm-8 col-md-10 text-center">
-                    <p class="margin20t">
-                      By clicking here, you agree to the new
-<a style="" href="/legal/user-terms?t20p=curated-collections.index" id="ember35958" class="link-to-component ember-view">                        User Terms</a>,
-<a style="" href="/legal/contributor-terms?t20p=curated-collections.index" id="ember35963" class="link-to-component ember-view">                        Contributor Terms</a>, and
-<a style="" href="/legal/privacy?t20p=curated-collections.index" id="ember35972" class="link-to-component ember-view">                        Privacy Policy</a>.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="row footer bg-brand-light">
-                  <div class="col-md-12">
-<a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35977" class="text-dark normal text-center margin10tb support-link-component ember-view">                      Questions? Get in touch <u>here</u> with Customer Support
-</a>                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3 col-lg-4 bg-primary photo-popout-col">
-              <div class="photo-popout margin40t">
-                <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/fun-party-confetti-colourful-friends-happy-celebrate-hipster-laughing-girl-friends_t20_eow3ob.jpg" alt="Twenty20 + Envato together at last. Hooray!">
-              </div>
-
-              <p class="margin10t text-center text-medium small">
-                Photo by @criene
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div><div id="ember35986" class="elements-welcome-component ember-view"><div id="elements-welcome-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content rounded-corners">
-      <div class="modal-body padding40">
-          <div class="visible-xs-block flex-column align-items-center justify-content-center margin40b">
-            <div class="text-center">
-              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
-            </div>
-
-            <h3 class="text-medium margin0tb margin20lr normal text-center">+</h3>
-
-            <div class="text-center">
-              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
-            </div>
-          </div>
-
-          <div class="hidden-xs flex-row align-items-center margin40b">
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
-
-            <h3 class="text-medium margin0tb margin20lr normal">+</h3>
-
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
-          </div>
-
-        <h3 class="normal margin40b margin0t">
-            <span class="normal">You are now signed in to</span> Twenty20 <span class="normal">with your Envato account.</span>
-                  </h3>
-
-        <h4 class="normal margin20b">
-<!---->
-<!---->        </h4>
-
-<!---->
-<!---->
-        <div class="form-group margin30b">
-          <div class="checkbox">
-            <label class="checked">
-              <input type="checkbox" id="ember35991" class="ember-checkbox -checkbox-component ember-view">
-              <span class="normal text-dark">
-                  Send me tips, trends, freebies, updates &amp; offers. You can unsubscribe at any time.
-              </span>
-            </label>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <div id="ember36000" class="loading-button-component ember-view"><button style="" class="btn btn-loading   btn-primary" data-ember-action="" data-ember-action-36001="36001"><div id="ember36002" class="loading-spinner loading-spinner-component ember-view"></div><div class="btn-loading-text"><!---->Start exploring</div></button></div>
-        </div>
-
-        <p class="small text-dark margin10t margin0b text-center">
-          By clicking this button, I agree to Twenty20's
-
-<a style="" href="/legal/user-terms?t20p=curated-collections.index" id="ember36007" class="link-to-component ember-view">            User Terms
-</a>
-          and
-
-<a style="" href="/legal/contributor-terms?t20p=curated-collections.index" id="ember36016" class="link-to-component ember-view">            Contributor Terms</a>.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</div><div id="ember36021" class="envato-merge-component ember-view"><div id="envato-merge-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content rounded-corners">
-      <div class="modal-body padding40">
-          <div class="visible-xs-block flex-column align-items-center justify-content-center margin40b">
-            <div class="text-center">
-              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
-            </div>
-
-            <h3 class="text-medium margin0tb margin20lr normal text-center">+</h3>
-
-            <div class="text-center">
-              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
-            </div>
-          </div>
-
-          <div class="hidden-xs flex-row align-items-center margin40b">
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
-
-            <h3 class="text-medium margin0tb margin20lr normal">+</h3>
-
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
-          </div>
-
-            <h3 class="normal margin40b margin0t">
-              We think you may already have an account with Twenty20.
-            </h3>
-
-            <h5 class="normal margin20b">
-              Sign in with your Twenty20 credentials to merge your Envato and Twenty20 accounts
-            </h5>
-
-            <div class="container-fluid padding0lr-as">
-              <div class="flex-row justify-content-center">
-                <div class="col-xs-12 col-sm-10 padding0lr-as">
-<!---->
-                    <form data-ember-action="" data-ember-action-36030="36030">
-                      <div class="form-group">
-                        <label for="email-verfication-input">
-                          Email
-                        </label>
-
-                        <input type="email" required="" id="ember36035" class="form-control ember-text-field -text-field-component ember-view">
-                      </div>
-
-                      <div class="form-group">
-                        <label for="password-verfication-input">
-                          Password
-                        </label>
-
-                        <div id="ember36044" class="password-input-wrapper password-input-component ember-view"><input name="password" type="password" required="" placeholder="Enter your password" id="password-verification-input" class="form-control ember-text-field -text-field-component ember-view"><button type="button" class="btn btn-link password-input-toggle"><span class="text-light t20icon t20icon-show-password"></span></button></div>
-
-                        <div class="margin10t margin50b">
-                          <a href="#" class="pull-right small " data-ember-action="" data-ember-action-36046="36046">
-                            Forgot Your Password?
-                          </a>
+                        <div class="row">
+                           <div class="col-md-6 col-no-padding">
+                              <a style="" href="/collections/240ac969-539f-4315-8723-1b7137aee0fa?t20p=curated-collections.index" id="ember36113" class="link-to-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36114" class="photo-background-component photo-background-component ember-view">
+                                    <div class="overlay-container col-padding">
+                                       <div class="overlay-centered">
+                                          <h5 class="title-over-image">Food Delivery &amp; Takeout</h5>
+                                          <p class="pannel-head small">Curated Collection</p>
+                                       </div>
+                                    </div>
+                                    <span class="dark-overlay-block"></span>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="col-md-6 col-no-padding">
+                              <a style="" href="/collections/4d11f7c2-ee73-4eef-b02c-ee0608543543?t20p=curated-collections.index" id="ember36119" class="link-to-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36120" class="photo-background-component photo-background-component ember-view">
+                                    <div class="overlay-container col-padding">
+                                       <div class="overlay-centered">
+                                          <h5 class="title-over-image">Working From Home</h5>
+                                          <p class="pannel-head small">Curated Collection</p>
+                                       </div>
+                                    </div>
+                                    <span class="dark-overlay-block"></span>
+                                 </div>
+                              </a>
+                           </div>
                         </div>
-                      </div>
-
-                      <div class="form-group">
-                        <div id="ember36055" class="loading-button-component ember-view"><button style="" type="submit" class="btn btn-loading   btn btn-primary btn-block"><div id="ember36056" class="loading-spinner loading-spinner-component ember-view"></div><div class="btn-loading-text"><!---->Sign In</div></button></div>
-                      </div>
-                    </form>
-
-                    <div class="flex-row justify-content-center margin30t">
-<div id="ember36057" class="click-tracker-component ember-view">                        <a href="#" class="small " data-ember-action="" data-ember-action-36058="36058">
-                          No thanks, don't merge my accounts.
-                        </a>
-</div>                    </div>
-                </div>
-              </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-                </div>
-    </div>
-  </div>
-</div></div><!----><section id="ember36063" class="notifications-list notifications-list-component ember-view"><!----></section><div id="ember36064" class="collect-modal-component ember-view"><!----></div><div id="ember36065" class="update-credit-card-modal-component ember-view"><div id="update-credit-card-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade"><div class="modal-dialog modal-md"><div class="modal-content"><div style="padding: 20px;" class="modal-header"><button style="position: relative; top: 4px;" class="close" data-ember-action="" data-ember-action-36066="36066">×</button><h4 class="margin0tb">Please update your credit card.</h4></div><div class="modal-body clearfix text-center"><img style="height: 100px;" src="https://dp3ogl28gtjh0.cloudfront.net/digital/icons/credit-card-icon@2x.png" class="margin20b"><h5 class="text-center">There is a issue processing your credit card.</h5><p class="text-center">Please take a moment and update your information.</p></div><div class="modal-footer"><div class="row"><div class="col-sm-6"><p style="line-height: 18px; font-size: 14px;" class="text-dark text-left">Note: After updating your credit card, invoices will be updated within 1 hour.</p></div><div class="col-sm-6"><button class="btn btn-sm btn-primary" data-ember-action="" data-ember-action-36067="36067">Update credit card</button></div></div></div></div></div></div></div></div><div id="wh-modals"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div><div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;"><div class="autocomplete-wait hidden"><p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p></div><div class="autocomplete-results hidden"></div></div>  <div class="container" style="text-align: right;">
-        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
-        </div>
- </div></body></html>
+            <div style="padding-top: 40px; max-width: 1230px;" class="container-fluid">
+               <div class="row">
+                  <div class="col-xs-12">
+                     <h3 id="curated-top" class="normal">Curated Collections</h3>
+                     <hr class="light">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-xs-12 col-md-2">
+                     <div class="visible-sm visible-xs margin20b">
+                        <div id="ember35783" class="select-input-component ember-view">
+                           <!-- http://emberjs.com/deprecations/v1.x/#toc_ember-select -->
+                           <select data-ember-action="" data-ember-action-35784="35784">
+                              <option disabled="" selected="" value="">
+                                 Select Category
+                              </option>
+                              <option value="Show All">
+                                 Show All
+                              </option>
+                              <option value="People ">
+                                 People 
+                              </option>
+                              <option value="The Great Outdoors">
+                                 The Great Outdoors
+                              </option>
+                              <option value="Architecture">
+                                 Architecture
+                              </option>
+                              <option value=" Food">
+                                 Food
+                              </option>
+                              <option value="Experience KE">
+                                 Experience KE
+                              </option>
+                              <option value="Altered Images">
+                                 Altered Images
+                              </option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="hidden-xs hidden-sm">
+                        <ul class="nav nav-pills nav-stacked">
+                        @foreach($categories as $category)
+                           <li><a style="" href="{{ route('explore', $category->name) }}" id="ember35786" class="link-to-component ember-view">{{ $category->name }}</a></li>
+                        @endforeach
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xs-12 col-md-10">
+                     <div class="clearfix">
+                        <div id="ember35811" class="infinite-scroll-component ember-view">
+                           <div id="ember35812" class="js-scroll-preserver scroll-preserver-component ember-view"></div>
+                           <div class="clearfix">
+                              <div class="row">
+                              @foreach($categories as $category)
+                                 <div class="col-xs-12 col-sm-6 col-md-4">
+                                    <div style="" id="ember36127" class="photo-card linked-collection-component ember-view">
+                                       <a style="" href="{{ route('explore', $category->name) }}" id="ember36128" class="link-to-component ember-view">
+                                          <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember36129" class="photo-background-component photo-background-component ember-view">
+                                             <div class="overlay-container ">
+                                                <div class="overlay-centered">
+                                                   <h5 class="title-over-image">{{ $category->name }}</h5>
+                                                   <p style="color: white;" class="pannel-head">{{ count($category->uploads) }} photos</p>
+                                                </div>
+                                             </div>
+                                             <span class="dark-overlay-block"></span>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 @endforeach
+                              </div>
+                           </div>
+                           <div style="height: 150px; position: relative;">
+                              <!----><!---->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="ember35813" class="page-footer-component ember-view">
+               <div id="footer">
+                  <div style="padding: 10px 0;" class="container-fluid">
+                     <div class="col-sm-2 col-sm-offset-1 col-xs-6">
+                        <p class="pannel-head text-medium">Explore</p>
+                        <ul class="small">
+                           <li><a style="" href="/home/signature?t20p=curated-collections.index&amp;t20s=footer" id="ember35818" class="text-link dark link-to-component ember-view">Signature Collection</a></li>
+                           <li><a style="" href="/home/following?t20p=curated-collections.index&amp;t20s=footer" id="ember35823" class="text-link dark link-to-component ember-view">Following Feed</a></li>
+                           <li><a style="" href="/discover?t20p=curated-collections.index&amp;t20s=footer" id="ember35828" class="text-link dark link-to-component ember-view">Collections</a></li>
+                           <li><a style="" href="/challenges?t20p=curated-collections.index&amp;t20s=footer" id="ember35833" class="text-link dark link-to-component ember-view">Challenges</a></li>
+                           <li><a style="" href="/social-media-marketing?t20p=curated-collections.index&amp;t20s=footer" id="ember35838" class="text-link dark link-to-component ember-view">Social Media Marketing Calendar</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-2 col-xs-6">
+                        <p class="pannel-head text-medium">About</p>
+                        <ul class="small">
+                           <li><a style="" href="/customers?t20p=curated-collections.index&amp;t20s=footer" id="ember35847" class="text-link dark link-to-component ember-view">Customers</a></li>
+                           <li><a style="" href="/pricing?t20p=curated-collections.index&amp;t20s=footer" id="ember35852" class="text-link dark link-to-component ember-view">Pricing</a></li>
+                           <li><a style="" href="/legal?t20p=curated-collections.index&amp;t20s=footer" id="ember35857" class="text-link dark link-to-component ember-view">Our License</a></li>
+                           <li><a style="" href="/jobs?t20p=curated-collections.index&amp;t20s=footer" id="ember35862" class="text-link dark link-to-component ember-view">Jobs</a></li>
+                           <li><a style="" href="/royalty-free-images?t20p=curated-collections.index&amp;t20s=footer" id="ember35867" class="text-link dark link-to-component ember-view">Royalty-free images</a></li>
+                        </ul>
+                     </div>
+                     <div class="clearfix visible-xs-block"></div>
+                     <div class="col-sm-2 col-xs-6">
+                        <p class="pannel-head text-medium">Support</p>
+                        <ul class="small">
+                           <li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35876" class="text-link dark support-link-component ember-view">FAQ</a></li>
+                           <li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35881" class="text-link dark support-link-component ember-view">Contact Us</a></li>
+                           <li><a style="" href="/legal/user-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35886" class="text-link dark link-to-component ember-view">User Terms</a></li>
+                           <li><a style="" href="/legal/contributor-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35891" class="text-link dark link-to-component ember-view">Contributor Terms</a></li>
+                           <li><a style="" href="/legal/privacy?t20p=curated-collections.index&amp;t20s=footer" id="ember35896" class="text-link dark link-to-component ember-view">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-2 col-xs-6">
+                        <p class="pannel-head text-medium">Connect</p>
+                        <ul class="social-connect small">
+                           <li><a href="http://blog.twenty20.com" class="text-link dark">Blog</a></li>
+                           <li><a href="http://instagram.com/twenty20" target="_blank"><i class="icon-ig-foot"></i>Instagram</a></li>
+                           <li><a href="http://facebook.com/twenty20" target="_blank"><i class="icon-fb-foot"></i>Facebook</a></li>
+                           <li><a href="http://twitter.com/twenty20app" target="_blank"><i class="icon-tw-foot"></i>Twitter</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-3 col-xs-12">
+                        <a style="color: white; border: 2px solid white; width: 170px; height: 50px; line-height: 28px;" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35909" class="btn btn-default support-link-component ember-view">Contact Us</a><a style="margin-top: 6%;" href="https://itunes.apple.com/us/app/twenty20/id577323200?mt=8" target="_blank" class="appstore-badge"></a>
+                        <p class="small text-dark margin20t margin0b">Now available through</p>
+                        <div id="ember35918" class="ga-linker-component ember-view"><a href="https://elements.envato.com/" target="_blank" class="external-link"><img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato_elements_white_green.png" style="width: 75%;"></a></div>
+                     </div>
+                  </div>
+                  <div class="footer-base">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                              <div class="t20-icon"></div>
+                              <p class="small">Created in sunny southern California. Appreciated by people around the world. Committed to making you smile.<br>Copyright © 2020 Twenty20, Inc. All rights reserved. All photos © their respective owners.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---->
+            <div id="ember35927" class="auth-modal-component ember-view">
+               <div id="auth-modal" aria-hidden="true" role="dialog" tabindex="-1" class="auth-component modal fade">
+                  <div class="modal-dialog modal-sml">
+                     <div class="modal-content">
+                        <!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="ember35928" class="auto-auth-indicator-component ember-view">
+               <div id="auto-auth-indicator" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
+                  <div class="modal-dialog">
+                     <div class="modal-content rounded-corners">
+                        <div class="modal-body padding40">
+                           <div class="container-fluid padding0lr">
+                              <div class="flex-column padding20t padding40b align-items-center justify-content-center">
+                                 <div class="margin20b">
+                                    <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato-t20.png" alt="Joint Logos" style="height: 75px;">
+                                 </div>
+                                 <h3 class="normal text-center">
+                                    Loading
+                                 </h3>
+                                 <h3 class="margin0b normal text-center">
+                                    <span id="ember35933" class="inline -default-014544282960154021589525124459-component ember-view">
+                                       <div class="spinner1">
+                                          <div class="bounce1"></div>
+                                          <div class="bounce2"></div>
+                                          <div class="bounce3"></div>
+                                       </div>
+                                    </span>
+                                 </h3>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="ember35934" class="envato-consent-component ember-view">
+               <div id="envato-consent-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
+                  <div class="modal-dialog modal-lg">
+                     <div class="modal-content border-none">
+                        <div class="modal-body padding0tb padding0lr">
+                           <div class="mobile-blue-bar bg-primary"></div>
+                           <div class="container-fluid">
+                              <div class="row full-row">
+                                 <div class="col-xs-12 col-md-9 col-lg-8 padding0lr">
+                                    <div class="container-fluid main-content">
+                                       <div class="row centered-row">
+                                          <div class="col-sm-8 col-md-10 col-lg-9 text-center">
+                                             <div class="row title-row margin40t margin20b">
+                                                <div class="col-sm-5 text-center">
+                                                   <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20">
+                                                </div>
+                                                <div class="col-sm-2 col-lg-1 text-center">
+                                                   <h2 class="text-medium">+</h2>
+                                                </div>
+                                                <div class="col-sm-5 text-center">
+                                                   <img src="https://dp3ogl28gtjh0.cloudfront.net/
+                                                      digital/envato/126959-52a3d6af-6b58-47d4-b008-fdecfa4c7047-logo_transparent-original-1396827260.png" alt="Envato">
+                                                </div>
+                                             </div>
+                                             <hr class="xlight slim">
+                                             <h5>
+                                                The Twenty20 you know and love is joining forces with Envato, and its world-leading Elements creative subscription.
+                                             </h5>
+                                             <div class="small-photo-popout margin20t">
+                                                <div class="row">
+                                                   <div class="col-xs-12">
+                                                      <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/fun-party-confetti-colourful-friends-happy-celebrate-hipster-laughing-girl-friends_t20_eow3ob.jpg" alt="Twenty20 + Envato together at last. Hooray!">
+                                                      <p class="margin10t text-medium small">
+                                                         Photo by @criene
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                             <h5 class="normal">
+                                                We're starting work behind the scenes to connect the two subscriptions, so you'll get even more value from your account without paying a cent more.
+                                             </h5>
+                                          </div>
+                                       </div>
+                                       <div class="row centered-row">
+                                          <div class="col-xs-12 col-sm-8 col-md-10 col-lg-8 text-center">
+                                             <div class="cta-block text-center">
+                                                <button class="empty-button btn-block" data-ember-action="" data-ember-action-35947="35947">
+                                                   <span class="bouquet">
+                                                   🎉
+                                                   </span>
+                                                   <div id="ember35952" class="loading-button-component ember-view">
+                                                <button style="" type="submit" class="btn btn-loading   btn-primary btn-lg btn-block"><div id="ember35953" class="loading-spinner loading-spinner-component ember-view"></div><div class="btn-loading-text"><!---->Now take me to the photos!</div></button></div>
+                                                </button>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="row centered-row margin20b">
+                                          <div class="col-sm-8 col-md-10 text-center">
+                                             <p class="margin20t">
+                                                By clicking here, you agree to the new
+                                                <a style="" href="/legal/user-terms?t20p=curated-collections.index" id="ember35958" class="link-to-component ember-view">                        User Terms</a>,
+                                                <a style="" href="/legal/contributor-terms?t20p=curated-collections.index" id="ember35963" class="link-to-component ember-view">                        Contributor Terms</a>, and
+                                                <a style="" href="/legal/privacy?t20p=curated-collections.index" id="ember35972" class="link-to-component ember-view">                        Privacy Policy</a>.
+                                             </p>
+                                          </div>
+                                       </div>
+                                       <div class="row footer bg-brand-light">
+                                          <div class="col-md-12">
+                                             <a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35977" class="text-dark normal text-center margin10tb support-link-component ember-view">                      Questions? Get in touch <u>here</u> with Customer Support
+                                             </a>                  
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-3 col-lg-4 bg-primary photo-popout-col">
+                                    <div class="photo-popout margin40t">
+                                       <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/fun-party-confetti-colourful-friends-happy-celebrate-hipster-laughing-girl-friends_t20_eow3ob.jpg" alt="Twenty20 + Envato together at last. Hooray!">
+                                    </div>
+                                    <p class="margin10t text-center text-medium small">
+                                       Photo by @criene
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="ember35986" class="elements-welcome-component ember-view">
+               <div id="elements-welcome-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
+                  <div class="modal-dialog">
+                     <div class="modal-content rounded-corners">
+                        <div class="modal-body padding40">
+                           <div class="visible-xs-block flex-column align-items-center justify-content-center margin40b">
+                              <div class="text-center">
+                                 <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
+                              </div>
+                              <h3 class="text-medium margin0tb margin20lr normal text-center">+</h3>
+                              <div class="text-center">
+                                 <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
+                              </div>
+                           </div>
+                           <div class="hidden-xs flex-row align-items-center margin40b">
+                              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
+                              <h3 class="text-medium margin0tb margin20lr normal">+</h3>
+                              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
+                           </div>
+                           <h3 class="normal margin40b margin0t">
+                              <span class="normal">You are now signed in to</span> Twenty20 <span class="normal">with your Envato account.</span>
+                           </h3>
+                           <h4 class="normal margin20b">
+                              <!---->
+                              <!---->        
+                           </h4>
+                           <!---->
+                           <!---->
+                           <div class="form-group margin30b">
+                              <div class="checkbox">
+                                 <label class="checked">
+                                 <input type="checkbox" id="ember35991" class="ember-checkbox -checkbox-component ember-view">
+                                 <span class="normal text-dark">
+                                 Send me tips, trends, freebies, updates &amp; offers. You can unsubscribe at any time.
+                                 </span>
+                                 </label>
+                              </div>
+                           </div>
+                           <div class="text-center">
+                              <div id="ember36000" class="loading-button-component ember-view">
+                                 <button style="" class="btn btn-loading   btn-primary" data-ember-action="" data-ember-action-36001="36001">
+                                    <div id="ember36002" class="loading-spinner loading-spinner-component ember-view"></div>
+                                    <div class="btn-loading-text">
+                                       <!---->Start exploring
+                                    </div>
+                                 </button>
+                              </div>
+                           </div>
+                           <p class="small text-dark margin10t margin0b text-center">
+                              By clicking this button, I agree to Twenty20's
+                              <a style="" href="/legal/user-terms?t20p=curated-collections.index" id="ember36007" class="link-to-component ember-view">            User Terms
+                              </a>
+                              and
+                              <a style="" href="/legal/contributor-terms?t20p=curated-collections.index" id="ember36016" class="link-to-component ember-view">            Contributor Terms</a>.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="ember36021" class="envato-merge-component ember-view">
+               <div id="envato-merge-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
+                  <div class="modal-dialog">
+                     <div class="modal-content rounded-corners">
+                        <div class="modal-body padding40">
+                           <div class="visible-xs-block flex-column align-items-center justify-content-center margin40b">
+                              <div class="text-center">
+                                 <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
+                              </div>
+                              <h3 class="text-medium margin0tb margin20lr normal text-center">+</h3>
+                              <div class="text-center">
+                                 <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
+                              </div>
+                           </div>
+                           <div class="hidden-xs flex-row align-items-center margin40b">
+                              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/elements-logo.png" alt="Envato elements logo" style="height: 22px;">
+                              <h3 class="text-medium margin0tb margin20lr normal">+</h3>
+                              <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
+                           </div>
+                           <h3 class="normal margin40b margin0t">
+                              We think you may already have an account with Twenty20.
+                           </h3>
+                           <h5 class="normal margin20b">
+                              Sign in with your Twenty20 credentials to merge your Envato and Twenty20 accounts
+                           </h5>
+                           <div class="container-fluid padding0lr-as">
+                              <div class="flex-row justify-content-center">
+                                 <div class="col-xs-12 col-sm-10 padding0lr-as">
+                                    <!---->
+                                    <form data-ember-action="" data-ember-action-36030="36030">
+                                       <div class="form-group">
+                                          <label for="email-verfication-input">
+                                          Email
+                                          </label>
+                                          <input type="email" required="" id="ember36035" class="form-control ember-text-field -text-field-component ember-view">
+                                       </div>
+                                       <div class="form-group">
+                                          <label for="password-verfication-input">
+                                          Password
+                                          </label>
+                                          <div id="ember36044" class="password-input-wrapper password-input-component ember-view"><input name="password" type="password" required="" placeholder="Enter your password" id="password-verification-input" class="form-control ember-text-field -text-field-component ember-view"><button type="button" class="btn btn-link password-input-toggle"><span class="text-light t20icon t20icon-show-password"></span></button></div>
+                                          <div class="margin10t margin50b">
+                                             <a href="#" class="pull-right small " data-ember-action="" data-ember-action-36046="36046">
+                                             Forgot Your Password?
+                                             </a>
+                                          </div>
+                                       </div>
+                                       <div class="form-group">
+                                          <div id="ember36055" class="loading-button-component ember-view">
+                                             <button style="" type="submit" class="btn btn-loading   btn btn-primary btn-block">
+                                                <div id="ember36056" class="loading-spinner loading-spinner-component ember-view"></div>
+                                                <div class="btn-loading-text">
+                                                   <!---->Sign In
+                                                </div>
+                                             </button>
+                                          </div>
+                                       </div>
+                                    </form>
+                                    <div class="flex-row justify-content-center margin30t">
+                                       <div id="ember36057" class="click-tracker-component ember-view">                        <a href="#" class="small " data-ember-action="" data-ember-action-36058="36058">
+                                          No thanks, don't merge my accounts.
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!---->
+            <section id="ember36063" class="notifications-list notifications-list-component ember-view">
+               <!---->
+            </section>
+            <div id="ember36064" class="collect-modal-component ember-view">
+               <!---->
+            </div>
+            <div id="ember36065" class="update-credit-card-modal-component ember-view">
+               <div id="update-credit-card-modal" aria-hidden="false" role="dialog" tabindex="-1" class="modal fade">
+                  <div class="modal-dialog modal-md">
+                     <div class="modal-content">
+                        <div style="padding: 20px;" class="modal-header">
+                           <button style="position: relative; top: 4px;" class="close" data-ember-action="" data-ember-action-36066="36066">×</button>
+                           <h4 class="margin0tb">Please update your credit card.</h4>
+                        </div>
+                        <div class="modal-body clearfix text-center">
+                           <img style="height: 100px;" src="https://dp3ogl28gtjh0.cloudfront.net/digital/icons/credit-card-icon@2x.png" class="margin20b">
+                           <h5 class="text-center">There is a issue processing your credit card.</h5>
+                           <p class="text-center">Please take a moment and update your information.</p>
+                        </div>
+                        <div class="modal-footer">
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <p style="line-height: 18px; font-size: 14px;" class="text-dark text-left">Note: After updating your credit card, invoices will be updated within 1 hour.</p>
+                              </div>
+                              <div class="col-sm-6"><button class="btn btn-sm btn-primary" data-ember-action="" data-ember-action-36067="36067">Update credit card</button></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="wh-modals"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="autocomplete-wrapper hidden" style="position: fixed; z-index: 1000;">
+         <div class="autocomplete-wait hidden">
+            <p class="autocomplate-wait-message"><i class="autocomplete-spinner"></i>&nbsp;thinking...</p>
+         </div>
+         <div class="autocomplete-results hidden"></div>
+      </div>
+      <div class="container" style="text-align: right;">
+         <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">
+            &copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+         </div>
+      </div>
+   </body>
+</html>
+

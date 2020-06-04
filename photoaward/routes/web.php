@@ -157,6 +157,11 @@ Route::get('votingg', function () {
 
 });
 
+Route::get('categories/explore', function () {
+    return view('discovery');
+
+})->name('categories/explore');
+
 // Route::get('mpesa-pay', 'PaymentController@store')->name('mpesa-pay');
 
 
@@ -172,6 +177,7 @@ Route::get('categories/{category}', 'CategoryController@filter_by_category')->na
 
 Route::get('send-mail', 'CartController@sendMail')->name('send-mail');
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
+Route::get('discover', 'UploadController@discover')->name('discover');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
 
