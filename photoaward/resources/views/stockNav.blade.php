@@ -1,3 +1,23 @@
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<?php
+use App\Cart;
+use App\Purchase;
+
+  if(Auth::check())
+  {
+    // $count = Cart::where('user_id',Auth::user()->id)
+      //->where('token', session()->getId())->get(); 
+
+    $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $count = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
+  }
+  
+?>
+
 <nav role="navigation" class="navbar ">
 
 	<div style="margin-right:20px;" class="navbar-header"><button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span>
@@ -6,12 +26,27 @@
 	<a style="" href="/" id="ember1256" class="navbar-brand logo link-to-component ember-view"><img src="{{ asset('images/logo-.png') }}" class="logo-color" width="64">
 	</a></div>
 
-	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span><ul class="nav navbar-nav navbar-left"><li>
-    <a style="" href="/" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li><li>
-    <a style="" href="{{ route('discover') }}" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
-	<span class="text-container">Explore</span></a></li></ul>
-	<ul class="nav navbar-nav navbar-right"><!----><!---->
+	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span>
 
+  <ul class="nav navbar-nav navbar-left">
+    <li>
+    <a style="" href="/" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a>
+  </li>
+    <li>
+    <a style="" href="{{ route('discover') }}" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
+	<span class="text-container">Explore</span></a></li>
+  <li><i class="icon-cart"></i></li>
+</ul>
+	<ul class="nav navbar-nav navbar-right"><!----><!---->
+  <li>
+    <a style="" href="{{ route('cart/view-cart') }}" id="ember1263" class="link-to-component ember-view"><i class="fa fa-shopping-cart" style="font-size: 18px; padding-right: 20px;"></i><span class="text-container">Cart(<span id="cart_count">
+      @if(Auth::check())
+                    {{ count($count) }}
+                    @else
+                    0
+                    @endif
+                  </span>)</span></a>
+  </li>
 @if(Auth::check())
 	<li class="active dropdown">
   <a href="#" data-toggle="dropdown">

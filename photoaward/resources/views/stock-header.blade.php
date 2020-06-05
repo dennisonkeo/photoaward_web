@@ -15,11 +15,11 @@ use App\Purchase;
 	
 ?>
 <header class="wrapper dark_scheme" id="header" data-stellar-background-ratio="0.5">
-				<div class="container">
+				
 
 					<div id="menu_wrap" class="clearfix">
 
-						
+						<div class="container">
 						
 						<a href="#" id="search_toggle"></a>
 
@@ -114,7 +114,7 @@ use App\Purchase;
 						
 							<h1 class="sitename_logo"><a href="#" style="color: #ff00ff" title="">PICTURE+254</a></h1>
 
-							<h2 id="slogan" style="color: #fff" > Photography Marketplace.</h2><br>
+							<h2 id="slogan" style="color: #fff; text-align: center;"> Photography Marketplace.</h2><br>
 
 							<h2 id="slogam" style="color: #07bab7" > {{ $category }} </h2>
 
@@ -130,3 +130,4 @@ use App\Purchase;
 					
 				</div>
 			</header>
+

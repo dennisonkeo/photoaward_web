@@ -1,3 +1,30 @@
+<?php
+use App\Cart;
+use App\Purchase;
+
+  if(Auth::check())
+  {
+    // $count = Cart::where('user_id',Auth::user()->id)
+      //->where('token', session()->getId())->get(); 
+
+    $purchased_items = Purchase::where('token',session()->getId())->where('user_id',Auth::user()->id)->pluck('cart_id')->all();
+
+          $count = Cart::whereNotIn('id', $purchased_items)->where('user_id', Auth::user()->id)->where('token', session()->getId())->get();
+  }
+
+  if(Auth::check())
+{
+  $check = Cart::where('user_id',Auth::user()->id)
+      ->where('token', session()->getId())
+      ->where('upload_id',$image->id)->first();
+}
+else
+{
+  $check = false;
+}
+  
+?>
+
 <html itemscope="" itemtype="http://schema.org/Product" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-i7-active wf-museosans-n9-active wf-active" lang="en">
    <head>
       <meta charset="utf-8">
@@ -44,6 +71,8 @@
       <meta name="twitter:app:url:iphone" content="twenty20://photos/66475047" id="ember30039" class="head-tag-component ember-view">
       <meta name="robots" content="index, follow" id="ember30041" class="head-tag-component ember-view">
       <meta name="ember-cli-head-end">
+
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
    </head>
    <body class="ember-application photo photo-index" style="padding-top: 62px; margin-top: 0px;">
       <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
@@ -107,7 +136,11 @@
                                  </div>
                               </div>
                               <div class="engage">
-                                 <span id="ember29636" class="gated-action-component ember-view"><button id="ember29637" class="btn btn-link text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639">{{ count($image->votes) }} </button></span><!---->
+                                 <span id="ember29636" class="gated-action-component ember-view">
+                                 	<button data-id="{{ $image->id }}" id="ember29637" class="btn btn-link like_image text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline" id="like_main"></i>
+                                 	</button>
+                                 </span>
+                                 <span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639"><span id="likes_count">{{ count($image->votes) }}</span> </button></span><!---->
                               </div>
                               <div class="row">
                                  <div class="col-md-12 extended-photo-details clearfix">
@@ -222,31 +255,86 @@
                                     <div class="size-con">
                                        <label class="ember-radio-button  radio-btn-white radio-button-component">
                                           <input aria-checked="false" type="radio" value="small" id="ember29715" class="radio-button-input-component ember-view">
-                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>Extra small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">509 x 339 px(7.07x4.71in) 72dpi<span class="inline-divider">0.2 MP</span></div>
+                                          <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>Extra small</span>
+                                          	<span class="pull-right">$<span class="price">40</span>.00</span>
+                                          	<span class="pull-right"><!----></span></div><div class="desc-size small text-medium">509 x 339 px(7.07x4.71in) 72dpi<span class="inline-divider">0.2 MP</span></div>
 								  </label>
 								</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
 								    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
 
-								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">727 x 484 px<span class="inline-divider">(10.10 x 6.72 in)72dpi</span><span class="inline-divider">0.4 MP</span></div>
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>small</span>
+								    	<span class="pull-right">$<span class="price">120</span>.00</span>
+								    	<span class="pull-right"><!----></span></div><div class="desc-size small text-medium">727 x 484 px<span class="inline-divider">(10.10 x 6.72 in)72dpi</span><span class="inline-divider">0.4 MP</span></div>
 								  </label>
-								</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
-								    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
+								</div>
+								<div class="size-con">  <label class="ember-radio-button radio-btn-white radio-button-component">
+								    <input aria-checked="true" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
 
-								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>medium</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">2125 x 1416 px<span class="inline-divider">(7.08 x 4.72in)300 dpi</span><span class="inline-divider">3.0 MP</span></div>
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>medium</span>
+								    	<span class="pull-right">$<span class="price">350</span>.00</span>
+								    	<span class="pull-right"><!----></span></div><div class="desc-size small text-medium">2125 x 1416 px<span class="inline-divider">(7.08 x 4.72in)300 dpi</span><span class="inline-divider">3.0 MP</span></div>
 								  </label>
-								</div><div class="size-con">  <label class="ember-radio-button checked radio-btn-white radio-button-component">
-								    <input aria-checked="true" type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
+								</div>
+								<div class="size-con">  <label class="ember-radio-button checked radio-btn-white radio-button-component">
+								    <input type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
 
-								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>large</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">6720 x 4480 px<span class="inline-divider">(22.40 x 14.93 in) 300 dpi </span><span class="inline-divider">30.1 MP</span></div>
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>large</span>
+								    	<span class="pull-right">$<span class="price">450</span>.00</span>
+								    	<span class="pull-right"><!----></span></div><div class="desc-size small text-medium">6720 x 4480 px<span class="inline-divider">(22.40 x 14.93 in) 300 dpi </span><span class="inline-divider">30.1 MP</span></div>
 								  </label>
-                                    </div>
                                  </div>
-                                 <div class="purchase-con">
+                                 </div>
+                                 <div class="inline-btn-group" style="background: #fff; padding: 10px; border-radius: 3px;">
+                                 	<span style="color: #000; margin:20px; background: #fff; text-align: center; font-size: 20px;">
+                                 		$ <span id="dis_pay">450</span>.00
+                                 	</span>
+                                 </div>
+							  @if(!$check)
+								@if(Auth::check())
+                                 <div class="purchase-con" id="add_to_cart_div">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
+                                          <button id="add_to_cart" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
-                                             <div class="btn-loading-text"><i class="fa fa-cart align-sub"></i>Add To Cart</div>
+                                             <div class="btn-loading-text"><i class="fa fa-shopping-cart align-sub"></i>Add To Cart</div>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    
+                                 </div>
+                                 @else
+                                 <div class="purchase-con" id="login">
+                                    <div id="ember29726" class="gated-action-component ember-view">
+                                       <div id="ember29731" class="loading-button-component ember-view">
+                                          <button id="add_to_cart" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
+                                             <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
+                                             <div class="btn-loading-text"><i class="fa fa-shopping-cart align-sub"></i>Add To Cart</div>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    
+                                 </div>
+                                 @endif
+                                 @else
+                                 <div class="purchase-con" style="dislay: none;">
+                                    <div id="ember29726" class="gated-action-component ember-view">
+                                       <div id="ember29731" class="loading-button-component ember-view">
+                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
+                                             <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
+                                             <div class="btn-loading-text"><i class="fa fa-shopping align-sub"></i>Checkout</div>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    
+                                 </div>
+                                 @endif
+
+                                 <div class="purchase-con" id="checkout_div" style="display: none;">
+                                    <div id="ember29726" class="gated-action-component ember-view">
+                                       <div id="ember29731" class="loading-button-component ember-view">
+                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
+                                             <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
+                                             <div class="btn-loading-text"><i class="fa fa-shopping align-sub"></i>Checkout</div>
                                           </button>
                                        </div>
                                     </div>
@@ -254,7 +342,9 @@
                                  </div>
                               </div>
                               <div class="photo-actions">
-                                 <div class="inline-btn-group"><span id="ember29777" class="gated-action-component ember-view"><button id="ember29778" class="btn btn-secondary only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29779" class="gated-action-component ember-view"><button style="white-space: normal;" class="btn btn-secondary btn-stretch" data-ember-action="" data-ember-action-29780="29780"><i class="t20icon t20icon-collect align-sub"></i>Add to Wishlist</button></span></div>
+                                 <div class="inline-btn-group"><span id="ember29777" class="gated-action-component ember-view">
+                                 	<button data-id="{{ $image->id }}" id="ember29778" class="btn btn-secondary like_image only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29779" class="gated-action-component ember-view"><button style="white-space: normal;" class="btn btn-secondary btn-stretch" data-ember-action="" data-ember-action-29780="29780"><i class="t20icon t20icon-collect align-sub"></i>Add to Wishlist</button></span>
+                                 </div>
                                  {{-- <div id="ember29785" class="gated-action-component ember-view">
                                     <div id="ember29790" class="loading-button-component ember-view">
                                        <button style="white-space: normal;" class="btn btn-loading   btn-link btn-block text-light" data-ember-action="" data-ember-action-29791="29791">
@@ -848,6 +938,118 @@
 
       </div>
             </div> 
+
+
+      <script type="text/javascript">
+
+var image_size = '450';
+
+  $('.size-con').click(function(event) {
+
+        image_size = $(this).find('.price').find('span').text();
+         $('label').removeClass("checked");
+         $(this).find('label').addClass("checked");
+
+        $('#dis_pay').text($(this).find('.price').text());
+  });
+
+
+      $("#add_to_cart").click(function(){
+
+      
+        $.ajax({
+        url: '{{ route('add-cart') }}',
+        type: 'POST',
+        data: {
+
+          upload_id: $(this).data('id'),
+          _token: '{{csrf_token()}}',
+          size: $("#dis_pay").text(),
+
+        },
+        success: function(response){
+          if(response !="")
+          {
+            
+            $('#cart_count').html(response);
+
+            // $('#my_alert').css("display","block");
+
+        //     setTimeout(function(){
+        //          $('#my_alert').fadeOut('fast');
+            
+        // }, 2000);
+
+          $('#checkout_div').css("display","block");
+          
+          $('#add_to_cart_div').css("display","none");
+        }
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          alert(errorThrown);
+        }
+      });
+
+        return false;
+    });
+
+
+
+  $(".like_image").click(function(){
+             
+          $upload = $(this);
+
+          var image_id = $(this).data('id');
+
+          console.log("image-id "+image_id);
+
+
+      $.ajax({
+        url: '{{ route('add-like') }}',
+        type: 'POST',
+        data: {
+          'liked': 1,
+          upload_id: image_id,
+          _token: '{{csrf_token()}}'
+        },
+        success: function(response){
+          if(response !="")
+          {
+
+            $('#likes_count').text(response);
+            
+             $("#like_main").removeClass("t20icon-love-outline");
+	          $("#like_main").addClass("t20icon-love");
+	          $("#like_main").css("color", "#ff00ff");
+
+        }
+
+        },
+        error: function(jqXHR, textStatus, errorThrown){
+          console.log(errorThrown);
+          if(errorThrown == "Unauthorized")
+          {
+            window.location.href =  '{{ route('modall') }}';
+          }
+          // alert('An error occured');
+        }
+      });
+
+  });
+
+  $("#login").click(function(){
+    
+  		Swal.fire({
+                                           title: 'Unauthorized',
+                                            text: 'Please, login first!',
+                                            icon: 'error',
+                                          })
+
+  });
+
+</script>
 
    </body>
 </html>
