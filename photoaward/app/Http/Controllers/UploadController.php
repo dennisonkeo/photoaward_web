@@ -47,6 +47,18 @@ class UploadController extends Controller
         return view('stocktest', compact('images', 'category', 'categories'));
     }
 
+    public function discover()
+    {
+
+        $images = Upload::latest()->get();
+
+        $categories = Category::all();
+
+        $category = '';
+
+        return view('discovery', compact('images', 'category', 'categories'));
+    }
+
     public function stock_view(Upload $upload)
     {
 

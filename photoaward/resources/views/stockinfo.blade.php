@@ -89,13 +89,15 @@
                                              <polygon points=".5 .0, .95 .25, .95 .76, .50 1.0, .05 .75, .05 .25"></polygon>
                                           </clipPath>
                                        </svg>
-                                       <img src="{{ asset('images/logo-.png') }}" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-medium"><!---->
+                                       <img src="{{ asset('uploads') }}/{{ $image->user->pic }}" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-medium">
+
+                                       {{-- <img src="{{ asset('images/logo-.png') }}" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-medium"> --}}
                                     </div>
                                  </a>
                               </div>
                               <div style="padding-left: 75px;">
                                  <p style="margin: 5px 0 0px;" class="text-dark small">Photo by</p>
-                                 <p style="margin-top: 0px; line-height: 10px;" class="light-text"><a style="" href="/" id="ember29634" class="link-to-component ember-view">@picture+254(Fetch the id of the person who uploaded the image with their image)</a></p>
+                                 <p style="margin-top: 0px; line-height: 10px;" class="light-text"><a style="" href="/" id="ember29634" class="link-to-component ember-view">{{ $image->user->name }}</a></p>
                               </div>
                            </div>
                            <div class="img-preview">
@@ -105,7 +107,7 @@
                                  </div>
                               </div>
                               <div class="engage">
-                                 <span id="ember29636" class="gated-action-component ember-view"><button id="ember29637" class="btn btn-link text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639">1 fetch how many likes the photo has and one can also like it here </button></span><!---->
+                                 <span id="ember29636" class="gated-action-component ember-view"><button id="ember29637" class="btn btn-link text-light only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29638" class="gated-action-component ember-view"><button style="vertical-align: bottom; margin-left: 0.5em;" class="btn btn-link text-light" data-ember-action="" data-ember-action-29639="29639">{{ count($image->votes) }} </button></span><!---->
                               </div>
                               <div class="row">
                                  <div class="col-md-12 extended-photo-details clearfix">
@@ -168,7 +170,7 @@
                                        Pending
                                        </span>
                                     </li>
-                                    <!---->
+                                     -->
                                     <li>
                                        <i class="t20icon t20icon-license text-light"></i>
                                        <span>
@@ -208,7 +210,9 @@
                                        Photo ID: photo id here
                                        </span>
                                        <span class="strong">
-                                       t20-gRZoe7(photo id here)
+
+                                       p254-{{ $image->id }}
+
                                        </span>
                                     </li>
                                  </ul>
@@ -221,22 +225,22 @@
                                        <label class="ember-radio-button  radio-btn-white radio-button-component">
                                           <input aria-checked="false" type="radio" value="small" id="ember29715" class="radio-button-input-component ember-view">
                                           <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>Extra small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">509 x 339 px(7.07x4.71in) 72dpi<span class="inline-divider">0.2 MP</span></div>
-  </label>
-</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
-    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
+								  </label>
+								</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
+								    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
 
-    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">727 x 484 px<span class="inline-divider">(10.10 x 6.72 in)72dpi</span><span class="inline-divider">0.4 MP</span></div>
-  </label>
-</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
-    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>small</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">727 x 484 px<span class="inline-divider">(10.10 x 6.72 in)72dpi</span><span class="inline-divider">0.4 MP</span></div>
+								  </label>
+								</div><div class="size-con">  <label class="ember-radio-button  radio-btn-white radio-button-component">
+								    <input aria-checked="false" type="radio" value="medium" id="ember29722" class="radio-button-input-component ember-view">
 
-    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>medium</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">2125 x 1416 px<span class="inline-divider">(7.08 x 4.72in)300 dpi</span><span class="inline-divider">3.0 MP</span></div>
-  </label>
-</div><div class="size-con">  <label class="ember-radio-button checked radio-btn-white radio-button-component">
-    <input aria-checked="true" type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>medium</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">2125 x 1416 px<span class="inline-divider">(7.08 x 4.72in)300 dpi</span><span class="inline-divider">3.0 MP</span></div>
+								  </label>
+								</div><div class="size-con">  <label class="ember-radio-button checked radio-btn-white radio-button-component">
+								    <input aria-checked="true" type="radio" value="large" id="ember29725" class="radio-button-input-component ember-view">
 
-    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>large</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">6720 x 4480 px<span class="inline-divider">(22.40 x 14.93 in) 300 dpi </span><span class="inline-divider">30.1 MP</span></div>
-  </label>
+								    <div class="desc-sizename caps text-bright text-large-ish semi-bold"><span>large</span><span class="pull-right"><!----></span></div><div class="desc-size small text-medium">6720 x 4480 px<span class="inline-divider">(22.40 x 14.93 in) 300 dpi </span><span class="inline-divider">30.1 MP</span></div>
+								  </label>
                                     </div>
                                  </div>
                                  <div class="purchase-con">
@@ -244,7 +248,7 @@
                                        <div id="ember29731" class="loading-button-component ember-view">
                                           <button style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
-                                             <div class="btn-loading-text"><i class="t20icon t20icon-photo align-sub"></i>Download</div>
+                                             <div class="btn-loading-text"><i class="fa fa-cart align-sub"></i>Add To Cart</div>
                                           </button>
                                        </div>
                                     </div>
@@ -253,14 +257,14 @@
                               </div>
                               <div class="photo-actions">
                                  <div class="inline-btn-group"><span id="ember29777" class="gated-action-component ember-view"><button id="ember29778" class="btn btn-secondary only-icon love-button-component ember-view"><i class="t20icon t20icon-love-outline"></i></button></span><span id="ember29779" class="gated-action-component ember-view"><button style="white-space: normal;" class="btn btn-secondary btn-stretch" data-ember-action="" data-ember-action-29780="29780"><i class="t20icon t20icon-collect align-sub"></i>Add to Wishlist</button></span></div>
-                                 <div id="ember29785" class="gated-action-component ember-view">
+                                 {{-- <div id="ember29785" class="gated-action-component ember-view">
                                     <div id="ember29790" class="loading-button-component ember-view">
                                        <button style="white-space: normal;" class="btn btn-loading   btn-link btn-block text-light" data-ember-action="" data-ember-action-29791="29791">
                                           <div id="ember29792" class="loading-spinner loading-spinner-component ember-view"></div>
                                           <div class="btn-loading-text"><i class="t20icon t20icon-download"></i>Download Comp</div>
                                        </button>
                                     </div>
-                                 </div>
+                                 </div> --}}
                                  <!---->
                               </div>
                            </div>
