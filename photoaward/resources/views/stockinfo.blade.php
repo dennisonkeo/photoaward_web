@@ -240,10 +240,12 @@ else
                                     <li>
                                        <i class="t20icon t20icon-photo-tag text-light"></i>
                                        <span>
-                                       Photo ID:
+                                       Photo ID: photo id here
                                        </span>
                                        <span class="strong">
+
                                        p254-{{ $image->id }}
+
                                        </span>
                                     </li>
                                  </ul>
