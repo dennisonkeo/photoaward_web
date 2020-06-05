@@ -305,10 +305,10 @@ else
                                     
                                  </div>
                                  @else
-                                 <div class="purchase-con" id="login">
+                                 <div class="purchase-con">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button id="add_to_cart" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
+                                          <button id="login" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
                                              <div class="btn-loading-text"><i class="fa fa-shopping-cart align-sub"></i>Add To Cart</div>
                                           </button>
@@ -1044,10 +1044,10 @@ var image_size = '450';
   $("#login").click(function(){
     
   		Swal.fire({
-                                           title: 'Unauthorized',
-                                            text: 'Please, login first!',
-                                            icon: 'error',
-                                          })
+           title: 'Unauthorized',
+           text: 'Please, login first!',
+           icon: 'error',
+       })
 
   });
 
