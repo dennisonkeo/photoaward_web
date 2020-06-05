@@ -205,10 +205,10 @@
                                     <li>
                                        <i class="t20icon t20icon-photo-tag text-light"></i>
                                        <span>
-                                       Photo ID:
+                                       Photo ID: photo id here
                                        </span>
                                        <span class="strong">
-                                       t20-gRZoe7
+                                       t20-gRZoe7(photo id here)
                                        </span>
                                     </li>
                                  </ul>
