@@ -1,225 +1,482 @@
-<html itemscope="" itemtype="http://schema.org/Product" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-i7-active wf-museosans-n9-active wf-active" lang="en"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Picture254</title>
-    <script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=78163&amp;ref=https://www.twenty20.com/home/signature&amp;be=6321&amp;fe=78070&amp;dc=12353&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589458035974,%22n%22:0,%22u%22:6035,%22ue%22:6046,%22f%22:17,%22dn%22:77,%22dne%22:1183,%22c%22:1183,%22s%22:1936,%22ce%22:3143,%22rq%22:3143,%22rp%22:3641,%22rpe%22:3641,%22dl%22:6035,%22di%22:12333,%22ds%22:12349,%22de%22:12415,%22dc%22:78066,%22l%22:78066,%22le%22:78129%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589458200000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script><script type="text/javascript">
-      window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(23),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(24),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){j++,L=y.hash,this[u]=x.now()}function o(){j--,y.hash!==L&&i(0,!0);var t=x.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=x.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,x=t("loader");if(w[v]&&x.xhrWrappable){var g=t(10),b=t(11),E=t(8),R=t(6),O=t(13),C=t(7),P=t(14),T=t(9),N=t("ee"),S=N.get("tracer");t(16),x.features.spa=!0;var L,j=0;N.on(u,r),N.on(p,r),N.on(d,o),N.on(l,o),N.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),P.buffer([u,"new-xhr","send-xhr"+s]),C.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),g.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),T.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(P,"send-xhr"+s),a(N,"xhr-resolved"),a(N,"xhr-done"),a(C,m+s),a(C,m+"-done"),a(T,"new-jsonp"),a(T,"jsonp-end"),a(T,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,j>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",x=t("loader");x.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=x.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,x.now()])}),a.on(m,function(t,e,n){this.bstStart=x.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),this.bstType])}),s.on(m,function(){this.bstStart=x.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,x.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=x.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(26)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(23);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(26)(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(26)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(26)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(26),a=t("ee").get("promise"),s=i(a),c=t(23),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(26)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(26)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(26)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,g),g.prototype=l.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(){var t=window.NREUM,e=t.info.accountID||null,n=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!e||!n||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:e,ap:n,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&e!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(21);e.exports={generateTraceHeader:r}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(p[r],this.listener,!1);e.aborted||(n.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):a(this,t),n.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return v(r)}function i(t,e){var n=f(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}function a(t,e){t.params.status=e.status;var n=o(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(17),u=t(15).generateTraceHeader,d=t("ee"),p=["load","error","abort","timeout"],l=p.length,h=t("id"),m=t(20),v=t(19),w=window.XMLHttpRequest;s.features.xhr=!0,t(14),d.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){a(e,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=!!NREUM.init.distributed_tracing.enabled),n&&this.sameOrigin){var r=u();r&&e.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=v(r);i&&(n.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{d.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<l;a++)e.addEventListener(p[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),d.on("xhr-load-added",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,e){var n=""+h(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],e)}),d.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],e)}),d.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,e){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,e],e)})}},{}],17:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],18:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(23),s=t(24),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],19:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],20:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],21:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}e.exports={generateUuid:r,generateCatId:o}},{}],22:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],26:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(24),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[x[n]];return d&&d.push([g,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",x[n]=e,e in u||(u[e]=[])})}var y={},x={},g={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(23),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+b.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(23),u=t("ee"),d=t(22),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1130.min.js"},g=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:g,userAgent:d};t(18),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(25)},{}]},{},["loader",2,16,5,3,4]);
-      ;NREUM.loader_config={accountID:"697845",trustKey:"6111",agentID:"400093202",licenseKey:"4eb2c2ee8f",applicationID:"400093202"}
-      ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"4eb2c2ee8f",applicationID:"400093202",sa:1}
-    </script>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>PICTURE+254</title>
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="fragment" content="!">
-
+    <script src="{{ asset('js/right_click.js') }}"></script>
     
-<meta name="twenty20-digital/config/environment" content="%7B%22modulePrefix%22%3A%22twenty20-digital%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22ENABLE_DS_FILTER%22%3Atrue%2C%22EXTEND_PROTOTYPES%22%3Atrue%2C%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22twenty20-digital%22%2C%22version%22%3A%220.0.2%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en%22%2C%22defaultFallback%22%3Atrue%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22'none'%22%2C%22script-src%22%3A%22'self'%20'unsafe-eval'%20'unsafe-inline'%20js.stripe.com%20checkout.stripe.com%20use.typekit.net%20dp3ogl28gtjh0.cloudfront.net%20cdn.segment.io%20www.google-analytics.com%20maps.googleapis.com%20%22%2C%22frame-src%22%3A%22js.stripe.com%20checkout.stripe.com%20dialog.filepicker.io%20www.filepicker.io%22%2C%22font-src%22%3A%22'self'%20fonts.gstatic.com%20www.twenty20.com%20data%3A%22%2C%22connect-src%22%3A%22'self'%20api-v2.twenty20.com%20staging-api-v2.twenty20.com%20checkout.stripe.com%20ajax.cdnjs.com%20api.segment.io%20d24ilbxry44jok.cloudfront.net%20widget.cloudinary.com%20app.getsentry.com%22%2C%22img-src%22%3A%22'self'%20*%20data%3A%20app.getsentry.com%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%20fonts.googleapis.com%20use.typekit.net%22%2C%22media-src%22%3A%22'self'%20dp3ogl28gtjh0.cloudfront.net%22%2C%22object-src%22%3A%22cdnjs.cloudflare.com%22%7D%2C%22SEARCH_ENDPOINT%22%3A%22search%22%2C%22SOLR_SEARCH%22%3A%22false%22%2C%22API_HOST%22%3A%22https%3A%2F%2Fapi-v2.twenty20.com%22%2C%22API_V3_HOST%22%3A%22https%3A%2F%2Fapi-v3.twenty20.com%22%2C%22PIXELS_HOST%22%3A%22https%3A%2F%2Fdc4fj9o1wzm3u.cloudfront.net%22%2C%22UPLOAD_HOST%22%3A%22https%3A%2F%2Fd24ilbxry44jok.cloudfront.net%22%2C%22COMP_HOST%22%3A%22https%3A%2F%2Fdigital-comp.twenty20.com%22%2C%22ENVATO_SSO_SERVER%22%3A%22https%3A%2F%2Faccount.envato.com%22%2C%22ELEMENTS_ACCOUNT_URL%22%3A%22https%3A%2F%2Faccount.elements.envato.com%22%2C%22ELEMENTS_PRICING_URL%22%3A%22https%3A%2F%2Felements.envato.com%2Ftwenty20%2Fconnect%22%2C%22OAUTH_FACEBOOK_CLIENT_ID%22%3A%22421986587813170%22%2C%22OAUTH_INSTAGRAM_CLIENT_ID%22%3A%220582843ecca8460b8034c9e50388dea9%22%2C%22FILEPICKER_API_KEY%22%3A%22AuvE5RQc0SF26ucbFUaDDz%22%2C%22STRIPE_PUBLISHABLE_KEY%22%3A%22pk_live_xpg13zMyJgibTEeq71wxoH1t00paLwqW7l%22%2C%22SEGMENTIO_API_KEY%22%3A%22l4o2od3lg2%22%2C%22SENTRY_DSN_KEY%22%3A%22https%3A%2F%2Fda8301b8318d4ca8aa3e9969aa86b1ab%40sentry.io%2F1339230%22%2C%22GRID_ROW_HEIGHT%22%3A250%2C%22robots%22%3A%22index%2Call%2Cfollow%22%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%7D">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://themes.designcrumbs.com/stocky/xmlrpc.php">
+<link rel='dns-prefetch' href='//platform-api.sharethis.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Feed" href="http://themes.designcrumbs.com/stocky/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Comments Feed" href="http://themes.designcrumbs.com/stocky/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stocky &raquo; Home Comments Feed" href="http://themes.designcrumbs.com/stocky/home/feed/" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('images/logo_.png')}}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{asset('images/logo_.png')}}">
 
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
-    <link rel="mask-icon" href="/twenty20-icon.svg" color="#1488C9">
-    <link rel="apple-touch-icon-precomposed" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
-    <link rel="apple-touch-icon" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://themes.designcrumbs.com/stocky/wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edd-styles-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/templates/edd.min.css?ver=2.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://themes.designcrumbs.com/stocky/wp-includes/css/dashicons.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edd-reviews-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-reviews/assets/css/edd-reviews.min.css?ver=2.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edd-slg-public-style-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-social-login/includes/css/style-public.css?ver=1.7.6' type='text/css' media='all' />
+<link rel='stylesheet' id='css-stocky-css'  href='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/style.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-fancybox-css'  href='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/fancybox/jquery.fancybox.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-Roboto-css'  href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C400italic%2C700%2C700italic&#038;ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edd-wl-styles-css'  href='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-wish-lists/templates/edd-wl.min.css?ver=1.1.7' type='text/css' media='screen' />
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/fancybox/jquery.fancybox.pack.js?ver=5.2.4'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.stellar.js?ver=5.2.4'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.mobilemenu.js?ver=5.2.4'></script>
+<!-- <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/themes/stocky/includes/js/jquery.fitvids.js?ver=5.2.4'></script>
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#product=ga'></script>
+<link rel='https://api.w.org/' href='http://themes.designcrumbs.com/stocky/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://themes.designcrumbs.com/stocky/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://themes.designcrumbs.com/stocky/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.4" />
+<link rel="canonical" href="http://themes.designcrumbs.com/stocky/" />
+<link rel='shortlink' href='http://themes.designcrumbs.com/stocky/' />
+<link rel="alternate" type="application/json+oembed" href="http://themes.designcrumbs.com/stocky/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fthemes.designcrumbs.com%2Fstocky%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://themes.designcrumbs.com/stocky/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fthemes.designcrumbs.com%2Fstocky%2F&#038;format=xml" /> -->
 
-    <link rel="dns-prefetch" href="//api-v2.twenty20.com">
+<style type="text/css">
+a {
+	color:#1e73be;
+}
 
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="twenty20.com">
+a:hover,
+.meta_block a:hover {
+	color:#3470DC;
+}
 
-    <meta property="fb:app_id" content="421986587813170">
+input[type="submit"],
+button[type="submit"],
+.btn,
+div.fes-form .fes-submit input[type="submit"],
+a.button,
+a.more-link,
+.widget .cart_item.edd_checkout a,
+.stocky_navigation a,
+.fes-product-list-pagination-container a,
+.edd-reviews-voting-buttons a.vote-yes,
+.edd-reviews-voting-buttons a.vote-no,
+#edd-purchase-button,
+.edd-submit,
+input.edd-submit[type="submit"],
+.edd-submit.button,
+.edd-submit.button:visited,
+.navigation a,
+.navigation span.current,
+a.insert-file-row  {
+	border-color:#1e73be !important;
+	color:#1e73be !important;
+}
 
-    <meta name="twitter:site" content="@twenty20app">
-    <meta name="twitter:card" content="photo">
-    <meta name="twitter:app:name:iphone" content="Twenty20">
-    <meta name="twitter:app:id:iphone" content="577323200">
+input[type="submit"]:hover,
+button[type="submit"]:hover,
+.btn:hover,
+div.fes-form .fes-submit input[type="submit"]:hover,
+a.button:hover,
+a.more-link:hover,
+.widget .cart_item.edd_checkout a:hover,
+.stocky_navigation a:hover,
+.fes-product-list-pagination-container a:hover,
+.edd-reviews-voting-buttons a.vote-yes:hover,
+.edd-reviews-voting-buttons a.vote-no:hover,
+#edd-purchase-button:hover,
+.edd-submit:hover,
+input.edd-submit[type="submit"]:hover,
+.edd-submit.button:hover,
+.navigation a:hover,
+.navigation span.current,
+a.insert-file-row:hover,
+.sweet-alert button  {
+	background-color:#1e73be !important;
+}
 
-    <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-74a2c6f27f72fbcd4e6f96f62a071b7a.css">
-    <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-6543a70f6bed3fbfb14a4eac96585e54.css"><style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style><style type="text/css">@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/635674/00000000000000000000e800/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}</style>
+#header,
+body.page-template-page-login-php {
+	background-image:url("{{ asset('images/pic10.jpg') }}");
+}
+#home_cta {
+	background-image:url("http://themes.designcrumbs.com/stocky/files/edd/2014/07/photographer.jpg");
+}
+</style><script type="text/javascript">
+/* <![CDATA[  */
 
-    
 
-  <style type="text/css"></style><style type="text/css">.cloudinary-thumbnails { list-style: none; margin: 10px 0; padding: 0 } .cloudinary-thumbnails:after { clear: both; display: block; content: '' } .cloudinary-thumbnail { float: left; padding: 0; margin: 0 15px 5px 0; display: none } .cloudinary-thumbnail.active { display: block } .cloudinary-thumbnail img { border: 1px solid #01304d; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px } .cloudinary-thumbnail span { font-size: 11px; font-family: Arial, sans-serif; line-height: 14px; border: 1px solid #aaa; max-width: 150px; word-wrap: break-word; word-break: break-all; display: inline-block; padding: 3px; max-height: 60px; overflow: hidden; color: #999; } .cloudinary-delete { vertical-align: top; font-size: 13px; text-decoration: none; padding-left: 2px; line-height: 8px; font-family: Arial, sans-serif; color: #01304d }.cloudinary-button { color: #fefeff; text-decoration: none; font-size: 18px; line-height: 28px; height: 28x; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; font-weight: normal; text-decoration: none;   display: inline-block; padding: 4px 30px 4px 30px; background: #0284cf; font-family: Helvetica, Arial, sans-serif;   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyODRjZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjU5OGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);   background: -moz-linear-gradient(top,  #0284cf 0%, #02598b 100%);   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0284cf), color-stop(100%,#02598b));   background: -webkit-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: -o-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: -ms-linear-gradient(top,  #0284cf 0%,#02598b 100%);   background: linear-gradient(to bottom,  #0284cf 0%,#02598b 100%);   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0284cf', endColorstr='#02598b',GradientType=0 ); }.cloudinary-button:hover { background: #02598b;   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyNTk4YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMjg0Y2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);   background: -moz-linear-gradient(top,  #02598b 0%, #0284cf 100%);   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#02598b), color-stop(100%,#0284cf));   background: -webkit-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: -o-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: -ms-linear-gradient(top,  #02598b 0%,#0284cf 100%);   background: linear-gradient(to bottom,  #02598b 0%,#0284cf 100%);   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02598b', endColorstr='#0284cf',GradientType=0 ); </style><meta name="ember-cli-head-start"><!-- `ember-cli-meta-tags/templates/head.hbs` -->
-  <meta name="title" content="Twenty20 ~ Home" id="ember1502" class="head-tag-component ember-view">
-  <meta property="og:title" content="Twenty20 ~ Home" id="ember1504" class="head-tag-component ember-view">
-  <meta property="twitter:title" content="Twenty20 ~ Home" id="ember1506" class="head-tag-component ember-view">
-  <meta itemprop="name" content="Twenty20 ~ Home" id="ember1508" class="head-tag-component ember-view">
-  <meta name="description" content="Explore millions of real-world authentic images, crowdsourced from photographers around the world. Finally. Enjoy stock photos that don't suck." id="ember1510" class="head-tag-component ember-view">
-  <meta property="og:description" content="Explore millions of real-world authentic images, crowdsourced from photographers around the world. Finally. Enjoy stock photos that don't suck." id="ember1512" class="head-tag-component ember-view">
-  <meta itemprop="description" content="Explore millions of real-world authentic images, crowdsourced from photographers around the world. Finally. Enjoy stock photos that don't suck." id="ember1514" class="head-tag-component ember-view">
-  <meta name="keywords" content="stock photos, royalty free images, authentic stock photos, ugc, user generated photos, instagram stock photos" id="ember1516" class="head-tag-component ember-view">
-  <link rel="image_src" href="https://dp3ogl28gtjh0.cloudfront.net/rebrand/twenty20-fb-img.png" id="ember1518" class="head-tag-component ember-view">
-  <meta property="og:image" content="https://dp3ogl28gtjh0.cloudfront.net/rebrand/twenty20-fb-img.png" id="ember1520" class="head-tag-component ember-view">
-  <meta itemprop="image" content="https://dp3ogl28gtjh0.cloudfront.net/rebrand/twenty20-fb-img.png" id="ember1522" class="head-tag-component ember-view">
-  <meta property="og:url" content="https://www.twenty20.com/home/signature" id="ember1524" class="head-tag-component ember-view">
-  <meta name="twitter:app:url:iphone" content="twenty20://" id="ember1526" class="head-tag-component ember-view">
-  <meta name="robots" content="index, follow" id="ember1528" class="head-tag-component ember-view">
+jQuery(document).ready(function($){
 
-<meta name="ember-cli-head-end">
-<script src="https://www.googleadservices.com/pagead/conversion/1001209587/?random=1589458068317&amp;cv=9&amp;fst=1589458068317&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1001209587/?random=1589458068409&amp;cv=9&amp;fst=1589458068409&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;data=app%3Ddigital%3Buser_id%3D1559804%3BcurrentLocale%3Den%3Benvato_uid%3D8AA48E141D1D49C098B7D06A2C1DD173%3Bactive_account_id%3D175390%3Bactive_account_seat_id%3D178613%3Bbrowser_width%3D1366%3Bbrowser_height%3D768%3Bname%3Dexplore.signature%3Bpath%3D%2Fhome%2Fsignature%3Breferrer%3D%3Bsearch%3D%3Btitle%3DTwenty20%20~%20Home%3Burl%3Dhttps%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
-  <body class="ember-application explore explore-signature" style="padding-top: 62px;">
-    
+	// load mobile menu
+	$('#main_menu ul.menu').mobileMenu();
+    $('select.select-menu').each(function(){
+        var title = $(this).attr('title');
+        if( $('option:selected', this).val() != ''  ) title = $('option:selected',this).text();
+        $(this)
+            .css({'z-index':10,'opacity':0,'-khtml-appearance':'none'})
+            .after('<span class="select">' + title + '</span>')
+            .change(function(){
+                val = $('option:selected',this).text();
+                $(this).next().text(val);
+            })
+    });
 
-    <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	/* Masonry */
+	var $container = $('.edd_downloads_list');
+	// initialize Masonry after all images have loaded
+	$container.imagesLoaded( function() {
+		$container.masonry( { itemSelector: '.edd_download' } );
+	});
+	
+	// Moving the pagination up a div
+	var $edd_pagination = $('#edd_download_pagination');
+	$edd_pagination.parent().after($edd_pagination);
 
-    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-    <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+	/* Parallax */
+	(function(){
+		var ua = navigator.userAgent,
+		isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
 
-    <!-- segment -->
-    <script type="text/javascript">
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";}}();
-    </script>
+		/* only show if not on mobile */
+		if (isMobileWebkit) {
+// 			$('html').addClass('stocky_mobile');
+		} else {
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 0
+			});
+		}
 
-    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5683134"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img src="//bat.bing.com/action/0?ti=5683134&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+	})();
 
-    <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-88c00f99a64532dd87dee9ed54a90886.js"></script>
-    <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-de55146a908b80d7fc58e13c95c3c8d5.js"></script>
+	// FitVids
+	$("#content").fitVids();
 
-    <noscript>
-      <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
-        <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
-        <h3>Your JavaScript is Disabled!</h3>
-        <p>Twenty20 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
-      </div>
-    </noscript>
+	/* Menu Toggle */
+	$('#menu_toggle').click(function() {
+		$('#main_menu').slideToggle('fast');
+	});
 
-    <div id="ember-bootstrap-wormhole"></div>
-  
+	/* Search Toggle */
+	$('#search_toggle').click(function() {
+		$('#search_wrap').slideToggle('fast');
+	});
 
-<iframe name="stripeXDM_default471342_provider" id="stripeXDM_default471342_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=https%3A%2F%2Fwww.twenty20.com&amp;stripe_xdm_c=default471342&amp;stripe_xdm_p=1#__stripe_transport__" __idm_frm__="8589934681" frameborder="0"></iframe><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.5001258693624684"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.16039591973490408" alt="" src="https://bat.bing.com/action/0?ti=5683134&amp;Ver=2&amp;mid=3501173b-328a-d194-5c46-e02c140473e0&amp;sid=60149c19-117d-259d-9682-7c020ec47404&amp;pi=1001431019&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;p=https%3A%2F%2Fwww.twenty20.com%2F&amp;r=&amp;lt=12415&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=542378" width="0" height="0"></div><iframe src="https://js.stripe.com/v2/m/outer.html#referrer=&amp;title=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;url=https%3A%2F%2Fwww.twenty20.com%2F&amp;muid=61796979-de6b-4f76-b6e4-c45d7d8195f0&amp;sid=92676f67-5177-4f3b-af8a-f2036f3a9a09&amp;preview=false&amp;" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" frameborder="0"></iframe>
+	/* Ratings */
+	$( '.comment_form_rating .edd_reviews_rating_box' ).find('a').on('click', function (e) {
+		e.preventDefault();
+		$( '.comment_form_rating .edd_reviews_rating_box' ).find('a').removeClass( 'active' );
+		$( this ).addClass( 'active' );
+	});
 
-<div id="ember667" class="ember-view"><div class="ember-view-wrap"><div id="ember1255" class="navbar-zone top-bar-component ember-view"><nav role="navigation" class="navbar ">
+	/* Add span within comment reply title, move the <small> outside of it */
+	$('#reply-title').wrapInner('<span>').append( $('#reply-title small') );
 
-	<div style="margin-right:20px;" class="navbar-header"><button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span>
-	<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+	// Increase counter on add to cart
+	$('.purAddToCart').ajaxComplete(function(event,request, settings) {
+		if(JSON.parse(request.responseText).msgId == 0) {
+			var currentCount = parseInt($('#header_cart_count').text());
+			var newCount = currentCount + 1;
+			$('#header_cart_count').text(newCount);
+		}
+	});
 
-	<a style="" href="/" id="ember1256" class="navbar-brand logo link-to-component ember-view"><img src="" class="logo-color" width="120"><img src="" class="logo-white" width="120">Picture+254</a></div>
+	// Fancybox
+	if( $('.lightbox').length ) {
+		$(".lightbox").attr('rel', 'gallery').fancybox({
+			'transitionIn'		: 'fade',
+			'transitionOut'		: 'fade',
+			'showNavArrows' 	: 'true'
+		});
+	}
 
-	<div class="collapse navbar-collapse navbar-ex1-collapse"><span id="mobile-search-form" class="visible-xs-inline"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1257="1257"><div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1262" class="form-control input-sm ember-text-field -text-field-component ember-view"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span><ul class="nav navbar-nav navbar-left"><li><a style="" href="/home?t20p=explore.signature&amp;t20s=top-bar" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container">Home</span></a></li><li><a style="" href="/discover?t20p=explore.signature&amp;t20s=top-bar" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
-	<span style="display: none;" class="text-container">Discover</span></a></li></ul>
-	<ul class="nav navbar-nav navbar-right"><!----><!---->
-	<li class="active dropdown" style="display: none;">
-  <a href="#" data-toggle="dropdown">
-    <div id="ember1273" class="inline-block hexagon-avatar-container hexagon-avatar-component ember-view"><svg width="0" height="0"><clipPath id="hexagonClip" clipPathUnits="objectBoundingBox"><polygon points=".5 .0, .95 .25, .95 .76, .50 1.0, .05 .75, .05 .25"></polygon></clipPath></svg><img src="https://res.cloudinary.com/twenty20/image/upload/t_avatar_240x240/avatars/innoso-1589456966.jpg" style="clip-path: url(#hexagonClip);" class="avatar hexagon hexagon-small"><!----></div>
 
-    <span class="text-container margin10l">
-      innoso
-    </span>
+});
+/* ]]> */
+</script>	
+</head>
+	<body class="home page-template page-template-page-home page-template-page-home-php page page-id-2 button_light content_left edd-test-mode">
+		<section id="site_wrap">
 
-    <i class="icon-carrot-white"></i>
-    <i class="icon-carrot"></i>
+			
+			@include('stock-header')
 
-<!---->  </a>
+			
+			<section class="wrapper" id="content">				
 
-  <ul role="menu" class="dropdown-menu">
-    <li>
-<a style="" href="/innoso/photos?t20p=explore.signature&amp;t20s=top-bar" id="ember1274" class="link-to-component ember-view">        Profile
-</a>    </li>
+				<div class="container clearfix">
 
-      <li>
-<a style="" href="/innoso/collections?t20p=explore.signature&amp;t20s=top-bar" id="ember1279" class="link-to-component ember-view">          My Collections
-</a>      </li>
 
-<!---->
-      <li>
-<a style="" href="/innoso/loves?t20p=explore.signature&amp;t20s=top-bar" id="ember1284" class="link-to-component ember-view">          Loves
-</a>      </li>
+		<section id="image_grid" class="image_grid_full clearfix">
 
-<!---->
-    <li>
-<a style="" href="/license-history?t20p=explore.signature&amp;t20s=top-bar" id="ember1289" class="menuitem link-to-component ember-view">        License History
-</a>    </li>
+			
+		<div id="stocky_downloads_list" class="edd_downloads_list edd_download_columns_0">
 
-    <hr class="xlight slim">
+			
+							
+@foreach($images as $image)
+<div itemscope itemtype="#" class="edd_download" id="edd_download_169">
 
-    <li style="position: relative;">
-<a style="" href="/settings?t20p=explore.signature&amp;t20s=top-bar" id="ember1294" class="menuitem link-to-component ember-view">        Settings
+	<div class="edd_download_inner">
 
-<!----></a>    </li>
+			<div class="edd_download_image">
+		<a href="{{ route('stock-preview',$image->id) }}" title="">
+			<img width="548" height="548" src="{{ asset('uploads') }}/{{ $image->imageName }}" class="attachment-product_main size-product_main wp-post-image" alt="" sizes="(max-width: 548px) 100vw, 548px" />		</a>
+		<div class="stocky_hover_details stocky_wish_list_on">
 
-<!---->
-    <li>
-      <a tabindex="-1" class="menuitem" data-ember-action="" data-ember-action-1299="1299">
-        Logout
-      </a>
-    </li>
-  </ul>
-</li>
-<!----><li style="display: none;"><a style="" href="/notifications?t20p=explore.signature&amp;t20s=top-bar" id="ember1304" class="link-to-component ember-view"><i class="t20icon t20icon-alert"></i><span class="text-container visible-xs-inline">Activity</span><!----></a></li><li style="display: none;" id="ember1309" class="dropdown locale-setter-component ember-view"><a href="#" data-toggle="dropdown" class="dropdown-toggle"><i class="t20icon t20icon-globe"></i><!----><span class="caret"></span></a><ul role="menu" style="" class="dropdown-menu"><li class="feedback-link margin10tb text-center"><span class="beta-flag">BETA </span>We're still working on translations.<a href="https://twenty20product.typeform.com/to/gV7oxG" target="_blank">Give us feedback here</a></li><hr class="xlight slim"><li class=""><a href="#" data-ember-action="" data-ember-action-1318="1318">Deutsch</a></li><li class="active"><a href="#" data-ember-action="" data-ember-action-1319="1319">English</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1320="1320">Español (ES)</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1321="1321">Español (LA)</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1322="1322">Français</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1323="1323">Italiano</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1324="1324">日本語</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1325="1325">한국어</a></li><li class=""><a href="#" data-ember-action="" data-ember-action-1326="1326">Português</a></li></ul></li>
-<li class="dropdown">
-  <a href="#" data-toggle="dropdown" style="display: none;">
-    <i style="top: 10px;" class="t20icon t20icon-more">
-    </i>
-    <span class="text-container visible-xs-inline">
-      More
-    </span>
-  </a>
+			<div class="stocky_hover_lines">
 
-  <ul role="menu" class="dropdown-menu">
-<li id="ember1331" class="ga-linker-component ember-view">      <a href="https://elements.envato.com/" target="_blank" class="external-link">
-        <i class="t20icon t20icon-envato"></i>
-        Go To Envato Elements
-      </a>
-</li>
-    <hr class="xlight slim">
+				<a href="{{ route('stock-preview',$image->id) }}" title="" class="dcs_view_details">Details</a>
 
-    <li>
-<a style="" href="/challenges?t20p=explore.signature&amp;t20s=top-bar" id="ember1336" class="link-to-component ember-view">        Challenges
-</a>    </li>
+				{{-- <a href="#" class="edd-wl-button  edd-wl-open-modal edd-wl-action before glyph-left " data-action="edd_wl_open_modal" data-download-id="169"    data-price-option="0"><i class="glyphicon glyphicon-heart"></i><span class="label">Add to wish list</span><span class="edd-loading"><i class="edd-icon-spinner edd-icon-spin"></i></span></a> --}}
+			</div>
 
-    <li>
-<a style="" href="/social-media-marketing?t20p=explore.signature&amp;t20s=top-bar" id="ember1341" class="link-to-component ember-view">        Social Media Marketing Calendar
-</a>    </li>
-
-    <hr class="xlight slim">
-
-    <li>
-<a style="" href="/jobs?t20p=explore.signature&amp;t20s=top-bar" id="ember1346" class="link-to-component ember-view">        Join the team
-</a>    </li>
-
-    <li>
-<a style="" href="/customers?t20p=explore.signature&amp;t20s=top-bar" id="ember1351" class="link-to-component ember-view">        Customers
-</a>    </li>
-
-<!---->
-    <hr class="xlight slim">
-
-    <li>
-<a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature" id="ember1356" class="support-link-component ember-view">        Help center
-</a>    </li>
-
-    <hr class="xlight slim">
-
-    <li>
-      <div class="help-zone">
-        <p>
-          Have a question?
-        </p>
-
-<a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature" id="ember1365" class="support-link-component ember-view">          Contact Us
-</a>      </div>
-    </li>
-  </ul>
-</li>
-</ul>
-<span id="search-form" class="hidden-xs"><form class="navbar-form js-search-form" data-ember-action="" data-ember-action-1370="1370">
-	<div class="form-group"><div class="input-group"><input type="text" placeholder="Search..." id="ember1375" class="form-control input-sm ember-text-field -text-field-component ember-view" autocomplete="off"><span class="input-group-addon"><button formnovalidate="formnovalidate" name="commit" type="submit" class="only-icon"><i class="t20icon t20icon-search"></i></button></span></div></div></form></span></div><div id="ember1376" class="upgrade-prompt-component ember-view">
-		<!---->
-	</div></nav></div><div class="main"><div class="container-fluid"><div id="ember1381" class="personalized-home-component ember-view">
-		<!----><!---->
-		<div class="row"><div class="col-md-12"><h3 class="normal">Explore Collections You'll Like</h3><hr style="margin-top: 5px;" class="light"></div>
-		<!---->
-	</div>
-	<div style="margin-bottom: 60px;">
-		<div class="row">
-		@foreach($categories as $category)
-			<div class="col-xs-12 col-sm-3">
-				<div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view"><a style="" href="#" id="ember1731" class="link-to-component ember-view"><div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view"><div class="overlay-container "><div class="overlay-centered"><h5 class="title-over-image">{{ $category->name }}</h5><p style="color: white;" class="pannel-head">3673 photos</p></div></div><span class="dark-overlay-block"></span></div></a>
-			</div><p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view">Because you follow the <span style="color: #0089d0;">{{ $category->name }}</span> collection</a></p>
 		</div>
-		@endforeach
+	</div>
 
-			</div></div>
+	</div>
+
+</div>
+@endforeach
+						
+			
+			
+			
+		</div>
+
+		
+		</section>
+
+	</div>
+</section>
+
+{{-- <section id="home_cta" class="home_cta wrapper">
+	<div class="container clearfix">
+		<h1><span style="color: #ffffff;">Create a Marketplace or Sell Your Own Photos</span></h1>
+<p style="color: #ffffff;">Stocky makes it easy to create a site to sell your own photos using the Easy Digital Downloads plugin. Or you can create a marketplace and let anybody sell their photos with help from the Frontend Submissions extension for Easy Digital Downloads.</p>
+<p style="color: #ffffff;">Ready to see the rest of the theme?</p>
+<a class="button button_center" style="text-align: center;" href="/stocky/downloads">Shop Now</a>
+<div style="position: absolute; bottom: 5px; right: 5px; font-size: .7em; color: #9f9f9f;">Photo Credit: lube / <a style="color: #9f9f9f;" href="http://www.photocase.com/photo/276763-stock-photo-human-being-youth-young-adults-adults-landscape-feminine-mountain">photocase.com</a></div>	</div>
+</section> --}}
 
 
-	<!---->
-</body></html>
+
+{{-- <section id="home_latest_posts" class="wrapper">
+	<div class="container clearfix">
+
+		
+			
+<article class="post-180 post type-post status-publish format-standard hentry category-edd tag-stocky-perks" id="post-180">
+
+		<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/06/stockypromo.jpg');" /></div>
+	
+	<div class="post_content">
+
+		<div class="latest_content">
+
+			<div class="latest_date">
+				June 18, 2014			</div>
+
+			<h3 class="latest_post_title"><a href="http://themes.designcrumbs.com/stocky/sell-your-photos-create-a-marketplace/" title="Sell Your Photos, Create A Marketplace">Sell Your Photos, Create A Marketplace</a></h3>
+
+			<p>Stocky and Easy Digital Downloads helps you sell your photos or create a full featured marketplace; Complete with vendors and commission payouts.</p>
+
+		</div>
+
+	</div>
+</article>
+		
+			
+<article class="post-176 post type-post status-publish format-standard has-post-thumbnail hentry category-thoughts" id="post-176">
+
+		<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/06/DSCF0554.jpg');" /></div>
+	
+	<div class="post_content">
+
+		<div class="latest_content">
+
+			<div class="latest_date">
+				June 18, 2014			</div>
+
+			<h3 class="latest_post_title"><a href="http://themes.designcrumbs.com/stocky/you-can-write-things-here/" title="You Can Write Things Here">You Can Write Things Here</a></h3>
+
+			<p>Don&#8217;t just sell things with Stocky, you can blog too. A lot of time and love went into the design and development of stocky to bring you a full featured theme.</p>
+
+		</div>
+
+	</div>
+</article>
+		
+			
+<article class="post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-stories" id="post-185">
+
+		<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/07/jellyfish.jpg');" /></div>
+	
+	<div class="post_content">
+
+		<div class="latest_content">
+
+			<div class="latest_date">
+				June 15, 2014			</div>
+
+			<h3 class="latest_post_title"><a href="http://themes.designcrumbs.com/stocky/the-art-of-being-pulled-apart/" title="The Art of Being Pulled Apart">The Art of Being Pulled Apart</a></h3>
+
+			<p>The perfect soundtrack to a day of hiking and snapping nature photos, Jellyfish Brigade helps bring everything together and pulls it apart.</p>
+
+		</div>
+
+	</div>
+</article>
+		
+	</div>
+</section> --}}
+
+
+		
+		<footer id="footer" class="wrapper">
+			<div class="container clearfix">
+
+{{-- 												<div id="footer_widgets" class="footer_widget_count4 clearfix">
+							<div class="footer_widget widget">		<div class="box_title"><h4>Latest From The Blog</h4></div>		<ul>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/sell-your-photos-create-a-marketplace/">Sell Your Photos, Create A Marketplace</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/you-can-write-things-here/">You Can Write Things Here</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/the-art-of-being-pulled-apart/">The Art of Being Pulled Apart</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/we-write-and-look-good/">We Write and Look Good</a>
+									</li>
+					</ul>
+		</div><div class="footer_widget widget"><div class="box_title"><h4>This Is Stocky</h4></div>			<div class="textwidget"><p>You're viewing the demo for Stocky by Design Crumbs. Stocky is a theme designed to be a digital marketplace for any type of digital goods, but especially photos. Powered by WordPress and Easy Digital Downloads, Stocky helps get your products to the masses.</p>
+<p><a href="http://themes.designcrumbs.com" class="button" style="display:inline-block;">Buy Stocky Now</a></p>
+</div>
+		</div><div class="footer_widget widget"><div class='featured_user'><div class="box_title"><h4>Behind The Lens</h4></div>	
+			Now we print out speciifc user informations to screen!
+			<div class='specific_user clearfix'>
+				<img alt='' src='http://0.gravatar.com/avatar/02cdeec360274d7d9f1aa85761f95dc8?s=200&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/02cdeec360274d7d9f1aa85761f95dc8?s=400&#038;d=mm&#038;r=g 2x' class='avatar avatar-200 photo' height='200' width='200' />				<h4 class='featured_user_name'>
+					<a href='http://themes.designcrumbs.com/stocky/vendor/jake' title='Jake Caputo'>
+						Jake Caputo					</a>
+				</h4>
+				I&#039;m a web designer and developer currently living just outside of Chicago, IL. I like coffee, comic books, and cats.  I&#039;m also a big fan of The Beach Boys and the Chicago Bears.			</div>
+			<!--end-->
+	
+			</div></div>		<div class="footer_widget widget">		<div class="box_title"><h4>Recent Posts</h4></div>		<ul>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/sell-your-photos-create-a-marketplace/">Sell Your Photos, Create A Marketplace</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/you-can-write-things-here/">You Can Write Things Here</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/the-art-of-being-pulled-apart/">The Art of Being Pulled Apart</a>
+									</li>
+											<li>
+					<a href="http://themes.designcrumbs.com/stocky/we-write-and-look-good/">We Write and Look Good</a>
+									</li>
+					</ul>
+		</div>				
+	</div> --}}
+				
+				<div id="post_footer">
+
+										<div id="socnets_wrap">
+						<div id="socnets">
+														<a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+														<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+														{{-- <a href="#" title="Google+"><i class="fa fa-google"></i></a>
+														<a href="#" title="Flickr"><i class="fa fa-flickr"></i></a>
+														<a href="#" title="Tumblr"><i class="fa fa-tumblr"></i></a>
+														<a href="#" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+														<a href="#" title="YouTube"><i class="fa fa-youtube"></i></a>
+														<a href="#" title="Pinterest"><i class="fa fa-pinterest"></i></a> --}}
+													</div>
+						<div class="clear"></div>
+					</div>
+					
+					<div id="footer_copy">
+						&copy; 2020 picture+254
+						
+							 
+						</div>
+
+				</div>
+
+			</div>
+		</footer>
+
+		
+	</section>	<script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    _pa.productId = "dcs_stocky";
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53ef64f22e4ef322e0000047.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
+<div id="fb-root"></div><script>
+    jQuery(document).ready(function () {
+		jQuery.post('http://themes.designcrumbs.com/stocky?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
+			var s = document.createElement("script");
+			s.type = "text/javascript";
+			s.innerHTML = response;
+			jQuery("head").append(s);
+		});
+    });
+</script>
+
+<!-- <script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/easy-digital-downloads/assets/js/edd-ajax.min.js?ver=2.9.18'></script> -->
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/comment-reply.min.js?ver=5.2.4'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
+
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-wish-lists/includes/js/edd-wl.min.js?ver=1.1.7'></script>
+<script type='text/javascript' src='http://themes.designcrumbs.com/stocky/wp-content/plugins/edd-wish-lists/includes/js/modal.min.js?ver=1.1.7'></script>
+	<div class="modal fade" id="edd-wl-modal" tabindex="-1" role="dialog" aria-labelledby="edd-wl-modal-label" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	    		    </div>
+	  </div>
+	</div>
+
+		</body>
+</html>
