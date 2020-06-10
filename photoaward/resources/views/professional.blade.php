@@ -342,13 +342,13 @@
 </div>
 </div>
 
-@include('menu') 
+{{-- @include('menu')  --}}
 
 
-<div id="footer">
+{{-- <div id="footer">
 	<div class="container">
 		<div id="copyright" class="wfont">&copy; PICTURE+254.</div>
 	</div>
-</div>
+</div> --}}
 </body>
 </html>

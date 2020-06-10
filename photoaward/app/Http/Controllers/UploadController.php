@@ -44,7 +44,19 @@ class UploadController extends Controller
 
         $category = '';
 
-        return view('stocktest', compact('images', 'category', 'categories'));
+        return view('stock', compact('images', 'category', 'categories'));
+    }
+
+    public function discover()
+    {
+
+        $images = Upload::latest()->get();
+
+        $categories = Category::all();
+
+        $category = '';
+
+        return view('discovery', compact('images', 'category', 'categories'));
     }
 
     public function stock_view(Upload $upload)
@@ -66,9 +78,23 @@ class UploadController extends Controller
         return view('landing_info', compact('upload', 'images', 'author', 'category'));
     }
 
-    public function test()
+    public function getCatImage($category)
     {
-        dd("it worked!");
+        $cat = Category::where('name',$category)->first();
+
+
+        return view('stockcat', compact('cat'));
+    }
+
+    public function stockImageInfo($imageId)
+    {
+        $image = Upload::where('id', $imageId)->first();
+
+        $authorImages = Upload::where('user_id', $image->user_id)->get();
+
+        $catImages = Upload::where('category_id', $image->category_id)->get();
+
+        return view('stockinfo', compact('image', 'authorImages', 'catImages'));
     }
 
     public function view_cart()

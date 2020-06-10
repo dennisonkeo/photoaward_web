@@ -380,7 +380,10 @@ jQuery(document).ready(function($){
 					</div>
 					
 							<div id="footer_copy">
-						&copy; PICTURE+254
+						<div class="container">
+		  <div class="container" style="text-align: center;">
+        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        </div>
 							
 							</div>
 

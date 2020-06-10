@@ -71,7 +71,8 @@
 <div id="header">
 	<div class="container">
 		
-		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;" ><span>PICTURE+254</span></a></div>
+		<div id="logo"><a onclick="window.location='{{ url("/") }}'" href="#" class="hover-line" style="color: #ff00ff; font-size: 16px;">
+			<span>PICTURE+254</span></a></div>
 		
 
 		<div id="gnavi" class="nav">
@@ -148,12 +149,10 @@
 </div>
 @include('menu')
 <div id="footer">
-	<div class="container">
-		<div 
-			class="wfont" style="font-size:14px; text-align: center;" >Copyright &copy;PICTURE+254.<script>document.write(new Date().getFullYear());</script> All rights reserved.
-        </div>
-		{{-- <div id="copyright" class="wfont">&copy; PICTURE+254.</div> --}}
-	</div>
+		  	<div class="container" style="text-align: center;">
+        		<div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        		</div>
+			</div>
 </div>
 </body>
 </html>
