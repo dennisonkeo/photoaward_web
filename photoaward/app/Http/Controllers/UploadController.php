@@ -44,7 +44,7 @@ class UploadController extends Controller
 
         $category = '';
 
-        return view('stocktest', compact('images', 'category', 'categories'));
+        return view('stock', compact('images', 'category', 'categories'));
     }
 
     public function discover()
