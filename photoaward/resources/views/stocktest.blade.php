@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -481,7 +480,7 @@ jQuery(document).ready(function($){
 
 		</body>
 </html>
-=======
+
 <html itemscope="" itemtype="http://schema.org/Product" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-i7-active wf-museosans-n9-active wf-active" lang="en">
    <head>
       <meta charset="utf-8">
@@ -527,114 +526,6 @@ jQuery(document).ready(function($){
       <meta name="robots" content="index, follow" id="ember1528" class="head-tag-component ember-view">
       <meta name="ember-cli-head-end">
       <script src="https://www.googleadservices.com/pagead/conversion/1001209587/?random=1589458068317&amp;cv=9&amp;fst=1589458068317&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1001209587/?random=1589458068409&amp;cv=9&amp;fst=1589458068409&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;data=app%3Ddigital%3Buser_id%3D1559804%3BcurrentLocale%3Den%3Benvato_uid%3D8AA48E141D1D49C098B7D06A2C1DD173%3Bactive_account_id%3D175390%3Bactive_account_seat_id%3D178613%3Bbrowser_width%3D1366%3Bbrowser_height%3D768%3Bname%3Dexplore.signature%3Bpath%3D%2Fhome%2Fsignature%3Breferrer%3D%3Bsearch%3D%3Btitle%3DTwenty20%20~%20Home%3Burl%3Dhttps%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
-
-
-        <style type="text/css">
-    html,
-body {
-  /*width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
-  background: #1b2431;*/
-}
-
-.wrapper {
-  width: 90vw;
-  height: 90vh;
-  margin: 5vh auto 5vh auto;
-  display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-gap: 1rem;
-
-}
-
-.wrapper .grid-box {
-  background: #ff6e48;
-  transition: all 250ms;
-  font-size: 5rem;
-  color: white;
-  font-family: sans-serif;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  animation: fadein 1s ease-out normal backwards;
-}
-
-.image_gal {
-  /*background: #ff6e48;*/
-  transition: all 250ms;
-  font-size: 5rem;
-  color: white;
-  font-family: sans-serif;
-  /*box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-  animation: fadein 1s ease-out normal backwards;
-}
-
-.image_gal:hover {
-  z-index: 2;
-  position: relative;
-  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.15),
-    0 1rem 1rem rgba(0, 0, 0, 0.15);
-  transform: translate(0, -0.5rem) scale(1.01);
-}
-
-.element1 {
-  /*grid-area: box1;*/
-  background: #ff6e48;
-  animation-delay: 0;
-}
-.element2 {
-  /*grid-area: box2;*/
-  animation-delay: 200ms;
-}
-.element3 {
-  /*grid-area: box3;*/
-  animation-delay: 400ms;
-}
-.element4 {
-  /*grid-area: box4;*/
-  animation-delay: 600ms;
-}
-.element5 {
-  /*grid-area: box5;*/
-  animation-delay: 800ms;
-}
-.element6 {
-  /*grid-area: box6;*/
-  animation-delay: 1000ms;
-}
-.element7 {
-  /*grid-area: box7;*/
-  animation-delay: 1200ms;
-}
-.element8 {
-  /*grid-area: box8;*/
-  animation-delay: 1400ms;
-}
-.wrapper .element9 {
-  grid-area: box9;
-  animation-delay: 400ms;
-}
-.wrapper .element10 {
-  grid-area: box10;
-  animation-delay: 500ms;
-}
-
-@keyframes fadein {
-  0% {
-    transform: scale(0);
-  }
-  70% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-  </style>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    </head>
    <body class="ember-application explore explore-signature" style="padding-top: 62px;">
       <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
@@ -678,9 +569,8 @@ body {
       </div>
       <div style="margin-bottom: 60px;">
          <div class="row">
-         	<?php $count = 1;?>
             @foreach($categories as $category)
-            <div class="col-xs-12 col-sm-3 image_gal element{{ $count }}">
+            <div class="col-xs-12 col-sm-3">
                <div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view">
                   <a style="" href="{{ route('explore',$category->name) }}" id="ember1731" class="link-to-component ember-view">
                      <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view">
@@ -696,9 +586,7 @@ body {
                </div>
                <p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view"><span style="color: #0089d0;">{{ $category->name }}</span></a></p>
             </div>
-            <?php $count++;?>
             @endforeach
-
          </div>
       </div>
         <div class="container" style="text-align: center;">
@@ -706,14 +594,7 @@ body {
         </div>
  </div>
       <!---->
-  {{-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> --}}
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-// 	$(".image_gal").hide().each(function(i) {
-//   $(this).delay(i*1000).fadeIn(1000);
-// });
-  </script>
    </body>
 
 </html>
->>>>>>> 90c7af0ea27d65323cb10125ec7da8fb66dcc752
+
