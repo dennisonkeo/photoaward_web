@@ -97,7 +97,7 @@ body {
 
 .element1 {
   /*grid-area: box1;*/
-  background: #ff6e48;
+  /*background: #ff6e48;*/
   animation-delay: 0;
 }
 .element2 {
