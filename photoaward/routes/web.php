@@ -72,6 +72,14 @@ Route::get('prizes', function () {
     return view('prizes');
 });
 
+Route::get('slider1', function () {
+    return view('testslider');
+});
+
+Route::get('slider2', function () {
+    return view('slider2');
+});
+
 Route::get('terms-&-conditions', function () {
     return view('terms');
 });

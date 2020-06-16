@@ -87,7 +87,7 @@
       <div style="margin-bottom: 60px;">
          <div class="row">
             @foreach($categories as $category)
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-3 image_gal">
                <div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view">
                   <a style="" href="{{ route('explore',$category->name) }}" id="ember1731" class="link-to-component ember-view">
                      <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view">
@@ -104,6 +104,7 @@
                <p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view"><span style="color: #0089d0;">{{ $category->name }}</span></a></p>
             </div>
             @endforeach
+
          </div>
       </div>
         <div class="container" style="text-align: center;">
@@ -111,6 +112,13 @@
         </div>
  </div>
       <!---->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+	$(".image_gal").hide().each(function(i) {
+  $(this).delay(i*1000).fadeIn(1000);
+});
+  </script>
    </body>
 
 </html>
