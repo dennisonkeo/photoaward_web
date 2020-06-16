@@ -84,7 +84,7 @@ body {
   color: white;
   font-family: sans-serif;
   /*box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
-  animation: fadein 1s ease-out normal backwards;
+  animation: fadein 2s ease-out normal backwards;
 }
 
 .image_gal:hover {
