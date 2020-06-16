@@ -61,5 +61,12 @@ class Categories extends Seeder
 		    $category->amount = 100;
 		    $category->cover = 'pic53.jpg';
 		    $category->save();
+
+		    $category = new Category();
+		    $category->name = 'DOCUMENTARY';
+		    $category->description = 'Photographs manipulated for artistic purposes by applying digital and/or traditional special effects.';
+		    $category->amount = 100;
+		    $category->cover = 'pic53.jpg';
+		    $category->save();
     }
 }
