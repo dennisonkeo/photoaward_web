@@ -80,6 +80,10 @@ Route::get('slider2', function () {
     return view('slider2');
 });
 
+Route::get('animation', function () {
+    return view('animation');
+});
+
 Route::get('terms-&-conditions', function () {
     return view('terms');
 });
