@@ -40,7 +40,7 @@ padding: 0 !important;
 <link rel='stylesheet' id='font-Roboto-css'  href='//fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C400italic%2C700%2C700italic&#038;ver=5.2.6' type='text/css' media='all' />
 <link rel='stylesheet' id='font-awesome-css'  href='https://theme.scube.co/stocky/wp-content/themes/stocky/includes/css/font-awesome.min.css?ver=5.2.6' type='text/css' media='all' />
 <link rel='stylesheet' id='stylesheet-css'  href='//fonts.googleapis.com/css?family=Roboto%3A100%2C400%2C400italic%2C700%2C700italic&#038;ver=5.2.6' type='text/css' media='all' />
-<link rel='stylesheet' id='edd-wl-styles-css'  href='https://theme.scube.co/stocky/wp-content/plugins/edd-wish-lists/templates/edd-wl.min.css?ver=1.1.7' type='text/css' media='screen' />
+<link rel='stylesheet' id='edd-wl-styles-css'  href='home_latest_posts://theme.scube.co/stocky/wp-content/plugins/edd-wish-lists/templates/edd-wl.min.css?ver=1.1.7' type='text/css' media='screen' />
 <script type='text/javascript' src='https://theme.scube.co/stocky/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
 <script type='text/javascript' src='https://theme.scube.co/stocky/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript' src='https://theme.scube.co/stocky/wp-content/themes/stocky/includes/fancybox/jquery.fancybox.pack.js?ver=5.2.6'></script>
@@ -273,7 +273,7 @@ $(".lightbox").attr('rel', 'gallery').fancybox({
 {{-- <section id="home_cta" class="home_cta wrapper">
 <div class="container clearfix">
 <h1><span style="color: #ffffff;">Create a Marketplace or Sell Your Own Photos</span></h1>
-<p style="color: #ffffff;">Stocky makes it easy to create a site to sell your own photos using the Easy Digital Downloads plugin. Or you can create a marketplace and let anybody sell their photos with help from the Frontend Submissions extension for Easy Digital Downloads.</p>
+<p style="color: #ffffff;">Picture+254 makes it easy to create a site to sell your own photos using the Easy Digital Downloads plugin. Or you can create a marketplace and let anybody sell their photos with help from the Frontend Submissions extension for Easy Digital Downloads.</p>
 <p style="color: #ffffff;">Ready to see the rest of the theme?</p>
 <a class="button button_center" style="text-align: center;" href="/stocky/downloads">Shop Now</a>
 <div style="position: absolute; bottom: 5px; right: 5px; font-size: .7em; color: #9f9f9f;">Photo Credit: lube / <a style="color: #9f9f9f;" href="http://www.photocase.com/photo/276763-stock-photo-human-being-youth-young-adults-adults-landscape-feminine-mountain">photocase.com</a></div> </div>
@@ -288,7 +288,7 @@ $(".lightbox").attr('rel', 'gallery').fancybox({
 
 <article class="post-180 post type-post status-publish format-standard hentry category-edd tag-stocky-perks" id="post-180">
 
-<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/06/stockypromo.jpg');" /></div>
+<div class="latest_bg_img" style="background-image:url('');" /></div>
 
 <div class="post_content">
 
@@ -299,7 +299,7 @@ June 18, 2014 </div>
 
 <h3 class="latest_post_title"><a href="http://themes.designcrumbs.com/stocky/sell-your-photos-create-a-marketplace/" title="Sell Your Photos, Create A Marketplace">Sell Your Photos, Create A Marketplace</a></h3>
 
-<p>Stocky and Easy Digital Downloads helps you sell your photos or create a full featured marketplace; Complete with vendors and commission payouts.</p>
+<p>Picture+254 and Easy Digital Downloads helps you sell your photos or create a full featured marketplace; Complete with vendors and commission payouts.</p>
 
 </div>
 
@@ -309,7 +309,7 @@ June 18, 2014 </div>
 
 <article class="post-176 post type-post status-publish format-standard has-post-thumbnail hentry category-thoughts" id="post-176">
 
-<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/06/DSCF0554.jpg');" /></div>
+<div class="latest_bg_img" style="background-image:url('');" /></div>
 
 <div class="post_content">
 
@@ -320,7 +320,7 @@ June 18, 2014 </div>
 
 <h3 class="latest_post_title"><a href="http://themes.designcrumbs.com/stocky/you-can-write-things-here/" title="You Can Write Things Here">You Can Write Things Here</a></h3>
 
-<p>Don&#8217;t just sell things with Stocky, you can blog too. A lot of time and love went into the design and development of stocky to bring you a full featured theme.</p>
+<p>Don&#8217;t just sell things with Picture+254, you can blog too. A lot of time and love went into the design and development of stocky to bring you a full featured theme.</p>
 
 </div>
 
@@ -330,7 +330,7 @@ June 18, 2014 </div>
 
 <article class="post-185 post type-post status-publish format-standard has-post-thumbnail hentry category-stories" id="post-185">
 
-<div class="latest_bg_img" style="background-image:url('http://themes.designcrumbs.com/stocky/files/edd/2014/07/jellyfish.jpg');" /></div>
+<div class="latest_bg_img" style="background-image:url('');" /></div>
 
 <div class="post_content">
 
