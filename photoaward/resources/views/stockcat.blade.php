@@ -74,7 +74,7 @@
                                     <!---->{{ $cat->name }}
                                  </h1>
                                  <!---->
-                                 <p>{{ $cat->description }}</p>
+                                 <p>{{ $cat->note }}</p>
                                  <div style="" id="ember10820" class="follow-collection-button-component ember-view">
                                     <span id="ember10825" class="loading-button-component ember-view">
                                        {{-- <button style="" class="btn btn-loading   btn-outline btn-sm" data-ember-action="" data-ember-action-10826="10826">
