@@ -371,8 +371,8 @@ June 15, 2014 </div>
 <a href="http://themes.designcrumbs.com/stocky/we-write-and-look-good/">We Write and Look Good</a>
 </li>
 </ul>
-</div><div class="footer_widget widget"><div class="box_title"><h4>This Is Stocky</h4></div> <div class="textwidget"><p>You're viewing the demo for Stocky by Design Crumbs. Stocky is a theme designed to be a digital marketplace for any type of digital goods, but especially photos. Powered by WordPress and Easy Digital Downloads, Stocky helps get your products to the masses.</p>
-<p><a href="http://themes.designcrumbs.com" class="button" style="display:inline-block;">Buy Stocky Now</a></p>
+</div><div class="footer_widget widget"><div class="box_title"><h4>This Is Picture+254</h4></div> <div class="textwidget"><p>You're viewing the demo for Picture+254 by Design Crumbs. Picture+254 is a theme designed to be a digital marketplace for any type of digital goods, but especially photos. Powered by WordPress and Easy Digital Downloads, Picture+254 helps get your products to the masses.</p>
+<p><a href="http://themes.designcrumbs.com" class="button" style="display:inline-block;">Buy Picture Now</a></p>
 </div>
 </div><div class="footer_widget widget"><div class='featured_user'><div class="box_title"><h4>Behind The Lens</h4></div>
 Now we print out speciifc user informations to screen!
