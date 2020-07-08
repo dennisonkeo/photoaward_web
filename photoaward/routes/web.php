@@ -332,6 +332,8 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::put('update-profile', 'HomeController@update')->name('update-profile');
 
+Route::put('profile-update', 'HomeController@updateProfile')->name('profile-update');
+
 Route::put('update', 'UploadController@update')->name('update');
 
 Route::delete('delete-image/{upload}', 'UploadController@destroy')->name('delete-image');
