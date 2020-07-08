@@ -13,14 +13,14 @@
       <meta property="twitter:account_id" content="1578194636"/>
       <meta name="flashmessages" content="W10=">
       <meta name="jwt" content="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvd3d3LnN0b2Nrc3kuY29tIiwic3ViIjoiXC8iLCJhdWQiOiJkZGNjMjMxYTJlYjFiZjFiY2U4NTA1YWJmYjJiYzQwMyIsImV4cCI6MTU5Mjg1MDc5MSwibmJmIjoxNTkyMjQ1OTkxLCJpYXQiOjE1OTIyNDU5OTF9.t-0C_kqrEXu93Mebw9pLBqPZ3JfmpLlA3lBAzdsHEVQ">
-      <link rel="preload" href="/dist/css/site.min.506b4d0a.css" as="style">
-      <link rel="preload" href="/dist/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/open-sans-latin-300.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/open-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/open-sans-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/open-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-      <link rel="preload" href="/dist/fonts/playfair-display-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/css/site.min.506b4d0a.css" as="style">
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/open-sans-latin-300.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/open-sans-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/open-sans-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/open-sans-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://www.stocksy.com/dist/fonts/playfair-display-latin-700.woff2" as="font" type="font/woff2" crossorigin>
       <link rel="dns-prefetch" href="//ajax.cloudflare.com">
       <link rel="dns-prefetch" href="//cdn.freshmarketer.com">
       <link rel="dns-prefetch" href="//cdn.segment.com">
@@ -44,7 +44,7 @@
       <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/icon/apple-touch-icon-76x76-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icon/apple-touch-icon-72x72-precomposed.png">
       <link rel="apple-touch-icon-precomposed" href="/images/icon/apple-touch-icon-precomposed.png">
-      <link href="/dist/css/site.min.506b4d0a.css" media="all" rel="stylesheet" type="text/css" >
+      <link href="https://www.stocksy.com/dist/css/site.min.506b4d0a.css" media="all" rel="stylesheet" type="text/css" >
       <link href="https://www.stocksy.com/" id="canonical" rel="canonical" >
       <title>Stocksy United - Relentlessly Creative Stock Photos and Videos</title>
       <meta property="environment" content="production" >
@@ -85,11 +85,11 @@
          })(window,document.documentElement,'async-hide','dataLayer',4000,
          {'GTM-WWX6BQG':true});
       </script>
-      <script src="/dist/js/runtime.e5202a18.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
-      <script src="/dist/js/commons.f081c4f9.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
-      <script src="/dist/js/site.min.a1681015.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
+      <script src="https://www.stocksy.com/dist/js/runtime.e5202a18.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
+      <script src="https://www.stocksy.com/dist/js/commons.f081c4f9.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
+      <script src="https://www.stocksy.com/dist/js/site.min.a1681015.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
       <script src="" type="c2581941f9f019bad1b50118-text/javascript"></script>
-      <script src="/dist/js/vendor.d4b912b5.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
+      <script src="https://www.stocksy.com/dist/js/vendor.d4b912b5.bundle.js" type="c2581941f9f019bad1b50118-text/javascript"></script>
       <!-- Start of getsetreff snippet -->
       <script type="c2581941f9f019bad1b50118-text/javascript">
          var dataLayer = dataLayer || [];
@@ -565,7 +565,7 @@
             </div>
          </div>
       </footer>
-      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='/dist/js/views/index/index.86f249fd.bundle.js' type="c2581941f9f019bad1b50118-text/javascript"></script>
+      <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='https://www.stocksy.com/dist/js/views/index/index.86f249fd.bundle.js' type="c2581941f9f019bad1b50118-text/javascript"></script>
       <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="c2581941f9f019bad1b50118-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"5a3e60c7d95acb83","version":"2020.5.1","si":10}'></script>
    </body>
 </html>

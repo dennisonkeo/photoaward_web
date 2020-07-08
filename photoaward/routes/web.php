@@ -19,6 +19,10 @@ Route::get('stock-test', function () {
     return view('stocktest');
 });
 
+Route::get('edit-profile', function () {
+    return view('testInfo');
+})->name('edit-profile');
+
 Route::get('stock-cat', function () {
     return view('stockcat');
 });
@@ -190,6 +194,8 @@ Route::get('categories/{category}', 'CategoryController@filter_by_category')->na
 Route::get('send-mail', 'CartController@sendMail')->name('send-mail');
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 Route::get('discover', 'UploadController@discover')->name('discover');
+
+Route::get('loves', 'UploadController@loves')->name('loves');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
 

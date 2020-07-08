@@ -63,16 +63,16 @@ use App\Purchase;
 
   <ul role="menu" class="dropdown-menu">
     <li>
-<a style="" href="/innoso/photos?t20p=explore.signature&amp;t20s=top-bar" id="ember1274" class="link-to-component ember-view">        Profile
+<a style="" href="{{ route('edit-profile') }}" id="ember1274" class="link-to-component ember-view">        Profile
 </a>    </li>
 
       <li>
-<a style="" href="/innoso/collections?t20p=explore.signature&amp;t20s=top-bar" id="ember1279" class="link-to-component ember-view">          Wishlist
+<a style="" href="#" id="ember1279" class="link-to-component ember-view">          Wishlist
 </a>      </li>
 
 <!---->
       <li>
-<a style="" href="/innoso/loves?t20p=explore.signature&amp;t20s=top-bar" id="ember1284" class="link-to-component ember-view">          Likes
+<a style="" href="{{ route('loves') }}" id="ember1284" class="link-to-component ember-view">          Likes
 </a>      </li>
 
 <!---->
@@ -83,7 +83,7 @@ use App\Purchase;
     <hr class="xlight slim">
 
     <li style="position: relative;">
-<a style="" href="/settings?t20p=explore.signature&amp;t20s=top-bar" id="ember1294" class="menuitem link-to-component ember-view">        Settings
+<a style="" href="#" id="ember1294" class="menuitem link-to-component ember-view">        Settings
 
 <!----></a>    </li>
 
