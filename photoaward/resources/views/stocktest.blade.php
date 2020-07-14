@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Picture+254</title>
-      <script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=78163&amp;ref=https://www.twenty20.com/home/signature&amp;be=6321&amp;fe=78070&amp;dc=12353&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589458035974,%22n%22:0,%22u%22:6035,%22ue%22:6046,%22f%22:17,%22dn%22:77,%22dne%22:1183,%22c%22:1183,%22s%22:1936,%22ce%22:3143,%22rq%22:3143,%22rp%22:3641,%22rpe%22:3641,%22dl%22:6035,%22di%22:12333,%22ds%22:12349,%22de%22:12415,%22dc%22:78066,%22l%22:78066,%22le%22:78129%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589458200000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script><
+      <script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=78163&amp;ref=https://www.twenty20.com/home/signature&amp;be=6321&amp;fe=78070&amp;dc=12353&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589458035974,%22n%22:0,%22u%22:6035,%22ue%22:6046,%22f%22:17,%22dn%22:77,%22dne%22:1183,%22c%22:1183,%22s%22:1936,%22ce%22:3143,%22rq%22:3143,%22rp%22:3641,%22rpe%22:3641,%22dl%22:6035,%22di%22:12333,%22ds%22:12349,%22de%22:12415,%22dc%22:78066,%22l%22:78066,%22le%22:78129%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589458200000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="fragment" content="!">
       <meta name="twenty20-digital/config/environment" content="%7B%22modulePrefix%22%3A%22twenty20-digital%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22ENABLE_DS_FILTER%22%3Atrue%2C%22EXTEND_PROTOTYPES%22%3Atrue%2C%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22twenty20-digital%22%2C%22version%22%3A%220.0.2%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en%22%2C%22defaultFallback%22%3Atrue%7D%2C%22contentSecurityPolicy%22%3A%7B%22default-src%22%3A%22'none'%22%2C%22script-src%22%3A%22'self'%20'unsafe-eval'%20'unsafe-inline'%20js.stripe.com%20checkout.stripe.com%20use.typekit.net%20dp3ogl28gtjh0.cloudfront.net%20cdn.segment.io%20www.google-analytics.com%20maps.googleapis.com%20%22%2C%22frame-src%22%3A%22js.stripe.com%20checkout.stripe.com%20dialog.filepicker.io%20www.filepicker.io%22%2C%22font-src%22%3A%22'self'%20fonts.gstatic.com%20www.twenty20.com%20data%3A%22%2C%22connect-src%22%3A%22'self'%20api-v2.twenty20.com%20staging-api-v2.twenty20.com%20checkout.stripe.com%20ajax.cdnjs.com%20api.segment.io%20d24ilbxry44jok.cloudfront.net%20widget.cloudinary.com%20app.getsentry.com%22%2C%22img-src%22%3A%22'self'%20*%20data%3A%20app.getsentry.com%22%2C%22style-src%22%3A%22'self'%20'unsafe-inline'%20fonts.googleapis.com%20use.typekit.net%22%2C%22media-src%22%3A%22'self'%20dp3ogl28gtjh0.cloudfront.net%22%2C%22object-src%22%3A%22cdnjs.cloudflare.com%22%7D%2C%22SEARCH_ENDPOINT%22%3A%22search%22%2C%22SOLR_SEARCH%22%3A%22false%22%2C%22API_HOST%22%3A%22https%3A%2F%2Fapi-v2.twenty20.com%22%2C%22API_V3_HOST%22%3A%22https%3A%2F%2Fapi-v3.twenty20.com%22%2C%22PIXELS_HOST%22%3A%22https%3A%2F%2Fdc4fj9o1wzm3u.cloudfront.net%22%2C%22UPLOAD_HOST%22%3A%22https%3A%2F%2Fd24ilbxry44jok.cloudfront.net%22%2C%22COMP_HOST%22%3A%22https%3A%2F%2Fdigital-comp.twenty20.com%22%2C%22ENVATO_SSO_SERVER%22%3A%22https%3A%2F%2Faccount.envato.com%22%2C%22ELEMENTS_ACCOUNT_URL%22%3A%22https%3A%2F%2Faccount.elements.envato.com%22%2C%22ELEMENTS_PRICING_URL%22%3A%22https%3A%2F%2Felements.envato.com%2Ftwenty20%2Fconnect%22%2C%22OAUTH_FACEBOOK_CLIENT_ID%22%3A%22421986587813170%22%2C%22OAUTH_INSTAGRAM_CLIENT_ID%22%3A%220582843ecca8460b8034c9e50388dea9%22%2C%22FILEPICKER_API_KEY%22%3A%22AuvE5RQc0SF26ucbFUaDDz%22%2C%22STRIPE_PUBLISHABLE_KEY%22%3A%22pk_live_xpg13zMyJgibTEeq71wxoH1t00paLwqW7l%22%2C%22SEGMENTIO_API_KEY%22%3A%22l4o2od3lg2%22%2C%22SENTRY_DSN_KEY%22%3A%22https%3A%2F%2Fda8301b8318d4ca8aa3e9969aa86b1ab%40sentry.io%2F1339230%22%2C%22GRID_ROW_HEIGHT%22%3A250%2C%22robots%22%3A%22index%2Call%2Cfollow%22%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%7D">
@@ -21,6 +21,7 @@
       <meta name="twitter:app:id:iphone" content="577323200">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-74a2c6f27f72fbcd4e6f96f62a071b7a.css">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-6543a70f6bed3fbfb14a4eac96585e54.css">
+     
       <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style>
       <style type="text/css">@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/635674/00000000000000000000e800/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}</style>
       <style type="text/css"></style>
@@ -43,6 +44,114 @@
       <meta name="robots" content="index, follow" id="ember1528" class="head-tag-component ember-view">
       <meta name="ember-cli-head-end">
       <script src="https://www.googleadservices.com/pagead/conversion/1001209587/?random=1589458068317&amp;cv=9&amp;fst=1589458068317&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1001209587/?random=1589458068409&amp;cv=9&amp;fst=1589458068409&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=7&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;data=app%3Ddigital%3Buser_id%3D1559804%3BcurrentLocale%3Den%3Benvato_uid%3D8AA48E141D1D49C098B7D06A2C1DD173%3Bactive_account_id%3D175390%3Bactive_account_seat_id%3D178613%3Bbrowser_width%3D1366%3Bbrowser_height%3D768%3Bname%3Dexplore.signature%3Bpath%3D%2Fhome%2Fsignature%3Breferrer%3D%3Bsearch%3D%3Btitle%3DTwenty20%20~%20Home%3Burl%3Dhttps%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+
+
+        <style type="text/css">
+    html,
+body {
+  /*width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background: #1b2431;*/
+}
+
+.wrapper {
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto 5vh auto;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 1rem;
+
+}
+
+.wrapper .grid-box {
+  background: #ff6e48;
+  transition: all 250ms;
+  font-size: 5rem;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  animation: fadein 1s ease-out normal backwards;
+}
+
+.image_gal {
+  /*background: #ff6e48;*/
+  transition: all 250ms;
+  font-size: 5rem;
+  color: white;
+  font-family: sans-serif;
+  /*box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
+  animation: fadein 2s ease-out normal backwards;
+}
+
+.image_gal:hover {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.15),
+    0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0, -0.5rem) scale(1.01);
+}
+
+.element1 {
+  /*grid-area: box1;*/
+  /*background: #ff6e48;*/
+  animation-delay: 0;
+}
+.element2 {
+  /*grid-area: box2;*/
+  animation-delay: 200ms;
+}
+.element3 {
+  /*grid-area: box3;*/
+  animation-delay: 400ms;
+}
+.element4 {
+  /*grid-area: box4;*/
+  animation-delay: 600ms;
+}
+.element5 {
+  /*grid-area: box5;*/
+  animation-delay: 800ms;
+}
+.element6 {
+  /*grid-area: box6;*/
+  animation-delay: 1000ms;
+}
+.element7 {
+  /*grid-area: box7;*/
+  animation-delay: 1200ms;
+}
+.element8 {
+  /*grid-area: box8;*/
+  animation-delay: 1400ms;
+}
+.wrapper .element9 {
+  grid-area: box9;
+  animation-delay: 400ms;
+}
+.wrapper .element10 {
+  grid-area: box10;
+  animation-delay: 500ms;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    </head>
    <body class="ember-application explore explore-signature" style="padding-top: 62px;">
       <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
@@ -65,13 +174,13 @@
          </div>
       </noscript>
       <div id="ember-bootstrap-wormhole"></div>
-      <iframe name="stripeXDM_default471342_provider" id="stripeXDM_default471342_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=https%3A%2F%2Fwww.twenty20.com&amp;stripe_xdm_c=default471342&amp;stripe_xdm_p=1#__stripe_transport__" __idm_frm__="8589934681" frameborder="0"></iframe>
+      <iframe name="stripeXDM_default471342_provider" id="stripeXDM_default471342_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="" frameborder="0"></iframe>
       <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.5001258693624684"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.16039591973490408" alt="" src="https://bat.bing.com/action/0?ti=5683134&amp;Ver=2&amp;mid=3501173b-328a-d194-5c46-e02c140473e0&amp;sid=60149c19-117d-259d-9682-7c020ec47404&amp;pi=1001431019&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;p=https%3A%2F%2Fwww.twenty20.com%2F&amp;r=&amp;lt=12415&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=542378" width="0" height="0"></div>
       <iframe src="https://js.stripe.com/v2/m/outer.html#referrer=&amp;title=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;url=https%3A%2F%2Fwww.twenty20.com%2F&amp;muid=61796979-de6b-4f76-b6e4-c45d7d8195f0&amp;sid=92676f67-5177-4f3b-af8a-f2036f3a9a09&amp;preview=false&amp;" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" frameborder="0"></iframe>
       <div id="ember667" class="ember-view">
       <div class="ember-view-wrap">
       <div id="ember1255" class="navbar-zone top-bar-component ember-view">
-			@include('stockNav')
+@include('stockNav')
       </div>
       <div class="main">
       <div class="container-fluid">
@@ -86,8 +195,9 @@
       </div>
       <div style="margin-bottom: 60px;">
          <div class="row">
+          <?php $count = 1;?>
             @foreach($categories as $category)
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-3 image_gal element{{ $count }}">
                <div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view">
                   <a style="" href="{{ route('explore',$category->name) }}" id="ember1731" class="link-to-component ember-view">
                      <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view">
@@ -103,7 +213,9 @@
                </div>
                <p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view"><span style="color: #0089d0;">{{ $category->name }}</span></a></p>
             </div>
+            <?php $count++;?>
             @endforeach
+
          </div>
       </div>
         <div class="container" style="text-align: center;">
@@ -111,6 +223,13 @@
         </div>
  </div>
       <!---->
+  {{-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> --}}
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+// $(".image_gal").hide().each(function(i) {
+//   $(this).delay(i*1000).fadeIn(1000);
+// });
+  </script>
    </body>
 
 </html>

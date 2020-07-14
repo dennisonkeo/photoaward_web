@@ -2,24 +2,27 @@
 
 <html itemscope="" itemtype="http://schema.org/Product" class="wf-museosans-n1-active wf-museosans-n3-active wf-museosans-i3-active wf-museosans-n5-active wf-museosans-n7-active wf-museosans-i7-active wf-museosans-n9-active wf-active" lang="en">
    <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Picture+254</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <title>PICTURE+254</title>
       <script src="https://js.hs-scripts.com/453289.js" type="text/javascript" id="hs-script-loader"></script><script type="text/javascript" src="https://bam.nr-data.net/1/4eb2c2ee8f?a=400093202&amp;sa=1&amp;v=1130.54e767a&amp;t=Unnamed%20Transaction&amp;rst=5081&amp;ref=https://www.twenty20.com/photos/2d7f6c06-92b3-4c35-a980-9fed28126c0c&amp;be=1907&amp;fe=4363&amp;dc=3135&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1589525121650,%22n%22:0,%22f%22:17,%22dn%22:50,%22dne%22:745,%22c%22:745,%22s%22:986,%22ce%22:1251,%22rq%22:1251,%22rp%22:1520,%22rpe%22:1828,%22dl%22:1573,%22di%22:3135,%22ds%22:3135,%22de%22:3147,%22dc%22:4363,%22l%22:4363,%22le%22:4371%7D,%22navigation%22:%7B%7D%7D&amp;fp=2127&amp;jsonp=NREUM.setToken"></script><script type="text/javascript" async="" src="https://cdn.wootric.com/wootric-sdk.js"></script><script type="text/javascript" async="" src="https://js.hs-analytics.net/analytics/1589525400000/453289.js" id="hs-analytics"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://cdn.amplitude.com/libs/amplitude-5.2.2-min.gz.js"></script><script src="https://js-agent.newrelic.com/nr-spa-1130.min.js"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/l4o2od3lg2/analytics.min.js"></script><script src="//bat.bing.com/bat.js" async=""></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="fragment" content="!">
-      <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
-      <link rel="mask-icon" href="/twenty20-icon.svg" color="#1488C9">
-      <link rel="apple-touch-icon-precomposed" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
-      <link rel="apple-touch-icon" href="https://d2xoeue6rlgwc6.cloudfront.net/https://dp3ogl28gtjh0.cloudfront.net/rebrand/apple-touch-icon-f3c3b68ebe75d6ac43bce1cb65331b1f.png">
-      <link rel="dns-prefetch" href="//api-v2.twenty20.com">
-      <meta property="og:type" content="website">
-      <meta property="og:site_name" content="twenty20.com">
-      <meta property="fb:app_id" content="421986587813170">
-      <meta name="twitter:site" content="@twenty20app">
-      <meta name="twitter:card" content="photo">
-      <meta name="twitter:app:name:iphone" content="Twenty20">
-      <meta name="twitter:app:id:iphone" content="577323200">
+      
+  <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
+  <meta name="description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="author" content="PICTURE+254" />
+  <meta property="og:title" content="PICTURE+254" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://picture254.com/" />
+  <meta property="og:image" content="www.picture254.com/images/logo.jpg" />
+  <meta property="og:site_name" content="PICTURE+254" />
+  <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="{{ asset('js/right_click.js') }}"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-74a2c6f27f72fbcd4e6f96f62a071b7a.css">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-6543a70f6bed3fbfb14a4eac96585e54.css">
       <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style>
@@ -36,7 +39,7 @@
       <meta property="og:description" content="Engineer, design, web, website, code, develop, program, software, developer, programmer authentic stock photos from the millions of real-world images at Twenty20." id="ember30021" class="head-tag-component ember-view">
       <meta itemprop="description" content="Engineer, design, web, website, code, develop, program, software, developer, programmer authentic stock photos from the millions of real-world images at Twenty20." id="ember30023" class="head-tag-component ember-view">
       <meta name="keywords" content="engineer, design, web, website, code, develop, program, software, developer, programmer" id="ember30025" class="head-tag-component ember-view">
-      <link rel="image_src" href="https://api-v2.twenty20.com/items/63fbadf6-ca76-471e-be1d-c3b9dd68c271/images/item-share" id="ember30027" class="head-tag-component ember-view">
+      <link rel="image_src" href="images/logo_" id="ember30027" class="head-tag-component ember-view">
       <meta property="og:image" content="https://api-v2.twenty20.com/items/63fbadf6-ca76-471e-be1d-c3b9dd68c271/images/item-share" id="ember30029" class="head-tag-component ember-view">
       <meta itemprop="image" content="https://api-v2.twenty20.com/items/63fbadf6-ca76-471e-be1d-c3b9dd68c271/images/item-share" id="ember30031" class="head-tag-component ember-view">
       <meta property="og:image:height" content="4000" id="ember30033" class="head-tag-component ember-view">
@@ -62,7 +65,7 @@
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-de55146a908b80d7fc58e13c95c3c8d5.js"></script>
       <noscript>
          <div class="js-off-message" style="margin: 20% auto; display: block; width: 100%; max-width: 600px; background: #fff; padding: 3%;">
-            <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color1@2x.png">
+            <img src="images/logo_">
             <h3>Your JavaScript is Disabled!</h3>
             <p>Picture+254 is a modern website that requires JavaScript to be turned on in order to access.  Simply go to your browser preferences and turn JavaScript on, then refresh this page.</p>
          </div>
@@ -78,11 +81,11 @@
                <div class="row zone-featured-collections">
                   <div class="col-md-6 col-no-padding mozaic-left-zone">
                      <a style="" href="/collections/b9a6de98-0751-46fb-9e21-2ad763fff4e6?t20p=curated-collections.index" id="ember35745" class="link-to-component ember-view">
-                        <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember35746" class="photo-background-component photo-background-component ember-view">
+                        <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(images/covid.jpg) no-repeat center center;" id="ember35746" class="photo-background-component photo-background-component ember-view">
                            <div class="overlay-container col-padding">
                               <div class="overlay-centered">
                                  <h4 class="title-over-image">COVID / Coronavirus</h4>
-                                 <p class="pannel-head small">Curated Collection</p>
+                                 <p class="pannel-head small">Collection</p>
                               </div>
                            </div>
                            <span class="dark-overlay-block"></span>
@@ -94,11 +97,11 @@
                         <div class="row">
                            <div class="col-md-6 col-no-padding">
                               <a style="" href="/collections/2a0c23dc-4a68-4aad-bb4a-fd1871c2908a?t20p=curated-collections.index" id="ember36100" class="link-to-component ember-view">
-                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36101" class="photo-background-component photo-background-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(images/delii.jpeg) no-repeat center center;" id="ember36101" class="photo-background-component photo-background-component ember-view">
                                     <div class="overlay-container col-padding">
                                        <div class="overlay-centered">
-                                          <h5 class="title-over-image">Mail, Delivery, and Packages</h5>
-                                          <p class="pannel-head small">Curated Collection</p>
+                                          <h5 class="title-over-image">Delivery and Packages</h5>
+                                          <p class="pannel-head small">Collection</p>
                                        </div>
                                     </div>
                                     <span class="dark-overlay-block"></span>
@@ -107,11 +110,11 @@
                            </div>
                            <div class="col-md-6 col-no-padding">
                               <a style="" href="/collections/3aa628b4-0272-4193-bd9a-d3429190d39c?t20p=curated-collections.index" id="ember36106" class="link-to-component ember-view">
-                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36107" class="photo-background-component photo-background-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(images/skinn.jpg) no-repeat center center;" id="ember36107" class="photo-background-component photo-background-component ember-view">
                                     <div class="overlay-container col-padding">
                                        <div class="overlay-centered">
-                                          <h5 class="title-over-image">Video Chat</h5>
-                                          <p class="pannel-head small">Curated Collection</p>
+                                          <h5 class="title-over-image">Skin Care</h5>
+                                          <p class="pannel-head small">Collection</p>
                                        </div>
                                     </div>
                                     <span class="dark-overlay-block"></span>
@@ -122,11 +125,11 @@
                         <div class="row">
                            <div class="col-md-6 col-no-padding">
                               <a style="" href="/collections/240ac969-539f-4315-8723-1b7137aee0fa?t20p=curated-collections.index" id="ember36113" class="link-to-component ember-view">
-                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36114" class="photo-background-component photo-background-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(images/take.jpeg) no-repeat center center;" id="ember36114" class="photo-background-component photo-background-component ember-view">
                                     <div class="overlay-container col-padding">
                                        <div class="overlay-centered">
                                           <h5 class="title-over-image">Food Delivery &amp; Takeout</h5>
-                                          <p class="pannel-head small">Curated Collection</p>
+                                          <p class="pannel-head small">Collection</p>
                                        </div>
                                     </div>
                                     <span class="dark-overlay-block"></span>
@@ -135,11 +138,11 @@
                            </div>
                            <div class="col-md-6 col-no-padding">
                               <a style="" href="/collections/4d11f7c2-ee73-4eef-b02c-ee0608543543?t20p=curated-collections.index" id="ember36119" class="link-to-component ember-view">
-                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: image(images/log-o.png) no-repeat center center;" id="ember36120" class="photo-background-component photo-background-component ember-view">
+                                 <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url(images/workfromhome.jpeg) no-repeat center center;" id="ember36120" class="photo-background-component photo-background-component ember-view">
                                     <div class="overlay-container col-padding">
                                        <div class="overlay-centered">
                                           <h5 class="title-over-image">Working From Home</h5>
-                                          <p class="pannel-head small">Curated Collection</p>
+                                          <p class="pannel-head small">Collection</p>
                                        </div>
                                     </div>
                                     <span class="dark-overlay-block"></span>
@@ -154,7 +157,7 @@
             <div style="padding-top: 40px; max-width: 1230px;" class="container-fluid">
                <div class="row">
                   <div class="col-xs-12">
-                     <h3 id="curated-top" class="normal">Curated Collections</h3>
+                     <h3 id="curated-top" class="normal">Curated Collection</h3>
                      <hr class="light">
                   </div>
                </div>
@@ -259,34 +262,41 @@
                      <div class="col-sm-2 col-xs-6">
                         <p class="pannel-head text-medium">Support</p>
                         <ul class="small">
-                           <li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35876" class="text-link dark support-link-component ember-view">FAQ</a></li>
-                           <li><a style="" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35881" class="text-link dark support-link-component ember-view">Contact Us</a></li>
-                           <li><a style="" href="/legal/user-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35886" class="text-link dark link-to-component ember-view">User Terms</a></li>
-                           <li><a style="" href="/legal/contributor-terms?t20p=curated-collections.index&amp;t20s=footer" id="ember35891" class="text-link dark link-to-component ember-view">Contributor Terms</a></li>
-                           <li><a style="" href="/legal/privacy?t20p=curated-collections.index&amp;t20s=footer" id="ember35896" class="text-link dark link-to-component ember-view">Privacy Policy</a></li>
+                           <li><a style="" target="_blank" href="#" id="ember35876" class="text-link dark support-link-component ember-view">FAQ</a></li>
+                           <li><a style="" target="_blank" href="#" id="ember35881" class="text-link dark support-link-component ember-view">Contact Us</a></li>
+                           <li><a style="" href="#" id="ember35886" class="text-link dark link-to-component ember-view">User Terms</a></li>
+                           <li><a style="" href="#" id="ember35891" class="text-link dark link-to-component ember-view">Contributor Terms</a></li>
+                           <li><a style="" href="#" id="ember35896" class="text-link dark link-to-component ember-view">Privacy Policy</a></li>
                         </ul>
                      </div>
                      <div class="col-sm-2 col-xs-6">
                         <p class="pannel-head text-medium">Connect</p>
                         <ul class="social-connect small">
-                           <li><a href="http://blog.twenty20.com" class="text-link dark">Blog</a></li>
-                           <li><a href="http://instagram.com/twenty20" target="_blank"><i class="icon-ig-foot"></i>Instagram</a></li>
-                           <li><a href="http://facebook.com/twenty20" target="_blank"><i class="icon-fb-foot"></i>Facebook</a></li>
-                           <li><a href="http://twitter.com/twenty20app" target="_blank"><i class="icon-tw-foot"></i>Twitter</a></li>
+                           <li><a href="http://blog.picture+254.com" class="text-link dark">Blog</a></li>
+                           <li><a href="http://instagram.com/picture+254" target="_blank"><i class="icon-ig-foot"></i>Instagram</a></li>
+                           <li><a href="http://facebook.com/picture+254" target="_blank"><i class="icon-fb-foot"></i>Facebook</a></li>
+                           <li><a href="http://twitter.com/picture+254" target="_blank"><i class="icon-tw-foot"></i>Twitter</a></li>
                         </ul>
                      </div>
                      <div class="col-sm-3 col-xs-12">
-                        <a style="color: white; border: 2px solid white; width: 170px; height: 50px; line-height: 28px;" target="_blank" href="https://help.twenty20.com?utm_source=t20_web&amp;utm_referrer=https%3A%2F%2Fwww.twenty20.com%2Fdiscover" id="ember35909" class="btn btn-default support-link-component ember-view">Contact Us</a><a style="margin-top: 6%;" href="https://itunes.apple.com/us/app/twenty20/id577323200?mt=8" target="_blank" class="appstore-badge"></a>
-                        <p class="small text-dark margin20t margin0b">Now available through</p>
-                        <div id="ember35918" class="ga-linker-component ember-view"><a href="https://elements.envato.com/" target="_blank" class="external-link"><img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato_elements_white_green.png" style="width: 75%;"></a></div>
+                        <a style="color: white; border: 2px solid white; width: 170px; height: 50px; line-height: 28px;" target="_blank" href="#&amp;#" id="ember35909" class="btn btn-default support-link-component ember-view">Contact Us</a><a style="margin-top: 6%;" href="#" target="_blank" class="appstore-badge"></a>
                      </div>
                   </div>
                   <div class="footer-base">
                      <div class="container-fluid">
                         <div class="row">
                            <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                              <div class="t20-icon"></div>
-                              <p class="small">Created in sunny southern California. Appreciated by people around the world. Committed to making you smile.<br>Copyright © 2020 Twenty20, Inc. All rights reserved. All photos © their respective owners.</p>
+                              <div class="col-12 col-md-3">
+                <div class="media-wrap" >
+                    <a href="{{route('/')}}">
+                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 6.9rem;">
+                    </a>
+                </div>  
+            </div>
+                                <div class="container" style="text-align: center;">
+        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved. All photos © their respective owners.
+        </div>
+                        </div>
                            </div>
                         </div>
                      </div>
@@ -311,6 +321,9 @@
                            <div class="container-fluid padding0lr">
                               <div class="flex-column padding20t padding40b align-items-center justify-content-center">
                                  <div class="margin20b">
+                                    <a href="{{route('/')}}">
+                        <img src="{{ asset('images/logo_.png') }}" alt="logo"  style="height: 4.9rem;">
+                    </a>
                                     <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/gfx/envato-t20.png" alt="Joint Logos" style="height: 75px;">
                                  </div>
                                  <h3 class="normal text-center">
@@ -358,7 +371,7 @@
                                              </div>
                                              <hr class="xlight slim">
                                              <h5>
-                                                The Twenty20 you know and love is joining forces with Envato, and its world-leading Elements creative subscription.
+                                                The Picture+254 you know and love has a photo stock
                                              </h5>
                                              <div class="small-photo-popout margin20t">
                                                 <div class="row">
@@ -411,7 +424,7 @@
                                        <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/envato/fun-party-confetti-colourful-friends-happy-celebrate-hipster-laughing-girl-friends_t20_eow3ob.jpg" alt="Twenty20 + Envato together at last. Hooray!">
                                     </div>
                                     <p class="margin10t text-center text-medium small">
-                                       Photo by @criene
+                                       Photo by @picture+254
                                     </p>
                                  </div>
                               </div>
@@ -441,7 +454,7 @@
                               <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
                            </div>
                            <h3 class="normal margin40b margin0t">
-                              <span class="normal">You are now signed in to</span> Twenty20 <span class="normal">with your Envato account.</span>
+                              <span class="normal">You are now signed in to</span> Picture+254 <span class="normal">with your Picture+254 account.</span>
                            </h3>
                            <h4 class="normal margin20b">
                               <!---->
@@ -470,7 +483,7 @@
                               </div>
                            </div>
                            <p class="small text-dark margin10t margin0b text-center">
-                              By clicking this button, I agree to Twenty20's
+                              By clicking this button, I agree to Picture+254's
                               <a style="" href="/legal/user-terms?t20p=curated-collections.index" id="ember36007" class="link-to-component ember-view">            User Terms
                               </a>
                               and
@@ -501,10 +514,10 @@
                               <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
                            </div>
                            <h3 class="normal margin40b margin0t">
-                              We think you may already have an account with Twenty20.
+                              We think you may already have an account with Picture+254.
                            </h3>
                            <h5 class="normal margin20b">
-                              Sign in with your Twenty20 credentials to merge your Envato and Twenty20 accounts
+                              Sign in with your Picture+254 credentials.
                            </h5>
                            <div class="container-fluid padding0lr-as">
                               <div class="flex-row justify-content-center">
@@ -888,11 +901,7 @@
          </div>
          <div class="autocomplete-results hidden"></div>
       </div>
-      <div class="container" style="text-align: right;">
-         <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">
-            &copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
-         </div>
-      </div>
+      
    </body>
 </html>
 
