@@ -61,32 +61,26 @@ class PaymentController extends Controller
 		$CallBackURL = 'https://034fa128.ngrok.io/api/mpesa-response';
 		$AccountReference = Auth::user()->phone;
 		$TransactionDesc = "Payment";
-		$Remarks = "Yess";
+		$Remarks = "Yess 
+	        	   $pay = new Payment();
+				             
+				   $pay->phone = $phone;
+				   $pay->trans_no = $trans_no;
+				   $pay->account_no = $account_no;
+				   $pay->trans_date = $trans_date;
+				   $pay->amount = $amount;
 
+				             
+				    $pay->save();
 
-		$stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
-														$TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-														);
-// return $stkPushSimulation;
+				    Upload::where('user_id', Auth::user()->id)
+			                                ->where('uploaded','no')
+			                                ->update(array('uploaded' => 'yes'));
+				             
+				    ImagePay::where('account_no', $account_no)
+				             ->update(array('status' => 'Paid'));
 
-		$check = $stkPushSimulation;
-
-		$callbackJSONData=file_get_contents('php://input');
-
-		// $handle=fopen("uploads/transaction.txt", 'w');
-  //       fwrite($handle, $stkPushSimulation);
-
-
-		if($check !="")
-		{
-
-
-			                        $upload = new ImagePay();
-			             
-			                           $upload->amount = $total_amount;
-			                           $upload->token = session()->getId();
-			                           $upload->total_images = count($imagesgroup);
-			                           $upload->user_id = Auth::user()->id;
+				return response()->json('Success');
 			                           $upload->account_no = $check;
 			             
 			                           $upload->save();
@@ -136,7 +130,7 @@ class PaymentController extends Controller
 				             
 				    $pay->save();
 
-				    Upload::where('user_id', Auth::user()->id)->update(array('uploaded' => 'yes'));
+				    Upload::where('user_id', Auth::user()->id) ->update(array('uploaded' => 'yes'));
 				             
 				    ImagePay::where('account_no', $account_no)
 				             ->update(array('status' => 'Paid'));

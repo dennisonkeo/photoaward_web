@@ -21,7 +21,7 @@
       <meta name="twitter:app:id:iphone" content="577323200">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-74a2c6f27f72fbcd4e6f96f62a071b7a.css">
       <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-6543a70f6bed3fbfb14a4eac96585e54.css">
-
+      
       <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}</style>
       <style type="text/css">@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/635674/00000000000000000000e800/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/635674/00000000000000000000e800/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/5cca6d/00000000000000000000e802/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/2841b6/00000000000000000000e806/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/9cf49e/00000000000000000000e807/27/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}</style>
       <style type="text/css"></style>
@@ -153,7 +153,7 @@ body {
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    </head>
-   <body class="ember-application explore explore-signature" style="padding-top: 62px;">
+   <body class="ember-application explore explore-signature" style="padding-top: 62px; background: none;">
       <script type="text/javascript" src="//use.typekit.net/ryt2nll.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
       <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
@@ -163,7 +163,7 @@ body {
          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";}}();
       </script>
       <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5683134"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
-      <noscript><img src="//bat.bing.com/action/0?ti=5683134&Ver=2" height="0" width="0" style="display:none; visibility: hidden;" /></noscript>
+
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/vendor-88c00f99a64532dd87dee9ed54a90886.js"></script>
       <script src="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-de55146a908b80d7fc58e13c95c3c8d5.js"></script>
       <noscript>
@@ -174,13 +174,13 @@ body {
          </div>
       </noscript>
       <div id="ember-bootstrap-wormhole"></div>
-      <iframe name="stripeXDM_default471342_provider" id="stripeXDM_default471342_provider" aria-hidden="true" style="position: absolute; top: -2000px; left: 0px;" src="" frameborder="0"></iframe>
+
       <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.5001258693624684"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.16039591973490408" alt="" src="https://bat.bing.com/action/0?ti=5683134&amp;Ver=2&amp;mid=3501173b-328a-d194-5c46-e02c140473e0&amp;sid=60149c19-117d-259d-9682-7c020ec47404&amp;pi=1001431019&amp;lg=en-US&amp;sw=1366&amp;sh=768&amp;sc=24&amp;tl=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;p=https%3A%2F%2Fwww.twenty20.com%2F&amp;r=&amp;lt=12415&amp;evt=pageLoad&amp;msclkid=N&amp;sv=1&amp;rn=542378" width="0" height="0"></div>
-      <iframe src="https://js.stripe.com/v2/m/outer.html#referrer=&amp;title=Twenty20%20Stock%20-%20Authentic%20Stock%20Photos%20%26%20Royalty-Free%20Images&amp;url=https%3A%2F%2Fwww.twenty20.com%2F&amp;muid=61796979-de6b-4f76-b6e4-c45d7d8195f0&amp;sid=92676f67-5177-4f3b-af8a-f2036f3a9a09&amp;preview=false&amp;" style="width: 1px !important; height: 1px !important; position: fixed !important; visibility: hidden !important; pointer-events: none !important;" allowtransparency="true" scrolling="no" tabindex="-1" aria-hidden="true" frameborder="0"></iframe>
+
       <div id="ember667" class="ember-view">
       <div class="ember-view-wrap">
       <div id="ember1255" class="navbar-zone top-bar-component ember-view">
-@include('stockNav')
+			@include('stockNav')
       </div>
       <div class="main">
       <div class="container-fluid">
@@ -188,37 +188,119 @@ body {
       <!----><!---->
       <div class="row">
          <div class="col-md-12">
-            <h3 class="normal">Picture+254 Photography MarketPlace</h3>
+            <h3 class="normal">Edit Profile</h3>
             <hr style="margin-top: 5px;" class="light">
          </div>
          <!---->
       </div>
       <div style="margin-bottom: 60px;">
          <div class="row">
-
-          <?php $count = 1;?>
-
-         	<?php $count = 1;?>
-
-            @foreach($categories as $category)
-            <div class="col-xs-12 col-sm-3 image_gal element{{ $count }}">
-               <div style="margin-bottom: 0px;" id="ember1730" class="photo-card linked-collection-component ember-view">
-                  <a style="" href="{{ route('explore',$category->name) }}" id="ember1731" class="link-to-component ember-view">
-                     <div style="position: relative; background-size: cover !important; width:100%; height:100%; ; background: url({{ asset('images') }}/{{ $category->cover }}) no-repeat center center;" id="ember1732" class="photo-background-component photo-background-component ember-view">
-                        <div class="overlay-container ">
-                           <div class="overlay-centered">
-                              <h5 class="title-over-image">{{ $category->name }}</h5>
-                              <p style="color: #ff0051;" class="pannel-head">({{ count($category->uploads) }}) photos</p>
-                           </div>
-                        </div>
-                        <span class="dark-overlay-block"></span>
-                     </div>
-                  </a>
-               </div>
-               <p style="margin-bottom: 20px;" class="small"><a style="color: black;" target="_blank" href="/collections/624885?t20p=explore.signature" id="ember1737" class="link-to-component ember-view"><span style="color: #0089d0;">{{ $category->name }}</span></a></p>
+         	<div class="container">
+  	<hr>
+	<div class="row">
+		<form class="form-horizontal" role="form" action="{{ route('profile-update') }}" method="POST">
+        	{{ csrf_field() }}
+    <input type="hidden" name="_method" value="PUT" />
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="profile-image" style="width: 200px; height: 300px;">
+                <label>Profile Photo</label>
+                    <img class="media-object" alt="200x200" src="{{ asset('uploads') }}/{{ Auth::user()->pic }}" data-holder-rendered="true" style="width: 100%; height: auto; object-position:50% 50%; object-fit:cover; background-position: center; background-size: cover; background-repeat: no-repeat;" id="profile-img-tag"><br>
+                    <input type="file" name="file"  id="profile-img" value="{{Auth::user()->pic}}" />
             </div>
-            <?php $count++;?>
-            @endforeach
+            
+{{--             <div class="form-group">
+                <label for="profile_image">
+                    Upload a Profile Image
+                </label>
+                <input type="file" name="file"  id="profile-img" value="{{Auth::user()->pic}}" />
+            </div> --}}
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+{{--         <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          This is an <strong>.alert</strong>. Use this to show important messages to the user.
+        </div>
+        <h3>Personal info</h3> --}}
+        
+
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Full name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" name="name" value="{{ Auth::user()->name }}" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Display name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" name="dname" value="{{ Auth::user()->dname }}" required="">
+            </div>
+          </div>
+          {{-- <div class="form-group">
+            <label class="col-lg-3 control-label">Phone:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="">
+            </div>
+          </div> --}}
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Bio:</label>
+            <div class="col-lg-8">
+              <textarea class="form-control" name="bio" required="">{{ Auth::user()->bio }}</textarea>
+            </div>
+          </div>
+          {{-- <div class="form-group">
+            <label class="col-lg-3 control-label">Time Zone:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                  <option value="Alaska">(GMT-09:00) Alaska</option>
+                  <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                  <option value="Arizona">(GMT-07:00) Arizona</option>
+                  <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                  <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                  <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="janeuser">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div> --}}
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+              <input type="submit" class="btn btn-primary" style="background: #ff0057; border-color: #ff0057;" value="Save Changes">
+              <span></span>
+              <input type="reset" class="btn btn-default" value="Cancel" style="color: #ff0057; border-color: #ff0057;">
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
 
          </div>
       </div>
@@ -230,17 +312,49 @@ body {
   {{-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> --}}
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-
-// $(".image_gal").hide().each(function(i) {
-
 // 	$(".image_gal").hide().each(function(i) {
-
 //   $(this).delay(i*1000).fadeIn(1000);
 // });
   </script>
+
+      <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('#dob').datepicker({
+                format: "yyyy-mm-dd",
+                endDate: "2001-10-01",
+                // startDate: "18years"
+            });
+        });
+
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+            var reader = new FileReader();
+
+            
+
+            reader.onload = function (e) {
+
+                $('#profile-img-tag').attr('src', e.target.result);
+
+            }
+
+            reader.readAsDataURL(input.files[0]);
+
+        }
+
+    }
+
+    $("#profile-img").change(function(){
+
+        readURL(this);
+
+    });
+
+</script>
    </body>
 
-
 </html>
-
 

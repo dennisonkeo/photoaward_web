@@ -1,11 +1,10 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="generator" content="Mobirise v4.10.15, mobirise.com">
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>PICTURE+254</title>
   <meta name="keywords" content="PICTURE+254, contest, photographer, photography, entries, owner, Professionals, compete, competition, Contestants,image, photos, Gallery,categories, submit, photograph, winners, Stock, Content, album." />
@@ -60,37 +59,30 @@
   background-size: cover;
 
 }
-@font-face {
-    font-family: "Montserrat";
-    src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
-}
-.contents{
-  margin-bottom: -6px;
-  font-size: 16px;
-}
 
 .text_line{
-	line-height: 48px;
+	line-height: px;
+	font-family: cambria;
 }
 .entry{
 	margin: 10px;
 }
-
-.entry{
-	width: 100%;
-}
-body{
-	background: #f3f3f3;
-}
-
-.flow-grid.col-1 .flow-grid-col{ width:70%; }
-.flow-grid.col-2 .flow-grid-col{ width:70%; }
-
 @font-face {
     font-family: "Montserrat";
     src: url(https://fonts.googleapis.com/css?family=Montserrat&display=swap rel="stylesheet" type='text/css');
 }
 
+.body{
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+}
+/*.section-tabled p{
+  margin-bottom: -6px;
+}
+.field-accordion-summary{
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}*/
 
 
 </style>
@@ -127,8 +119,9 @@ body{
 
 	@include('menu2')
 
+
 </div>
-<div class="parallax"></div>
+<!-- <div class="parallax"></div> -->
 	<div id="contents-wrap" >
 		<div id="contents" >
 

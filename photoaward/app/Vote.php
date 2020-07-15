@@ -13,6 +13,6 @@ class Vote extends Model
 
     public function upload()
     {
-        return $this->belongsToMany(Upload::class);
+        return $this->belongsTo(Upload::class, 'upload_id');
     }
 }

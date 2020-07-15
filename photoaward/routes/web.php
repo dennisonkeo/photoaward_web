@@ -19,6 +19,10 @@ Route::get('stock-test', function () {
     return view('stocktest');
 });
 
+Route::get('edit-profile', function () {
+    return view('testInfo');
+})->name('edit-profile');
+
 Route::get('stock-cat', function () {
     return view('stockcat');
 });
@@ -70,6 +74,18 @@ Route::get('pop', function () {
 
 Route::get('prizes', function () {
     return view('prizes');
+});
+
+Route::get('slider1', function () {
+    return view('testslider');
+});
+
+Route::get('slider2', function () {
+    return view('slider2');
+});
+
+Route::get('animation', function () {
+    return view('animation');
 });
 
 Route::get('terms-&-conditions', function () {
@@ -178,6 +194,8 @@ Route::get('categories/{category}', 'CategoryController@filter_by_category')->na
 Route::get('send-mail', 'CartController@sendMail')->name('send-mail');
 Route::get('stock-album', 'UploadController@stock')->name('stock-album');
 Route::get('discover', 'UploadController@discover')->name('discover');
+
+Route::get('loves', 'UploadController@loves')->name('loves');
 
 Route::get('stock-view/{upload}', 'UploadController@stock_view')->name('stock-view');
 
@@ -313,6 +331,8 @@ Route::get('profile', 'HomeController@profile')->name('profile');
 Route::get('profile', 'HomeController@profile')->name('profile');
 
 Route::put('update-profile', 'HomeController@update')->name('update-profile');
+
+Route::put('profile-update', 'HomeController@updateProfile')->name('profile-update');
 
 Route::put('update', 'UploadController@update')->name('update');
 

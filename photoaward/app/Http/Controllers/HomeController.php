@@ -540,6 +540,49 @@ public function account_reset(Request $request)
         return back()->with('success', 'Details were edited Successfully');  
     }
 
+    public function updateProfile(Request $request)
+    {
+        $name = $request->input('name');
+        $dname = $request->input('dname');
+        $bio = $request->input('bio');
+
+        $image = $request->file('file');
+
+        if($image != "")
+        {
+
+            $image_name = time().$image->getClientOriginalName();
+
+            $image->move(public_path('uploads'),$image_name);
+
+            $imagePath = "/uploads/$image_name";
+
+        user::where('id', Auth::user()->id)
+        ->update(array(
+            'name' => $name,
+            'dname' => $dname,
+            'bio' => $bio,
+            'pic' => $image_name,
+        ));
+
+    }
+
+    else
+        {
+
+        user::where('id', Auth::user()->id)
+        ->update(array(
+            'name' => $name,
+            'dname' => $dname,
+            'bio' => $bio,
+        ));
+
+    }
+
+
+        return back()->with('success', 'Details were edited Successfully');  
+    }
+
 
     /**
      * Remove the specified resource from storage.

@@ -175,7 +175,7 @@
 						</div>
 						<div class="meta">
 
-							<!-- <h2 class="title"> Judges are looking for the next new face. Judges will be looking for beauty, emotion, expression and personality. The photographs may be portraits and photos of groups or individuals.</h2> -->
+							<h2 class="title"> This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography.</h2>
 						</div>
 						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">PEOPLE</h2>
@@ -197,7 +197,7 @@
 						</div>
 						<div class="meta">
 
-							<!-- <h2 class="title">1.	Judges are looking for the best and most creative images of our natural world including animals, plants and landscapes; geological or climatological features, natural phenomenon and conservation.</h2> -->
+							<h2 class="title">This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography.</h2>
 						</div>
 						<div class="body" style="text-align: justfy; font-family:'Montserrat', sans-serif;">
 							<h2 class="title">THE GREAT OUTDOOR</h2>
@@ -325,7 +325,7 @@
 							<h2 class="title">DOCUMENTARY</h2>
 							
 							<p>
-								##############CONTENT.#########
+								##########...CONTENT...##########
 							</p>
 						</div>
 					</a>

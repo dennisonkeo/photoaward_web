@@ -489,4 +489,11 @@ class UploadController extends Controller
 
         return back()->with('success', 'Image Deleted Successfully');
     }
+
+    public function loves()
+    {
+      $images = Vote::where('user_id', Auth::user()->id)->get();
+
+      return view('loves', compact('images'));
+    }
 }
