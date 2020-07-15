@@ -1041,15 +1041,41 @@ var image_size = '450';
 
   });
 
-  $("#login").click(function(){
+  // $("#login").click(function(){
     
-  		Swal.fire({
-           title: 'Unauthorized',
-           text: 'Please, login first!',
-           icon: 'error',
-       })
+  // 		Swal.fire({
+  //          title: 'Unauthorized',
+  //          text: 'Please, login first!',
+  //          icon: 'error',
+  //      })
 
-  });
+  // });
+
+  $(document).ready(function() {
+                  $("#login").click(function(){
+
+                    // document.getElementById("ember446").style.display = 'block';
+
+                      $("#gated-home-auth-modal").css("display","block");
+                      console.log('dkkdkd');
+                  }); 
+
+                  $("#show_signup").click(function(){
+
+                    // document.getElementById("ember446").style.display = 'block';
+
+                      $("#signup_div").css("display","block");
+                      $("#signin_div").css("display","none");
+                  }); 
+
+                  $("#show_signin").click(function(){
+
+                    // document.getElementById("ember446").style.display = 'block';
+
+                      $("#signup_div").css("display","none");
+                      $("#signin_div").css("display","block");
+                  }); 
+              });
 
 </script>
 

@@ -27,6 +27,10 @@ Route::get('stock-cat', function () {
     return view('stockcat');
 });
 
+Route::get('pop-login', function () {
+    return view('popsignup');
+});
+
 Route::get('stock-info', function () {
     return view('stockinfo');
 });
