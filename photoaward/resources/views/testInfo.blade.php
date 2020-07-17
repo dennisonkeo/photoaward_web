@@ -183,7 +183,7 @@ body {
          	<div class="container">
   	<hr>
 	<div class="row">
-	<form class="form-horizontal" role="form" action="{{ route('profile-update') }}" method="POST">
+	<form class="form-horizontal" role="form" action="{{ route('profile-update') }}" method="POST" enctype="multipart/form-data">
         	{{ csrf_field() }}
     <input type="hidden" name="_method" value="PUT" />
       <!-- left column -->

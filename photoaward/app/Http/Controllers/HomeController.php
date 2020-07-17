@@ -321,6 +321,31 @@ public function login_buyer(Request $request){
 
 }
 
+public function login_stockAlbum(Request $request){
+    $this->validate($request, [
+        'username' => 'required',
+        'password' => 'required',
+        ]);
+    if (Auth::attempt([
+        'email' => $request->username,
+        'password' => $request->password]) ||
+
+        Auth::attempt([
+        'phone' => $request->username,
+        'password' => $request->password])
+    )
+    {
+        return response()->json(['status'=>0]);
+    }
+    else{
+      
+      return response()->json(['status'=>1]);
+    }
+        
+        // return back()->with('warning', 'Invalid Email address/Phone or Password');    // return response()->json('Invalid Email address/Phone or Password.');
+
+}
+
 public function login_user_like(Request $request){
     $this->validate($request, [
         'username' => 'required',

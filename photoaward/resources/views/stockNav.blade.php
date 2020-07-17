@@ -1,6 +1,12 @@
 
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
+<style type="text/css">
+    .swal2-popup {
+  font-size: 1.6rem !important;
+}
+</style>
 
 <?php
 use App\Cart;
@@ -391,7 +397,10 @@ use App\Purchase;
                                           <label for="gated--signin-password">
                                           Password
                                           </label>
-                                          <div id="ember2814" class="password-input-wrapper password-input-component ember-view"><input name="password" type="password" required="" placeholder="At least 6 characters" id="gated-signin-password" class="form-control ember-text-field -text-field-component ember-view"><button type="button" class="btn btn-link password-input-toggle"><span class="text-light t20icon t20icon-show-password"></span></button></div>
+                                          <div id="ember2814" class="password-input-wrapper password-input-component ember-view">
+                                            <input name="password" type="password" required="" placeholder="At least 6 characters" id="gated-signin-password" class="form-control ember-text-field -text-field-component ember-view"><button type="button" class="btn btn-link password-input-toggle"><span class="text-light t20icon t20icon-show-password"></span>
+                                            </button>
+                                          </div>
                                           <a href="#" class="pull-right text-bright small margin10t margin20b " data-ember-action="" data-ember-action-2816="2816">
                                           Forgot Your Password?
                                           </a>
@@ -619,15 +628,6 @@ use App\Purchase;
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
 
           <script type="text/javascript">
-                // $(function () {
-
-                //     $('#signin').css('display','block');
-
-                // });
-                 // $(document).on('click','#cartt',function(){
-
-                 //    $("#signin").css('display','block');
-                 //  });
 
                  $(document).ready(function() {
                   $("#cartt").click(function(){
@@ -654,6 +654,68 @@ use App\Purchase;
                       $("#signin_div").css("display","block");
                   }); 
               });
+
+
+            // sign in
+              $('#ember2825').click(function(event) {
+                event.preventDefault();
+
+                $.ajax({
+                         url : "{{ route('stock_album-signin') }}",
+                        type:'POST',
+                        data: {
+                              'username': $("#gated-signin-email").val(),
+                              'password': $("#gated-signin-password").val(),
+                              _token: '{{csrf_token()}}',
+
+                        },
+
+
+
+                        success: function(response) {
+                          console.log(response.status);
+                          if(response.status == 0)
+                          {
+
+                            Swal.fire({
+                                  title: 'Success!',
+                                  // text: "Transaction has been reversed successfully!",
+                                  icon: 'success',
+                                  closeButtonText: 'No, cancel!',
+                                }
+                                ).then((result)=>{
+                                  location.reload()
+                                }
+                                );
+                          }
+                          else
+                          {
+                            Swal.fire({
+                                  title: 'Error!',
+                                  text: "Invalid Email address/Phone or Password!",
+                                  icon: 'error',
+                                  closeButtonText: 'No, cancel!',
+                                }
+                                
+                                );
+                          }
+
+
+                        },
+
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            Swal.fire({
+                                  title: 'Error!',
+                                  text: errorThrown,
+                                  icon: 'error',
+                                  closeButtonText: 'No, cancel!',
+                                }
+                                )
+                    }
+                      });
+
+                        // $('#imageDetailsSave').show();
+            });
 
             
           </script>

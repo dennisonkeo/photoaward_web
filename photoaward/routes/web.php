@@ -223,6 +223,8 @@ Route::post('signup_user', 'HomeController@signup_user')->name('signup_user');
 
 Route::post('signup_buyer', 'HomeController@add_buyer')->name('signup_buyer');
 
+Route::post('stock_album-signin', 'HomeController@login_stockAlbum')->name('stock_album-signin');
+
 Route::get('login', 'HomeController@login')->name('login');
 
 Route::post('user-login', 'HomeController@login_user')->name('user-login');
