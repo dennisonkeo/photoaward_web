@@ -1089,7 +1089,7 @@
                   </div>
                </div>
             </div>
-            <div id="ember473" class="gated-home-auth-modal-component ember-view">
+            <div id="ember473" class="gated-home-auth-modal-component ember-view">hapa
                <div id="gated-home-auth-modal" role="dialog" tabindex="-1" class="auth-component modal in" style="z-index: 1050; display: block; padding-left: 16px;">
                   <div class="modal-dialog">
                      <div class="modal-content">
