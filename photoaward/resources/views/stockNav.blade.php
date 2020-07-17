@@ -329,10 +329,10 @@ use App\Purchase;
                <div id="gated-home-auth-modal" role="dialog" tabindex="-1" class="auth-component modal in" style="z-index: 1050; display: none; padding-left: 16px;">
                   <div class="modal-dialog" id="signin_div" style="display: block;">
                      <div class="modal-content">
-                        <div class="logo-container"><i class="t20icon-blue"></i></div>
+                        {{-- <div class="logo-container"><i class="t20icon-blue"></i></div> --}}
                         <!---->
                         <div id="ember2776 signpotion" class="sso-signin-home-component ember-view" >
-                           <div class="modal-body">
+                           <div class="modal-body" style="background: url({{ asset('images/pic12.jpg')  }}); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
                               <div class="buttons-container">
                                  <a href="#" id="show_signup" class="text-link-bold brand-light " data-ember-action="" data-ember-action-2777="2777">
                                  Sign Up
@@ -464,7 +464,7 @@ use App\Purchase;
                      <div class="modal-content">
                         <div class="logo-container"><i class="logo_"></i></div>
                         <div id="ember459" class="sso-signup-home-component ember-view">
-                           <div class="modal-body">
+                           <div class="modal-body" style="background: url({{ asset('images/pic12.jpg')  }}); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
                               <div class="buttons-container">
                                  <a href="#" id="show_signin" class="text-link-bold brand-light " data-ember-action="" data-ember-action-460="460">
                                  Sign In
