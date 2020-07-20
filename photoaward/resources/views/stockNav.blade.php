@@ -357,7 +357,7 @@ use App\Purchase;
                                     <div id="ember2783" class="loading-button-component ember-view">
                                        <button style="" class="btn btn-loading   btn-sign-in btn-default external-link" data-ember-action="" data-ember-action-2784="2784">
                                           <div id="ember2785" class="loading-spinner loading-spinner-component ember-view"></div>
-                                          <div class="btn-loading-text"><i class="envato-logo-circle"></i>Envato</div>
+                                          <div class="btn-loading-text"><i class="envato-logo-circle"></i>Picture+254</div>
                                        </button>
                                     </div>
                                  </div>
@@ -441,7 +441,7 @@ use App\Purchase;
                         <div class="row row-no-padding social-proof-con">
                            <div class="col-xs-6">
                               <div class="col-xs-12 col-sm-4 col-sm-offset-2 text-center">
-                                 <h3 class="margin0tb">300K+</h3>
+                                 <h3 class="margin0tb">XXX+</h3>
                               </div>
                               <div style="line-height: 18px;" class="col-xs-12 col-sm-5 c2 text-center">
                                  <p class="margin0b callout">photographers in the real world</p>
@@ -449,7 +449,7 @@ use App\Purchase;
                            </div>
                            <div class="col-xs-6">
                               <div class="col-xs-12 col-sm-3 col-sm-offset-1 text-center">
-                                 <h3 class="margin0tb">50M+</h3>
+                                 <h3 class="margin0tb">XXX+</h3>
                               </div>
                               <div style="line-height: 18px;" class="col-xs-12 col-sm-5 c2 text-center">
                                  <p class="margin0b callout">crowdsourced photos</p>
@@ -464,7 +464,7 @@ use App\Purchase;
                      <div class="modal-content">
                         <div class="logo-container"><i class="logo_"></i></div>
                         <div id="ember459" class="sso-signup-home-component ember-view">
-                           <div class="modal-body" style="background: url({{ asset('images/pic12.jpg')  }}); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+                           <div class="modal-body" style="background: url({{ asset('images/coconut-drink-on-beach.jpg')  }}); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
                               <div class="buttons-container">
                                  <a href="#" id="show_signin" class="text-link-bold brand-light " data-ember-action="" data-ember-action-460="460">
                                  Sign In
