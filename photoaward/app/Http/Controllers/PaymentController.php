@@ -76,7 +76,7 @@ class PaymentController extends Controller
           $Remarks = "Yess";
 
           $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-                                  );
+             );
                 // return $stkPushSimulation;
           // $check = $stkPushSimulation; 
 	      //   	   $pay = new Payment();
