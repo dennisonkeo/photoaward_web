@@ -61,7 +61,7 @@ class PaymentController extends Controller
 		$CallBackURL = 'https://034fa128.ngrok.io/api/mpesa-response';
 		$AccountReference = Auth::user()->phone;
 		$TransactionDesc = "Payment";
-		$Remarks = "Yess 
+		$Remarks = "Yess";
 	        	   $pay = new Payment();
 				             
 				   $pay->phone = $phone;

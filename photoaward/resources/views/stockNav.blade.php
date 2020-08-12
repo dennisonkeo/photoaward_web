@@ -219,7 +219,7 @@ use App\Purchase;
                                           </div>
                                           <div class="col-sm-6 text-center">
                                              <button class="btn btn-default btn-lg btn-block btn-wrap rounded-corners sell-button active" data-ember-action="" data-ember-action-490="490">
-                                             Sell photos
+                                             Submit photos
                                              </button>
                                           </div>
                                        </div>
@@ -230,7 +230,7 @@ use App\Purchase;
                               <div class="flex-row justify-content-center margin20t margin80b">
                                  <div class="col-xs-12 col-sm-7">
                                     <p class="text-center">
-                                       Become part of our global community of photographers making money doing what they love.
+                                       Become part of our community of photographers making money doing what they love.
                                     </p>
                                     <form data-ember-action="" data-ember-action-1992="1992">
                                        <div class="form-group">

@@ -246,7 +246,7 @@ initializeClock('clockdiv2', deadline2);
 
 
 /* mobile */
-@media only screen and (max-device-width: 400px){
+@media only screen and (-device-width: 400px){
   .parallaxabout{
     display: none;
   }
