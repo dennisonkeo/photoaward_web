@@ -143,7 +143,7 @@ class CartController extends Controller
           $PartyA = Auth::user()->phone;
           $PartyB = "523608";
           $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'http://picture254.com/api/mpesa-reply';
+          $CallBackURL = 'https://picture254.com/api/mpesa-reply';
           $AccountReference = Auth::user()->phone;
           $TransactionDesc = "Payment";
           $Remarks = "Yess";
