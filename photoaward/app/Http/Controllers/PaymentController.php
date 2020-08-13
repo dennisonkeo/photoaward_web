@@ -159,11 +159,11 @@ class PaymentController extends Controller
             "Password" => "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4",
             "Timestamp" => "20191118153348",
             "TransactionType" => "CustomerBuyGoodsOnline",
-        "Amount" => $total_amount,
+        	"Amount" => $total_amount,
             "PartyA" =>  Auth::user()->phone,
             "PartyB" => "523608",
             "PhoneNumber" =>  Auth::user()->phone,
-            "CallBackURL" => "https://c9bc8858f39c.ngrok.io/ecom/api/mpesa-response",
+            "CallBackURL" => "https://picture254.com/api/mpesa-response",
             "AccountReference" => Auth::user()->phone,
             "TransactionDesc" => "Pay for your goods"
         );
@@ -193,11 +193,11 @@ class PaymentController extends Controller
 
 		$callbackJSONData=file_get_contents('php://input');
 
-		$handle=fopen("uploads/transactions.txt", 'w');
+		// $handle=fopen("uploads/transactions.txt", 'w');
 
   //       fwrite($handle, $callbackJSONData);
 
-		// $account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
+		$account_no = json_decode($callbackJSONData)->Body->stkCallback->MerchantRequestID;
 
 		$ResultCode = json_decode($callbackJSONData)->Body->stkCallback->ResultCode;
 
