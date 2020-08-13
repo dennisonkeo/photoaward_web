@@ -446,7 +446,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }).on('filebatchuploadcomplete', function() {
         // console.log('File Batch Uploaded', preview, config, tags, extraData);
-         window.location.href =  '{{ route('upload-info') }}';
+         // window.location.href =  '{{ route('upload-info') }}';
          // console.log();
     });
 
