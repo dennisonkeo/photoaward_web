@@ -63,17 +63,17 @@ class PaymentController extends Controller
 		$TransactionDesc = "Payment";
 		$Remarks = "Yess" ;
 
-			$BusinessShortCode = "523608";
-          $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
-          $TransactionType = "CustomerPayBillOnline";
-          $Amount = '1';
-          $PartyA = Auth::user()->phone;
-          $PartyB = "523608";
-          $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'http://picture254.com/api/mpesa-reply';
-          $AccountReference = Auth::user()->phone;
-          $TransactionDesc = "Payment";
-          $Remarks = "Yess";
+			// $BusinessShortCode = "523608";
+   //        $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
+   //        $TransactionType = "CustomerPayBillOnline";
+   //        $Amount = '1';
+   //        $PartyA = Auth::user()->phone;
+   //        $PartyB = "523608";
+   //        $PhoneNumber = Auth::user()->phone;
+   //        $CallBackURL = 'http://picture254.com/api/mpesa-reply';
+   //        $AccountReference = Auth::user()->phone;
+   //        $TransactionDesc = "Payment";
+   //        $Remarks = "Yess";
 
           $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
              );
