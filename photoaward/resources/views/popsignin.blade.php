@@ -1204,7 +1204,7 @@
                         <div class="row row-no-padding social-proof-con">
                            <div class="col-xs-6">
                               <div class="col-xs-12 col-sm-4 col-sm-offset-2 text-center">
-                                 <h3 class="margin0tb">300K+</h3>
+                                 <h3 class="margin0tb">X+</h3>
                               </div>
                               <div style="line-height: 18px;" class="col-xs-12 col-sm-5 c2 text-center">
                                  <p class="margin0b callout">photographers in the real world</p>
@@ -1212,7 +1212,7 @@
                            </div>
                            <div class="col-xs-6">
                               <div class="col-xs-12 col-sm-3 col-sm-offset-1 text-center">
-                                 <h3 class="margin0tb">50M+</h3>
+                                 <h3 class="margin0tb">X+</h3>
                               </div>
                               <div style="line-height: 18px;" class="col-xs-12 col-sm-5 c2 text-center">
                                  <p class="margin0b callout">crowdsourced photos</p>
@@ -1288,7 +1288,7 @@
                                              </div>
                                              <hr class="xlight slim">
                                              <h5>
-                                                We're excited to tell you that we're joining the Envato family!
+                                                We're excited to tell you that we're joining the Picture+254 Family!
                                              </h5>
                                              <div class="small-photo-popout margin20t">
                                                 <div class="row">
@@ -1374,7 +1374,7 @@
                               <img src="https://dp3ogl28gtjh0.cloudfront.net/digital/logos/logo-header-color@2x.png" alt="Twenty20 logo" style="height: 30px;">
                            </div>
                            <h3 class="normal margin40b margin0t">
-                              <span class="normal">You are now signed in to</span> Twenty20 <span class="normal">with your Envato account.</span>
+                              <span class="normal">You are now signed in to</span> Picture+254 Stock <span class="normal">with your Picture+254 account.</span>
                            </h3>
                            <h4 class="normal margin20b">
                               <!---->

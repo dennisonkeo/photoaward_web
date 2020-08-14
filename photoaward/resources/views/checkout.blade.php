@@ -114,7 +114,8 @@ a.insert-file-row:hover,
 
 #header,
 body.page-template-page-login-php {
-	background-image:url("https://theme.scube.co/stocky/files/2020/01/hero-home.jpg");
+	background-image:url("{{ asset('images/coconut-drink-on-beach.jpg') }}");
+
 }
 </style>
 <script type="text/javascript">
@@ -219,7 +220,7 @@ jQuery(document).ready(function($){
 	<body class="page-template page-template-page-full-width page-template-page-full-width-php page page-id-4 page-parent button_light content_left edd-checkout edd-page edd-test-mode">
 		<section id="site_wrap">
 
-			
+					
 			@include('stock-header')
 
 			
@@ -478,11 +479,11 @@ jQuery(document).ready(function($){
 		
 			</div>		</section>
 		
-		<footer id="footer" class="wrapper">
-			<div class="container clearfix">
+		<footer id="footer" class="wrapper" style="background-color: black;">
+			
+			
 				
-				<div id="post_footer">
-
+{{-- 
 										<div id="socnets_wrap">
 						<div id="socnets">
 														<a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
@@ -490,19 +491,19 @@ jQuery(document).ready(function($){
 
 													</div>
 						<div class="clear"></div>
-					</div>
+					</div> --}}
 					
 					<div id="footer_copy">
-						  <div class="container" style="text-align: center;">
+						    <div class="container" style="text-align: center;">
         
-        <div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
-        </div>
- </div>
+        						<div class="wfont" style="font-size:14px; font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+        						</div>
+ 							</div>
 						
 							 
 					</div>
 
-				</div>
+				
 
 			</div>
 		</footer>

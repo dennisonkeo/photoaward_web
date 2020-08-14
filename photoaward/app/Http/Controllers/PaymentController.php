@@ -84,6 +84,40 @@ class PaymentController extends Controller
 			            $total_amount += $total;
 			        }
 
+<<<<<<< HEAD
+		$BusinessShortCode = "523608";
+		$LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
+		$TransactionType = "CustomerPayBillOnline";
+		$Amount = $total_amount;
+		$PartyA = Auth::user()->phone;
+		$PartyB = "523608";
+		$PhoneNumber = Auth::user()->phone;
+		$CallBackURL = 'https://picture254.com/api/mpesa-response';
+		$AccountReference = Auth::user()->phone;
+		$TransactionDesc = "Payment";
+
+		$Remarks = "Yess";
+	        	   $pay = new Payment();
+
+			$BusinessShortCode = "523608";
+          $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
+          $TransactionType = "CustomerPayBillOnline";
+          $Amount = '1';
+          $PartyA = Auth::user()->phone;
+          $PartyB = "523608";
+          $PhoneNumber = Auth::user()->phone;
+          $CallBackURL = 'http://picture254.com/api/mpesa-reply';
+          $AccountReference = Auth::user()->phone;
+          $TransactionDesc = "Payment";
+          $Remarks = "Yess";
+
+          $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
+             );
+                // return $stkPushSimulation;
+          // $check = $stkPushSimulation; 
+	      //   	   $pay = new Payment();
+>>>>>>> 3242e982ab9f3f03c0830a16e5f239a16c05ce18
+=======
 		// $BusinessShortCode = "523608";
 		// $LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
 		// $TransactionType = "CustomerPayBillOnline";
@@ -113,6 +147,7 @@ class PaymentController extends Controller
   //               // return $stkPushSimulation;
   //         // $check = $stkPushSimulation; 
 	 //      //   	   $pay = new Payment();
+>>>>>>> ddf3c50d42f7469a184b6b6be0cd99b5d7da1a5b
 				             
 		// 		   // $pay->phone = Auth::user()->phone;
 		// 		   // $pay->trans_no = $trans_no;

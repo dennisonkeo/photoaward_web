@@ -145,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#" class="btn btn-danger" role="button">
             Back to competition</a>
         <a href="#" class="btn btn-info" role="button">
-            Professionals Details </a>
+            Details </a>
     </div> 
 
     </div>
