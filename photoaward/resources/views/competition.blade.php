@@ -218,7 +218,7 @@ They must be saved as JPEG file (JPG).<br><br> -->
 
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Term:</h4>
 <p>
-  Picture+254 Photo Contest runs <b>1st February, 2020</b> ~ <b>15th March, 2020</b>.
+  Picture+254 Photo Contest runs <b>1st September, 2020</b> ~ <b>15th October, 2020</b>.
 </p>
 <h4 style="padding-top: 15px; padding-bottom: 15px; font-weight: bold;">Who May Enter:</h4>
 <p>

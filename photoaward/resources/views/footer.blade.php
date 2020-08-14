@@ -20,7 +20,7 @@
   <div class="footer-copyright text-center py-3">
    
   </div>
-<div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> Picture+254. All rights reserved.
+<div class="wfont" style="font-size:14px;font-family:'Montserrat', sans-serif;">&copy; <script>document.write(new Date().getFullYear());</script> PICTURE+254. All rights reserved.
         </div>
     </div>
 
