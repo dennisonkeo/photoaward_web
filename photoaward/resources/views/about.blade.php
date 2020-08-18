@@ -355,7 +355,7 @@ initializeClock('clockdiv2', deadline2);
 <div id="noscript_message"></div>
 </noscript>
 <div id="wrap" style="background: white;">
-<div id="header" style="z-index: 0;">
+<div id="header" style="">
   <div class="container">
     
     <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
