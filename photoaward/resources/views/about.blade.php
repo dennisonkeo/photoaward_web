@@ -350,11 +350,11 @@ initializeClock('clockdiv2', deadline2);
 
 
 </head>
-<body id="mikiyakobayashi" class="sub" >
+<body id="mikiyakobayashi" class="sub">
 <noscript>
 <div id="noscript_message"></div>
 </noscript>
-<div id="wrap" style="background: white; diplay: none;">
+<div id="wrap" style="background: white;">
 <div id="header" style="">
   <div class="container">
     

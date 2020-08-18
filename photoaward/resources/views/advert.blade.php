@@ -154,18 +154,15 @@ function voteNow()
 function voteLater()
 {
   document.getElementById("myNav").style.height = "0%";
-  document.getElementById("wrap").style.display = "block";
 
   setTimeout(function(){
                  
-           document.getElementById("wrap").style.display = "none";
            document.getElementById("myNav").style.height = "100%";          
         }, 30000);
 }
 
 
         setTimeout(function(){
-          document.getElementById("wrap").style.display = "none";
                  
            document.getElementById("myNav").style.height = "100%";          
         }, 30000);
