@@ -18,9 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="{{ asset('js/right_click.js') }}"></script>
- <!-- Google Font Martel
-<link href='https://fonts.googleapis.com/css?family=Martel:400,700' rel='stylesheet' type='text/css'>
-<!-- Google Font Open Sans -->
+
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,600,600italic,700,700italic,800,800italic,400,300italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/compe_1.css" />
 <link rel="stylesheet" href="css/compe_2.css" />
@@ -357,7 +355,7 @@ initializeClock('clockdiv2', deadline2);
 <div id="noscript_message"></div>
 </noscript>
 <div id="wrap" style="background: white;">
-<div id="header">
+<div id="header" style="z-index: 0;">
   <div class="container">
     
     <!-- <div id="logo"><a href="#" class="hover-line"><span></span></a></div> -->
