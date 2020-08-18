@@ -9,7 +9,7 @@
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: 0;
+  top: 5px;
   left: 0;
   background-color: rgb(0,0,0);
   /*background-color: rgba(0,0,0, 0.9);*/
@@ -39,7 +39,7 @@
 }
 
 .overlay .closebtn {
-  position: relative;
+  position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
