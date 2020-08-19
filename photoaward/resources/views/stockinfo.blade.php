@@ -271,10 +271,10 @@ else
                                  </div>
 							  @if(!$check)
 								@if(Auth::check())
-                                 <div class="purchase-con" id="add_to_cart_div">
+                                 <div class="purchase-con" id="add_to_cart_div" style="height: 50px;">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button id="add_to_cart" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
+                                          <button id="add_to_cart" style="white-space: normal; height: 100%;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
                                              <div class="btn-loading-text"><i class="fa fa-shopping-cart align-sub"></i>Add To Cart</div>
                                           </button>
@@ -283,12 +283,12 @@ else
                                     
                                  </div>
                                  @else
-                                 <div class="purchase-con">
+                                 <div class="purchase-con" style="height: 50px;">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button id="login" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}">
+                                          <button id="login"  data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732" data-id="{{ $image->id }}" style="white-space: normal; height: 100%; align-items: center;">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
-                                             <div class="btn-loading-text"><i class="fa fa-shopping-cart align-sub"></i>Add To Cart</div>
+                                             <div class="btn-loading-text" style=""><i class="fa fa-shopping-cart align-sub" ></i>Add To Cart</div>
                                           </button>
                                        </div>
                                     </div>
@@ -296,10 +296,10 @@ else
                                  </div>
                                  @endif
                                  @else
-                                 <div class="purchase-con" style="dislay: none;">
+                                 <div class="purchase-con" style="dislay: none; height: 50px;">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
+                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal; height: 100%;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
                                              <div class="btn-loading-text"><i class="fa fa-shopping align-sub"></i>Checkout</div>
                                           </button>
@@ -309,10 +309,10 @@ else
                                  </div>
                                  @endif
 
-                                 <div class="purchase-con" id="checkout_div" style="display: none;">
+                                 <div class="purchase-con" id="checkout_div" style="display: none; height: 50px;">
                                     <div id="ember29726" class="gated-action-component ember-view">
                                        <div id="ember29731" class="loading-button-component ember-view">
-                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
+                                          <button onclick="window.location='{{ url("cart/view-cart") }}'" id="checkout" style="white-space: normal; height: 100%;" data-test="license-button" class="btn btn-loading   btn-primary btn-block btn-lg has-icon" data-ember-action="" data-ember-action-29732="29732">
                                              <div id="ember29733" class="loading-spinner loading-spinner-component ember-view"></div>
                                              <div class="btn-loading-text"><i class="fa fa-shopping align-sub"></i>Checkout</div>
                                           </button>
