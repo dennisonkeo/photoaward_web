@@ -56,123 +56,55 @@ class PaymentController extends Controller
 
 		// $refNo = str_random(6);
 
-					$images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
+					// $images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-			        $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
+			  //       $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-			        $total_amount = 0;
+			  //       $total_amount = 0;
 
-			        $total = 0;
+			  //       $total = 0;
 
-			        foreach($imagesgroup->groupby('category_id') as $image)
-			        {
-			            foreach($image as $img)
-			            {
-			            	if($img->track == "Professionals")
-			            	{
-				            	$total = count($image)*200;
-				                break;
-			            	}
-			            	else
-			            	{
-			            		$total = count($image)*100;
-			                	break;
-			            	}
+			  //       foreach($imagesgroup->groupby('category_id') as $image)
+			  //       {
+			  //           foreach($image as $img)
+			  //           {
+			  //           	if($img->track == "Professionals")
+			  //           	{
+				 //            	$total = count($image)*200;
+				 //                break;
+			  //           	}
+			  //           	else
+			  //           	{
+			  //           		$total = count($image)*100;
+			  //               	break;
+			  //           	}
 			                 
-			            }
+			  //           }
 
-			            $total_amount += $total;
-			        }
+			  //           $total_amount += $total;
+			  //       }
 
-<<<<<<< HEAD
-		$BusinessShortCode = "523608";
-		$LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
-		$TransactionType = "CustomerPayBillOnline";
-		$Amount = $total_amount;
-		$PartyA = Auth::user()->phone;
-		$PartyB = "523608";
-		$PhoneNumber = Auth::user()->phone;
-		$CallBackURL = 'https://picture254.com/api/mpesa-response';
-		$AccountReference = Auth::user()->phone;
-		$TransactionDesc = "Payment";
 
-		$Remarks = "Yess";
-	        	   $pay = new Payment();
+		        $images = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-			$BusinessShortCode = "523608";
-          $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
-          $TransactionType = "CustomerPayBillOnline";
-          $Amount = '1';
-          $PartyA = Auth::user()->phone;
-          $PartyB = "523608";
-          $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'http://picture254.com/api/mpesa-reply';
-          $AccountReference = Auth::user()->phone;
-          $TransactionDesc = "Payment";
-          $Remarks = "Yess";
+		        $imagesgroup = Upload::where('user_id', Auth::user()->id)->where('uploaded','no')->get();
 
-          $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-             );
-                // return $stkPushSimulation;
-          // $check = $stkPushSimulation; 
-	      //   	   $pay = new Payment();
->>>>>>> 3242e982ab9f3f03c0830a16e5f239a16c05ce18
-=======
-		// $BusinessShortCode = "523608";
-		// $LipaNaMpesaPasskey = "78dbd4c3ecda6503b00be053264fe0760ae70f7c5c0c3c6f49869fbc5ccdb346";
-		// $TransactionType = "CustomerPayBillOnline";
-		// $Amount = $total_amount;
-		// $PartyA = Auth::user()->phone;
-		// $PartyB = "523608";
-		// $PhoneNumber = Auth::user()->phone;
-		// $CallBackURL = 'https://picture254.com/api/mpesa-response';
-		// $AccountReference = Auth::user()->phone;
-		// $TransactionDesc = "Payment";
-		// $Remarks = "Yess" ;
+		        $total_amount = 0;
 
-		// 	// $BusinessShortCode = "523608";
-  //  //        $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
-  //  //        $TransactionType = "CustomerPayBillOnline";
-  //  //        $Amount = '1';
-  //  //        $PartyA = Auth::user()->phone;
-  //  //        $PartyB = "523608";
-  //  //        $PhoneNumber = Auth::user()->phone;
-  //  //        $CallBackURL = 'http://picture254.com/api/mpesa-reply';
-  //  //        $AccountReference = Auth::user()->phone;
-  //  //        $TransactionDesc = "Payment";
-  //  //        $Remarks = "Yess";
+		        $total = 0;
 
-  //         $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-  //            );
-  //               // return $stkPushSimulation;
-  //         // $check = $stkPushSimulation; 
-	 //      //   	   $pay = new Payment();
->>>>>>> ddf3c50d42f7469a184b6b6be0cd99b5d7da1a5b
-				             
-		// 		   // $pay->phone = Auth::user()->phone;
-		// 		   // $pay->trans_no = $trans_no;
-		// 		   // $pay->account_no = $account_no;
-		// 		   // $pay->trans_date = $trans_date;
-		// 		   // $pay->amount = $amount;
+		        foreach($imagesgroup as $image)
+		        {
+		              if($image->track == "Professionals")
+		              {
+		                $total_amount += 200;
+		              }
+		              else
+		              {
+		                $total_amount += 100;
+		              }
+		        }
 
-				             
-		// 		   //  $pay->save();
-
-		// 		    // Upload::where('user_id', Auth::user()->id)
-		// 	     //                            ->where('uploaded','no')
-		// 	     //                            ->update(array('uploaded' => 'yes'));
-				             
-		// 		    // ImagePay::where('account_no', $account_no)
-		// 		    //          ->update(array('status' => 'Paid'));
-
-		// 		return response()->json('Success');
-		// 	                           // $upload->account_no = $check;
-			             
-		// 	                           // $upload->save();
-			             
-		// 	                        // Upload::where('user_id', Auth::user()->id)
-		// 	                        //         ->where('uploaded','no')
-		//
 
 		$url = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
         $token = self::generateLiveToken();

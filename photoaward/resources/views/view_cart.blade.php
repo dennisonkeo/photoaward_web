@@ -18,6 +18,7 @@
   <meta property="og:site_name" content="PICTURE+254" />
   <meta property="og:description" content="This exciting contest gives everyday ordinary people, developing and professional photographers a chance to express themselves to a global audience through the medium of photography." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> --}}
 
     <script src="{{ asset('js/right_click.js') }}"></script>
     
@@ -117,6 +118,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
 }
 
+
+#imageDetailsModal {
+
+overflow: scroll;
+/*margin: 0 auto;*/
+}
 
   </style>
     
@@ -277,7 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="modal-windows">
         <!-- Image Edit form -->
-        <div class="modal fade" id="imageDetailsModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal fade" id="imageDetailsModal" tabindex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true" stle="overflow: scroll;">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -303,7 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <div class="modal-content-container form-container">
                          
-<div class="row">
+<div class="row dialog">
     <input name="image_id" type="hidden">
     
     <div class="col-xs-12 col-sm-12 col-md-4">
@@ -319,7 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Image Description (Caption)
                 <span class="label label-required">Required</span>
             </label>
-            <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="image_description" cos="50"></textarea>
+            <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="image_description" coss="50"></textarea>
 
         </div> 
 
@@ -328,7 +335,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Device Name/Model 
                 <span class="label label-required"></span>
             </label>
-            <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="device" cos="50"></textarea>
+            <textarea rows="5" class="form-control" placeholder="Please use English characters only" id="image_description" name="device" coss="50"></textarea>
         </div>
 
     </div>

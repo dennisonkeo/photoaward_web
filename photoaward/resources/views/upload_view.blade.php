@@ -138,7 +138,7 @@
 
 				<div class="form-group">
 					
-					<input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="2" /> 
+					<input type="file" name="file" multiple id="file-1" class="file" data-overwrite-initial="false" data-min-file-count="1" /> 
 				</div>
 				
 			{{-- </div>
@@ -264,7 +264,7 @@
         });
 
         // window.location = "view-album" + parameter;
-         // window.location.href =  'view-album';
+         window.location.href =  'view-album';
          // console.log();
     });
 
