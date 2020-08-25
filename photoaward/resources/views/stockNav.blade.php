@@ -551,7 +551,7 @@ use App\Purchase;
                                              <button style="" type="submit" class="btn btn-loading   btn btn-primary btn-block">
                                                 <div id="ember2022" class="loading-spinner loading-spinner-component ember-view"></div>
                                                 <div class="btn-loading-text" style="height: 20px;">
-                                                   <!---->Sign up for Free
+                                                   <!---->Sign up
                                                 </div>
                                              </button>
                                           </div>
