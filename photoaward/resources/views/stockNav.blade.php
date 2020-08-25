@@ -405,11 +405,11 @@ use App\Purchase;
                                           Forgot Your Password?
                                           </a>
                                        </div>
-                                       <div class="form-group margin20t">
+                                       <div class="form-group margin20t" style="height: ">
                                           <div id="ember2825" class="loading-button-component ember-view">
                                              <button style="" type="submit" class="btn btn-loading   btn btn-primary btn-block">
                                                 <div id="ember2826" class="loading-spinner loading-spinner-component ember-view"></div>
-                                                <div class="btn-loading-text">
+                                                <div class="btn-loading-text" style="height: 20px;">
                                                    <!---->Sign In
                                                 </div>
                                              </button>
@@ -550,7 +550,7 @@ use App\Purchase;
                                           <div id="ember2021" class="loading-button-component ember-view">
                                              <button style="" type="submit" class="btn btn-loading   btn btn-primary btn-block">
                                                 <div id="ember2022" class="loading-spinner loading-spinner-component ember-view"></div>
-                                                <div class="btn-loading-text">
+                                                <div class="btn-loading-text" style="height: 20px;">
                                                    <!---->Sign up for Free
                                                 </div>
                                              </button>
