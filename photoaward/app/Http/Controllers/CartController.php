@@ -96,6 +96,40 @@ class CartController extends Controller
 
     	}
 
+      public static function generateLiveToken(){
+        
+        try {
+            // $consumer_key = env("MPESA_CONSUMER_KEY");
+            // $consumer_key = config('app.MPESA_CONSUMER_KEY');
+            $consumer_key = 'wnVlDhb4HMxi6j6HbaxbRxhAaPGUQ1WL';
+            $consumer_secret = 'vwrHrrBRGFrx8yX9';
+        } catch (\Throwable $th) {
+            // $consumer_key = self::env("MPESA_CONSUMER_KEY");
+            $consumer_key = self::config('app.MPESA_CONSUMER_KEY');
+            // $consumer_secret = self::env("MPESA_CONSUMER_SECRET");
+            $consumer_secret = self::config('app.MPESA_CONSUMER_SECRET');
+        }
+
+        if(!isset($consumer_key)||!isset($consumer_secret)){
+            die("please declare the consumer key andHHHHH consumer secret as defined in the documentation");
+        }
+        $url = 'https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        $credentials = base64_encode($consumer_key.':'.$consumer_secret);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization: Basic '.$credentials)); //setting a custom header
+        curl_setopt($curl, CURLOPT_HEADER, false);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+        $curl_response = curl_exec($curl);
+
+        return json_decode($curl_response)->access_token;
+
+
+    }
+
         public function checkout()
         {
 
@@ -136,27 +170,68 @@ class CartController extends Controller
           // $items = Cart::where('token',session()->getId())->where('user_id',Auth::user()->id)->get();
 
 
-          $BusinessShortCode = "523608";
-          $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
-          $TransactionType = "CustomerPayBillOnline";
-          $Amount = $cart_amount;
-          $PartyA = Auth::user()->phone;
-          $PartyB = "523608";
-          $PhoneNumber = Auth::user()->phone;
-          $CallBackURL = 'https://picture254.com/api/mpesa-reply';
-          $AccountReference = Auth::user()->phone;
-          $TransactionDesc = "Payment";
-          $Remarks = "Yess";
+          // $BusinessShortCode = "523608";
+          // $LipaNaMpesaPasskey = "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4";
+          // $TransactionType = "CustomerPayBillOnline";
+          // $Amount = $cart_amount;
+          // $PartyA = Auth::user()->phone;
+          // $PartyB = "523608";
+          // $PhoneNumber = Auth::user()->phone;
+          // $CallBackURL = 'https://picture254.com/api/mpesa-reply';
+          // $AccountReference = Auth::user()->phone;
+          // $TransactionDesc = "Payment";
+          // $Remarks = "Yess";
 
-          $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
-                                  $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
-                                  );
-                // return $stkPushSimulation;
-          $check = $stkPushSimulation; 
+          // $stkPushSimulation = $mpesa->STKPushSimulation($BusinessShortCode, $LipaNaMpesaPasskey, 
+          //                         $TransactionType, $Amount, $PartyA, $PartyB, $PhoneNumber, $CallBackURL, $AccountReference, $TransactionDesc, $Remarks
+          //                         );
+          //       // return $stkPushSimulation;
+          // $check = $stkPushSimulation; 
 
           // $callbackJSONData=file_get_contents('php://input');
           // $handle=fopen("uploads/transaction.txt", 'w');
-          // fwrite($handle, $stkPushSimulation);   
+          // fwrite($handle, $stkPushSimulation);
+
+          $url = 'https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
+        $token = self::generateLiveToken();
+
+        $LipaNaMpesaPasskey = " bab1285e1094bc6c69c3e17efd9ccef52e10c6ce1cb99627b1135125467dd3a9";
+        $BusinessShortCode = "5018197";
+        $TransactionType = "CustomerPayBillOnline";
+        $CallBackURL = 'https://d2154ab6.ngrok.io/api/mpesa-response';
+        $timestamp='20'.date(    "ymdhis");
+        $password=base64_encode($BusinessShortCode.$LipaNaMpesaPasskey.$timestamp);
+
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$token));
+
+
+        $curl_post_data = array(
+            "BusinessShortCode" => "523608",
+            "Password" => "NTIzNjA4NzhkYmQ0YzNlY2RhNjUwM2IwMGJlMDUzMjY0ZmUwNzYwYWU3MGY3YzVjMGMzYzZmNDk4NjlmYmM1Y2NkYjM0NjIwMTkxMTE4MTUzMzQ4",
+            "Timestamp" => "20191118153348",
+            "TransactionType" => "CustomerBuyGoodsOnline",
+          "Amount" => $cart_amount,
+            "PartyA" =>  Auth::user()->phone,
+            "PartyB" => "523608",
+            "PhoneNumber" =>  Auth::user()->phone,
+            "CallBackURL" => "https://picture254.com/api/mpesa-response",
+            "AccountReference" => Auth::user()->phone,
+            "TransactionDesc" => "Pay for your goods"
+        );
+
+        $data_string = json_encode($curl_post_data);
+
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, CURLOPT_POST, true);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
+        curl_setopt($curl, CURLOPT_HEADER, false);
+        $curl_response=curl_exec($curl);
+
+        // $handle=fopen("assets/transaction.txt", 'w');
+        // fwrite($handle, $curl_response);
+        $check = json_decode($curl_response)->MerchantRequestID;      
 
           if($check !="")
           {
