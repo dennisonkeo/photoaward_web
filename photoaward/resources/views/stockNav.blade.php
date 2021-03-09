@@ -39,8 +39,9 @@ use App\Purchase;
     <a style="" href="{{ route('stock-album') }}" id="ember1263" class="link-to-component ember-view"><i class="t20icon t20icon-home visible-xs-inline-block"></i><span class="text-container kahome">Home</span></a>
   </li>
     <li>
-    <a style="" href="{{ route('discover') }}" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
-	<span class="text-container">Explore</span></a></li>
+    <a style="" href="#" id="ember1268" class="link-to-component ember-view"><i class="t20icon t20icon-collection visible-xs-inline-block"></i>
+	{{-- {{ route('discover') }} --}}
+  <span class="text-container">Explore</span></a></li>
   <li><i class="icon-cart"></i></li>
 </ul>
 	<ul class="nav navbar-nav navbar-right"><!----><!---->

@@ -55,8 +55,6 @@
   <meta name="twitter:app:url:iphone" content="twenty20://" id="ember1536" class="head-tag-component ember-view">
   <meta name="robots" content="index, follow" id="ember1538" class="head-tag-component ember-view">
 
-<meta name="ember-cli-head-end">
-<script src="https://www.googleadservices.com/pagead/conversion/1001209587/?random=1615182375429&amp;cv=9&amp;fst=1615182375429&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=3&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1001209587/?random=1615182375440&amp;cv=9&amp;fst=1615182375440&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=3&amp;u_tz=180&amp;u_java=false&amp;u_nplug=1&amp;u_nmime=2&amp;sendb=1&amp;ig=1&amp;data=app%3Ddigital%3Buser_id%3D1660479%3Buser_groups%3Dkeyword_suggestions_on_2017%3BcurrentLocale%3Den%3Bbrowser_width%3D1366%3Bbrowser_height%3D768%3Bname%3Dexplore.signature%3Bpath%3D%2Fhome%2Fsignature%3Breferrer%3D%3Bsearch%3D%3Btitle%3DTwenty20%20~%20Home%3Burl%3Dhttps%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;frm=0&amp;url=https%3A%2F%2Fwww.twenty20.com%2Fhome%2Fsignature&amp;tiba=Twenty20%20~%20Home&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
 
       
    </head>
