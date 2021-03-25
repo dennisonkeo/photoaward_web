@@ -7,7 +7,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
-    {{-- <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-36167e810d12dc621d5f088705a4db12.css"> --}}
+
+
+
+    <link rel="stylesheet" href="https://d2xoeue6rlgwc6.cloudfront.net/assets/twenty20-digital-36167e810d12dc621d5f088705a4db12.css">
+
+    
 
 
         <style type="text/css">
